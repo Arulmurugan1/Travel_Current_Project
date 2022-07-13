@@ -30,6 +30,8 @@ public class Dbmanager {
 			
 //			System.out.println(new File(".").getAbsolutePath());---to get absolute local file path
 	
+
+
 			InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
 			Properties db = new Properties();
 			db.load(f);
