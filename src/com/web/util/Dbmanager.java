@@ -1,28 +1,45 @@
 package com.web.util;
 
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Properties;
 import java.util.Vector;
 
 public class Dbmanager {
-
-	private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false";
-	private static final String USER = "root";
-	private static final String PASSWORD = "root";
-
 	
 	
 	public static Connection getConnection() 
 	{
 		Connection con = null;
 		try {
+			
+//			--------Put it in classpath------
+//			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+//			InputStream input = classLoader.getResourceAsStream("foo.properties");
+			
+//			---- Put it in webcontent----
+//			InputStream input = getServletContext().getResourceAsStream("/WEB-INF/foo.properties");
+			
+//			---Put it in local disk file system--
+//			InputStream input = new FileInputStream("/absolute/path/to/foo.properties");
+			
+//			System.out.println(new File(".").getAbsolutePath());---to get absolute local file path
+	
 
-			Class.forName(DRIVER);
-			con = DriverManager.getConnection(URL, USER, PASSWORD);
+
+			InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
+			Properties db = new Properties();
+			db.load(f);
+			
+
+			
+			Class.forName(db.getProperty("driver"));
+			con = DriverManager.getConnection(db.getProperty("url"), db.getProperty("user"), db.getProperty("password"));
 
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -31,6 +48,17 @@ public class Dbmanager {
 		}
 		return con;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public static boolean insertObjects(String Query,Vector values) 
 	{
