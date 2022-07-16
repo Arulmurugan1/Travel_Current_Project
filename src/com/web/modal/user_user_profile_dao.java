@@ -3,6 +3,7 @@ package com.web.modal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,11 +11,11 @@ import com.web.objects.user_user_profile;
 import com.web.util.Dbmanager;
 
 public class user_user_profile_dao {
-	private static final String INSERT_USERS ="INSERT INTO USER_USER_PROFILE VALUES(?,?,?,SYSDATE(),?,?)";
-	private static final String UPDATE_USERS ="UPDATE USER_USER_PROFILE SET PASSWORD=?,USER_ID=? WHERE USERNAME=?";
+	private static final String INSERT_USERS ="INSERT INTO USER_USER_PROFILE VALUES(?,?,?,SYSDATE(),?,?,?,?,SYSDATE())";
+	private static final String UPDATE_USERS ="UPDATE USER_USER_PROFILE SET LAST_LOGIN=current_timestamp() WHERE USER_ID=?";
 	private static final String DELETE_USERS ="DELETE FROM USER_USER_PROFILE WHERE USER_ID=?";
 	private static final String CHECK_USER   ="SELECT * FROM USER_USER_PROFILE WHERE USER_ID=?";
-	private static final String SELECT_USERS_BY_ID ="SELECT USERNAME,PASSWORD,ROLE,USER_ID FROM USER_USER_PROFILE WHERE USER_ID=?";
+	private static final String SELECT_USERS_BY_ID ="SELECT USERNAME,PASSWORD,ROLE,USER_ID,LAST_LOGIN FROM USER_USER_PROFILE WHERE USER_ID=?";
 	private static final String SELECT_ALL_USERS = "SELECT * FROM USER_USER_PROFILE";
 	Connection con =null;
 	
@@ -23,13 +24,16 @@ public class user_user_profile_dao {
 		boolean rowsaffected = false;
 		System.out.println(INSERT_USERS);
 		try {
+			int cnt=1;
 			con=Dbmanager.getConnection();
 			PreparedStatement ps =con.prepareStatement(INSERT_USERS);
-			ps.setString(1, user.getUsername());
+			ps.setString(1, user.getUser_id());
 			ps.setString(2, user.getPassword());
 			ps.setString(3, "Guest");
 			ps.setString(4, user.getUser_id());
 			ps.setString(5, "Others");
+			ps.setString(6, " ");
+			ps.setString(7, " ");
 			
 			rowsaffected=ps.executeUpdate() > 0 ;
 			
@@ -46,11 +50,7 @@ public class user_user_profile_dao {
 		try {
 			con=Dbmanager.getConnection() ;
 			PreparedStatement ps =con.prepareStatement(UPDATE_USERS) ;
-			ps.setString(1 , user.getUsername()) ;
-			ps.setString(2 , user.getPassword()) ;
-			ps.setString(3 , "Guest") ;
-			ps.setString(4 , user.getUser_id()) ;
-			ps.setString(5 , "others") ;
+			ps.setString(1 , user.getUser_id()) ;
 			rowsaffected = ps.executeUpdate() > 0 ;
 			
 		}catch(Exception e) {
@@ -89,6 +89,12 @@ public class user_user_profile_dao {
 				u.setPassword(rs.getString(2));
 				u.setRole(rs.getString(3));
 				u.setUser_id(rs.getString(4));
+				try {
+				u.setLast_login((LocalDateTime) rs.getObject(5));
+				}catch(Exception e)
+				{
+					u.setLast_login(LocalDateTime.now());
+				}
 			
 			}
 		}catch(Exception e) {

@@ -39,10 +39,6 @@ public class ListRouteServlet extends HttpServlet {
 
 		String mode=request.getParameter("mode");
 
-		if(mode.equals("Q"))
-		{
-			routeList = dao.getAllRoutes();
-		}
 		if(mode.equals("I"))	    
 		{
 
@@ -52,11 +48,11 @@ public class ListRouteServlet extends HttpServlet {
 
 			r = new Route(no, start, end);
 
-			if ( !start.equals("") && !end.equals("") && !( dao.check(r) ) )
+			if ( start !="" && end !="" && no!="" && dao.check(r).length() == 0 )
 			{
 				if (dao.insert(r) )
 				{		
-					request.setAttribute("msg", " Adding success");
+					request.setAttribute("msg", " Routes Added for "+no);
 				}
 				else {
 					request.setAttribute("msg", "Something Went Wrong failed to add") ;
@@ -64,9 +60,9 @@ public class ListRouteServlet extends HttpServlet {
 			}
 			else
 			{
-				request.setAttribute("msg", "Route already added to this vehicle") ;
+				request.setAttribute("msg", "Route already added to "+dao.check(r)) ;
 			}
-			routeList = dao.getAllRoutes();
+			
 		}	    
 
 		if(mode.equals("U"))	    
@@ -77,7 +73,7 @@ public class ListRouteServlet extends HttpServlet {
 			no = request.getParameter("uvehicle_no");
 
 			r = new Route(no, start, end);
-			if ( !( dao.check(r) ) )
+			if ( dao.check(r).length() > 0  )
 			{
 				if (dao.update(r) )
 				{
@@ -91,7 +87,7 @@ public class ListRouteServlet extends HttpServlet {
 			{
 				request.setAttribute("msg", "Route already exists");
 			}
-			routeList = dao.getAllRoutes();
+			
 		}
 
 		if(mode.equals("D"))
@@ -107,9 +103,10 @@ public class ListRouteServlet extends HttpServlet {
 			{
 				request.setAttribute("msg", "Failed");
 			}
-			routeList = dao.getAllRoutes();
+			
 
 		}
+		routeList = dao.getAllRoutes();
 		request.setAttribute("list", routeList);
 		RequestDispatcher rd = request.getRequestDispatcher("route.jsp");
 		rd.forward(request, response);

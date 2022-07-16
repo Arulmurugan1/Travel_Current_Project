@@ -159,15 +159,9 @@ function emailClick()
 
 function query()
 {
-	let pickup = document.bookingInsert.pickup_from.value;
-	let drop   = document.bookingInsert.drop_at.value ;
-	
-	if ( pickup.trim().length > 0 && drop.trim().length > 0 )
-		{
-		document.bookingInsert.hPickup.value   = pickup.trim();
-		document.bookingInsert.hDrop.value     = drop.trim();
+	if ( document.bookingInsert.pickup_from.value !="")
 		document.bookingInsert.hStatus.value   = "I";
-		}
+
 	submitOnChange();
 }
 
@@ -179,6 +173,7 @@ function submitOnChange()
 	submit();
 	}
 }
+
 
 
 

@@ -9,35 +9,24 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import com.web.modal.Bookingdao;
 import com.web.modal.Customerdao;
-import com.web.modal.Driverdao;
-import com.web.modal.Vehicledao;
 import com.web.objects.Booking;
 import com.web.objects.Customer;
-import com.web.objects.Driver;
-import com.web.objects.Vehicle;
+import com.web.util.Dbmanager;
 
 @WebServlet("/ListBookingServlet")
 public class ListBookingServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-    public Bookingdao bookingdao =null;
-    public Customerdao customerdao =null;
-    public List<Booking> listUser =null;
+    public Bookingdao bookingdao =new Bookingdao();
+    public Customerdao customerdao = new Customerdao();
     public Booking existingUser =new Booking();
     public Customer cust1		=new Customer();
-    public Driverdao driverdao = null;
-    public Vehicledao vehicledao =null;
-    public List<Driver> listdriver =null;
-    public List<Vehicle> listvehicle =null;
     
     public ListBookingServlet() {
         super();
-        bookingdao =new Bookingdao();
-        customerdao =new Customerdao();
-        driverdao =new Driverdao();
-        vehicledao = new Vehicledao();
     }
 
 	
@@ -60,15 +49,7 @@ public class ListBookingServlet extends HttpServlet {
 		String email			= "";
 		String gender			= "";
 		String phone			= "";
-		
-		
-		if(mode.equals("Q"))
-		{
-			listUser = bookingdao.getAllBooking();
-			request.setAttribute("listUser", listUser);
-			RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-			rd.forward(request, response);
-		}
+	
 
 		if(mode.equals("N"))	    
 		{
@@ -128,9 +109,6 @@ public class ListBookingServlet extends HttpServlet {
 					existingUser = bookingdao.selectBookingByCustomerId(cid);
 
 					request.setAttribute("result", existingUser.getBooking_no()+","+cid+","+existingUser.getFare());
-					
-					listUser = bookingdao.getAllBooking();
-					request.setAttribute("listUser", listUser);
 					request.setAttribute("msg", "Booking no " +existingUser.getBooking_no() + " Added" );
 					RequestDispatcher rd = request.getRequestDispatcher("bookinginsertform.jsp");
 					rd.forward(request, response);
@@ -138,8 +116,6 @@ public class ListBookingServlet extends HttpServlet {
 				else
 				{
 					request.setAttribute("msg", "Booking failed ");
-					RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-					rd.forward(request, response);
 				}
 			
 			
@@ -154,21 +130,14 @@ public class ListBookingServlet extends HttpServlet {
 
 			int customer_id =Integer.parseInt(request.getParameter("customer_id"));
 
-			Booking book = new Booking(id, customer_id , vehicle, driver) ;
-			if(bookingdao.updateBooking(book))
+			existingUser = new Booking(id, customer_id , vehicle, driver) ;
+			if(bookingdao.updateBooking(existingUser))
 			{
-				
 				request.setAttribute("msg", "Booking edit Success");
-				listUser = bookingdao.getAllBooking();
-				request.setAttribute("listUser", listUser);
-				RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-				rd.forward(request, response);
 			}
 			else
 			{
 				request.setAttribute("msg", "Booking edit failed");
-				RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-				rd.forward(request, response);
 			}
 		}
 
@@ -180,23 +149,23 @@ public class ListBookingServlet extends HttpServlet {
 
 			if(bookingdao.deleteBooking(id) && customerdao.deleteCustomer(customerId))
 			{
-				listUser = bookingdao.getAllBooking();
-				request.setAttribute("listUser", listUser);
 				request.setAttribute("msg", "Booking deleted");
-				RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-				rd.forward(request, response);
 			}
 			else
 			{
 				request.setAttribute("msg", "Booking failed to delete");
-				RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-				rd.forward(request, response);
 			}
 
 		}
+		
+		request.setAttribute("listUser", bookingdao.getAllBooking());
+		
+		if ( !(mode =="I" || mode == "N" || mode == "E" ) )
+		{
 
-		
-		
+			RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
+			rd.forward(request, response);
+		}
 	}
 
 }

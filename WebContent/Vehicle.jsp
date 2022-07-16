@@ -25,8 +25,7 @@
 
 </head>
 <body >
-	<jsp:include page="header.jsp" /> 
-    
+	<jsp:include page="header.jsp" />   
     <div class="container-fluid table-responsive mt-1">
         <c:if test ="${sessionScope.role!='Guest'}" >
     <div class="d-flex justify-content-around mb-2 mt-2">
@@ -61,8 +60,7 @@
                                     <td >
                                         <c:out value="${user.color}" />
                                     </td>
-                                 
-                                    </td>
+                                
                                         <c:if test ="${sessionScope.role!='Guest'}" ><td><a href="ListVehicleServlet?mode=E&no=<c:out value="${user.no}" />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="ListVehicleServlet?mode=D&no=<c:out value="${user.no}" />">Delete</a></td></c:if>
                                 </tr>
                             </c:forEach>

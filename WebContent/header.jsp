@@ -15,7 +15,7 @@
 font-family: San Serif;
 font-weight: bold;
 color :blue;
-font-size: 20px;
+font-size: 28px;
 }
 .blinking:hover {
             animation: blinkingText .5s infinite;
@@ -24,7 +24,7 @@ font-size: 20px;
             width: 100%;
             margin: 0 auto;
             color :blue;
-            font-size: 30px;
+            font-size: 40px;
         }
        @keyframes blinkingText {
    
@@ -63,7 +63,7 @@ font-size: 20px;
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head>
-<body> <!-- onload ="blinktext()" -->
+<body> 
 	
 	<div class="d-flex justify-content-between" id=announcement>
 		<div class="image">
@@ -85,70 +85,7 @@ font-size: 20px;
 	       		</div>
        </div>
     </div>
-    
-    <script>
-
-//    var datetime = new Date();
-//    document.getElementById("time").textContent = datetime; //it will print on html page
-    
-    //Update Date And Time in Real Time
-
-//     function refreshTime() 
-//     {
-//       const timeDisplay = document.getElementById("time");
-//       const dateString = new Date().toLocaleString();
-//       const formattedString = dateString.replace(", ", " - ");
-//       timeDisplay.textContent = formattedString;
-//     }
-//       setInterval(refreshTime, 1000);
-      
-//       //Methods to get date and time
-//       //Using getdate()
-//       `use strict`
-//       var datetime = new Date().getDate();
-//       console.log(datetime); // it will represent date in the console of developers tool
-//       document.getElementById("time").textContent = datetime; //it will print on html page
-		
-//       //Using getday()
-//       `use strict`
-//       var datetime = new Date().getDay();
-//       console.log(datetime); // it will represent date in the console of developers tool
-//       document.getElementById("time").textContent = datetime; //it will print on html page
-		
-//       //Using getFullYear()
-//       `use strict`
-//       var datetime = new Date().getFullYear();
-//       console.log(datetime); // it will represent date in the console of developers tool
-//       document.getElementById("time").textContent = datetime; //it will print on html page
-
-// 		//Using getHours()
-//       `use strict`
-//       var datetime = new Date().getHours()+1;
-//       console.log(datetime); // it will represent date in the console of developers tool
-//       document.getElementById("time").textContent = datetime; // represent on webbrowser
-
-//       //Using getMilliseconds()
-//       `use strict`
-//       var datetime = new Date().getMilliseconds();
-//       console.log(datetime); // it will represent date in the console of developers tool
-//       document.getElementById("time").textContent = datetime; // represent on html page
-
-// 		//Using getmonth()
-//       `use strict`
-//       var datetime = new Date().getMonth() + 1;
-//       console.log(datetime); // it will represent date in the console of  developers tool
-//       document.getElementById("time").textContent = datetime; // represent on html page
-// 		//Using toDateString()
-//       `use strict`
-//       var datetime = new Date().toDateString();
-//       console.log(datetime); // it will represent date in the console of developer tool
-//       document.getElementById("time").textContent = datetime; // represent on html page
-		
-// 		//Date.prototype.toLocaleTimeString():
-//       `use strict`
-//      var datetime = new Date().toLocaleTimeString();
-//      console.log(datetime); // it will represent date in the console of developers tool
-//      document.getElementById("time").textContent = datetime; // represent on html page
+   <script>
 
 	  $(document).ready(function() {
 			    	        function disableBack() { window.history.forward() }

@@ -31,8 +31,16 @@
     <div class="container-fluid mt-1">
    
     <div class="d-flex justify-content-center mb-2 mt-2">
-    <c:if test ="${!msg.equals('')}" >
-    	<script> alert('${msg}'); </script> </c:if>
+
+    	<script> 
+    	var msg = '${msg}';
+    	var message = msg.trim();
+    	if ( message !=null && message != '')
+    		{
+    			alert(message);
+    			message =' ';
+    		}    	
+    	</script>
     	<div>
     		<button class="btn btn-success button-length">Add Route</button>
     	</div></div>

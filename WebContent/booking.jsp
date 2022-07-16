@@ -10,22 +10,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>Travel</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
 
 </head>
 <body >
 	 <jsp:include page="header.jsp" /> 
 
-
-
-<%--     <c:if test="${sessionScope.role != 'Guest'}"> --%>
-<!--         <div class="d-flex justify-content-around mb-2 mt-2"> -->
-<!--             <span class="text-danger"> -->
-<%--                 <h5> ${msg}</h5> --%>
-<!--             </span> -->
-<!--             <div><a class="btn btn-success" href="Booking?mode=N">Add New Trip</a></div> -->
-<!--         </div> -->
-<%--     </c:if> --%>
 
 <form name=booking>
 
@@ -168,6 +158,7 @@
 				fare.style.cursor = "auto";
 			}
 		}
+		setTimeout(location.reload(), 3000);
 	}
 	
 			booking_no.style.backgroundColor = "grey";

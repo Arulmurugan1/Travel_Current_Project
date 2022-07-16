@@ -9,5 +9,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="M:/Servers/apache-tomcat-9.0.58/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="M:/jar Files/itextpdf-5.1.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

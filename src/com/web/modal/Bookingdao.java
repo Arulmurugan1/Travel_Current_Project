@@ -18,7 +18,7 @@ public class Bookingdao {
 	private static final String SELECT_ALL_USERS = "SELECT A.*,B.CUSTOMER_NAME FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
 	private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
 	
-
+	Connection con =Dbmanager.getConnection();
 	
 
 	public Bookingdao() {
@@ -51,13 +51,13 @@ public class Bookingdao {
 	public Booking selectBooking(int id) {
 		Booking user = null;
 		System.out.println(SELECT_USER_BY_ID);
-		Connection connection = null;
+		
 		
 
 		try {
 
-			connection = Dbmanager.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);
+			
+			PreparedStatement preparedStatement = con.prepareStatement(SELECT_USER_BY_ID);
 
 			preparedStatement.setInt(1, id);
 			System.out.println(preparedStatement);
@@ -65,13 +65,14 @@ public class Bookingdao {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				int id1 = rs.getInt("booking_no");
-				String pickup = rs.getString("pickup_from");
-				String drop = rs.getString("drop_at");
-				int customer = rs.getInt("customer_id");
-				String vehicle = rs.getString("vehicle_no");
-				String driver = rs.getString("driver_id");
-				double fare = rs.getDouble("fare");
+				int c =1;
+				int id1 = rs.getInt(c++);
+				String pickup = rs.getString(c++);
+				String drop = rs.getString(c++);
+				int customer = rs.getInt(c++);
+				String vehicle = rs.getString(c++);
+				String driver = rs.getString(c++);
+				double fare = rs.getDouble(c++);
 				user = new Booking(id1, pickup, drop, customer, vehicle, driver, fare);
 			}
 		} catch (Exception e) {
@@ -83,12 +84,11 @@ public class Bookingdao {
 	public Booking selectBookingByCustomerId(int id) {
 		Booking user = null;
 		System.out.println(SELECT_USER_BY_CUSTOMER_ID);
-		Connection connection = null;
 
 		try {
 
-			connection = Dbmanager.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_CUSTOMER_ID);
+			
+			PreparedStatement preparedStatement = con.prepareStatement(SELECT_USER_BY_CUSTOMER_ID);
 
 			preparedStatement.setInt(1, id);
 			System.out.println(preparedStatement);
@@ -96,13 +96,14 @@ public class Bookingdao {
 			ResultSet rs = preparedStatement.executeQuery();
 
 			while (rs.next()) {
-				int id1 = rs.getInt("booking_no");
-				String pickup = rs.getString("pickup_from");
-				String drop = rs.getString("drop_at");
-				int customer = rs.getInt("customer_id");
-				String vehicle = rs.getString("vehicle_no");
-				String driver = rs.getString("driver_id");
-				double fare = rs.getDouble("fare");
+				int c =1;
+				int id1 = rs.getInt(c++);
+				String pickup = rs.getString(c++);
+				String drop = rs.getString(c++);
+				int customer = rs.getInt(c++);
+				String vehicle = rs.getString(c++);
+				String driver = rs.getString(c++);
+				double fare = rs.getDouble(c++);
 				user = new Booking(id1, pickup, drop, customer, vehicle, driver, fare);
 			}
 		} catch (Exception e) {
@@ -118,12 +119,12 @@ public class Bookingdao {
 		// using try-with-resources to avoid closing resources (boiler plate code)
 		List<Booking> users = new ArrayList<>();
 
-		Connection connection = null;
+		
 
 		try {
-			connection = Dbmanager.getConnection();
+			
 
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);
+			PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_USERS);
 			System.out.println(preparedStatement);
 
 			// Step 3: Execute the query or update query
@@ -132,14 +133,15 @@ public class Bookingdao {
 			// Step 4: Process the ResultSet object.
 			while (rs.next()) {
 
-				int id = rs.getInt("booking_no");
-				String pickup = rs.getString("pickup_from");
-				String drop = rs.getString("drop_at");
-				int customer = rs.getInt("customer_id");
-				String vehicle = rs.getString("vehicle_no");
-				String driver = rs.getString("driver_id");
-				double fare = rs.getDouble("fare");
-				String customername = rs.getString("customer_name");
+				int c =1;
+				int id = rs.getInt(c++);
+				String pickup = rs.getString(c++);
+				String drop = rs.getString(c++);
+				int customer = rs.getInt(c++);
+				String vehicle = rs.getString(c++);
+				String driver = rs.getString(c++);
+				double fare = rs.getDouble(c++);
+				String customername = rs.getString(c++);
 				users.add(new Booking(id, pickup, drop, customer, vehicle, driver, fare, customername));
 			}
 		} catch (Exception e) {
@@ -152,16 +154,14 @@ public class Bookingdao {
 	{
 		boolean rowsAffected = false;
 		System.out.println(DELETE_USERS_SQL);
-		Connection connection = null;
 		try {
-			connection = Dbmanager.getConnection();
-			PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);
+			
+			PreparedStatement statement = con.prepareStatement(DELETE_USERS_SQL);
 
 			statement.setInt(1, id);
 			rowsAffected = statement.executeUpdate() > 0;
 		} catch (Exception e) {
 			e.printStackTrace();
-			;
 		}
 		return rowsAffected;
 	}
@@ -219,11 +219,10 @@ public class Bookingdao {
 
 		boolean rows = true;
 		int cntl = 1;
-		Connection connection = null;
 
 		try {
-			connection = Dbmanager.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(CheckQuery(user, c));
+			
+			PreparedStatement preparedStatement = con.prepareStatement(CheckQuery(user, c));
 
 			System.out.println(CheckQuery(user, c));
 

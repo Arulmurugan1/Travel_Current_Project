@@ -1,12 +1,19 @@
 @charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border-right: 0;
+    font-size: 15px;
+}
 
-*{
-	margin : 0;
-	padding : 0;
-	box-sizing : border-box;
-	font-family :'Poppins' , sans-serif ;
-	border-right: 0;
-	font-size :15px;
+#tab {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-item: center;
 }
 
 #loader {
@@ -17,20 +24,28 @@
     background: #fff;
 }
 
-#content {
-    background: white;
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
     display: flex;
-    width: 420px;
-    padding: 50px 0;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    row-gap: 30px;
-    position:absolute;
+}
+
+.content {
+    width: 50%;
+    border: 1px solid #000;
+    border-radius : 20px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    text-underline-offset: 20px;
 }
 
 #circular-progress {
@@ -65,159 +80,155 @@
     position: relative;
 }
 
-#card{
-    background-color:lightsteelblue;
+#card {
+    background-color: lightsteelblue;
     margin-right: 2cm;
     margin-top: 3cm;
     background-image: url(https://img.wallpapersafari.com/desktop/1680/1050/15/19/9bdWqY.jpg);
-	
-}
-#body{
-	margin :auto;
 }
 
-body{
-    background-image: url(https://wallpapercave.com/wp/wp2610900.jpg),url(https://c4.wallpaperflare.com/wallpaper/800/831/598/digital-art-neon-mountains-lake-wallpaper-preview.jpg);
-	background-blend-mode: multiply; 
-				/*     filter : brightness(100%);  */
-				/*      filter : blur(30px);  */
-				/*       filter : invert(70);  */
-				/*        filter : saturate(30);  */
-				/*         filter : contrast(50%);     */
-				/*         filter : hue-rotate(240deg);     */
-				/*         filter : contrast(50%);     */
-	
-	
+body {
+    background-image: url(https://wallpapercave.com/wp/wp2610900.jpg), url(https://c4.wallpaperflare.com/wallpaper/800/831/598/digital-art-neon-mountains-lake-wallpaper-preview.jpg);
+    background-blend-mode: multiply;
+    /*     filter : brightness(100%);  */
+    /*      filter : blur(30px);  */
+    /*       filter : invert(70);  */
+    /*        filter : saturate(30);  */
+    /*         filter : contrast(50%);     */
+    /*         filter : hue-rotate(240deg);     */
+    /*         filter : contrast(50%);     */
 }
 
-
-
-#preloader{
+#preloader {
     background: #000 url(./loader.gif) no-repeat center;
     background-size: 50%;
     height: 120vh;
     width: 100%;
-    overflow :hidden ;
-    position :absolute ;
+    overflow: hidden;
+    position: absolute;
     z-index: 100;
-    display :flex;
-    right :20;
-    align-items :center ;
-    justify-content :center;
+    display: flex;
+    right: 20;
+    align-items: center;
+    justify-content: center;
 }
 
 thead>tr>th {
-	position: sticky ;
-	top: 0px;
-	background-color : blue;
-}
-.table-wrapper {
-	overflow-y: scroll;
-	max-height:60vh;
+    position: sticky;
+    top: 0px;
+    background-color: blue;
 }
 
-button:hover , input.btn:hover {
-	box-shadow : 0 8px 16px 0 black; 
+.table-wrapper {
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+
+button:hover,
+input.button:hover {
+    box-shadow: 0 8px 16px 0 black;
 }
 
 tbody>tr:hover {
-	background-color : green ;
-	cursor : auto ;
+    background-color: green;
+    cursor: auto;
 }
 
-h5{
-	color : red;
+h5 {
+    color: red;
 }
-/* td { */
-/* /* 	text-transform : uppercase; uppercase,lowercase,capitalize,none*/ */
-/* } */
 
-/* div.animate { */
-/* 	top : 100px; */
-/* 	width: 90px;   */
-/*     height: 25px;   */
-/*     background: red;   */
-/*     position: relative;     */
-/*     animation: myfirst 5s;  */
-/* } */
+.home-button {
+    text-align: center;
+    padding: .8rem 3rem;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 2%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
-/* @keyframes myfirst {   */
-/*     0%   {background:red; left:8px; top:0px;}   */
-/*     25%  {background:yellow; left:160px; top:0px;}   */
-/*     50%  {background:blue; left:160px; top:100px;}   */
-/*     75%  {background:green; left:8px; top:100px;}   */
-/*     100% {background:red; left:8px; top:0px;}   */
-/* }   */
+.home-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: red;
+    transition: .3s linear;
+    z-index: -1;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
 
+.home-button:hover::before {
+    width: 100%;
+    left: 0;
+}
 
-.insert{
-	top :20%;
-	left : 50%;
-	height :50%;
-	width :80%;
+.home-button:hover {
+    color: white;
+}
+
+.insert {
+    top: 20%;
+    left: 50%;
+    height: 50%;
+    width: 80%;
 }
 
 .button-length {
-	width : 100px;
-	border-radius :30px;
+    width: 100px;
+    border-radius: 30px;
 }
 
-.content{
-	width: 100vh;
-	height:100vh;
-	display:flex;
-	justify-content:center;
-	align-items:center;
+.size {
+    width: 90vh;
+    height: 70vh;
 }
 
-.size{
-	width : 90vh;
-	height :70vh;
-	
+.loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
 }
 
- .loader {
-            border: 12px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 12px solid #444444;
-            width: 70px;
-            height: 70px;
-            animation: spin 1s linear infinite;
-        }
-          
 @keyframes spin {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-          
-.center {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-/* #loader { */
-/*   border: 12px solid #f3f3f3; */
-/*   border-radius: 50%; */
-/*   border-top: 12px solid blue; */
-/*   border-bottom: 12px solid blue; */
-/*   width: 100px; */
-/*   height: 100px; */
-/*   -webkit-animation: spin 2s linear infinite; */
-/*   animation: spin 2s linear infinite; */
-/* } */
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
-/* @-webkit-keyframes spin { */
-/*   0% { -webkit-transform: rotate(0deg); } */
-/*   100% { -webkit-transform: rotate(360deg); } */
-/* } */
+#center {
+    display:flex;
+    justify-content:center;
+}
 
-/* @keyframes spin { */
-/*   0% { transform: rotate(0deg); } */
-/*   100% { transform: rotate(360deg); } */
-/* } */
-
-
+#content {
+    background: white;
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    position:absolute;
+}

@@ -15,10 +15,6 @@
 <title>Travel</title>
 </head>
 <body>
-
-<jsp:useBean id="booking_no" scope="request" class="java.lang.String"></jsp:useBean>
-
-	
    
    <div class="container-fluid mt-4">
                <div class="card" >
@@ -27,9 +23,7 @@
                            		
                        <input type=hidden name=mode id=mode value=I />
                        <input type=hidden name=hStatus id=hStatus value='' />
-                       <input type=hidden name=hFare id=hFare value='' />
-                       <input type=hidden name=hPickup id=hpickup value=' '/> 
-                       <input type=hidden name=hDrop id=hdrop value=' '/> 
+                       <input type=hidden name=hFare id=hFare value='' /> 
                        <input type=hidden name=hVehicle id=hvehicle value=' '/> 
                        
                        
@@ -42,12 +36,14 @@
                 <fieldset class="form-group">
                     <label>Pickup From</label>
                         <select class="form-select form-control" name="pickup_from" id="pickup_from"
-                            style="width :340px" onChange="javascript:fareClick()" required >
+                            style="width :340px" onChange="javascript:fareClick();query();" required >
                              <option value="" selected></option>
-                            <c:forTokens items = "Chennai,Madurai,Kanyakumari,Coimbatore,Erode,Vellore" delims="," var="pickup">
-                            	<option value='<c:out value='${pickup}' />' >${pickup}</option>
-                   
-                            </c:forTokens>
+                            <sql:query dataSource="${db}" var="rs">
+								select Distinct start from route order by start;			
+							</sql:query> 
+							<c:forEach  var='vehicle' items='${rs.rows}'>
+								<option value="${vehicle.start}">${vehicle.start}</option>
+							</c:forEach>
                         </select>
                     
                 </fieldset>
@@ -58,10 +54,13 @@
                         <select class="form-select form-control" name="drop_at" id="drop_at" style="width :340px"
                             onChange="javascript:fareClick();query();" required>
                             <option value="" selected></option>
-                            <c:forTokens items = "Chennai,Salem,Madurai,Kanyakumari,Coimbatore,Erode,Vellore" delims="," var="drop">
-                            	<option value='<c:out value='${drop}' />' >${drop}</option>
-                            </c:forTokens>
-                        </select>
+                            <sql:query dataSource="${db}" var="rs">
+								select Distinct end from route where start ='${pickup}' order by end;			
+							</sql:query> 
+							<c:forEach  var='vehicle' items='${rs.rows}'>
+								<option value="${vehicle.end}">${vehicle.end}</option>
+							</c:forEach>
+                    </select>
                     
                 </fieldset>
             </div>
@@ -93,14 +92,6 @@
                 <fieldset class="form-group">
                     <label>Driver Id</label>                 
                     <select class="form-select form-control" name="driver_id" id="driver_id" style="width :340px" required readonly>
-<!--                         <option value="" selected></option> -->
-                       
-<!--                         Data fetching from servlet method -->
-
-<%--                         <c:forEach var="driver" items="${listdriver}"> --%>
-<%--                             <option value="${driver.id} - ${driver.name}">${driver.id} - ${driver.name}</option> --%>
-<%--                         </c:forEach> --%>
-
                         <sql:query dataSource="${db}" var="rs">
                         	SELECT d.* from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup}' and r.end ='${drop}';
                         </sql:query>
@@ -190,14 +181,12 @@
 		
 		
 	}	
-		let drop_at = '${drop}' ;
-		let fare    = '${fare}';
-	if ( drop_at.trim() !=""  && fare.trim() !="")
-		{
-		document.bookingInsert.pickup_from.value = "${pickup}";
-		document.bookingInsert.drop_at.value = "${drop}";
-		document.bookingInsert.fare.value = "${fare}";		
-		}
+	if ( '${pickup}' !="")
+		document.bookingInsert.pickup_from.value = '${pickup}';
+	if ( '${drop}' !="")	
+		document.bookingInsert.drop_at.value = '${drop}';
+	if ( '${fare}' !="")
+		document.bookingInsert.fare.value = '${fare}';		
 	
 	
 	function submitPage()

@@ -13,9 +13,10 @@ import java.util.Vector;
 public class Dbmanager {
 	
 	
+	static Connection con = null;
+	
 	public static Connection getConnection() 
 	{
-		Connection con = null;
 		try {
 			
 //			--------Put it in classpath------
@@ -30,8 +31,6 @@ public class Dbmanager {
 			
 //			System.out.println(new File(".").getAbsolutePath());---to get absolute local file path
 	
-
-
 			InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
 			Properties db = new Properties();
 			db.load(f);
@@ -301,5 +300,19 @@ public class Dbmanager {
 		
 		return result ;
 	}
-
+	
+	public static void closeConnection()
+	{
+		try
+		{
+			if ( con !=null && !con.isClosed() )
+			{
+				con.close();
+				System.out.println("Connection closed.."+con.isClosed());
+			}
+		}catch(Exception e)
+		{
+			e.getMessage();
+		}
+	}
 }

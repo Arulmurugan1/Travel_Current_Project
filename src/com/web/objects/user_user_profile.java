@@ -1,5 +1,7 @@
 package com.web.objects;
 
+import java.time.LocalDateTime;
+
 public class user_user_profile {
 		private String username;
 		private String password;
@@ -7,19 +9,21 @@ public class user_user_profile {
 		private String create_time;
 		private String user_id;
 		private String created_user;
+		private LocalDateTime last_login;
 		public user_user_profile() {
 			super();
 			
 		}
 		
 		
-		public user_user_profile(String username, String password, String role, String user_id, String created_user) {
+		public user_user_profile(String username, String password, String role, String user_id, String created_user,LocalDateTime last_login) {
 			super();
 			this.username = username;
 			this.password = password;
 			this.role = role;
 			this.user_id = user_id;
 			this.created_user=created_user;
+			this.last_login = last_login;
 		}
 		
 		
@@ -71,6 +75,14 @@ public class user_user_profile {
 		}
 		public void setUser_id(String user_id) {
 			this.user_id = user_id;
+		}
+		public LocalDateTime getLast_login() {
+			return last_login;
+		}
+
+
+		public void setLast_login(LocalDateTime last_login) {
+			this.last_login = last_login;
 		}
 		
 		

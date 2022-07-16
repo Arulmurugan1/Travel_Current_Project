@@ -21,6 +21,7 @@ public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public user_user_profile_dao userdao = null;
 	public user_user_profile u =null;
+	RequestDispatcher rd ;
 	
 public LoginServlet() {
         super();
@@ -80,8 +81,6 @@ public LoginServlet() {
 				if( ( user.equals("") || user.equalsIgnoreCase("null") )   || ( password.equals("") || password.equalsIgnoreCase("null") ) )
 				{
 					request.setAttribute("msg","Enter login credentials first ...");
-					RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-					rd.forward(request, response);
 				}
 				else
 				{
@@ -90,36 +89,36 @@ public LoginServlet() {
 
 						u = userdao.selectUser(user);
 
-						String name 	=u.getUsername();
-						String pass 	=u.getPassword();
-						String role		=u.getRole();
-						String id 		=u.getUser_id();
+						String name 	  =u.getUsername();
+						String pass 	  =u.getPassword();
+						String role		  =u.getRole();
+						String id 		  =u.getUser_id();
+						System.out.println( " Last Login "+u.getLast_login());
+						String last_login = u.getLast_login().format(myFormatObj);
 
 						System.out.println("DB Username : "+ name + " Password : "+pass);
 						if(user.trim().equals(id) && password.trim().equals(pass)) {
 							session.setAttribute("user", name);
 							session.setAttribute("role", role);
-							session.setAttribute("timeStamp", formattedDate);
+							session.setAttribute("timeStamp", last_login);
+							
+							if (userdao.updateUser(u) )
+									System.out.println(" Last logged in updated ");
 
 							System.out.println("Logged in at : "+ session.getCreationTime());
-
-							RequestDispatcher rd = request.getRequestDispatcher("home.jsp");
+							rd = request.getRequestDispatcher("home.jsp");
 							rd.forward(request, response);
 						}
 						else 
 						{
 							request.setAttribute("txtuser",user);
 							request.setAttribute("msg","Incorrect Username or Password ...");
-							RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-							rd.forward(request, response);
 						}
 					}
 					else
 					{
 						request.setAttribute("txtuser",user);
 						request.setAttribute("msg","Create an account to login ..");
-						RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-						rd.forward(request, response);
 					}
 
 
@@ -147,8 +146,6 @@ public LoginServlet() {
 				{
 					System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
 					request.setAttribute("msg","Enter Login details first...");
-					RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-					rd.forward(request, response);
 				}
 				else 
 				{
@@ -160,8 +157,6 @@ public LoginServlet() {
 						{
 							System.out.println( " In LoginServlet : name= "+name+" User already available");
 							request.setAttribute("msg","User Account already exist as " + id);
-							RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-							rd.forward(request, response);
 						}
 						else
 						{
@@ -169,15 +164,11 @@ public LoginServlet() {
 							{
 								System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
 								request.setAttribute("msg","User Added Successfully ...");
-								RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-								rd.forward(request, response);
 							}
 							else
 							{
 								System.out.println( " In LoginServlet : name= "+name+" Error in insertion");
 								request.setAttribute("msg","Adding failed Check the error occured...");
-								RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-								rd.forward(request, response);
 							}
 						}
 
@@ -185,8 +176,6 @@ public LoginServlet() {
 					else
 					{
 						request.setAttribute("msg","Password doesn't match...");
-						RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-						rd.forward(request, response);
 					}
 
 				}
@@ -195,6 +184,10 @@ public LoginServlet() {
 				System.out.println("Exception in user addition ");e.printStackTrace();			
 			}
 		}
-
+		try 
+		{
+		rd = request.getRequestDispatcher("index.jsp");
+		rd.forward(request, response);
+		}catch(Exception e) {System.out.println("Request dispatched already  ["+rd.toString() +"]");}
 	}
 }

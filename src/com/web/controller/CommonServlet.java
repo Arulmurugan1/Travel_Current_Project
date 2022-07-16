@@ -1,6 +1,8 @@
 package com.web.controller;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.HashMap;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -36,20 +38,13 @@ public class CommonServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String hPickup			= "";
-		String hDrop 			= "";
 		String status			= request.getParameter("hStatus");
-		String hFare 			= " ";
 		try {
 			if ( status.trim().equals("I") )
 			{
-				
-				hPickup = request.getParameter("hPickup");
-				hDrop   = request.getParameter("hDrop");
-				hFare	= request.getParameter("hFare");
-				request.setAttribute("pickup", hPickup);
-				request.setAttribute("drop", hDrop);
-				request.setAttribute("fare", hFare);
+				request.setAttribute("pickup", request.getParameter("pickup_from") );
+				request.setAttribute("drop", request.getParameter("drop_at"));
+				request.setAttribute("fare", request.getParameter("hFare"));
 			}
 			RequestDispatcher rd = request.getRequestDispatcher("bookinginsertform.jsp");
 			rd.forward(request, response);

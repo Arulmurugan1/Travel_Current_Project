@@ -18,18 +18,17 @@ public class Routedao {
 	private static final String SELECTALL = "select * from ROUTE ORDER BY START";
 	private static final String DELETE = "delete from ROUTE where VEHICLE_NO = ?;";
 	private static final String UPDATE = "update ROUTE set START=?,END=? where VEHICLE_NO = ?";	
-	private static final String CHECK  = "SELECT 'X' FROM ROUTE WHERE START = ? AND END =?;";
+	private static final String CHECK  = "SELECT vehicle_no FROM ROUTE WHERE START = ? AND END =?;";
 	
-	Connection connection = null;
+	Connection con = Dbmanager.getConnection();
 
 	public boolean insert(Route r){
 		System.out.println(INSERT);
 		
 
 		try {
-			connection = Dbmanager.getConnection();
 				
-			PreparedStatement preparedStatement = connection.prepareStatement(INSERT);
+			PreparedStatement preparedStatement = con.prepareStatement(INSERT);
 			int cntl = 0;
 			preparedStatement.setString(++cntl,r.getVehicle_no() );
 			preparedStatement.setString(++cntl,r.getStart() );
@@ -45,14 +44,13 @@ public class Routedao {
 		return rowsAffected;
 	}
 
-	public boolean check(Route r){
+	public String check(Route r){
 		System.out.println(CHECK);
-		
+		String str ="";
 
 		try {
-			connection = Dbmanager.getConnection();
 				
-			PreparedStatement preparedStatement = connection.prepareStatement(CHECK);
+			PreparedStatement preparedStatement = con.prepareStatement(CHECK);
 			int cntl = 0;
 			preparedStatement.setString(++cntl,r.getStart() );
 			preparedStatement.setString(++cntl,r.getEnd() );
@@ -63,14 +61,14 @@ public class Routedao {
 			
 			if (rs.next())
 			{
-				rowsAffected = true ;
-				System.out.println("Route Exist");
+				str = rs.getString(1)+"";
+				System.out.println("Route for vehicle"+rs.getString(1));
 			}
 			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		return rowsAffected;
+		return str;
 	}
 	
 	public Route selectRoute(String s)  {
@@ -79,8 +77,7 @@ public class Routedao {
 			Route r = new Route();
 		try{
 
-			connection = Dbmanager.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECTBYNO);
+			PreparedStatement preparedStatement = con.prepareStatement(SELECTBYNO);
 			int cntl = 0;
 			preparedStatement.setString(++cntl,s);
 			System.out.println(preparedStatement);
@@ -89,8 +86,8 @@ public class Routedao {
 			ResultSet rs = preparedStatement.executeQuery();
 			
 			while (rs.next()) {
-				
-				r =new Route(rs.getString("vehicle_no"), rs.getString("start"), rs.getString("end"));
+				int c =1;
+				r =new Route(rs.getString(c++), rs.getString(c++), rs.getString(c++));
 				
 			}
 		} catch(Exception e) {
@@ -108,9 +105,9 @@ public class Routedao {
 
 		try 
 		{
-			connection = Dbmanager.getConnection();
+			
 
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECTALL);
+			PreparedStatement preparedStatement = con.prepareStatement(SELECTALL);
 			System.out.println(preparedStatement);
 
 			// Step 3: Execute the query or update query
@@ -118,8 +115,8 @@ public class Routedao {
 
 			// Step 4: Process the ResultSet object.
 			while (rs.next()) {
-
-				users.add( new Route(rs.getString("vehicle_no"), rs.getString("start"), rs.getString("end")));
+				int c =1;
+				users.add( new Route(rs.getString(c++), rs.getString(c++), rs.getString(c++)));
 			}
 		}
 		catch(Exception e) {
@@ -134,8 +131,8 @@ public class Routedao {
 		
 		try  
 		{
-			connection = Dbmanager.getConnection(); 
-			PreparedStatement statement = connection.prepareStatement(DELETE);
+			
+			PreparedStatement statement = con.prepareStatement(DELETE);
 			int cntl = 0;
 			statement.setString(++cntl,s);
 			
@@ -150,9 +147,8 @@ public class Routedao {
 		boolean rowUpdated =false;
 		
 		try
-		{
-			connection = Dbmanager.getConnection(); 
-			PreparedStatement preparedStatement = connection.prepareStatement(UPDATE);
+		{ 
+			PreparedStatement preparedStatement = con.prepareStatement(UPDATE);
 			int cntl = 0;
 			preparedStatement.setString(++cntl,r.getStart() );
 			preparedStatement.setString(++cntl,r.getEnd() );
@@ -163,6 +159,5 @@ public class Routedao {
 		}
 		return rowUpdated;
 	}
-
 
 }

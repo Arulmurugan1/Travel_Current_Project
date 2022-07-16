@@ -12,69 +12,46 @@
 </head>
 <body>
 	<jsp:include page="header.jsp" /> 
-	    
-    <div class="container-fluid mt-5 " >
-        <div class="card jumbotron" style="margin : 1cm 6cm ;background-color: white;">
-            <div class="card-body" id="body">
-            
-                <form  name=dummy method=post>
-                    <div class="row">
-                    	<input type=hidden name="mode" value=Q >
-                    	
-                        <div class="col-xl-6"><button class="btn text-primary" onclick="javascript:submitbooking();" >Bookings</button></div>
-                        <div class="col-xl-6"><button class="btn text-primary" onclick="javascript:submitcustomer();">Customers</button></div>
-                       
+
+    <div class="container">
+        <div class="content">
+            <div class="card-body" >
+            <form name=home id=center >
+            	<input type=hidden name=mode value=Q >
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <a class="home-button  text-primary" onclick="Submit('ListBookingServlet')">Bookings</a>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-xl-6 "><button class="btn text-primary" onclick="javascript:submitvehicle();">Vehicles</button></div>
-                        <div class="col-xl-6 "><button class="btn text-primary" onclick="javascript:submitdriver();">Drivers</button></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <a class="home-button text-primary" onclick="Submit('ListCustomerServlet')">Customers</a>
                     </div>
-                    <div class="row mt-2">
-                        <div class="col-xl-6 "><button class="btn text-primary" onclick="javascript:submitRoute();">Routes</button></div>
-                        <div class="col-xl-6 "><button class="btn text-primary" disabled onclick="javascript:submitdriver();">Users</button></div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <a class="home-button text-primary" onclick="Submit('ListVehicleServlet')">Vehicles</a>
                     </div>
-                </form>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <a class="home-button text-primary" onclick="Submit('ListDriverServlet')">Drivers</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <a class="home-button text-primary" onclick="Submit('ListRouteServlet')" >Routes</a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <a class="home-button text-primary" disabled>Users</a>
+                    </div>
+                </div></form>
             </div>
+
         </div>
-
     </div>
-
-
-
-<script language="javascript">
- function submitbooking(){
- 	with(document.dummy){
- 		action="ListBookingServlet";
- 		submit();
- 	}
- }
- 	function submitcustomer(){
- 	 	with(document.dummy){
- 	 		action="ListCustomerServlet";
- 	 		submit();
- 	 	}
- 	}
- 	 	function submitvehicle(){
- 	 	 	with(document.dummy){
- 	 	 		action="ListVehicleServlet";
- 	 	 		submit();
- 	 	 	}
- 	 	}
- 	 	 	function submitdriver(){
- 	 	 	 	with(document.dummy){
- 	 	 	 		action="ListDriverServlet";
- 	 	 	 		submit();
- 	 	 	 	}
- 	 	 	}
- 	function submitRoute(){
-	 	 	with(document.dummy){
-	 	 	 		action="ListRouteServlet";
-	 	 	 		submit();
-	 	 	 	}
- } 
-
-
-</script>
-
+    
+     <script>
+     function Submit(servlet)
+	{
+		with(document.home)
+		{
+		action =servlet;
+		submit();
+		}
+	}
+     </script>
 </body>
 </html>

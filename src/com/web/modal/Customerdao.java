@@ -20,18 +20,18 @@ public class Customerdao {
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";
     private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?;";
 
+    Connection con =Dbmanager.getConnection();
+    
     public Customerdao() {}
 
     public boolean insertCustomer(Customer user){
         System.out.println(INSERT_CUSTOMER);
-        Connection connection =null;
         
         boolean rows =false ;
 
         try {
-        	connection = Dbmanager.getConnection();
         	
-        	PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER);
+        	PreparedStatement preparedStatement = con.prepareStatement(INSERT_CUSTOMER);
         	
             preparedStatement.setString(1,user.getCustomer_name() );
             preparedStatement.setString(2,user.getStart() );
@@ -52,14 +52,13 @@ public class Customerdao {
     public List< Customer > selectCustomerById(String id)  {
         
         System.out.println(SELECT_CUSTOMER_BY_ID);
-        Connection connection = null;
-        
+       
         List < Customer > customer = new ArrayList<>();
         
         try{
         	
-        	connection = Dbmanager.getConnection();
-        	PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMER_BY_ID);
+        	
+        	PreparedStatement preparedStatement = con.prepareStatement(SELECT_CUSTOMER_BY_ID);
         		        	
             preparedStatement.setInt(1, Integer.parseInt(id));
             System.out.println(preparedStatement);
@@ -69,14 +68,15 @@ public class Customerdao {
 
             
             while (rs.next()) {
-                String name = rs.getString("customer_name");
-                String start = rs.getString("start");
-                String end = rs.getString("end");
-                String age = rs.getString("age");
-                String gender = rs.getString("gender");
-                String email = rs.getString("email");
-                String phone = rs.getString("phone_whatsapp");
-                int id1 = rs.getInt("customer_id");
+            	int c=1;
+                String name = rs.getString(c++);
+                String start = rs.getString(c++);
+                String end = rs.getString(c++);
+                String age = rs.getString(c++);
+                String gender = rs.getString(c++);
+                String email = rs.getString(c++);
+                String phone = rs.getString(c++);
+                int id1 = rs.getInt(c++);
                 
                 customer.add(new Customer(name, start, end, age, gender, email, phone, id1));
             }
@@ -89,12 +89,11 @@ public class Customerdao {
     public Customer selectCustomerByName(String name1)  {
         Customer user = null;
         System.out.println(SELECT_CUSTOMER_BY_NAME);
-        Connection connection = null;
-        
+       
         try{
         	
-        	 connection = Dbmanager.getConnection();
-        	PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMER_BY_NAME);
+        	
+        	PreparedStatement preparedStatement = con.prepareStatement(SELECT_CUSTOMER_BY_NAME);
         		        	
             preparedStatement.setString(1, name1);
             System.out.println(preparedStatement);
@@ -104,14 +103,15 @@ public class Customerdao {
 
             
             while (rs.next()) {
-                String name = rs.getString("customer_name");
-                String start = rs.getString("start");
-                String end = rs.getString("end");
-                String age = rs.getString("age");
-                String gender = rs.getString("gender");
-                String email = rs.getString("email");
-                String phone = rs.getString("phone_whatsapp");
-                int id1 = rs.getInt("customer_id");
+            	int c=1;
+                String name = rs.getString(c++);
+                String start = rs.getString(c++);
+                String end = rs.getString(c++);
+                String age = rs.getString(c++);
+                String gender = rs.getString(c++);
+                String email = rs.getString(c++);
+                String phone = rs.getString(c++);
+                int id1 = rs.getInt(c++);
                 
                 user = new Customer(name, start, end, age, gender, email, phone, id1);
             }
@@ -128,16 +128,12 @@ public class Customerdao {
         // using try-with-resources to avoid closing resources (boiler plate code)
         List < Customer > users = new ArrayList < > ();
         
-        
-        Connection connection = null;
-
-        
-        
+       
         try 
         {
-        	connection = Dbmanager.getConnection();
+        
         	
-        	PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_CUSTOMERS);
+        	PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_CUSTOMERS);
             System.out.println(preparedStatement);
             
             // Step 3: Execute the query or update query
@@ -147,14 +143,15 @@ public class Customerdao {
             while (rs.next()) {
             	
             	
-            	String name = rs.getString("customer_name");
-                String start = rs.getString("start");
-                String end = rs.getString("end");
-                String age = rs.getString("age");
-                String gender = rs.getString("gender");
-                String email = rs.getString("email");
-                String phone = rs.getString("phone_whatsapp");
-                int id1 = rs.getInt("customer_id");
+            	int c=1;
+                String name = rs.getString(c++);
+                String start = rs.getString(c++);
+                String end = rs.getString(c++);
+                String age = rs.getString(c++);
+                String gender = rs.getString(c++);
+                String email = rs.getString(c++);
+                String phone = rs.getString(c++);
+                int id1 = rs.getInt(c++);
                  
                  users.add( new Customer(name, start, end, age, gender, email, phone, id1));
                 
@@ -168,11 +165,11 @@ public class Customerdao {
     public boolean deleteCustomer(int id){
         boolean rowDeleted=false;
         System.out.println(DELETE_CUSTOMER);
-        Connection connection =null;
+        
         try  
         {
-        	 connection = Dbmanager.getConnection(); 
-        	PreparedStatement statement = connection.prepareStatement(DELETE_CUSTOMER);
+        	 
+        	PreparedStatement statement = con.prepareStatement(DELETE_CUSTOMER);
             
         	statement.setInt(1, id);
             rowDeleted = statement.executeUpdate() > 0;
@@ -184,11 +181,11 @@ public class Customerdao {
 
     public boolean updateCustomer(Customer user)  {
         boolean rowUpdated =false;
-        Connection connection =null;
+       
         try
         {
-        	connection = Dbmanager.getConnection(); 
-        	PreparedStatement statement = connection.prepareStatement(UPDATE_CUSTOMER);
+        	
+        	PreparedStatement statement = con.prepareStatement(UPDATE_CUSTOMER);
             
         	statement.setString(1, user.getStart());
         	statement.setString(2, user.getEnd());

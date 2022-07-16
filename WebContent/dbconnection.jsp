@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+R<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>  
 
@@ -17,7 +17,8 @@
 
 
 <!-- Google Icons --> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 
 
 <script type="text/javascript" src="demo.js"></script>
@@ -26,7 +27,7 @@
 
 </head>
 <body>
-<!-- 	<div id="loader" class="center"></div> -->
+
 		<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"  
     			 url="jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false"  user="root"  password="root"/>
     			 
