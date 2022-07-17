@@ -79,7 +79,8 @@
                      <div class="row px-2 ">
                      	<div class="col text-center">
                                <button type="submit" class="btn btn-success button-length">Add</button>
-                               <input type="reset" class="btn btn-success button-length" value=Reset >   
+                               <input type="reset" class="btn btn-success button-length" value=Reset >  
+                               <a href="ListDriverServlet"  class="btn btn-success button-length">Back</a> 
                         </div>
                      </div>
                        
@@ -89,7 +90,7 @@
            </div>
            
       <script>
-    if ( ${ listUser !=null && listUser !=""})
+    if ( "${listUser}" !="" )
     	{
     		driver_id.value ='${listUser.id}';
     		driver_name.value ='${listUser.name}';

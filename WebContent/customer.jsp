@@ -26,66 +26,58 @@
     
 </head>
 <body >
-<jsp:include page="header.jsp" /> 
+ <% if ( request.getParameter("mode") !="QE") {%>
+ 		<jsp:include page="header.jsp" /> 
+ 
+ <% } %>
     
-    <div class="container-fluid table-responsive mt-1">
-   
-    <div class="d-flex justify-content-around mb-2 mt-2">
-    	<span> ${msg} </span>
-    	<div><a class="btn btn-success " href="ListCustomerServlet?mode=N">Add New Customer</a></div></div>
-    <table class="table table-bordered  text-center text-white text-capitalize">
-       <thead>
-                            <tr>
-                            	<th>S.No</th>
-                                <th>Customer Name</th>
-                                <th>Boarding</th>
-                                <th>Drop</th>
-                                <th>Age</th>
-                                <th>Gender</th>
-                                <th>Email</th>
-                                <th>Phone/WhatsApp</th>
-                                <th>Customer Id</th>
-                                    <c:if test = "${sessionScope.role!='Guest'}" ><th>Action</th></c:if>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-                            <c:forEach var="user" items="${listUser}">
+   <div class="table-wrapper table-responsive mt-4">
+        <table class="table table-bordered text-center text-white text-capitalize">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Customer Name</th>
+                    <th>Boarding</th>
+                    <th>Drop</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Phone/WhatsApp</th>
+                </tr>
+            </thead>
+            <tbody>
 
-                                <tr>
-                                	<td class ="no text-center"></td>
-                                    <td>
-                                        <c:out value="${user.customer_name}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.start}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.end}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.age}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.gender}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.email}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.phone}" />
-                                    </td>
-                                    <td >
-                                        <c:out value="${user.customer_id}" />
-                                   
-                                       <c:if test ="${sessionScope.role!='Guest'}" ><td><a href="ListCustomerServlet?mode=E&customer_id=<c:out value='${user.customer_id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="ListCustomerServlet?mode=D&customer_id=<c:out value='${user.customer_id}' />">Delete</a></td></c:if>
-                                </tr>
-                            </c:forEach>
-                            
-                        </tbody>
-    </table>
-    </div>
-    
+                <c:forEach var="user" items="${listUser}">
+
+                    <tr>
+                        <td class="no text-center"></td>
+                        <td>
+                            <c:out value="${user.customer_name}" />
+                        </td>
+                        <td>
+                            <c:out value="${user.start}" />
+                        </td>
+                        <td>
+                            <c:out value="${user.end}" />
+                        </td>
+                        <td>
+                            <c:out value="${user.age}" />
+                        </td>
+                        <td>
+                            <c:out value="${user.gender}" />
+                        </td>
+                        <td>
+                            <c:out value="${user.email}" />
+                        </td>
+                        <td>
+                            <c:out value="${user.phone}" />
+                        </td>
+                    </tr>
+                </c:forEach>
+
+            </tbody>
+        </table>
+    </div>    
 
 </body>
 </html>

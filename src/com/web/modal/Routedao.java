@@ -20,7 +20,9 @@ public class Routedao {
 	private static final String UPDATE = "update ROUTE set START=?,END=? where VEHICLE_NO = ?";	
 	private static final String CHECK  = "SELECT vehicle_no FROM ROUTE WHERE START = ? AND END =?;";
 	
-	Connection con = Dbmanager.getConnection();
+	Connection con = null ;
+	
+	public Routedao() {con = Dbmanager.getConnection();}
 
 	public boolean insert(Route r){
 		System.out.println(INSERT);

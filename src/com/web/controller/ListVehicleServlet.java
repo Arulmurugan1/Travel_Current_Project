@@ -21,15 +21,9 @@ import com.web.util.Dbmanager;
 @WebServlet("/ListVehicleServlet")
 public class ListVehicleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       public Vehicle v;
-       public Vehicledao dao ;
-       public List<Vehicle> l = new ArrayList<>();
     
     public ListVehicleServlet() {
         super();
-        v= new Vehicle();
-        dao =new Vehicledao();
-        
     }
 
 	
@@ -38,57 +32,13 @@ public class ListVehicleServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 
-
-
+		Vehicle v = new Vehicle(); 
+		Vehicledao dao = new Vehicledao();
+		List<Vehicle> l = new ArrayList<>();
 
 		String mode=request.getParameter("mode");
 
-		if(mode.equals("Q"))
-		{
-
-			l = dao.getAllVehicle();
-
-			request.setAttribute("listUser", l);
-			System.out.println(l);
-			RequestDispatcher rd = request.getRequestDispatcher("Vehicle.jsp");
-			rd.forward(request, response);
-		}
-
-		if(mode.equals("N"))	    
-		{
-			Connection con = null;
-			String storeArray = "";
-			try {
-				con = Dbmanager.getConnection();
-				PreparedStatement preparedStatement = con.prepareStatement("select * from car");
-				ResultSet rs = preparedStatement.executeQuery();   
-				
-
-				while (rs.next()) {
-					storeArray += rs.getString("vehicle_no")+",";
-				}
-				storeArray =storeArray.substring(0,storeArray.length()-1);
-			}
-			catch (Exception e) {} 
-			finally {
-				try {
-					if (con != null && !con.isClosed())
-					{
-						con.close();
-						System.out.println();
-					}
-				} catch (SQLException e) {
-
-				}
-			}
-			request.setAttribute("Vehicles", storeArray);
-			RequestDispatcher rd = request.getRequestDispatcher("Vehicleinsertform.jsp");
-			rd.forward(request, response);
-
-		}
-		
-
-		if(mode.equals("E"))
+		if( mode!=null && mode.equals("E"))
 		{
 			String id =request.getParameter("no");
 
@@ -106,13 +56,13 @@ public class ListVehicleServlet extends HttpServlet {
 
 		}
 
-		if(mode.equals("I"))	    
+		if( mode!=null && mode.equals("I"))	    
 		{
-
-			String no = request.getParameter("vehicle_no");
-			String model =request.getParameter("vehicle_model");
-			String type = request.getParameter("vehicle_type");
-			String color = request.getParameter("vehicle_color");
+		
+			String no = request.getParameter("vehicle_no").trim();
+			String model =request.getParameter("vehicle_model").trim();
+			String type = request.getParameter("vehicle_type").trim();
+			String color = request.getParameter("vehicle_color").trim();
 
 			v = new Vehicle(no, model, type, color);
 
@@ -120,16 +70,13 @@ public class ListVehicleServlet extends HttpServlet {
 
 			if(dao.insertVehicle(v))
 			{
-				l = dao.getAllVehicle();
-				request.setAttribute("listUser", l);
-				RequestDispatcher rd = request.getRequestDispatcher("Vehicle.jsp");
-				rd.forward(request, response);
+				request.setAttribute("msg", "Added Success");
 			}
 
 
 		}	    
 
-		if(mode.equals("U"))	    
+		if( mode!=null && mode.equals("U"))	    
 		{
 
 			String no = request.getParameter("vehicle_no");
@@ -153,25 +100,31 @@ public class ListVehicleServlet extends HttpServlet {
 
 		}
 
-		if(mode.equals("D"))
+		if( mode!=null && mode.equals("D"))
 		{
 			String id = request.getParameter("no");
 
 
 			if(dao.deleteVehicle(id));
 			{
-
-
-				l = dao.getAllVehicle();
-
-				request.setAttribute("listUser", l);
-				RequestDispatcher rd = request.getRequestDispatcher("Vehicle.jsp");
-				rd.forward(request, response);
+				request.setAttribute("msg", "Deleted Success");
 			}
 
 		}
 
+		try
+		{
+			l = dao.getAllVehicle();
 
+			request.setAttribute("listUser", l);
+			RequestDispatcher rd = request.getRequestDispatcher("Vehicle.jsp");
+			rd.forward(request, response);
+		}catch(Exception e) {
+			System.out.println("Request Dispatched..");
+		}
+
+		if ( mode !=null && !mode.equals("N"))
+			Dbmanager.closeConnection();
 
 	}
 

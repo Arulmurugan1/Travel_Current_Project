@@ -20,9 +20,9 @@ public class Customerdao {
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";
     private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?;";
 
-    Connection con =Dbmanager.getConnection();
+    Connection con =null;
     
-    public Customerdao() {}
+    public Customerdao() { con = Dbmanager.getConnection();}
 
     public boolean insertCustomer(Customer user){
         System.out.println(INSERT_CUSTOMER);
@@ -121,7 +121,7 @@ public class Customerdao {
         return user;
     }
     
-    public List < Customer > getAllCustomer() throws SQLException{
+    public List < Customer > getAllCustomer(){
     	
     	System.out.println(SELECT_ALL_CUSTOMERS);
 
@@ -157,7 +157,7 @@ public class Customerdao {
                 
             }
         }catch(SQLException e) {
-        	throw e;
+        	e.printStackTrace();
         }
         return users;
     }

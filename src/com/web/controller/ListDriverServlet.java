@@ -11,156 +11,144 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 import com.web.modal.Driverdao;
 import com.web.modal.Vehicledao;
 import com.web.objects.Driver;
 import com.web.objects.Vehicle;
+import com.web.util.Dbmanager;
 
 
 @WebServlet("/ListDriverServlet")
 public class ListDriverServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       public Driver v;
-       public Driverdao dao ;
-       public List<Driver> l = new ArrayList<Driver>();
-    
-    public ListDriverServlet() {
-        super();
-        v= new Driver();
-        dao =new Driverdao();
-        
-    }
 
-	
-	
+
+	public ListDriverServlet() {
+		super();
+
+	}
+
+
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		Driver v = new Driver();
+		Driverdao dao = new Driverdao();
+		List<Driver> l = new ArrayList<Driver>();
+
 		String name ="";
-        String gender ="";
-        String city ="";
-        String phone ="";
-        String no ="";
-        int age =0;
-        int id =0;
-		
+		String gender ="";
+		String city ="";
+		String phone ="";
+		String no ="";
+		int age =0;
+		int id =0;
+
 
 		String mode=request.getParameter("mode");
-		
-		if(mode.equals("Q"))
+
+
+		if( mode !=null && mode.equals("N"))	    
 		{
-			        
-					l = dao.getAllDriver();
-					
-			        request.setAttribute("listUser", l);
-			        System.out.println(l);
-			        RequestDispatcher rd = request.getRequestDispatcher("driver.jsp");
-			        rd.forward(request, response);
+			RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
+			rd.forward(request, response);
+
 		}
 
-		if(mode.equals("N"))	    
+		if( mode !=null && mode.equals("E"))
 		{
-					RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
-			        rd.forward(request, response);
-			        
+			id = Integer.parseInt(request.getParameter("driver_id"));		        
+
+			try {
+				v = dao.selectDriver(id);
+			} catch (Exception e) {
+
+				e.printStackTrace();
+			}
+
+			RequestDispatcher dispatcher = request.getRequestDispatcher("driverform.jsp");
+			request.setAttribute("listUser", v);
+			dispatcher.forward(request, response);
+
 		}
 
-		if(mode.equals("E"))
+		if( mode !=null && mode.equals("I"))	    
 		{
-						id = Integer.parseInt(request.getParameter("driver_id"));		        
-				
-						try {
-							v = dao.selectDriver(id);
-						} catch (Exception e) {
-							
-							e.printStackTrace();
-						}
-					
-			        RequestDispatcher dispatcher = request.getRequestDispatcher("driverform.jsp");
-			        request.setAttribute("listUser", v);
-			        dispatcher.forward(request, response);
 
-			    }
+			name =request.getParameter("driver_name");
+			gender = request.getParameter("gender");
+			city = request.getParameter("city");
+			phone = request.getParameter("phone");
+			no = request.getParameter("vehicle_no");
+			age = Integer.parseInt(request.getParameter("age"));
 
-		if(mode.equals("I"))	    
-		{
-			  
-			        name =request.getParameter("driver_name");
-			        gender = request.getParameter("gender");
-			        city = request.getParameter("city");
-			        phone = request.getParameter("phone");
-			        no = request.getParameter("vehicle_no");
-			        age = Integer.parseInt(request.getParameter("age"));
-			        
-			       v = new Driver(name, gender, city, phone, no, age, id);
-			      if (dao.insertDriver(v) )
-			      {
-			    	  l = dao.getAllDriver();
-				        request.setAttribute("listUser", l);
-				        request.setAttribute("msg", "success");
-				        RequestDispatcher rd = request.getRequestDispatcher("driver.jsp");
-				        rd.forward(request, response);  
-			      }
-			      else {
-			    	  request.setAttribute("msg", "Failed");
-				      RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
-				      rd.forward(request, response); 
-			      }
-				    
-			        
-			        
+			v = new Driver(name, gender, city, phone, no, age, id);
+			if (dao.insertDriver(v) )
+			{
+				request.setAttribute("msg", "success"); 
+			}
+			else {
+				request.setAttribute("msg", "Failed");
+				RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
+				rd.forward(request, response); 
+			}
+
+
+
 		}	    
 
-		if(mode.equals("U"))	    
+		if( mode !=null && mode.equals("U"))	    
 		{
-			       
-			 	name =request.getParameter("driver_name");
-		        gender = request.getParameter("gender");
-		        city = request.getParameter("city");
-		        phone = request.getParameter("phone");
-		        no = request.getParameter("vehicle_no");
-		        age = Integer.parseInt(request.getParameter("age"));
-		        id  = Integer.parseInt(request.getParameter("driver_id"));
-	        
-		        v = new Driver(name, gender, city, phone, no, age, id);
-			    
-			    if( dao.updateDriver(v) ) 
-			    {			    
-			    	l = dao.getAllDriver();
-			        request.setAttribute("listUser", l);
-			        request.setAttribute("msg", "success");
-			        RequestDispatcher rd = request.getRequestDispatcher("driver.jsp");
-			        rd.forward(request, response);
-			    } 
-			    else 
-			    {
-			    	  request.setAttribute("msg", "Failed");
-				      RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
-				      rd.forward(request, response); 
-			     }
+
+			name =request.getParameter("driver_name");
+			gender = request.getParameter("gender");
+			city = request.getParameter("city");
+			phone = request.getParameter("phone");
+			no = request.getParameter("vehicle_no");
+			age = Integer.parseInt(request.getParameter("age"));
+			id  = Integer.parseInt(request.getParameter("driver_id"));
+
+			v = new Driver(name, gender, city, phone, no, age, id);
+
+			if( dao.updateDriver(v) ) 
+			{			    
+				request.setAttribute("msg", "success");
+			} 
+			else 
+			{
+				request.setAttribute("msg", "Failed");
+				RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
+				rd.forward(request, response); 
+			}
 		}
 
-		if(mode.equals("D"))
+		if( mode !=null && mode.equals("D"))
 		{
-					id  = Integer.parseInt(request.getParameter("driver_id"));
-			        
-		
-			        if(dao.deleteDriver(id))
-			        {			    
-				    	l = dao.getAllDriver();
-				        request.setAttribute("listUser", l);
-				        request.setAttribute("msg", "success");
-				        RequestDispatcher rd = request.getRequestDispatcher("driver.jsp");
-				        rd.forward(request, response);
-				    }
-			        else 
-				    {
-				    	  request.setAttribute("msg", "Failed");
-					      RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
-					      rd.forward(request, response); 
-				     }
-		
-		}
+			id  = Integer.parseInt(request.getParameter("driver_id"));
 
+
+			if(dao.deleteDriver(id))
+			{			    
+				request.setAttribute("msg", "success");
+			}
+			else 
+			{
+				request.setAttribute("msg", "Failed");
+				RequestDispatcher rd = request.getRequestDispatcher("driverform.jsp");
+				rd.forward(request, response); 
+			}
+
+		}
+		try
+		{
+
+			l = dao.getAllDriver();
+			request.setAttribute("listUser", l);
+			RequestDispatcher rd = request.getRequestDispatcher("driver.jsp");
+			rd.forward(request, response);
+		}catch(Exception e) {System.out.println("Request dispatched");}
+		Dbmanager.closeConnection();
 	}
 }

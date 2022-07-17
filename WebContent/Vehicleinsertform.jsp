@@ -10,75 +10,70 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>Travel</title>
+
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="ajaxCall.js"></script>
 </head>
 <body>
 	<jsp:include page="header.jsp" /> 
-   <div class="container col-md-5 mt-4">
-               <div class="card ">
-                   <div class="card-body bg-white">
-                    
-                       <div class="text-center">
-                           <h2>  Add New Vehicle</h2>
-                       </div>
-                       <div class="text-center ">
-                            <form name=vehicle action="ListVehicleServlet" method = "post">
-                           
-                       			<input type=hidden name=mode value=I />
-                       			<input type=hidden name=mode value=I />
-                       <div class="offset-1">
-                       <div class="row ">
-                       <fieldset class="form-group">
-                         <div class=col-auto>
-                         		<label>Vehicle No</label> 
-                         		<input type="text" class="form-control" name="vehicle_no" maxlength="4" onchange="validateRoute();"
-                         		onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                         		<span id=error class="mt-2 text-danger"></span>
-                         </div>
-                         
-                       </fieldset>
-                         <fieldset class="form-group">
-                         <div class=col-auto>  <label>Vehicle Model</label> <input type="text"  class="form-control" name="vehicle_model" ></div>
-                       </fieldset>
-                       </div>
-                       <div class=row>
-                       <fieldset class="form-group">
-                          <div class=col-auto> <label>Vehicle Type</label> <input type="text"  class="form-control" name="vehicle_type" ></div>
-                       </fieldset>
-                       <fieldset class="form-group">
-                          <div class=col-auto> <label>Vehicle Color</label> <input type="text"  class="form-control" name="vehicle_color" ></div>
-                       </fieldset>
-	</div></div>
-                     <div class="d-flex justify-content-center  mt-3">
-                               <div class="mr-4"><button type="submit" class="btn btn-success">Add</button></div>
-                               <div><input type="reset" class="btn btn-success" value=Reset ></div>    
-                             </div>
-                       
-                       </form></div>
-                   </div>
-               </div>
-           </div>
-       
-       <div style="visibility:none;display:none;">
-	       <script>
-				 var vehicles = '${Vehicles}';
-				 	 vehicles = vehicles.split(",");
-						 function validateRoute()
-				           {
-								
-				           	 if (document.vehicle.vehicle_no.value !="")
-				           		{
-				           			for ( let i=0 ;i<vehicles.length ; i++)
-				           			{
-				           				if( vehicles[i] == document.vehicle.vehicle_no.value )
-				           					{
-				           					document.vehicle.vehicle_no.focus();
-				           					return document.getElementById('error').innerHTML = "Vehicle already exists";
-				           					}
-				           			}
-				           		}
-				           	return document.getElementById('error').innerHTML  = null;
-				           }
-			</script>
-		</div>
+    <div class="container">
+        <div class="card ">
+   <form name=vehicle id=vehicle action=ListVehicleServlet method="post">
+            <div class="card-body bg-white text-center">
+                    <h2> Add New Vehicle</h2>
+                    <input type=hidden name=mode value=I />
+                    <div class="row d-flex justify-content-center">
+
+                        <div class=col-auto>
+                            <label>Vehicle No</label>
+                            <input type="text" class="form-control" name="vehicle_no" id=vehicle_no maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            <span id=error class="mt-2 text-danger"></span>
+                        </div>
+
+
+
+                        <div class=col-auto> <label>Vehicle Model</label> <input type="text" class="form-control" name="vehicle_model" id=vehicle_model></div>
+
+                        <div class=col-auto> <label>Vehicle Type</label> <input type="text" class="form-control" name="vehicle_type" id=vehicle_type></div>
+
+
+                        <div class=col-auto> <label>Vehicle Color</label> <input type="text" class="form-control" name="vehicle_color" id=vehicle_color></div>
+
+                    </div>
+            </div>
+            <div class="row mt-2 mb-2">
+                <div class="col text-center">
+                    <button type="submit" class="btn btn-success button-length" >Add</button>
+                    <input type="reset" class="btn btn-success button-length" value=Reset>
+                    <a href="ListVehicleServlet"  class="btn btn-success button-length">Back</a>
+                 </div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+    
+    <script>
+    		
+    		$("button").click(function(){
+    			var no 	  = (document.vehicle.vehicle_no.value).trim();
+          		var model = (document.vehicle.vehicle_model.value).trim();
+          		var type  = (document.vehicle.vehicle_type.value).trim();
+          		var color = (document.vehicle.vehicle_color.value).trim();
+          		
+        		if ( no!="" && model !="" && type !="" && color != "")
+        			{
+        				document.vehicle.action ="ListVehicleServlet?mode=I";
+        				document.vehicle.submit();
+        			}
+        		else
+        			{
+        			alert("Insufficient details to add ..");
+        			}
+    		});
+    	
+    </script>
 </body>
 </html>

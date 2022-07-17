@@ -22,7 +22,7 @@ font-size: 28px;
             font-family: San Serif;
             font-weight: bold;
             width: 100%;
-            margin: 0 auto;
+            margin: 0;
             color :blue;
             font-size: 40px;
         }
@@ -64,7 +64,6 @@ font-size: 28px;
    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head>
 <body> 
-	
 	<div class="d-flex justify-content-between" id=announcement>
 		<div class="image">
          <a href="home.jsp">

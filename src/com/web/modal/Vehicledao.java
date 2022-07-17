@@ -17,18 +17,19 @@ public class Vehicledao {
 	private static final String DELETE_VEHICLE = "delete from car where vehicle_no = ?;";
 	private static final String UPDATE_VEHICLE = "update car set vehicle_model = ?,vehicle_no= ?, vehicle_type =?,vehicle_color=? where vehicle_no = ?;";
 
-	public Vehicledao() {}
+	
 
 	Vehicle v = new Vehicle();
 
 	Connection con = null;
+	public Vehicledao() { con = Dbmanager.getConnection();}
 
 	public boolean insertVehicle(Vehicle v){
 		System.out.println(INSERT_VEHICLE);
 
 		boolean v1 =false;
 		try {
-			con = Dbmanager.getConnection();
+			
 
 			PreparedStatement preparedStatement = con.prepareStatement(INSERT_VEHICLE);
 
@@ -41,18 +42,6 @@ public class Vehicledao {
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		finally
-		{
-			try {
-				if (con !=null && !con.isClosed())
-				{
-					con.close();
-				}
-			} catch (SQLException e) {
-				
-				e.printStackTrace();
-			}
-		}
 		return v1;
 	}
 
@@ -62,7 +51,7 @@ public class Vehicledao {
 
 		try{
 
-			con = Dbmanager.getConnection();
+			
 			PreparedStatement preparedStatement = con.prepareStatement(SELECT_BY_NO);
 
 			preparedStatement.setString(1, no);
@@ -82,18 +71,6 @@ public class Vehicledao {
 		} catch(Exception e) {
 			throw e;
 		}
-		finally
-		{
-			try {
-				if (con !=null && !con.isClosed())
-				{
-					con.close();
-				}
-			} catch (SQLException e) {
-				
-				e.printStackTrace();
-			}
-		}
 		return v;
 	}
 
@@ -106,7 +83,7 @@ public class Vehicledao {
 
 		try 
 		{
-			con = Dbmanager.getConnection();
+			
 
 			PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_VEHICLE);
 			System.out.println(preparedStatement);
@@ -127,18 +104,6 @@ public class Vehicledao {
 		catch(Exception e) {
 			e.printStackTrace();
 		}
-		finally
-		{
-			try {
-				if (con !=null && !con.isClosed())
-				{
-					con.close();
-				}
-			} catch (SQLException e) {
-				
-				e.printStackTrace();
-			}
-		}
 		return users;
 	}
 
@@ -157,18 +122,6 @@ public class Vehicledao {
 		}catch(Exception e) {
 			e.printStackTrace();;
 		}
-		finally
-		{
-			try {
-				if (con !=null && !con.isClosed())
-				{
-					con.close();
-				}
-			} catch (SQLException e) {
-				
-				e.printStackTrace();
-			}
-		}
 		return rowDeleted;
 	}
 
@@ -177,7 +130,7 @@ public class Vehicledao {
 
 		try
 		{
-			con = Dbmanager.getConnection(); 
+			
 			PreparedStatement ps = con.prepareStatement(UPDATE_VEHICLE);
 
 			ps.setString(1,v.getModel() );
@@ -191,18 +144,6 @@ public class Vehicledao {
 			System.out.println(ps);
 		}catch(Exception e) {
 			e.printStackTrace();
-		}
-		finally
-		{
-			try {
-				if (con !=null && !con.isClosed())
-				{
-					con.close();
-				}
-			} catch (SQLException e) {
-				
-				e.printStackTrace();
-			}
 		}
 		return rowUpdated;
 	}

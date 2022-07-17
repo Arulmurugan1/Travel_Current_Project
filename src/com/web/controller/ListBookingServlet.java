@@ -20,11 +20,6 @@ import com.web.util.Dbmanager;
 public class ListBookingServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-    public Bookingdao bookingdao =new Bookingdao();
-    public Customerdao customerdao = new Customerdao();
-    public Booking existingUser =new Booking();
-    public Customer cust1		=new Customer();
-    
     public ListBookingServlet() {
         super();
     }
@@ -35,7 +30,10 @@ public class ListBookingServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 
-
+		 Bookingdao bookingdao =new Bookingdao();
+	     Customerdao customerdao = new Customerdao();
+	     Booking existingUser =new Booking();
+	     Customer cust1		=new Customer();
 
 		String mode				= request.getParameter("mode");
 		
@@ -166,6 +164,7 @@ public class ListBookingServlet extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
 			rd.forward(request, response);
 		}
+		Dbmanager.closeConnection();
 	}
 
 }

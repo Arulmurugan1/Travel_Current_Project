@@ -22,15 +22,14 @@
     	}
     	
     </style>
-
+	
 </head>
 <body >
 	<jsp:include page="header.jsp" />   
-    <div class="container-fluid table-responsive mt-1">
+    <div class="container-fluid table-responsive table-wrapper mt-1 text-center">
         <c:if test ="${sessionScope.role!='Guest'}" >
-    <div class="d-flex justify-content-around mb-2 mt-2">
-    	<span> ${msg} </span>
-    	<div><a class="btn btn-success" href="ListVehicleServlet?mode=N">Add New Vehicle</a></div></div></c:if>
+    		<div class="m-2"><a class="btn btn-success button-length w-25" href="Vehicleinsertform.jsp">Add New Vehicle</a></div>
+    	</c:if>
     <table class="table table-bordered  text-center text-white text-capitalize">
        <thead class="bg-primary">
                             <tr>

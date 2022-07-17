@@ -18,10 +18,11 @@ public class Bookingdao {
 	private static final String SELECT_ALL_USERS = "SELECT A.*,B.CUSTOMER_NAME FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
 	private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
 	
-	Connection con =Dbmanager.getConnection();
+	Connection con =null;
 	
 
 	public Bookingdao() {
+		con =Dbmanager.getConnection();
 	}
 
 	public boolean insertBooking(Booking user) 

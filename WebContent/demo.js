@@ -132,8 +132,8 @@ function selectValue(no,start,end)
 {
 	var select = document.getElementById('uvehicle_no').selectedIndex;
 	var option = document.getElementById('uvehicle_no').options;
-	
-	
+
+
 }
 
 function routeClik()
@@ -149,11 +149,11 @@ function routeClik()
 function emailClick()
 {
 
-	
+
 	document.bookingInsert.email.value =  document.bookingInsert.customer_name.value + '@gmail.com';
-	
-	
-	
+
+
+
 }
 
 
@@ -169,12 +169,7 @@ function submitOnChange()
 {
 	with(document.bookingInsert)
 	{
-	action ="CommonServlet";
-	submit();
+		action ="CommonServlet";
+		submit();
 	}
 }
-
-
-
-
-

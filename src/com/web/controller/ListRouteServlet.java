@@ -13,26 +13,25 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.web.modal.Routedao;
 import com.web.objects.Route;
+import com.web.util.Dbmanager;
 
 
 @WebServlet("/ListRouteServlet")
 public class ListRouteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public Route r;
-	public Routedao dao ;
-	public List<Route> routeList = new ArrayList<Route>();
 
 	public ListRouteServlet() {
 		super();
-		// TODO Auto-generated constructor stub
-		r = new Route();
-		dao = new Routedao();
-
 	}
 
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
+		
+		 Route r = new Route();
+		 Routedao dao  = new Routedao();
+		 List<Route> routeList = new ArrayList<Route>();
+		
 		String start ="";
 		String end ="";
 		String no ="";
@@ -110,6 +109,7 @@ public class ListRouteServlet extends HttpServlet {
 		request.setAttribute("list", routeList);
 		RequestDispatcher rd = request.getRequestDispatcher("route.jsp");
 		rd.forward(request, response);
+		Dbmanager.closeConnection();
 	}
 
 

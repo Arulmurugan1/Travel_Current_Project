@@ -19,22 +19,23 @@ public class Driverdao {
 	private static final String DELETE_DRIVER = "delete from DRIVER where driver_id = ?;";
 	private static final String UPDATE_DRIVER = "update DRIVER set driver_id = ?,driver_name= ?, gender =?,age=?,city=?,phone=?,vehicle_no=? where driver_id = ?";
 
-	public Driverdao() {}
+	
+	Connection con = null;
+	public Driverdao() { con = Dbmanager.getConnection();}
 	
 	Driver v = new Driver();
 	
 	
 	
-	Connection connection = null;
+	
 
 	public boolean insertDriver(Driver d){
 		System.out.println(INSERT_DRIVER);
 		
 
 		try {
-			connection = Dbmanager.getConnection();
 				
-			PreparedStatement preparedStatement = connection.prepareStatement(INSERT_DRIVER);
+			PreparedStatement preparedStatement = con.prepareStatement(INSERT_DRIVER);
 			int cntl = 0;
 			preparedStatement.setString(++cntl,d.getName() );
 			preparedStatement.setString(++cntl,d.getGender() );
@@ -58,9 +59,8 @@ public class Driverdao {
 		
 
 		try{
-
-			connection = Dbmanager.getConnection();
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECT_BY_ID);
+			
+			PreparedStatement preparedStatement = con.prepareStatement(SELECT_BY_ID);
 			int cntl = 0;
 			preparedStatement.setInt(++cntl, id);
 			System.out.println(preparedStatement);
@@ -90,9 +90,8 @@ public class Driverdao {
 
 		try 
 		{
-			connection = Dbmanager.getConnection();
 
-			PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_DRIVER);
+			PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_DRIVER);
 			System.out.println(preparedStatement);
 
 			// Step 3: Execute the query or update query
@@ -118,8 +117,8 @@ public class Driverdao {
 		
 		try  
 		{
-			connection = Dbmanager.getConnection(); 
-			PreparedStatement statement = connection.prepareStatement(DELETE_DRIVER);
+			
+			PreparedStatement statement = con.prepareStatement(DELETE_DRIVER);
 			int cntl = 0;
 			statement.setInt(++cntl, id);
 			
@@ -135,8 +134,8 @@ public class Driverdao {
 		
 		try
 		{
-			connection = Dbmanager.getConnection(); 
-			PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_DRIVER);
+			
+			PreparedStatement preparedStatement = con.prepareStatement(UPDATE_DRIVER);
 			int cntl = 0;
 			preparedStatement.setInt(++cntl,v.getId());
 			preparedStatement.setString(++cntl,v.getName() );
