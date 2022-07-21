@@ -74,20 +74,15 @@ public class AjaxServlet extends HttpServlet {
 		if ( vehicleModel!=null && vehicleModel.trim().length()  > 0)
 		{
 			PrintWriter out = response.getWriter();
-			JSONObject vehicleObj1 = getVehicleType(vehicleModel);
-
+			vehicleObj = getVehicleType(vehicleModel);
 			try
 			{
-				if( vehicleObj1 !=null &&  !vehicleObj1.toString().equals("")){
+				if( vehicleObj !=null &&  !vehicleObj.toString().equals("")){
 					System.out.println("data came true..");
-					vehicleObj.put("success", true);
 				}
 				else {
-					vehicleObj.put("success", false);
 					System.out.println("data came false..");
 				}
-
-				vehicleObj.put("vehicleModel", vehicleObj1);
 				System.out.println(vehicleObj.toString());
 			}catch(Exception e)
 			{
@@ -147,6 +142,7 @@ public class AjaxServlet extends HttpServlet {
 			stmt.close();
 			rs.close();
 			conn.close();
+			System.out.println("Connection closed");
 		}                                                               
 		catch(Exception e)
 		{

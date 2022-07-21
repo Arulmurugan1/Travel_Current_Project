@@ -19,13 +19,15 @@ $(document).ready(function() {
 				dataType: "json",
 				success: function( data, textStatus, jqXHR)
 				{
-					if(data.success)
+					if( Object.keys(data).length > 0 )
 					{
+						var values = (Object.values(data)).sort();
+							
 						$("#vehicle_type").empty();
 						$("#vehicle_type").append("<option value=' '></option>");
-						for ( var s in data.vehicleModel )
+						for ( var s in values )
 						{
-							$("#vehicle_type").append("<option value="+data.vehicleModel[s]+">"+data.vehicleModel[s]+"</option>");
+							$("#vehicle_type").append("<option value="+values[s]+">"+values[s]+"</option>");
 						}
 					} 
 				},
