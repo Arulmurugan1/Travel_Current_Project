@@ -28,18 +28,35 @@
 
                         <div class=col-auto>
                             <label>Vehicle No</label>
-                            <input type="text" class="form-control" name="vehicle_no" id=vehicle_no maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                            <input type="text" class="form-control" name="vehicle_no" id=vehicle_no maxlength="4" onkeyup="sendInfo()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                             <span id=error class="mt-2 text-danger"></span>
                         </div>
 
 
 
-                        <div class=col-auto> <label>Vehicle Model</label> <input type="text" class="form-control" name="vehicle_model" id=vehicle_model></div>
+                        <div class=col-auto> 
+                        	<label>Vehicle Model</label> 
+                        	<select class="form-select form-control w-100" name="vehicle_model" id=vehicle_model required>
+                            	<option value="" selected></option>
+		                            <sql:query dataSource="${db}" var="rs">
+										select title from car_brand where country='India' order by title;			
+									</sql:query> 
+									<c:forEach  var='vehicle' items='${rs.rows}'>
+										<option value="${vehicle.title}">${vehicle.title}</option>
+									</c:forEach>
+                    		</select>
+                        </div>
 
-                        <div class=col-auto> <label>Vehicle Type</label> <input type="text" class="form-control" name="vehicle_type" id=vehicle_type></div>
-
-
-                        <div class=col-auto> <label>Vehicle Color</label> <input type="text" class="form-control" name="vehicle_color" id=vehicle_color></div>
+                        <div class=col-auto>
+	                         <label>Vehicle Type</label>
+								<select class="form-select form-control "  name="vehicle_type" id=vehicle_type style="width:170px;" required>
+	                            	<option value="" selected></option>
+	                            </select>
+						</div>
+                        <div class=col-auto> 
+                        	<label>Vehicle Color</label> 
+                        		<input type="text" class="form-control" name="vehicle_color" id=vehicle_color>
+                        </div>
 
                     </div>
             </div>
@@ -52,7 +69,7 @@
             </div>
 
             </form>
-        </div>
+        </div>`
     </div>
     
     <script>

@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,16 +12,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.web.objects.Vehicle;
+import org.json.JSONObject;
+
 import com.web.util.Dbmanager;
 
 
 @WebServlet("/AjaxServlet")
 public class AjaxServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	Connection conn = null;            
+	PreparedStatement stmt = null; 
+	ResultSet rs = null;
+	JSONObject vehicleObj  = new JSONObject();
 
 	public AjaxServlet() {
 		super();
@@ -31,110 +32,156 @@ public class AjaxServlet extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//		response.getWriter().append("Served at: ").append(request.getContextPath());
 		doPost(request,response);
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
 
-		String vehicleNo = request.getParameter("vehicleNo");
-
-		System.out.println("Inside doPost for Vehicle No call from ajax");
-
-		PrintWriter out = response.getWriter();
+		String vehicleNo = request.getParameter("vehicle_no");
+		String vehicleModel = request.getParameter("vehicle_model");
+		
+		System.out.println("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]");
+		System.out.println("Inside doPost from ajax");
+		
 		response.setContentType("text/html");
 		response.setHeader("Cache-control", "no-cache, no-store");
 		response.setHeader("Pragma", "no-cache");
 		response.setHeader("Expires", "-1");
-
+	
 		response.setHeader("Access-Control-Allow-Origin", "*");
 		response.setHeader("Access-Control-Allow-Methods", "POST");
 		response.setHeader("Access-Control-Allow-Headers", "Content-Type");
 		response.setHeader("Access-Control-Max-Age", "86400");
 
-		System.getProperty("java.classpath");
-		
-		Gson gson = new Gson(); 
-		JsonObject myObj = new JsonObject();
-
-		Vehicle info = getInfo(vehicleNo);
-		JsonElement vehicleObj = gson.toJsonTree(info);
-		if(info.getNo() == null){
-			System.out.println("data came false..");
-			myObj.addProperty("success", false);
+		if ( vehicleNo!=null && vehicleNo.trim().length() > 0)
+		{
+			PrintWriter out = response.getWriter();
+			String no = getInfo(vehicleNo).trim();
+			System.out.println(no);
+			if ( no !=null && no !="" )
+			{
+				System.out.println("Vehicle Found");
+				out.print(no);
+			}
+			else
+			{
+				System.out.println("Not found");
+				out.print("not_found");
+			}
+			out.close();
 		}
-		else {
-			myObj.addProperty("success", true);
-			System.out.println("data came success..");
+		if ( vehicleModel!=null && vehicleModel.trim().length()  > 0)
+		{
+			PrintWriter out = response.getWriter();
+			JSONObject vehicleObj1 = getVehicleType(vehicleModel);
+
+			try
+			{
+				if( vehicleObj1 !=null &&  !vehicleObj1.toString().equals("")){
+					System.out.println("data came true..");
+					vehicleObj.put("success", true);
+				}
+				else {
+					vehicleObj.put("success", false);
+					System.out.println("data came false..");
+				}
+
+				vehicleObj.put("vehicleModel", vehicleObj1);
+				System.out.println(vehicleObj.toString());
+			}catch(Exception e)
+			{
+				e.printStackTrace();
+			}			
+			finally
+			{
+				out.println(vehicleObj.toString());
+				out.close();
+			}
 		}
-		myObj.add("vehicleObj", vehicleObj);
-		out.println(myObj.toString());
-
-		out.close();
-
 	}
-
-	//Get Country Information
-	private Vehicle getInfo(String vehicleNo) {
-
-		Vehicle v = new Vehicle();
-		Connection conn = null;            
-		PreparedStatement stmt = null;     
-		String sql = null;
-
-		try {    
+	
+	private String getInfo(String vehicleNo) {
+		String sql ="";
+		try {  
 			System.out.println("Inside getInfo for Vehicle No call from ajax");
 			conn = Dbmanager.getConnection();
-
-			sql = "Select vehicle_no from car where vehicle_no =?"; 
-			stmt = conn.prepareStatement(sql);
+			stmt = conn.prepareStatement("Select vehicle_no from car where vehicle_no =?");
 			stmt.setString(1, vehicleNo.trim());
+			rs = stmt.executeQuery(); 
+			System.out.println(stmt);
+
+			while(rs.next())
+			{ 
+				sql = rs.getString(1);
+				System.out.println(sql);
+			} 
+			stmt.close();
+			rs.close();
+			conn.close();
+		}                                                               
+		catch(Exception e)
+		{
+			sql="Exception Occured Inside getInfo Catch";
+			e.printStackTrace();
+		} 
+		return sql;
+
+	}  
+	
+	private JSONObject getVehicleType(String model)
+	{
+		JSONObject obj = new JSONObject();
+
+		try {    
+			System.out.println("Inside VehicleType for Vehicle Model call from ajax");
+			conn = Dbmanager.getConnection(); 
+			stmt = conn.prepareStatement("select m.title from car_brand c,model m where c.id = m.make_id and c.title=? and c.country='India'");
+			stmt.setString(1, model.trim());
 			ResultSet rs = stmt.executeQuery(); 
-
-			while(rs.next()){ 
-				v.setNo(rs.getString(1));
-			}                                                                         
-
-			rs.close();                                                               
-			stmt.close();                                                             
-			stmt = null;                                                              
-
-
-			conn.close();                                                             
-			conn = null;                                                   
-
+			int c = 1;
+			while(rs.next())
+			{ 
+				obj.put( "type"+ c++, rs.getString(1) ); 
+			} 
+			stmt.close();
+			rs.close();
+			conn.close();
 		}                                                               
 		catch(Exception e)
 		{
 			e.getLocalizedMessage();
-		}                      
+		}  
+	
+		return  ( obj.toString().length() > 0 ) ? obj : null ;
+	}
 
-		finally {                                                       
-
-			if (stmt != null) {                                            
-				try {                                                         
-					stmt.close();                                                
-				} catch (SQLException e) {                                
-					// ignore -- as we can't do anything about it here           
-				}                                                             
-
-				stmt = null;                                            
-			}                                                        
-
-			if (conn != null) {                                      
-				try {                                                   
-					conn.close();                                          
-				} catch (SQLException e) {                          
-
-				}                                                       
-
-				conn = null;                                            
-			}                                                        
-		}              
-
-		return v;
-
-	}   
-
-
+//	System.getProperty("java.classpath");
+	
+//	--------------Old Method to get Vehicle No  Starts-------------------------
+	
+//	Gson gson = new Gson(); 
+//	JsonObject myObj = new JsonObject();
+//	
+//	if ( vehicleNo!=null && vehicleNo.trim().length() > 0)
+//	{
+//		Vehicle info = getInfo(vehicleNo);
+//		JsonElement vehicleObj = gson.toJsonTree(info);
+//		
+//		System.out.println(vehicleObj.toString());
+//		
+//		if(info.getNo() == null){
+//			System.out.println("data came false..");
+//			myObj.addProperty("success", false);
+//		}
+//		else {
+//			myObj.addProperty("success", true);
+//			System.out.println("data came success..");
+//		}
+//		myObj.add("vehicleObj", vehicleObj);
+//		out.println(myObj.toString());
+//	}
+	
+//         --------------------------------  Ends Here -------------------------	
+	
 }
