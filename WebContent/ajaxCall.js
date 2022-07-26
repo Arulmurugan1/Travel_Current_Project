@@ -14,7 +14,7 @@ $(document).ready(function() {
 		{
 			$.ajax({
 				type: "POST",
-				url: "AjaxServlet",
+				url: "Ajax",
 				data: dataString,
 				dataType: "json",
 				success: function( data, textStatus, jqXHR)
@@ -67,7 +67,7 @@ function sendInfo()
 		var vehicleNo = $("#vehicle_no").val(); 
 		if ( vehicleNo.length == 4 )
 		{ 
-			var url="AjaxServlet?vehicle_no="+vehicleNo; 
+			var url="Ajax?vehicle_no="+vehicleNo; 
 			if(window.XMLHttpRequest)
 			{  
 				request=new XMLHttpRequest();  

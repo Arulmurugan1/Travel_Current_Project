@@ -20,7 +20,7 @@
                            <h2>  Add New Driver</h2>
                        </div>
                        <div class="text-center ">
-                            <form action="ListDriverServlet" method = "post">
+                            <form action="Driver" method = "post">
                            
                        <input type=hidden name=mode value=I />
           <div class="offset-1">
@@ -80,7 +80,7 @@
                      	<div class="col text-center">
                                <button type="submit" class="btn btn-success button-length">Add</button>
                                <input type="reset" class="btn btn-success button-length" value=Reset >  
-                               <a href="ListDriverServlet"  class="btn btn-success button-length">Back</a> 
+                               <a href="Driver"  class="btn btn-success button-length">Back</a> 
                         </div>
                      </div>
                        

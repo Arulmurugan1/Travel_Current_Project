@@ -169,7 +169,7 @@ function submitOnChange()
 {
 	with(document.bookingInsert)
 	{
-		action ="CommonServlet";
+		action ="Common";
 		submit();
 	}
 }

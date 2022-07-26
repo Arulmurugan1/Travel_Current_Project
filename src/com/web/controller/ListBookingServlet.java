@@ -16,7 +16,7 @@ import com.web.objects.Booking;
 import com.web.objects.Customer;
 import com.web.util.Dbmanager;
 
-@WebServlet("/ListBookingServlet")
+@WebServlet("/Booking")
 public class ListBookingServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;

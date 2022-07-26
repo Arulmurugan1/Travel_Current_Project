@@ -45,7 +45,7 @@
     		<button class="btn btn-success button-length">Add Route</button>
     	</div></div>
   
-  <form name=route method=post action=ListRouteServlet>
+  <form name=route method=post action=Route>
   	<div id=insert style="margin-bottom :20px;color:white;">
   			<input type="hidden" name=mode id=mode value=''>
   		
@@ -151,7 +151,7 @@
                                     <td >
                                         <c:out value="${lists.end}" />
                                     </td>
-                                       <c:if test ="${sessionScope.role!='Guest'}" ><td><a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />')">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="ListRouteServlet?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a></td></c:if>
+                                       <c:if test ="${sessionScope.role!='Guest'}" ><td><a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />')">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Route?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a></td></c:if>
                                 </tr>
                             </c:forEach>
                             

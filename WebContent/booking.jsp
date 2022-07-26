@@ -9,6 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
+
 <title>Travel</title>
    
 
@@ -97,7 +98,7 @@
                         </td>
                         <td> 
                         <c:if test="${sessionScope.role != 'Guest'}">
-                           <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('ListCustomerServlet?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=1100,height=600');">
+                           <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('Customer?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=1100,height=600');">
                         </c:if>  <c:out value="${user.customer_id}" /> </a>
                         </td>
                         <td>
@@ -113,9 +114,9 @@
                             <c:out value="${user.customer_name}" />
                         </td>
                         <c:if test="${sessionScope.role!='Guest'}">
-                            <td><a href="ListBookingServlet?mode=E&booking_no=<c:out value='${user.booking_no}' />">Edit</a>
+                            <td><a href="Booking?mode=E&booking_no=<c:out value='${user.booking_no}' />">Edit</a>
                                 &nbsp;&nbsp;&nbsp;&nbsp; 
-                                <a href="ListBookingServlet?mode=D&booking_no=<c:out value='${user.booking_no}' />&customer_id=<c:out value='${user.customer_id}' />">Delete</a>
+                                <a href="Booking?mode=D&booking_no=<c:out value='${user.booking_no}' />&customer_id=<c:out value='${user.customer_id}' />">Delete</a>
                             </td>
                         </c:if>
                     </tr>

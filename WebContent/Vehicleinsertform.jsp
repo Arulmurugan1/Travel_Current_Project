@@ -20,7 +20,7 @@
 	<jsp:include page="header.jsp" /> 
     <div class="container">
         <div class="card ">
-   <form name=vehicle id=vehicle action=ListVehicleServlet method="post">
+   <form name=vehicle id=vehicle action=Vehicle method="post">
             <div class="card-body bg-white text-center">
                     <h2> Add New Vehicle</h2>
                     <input type=hidden name=mode value=I />
@@ -82,7 +82,7 @@
           		
         		if ( no!="" && model !="" && type !="" && color != "")
         			{
-        				document.vehicle.action ="ListVehicleServlet?mode=I";
+        				document.vehicle.action ="Vehicle?mode=I";
         				document.vehicle.submit();
         			}
         		else

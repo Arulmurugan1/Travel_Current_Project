@@ -20,7 +20,7 @@ import com.web.objects.Vehicle;
 import com.web.util.Dbmanager;
 
 
-@WebServlet("/ListDriverServlet")
+@WebServlet("/Driver")
 public class ListDriverServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

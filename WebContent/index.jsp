@@ -103,7 +103,7 @@
 		{
 			with(document.form)
 			{
-				action     ="LoginServlet?mode="+mode;
+				action     ="Login?mode="+mode;
 				submit();
 			}
 		}

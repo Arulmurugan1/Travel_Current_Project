@@ -193,7 +193,7 @@
 	{
 		with(document.bookingInsert)
 		{
-		action ="ListBookingServlet";
+		action ="Booking";
 		submit();
 		}
 	}

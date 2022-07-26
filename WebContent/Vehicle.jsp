@@ -60,7 +60,7 @@
                                         <c:out value="${user.color}" />
                                     </td>
                                 
-                                        <c:if test ="${sessionScope.role!='Guest'}" ><td><a href="ListVehicleServlet?mode=E&no=<c:out value="${user.no}" />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="ListVehicleServlet?mode=D&no=<c:out value="${user.no}" />">Delete</a></td></c:if>
+                                        <c:if test ="${sessionScope.role!='Guest'}" ><td><a href="Vehicle?mode=E&no=<c:out value="${user.no}" />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Vehicle?mode=D&no=<c:out value="${user.no}" />">Delete</a></td></c:if>
                                 </tr>
                             </c:forEach>
                             <!-- } -->

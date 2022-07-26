@@ -17,7 +17,7 @@ import org.json.JSONObject;
 import com.web.util.Dbmanager;
 
 
-@WebServlet("/AjaxServlet")
+@WebServlet("/Ajax")
 public class AjaxServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	Connection conn = null;            

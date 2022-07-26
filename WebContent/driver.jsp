@@ -30,7 +30,7 @@
     
     <div class="container-fluid overflow-auto m-auto text-center">
         <c:if test="${sessionScope.role!='Guest'}">
-            <div class="m-3"> <a class="btn btn-success button-length w-25" href="ListDriverServlet?mode=N">Add New Driver</a>
+            <div class="m-3"> <a class="btn btn-success button-length w-25" href="Driver?mode=N">Add New Driver</a>
             </div>
         </c:if>
         <table class="table table-bordered text-center text-white text-capitalize">
@@ -78,7 +78,7 @@
                             <c:out value="${user.no}" />
                         </td>
                         <c:if test="${sessionScope.role!='Guest'}">
-                            <td><a href="ListDriverServlet?mode=E&driver_id=<c:out value='${user.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="ListDriverServlet?mode=D&driver_id=<c:out value='${user.id}' />">Delete</a></td>
+                            <td><a href="Driver?mode=E&driver_id=<c:out value='${user.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Driver?mode=D&driver_id=<c:out value='${user.id}' />">Delete</a></td>
                         </c:if>
                     </tr>
                 </c:forEach>

@@ -16,7 +16,7 @@ import com.web.objects.Route;
 import com.web.util.Dbmanager;
 
 
-@WebServlet("/ListRouteServlet")
+@WebServlet("/Route")
 public class ListRouteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

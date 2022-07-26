@@ -20,19 +20,19 @@
             	<input type=hidden name=mode value=Q >
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button  text-primary" onclick="Submit('ListBookingServlet')">Bookings</a>
+                        <a class="home-button  text-primary" onclick="Submit('Booking')">Bookings</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('ListCustomerServlet')">Customers</a>
+                        <a class="home-button text-primary" onclick="Submit('Customer')">Customers</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('ListVehicleServlet')">Vehicles</a>
+                        <a class="home-button text-primary" onclick="Submit('Vehicle')">Vehicles</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('ListDriverServlet')">Drivers</a>
+                        <a class="home-button text-primary" onclick="Submit('Driver')">Drivers</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('ListRouteServlet')" >Routes</a>
+                        <a class="home-button text-primary" onclick="Submit('Route')" >Routes</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
                         <a class="home-button text-primary" disabled>Users</a>

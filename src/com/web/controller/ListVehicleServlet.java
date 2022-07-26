@@ -18,7 +18,7 @@ import com.web.objects.Vehicle;
 import com.web.util.Dbmanager;
 
 
-@WebServlet("/ListVehicleServlet")
+@WebServlet("/Vehicle")
 public class ListVehicleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     

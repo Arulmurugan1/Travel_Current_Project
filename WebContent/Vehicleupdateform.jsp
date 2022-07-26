@@ -23,7 +23,7 @@
                             </h1>
                         </caption>
 						
-                            <form action="ListVehicleServlet" method = "post">
+                            <form action="Vehicle" method = "post">
                             <input type=hidden name=mode value=U />	            
                        		
                        		<fieldset class="form-group">

@@ -16,7 +16,7 @@ import com.web.modal.user_user_profile_dao;
 import com.web.objects.user_user_profile;
 
 
-@WebServlet("/LoginServlet")
+@WebServlet("/Login")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public user_user_profile_dao userdao = null;
