@@ -9,14 +9,16 @@ let progress = setInterval(() => {
 	
 	if ( document.readyState == 'loading' )
 	{
-		progressStartValue = 50;
+		progressStartValue = 90;
+		progressValue.textContent = ` ${progressStartValue}%`;
+		circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue*3.6}deg, #ededed 0deg)`;
 	}
 	if ( document.readyState == 'loaded' )
 	{
 		progressStartValue =100;
+		progressValue.textContent = ` ${progressStartValue}%`;
+		circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue*3.6}deg, #ededed 0deg)`;
 	}
-	progressValue.textContent = ` ${progressStartValue}%`;
-	circularProgress.style.background = `conic-gradient(#7d2ae8 ${progressStartValue*3.6}deg, #ededed 0deg)`;
 	if (progressStartValue == progressEndValue) {
 		clearInterval(progress);
 	}

@@ -80,6 +80,10 @@
 									</c:forEach>
 		           	</select>
   				</div>
+  				<div class=col-auto >
+  					<label for="fare" >Fare</label>
+  					<input class="form-control" type=text name=fare id=fare maxlength=4 value="">
+  				</div>
   			</div>
   			<div class=row>
   				<div class="col text-center">
@@ -115,6 +119,10 @@
                             </c:forTokens>
                         </select>
   				</div>
+  				<div class=col-auto >
+  					<label for="fare" >Fare</label>
+  					<input class="form-control" type=text name=ufare id=ufare maxlength=4 value="">
+  				</div>
   			</div>
   			<div class=row>
   				<div class="col text-center">
@@ -132,7 +140,7 @@
                                 <th>Vehicle No</th>
                                 <th>Boarding</th>
                                 <th>Destination</th>
-                                
+                                <th>Fare</th>
                                     <c:if test = "${sessionScope.role!='Guest'}" ><th>Action</th></c:if>
                             </tr>
                         </thead>
@@ -150,6 +158,9 @@
                                     </td>
                                     <td >
                                         <c:out value="${lists.end}" />
+                                    </td>
+                                    <td>
+                                    	<c:out value="${lists.vehicle_no}" />
                                     </td>
                                        <c:if test ="${sessionScope.role!='Guest'}" ><td><a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />')">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Route?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a></td></c:if>
                                 </tr>
@@ -184,21 +195,19 @@
 	    	}
 	    }
 	    
-	    function edit(no,start,end)
+	    function edit(no,board,destination)
 	    {
 	    	 $(document).ready(function(){
 		    	 $("#insert").hide();
 		    	    $("#update").show(500);
 		    	});
-	    	 
-	    	 var a = no ;
-	    	 var b = start ;
-	    	 var c  = end;
+	  
 	    	with(document.route)
 	    	{
-	    		uvehicle_no.value	=a;
-	    		ustart.value		=b;
-	    		uend.value		 	=c;
+	    		uvehicle_no.value	=no;
+	    		ustart.value		=board;
+	    		uend.value		 	=destination;
+	    		ufare.value 		=no ;
 	    		mode.value		 	='U';
 	    	}
 	    }
