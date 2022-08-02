@@ -1,11 +1,7 @@
 package com.web.modal;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.*;
+import java.util.*;
 
 import com.web.objects.Customer;
 import com.web.util.Dbmanager;
@@ -20,33 +16,44 @@ public class Customerdao {
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";
     private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?;";
 
-    Connection con =null;
+    Connection con 		 ;
+    ResultSet rs 		 ;
+    PreparedStatement ps ;
     
-    public Customerdao() { con = Dbmanager.getConnection();}
+    public Customerdao() 
+    {
+    	con = Dbmanager.getConnection();
+    }
 
-    public boolean insertCustomer(Customer user){
+    public int insertCustomer(Customer user){
         System.out.println(INSERT_CUSTOMER);
-        
-        boolean rows =false ;
-
+        int result = 0;
         try {
         	
-        	PreparedStatement preparedStatement = con.prepareStatement(INSERT_CUSTOMER);
+        	ps = con.prepareStatement(INSERT_CUSTOMER,Statement.RETURN_GENERATED_KEYS);
         	
-            preparedStatement.setString(1,user.getCustomer_name() );
-            preparedStatement.setString(2,user.getStart() );
-            preparedStatement.setString(3,user.getEnd() );
-            preparedStatement.setString(4,user.getAge() );
-            preparedStatement.setString(5,user.getGender() );
-            preparedStatement.setString(6,user.getEmail() );
-            preparedStatement.setString(7,user.getPhone() );
+            ps.setString(1,user.getCustomer_name() );
+            ps.setString(2,user.getStart() );
+            ps.setString(3,user.getEnd() );
+            ps.setString(4,user.getAge() );
+            ps.setString(5,user.getGender() );
+            ps.setString(6,user.getEmail() );
+            ps.setString(7,user.getPhone() );
             
-            System.out.println(preparedStatement);
-            rows = preparedStatement.executeUpdate()>0;
+            System.out.println(ps);
+            ps.executeUpdate();
+            rs = ps.getGeneratedKeys();
+            
+            while ( rs.next() )
+            {
+            	result = rs.getInt(1);
+            	System.out.println("Generated Customer ::"+result);
+            }
+            
         } catch(SQLException e) {
         	e.printStackTrace();
         }
-        return rows;
+        return result;
     }
 
     public List< Customer > selectCustomerById(String id)  {
@@ -58,30 +65,21 @@ public class Customerdao {
         try{
         	
         	
-        	PreparedStatement preparedStatement = con.prepareStatement(SELECT_CUSTOMER_BY_ID);
+           ps = con.prepareStatement(SELECT_CUSTOMER_BY_ID);
         		        	
-            preparedStatement.setInt(1, Integer.parseInt(id));
-            System.out.println(preparedStatement);
+            ps.setInt(1, Integer.parseInt(id));
+            System.out.println(ps);
             
             
-            ResultSet rs = preparedStatement.executeQuery();
+            ResultSet rs = ps.executeQuery();
 
             
             while (rs.next()) {
-            	int c=1;
-                String name = rs.getString(c++);
-                String start = rs.getString(c++);
-                String end = rs.getString(c++);
-                String age = rs.getString(c++);
-                String gender = rs.getString(c++);
-                String email = rs.getString(c++);
-                String phone = rs.getString(c++);
-                int id1 = rs.getInt(c++);
-                
-                customer.add(new Customer(name, start, end, age, gender, email, phone, id1));
+                customer.add( new Customer( rs.getString(1),rs.getString(2), rs.getString(3),  rs.getString(4)
+                			, rs.getString(5), rs.getString(6), rs.getString(7), rs.getInt(8) ) );
             }
         } catch(SQLException e) {
-        	e.printStackTrace();;
+        	e.printStackTrace();
         }
         return customer ;
     }
@@ -93,27 +91,19 @@ public class Customerdao {
         try{
         	
         	
-        	PreparedStatement preparedStatement = con.prepareStatement(SELECT_CUSTOMER_BY_NAME);
+        	 ps = con.prepareStatement(SELECT_CUSTOMER_BY_NAME);
         		        	
-            preparedStatement.setString(1, name1);
-            System.out.println(preparedStatement);
+            ps.setString(1, name1);
+            System.out.println(ps);
             
             
-            ResultSet rs = preparedStatement.executeQuery();
+            ResultSet rs = ps.executeQuery();
 
             
             while (rs.next()) {
-            	int c=1;
-                String name = rs.getString(c++);
-                String start = rs.getString(c++);
-                String end = rs.getString(c++);
-                String age = rs.getString(c++);
-                String gender = rs.getString(c++);
-                String email = rs.getString(c++);
-                String phone = rs.getString(c++);
-                int id1 = rs.getInt(c++);
-                
-                user = new Customer(name, start, end, age, gender, email, phone, id1);
+            	int c=1;      
+                user = new Customer(rs.getString(c++), rs.getString(c++), rs.getString(c++),  rs.getString(c++), 
+                		rs.getString(c++), rs.getString(c++),rs.getString(c++), rs.getInt(c++));
             }
         } catch(SQLException e) {
         	e.printStackTrace();;
@@ -133,27 +123,16 @@ public class Customerdao {
         {
         
         	
-        	PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_CUSTOMERS);
-            System.out.println(preparedStatement);
+        	 ps = con.prepareStatement(SELECT_ALL_CUSTOMERS);
+            System.out.println(ps);
             
             // Step 3: Execute the query or update query
-            ResultSet rs = preparedStatement.executeQuery();
+            ResultSet rs = ps.executeQuery();
 
             // Step 4: Process the ResultSet object.
             while (rs.next()) {
-            	
-            	
-            	int c=1;
-                String name = rs.getString(c++);
-                String start = rs.getString(c++);
-                String end = rs.getString(c++);
-                String age = rs.getString(c++);
-                String gender = rs.getString(c++);
-                String email = rs.getString(c++);
-                String phone = rs.getString(c++);
-                int id1 = rs.getInt(c++);
-                 
-                 users.add( new Customer(name, start, end, age, gender, email, phone, id1));
+                 users.add( new Customer(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), 
+                		 rs.getString(5), rs.getString(6), rs.getString(7), rs.getInt(8)));
                 
             }
         }catch(SQLException e) {
@@ -163,42 +142,59 @@ public class Customerdao {
     }
 
     public boolean deleteCustomer(int id){
-        boolean rowDeleted=false;
+        boolean result=false;
         System.out.println(DELETE_CUSTOMER);
         
         try  
         {
         	 
-        	PreparedStatement statement = con.prepareStatement(DELETE_CUSTOMER);
+        	ps = con.prepareStatement(DELETE_CUSTOMER);
             
-        	statement.setInt(1, id);
-            rowDeleted = statement.executeUpdate() > 0;
+        	ps.setInt(1, id);
+        	result = ps.executeUpdate() > 0;
         }catch(SQLException e) {
-        	e.printStackTrace();;
+        	e.printStackTrace();
         }
-        return rowDeleted;
+        return result;
     }
 
     public boolean updateCustomer(Customer user)  {
-        boolean rowUpdated =false;
-       
+    	boolean result = false;
         try
-        {
-        	
-        	PreparedStatement statement = con.prepareStatement(UPDATE_CUSTOMER);
-            
-        	statement.setString(1, user.getStart());
-        	statement.setString(2, user.getEnd());
-        	statement.setString(3, user.getEmail());
-        	statement.setString(4, user.getPhone());
-            statement.setInt(5, user.getCustomer_id());
-            
-
-            rowUpdated = statement.executeUpdate() > 0;
+        {     	
+        	ps = con.prepareStatement(UPDATE_CUSTOMER);   
+        	ps.setString(1, user.getStart());
+        	ps.setString(2, user.getEnd());
+        	ps.setString(3, user.getEmail());
+        	ps.setString(4, user.getPhone());
+            ps.setInt(5, user.getCustomer_id());
+            result =  ps.executeUpdate() > 0 ;
         }catch(SQLException e) {
         	 e.printStackTrace();;
         }
-        return rowUpdated;
+        return result;
     }
+    
+    public void closeAll() throws Throwable
+	{
+		if ( con !=null && !con.isClosed())
+		{
+			con.close();
+			con = null;
+			System.out.println("Connection Closed ::"+con);
+		}
+		if ( ps !=null )
+		{
+			ps.close();
+			ps = null;
+			System.out.println("Statement Closed ::"+ps);
+		}
+		if ( rs !=null )
+		{
+			rs.close();
+			rs = null;
+			System.out.println("Resultset Closed ::"+rs);
+		}
+	}
 
 }

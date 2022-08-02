@@ -16,14 +16,17 @@ public class Driverdao {
 	private static final String INSERT_DRIVER ="INSERT INTO DRIVER VALUES(null,?,?,?,?,?,?)" ;
 	private static final String SELECT_BY_ID = "select * from DRIVER where driver_id =?";
 	private static final String SELECT_ALL_DRIVER = "select * from DRIVER";
-	private static final String DELETE_DRIVER = "delete from DRIVER where driver_id = ?;";
+	private static final String DELETE_DRIVER = "delete from DRIVER where vehicle_no = ?;";
 	private static final String UPDATE_DRIVER = "update DRIVER set driver_id = ?,driver_name= ?, gender =?,age=?,city=?,phone=?,vehicle_no=? where driver_id = ?";
 
 	
-	Connection con = null;
+	static Connection con = null;
+	static PreparedStatement ps = null;
+	static ResultSet rs = null;
+	
 	public Driverdao() { con = Dbmanager.getConnection();}
 	
-	Driver v = new Driver();
+	Driver v = null;
 	
 	
 	
@@ -35,18 +38,18 @@ public class Driverdao {
 
 		try {
 				
-			PreparedStatement preparedStatement = con.prepareStatement(INSERT_DRIVER);
+			ps = con.prepareStatement(INSERT_DRIVER);
 			int cntl = 0;
-			preparedStatement.setString(++cntl,d.getName() );
-			preparedStatement.setString(++cntl,d.getGender() );
-			preparedStatement.setInt(++cntl,d.getAge() );
-			preparedStatement.setString(++cntl,d.getCity() );
-			preparedStatement.setString(++cntl,d.getPhone() );
-			preparedStatement.setString(++cntl,d.getNo() );
+			ps.setString(++cntl,d.getName() );
+			ps.setString(++cntl,d.getGender() );
+			ps.setInt(++cntl,d.getAge() );
+			ps.setString(++cntl,d.getCity() );
+			ps.setString(++cntl,d.getPhone() );
+			ps.setString(++cntl,d.getNo() );
 			
-			System.out.println(preparedStatement);
+			System.out.println(ps);
 			
-			rowsAffected = preparedStatement.executeUpdate() > 0;
+			rowsAffected = ps.executeUpdate() > 0;
 			
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -60,13 +63,11 @@ public class Driverdao {
 
 		try{
 			
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_BY_ID);
+			ps = con.prepareStatement(SELECT_BY_ID);
 			int cntl = 0;
-			preparedStatement.setInt(++cntl, id);
-			System.out.println(preparedStatement);
-
-
-			ResultSet rs = preparedStatement.executeQuery();
+			ps.setInt(++cntl, id);
+			System.out.println(ps);
+			ResultSet rs = ps.executeQuery();
 			
 			while (rs.next()) {
 				
@@ -83,19 +84,16 @@ public class Driverdao {
 
 	public List < Driver > getAllDriver() {
 
-		System.out.println(SELECT_ALL_DRIVER);
-
-		
 		List < Driver > users = new ArrayList < Driver > ();
 
 		try 
 		{
 
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_DRIVER);
-			System.out.println(preparedStatement);
+			ps = con.prepareStatement(SELECT_ALL_DRIVER);
+			System.out.println(ps);
 
 			// Step 3: Execute the query or update query
-			ResultSet rs = preparedStatement.executeQuery();
+			 rs = ps.executeQuery();
 
 			// Step 4: Process the ResultSet object.
 			while (rs.next()) {
@@ -111,19 +109,19 @@ public class Driverdao {
 		return users;
 	}
 
-	public boolean deleteDriver(int id){
-		
-		System.out.println(DELETE_DRIVER);
-		
+	public boolean deleteDriver(String id){
 		try  
 		{
 			
-			PreparedStatement statement = con.prepareStatement(DELETE_DRIVER);
+			ps = con.prepareStatement(DELETE_DRIVER);
 			int cntl = 0;
-			statement.setInt(++cntl, id);
+			ps.setString(++cntl, id);
+			System.out.println(ps);
+			rowsAffected = ps.executeUpdate() > 0;
 			
-			rowsAffected = statement.executeUpdate() > 0;
-		}catch(Exception e) {
+			System.out.println("Deleted driver"+rowsAffected);
+		}catch(Exception e) 
+		{
 			e.printStackTrace();
 		}
 		return rowsAffected;
@@ -135,22 +133,43 @@ public class Driverdao {
 		try
 		{
 			
-			PreparedStatement preparedStatement = con.prepareStatement(UPDATE_DRIVER);
+			ps = con.prepareStatement(UPDATE_DRIVER);
 			int cntl = 0;
-			preparedStatement.setInt(++cntl,v.getId());
-			preparedStatement.setString(++cntl,v.getName() );
-			preparedStatement.setString(++cntl,v.getGender() );
-			preparedStatement.setInt(++cntl,v.getAge() );
-			preparedStatement.setString(++cntl,v.getCity() );
-			preparedStatement.setString(++cntl,v.getPhone() );
-			preparedStatement.setString(++cntl,v.getNo() );
-			preparedStatement.setInt(++cntl,v.getId());
-			rowUpdated = preparedStatement.executeUpdate() > 0;
+			ps.setInt(++cntl,v.getId());
+			ps.setString(++cntl,v.getName() );
+			ps.setString(++cntl,v.getGender() );
+			ps.setInt(++cntl,v.getAge() );
+			ps.setString(++cntl,v.getCity() );
+			ps.setString(++cntl,v.getPhone() );
+			ps.setString(++cntl,v.getNo() );
+			ps.setInt(++cntl,v.getId());
+			rowUpdated = ps.executeUpdate() > 0;
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		return rowUpdated;
 	}
 
-
+	public void closeAll() throws Throwable
+	{
+		if ( con !=null && !con.isClosed())
+		{
+			con.close();
+			con = null;
+			System.out.println("Connection Closed ::"+con);
+		}
+		if ( ps !=null )
+		{
+			ps.close();
+			ps = null;
+			System.out.println("Statement Closed ::"+ps);
+		}
+		if ( rs !=null  )
+		{
+			rs.close();
+			rs = null;
+			System.out.println("Resultset Closed ::"+rs);
+		}
+	}
+	
 }

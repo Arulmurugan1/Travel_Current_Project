@@ -11,21 +11,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.omg.Messaging.SyncScopeHelper;
-
 import com.web.modal.Driverdao;
-import com.web.modal.Vehicledao;
 import com.web.objects.Driver;
-import com.web.objects.Vehicle;
 import com.web.util.Dbmanager;
 
 
 @WebServlet("/Driver")
-public class ListDriverServlet extends HttpServlet {
+public class DriverServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 
-	public ListDriverServlet() {
+	public DriverServlet() {
 		super();
 
 	}
@@ -126,10 +122,10 @@ public class ListDriverServlet extends HttpServlet {
 
 		if( mode !=null && mode.equals("D"))
 		{
-			id  = Integer.parseInt(request.getParameter("driver_id"));
+			no  = request.getParameter("vehicle_no");
 
 
-			if(dao.deleteDriver(id))
+			if(dao.deleteDriver(no))
 			{			    
 				request.setAttribute("msg", "success");
 			}
@@ -149,6 +145,5 @@ public class ListDriverServlet extends HttpServlet {
 			RequestDispatcher rd = request.getRequestDispatcher("driver.jsp");
 			rd.forward(request, response);
 		}catch(Exception e) {System.out.println("Request dispatched");}
-		Dbmanager.closeConnection();
 	}
 }

@@ -300,19 +300,4 @@ public class Dbmanager {
 		
 		return result ;
 	}
-	
-	public static void closeConnection()
-	{
-		try
-		{
-			if ( con !=null && !con.isClosed() )
-			{
-				con.close();
-				System.out.println("Connection closed.."+con.isClosed());
-			}
-		}catch(Exception e)
-		{
-			e.getMessage();
-		}
-	}
 }

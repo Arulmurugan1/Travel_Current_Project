@@ -26,12 +26,8 @@
     
 </head>
 <body >
- <% if ( request.getParameter("mode") !="QE") {%>
- 		<jsp:include page="header.jsp" /> 
- 
- <% } %>
-    
-   <div class="table-wrapper table-responsive mt-4">
+	<c:if test="${mode!='QE' }"><jsp:include page="header.jsp" /></c:if>     
+   <div class="table-responsive mt-4">
         <table class="table table-bordered text-center text-white text-capitalize">
             <thead>
                 <tr>

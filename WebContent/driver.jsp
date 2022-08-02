@@ -78,7 +78,10 @@
                             <c:out value="${user.no}" />
                         </td>
                         <c:if test="${sessionScope.role!='Guest'}">
-                            <td><a href="Driver?mode=E&driver_id=<c:out value='${user.id}' />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Driver?mode=D&driver_id=<c:out value='${user.id}' />">Delete</a></td>
+                            <td>
+                            <%-- <a href="Driver?mode=E&driver_id=<c:out value='${user.id}' />">Edit</a> --%> 
+                            &nbsp;&nbsp;&nbsp;&nbsp; 
+                            <a href="Driver?mode=D&driver_id=<c:out value='${user.id}' />">Delete</a></td>
                         </c:if>
                     </tr>
                 </c:forEach>

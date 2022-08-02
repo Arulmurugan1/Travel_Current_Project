@@ -18,7 +18,7 @@ color :blue;
 font-size: 28px;
 }
 .blinking:hover {
-            animation: blinkingText .5s infinite;
+            animation: blinkingText 1s infinite;
             font-family: San Serif;
             font-weight: bold;
             width: 100%;
@@ -50,21 +50,11 @@ font-size: 28px;
             }
         }
 </style>
-	<script>
-// 	function blinktext() {
-// 		  var f = document.getElementById('announcement');
-// 		  setInterval(function() {
-// 		    f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
-// 		  }, 5000);
-// 		}
-
-	
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head>
 <body> 
-	<div class="d-flex justify-content-between" id=announcement>
+	<div class="d-flex justify-content-between sticky-top" id=announcement>
 		<div class="image">
          <a href="home.jsp">
             <span><img src="https://cdn5.vectorstock.com/i/1000x1000/96/74/travel-logo-vector-19189674.jpg" alt="#logo img" width="90px" class="img-thumbnail clearfix ml-4"></span>
@@ -80,18 +70,19 @@ font-size: 28px;
           </div> 
            <div class="row m-4">
 			        <div><a href="home.jsp" class="mr-2">Home</a></div> |
-			        <div><a href="LoginServlet?mode=L" class="ml-3">Logout</a></div>
+			        <div><a href="Login?mode=L" class="ml-3">Logout</a></div>
+			        <div><script> var x = window.location.protocol; document.getElementById('n').innerHTML =x;</script><span id=n></span></div>
 	       		</div>
        </div>
     </div>
    <script>
 
-	  $(document).ready(function() {
-			    	        function disableBack() { window.history.forward() }
+// 	  $(document).ready(function() {
+// 			    	        function disableBack() { window.history.forward() }
 
-			    	        window.onload = disableBack();
-			    	        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
-			    	    });
+// 			    	        window.onload = disableBack();
+// 			    	        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+// 			    	    });
 			    
 
     </script>

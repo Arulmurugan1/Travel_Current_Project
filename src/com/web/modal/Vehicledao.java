@@ -45,7 +45,7 @@ public class Vehicledao {
 		return v1;
 	}
 
-	public Vehicle selectVehicle(String no) throws Exception {
+	public Vehicle selectVehicle(String no) {
 		System.out.println(SELECT_BY_NO);
 
 
@@ -69,7 +69,7 @@ public class Vehicledao {
 
 			}
 		} catch(Exception e) {
-			throw e;
+			e.printStackTrace();
 		}
 		return v;
 	}
@@ -119,6 +119,8 @@ public class Vehicledao {
 			statement.setString(1, no);
 
 			rowDeleted = statement.executeUpdate() > 0;
+			
+			System.out.println("Deleted Vehicle "+rowDeleted);
 		}catch(Exception e) {
 			e.printStackTrace();;
 		}

@@ -18,12 +18,9 @@
 	 <jsp:include page="header.jsp" /> 
 
 
-<form name=booking>
-
 <c:if test="${sessionScope.role != 'Guest'}">
-
+<form name=booking method=post> 
     <div class="container-fluid mt-2 text-white ">
-	  
         <div class='row ml-3 d-flex justify-content-center'>
             <div class='col-sm-3 col-md-4 col-lg-3 col-xl-3'>
                 <fieldset class="form-group">
@@ -52,7 +49,7 @@
         </div>
         <div class="d-flex justify-content-around">
 	        <div class='row py-1 ' style="margin-left:30%;">
-	        	<a onclick="javascript:window.open('bookinginsertform.jsp','_blank','top=80,left=340,toolbar=no,status=no,width=800,height=540');" class='btn btn-success button-length' style='width:170px;' > <i class="fa fa-plus mr-2"></i>Add New Booking</a>
+	        	<a onclick="javascript:window.open('bookinginsertform.jsp','_blank','top=80,left=340,toolbar=no,status=no,width=800,height=480');" class='btn btn-success button-length' style='width:170px;' > <i class="fa fa-plus mr-2"></i>Add New Booking</a>
 	        	<button type=button class='btn btn-success button-length ml-2' onclick='location.reload();' ><i class="fa fa-refresh mr-2"></i>Refresh</button>
 	        </div>
         	<div>
@@ -60,8 +57,8 @@
         		
         	</div>
       </div>  
+</form>
 </c:if>
-
     <div class="container-fluid table-responsive mt-1 table-wrapper">
         <table class="table table-bordered  text-center text-white text-capitalize mb-1 ">
             <thead>
@@ -82,7 +79,6 @@
             
 
     	<tbody>
-                <!--   for (Todo todo: todos) {  -->
                 <c:forEach var="user" items="${listUser}">
 
                     <tr>
@@ -98,7 +94,7 @@
                         </td>
                         <td> 
                         <c:if test="${sessionScope.role != 'Guest'}">
-                           <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('Customer?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=1100,height=600');">
+                           <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('Customer?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=700,height=400');">
                         </c:if>  <c:out value="${user.customer_id}" /> </a>
                         </td>
                         <td>
@@ -114,40 +110,34 @@
                             <c:out value="${user.customer_name}" />
                         </td>
                         <c:if test="${sessionScope.role!='Guest'}">
-                            <td><a href="Booking?mode=E&booking_no=<c:out value='${user.booking_no}' />">Edit</a>
+                            <td>
+<%--                             	<a href="Booking?mode=E&booking_no=<c:out value='${user.booking_no}' />">Edit</a> --%>
                                 &nbsp;&nbsp;&nbsp;&nbsp; 
                                 <a href="Booking?mode=D&booking_no=<c:out value='${user.booking_no}' />&customer_id=<c:out value='${user.customer_id}' />">Delete</a>
                             </td>
                         </c:if>
                     </tr>
                 </c:forEach>
-                <!-- } -->
             </tbody>
         </table>
     </div>
-   
-    
-
-
-    
-</form>
 
 
 <script>
 	
-	var childResult ="";
+	var info ="";
 	
 	function popupResult(result)
 	{
-		childResult =result.split(',');
-		booking_no.value 		=  childResult[0];
-		customer_id.value	  	=  childResult[1];
-		fare.value	  			=  childResult[2];
+		info = result.split(',');
 		
 		with (document.booking)
 		{		
-			if ( childResult.length > 0 )
+			if ( info.length > 0 )
 			{
+				booking_no.value 		=  info[0];
+				customer_id.value	  	=  info[1];
+				fare.value	  			=  info[2];
 				booking_no.style.backgroundColor = "green";
 				booking_no.style.color = "yellow";
 				booking_no.style.cursor = "auto"
@@ -159,15 +149,16 @@
 				fare.style.cursor = "auto";
 			}
 		}
-		setTimeout(location.reload(), 3000);
 	}
-	
+	with (document.booking)
+	{
 			booking_no.style.backgroundColor = "grey";
 			customer_id.style.backgroundColor = "grey";
 			fare.style.backgroundColor = "grey";
 			booking_no.style.cursor = "not-allowed";
 			customer_id.style.cursor = "not-allowed";
 			fare.style.cursor = "not-allowed";
+	}
 	
 	
 </script>
@@ -198,9 +189,13 @@
 				}
 			});
 		}
+		
+		if ( '${msg}' !='')
+			alert('${msg}');
+		
+
+
 	</script>
-
-
 
 
 

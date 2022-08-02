@@ -42,17 +42,17 @@
     		}    	
     	</script>
     	<div>
-    		<button class="btn btn-success button-length">Add Route</button>
+    		<button class="btn btn-success button-length ">Add Route</button>
     	</div></div>
   
-  <form name=route method=post action=Route>
+  <form name=route method=post action=RouteNew>
   	<div id=insert style="margin-bottom :20px;color:white;">
   			<input type="hidden" name=mode id=mode value=''>
   		
   			<div class =form-row style="display:flex;justify-content:center;">
   				<div class=col-auto >
   					<label for="vehicle_no" >Vehicle No</label>
-  						<select class="form-control" name="vehicle_no" id="vehicle_no"  style="width:210px;" required >
+  						<select class="form-control" name="vehicle_no" id="vehicle_no" style="width:210px;" required >
 		                        <option value="" selected ></option>
 									<sql:query dataSource="${db}" var="rs">select * from car where vehicle_no not in ( select vehicle_no from route );</sql:query> 
 									<c:forEach var='vehicle' items='${rs.rows}'>
@@ -93,44 +93,6 @@
   			</div>
   		
   	</div>
-  	<div id=update style="display:none;margin-bottom :20px;color:white;">
-  			<div class ="form-row d-flex justify-content-center">
-  				<div class=col-auto >
-  					<label for="vehicle_no" >Vehicle No</label>
-  					<input type="text" class="form-control" readonly onmouseover="this.style.cursor='not-allowed'" maxlength=4 onkeypress="event.charChode >=48 && event.charChode <=57" name=uvehicle_no>
-  				</div>
-  				<div class=col-auto >
-  					<label for="start" >Boarding</label>
-  					<select class="form-select form-control" name="ustart" id="ustart" style="width :210px"
-                            onChange="javascript:routeClick();" required>
-                            <option value="" selected></option>
-                            <c:forTokens items = "Chennai,Salem,Madurai,Kanyakumari,Coimbatore,Erode,Vellore" delims="," var="drop">
-                            	<option value='<c:out value='${drop}' />' >${drop}</option>
-                            </c:forTokens>
-                        </select>
-  				</div>
-  				<div class=col-auto >
-  					<label for="end" >Destination</label>
-  					<select class="form-select form-control" name="uend" id="uend" style="width :210px"
-                            onChange="javascript:routeClick();" required>
-                            <option value="" selected></option>
-                            <c:forTokens items = "Chennai,Salem,Madurai,Kanyakumari,Coimbatore,Erode,Vellore" delims="," var="drop">
-                            	<option value='<c:out value='${drop}' />' >${drop}</option>
-                            </c:forTokens>
-                        </select>
-  				</div>
-  				<div class=col-auto >
-  					<label for="fare" >Fare</label>
-  					<input class="form-control" type=text name=ufare id=ufare maxlength=4 value="">
-  				</div>
-  			</div>
-  			<div class=row>
-  				<div class="col text-center">
-  					<button type=submit class="btn btn-danger button-length mt-4" onclick="Update();">Update</button>
-  					<button type=button class='btn btn-success button-length ml-2 mt-4' onclick='location.reload();' ><i class="fa fa-refresh mr-2"></i>Refresh</button>
-  				</div>
-  			</div>
-  	</div>
   	  </form>  </div>
   	<div class="table-responsive table-wrapper">
       <table class="table table-bordered  text-center text-white text-capitalize ">
@@ -160,9 +122,12 @@
                                         <c:out value="${lists.end}" />
                                     </td>
                                     <td>
-                                    	<c:out value="${lists.vehicle_no}" />
+                                    	<c:out value="${lists.fare}" />
                                     </td>
-                                       <c:if test ="${sessionScope.role!='Guest'}" ><td><a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />')">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Route?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a></td></c:if>
+                                       <c:if test ="${sessionScope.role!='Guest'}" ><td>
+<%--                                        <a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />','<c:out value="${lists.fare}" />')">Edit</a>  --%>
+                                       &nbsp;&nbsp;&nbsp;&nbsp; 
+                                       <a href="RouteNew?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a></td></c:if>
                                 </tr>
                             </c:forEach>
                             
@@ -173,8 +138,7 @@
 	    $(document).ready(function(){
 	    	 $("#insert").hide();
 	    	  $("button").click(function(){
-	    		  $("#update").hide();
-	    	    $("#insert").fadeToggle(1000);
+	    	   	 $("#insert").fadeToggle(1000);
 	    	  });
 	    	});
 	    
@@ -195,19 +159,22 @@
 	    	}
 	    }
 	    
-	    function edit(no,board,destination)
+	    function edit(no,board,destination,cost)
 	    {
-	    	 $(document).ready(function(){
-		    	 $("#insert").hide();
-		    	    $("#update").show(500);
+	    	 $(document).ready(function(){    		 
+		    	 $("#insert").show(500);
+		    	 $("#vehicle_no").empty();
+		    	 $("#start").empty();
+		    	 $("#vehicle_no").append("<option value="+no+">"+no+"</option>")
+		    	 $("#start").append("<option value="+board+">"+board+"</option>")
 		    	});
 	  
 	    	with(document.route)
 	    	{
-	    		uvehicle_no.value	=no;
-	    		ustart.value		=board;
-	    		uend.value		 	=destination;
-	    		ufare.value 		=no ;
+	    		vehicle_no.value	=no;
+	    		start.value			=board;
+	    		end.value		 	=destination;
+	    		fare.value 			=cost ;
 	    		mode.value		 	='U';
 	    	}
 	    }

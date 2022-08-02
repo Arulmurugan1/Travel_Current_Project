@@ -88,7 +88,7 @@ public class ExcelConverter
 			e.printStackTrace();
 		}
 		finally {
-				Dbmanager.closeConnection();
+			
 		}
 	}
 	

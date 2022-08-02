@@ -1,10 +1,12 @@
 package com.web.modal;
 
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 import com.web.objects.Booking;
 import com.web.objects.Customer;
@@ -14,88 +16,54 @@ public class Bookingdao {
 
 	private static final String INSERT_BOOKING = "INSERT INTO BOOKING VALUES(null,?,?,?,?,?,?);";
 	private static final String SELECT_USER_BY_ID = "select * from booking where booking_no =?";
-	private static final String SELECT_USER_BY_CUSTOMER_ID = "select * from booking where customer_id =?";
 	private static final String SELECT_ALL_USERS = "SELECT A.*,B.CUSTOMER_NAME FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
 	private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
-	
-	Connection con =null;
-	
+
+	static Connection con = null;
+	static PreparedStatement ps = null;
+	static ResultSet rs = null;
+
 
 	public Bookingdao() {
-		con =Dbmanager.getConnection();
+		con = Dbmanager.getConnection();
 	}
 
-	public boolean insertBooking(Booking user) 
+	public int insertBooking(Booking user) 
 	{
-		System.out.println(INSERT_BOOKING);
-		boolean rowsAffected = false;
-		try {
-			
-			Vector field = new Vector();
-			
-			field.add(user.getPickup_from());
-			field.add(user.getDrop_at());
-			field.add(user.getCustomer_id());
-			field.add(user.getVehicle_no());
-			field.add(user.getDriver_id());
-			field.add(user.getFare());		
-			
-			System.out.println(field +"  "+field.size());
-			
-			rowsAffected = 	Dbmanager.insertObjects(INSERT_BOOKING, field);
+		int result = 0;
+		try {			
+			ps = con.prepareStatement(INSERT_BOOKING, Statement.RETURN_GENERATED_KEYS);
+			ps.setString(1,user.getPickup_from() );
+			ps.setString(2,user.getDrop_at() );
+			ps.setInt(3,user.getCustomer_id() );
+			ps.setString(4,user.getVehicle_no() );
+			ps.setString(5,user.getDriver_id() );
+			ps.setDouble(6,user.getFare() );	
+			System.out.println(ps);
+			ps.executeUpdate();
+			rs = ps.getGeneratedKeys();
+
+			while ( rs.next())
+			{
+				result = rs.getInt(1);
+				System.out.println("Booking No ::"+result);
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return rowsAffected;
+		return result;
 	}
 
 	public Booking selectBooking(int id) {
 		Booking user = null;
-		System.out.println(SELECT_USER_BY_ID);
-		
-		
+		System.out.println(SELECT_USER_BY_ID);	
 
-		try {
-
-			
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_USER_BY_ID);
-
-			preparedStatement.setInt(1, id);
-			System.out.println(preparedStatement);
-
-			ResultSet rs = preparedStatement.executeQuery();
-
-			while (rs.next()) {
-				int c =1;
-				int id1 = rs.getInt(c++);
-				String pickup = rs.getString(c++);
-				String drop = rs.getString(c++);
-				int customer = rs.getInt(c++);
-				String vehicle = rs.getString(c++);
-				String driver = rs.getString(c++);
-				double fare = rs.getDouble(c++);
-				user = new Booking(id1, pickup, drop, customer, vehicle, driver, fare);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return user;
-	}
-
-	public Booking selectBookingByCustomerId(int id) {
-		Booking user = null;
-		System.out.println(SELECT_USER_BY_CUSTOMER_ID);
-
-		try {
-
-			
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_USER_BY_CUSTOMER_ID);
-
-			preparedStatement.setInt(1, id);
-			System.out.println(preparedStatement);
-
-			ResultSet rs = preparedStatement.executeQuery();
-
+		try {			
+			ps = con.prepareStatement(SELECT_USER_BY_ID);
+			ps.setInt(1, id);
+			System.out.println(ps);
+			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				int c =1;
 				int id1 = rs.getInt(c++);
@@ -116,22 +84,11 @@ public class Bookingdao {
 	public List<Booking> getAllBooking() {
 
 		System.out.println(SELECT_ALL_USERS);
-
-		// using try-with-resources to avoid closing resources (boiler plate code)
 		List<Booking> users = new ArrayList<>();
-
-		
-
 		try {
-			
-
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_USERS);
-			System.out.println(preparedStatement);
-
-			// Step 3: Execute the query or update query
-			ResultSet rs = preparedStatement.executeQuery();
-
-			// Step 4: Process the ResultSet object.
+			ps = con.prepareStatement(SELECT_ALL_USERS);
+			System.out.println(ps);
+			rs = ps.executeQuery();
 			while (rs.next()) {
 
 				int c =1;
@@ -156,11 +113,11 @@ public class Bookingdao {
 		boolean rowsAffected = false;
 		System.out.println(DELETE_USERS_SQL);
 		try {
-			
-			PreparedStatement statement = con.prepareStatement(DELETE_USERS_SQL);
 
-			statement.setInt(1, id);
-			rowsAffected = statement.executeUpdate() > 0;
+			ps = con.prepareStatement(DELETE_USERS_SQL);
+
+			ps.setInt(1, id);
+			rowsAffected = ps.executeUpdate() > 0;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -169,51 +126,51 @@ public class Bookingdao {
 
 	public boolean updateBooking(Booking user) 
 	{
-	    String UPDATE_BOOKING = "  update booking set";
-	    
-		
-		boolean rowsAffected = false;
-		try {			
-			Vector field = new Vector();
+		String sql = "  update booking set";
+
+
+		boolean result = false;
+		try {
+			if ( user.getPickup_from().trim().length() > 0)
+				sql += " pickup_from = ?, ";
+			if ( user.getDrop_at().trim().length() > 0)
+				sql += " drop_at = ?, ";
+			if ( user.getCustomer_id()  > 0)
+				sql += " customer_id = ?, ";
+			if ( user.getVehicle_no().trim().length() > 0)
+				sql += " vehicle_no = ?, ";
+			if ( user.getDriver_id().trim().length() > 0)
+				sql += " driver_id = ?, ";
+			if ( user.getFare() > 0)
+				sql += " fare = ? ";
+			sql += " where booking_no = ?";	
+			
+			ps = con.prepareStatement(sql);
+			
+			int c =1;
 			
 			if ( user.getPickup_from().trim().length() > 0)
-				UPDATE_BOOKING += " pickup_from = ?, ";
+				ps.setString(c++,user.getPickup_from());
 			if ( user.getDrop_at().trim().length() > 0)
-				UPDATE_BOOKING += " drop_at = ?, ";
+				ps.setString(c++,user.getDrop_at());
 			if ( user.getCustomer_id()  > 0)
-				UPDATE_BOOKING += " customer_id = ?, ";
+				ps.setInt(c++,user.getCustomer_id());
 			if ( user.getVehicle_no().trim().length() > 0)
-				UPDATE_BOOKING += " vehicle_no = ?, ";
+				ps.setString(c++,user.getVehicle_no());
 			if ( user.getDriver_id().trim().length() > 0)
-				UPDATE_BOOKING += " driver_id = ?, ";
+				ps.setString(c++,user.getDriver_id());
 			if ( user.getFare() > 0)
-				UPDATE_BOOKING += " fare = ? ";
-				UPDATE_BOOKING += " where booking_no = ?";	
+				ps.setDouble(c++,user.getFare());	
+			ps.setInt(c++,user.getBooking_no());	
+
+			System.out.println(ps);
 			
-				System.out.println(UPDATE_BOOKING);
-			
-			if ( user.getPickup_from().trim().length() > 0)
-				field.add(user.getPickup_from());
-			if ( user.getDrop_at().trim().length() > 0)
-				field.add(user.getDrop_at());
-			if ( user.getCustomer_id()  > 0)
-				field.add(user.getCustomer_id());
-			if ( user.getVehicle_no().trim().length() > 0)
-				field.add(user.getVehicle_no());
-			if ( user.getDriver_id().trim().length() > 0)
-				field.add(user.getDriver_id());
-			if ( user.getFare() > 0)
-				field.add(user.getFare());	
-				field.add(user.getBooking_no());	
-			
-			System.out.println(field +"  "+field.size());
-			
-			rowsAffected = 	Dbmanager.updateObjects(UPDATE_BOOKING, field);
+			result = ps.executeUpdate() > 0;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return rowsAffected;
-	
+		return result;
+
 	}
 
 	public boolean bookingCheck(Booking user, Customer c) {
@@ -222,38 +179,38 @@ public class Bookingdao {
 		int cntl = 1;
 
 		try {
-			
-			PreparedStatement preparedStatement = con.prepareStatement(CheckQuery(user, c));
+
+			ps = con.prepareStatement(CheckQuery(user, c));
 
 			System.out.println(CheckQuery(user, c));
 
 			if (user.getPickup_from().length() > 0)
-				preparedStatement.setString(cntl++, user.getPickup_from());
+				ps.setString(cntl++, user.getPickup_from());
 
 			if (user.getDrop_at().length() > 0)
-				preparedStatement.setString(cntl++, user.getDrop_at());
+				ps.setString(cntl++, user.getDrop_at());
 
 			if (user.getVehicle_no().length() > 0)
-				preparedStatement.setString(cntl++, user.getVehicle_no());
+				ps.setString(cntl++, user.getVehicle_no());
 
 			if (user.getDriver_id().length() > 0)
-				preparedStatement.setString(cntl++, user.getDriver_id());
+				ps.setString(cntl++, user.getDriver_id());
 
 			if (user.getFare() > 0)
-				preparedStatement.setDouble(cntl++, user.getFare());
+				ps.setDouble(cntl++, user.getFare());
 
 			if (c.getCustomer_name().length() > 0)
-				preparedStatement.setString(cntl++, c.getCustomer_name());
+				ps.setString(cntl++, c.getCustomer_name());
 
 			if (user.getBooking_no() > 0)
-				preparedStatement.setInt(cntl++, user.getBooking_no());
+				ps.setInt(cntl++, user.getBooking_no());
 
 			if (user.getCustomer_id() > 0)
-				preparedStatement.setInt(cntl++, user.getCustomer_id());
+				ps.setInt(cntl++, user.getCustomer_id());
 
-			System.out.println(preparedStatement);
+			System.out.println(ps);
 
-			ResultSet rs = preparedStatement.executeQuery();
+			ResultSet rs = ps.executeQuery();
 
 			if (rs.next()) {
 				rows = false;
@@ -296,4 +253,25 @@ public class Bookingdao {
 
 	}
 
+	public void closeAll() throws Throwable
+	{
+		if ( con !=null && !con.isClosed())
+		{
+			con.close();
+			con = null;
+			System.out.println("Connection Closed ::"+con);
+		}
+		if ( ps !=null )
+		{
+			ps.close();
+			ps = null;
+			System.out.println("Statement Closed ::"+ps);
+		}
+		if ( rs !=null  )
+		{
+			rs.close();
+			rs = null;
+			System.out.println("Resultset Closed ::"+rs);
+		}
+	}
 }

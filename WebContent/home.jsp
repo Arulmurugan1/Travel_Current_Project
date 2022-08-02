@@ -17,7 +17,7 @@
         <div class="content">
             <div class="card-body" >
             <form name=home id=center >
-            	<input type=hidden name=mode value=Q >
+            	<input type=hidden name=mode value='' >
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
                         <a class="home-button  text-primary" onclick="Submit('Booking')">Bookings</a>
@@ -32,10 +32,10 @@
                         <a class="home-button text-primary" onclick="Submit('Driver')">Drivers</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('Route')" >Routes</a>
+                        <a class="home-button text-primary" onclick="Submit('RouteNew')" >Routes</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" disabled>Users</a>
+                        <a class="bg-warning home-button text-primary" disabled>Users</a>
                     </div>
                 </div></form>
             </div>
