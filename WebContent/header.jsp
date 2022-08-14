@@ -71,7 +71,6 @@ font-size: 28px;
            <div class="row m-4">
 			        <div><a href="home.jsp" class="mr-2">Home</a></div> |
 			        <div><a href="Login?mode=L" class="ml-3">Logout</a></div>
-			        <div><script> var x = window.location.protocol; document.getElementById('n').innerHTML =x;</script><span id=n></span></div>
 	       		</div>
        </div>
     </div>

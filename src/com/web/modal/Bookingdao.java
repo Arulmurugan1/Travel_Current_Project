@@ -55,30 +55,41 @@ public class Bookingdao {
 		return result;
 	}
 
-	public Booking selectBooking(int id) {
+	public static Booking selectBooking(int id) {
 		Booking user = null;
 		System.out.println(SELECT_USER_BY_ID);	
 
 		try {			
-			ps = con.prepareStatement(SELECT_USER_BY_ID);
+			ps = Dbmanager.getConnection().prepareStatement(SELECT_USER_BY_ID);
 			ps.setInt(1, id);
 			System.out.println(ps);
 			ResultSet rs = ps.executeQuery();
-			while (rs.next()) {
-				int c =1;
-				int id1 = rs.getInt(c++);
-				String pickup = rs.getString(c++);
-				String drop = rs.getString(c++);
-				int customer = rs.getInt(c++);
-				String vehicle = rs.getString(c++);
-				String driver = rs.getString(c++);
-				double fare = rs.getDouble(c++);
-				user = new Booking(id1, pickup, drop, customer, vehicle, driver, fare);
+			
+			
+			while (rs.next()) 
+			{
+				
+				
+				
+				
+//				int c =1;
+//				int id1 = rs.getInt(c++);
+//				String pickup = rs.getString(c++);
+//				String drop = rs.getString(c++);
+//				int customer = rs.getInt(c++);
+//				String vehicle = rs.getString(c++);
+//				String driver = rs.getString(c++);
+//				double fare = rs.getDouble(c++);
+//				user = new Booking(id1, pickup, drop, customer, vehicle, driver, fare);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return user;
+	}
+	
+	public static void main(String[] args) {
+		selectBooking(20);
 	}
 
 	public List<Booking> getAllBooking() {
