@@ -2,7 +2,6 @@ package com.web.controller;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +17,8 @@ import com.web.objects.Customer;
 public class BookingServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	public BookingServlet() {
+	public BookingServlet() 
+	{
 		super();
 	}
 
@@ -50,9 +50,8 @@ public class BookingServlet extends HttpServlet {
 			int id = Integer.parseInt(request.getParameter("booking_no"));
 
 			b = dao.selectBooking(id);
-			RequestDispatcher dispatcher = request.getRequestDispatcher("bookingupdateform.jsp");
 			request.setAttribute("user", b);
-			dispatcher.forward(request, response);
+			request.getRequestDispatcher("bookingupdateform.jsp").forward(request, response);
 
 		}
 
@@ -62,12 +61,12 @@ public class BookingServlet extends HttpServlet {
 			drop 			= request.getParameter("drop_at").trim();
 			vehicle 		= request.getParameter("vehicle_no").trim();
 			customer_name 	= request.getParameter("customer_name").trim();
-			driver = request.getParameter("driver_id");
-			fare	= Double.parseDouble(request.getParameter("fare"));
-			age 	= request.getParameter("age").trim();
-			email	= request.getParameter("email").trim();
-			gender	= request.getParameter("gender").substring(0, 1);
-			phone	= request.getParameter("phone").trim();
+			driver 			= request.getParameter("driver_id");
+			fare			= Double.parseDouble(request.getParameter("fare"));
+			age 			= request.getParameter("age").trim();
+			email			= request.getParameter("email").trim();
+			gender			= request.getParameter("gender").substring(0, 1);
+			phone			= request.getParameter("phone").trim();
 			
 			if( vehicle.trim().length() > 0 && vehicle.contains("-") ) 
 				vehicle = vehicle.split("-")[0].trim();
@@ -79,16 +78,22 @@ public class BookingServlet extends HttpServlet {
 			
 			if( customerId > 0 )
 			{
-				b =new Booking(pickup, drop, customerId, vehicle, driver, fare);
+				b= new Booking();
+				b.setPickup_from(pickup);
+				b.setDrop_at(drop);
+				b.setCustomer_id(customerId);
+				b.setVehicle_no(vehicle);
+				b.setDriver_id(driver);
+				b.setFare(fare);
+				
 				int bookingNo = dao.insertBooking(b);
 				request.setAttribute("result", bookingNo +","+customerId+","+fare);
-				
-				RequestDispatcher rd = request.getRequestDispatcher("bookinginsertform.jsp");
-				rd.forward(request, response);
+				request.getRequestDispatcher("bookinginsertform.jsp").forward(request, response);
 			}
 			else
 			{
 				request.setAttribute("msg", "Booking failed ");
+				request.getRequestDispatcher("bookinginsertform.jsp").forward(request, response);
 			}
 
 
@@ -103,7 +108,12 @@ public class BookingServlet extends HttpServlet {
 
 			int customer_id =Integer.parseInt(request.getParameter("customer_id"));
 
-			b = new Booking(id, customer_id , vehicle, driver) ;
+			b = new Booking();
+			b.setBooking_no(id);
+			b.setCustomer_id(customer_id);
+			b.setVehicle_no(vehicle);
+			b.setDriver_id(driver);
+			
 			if( dao.updateBooking(b))
 			{
 				request.setAttribute("msg", "Booking edit Success");
@@ -120,7 +130,7 @@ public class BookingServlet extends HttpServlet {
 			int customerId		= Integer.parseInt(request.getParameter("customer_id"));
 
 
-			if(dao.deleteBooking(id) && cdao.deleteCustomer(customerId))
+			if( cdao.deleteCustomer(customerId) && dao.deleteBooking(id))
 			{
 				request.setAttribute("msg", "Booking deleted");
 			}
@@ -135,9 +145,7 @@ public class BookingServlet extends HttpServlet {
 
 		if ( !(mode =="I" || mode == "E" ) )
 		{
-
-			RequestDispatcher rd = request.getRequestDispatcher("booking.jsp");
-			rd.forward(request, response);
+			request.getRequestDispatcher("booking.jsp").forward(request, response);
 		}
 		
 		try{

@@ -1,9 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="java.io.*,java.util.*,java.sql.*"%>  
-<%@ page import="javax.servlet.http.*,javax.servlet.*" %>  
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
 <%@ include file="dbconnection.jsp" %>
 
 
@@ -19,7 +15,7 @@
    <div class="container-fluid mt-4">
                <div class="card" >
                    <div class="card-body bg-white">                       
-                            <form name ="bookingInsert" method = "post">
+                            <form name ="bookingInsert" method = "post"  ><!-- class="needs-validation" --> <!-- novalidate -->
                        <input type=hidden name=mode id=mode value=I />
              <div class="row d-flex justify-content-center">
              		<h4 style='color:green;'>${msg}</h4>
@@ -38,7 +34,8 @@
 								<option value="${vehicle.start}">${vehicle.start}</option>
 							</c:forEach>
                         </select>
-                    
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Provide a Boarding Point!</div>
                 </fieldset>
             </div>
             <div class='col-auto '>
@@ -54,7 +51,8 @@
 								<option value="${vehicle.end}">${vehicle.end}</option>
 							</c:forEach>
                     </select>
-                    
+                    <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Provide a Destination!</div>
                 </fieldset>
             </div>
             <div class='col-auto '>
@@ -62,13 +60,14 @@
                     <label>Vehicle No</label>              
                     <select class="form-select form-control" name="vehicle_no" id="vehicle_no" style="width :340px" readonly>
 				<sql:query dataSource="${db}" var="rs">
-						select vehicle_no from route where start ='${pickup}' and end ='${drop}';			
+						select no from route where start ='${pickup}' and end ='${drop}';			
 				</sql:query> 
 							<c:forEach  var='vehicle' items='${rs.rows}'>
-								<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no}</option>
+								<option value="${vehicle.no}">${vehicle.no}</option>
 							</c:forEach>
                     </select>
-
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please choose Boarding and Destination</div>
                 </fieldset>
             </div>
             <div class='col-auto'>
@@ -77,28 +76,31 @@
                     <label>Driver Id</label>                 
                     <select class="form-select form-control" name="driver_id" id="driver_id" readonly style="width :340px">
                         <sql:query dataSource="${db}" var="rs">
-                        	SELECT d.* from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup}' and r.end ='${drop}';
+                        	SELECT d.* from driver d,route r where d.no =r.no and r.start ='${pickup}' and r.end ='${drop}';
                         </sql:query>
                         <c:forEach var="driver" items="${rs.rows}">
-                            <option value="${driver.driver_id} - ${driver.driver_name}">${driver.driver_id} - ${driver.driver_name}</option>
+                            <option value="${driver.id} - ${driver.name}">${driver.id} - ${driver.name}</option>
                         </c:forEach>
                         
                     </select>
-
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please choose Boarding and Destination</div>
                 </fieldset>
             </div>
             <div class='col-auto'>
                 <fieldset class="form-group">
                     <label>Customer Name</label>
-                    <input class=" form-control" name="customer_name" id="customer_name" size=38 onchange='javascript:emailClick()'  required>
-
+                    <input type=text class="form-control" name="customer_name" id="customer_name" size=38 >
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Enter Your Name!</div>
                 </fieldset>
             </div>
             <div class='col-auto'>
                 <fieldset class="form-group">
                     <label>Age</label>
                     	 <input type="number" class=" form-control" id="age" name="age" min="4" max="60" step="1">
-
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Enter Your Age!</div>
                 </fieldset>
             </div>
           
@@ -112,7 +114,8 @@
                             	<option value='<c:out value='${gender}' />' >${gender}</option>
                             </c:forTokens>
                         </select>
-
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Select Your Gender!</div>
                 </fieldset>
             </div>
           
@@ -120,16 +123,18 @@
                 <fieldset class="form-group">
                     <label>Email</label>
                     	<input class="form-control" name="email" id="email" value ='@gmail.com' size=38 >
-
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Enter Your Email!</div>
                 </fieldset>
             </div>
             <div class='col-auto'>
                 <div class="form-group">
                     <label>Phone/WhatsApp</label>
                     <div class=input-group>
-                    	<input class="form-control col-sm-2 mr-1" value='+91' readonly>
-                    	<input type=text class="form-control" size=10 maxlength=10 name="phone" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'  required>
+                    	<input type=text class="form-control" size=38 maxlength=10 name="phone" id="phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'  >
 					</div>
+					<div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please Enter Your Mobile No!</div>
                 </div>
             </div> 
             <div class='col-auto'>
@@ -146,7 +151,7 @@
             </div>  
             <div class="row d-flex justify-content-center  mb-4">
             
-              <button type="submit" class="btn btn-primary mr-2 button-length" onclick="submitPage()">Add</button><br>	
+              <button type="button" class="btn btn-primary mr-2 button-length" onclick="Submit()">Add</button><br>	
                <input type="reset" class="btn btn-success  button-length mr-2" value=Reset>  
                <input type="button" class="btn btn-success  button-length" value=Back onclick ='window.close()'>
         	</div>    
@@ -174,20 +179,6 @@
 		document.bookingInsert.drop_at.value = '${drop}';
 	if ( '${fare}' !="")
 		document.bookingInsert.fare.value = '${fare}';		
-	
-	
-	function submitPage()
-	{
-		with(document.bookingInsert)
-		{
-		action ="Booking";
-		submit();
-		}
-	}
-	function emailClick()
-	{
-		document.bookingInsert.email.value =  document.bookingInsert.customer_name.value + '@gmail.com';
-	}
 	function submitOnChange()
 	{
 		with(document.bookingInsert)
@@ -196,9 +187,65 @@
 			submit();
 		}
 	}
+	
+	function Submit()
+	{
+		var success = true ;
+		for ( var i=0 ; i < document.forms[0].length ; i++ )
+			{
+				if ( document.forms[0][i].localName== "select" || document.forms[0][i].localName == "input")
+					{
+						if ( ( document.forms[0][i].value ).trim() == "" || ( document.forms[0][i].value ).trim() == "@gmail.com" )
+						{
+							$( document.forms[0][i] ).addClass("is-invalid"); 
+						}
+						else
+						{
+							if ( $( document.forms[0][i]).hasClass('is-invalid') )
+								$( document.forms[0][i]).removeClass('is-invalid')
+							$( document.forms[0][i] ).addClass("is-valid");
+						}
+					}
+				if ( $( document.forms[0][i]).hasClass('is-invalid') )
+					{
+					success = false ;
+					return;
+					}
+			}
+		if ( success )
+			{
+				document.forms[0].action = 'Booking';
+				document.forms[0].submit();
+			}
+	}
 
 </script>
 
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+
+// (function() {
+//   'use strict';
+//   window.addEventListener('load', function() {
+//     // Fetch all the forms we want to apply custom Bootstrap validation styles to
+//     var forms = document.getElementsByClassName('needs-validation');
+//     // Loop over them and prevent submission
+//     var validation = Array.prototype.filter.call(forms, function(form) {
+//       form.addEventListener('submit', function(event) {
+//         if (form.checkValidity() == false) {
+//           event.preventDefault();
+//           event.stopPropagation();
+//           alert('checkvalidity');
+//         }
+//         form.classList.add('was-validated');
+//         alert('submit');
+//       }, false);
+//       alert('validation');
+//     });
+//     alert('load');
+//   }, false);
+// })();
+</script>
 
 </body>
 </html>

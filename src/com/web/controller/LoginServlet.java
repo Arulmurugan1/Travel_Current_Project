@@ -12,21 +12,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.web.modal.user_user_profile_dao;
-import com.web.objects.user_user_profile;
+import com.web.modal.Logindao;
+import com.web.objects.Login;
 
 
 @WebServlet("/Login")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public user_user_profile_dao userdao = null;
-	public user_user_profile u =null;
-	RequestDispatcher rd ;
+	public Logindao dao = null;
+	public Login u =null;
+	RequestDispatcher rd = null;
 	
 public LoginServlet() {
         super();
-        userdao= new user_user_profile_dao();
-        u = new user_user_profile();
+        dao= new Logindao();
+        u = new Login();
         
     }
 
@@ -36,6 +36,7 @@ public LoginServlet() {
 		try //Logout
 		{
 			String mode = request.getParameter("mode");
+			System.out.println(" Mode "+mode);
 			
 			if ( mode.equals("L"))
 			{
@@ -59,10 +60,12 @@ public LoginServlet() {
 		HttpSession session =request.getSession(true);
 
 		String mode =request.getParameter("mode");
-
+		
+		System.out.println("Mode "+mode);
 
 		if ( mode.trim().equals("login"))
-		{
+		{ 
+			boolean success = false ;
 			try // Login
 			{
 				String user =request.getParameter("txtUser").trim();
@@ -70,59 +73,54 @@ public LoginServlet() {
 
 				System.out.println(" Username : "+ user + " Password : "+password);
 
-				LocalDateTime myDate = LocalDateTime.now();  
-				System.out.println("Before Formatting: " + myDate);  
 				DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a");  
 
-				String formattedDate = myDate.format(myFormatObj);  
+				String formattedDate = LocalDateTime.now().format(myFormatObj);  
 				System.out.println("After Formatting: " + formattedDate);  
 
 
-				if( ( user.equals("") || user.equalsIgnoreCase("null") )   || ( password.equals("") || password.equalsIgnoreCase("null") ) )
-				{
-					request.setAttribute("msg","Enter login credentials first ...");
-				}
-				else
-				{
-					if(userdao.checkUser(user)) 
+					if(dao.checkUser(user)) 
 					{
 
-						u = userdao.selectUser(user);
+						u = dao.selectUser(user);
 
-						String name 	  =u.getUsername();
-						String pass 	  =u.getPassword();
-						String role		  =u.getRole();
-						String id 		  =u.getUser_id();
 						System.out.println( " Last Login "+u.getLast_login());
-						String last_login = u.getLast_login().format(myFormatObj);
 
-						System.out.println("DB Username : "+ name + " Password : "+pass);
-						if(user.trim().equals(id) && password.trim().equals(pass)) {
-							session.setAttribute("user", name);
-							session.setAttribute("role", role);
-							session.setAttribute("timeStamp", last_login);
+						System.out.println("DB Username : "+ u.getUsername() + " Password : "+u.getPassword() );
+						if(user.trim().equals( ( u.getUser_id().trim() )) && password.trim().equals( ( u.getPassword().trim()) )) 
+						{
+							session.setAttribute("user", u.getUsername());
+							session.setAttribute("role", u.getRole());
+							session.setAttribute("timeStamp", u.getLast_login().format(myFormatObj) );
 							
-							if (userdao.updateUser(u) )
+							if (dao.updateUser(u) )
 									System.out.println(" Last logged in updated ");
 
 							System.out.println("Logged in at : "+ session.getCreationTime());
-							rd = request.getRequestDispatcher("home.jsp");
-							rd.forward(request, response);
+							success = true ;
 						}
 						else 
-						{
-							request.setAttribute("txtuser",user);
+						{		
 							request.setAttribute("msg","Incorrect Username or Password ...");
 						}
 					}
 					else
 					{
-						request.setAttribute("txtuser",user);
 						request.setAttribute("msg","Create an account to login ..");
 					}
 
-
-				}
+					request.setAttribute("txtuser",user);
+					if (success)
+					{
+						rd = request.getRequestDispatcher("home.jsp");
+						rd.forward(request, response);
+					}
+					
+					else
+					{
+						rd = request.getRequestDispatcher("index.jsp");
+						rd.forward(request, response);
+					}
 			}catch(Exception e) 
 			{
 
@@ -151,16 +149,17 @@ public LoginServlet() {
 				{
 					if(pass1.contentEquals(pass2)) 
 					{
-						u =new user_user_profile(name, pass1, id);
-
-						if(userdao.checkUser(id))
+						u.setUser_id(id);
+						u.setLast_login(null);
+						u.setPassword(pass1);
+						if(dao.checkUser(id))
 						{
 							System.out.println( " In LoginServlet : name= "+name+" User already available");
 							request.setAttribute("msg","User Account already exist as " + id);
 						}
 						else
 						{
-							if(userdao.insertUser(u)) 
+							if(dao.insertUser(u)) 
 							{
 								System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
 								request.setAttribute("msg","User Added Successfully ...");
@@ -179,15 +178,12 @@ public LoginServlet() {
 					}
 
 				}
+				dao.closeAll();
+				request.getRequestDispatcher("index.jsp").include(request, response);
 			}catch(Exception e) 
 			{
 				System.out.println("Exception in user addition ");e.printStackTrace();			
 			}
 		}
-		try 
-		{
-		rd = request.getRequestDispatcher("index.jsp");
-		rd.forward(request, response);
-		}catch(Exception e) {System.out.println("Request dispatched already  ["+rd.toString() +"]");}
 	}
 }

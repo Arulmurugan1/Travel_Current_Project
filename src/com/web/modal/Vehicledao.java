@@ -1,7 +1,9 @@
 package com.web.modal;
 
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,34 +13,34 @@ import com.web.util.Dbmanager;
 public class Vehicledao {
 
 
-	private static final String INSERT_VEHICLE ="INSERT INTO CAR VALUES(?,?,?,?);" ;
-	private static final String SELECT_BY_NO = "select * from car where vehicle_no =?";
-	private static final String SELECT_ALL_VEHICLE = "select * from car";
-	private static final String DELETE_VEHICLE = "delete from car where vehicle_no = ?;";
-	private static final String UPDATE_VEHICLE = "update car set vehicle_model = ?,vehicle_no= ?, vehicle_type =?,vehicle_color=? where vehicle_no = ?;";
+	private static final String INSERT_VEHICLE ="INSERT INTO vehicle VALUES(?,?,?,?);" ;
+	private static final String SELECT_BY_NO = "select * from vehicle where vehicle_no =?";
+	private static final String SELECT_ALL_VEHICLE = "select * from vehicle";
+	private static final String DELETE_VEHICLE = "delete from vehicle where vehicle_no = ?;";
+	private static final String UPDATE_VEHICLE = "update vehicle set vehicle_model = ?,vehicle_no= ?, vehicle_type =?,vehicle_color=? where vehicle_no = ?;";
 
-	
 
-	Vehicle v = new Vehicle();
 
-	Connection con = null;
+	private static Vehicle v ;
+	private static PreparedStatement ps ;
+	private static ResultSet rs ;
+	private static Connection con ;
+
 	public Vehicledao() { con = Dbmanager.getConnection();}
 
 	public boolean insertVehicle(Vehicle v){
-		System.out.println(INSERT_VEHICLE);
-
 		boolean v1 =false;
 		try {
-			
 
-			PreparedStatement preparedStatement = con.prepareStatement(INSERT_VEHICLE);
 
-			preparedStatement.setString(1,v.getNo() );
-			preparedStatement.setString(2,v.getModel() );
-			preparedStatement.setString(3,v.getType() );
-			preparedStatement.setString(4,v.getColor() );
-			System.out.println(preparedStatement);
-			v1 = preparedStatement.executeUpdate()>0;
+			ps = con.prepareStatement(INSERT_VEHICLE);
+
+			ps.setString(1,v.getNo() );
+			ps.setString(2,v.getModel() );
+			ps.setString(3,v.getType() );
+			ps.setString(4,v.getColor() );
+			System.out.println(ps);
+			v1 = ps.executeUpdate()>0;
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -51,14 +53,13 @@ public class Vehicledao {
 
 		try{
 
-			
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_BY_NO);
+			ps = con.prepareStatement(SELECT_BY_NO);
 
-			preparedStatement.setString(1, no);
-			System.out.println(preparedStatement);
+			ps.setString(1, no);
+			System.out.println(ps);
 
 
-			ResultSet rs = preparedStatement.executeQuery();
+			rs = ps.executeQuery();
 
 			while (rs.next()) {
 				String no1 =rs.getString("vehicle_no");
@@ -74,37 +75,24 @@ public class Vehicledao {
 		return v;
 	}
 
-	public List < Vehicle > getAllVehicle() {
-
-		System.out.println(SELECT_ALL_VEHICLE);
-
-
-		List < Vehicle > users = new ArrayList < > ();
-
+	public List < Vehicle > getAllVehicle() 
+	{
+		List<Vehicle> ls = new ArrayList < > ();
 		try 
 		{
-			
-
-			PreparedStatement preparedStatement = con.prepareStatement(SELECT_ALL_VEHICLE);
-			System.out.println(preparedStatement);
-
-			// Step 3: Execute the query or update query
-			ResultSet rs = preparedStatement.executeQuery();
-
-			// Step 4: Process the ResultSet object.
-			while (rs.next()) {
-
-				String no =rs.getString("vehicle_no");
-				String model =rs.getString("vehicle_model");
-				String type =rs.getString("vehicle_type");
-				String color =rs.getString("vehicle_color");
-				users.add(new Vehicle(no, model, type, color));
+			ps = Dbmanager.getConnection().prepareStatement(SELECT_ALL_VEHICLE);
+			rs = ps.executeQuery();
+			while (rs.next()) 
+			{
+				ls.add(new Vehicle(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4))) ;
 			}
 		}
-		catch(Exception e) {
+		catch(Exception e)
+		{
 			e.printStackTrace();
 		}
-		return users;
+		
+		return ls ;
 	}
 
 	public boolean deleteVehicle(String no){
@@ -113,16 +101,15 @@ public class Vehicledao {
 
 		try  
 		{
-			con = Dbmanager.getConnection(); 
-			PreparedStatement statement = con.prepareStatement(DELETE_VEHICLE);
+			ps = con.prepareStatement(DELETE_VEHICLE);
 
-			statement.setString(1, no);
+			ps.setString(1, no);
 
-			rowDeleted = statement.executeUpdate() > 0;
-			
+			rowDeleted = ps.executeUpdate() > 0;
+
 			System.out.println("Deleted Vehicle "+rowDeleted);
 		}catch(Exception e) {
-			e.printStackTrace();;
+			e.printStackTrace();
 		}
 		return rowDeleted;
 	}
@@ -132,8 +119,8 @@ public class Vehicledao {
 
 		try
 		{
-			
-			PreparedStatement ps = con.prepareStatement(UPDATE_VEHICLE);
+
+			ps = con.prepareStatement(UPDATE_VEHICLE);
 
 			ps.setString(1,v.getModel() );
 			ps.setString(2,v.getNo() );
@@ -148,5 +135,25 @@ public class Vehicledao {
 			e.printStackTrace();
 		}
 		return rowUpdated;
+	}
+
+	public void closeAll() throws Exception
+	{
+		if ( con !=null && !con.isClosed())
+		{
+			con.close();
+			con = null;
+		}
+		if ( ps !=null )
+		{
+			ps.close();
+			ps = null;
+		}
+		if ( rs !=null  )
+		{
+			rs.close();
+			rs = null;
+		}
+		System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
 	}
 }

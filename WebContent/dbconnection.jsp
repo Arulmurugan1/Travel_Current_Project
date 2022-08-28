@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>  
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>  
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -18,9 +21,7 @@
 
 <!-- Google Icons --> 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
@@ -29,15 +30,15 @@
 		<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"  
     			 url="jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false"  user="root"  password="root"/>
     			 
-    <div id="loader">			 
-		    <div id="content">
-		        <div id="circular-progress">
-		            <span id="progress-value">
-		                0%
-		            </span>
-		        </div>
-		        <span id="text">Loading...</span>
-    </div></div>
+<!--     <div id="loader">			  -->
+<!-- 		    <div id="content"> -->
+<!-- 		        <div id="circular-progress"> -->
+<!-- 		            <span id="progress-value"> -->
+<!-- 		                0% -->
+<!-- 		            </span> -->
+<!-- 		        </div> -->
+<!-- 		        <span id="text">Loading...</span> -->
+<!--     </div></div> -->
     		
    <script src="./loader.js"></script>	 
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

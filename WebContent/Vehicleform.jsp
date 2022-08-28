@@ -47,7 +47,7 @@
 								id=vehicle_model >
 								<option value="" selected></option>
 								<sql:query dataSource="${db}" var="rs">
-										select title from car_brand where country='India' order by title;			
+										select title from car_brand;			
 									</sql:query>
 								<c:forEach var='vehicle' items='${rs.rows}'>
 									<option value="${vehicle.title}">${vehicle.title}</option>

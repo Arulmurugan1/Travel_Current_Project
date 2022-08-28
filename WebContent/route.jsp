@@ -54,7 +54,7 @@
   					<label for="vehicle_no" >Vehicle No</label>
   						<select class="form-control" name="vehicle_no" id="vehicle_no" style="width:210px;" required >
 		                        <option value="" selected ></option>
-									<sql:query dataSource="${db}" var="rs">select * from car where vehicle_no not in ( select vehicle_no from route );</sql:query> 
+									<sql:query dataSource="${db}" var="rs">select * from vehicle where vehicle_no not in ( select vehicle_no from route );</sql:query> 
 									<c:forEach var='vehicle' items='${rs.rows}'>
 										<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no}</option>
 									</c:forEach>

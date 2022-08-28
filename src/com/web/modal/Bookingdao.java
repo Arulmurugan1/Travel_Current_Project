@@ -22,7 +22,7 @@ public class Bookingdao {
 	static Connection con = null;
 	static PreparedStatement ps = null;
 	static ResultSet rs = null;
-
+	Booking u = null ;
 
 	public Bookingdao() {
 		con = Dbmanager.getConnection();
@@ -55,68 +55,56 @@ public class Bookingdao {
 		return result;
 	}
 
-	public static Booking selectBooking(int id) {
-		Booking user = null;
+	public Booking selectBooking(int id) {
 		System.out.println(SELECT_USER_BY_ID);	
 
 		try {			
-			ps = Dbmanager.getConnection().prepareStatement(SELECT_USER_BY_ID);
+			ps = con.prepareStatement(SELECT_USER_BY_ID);
 			ps.setInt(1, id);
 			System.out.println(ps);
 			ResultSet rs = ps.executeQuery();
 			
 			
 			while (rs.next()) 
-			{
-				
-				
-				
-				
-//				int c =1;
-//				int id1 = rs.getInt(c++);
-//				String pickup = rs.getString(c++);
-//				String drop = rs.getString(c++);
-//				int customer = rs.getInt(c++);
-//				String vehicle = rs.getString(c++);
-//				String driver = rs.getString(c++);
-//				double fare = rs.getDouble(c++);
-//				user = new Booking(id1, pickup, drop, customer, vehicle, driver, fare);
+			{	
+				u = new Booking() ;
+				u.setBooking_no(rs.getInt(1));
+				u.setPickup_from(rs.getString(2));
+				u.setDrop_at(rs.getString(3));
+				u.setCustomer_id(rs.getInt(4));
+				u.setVehicle_no(rs.getString(5));
+				u.setDriver_id(rs.getString(6));
+				u.setFare(rs.getDouble(7));
+				u.setCustomer_name(rs.getString(8));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return user;
+		return u;
 	}
-	
-	public static void main(String[] args) {
-		selectBooking(20);
-	}
-
 	public List<Booking> getAllBooking() {
 
-		System.out.println(SELECT_ALL_USERS);
-		List<Booking> users = new ArrayList<>();
+		List<Booking> ls = new ArrayList<>();
 		try {
 			ps = con.prepareStatement(SELECT_ALL_USERS);
 			System.out.println(ps);
 			rs = ps.executeQuery();
 			while (rs.next()) {
-
-				int c =1;
-				int id = rs.getInt(c++);
-				String pickup = rs.getString(c++);
-				String drop = rs.getString(c++);
-				int customer = rs.getInt(c++);
-				String vehicle = rs.getString(c++);
-				String driver = rs.getString(c++);
-				double fare = rs.getDouble(c++);
-				String customername = rs.getString(c++);
-				users.add(new Booking(id, pickup, drop, customer, vehicle, driver, fare, customername));
+				u = new Booking();
+				u.setBooking_no(rs.getInt(1));
+				u.setPickup_from(rs.getString(2));
+				u.setDrop_at(rs.getString(3));
+				u.setCustomer_id(rs.getInt(4));
+				u.setVehicle_no(rs.getString(5));
+				u.setDriver_id(rs.getString(6));
+				u.setFare(rs.getDouble(7));
+				u.setCustomer_name(rs.getString(8));
+				ls.add(u);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return users;
+		return ls;
 	}
 
 	public boolean deleteBooking(int id) 
@@ -264,7 +252,7 @@ public class Bookingdao {
 
 	}
 
-	public void closeAll() throws Throwable
+	public void closeAll() throws Exception
 	{
 		if ( con !=null && !con.isClosed())
 		{

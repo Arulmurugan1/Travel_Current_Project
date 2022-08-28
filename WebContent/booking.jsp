@@ -49,7 +49,7 @@
         </div>
         <div class="d-flex justify-content-around">
 	        <div class='row py-1 ' style="margin-left:30%;">
-	        	<a onclick="javascript:window.open('bookinginsertform.jsp','_blank','top=80,left=340,toolbar=no,status=no,width=800,height=480');" class='btn btn-success button-length' style='width:170px;' > <i class="fa fa-plus mr-2"></i>Add New Booking</a>
+	        	<a onclick="javascript:window.open('bookinginsertform.jsp','_blank','top=80,left=340,toolbar=no,status=no,width=800,height=600');" class='btn btn-success button-length' style='width:170px;' > <i class="fa fa-plus mr-2"></i>Add New Booking</a>
 	        	<button type=button class='btn btn-success button-length ml-2' onclick='location.reload();' ><i class="fa fa-refresh mr-2"></i>Refresh</button>
 	        </div>
         	<div>
@@ -94,7 +94,7 @@
                         </td>
                         <td> 
                         <c:if test="${sessionScope.role != 'Guest'}">
-                           <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('Customer?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=700,height=400');">
+                           <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('Customer?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=800,height=400');">
                         </c:if>  <c:out value="${user.customer_id}" /> </a>
                         </td>
                         <td>

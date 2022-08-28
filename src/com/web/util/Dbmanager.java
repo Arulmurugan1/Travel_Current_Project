@@ -1,13 +1,10 @@
 package com.web.util;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Properties;
 import java.util.Vector;
 
 public class Dbmanager {
@@ -18,6 +15,11 @@ public class Dbmanager {
 	public static Connection getConnection() 
 	{
 		try {
+			
+		final String Driver = "com.mysql.cj.jdbc.Driver";
+		final String Url = "jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false";
+		final String User = "root";
+		final String Password = "root";
 			
 //			--------Put it in classpath------
 //			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
@@ -31,14 +33,14 @@ public class Dbmanager {
 			
 //			System.out.println(new File(".").getAbsolutePath());---to get absolute local file path
 	
-			InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
-			Properties db = new Properties();
-			db.load(f);
+//			InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
+//			Properties db = new Properties();
+//			db.load(f);
 			
 
 			
-			Class.forName(db.getProperty("driver"));
-			con = DriverManager.getConnection(db.getProperty("url"), db.getProperty("user"), db.getProperty("password"));
+			Class.forName(Driver);
+			con = DriverManager.getConnection(Url,User,Password);
 
 		} catch (SQLException e) {
 			e.printStackTrace();

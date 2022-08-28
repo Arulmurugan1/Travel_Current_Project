@@ -1,7 +1,12 @@
 package com.web.modal;
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.web.objects.Customer;
 import com.web.util.Dbmanager;
@@ -9,12 +14,11 @@ import com.web.util.Dbmanager;
 public class Customerdao {
 
 
-    private static final String INSERT_CUSTOMER 		= "INSERT INTO CUSTOMER VALUES(?,?,?,?,?,?,?,null);" ;
+    private static final String INSERT_CUSTOMER 		= "INSERT INTO CUSTOMER VALUES(null,?,?,?,?,?,?,?)" ;
     private static final String SELECT_CUSTOMER_BY_ID 	= "select * from CUSTOMER where CUSTOMER_ID =?";
-    private static final String SELECT_CUSTOMER_BY_NAME = "select * from CUSTOMER where CUSTOMER_NAME =?";
     private static final String SELECT_ALL_CUSTOMERS	= "select * from CUSTOMER";
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";
-    private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?;";
+    private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?";
 
     Connection con 		 ;
     ResultSet rs 		 ;
@@ -56,11 +60,12 @@ public class Customerdao {
         return result;
     }
 
-    public List< Customer > selectCustomerById(String id)  {
+    public List<Customer> selectCustomerById(String id)  {
         
         System.out.println(SELECT_CUSTOMER_BY_ID);
-       
-        List < Customer > customer = new ArrayList<>();
+        
+        List<Customer> ls = new ArrayList<>() ;
+        Customer c = null ;
         
         try{
         	
@@ -74,41 +79,23 @@ public class Customerdao {
             ResultSet rs = ps.executeQuery();
 
             
-            while (rs.next()) {
-                customer.add( new Customer( rs.getString(1),rs.getString(2), rs.getString(3),  rs.getString(4)
-                			, rs.getString(5), rs.getString(6), rs.getString(7), rs.getInt(8) ) );
+            while (rs.next()) 
+            {
+                c = new Customer();
+                c.setAge(rs.getString("age"));
+                c.setCustomer_id(rs.getInt("customer_id"));
+                c.setCustomer_name(rs.getString("customer_name"));
+                c.setEmail(rs.getString("email"));
+                c.setEnd(rs.getString("end"));
+                c.setGender(rs.getString("gender"));
+                c.setPhone(rs.getString("phone"));
+                c.setStart(rs.getString("start"));	
+                ls.add(c);
             }
         } catch(SQLException e) {
         	e.printStackTrace();
         }
-        return customer ;
-    }
-    
-    public Customer selectCustomerByName(String name1)  {
-        Customer user = null;
-        System.out.println(SELECT_CUSTOMER_BY_NAME);
-       
-        try{
-        	
-        	
-        	 ps = con.prepareStatement(SELECT_CUSTOMER_BY_NAME);
-        		        	
-            ps.setString(1, name1);
-            System.out.println(ps);
-            
-            
-            ResultSet rs = ps.executeQuery();
-
-            
-            while (rs.next()) {
-            	int c=1;      
-                user = new Customer(rs.getString(c++), rs.getString(c++), rs.getString(c++),  rs.getString(c++), 
-                		rs.getString(c++), rs.getString(c++),rs.getString(c++), rs.getInt(c++));
-            }
-        } catch(SQLException e) {
-        	e.printStackTrace();;
-        }
-        return user;
+        return ls ;
     }
     
     public List < Customer > getAllCustomer(){
@@ -131,9 +118,16 @@ public class Customerdao {
 
             // Step 4: Process the ResultSet object.
             while (rs.next()) {
-                 users.add( new Customer(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), 
-                		 rs.getString(5), rs.getString(6), rs.getString(7), rs.getInt(8)));
-                
+            	Customer c = new Customer();
+                c.setAge(rs.getString("age"));
+                c.setCustomer_id(rs.getInt("customer_id"));
+                c.setCustomer_name(rs.getString("customer_name"));
+                c.setEmail(rs.getString("email"));
+                c.setEnd(rs.getString("end"));
+                c.setGender(rs.getString("gender"));
+                c.setPhone(rs.getString("phone"));
+                c.setStart(rs.getString("start"));	
+                users.add(c);
             }
         }catch(SQLException e) {
         	e.printStackTrace();
@@ -175,7 +169,7 @@ public class Customerdao {
         return result;
     }
     
-    public void closeAll() throws Throwable
+    public void closeAll() throws Exception
 	{
 		if ( con !=null && !con.isClosed())
 		{

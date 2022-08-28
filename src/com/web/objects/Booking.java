@@ -11,70 +11,7 @@ public class Booking {
 		private String driver_id;
 		private double fare;
 		private String customer_name;//Customer table column
-		public Booking(int booking_no, String pickup_from, String drop_at, int customer_id, String vehicle_no,
-				String driver_id, double fare,String customer_name) {
-			super();
-			this.booking_no = booking_no;
-			this.pickup_from = pickup_from;
-			this.drop_at = drop_at;
-			this.customer_id = customer_id;
-			this.vehicle_no = vehicle_no;
-			this.driver_id = driver_id;
-			this.fare = fare;
-			this.customer_name =customer_name;
-		}
 		
-		
-		public Booking(String pickup_from, String drop_at, String vehicle_no, String driver_id,
-				double fare, String customer_name) {
-			super();
-			this.pickup_from = pickup_from;
-			this.drop_at = drop_at;
-			this.vehicle_no = vehicle_no;
-			this.driver_id = driver_id;
-			this.fare = fare;
-			this.customer_name = customer_name;
-		}
-
-
-		public Booking(int booking_no, String pickup_from, String drop_at, int customer_id, String vehicle_no,
-				String driver_id, double fare) {
-			super();
-			this.booking_no = booking_no;
-			this.pickup_from = pickup_from;
-			this.drop_at = drop_at;
-			this.customer_id = customer_id;
-			this.vehicle_no = vehicle_no;
-			this.driver_id = driver_id;
-			this.fare = fare;
-			
-		}
-		
-		public Booking(int booking_no, int customer_id, String vehicle_no, String driver_id) {
-			super();
-			this.booking_no = booking_no;
-			this.customer_id = customer_id;
-			this.vehicle_no = vehicle_no;
-			this.driver_id = driver_id;
-		}
-
-
-		public Booking(String pickup_from, String drop_at, int customer_id, String vehicle_no, String driver_id,
-				double fare) {
-			super();
-			this.pickup_from = pickup_from;
-			this.drop_at = drop_at;
-			this.customer_id = customer_id;
-			this.vehicle_no = vehicle_no;
-			this.driver_id = driver_id;
-			this.fare = fare;
-		}
-
-
-		public Booking() {
-			super();
-			
-		}
 		public int getBooking_no() {
 			return booking_no;
 		}

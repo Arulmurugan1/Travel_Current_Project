@@ -101,7 +101,7 @@ public class AjaxServlet extends HttpServlet {
 		try {  
 			System.out.println("Inside getInfo for Vehicle No call from ajax");
 			conn = Dbmanager.getConnection();
-			stmt = conn.prepareStatement("Select vehicle_no from car where vehicle_no =?");
+			stmt = conn.prepareStatement("Select vehicle_no from vehicle where vehicle_no =?");
 			stmt.setString(1, vehicleNo.trim());
 			rs = stmt.executeQuery(); 
 			System.out.println(stmt);
@@ -131,7 +131,7 @@ public class AjaxServlet extends HttpServlet {
 		try {    
 			System.out.println("Inside VehicleType for Vehicle Model call from ajax");
 			conn = Dbmanager.getConnection(); 
-			stmt = conn.prepareStatement("select m.title from car_brand c,model m where c.id = m.make_id and c.title=? and c.country='India'");
+			stmt = conn.prepareStatement("select m.title from car_brand c,model m where c.id = m.make_id and c.title=?");
 			stmt.setString(1, model.trim());
 			ResultSet rs = stmt.executeQuery(); 
 			int c = 1;
