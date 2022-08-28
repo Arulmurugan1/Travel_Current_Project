@@ -74,9 +74,9 @@
   					<label for="end" >Destination</label>
   					<select class="form-control" name="end" id="end"  style="width:210px;" required >
 		                        <option value="" selected ></option>
-									<sql:query dataSource="${db}" var="rs">select routes from route_service;</sql:query> 
+									<sql:query dataSource="${db}" var="rs">select start from route_service;</sql:query> 
 									<c:forEach var='board' items='${rs.rows}'>
-										<option value="${board.routes}">${board.routes}</option>
+										<option value="${board.start}">${board.start}</option>
 									</c:forEach>
 		           	</select>
   				</div>
@@ -94,7 +94,7 @@
   		
   	</div>
   	  </form>  </div>
-  	<div class="table-responsive table-wrapper">
+  	<div class="table-responsive">
       <table class="table table-bordered  text-center text-white text-capitalize ">
        <thead>
                             <tr>

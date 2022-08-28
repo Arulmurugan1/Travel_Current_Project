@@ -23,13 +23,10 @@ public class RouteNewServlet extends HttpServlet {
 	Criteria c = null ;
 
 	private static final long serialVersionUID = 1L;
-
 	public RouteNewServlet() 
 	{
 		super();
 	}
-
-
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 		try {

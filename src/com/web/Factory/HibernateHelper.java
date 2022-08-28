@@ -10,20 +10,18 @@ public class HibernateHelper
 	private static Session session;
 	private static SessionFactory factory ;
 	private static Transaction t ;
-
 	public static Session getSession()
 	{ 
 		factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 		session = factory.openSession();     
 		return session;
 	}
-
 	public static boolean Operation(Object d,String crud)
 	{
 		try
 		{
 			System.out.println("crud "+crud);
-			session = HibernateHelper.getSession();
+			session = getSession();
 			t = session.beginTransaction();
 			if ( crud.equalsIgnoreCase("I") || crud.equalsIgnoreCase("U") )
 			{

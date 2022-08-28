@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 import com.web.util.Dbmanager;
 
-public class CarInsertionCode 
+public class CarInsertionCode extends Object
 {
 	static Connection con = Dbmanager.getConnection();
 
