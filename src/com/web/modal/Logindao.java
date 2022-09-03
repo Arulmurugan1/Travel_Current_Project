@@ -25,6 +25,7 @@ public class Logindao {
 	public Logindao()
 	{
 		con = Dbmanager.getConnection();
+		System.out.println("Login Connection created");
 	}
 	
 	public boolean insertUser(Login user) {

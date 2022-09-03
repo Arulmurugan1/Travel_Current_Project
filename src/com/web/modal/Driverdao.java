@@ -41,8 +41,8 @@ public class Driverdao {
 			ps = con.prepareStatement(INSERT_DRIVER);
 			int cntl = 0;
 			ps.setString(++cntl,d.getName() );
-			ps.setString(++cntl,d.getGender() );
 			ps.setInt(++cntl,d.getAge() );
+			ps.setString(++cntl,d.getGender() );
 			ps.setString(++cntl,d.getCity() );
 			ps.setString(++cntl,d.getPhone() );
 			ps.setString(++cntl,d.getNo() );

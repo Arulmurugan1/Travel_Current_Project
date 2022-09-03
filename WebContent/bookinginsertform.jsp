@@ -60,10 +60,10 @@
                     <label>Vehicle No</label>              
                     <select class="form-select form-control" name="vehicle_no" id="vehicle_no" style="width :340px" readonly>
 				<sql:query dataSource="${db}" var="rs">
-						select no from route where start ='${pickup}' and end ='${drop}';			
+						select vehicle_no from route where start ='${pickup}' and end ='${drop}';			
 				</sql:query> 
 							<c:forEach  var='vehicle' items='${rs.rows}'>
-								<option value="${vehicle.no}">${vehicle.no}</option>
+								<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no}</option>
 							</c:forEach>
                     </select>
 					<div class="valid-feedback">Looks good!</div>
@@ -76,10 +76,10 @@
                     <label>Driver Id</label>                 
                     <select class="form-select form-control" name="driver_id" id="driver_id" readonly style="width :340px">
                         <sql:query dataSource="${db}" var="rs">
-                        	SELECT d.* from driver d,route r where d.no =r.no and r.start ='${pickup}' and r.end ='${drop}';
+                        	SELECT driver_id,driver_name from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup}' and r.end ='${drop}';
                         </sql:query>
                         <c:forEach var="driver" items="${rs.rows}">
-                            <option value="${driver.id} - ${driver.name}">${driver.id} - ${driver.name}</option>
+                            <option value="${driver.driver_id} - ${driver.driver_name}">${driver.driver_id} - ${driver.driver_name}</option>
                         </c:forEach>
                         
                     </select>
