@@ -11,7 +11,7 @@ import com.web.objects.Login;
 import com.web.util.Dbmanager;
 
 public class Logindao {
-	private static final String INSERT_USERS ="INSERT INTO login_info VALUES(?,?,?,?,?,?,?,?,sysdate(),syadate()";
+	private static final String INSERT_USERS ="INSERT INTO login_info VALUES(?,?,?,?,?,?,?,?,sysdate(),sysdate())";
 	private static final String UPDATE_USERS ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
 	private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
 	private static final String CHECK_USER   ="SELECT * FROM login_info WHERE USER_ID=?";
@@ -25,7 +25,8 @@ public class Logindao {
 	public Logindao()
 	{
 		con = Dbmanager.getConnection();
-		System.out.println("Login Connection created");
+		if ( con != null)
+			System.out.println("Login Connection created");
 	}
 	
 	public boolean insertUser(Login user) {
@@ -42,7 +43,10 @@ public class Logindao {
 			ps.setString(c++, " ");
 			ps.setString(c++, "Guest");			
 			ps.setString(c++, "Others");
+			
+			System.out.println(ps);
 			rowsaffected=ps.executeUpdate() > 0 ;
+			
 			
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -56,6 +60,7 @@ public class Logindao {
 		try {
 		    ps =con.prepareStatement(UPDATE_USERS) ;
 			ps.setString(1 , user.getUser_id()) ;
+			System.out.println(ps);
 			rowsaffected = ps.executeUpdate() > 0 ;
 			
 		}catch(Exception e) {
@@ -70,6 +75,7 @@ public class Logindao {
 		try {
 			ps =con.prepareStatement(DELETE_USERS) ;
 			ps.setString(1,id);
+			System.out.println(ps);
 			rowsaffected=ps.executeUpdate()>0;
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -83,6 +89,7 @@ public class Logindao {
 		try {
 			ps =con.prepareStatement(SELECT_USERS_BY_ID);
 			ps.setString(1,id);
+			System.out.println(ps);
 			rs =ps.executeQuery();
 			
 			while(rs.next()) {
@@ -109,6 +116,7 @@ public class Logindao {
 		Login u1 =null;
 		try {
 			ps =con.prepareStatement(SELECT_ALL_USERS);
+			System.out.println(ps);
 			rs =ps.executeQuery();
 			while(rs.next()) {
 				u1 = new Login();
@@ -132,6 +140,7 @@ public class Logindao {
 		try {
 			ps =con.prepareStatement(CHECK_USER);
 			ps.setString(1,id);
+			System.out.println(ps);
 		    rs = ps.executeQuery();
 			if( rs.next() ) {
 				rowsaffected=true;

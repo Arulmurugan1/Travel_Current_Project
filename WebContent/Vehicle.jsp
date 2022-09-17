@@ -26,7 +26,7 @@ td.no::before {
 	<jsp:include page="header.jsp" />
 	<div
 		class="container-fluid mt-1 text-center">
-		<c:if test="${sessionScope.role!='Guest'}">
+		<c:if test="${sessionScope.role=='Admin'}">
 			<div class="m-2">
 				<a class="btn btn-success button-length w-25"
 					href="Vehicleform.jsp">Add New Vehicle</a>

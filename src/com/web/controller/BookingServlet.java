@@ -132,7 +132,7 @@ public class BookingServlet extends HttpServlet {
 
 			if( cdao.deleteCustomer(customerId) && dao.deleteBooking(id))
 			{
-				request.setAttribute("msg", "Booking deleted");
+//				request.setAttribute("msg", "Booking deleted");
 			}
 			else
 			{

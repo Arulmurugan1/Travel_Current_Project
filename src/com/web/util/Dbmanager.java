@@ -42,10 +42,8 @@ public class Dbmanager {
 			Class.forName(Driver);
 			con = DriverManager.getConnection(Url,User,Password);
 
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (Exception e1) {
-			e1.printStackTrace();
+		}catch (Exception e1) {
+			return null;
 		}
 		return con;
 	}

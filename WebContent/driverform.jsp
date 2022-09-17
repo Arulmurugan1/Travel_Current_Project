@@ -13,14 +13,14 @@
 	<jsp:include page="header.jsp" /> 
    
    <div class="container mt-4">
-               <div class="card ">
+               <div class="card">
                    <div class="card-body bg-white">
                     
                        <div class="text-center">
                            <h2>  Add New Driver</h2>
                        </div>
                        <div class="text-center ">
-                            <form action="Driver" method = "post">
+                            <form name=driver method = "post">
                            
                        <input type=hidden name=mode value=I />
           <div class="offset-1">
@@ -78,9 +78,9 @@
 	</div></div>
                      <div class="row px-2 ">
                      	<div class="col text-center">
-                               <button type="submit" class="btn btn-success button-length">Add</button>
+                               <button type="button" class="btn btn-success button-length" onclick="Submit()"> Add </button>
                                <input type="reset" class="btn btn-success button-length" value=Reset >  
-                               <a href="Driver"  class="btn btn-success button-length">Back</a> 
+                               <a href="Driver?mode="  class="btn btn-success button-length">Back</a> 
                         </div>
                      </div>
                        
@@ -101,6 +101,15 @@
     		gender.value ='${listUser.gender}';
     		
     	}
+    function submitCall(success)
+    {
+       if (success)
+       {
+      	 document.driver.action ="Driver";
+      	 document.driver.submit();
+       }
+       return;
+    }
       </script>
            
 </body>

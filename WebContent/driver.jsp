@@ -29,11 +29,11 @@
 <jsp:include page="header.jsp" /> 
     
     <div class="container-fluid overflow-auto m-auto text-center">
-        <c:if test="${sessionScope.role!='Guest'}">
+        <c:if test="${sessionScope.role =='Admin'}">
             <div class="m-3"> <a class="btn btn-success button-length w-25" href="Driver?mode=N">Add New Driver</a>
             </div>
         </c:if>
-        <table class="table table-bordered text-center text-white text-capitalize">
+        <table class="table table-bordered text-center text-white text-capitalize mt-2">
             <thead class="bg-primary">
                 <tr>
                     <th>S.No</th>

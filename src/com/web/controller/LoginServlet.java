@@ -3,10 +3,8 @@ package com.web.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -66,10 +64,15 @@ public class LoginServlet extends HttpServlet {
 		
 		u = new Login();
 		
+		Connection con = null;
+		
 		try {
-			if (  Dbmanager.getConnection() == null )
+			con = Dbmanager.getConnection() ;
+			if (  con == null )
 			{
-				
+				System.out.println("Connection ::"+con);
+				request.setAttribute("msg","Could not create connection to database server. Attempted reconnect 3 times!");
+				request.getRequestDispatcher("index.jsp").forward(request, response);
 			}
 			else	
 			{
@@ -83,10 +86,10 @@ public class LoginServlet extends HttpServlet {
 
 						System.out.println(" Username : "+ user + " Password : "+password);
 
-						DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a");  
-
-						String formattedDate = LocalDateTime.now().format(myFormatObj);  
-						System.out.println("After Formatting: " + formattedDate);  
+//						DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a");  
+//
+//						String formattedDate = LocalDateTime.now().format(myFormatObj);  
+//						System.out.println("After Formatting: " + formattedDate);  
 
 
 						if(dao.checkUser(user)) 
@@ -101,7 +104,7 @@ public class LoginServlet extends HttpServlet {
 							{
 								session.setAttribute("user", u.getUsername());
 								session.setAttribute("role", u.getRole());
-								session.setAttribute("timeStamp", u.getLast_login().format(myFormatObj) );
+								session.setAttribute("timeStamp", u.getLast_login().format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
 
 								if (dao.updateUser(u) )
 									System.out.println(" Last logged in updated ");
@@ -157,9 +160,11 @@ public class LoginServlet extends HttpServlet {
 						}
 						else 
 						{
+							System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
 							if(pass1.contentEquals(pass2)) 
 							{
 								u.setUser_id(id);
+								u.setUsername(name);
 								u.setLast_login(null);
 								u.setPassword(pass1);
 								if(dao.checkUser(id))
@@ -197,11 +202,18 @@ public class LoginServlet extends HttpServlet {
 				}
 
 			}
-		}catch(Exception e) 
+		}
+		catch(Exception e) 
 		{
 			System.out.println("Exception in Connection");e.printStackTrace();	
-			request.setAttribute("msg","Could not create connection to database server. Attempted reconnect 3 times. Giving up");
 			request.getRequestDispatcher("index.jsp").forward(request, response);
+		}
+		finally
+		{
+			try {
+				if ( con !=null && con.isClosed() )
+					con.close();
+			} catch (SQLException e) {}
 		}
 	}
 }

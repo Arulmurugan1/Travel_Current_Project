@@ -13,8 +13,8 @@
 <body>
 
 	<script>
-		if (('${msg}').trim() != "") {
-			alert('${msg}');
+		if (("${msg}").trim() != "") {
+			alert("${msg}");
 		}
 	</script>
 
@@ -37,8 +37,6 @@
 					<div class="tab-content" id="nav-tabContent">
 						<div class="tab-pane fade show active text-center" id="loginTab"
 							role="tabpanel" aria-labelledby="nav-login-tab">
-
-							<h5 style="color: white;">${msg}</h5>
 							<div class="row">
 								<div class="col-auto mb-3">
 									<label for="username">Enter UserName </label> <input
@@ -96,8 +94,8 @@
 
 							<div class="d-flex justify-content-center  mt-3">
 								<div class="mr-4">
-									<button type="submit" class="btn btn-success button-length"
-										onclick="Javascript:Submit('register')">Add</button>
+									<button type="button" class="btn btn-success button-length"
+										onclick="Submit('register');">Add</button>
 								</div>
 								<div>
 									<input type="reset" class="btn btn-success button-length mr-4"
@@ -115,13 +113,47 @@
 	</div>
 
 	<script>
-		function Submit(mode) {
-			with (document.form) {
-				if (mode == 'login') {
-					if (((txtUser.value).trim()).length == 0
-							|| ((txtPassword.value).trim()).length == 0 || txtUser.value == 'null' || txtPassword.value =='null' )
+		function Submit(mode) 
+		{
+			with (document.form) 
+			{
+				if (mode == 'login') 
+				{
+					if (((txtUser.value).trim()) == ""
+							|| ((txtPassword.value).trim()) == ""
+							|| ((txtUser.value).trim()).toLowerCase == 'null'
+							|| ((txtPassword.value).trim()).toLowerCase == 'null')
 						alert('Enter Login Credentials first ...');
-					else {
+					else if ( check( (txtUser.value).trim(),'valid' ) || check( (txtPassword.value).trim(),'valid1' ) )
+						alert('Invalid Special Characters not allowed ...');
+					else
+					{
+						action = "Login?mode=" + mode;
+						submit();
+					}
+				}
+				if (mode == 'register') 
+				{
+					if ((username.value).trim() == ""
+							|| (pass1.value).trim() == ""
+							|| (pass2.value).trim() == ""
+							|| (user_id.value).trim() == "")
+						alert('Enter Account Credentials first ...');
+					else if (((username.value).trim()).toUpperCase() == "NULL"
+							|| ((pass1.value).trim()).toUpperCase() == "NULL"
+							|| ((pass2.value).trim()).toUpperCase() == "NULL"
+							|| ((user_id.value).trim()).toUpperCase() == "NULL")
+						alert('null Cannot be inserted ! Enter Valid Credentials ...');
+					else if ((pass1.value).trim() != (pass2.value).trim())
+						alert(' password mismatch ...');
+					else if (check((pass1.value).trim(), 'valid1')
+							|| check((pass2.value).trim(), 'valid1'))
+						alert(' Allowed Special Characters !@#$%&');
+					else if (check((username.value).trim(), 'valid')
+							|| check((user_id.value).trim(), 'valid'))
+						alert(' Special Characters not Allowed for Username or User Id');
+					else 
+					{
 						action = "Login?mode=" + mode;
 						submit();
 					}

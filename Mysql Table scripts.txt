@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `taxi`.`vehicle` (
   `brand` VARCHAR(45) NOT NULL,
   `model` VARCHAR(45) NOT NULL,
   `color` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`no`),
+  PRIMARY KEY (`vehicle_no`),
   UNIQUE INDEX `no_UNIQUE` (`no` ASC) VISIBLE)
 COMMENT = 'To store vehicle info';
 
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `taxi`.`route` (
   `start` VARCHAR(45) NOT NULL,
   `end` VARCHAR(45) NOT NULL,
   `fare` DOUBLE NOT NULL,
-  PRIMARY KEY (`no`),
+  PRIMARY KEY (`vehicle_no`),
   INDEX `start_idx` (`start` ASC) VISIBLE,
   INDEX `end_idx` (`end` ASC) VISIBLE,
   CONSTRAINT `start`
@@ -76,9 +76,9 @@ CREATE TABLE IF NOT EXISTS `taxi`.`route` (
     REFERENCES `taxi`.`route_service` (`end`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `no`
-    FOREIGN KEY (`no`)
-    REFERENCES `taxi`.`vehicle` (`no`)
+  CONSTRAINT `vehicle_no`
+    FOREIGN KEY (`vehicle_no`)
+    REFERENCES `taxi`.`vehicle` (`vehicle_no`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 COMMENT = 'To Store available  route services ';
@@ -111,7 +111,3 @@ CREATE TABLE IF NOT EXISTS `model` (
 ) ;
 
 commit;
-
-
-
-

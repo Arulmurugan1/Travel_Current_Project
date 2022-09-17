@@ -24,9 +24,9 @@
 </head>
 <body style='overflow:hidden'>
 	<jsp:include page="header.jsp" />
-	<div class="container">
-		<div class="card ">
-			<form name=vehicle id=vehicle action=Vehicle method="post">
+	<div class="container" >
+		<div class="card border p-2" style="border-radius:30px">
+			<form name=vehicle method="post">
 				<div class="card-body bg-white text-center">
 					<h2>Add New Vehicle</h2>
 					<div class="row d-flex justify-content-center">
@@ -63,16 +63,21 @@
 							</select>
 						</div>
 						<div class=col-auto>
-							<label>Vehicle Color</label> <input type="text"
-								class="form-control" name="vehicle_color" id=vehicle_color value='${color}'>
+							<label>Vehicle Color</label> 
+							<select class="form-select form-control w-100" name="vehicle_color" id=vehicle_color value='${color}'>
+									<option value="" selected></option>
+								<c:forTokens items="Apricot,Black,Blue,Bluetiful,Blue Green,Blue Violet,Brown,Carnation Pink,Cerulean,Gray,Green,Green Yellow,Indigo,Orange,Red,Red Orange,Red Violet,Scarlet,Violet (purple),Violet Red,White,Yellow,Yellow Green,Yellow Orange" delims="," var="name">  
+									  <option value="<c:out value="${name}"/>"><c:out value="${name}"/></option>  
+								</c:forTokens> 
+							</select>
 						</div>
 
 					</div>
 				</div>
-				<div class="row mt-2 mb-2">
+				<div class="row mt-2 mb-4 mt-3">
 					<div class="col text-center">
-					<c:if test="${mode!='E'}"><button type="submit" class="btn btn-success button-length">Add</button></c:if>
-				    <c:if test="'${mode=='E'}"><button type="submit" class="btn btn-danger button-length">Update</button></c:if>
+					<c:if test="${mode!='E'}"><button type="button" class="btn btn-success button-length" onClick="Submit()">Add</button></c:if>
+				    <c:if test="'${mode=='E'}"><button type="button" class="btn btn-danger button-length" onClick="Submit()">Update</button></c:if>
 						<input type="reset" class="btn btn-success button-length"
 							value=Reset> <a href="Vehicle"
 							class="btn btn-success button-length">Back</a>
@@ -85,27 +90,19 @@
 
 	<script>
     		
-    		$("button").click(function(){
-    			var no 	  = document.vehicle.vehicle_no;
-          		var model = document.vehicle.vehicle_model;
-          		var type  = document.vehicle.vehicle_type;
-          		var color = document.vehicle.vehicle_color;
-          		
-        		if ( no.value!="" && model.value !="" && type.value !="" && color.value != "")
-        			{
-        			if ( no.readOnly )
-        				document.vehicle.action ="Vehicle?mode=I";
-        			else
-        				document.vehicle.action ="Vehicle?mode=U";
-        			
-        				document.vehicle.submit();
-        			}
-        		else
-        			{
-        			alert("Insufficient details to add ..");
-        			}
-    		});
-    	
+  function submitCall(success)
+  {
+     if (success)
+     {
+    	 if ( document.vehicle.vehicle_no.readOnly )
+				document.vehicle.action ="Vehicle?mode=I";
+		 else
+				document.vehicle.action ="Vehicle?mode=U";
+			
+				document.vehicle.submit();
+     }
+     return;
+  }
     </script>
 </body>
 </html>

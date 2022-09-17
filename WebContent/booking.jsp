@@ -18,7 +18,7 @@
 	 <jsp:include page="header.jsp" /> 
 
 
-<c:if test="${sessionScope.role != 'Guest'}">
+<c:if test="${sessionScope.role =='Admin'}">
 <form name=booking method=post> 
     <div class="container-fluid mt-2 text-white ">
         <div class='row ml-3 d-flex justify-content-center'>
