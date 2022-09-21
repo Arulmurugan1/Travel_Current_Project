@@ -86,7 +86,7 @@ public class Bookingdao {
 
 		List<Booking> ls = new ArrayList<>();
 		try {
-			ps = con.prepareStatement(SELECT_ALL_USERS);
+			ps = Dbmanager.getConnection().prepareStatement(SELECT_ALL_USERS);
 			System.out.println(ps);
 			rs = ps.executeQuery();
 			while (rs.next()) {

@@ -64,6 +64,12 @@ public class Booking {
 		public void setCustomer_name(String customer_name) {
 			this.customer_name = customer_name;
 		}
+		@Override
+		public String toString() {
+			return "Booking [booking_no=" + booking_no + ", pickup_from=" + pickup_from + ", drop_at=" + drop_at
+					+ ", customer_id=" + customer_id + ", vehicle_no=" + vehicle_no + ", driver_id=" + driver_id
+					+ ", fare=" + fare + ", customer_name=" + customer_name + "]";
+		}
 
 		
 		

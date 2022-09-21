@@ -128,6 +128,10 @@
 						alert('Invalid Special Characters not allowed ...');
 					else
 					{
+						$('button').ready(function(){
+							$('button').empty();
+							$('button').append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
+						});
 						action = "Login?mode=" + mode;
 						submit();
 					}

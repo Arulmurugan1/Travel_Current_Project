@@ -151,6 +151,7 @@ h5 {
 	text-align: center;
 	padding: .8rem 3rem;
 	display: inline-block;
+	color : #0000cc;
 	border: none;
 	cursor: pointer;
 	border-radius: 15px;
@@ -248,4 +249,15 @@ keyframes spin { 100% {
 	html {
 		font-size: 4px;
 	}
+}
+
+.fsr
+{
+	font-size : 20px;
+	margin-right: .3rem ; 
+}
+.fsl
+{
+	font-size : 20px;
+	margin-left: .3rem ; 
 }

@@ -38,12 +38,26 @@ document.onreadystatechange = function() {
 	if (document.readyState != "complete") 
 	{
 		document.querySelector("#load-content").style.visibility = "visible";
-		document.querySelector("body").style.visibility = "hidden";
+		if ( document.querySelector(".container") !=null )
+		{
+			document.querySelector(".container").style.opacity = "0.3";
+		}
+		if ( document.querySelector("#announcement") !=null )
+		{
+			document.querySelector("#announcement").style.opacity = "0.3";
+		}
 	} 
 	else 
 	{
 		document.querySelector("#load-content").style.visibility = "hidden";
-		document.querySelector("body").style.visibility = "visible";
+		if ( document.querySelector(".container") !=null )
+		{
+			document.querySelector(".container").style.opacity = "1";
+		}
+		if( document.querySelector("#announcement") !=null )
+		{
+			document.querySelector("#announcement").style.opacity = "1";
+		}
 	}
 };
 

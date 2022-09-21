@@ -1,0 +1,26 @@
+<script>
+		// 	  $(document).ready(function() {
+		// 			    	        function disableBack() { window.history.forward() }
+
+		// 			    	        window.onload = disableBack();
+		// 			    	        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+		// 			    	    });
+	</script>
+
+<%--         	<marquee width="300" scrollamount="100" scrolldelay="1000" loop="7">${sessionScope.timeStamp}</marquee> --%>
+		
+
+!-- Bootstrap icons --> 
+	<!-- <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+
+
+// Loaders
+<!--     <div id="loader">			  -->
+<!-- 		    <div id="content"> -->
+<!-- 		        <div id="circular-progress"> -->
+<!-- 		            <span id="progress-value"> -->
+<!-- 		                0% -->
+<!-- 		            </span> -->
+<!-- 		        </div> -->
+<!-- 		        <span id="text">Loading...</span> -->
+<!--     </div></div> -->

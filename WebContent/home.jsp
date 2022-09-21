@@ -20,22 +20,22 @@
             	<input type=hidden name=mode value='' >
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button  text-primary" onclick="Submit('Booking')">Bookings</a>
+                        <a class="home-button" onclick="Submit('Booking')"><i class="fa fa-book" aria-hidden="true"></i>Bookings</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('Customer')">Customers</a>
+                        <a class="home-button" onclick="Submit('Customer')"><i class="fa fa-user" aria-hidden="true"></i>Customers</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('Vehicle')">Vehicles</a>
+                        <a class="home-button" onclick="Submit('Vehicle')"><i class="fa fa-bus" aria-hidden="true"></i>Vehicles</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('Driver')">Drivers</a>
+                        <a class="home-button" onclick="Submit('Driver')"><i class="fa fa-users" aria-hidden="true"></i>Drivers</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="home-button text-primary" onclick="Submit('RouteNew')" >Routes</a>
+                        <a class="home-button" onclick="Submit('RouteNew')" ><i class="fa fa-road" aria-hidden="true"></i>Routes</a>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="bg-warning home-button text-primary" disabled>Users</a>
+                        <a class="bg-danger home-button" disabled>Users</a>
                     </div>
                 </div></form>
             </div>

@@ -29,7 +29,6 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-		HttpSession session =request.getSession();
 		try //Logout
 		{
 			String mode = request.getParameter("mode");
@@ -38,9 +37,10 @@ public class LoginServlet extends HttpServlet {
 			if ( mode.equals("L"))
 			{
 				request.setAttribute("mode",mode);
-				System.out.println("Logged Out at : "+ session.getLastAccessedTime());
-				session.invalidate();
-				request.getRequestDispatcher("index.jsp").include(request, response);
+				System.out.println( "Logged Out at : "+ request.getSession().getLastAccessedTime() );
+				request.getSession().invalidate();
+				request.logout();
+				request.getRequestDispatcher("index.jsp").forward(request, response);
 			}
 
 		}catch(Exception e)

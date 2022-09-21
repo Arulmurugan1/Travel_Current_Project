@@ -7,7 +7,7 @@
 
 <style>
 #announcement {
-	height: 100px;
+	height: 130px;
 	background-color: lightcyan;
 }
 
@@ -101,20 +101,18 @@
 	text-align: center;
 }
 </style>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head>
 <body>
 	<div class="d-flex justify-content-between sticky-top" id=announcement>
 		<div class="dropdown">
 			<a href="home.jsp"> <span><img
 					src="https://cdn5.vectorstock.com/i/1000x1000/96/74/travel-logo-vector-19189674.jpg"
-					alt="#logo img" width="90px" class="img-thumbnail clearfix ml-4"></span>
+					alt="#logo img" width="120px" class="img-thumbnail clearfix ml-4"></span>
 			</a>
 			<div class="dropdown-content" style="width:75vh;">
-				<div id="imge-slide" class="carousel slide" data-interval=2000 data-ride="carousel">
+				<div id="imge-slide" class="carousel slide" data-interval=1500 data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img class="d-block w-100" src="https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg" alt="Time To Travel">
@@ -135,14 +133,14 @@
 							<img class="d-block w-100" src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Take A Break">
 						</div>
 					</div>
-					<button type=button class="carousel-control-prev" href="#imge-slide" data-slide="prev"> 
-						<span class="carousel-control-prev-icon"></span> 
-						<span class="sr-only">Previous</span>
-					</button>
-					<button type=button class="carousel-control-next" href="#imge-slide" data-slide="next"> 
-						<span class="carousel-control-next-icon"></span> 
-						<span class="sr-only">Next</span>
-					</button>
+<!-- 					<button type=button class="carousel-control-prev" href="#imge-slide" data-slide="prev">  -->
+<!-- 						<span class="carousel-control-prev-icon"></span>  -->
+<!-- 						<span class="sr-only">Previous</span> -->
+<!-- 					</button> -->
+<!-- 					<button type=button class="carousel-control-next" href="#imge-slide" data-slide="next">  -->
+<!-- 						<span class="carousel-control-next-icon"></span>  -->
+<!-- 						<span class="sr-only">Next</span> -->
+<!-- 					</button> -->
 				</div>
 				 <div class="desc">Travel anywhere ! Love the life</div>
 			</div>
@@ -152,7 +150,6 @@
 			<h3>
 				Last Login<i class="fa fa-clock-o m-2" style="font-size:30px" aria-hidden="true"></i><span class="blinking">${sessionScope.timeStamp}</span>
 			</h3>
-			<%--         	<marquee width="300" scrollamount="100" scrolldelay="1000" loop="7">${sessionScope.timeStamp}</marquee> --%>
 		</div>
 		<div class="adminContent text-center m-3" style="width: 20%;">
 			<div>
@@ -165,25 +162,19 @@
 			</div>
 			<hr>
 			<div class="dropdown">
-				<span class=dropbtn> <i class="fa fa-hand-o-right mr-3"
-					aria-hidden="true"></i> More <i class="fa fa-caret-down ml-2"
-					aria-hidden="true"></i>
+				<span class=dropbtn> 
+					<i class="fa fa-hand-o-right mr-3" aria-hidden="true"></i> More 
+					<i class="fa fa-caret-down ml-2" aria-hidden="true"></i>
 				</span>
 				<div class=dropdown-content>
-					<a href="home.jsp"><i class="fa fa-home mr-2 text-success"
-						aria-hidden="true"></i>Home</a> <a href="Login?mode=L"><i
-						class="fa fa-power-off mr-2 text-danger" aria-hidden="true"></i>Logout</a>
+					<a href="home.jsp">
+						<i class="fa fa-home mr-2 text-success" aria-hidden="true"></i>
+								Home
+					</a> 
+					<a href="Login?mode=L"><i class="fa fa-power-off mr-2 text-danger" aria-hidden="true"></i>Logout</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script>
-		// 	  $(document).ready(function() {
-		// 			    	        function disableBack() { window.history.forward() }
-
-		// 			    	        window.onload = disableBack();
-		// 			    	        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
-		// 			    	    });
-	</script>
 </body>
 </html>

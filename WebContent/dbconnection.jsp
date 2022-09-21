@@ -11,15 +11,10 @@
 
 	 <link rel="stylesheet" href="./bootstrap.css" type="text/css" >
     <link rel="stylesheet" href="./index.css" type="text/css"  >
+
 <!-- Font awesome icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-
-
-<!-- Bootstrap icons --> 
-	<!-- <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
-
-
 <!-- Google Icons --> 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -30,16 +25,7 @@
 
 		<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"  
     			 url="jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false"  user="root"  password="root"/>
-    			 
-<!--     <div id="loader">			  -->
-<!-- 		    <div id="content"> -->
-<!-- 		        <div id="circular-progress"> -->
-<!-- 		            <span id="progress-value"> -->
-<!-- 		                0% -->
-<!-- 		            </span> -->
-<!-- 		        </div> -->
-<!-- 		        <span id="text">Loading...</span> -->
-<!--     </div></div> -->
+
 
 			<div id="load-content">
 				<div class="spinner-border ml-3" style="width: 5.6rem; height: 5.6rem; color:white ;" role="status">

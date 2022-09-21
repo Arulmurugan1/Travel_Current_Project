@@ -154,5 +154,4 @@ public class BookingServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
-
 }
