@@ -61,4 +61,12 @@ public class Login {
 	}
 
 
+    @Override
+    public String toString() {
+        return "Login [username=" + username + ", password=" + password + ", role=" + role + ", create_time="
+                + create_time + ", user_id=" + user_id + ", created_user=" + created_user + ", last_login=" + last_login
+                + "]";
+    }
+
+
 }

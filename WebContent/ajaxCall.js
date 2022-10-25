@@ -19,9 +19,9 @@ $(document).ready(function() {
 				dataType: "json",
 				success: function( data, textStatus, jqXHR)
 				{
-					if( Object.keys(data).length > 0 )
+					if( data.length > 0 )
 					{
-						var values = (Object.values(data)).sort();
+						var values = data.sort();
 							
 						$("#vehicle_type").empty();
 						$("#vehicle_type").append("<option value=' '></option>");
@@ -95,6 +95,7 @@ function getInfo(){
 	if(request.readyState==4)
 	{  
 		var val= (request.responseText).trim();  
+		
 		if ( val.length == 4)
 		{
 			$("#error").append(val + " Vehicle Already Exists");
@@ -103,7 +104,7 @@ function getInfo(){
 			$('#vehicle_color').attr("disabled", true);
 			$('#vehicle_no').focus();
 		}
-		else if ( val =="not_found" )
+		else if ( val.trim() =="No Vehicle found" )
 		{			
 			$("#error").append ("No Vehicles Found");
 			$('#vehicle_model').attr("disabled", false);

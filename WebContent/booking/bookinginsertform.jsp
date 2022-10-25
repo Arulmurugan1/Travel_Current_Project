@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ include file="dbconnection.jsp"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
+
+
+<%@ include file="../dbconnection.jsp" %>
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -18,7 +19,6 @@
 				<form name="bookingInsert" method="post">
 					<!-- class="needs-validation" -->
 					<!-- novalidate -->
-					<input type=hidden name=mode id=mode value=I />
 					<div class="row d-flex justify-content-center">
 						<h4 style='color: green;'>${msg}</h4>
 					</div>
@@ -46,7 +46,7 @@
 									onChange="submitOnChange()">
 									<option value="" selected></option>
 									<sql:query dataSource="${db}" var="rs">
-								select Distinct end from route where start ='${pickup}' order by end;			
+								select Distinct end from route where start ='${pickup_from}' order by end;			
 							</sql:query>
 									<c:forEach var='vehicle' items='${rs.rows}'>
 										<option value="${vehicle.end}">${vehicle.end}</option>
@@ -58,12 +58,12 @@
 							<fieldset class="form-group">
 								<label>Vehicle No</label> <select
 									class="form-select form-control" name="vehicle_no"
-									id="vehicle_no" style="width: 340px" readonly>
-									<sql:query dataSource="${db}" var="rs">
-						select vehicle_no from route where start ='${pickup}' and end ='${drop}';			
+									id="vehicle_no" style="width: 340px"  readonly>
+				<sql:query dataSource="${db}" var="rs">
+						select * from route r , vehicle v where r.start ='${pickup_from}' and r.end ='${drop_at}' and r.vehicle_no = v.vehicle_no;			
 				</sql:query>
 									<c:forEach var='vehicle' items='${rs.rows}'>
-										<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no}</option>
+										<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no}-${vehicle.brand}-${vehicle.model}-${vehicle.color}</option>
 									</c:forEach>
 								</select>
 							</fieldset>
@@ -75,11 +75,10 @@
 									class="form-select form-control" name="driver_id"
 									id="driver_id" readonly style="width: 340px">
 									<sql:query dataSource="${db}" var="rs">
-                        	SELECT driver_id,driver_name from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup}' and r.end ='${drop}';
+                        	SELECT driver_id,driver_name from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup_from}' and r.end ='${drop_at}';
                         </sql:query>
 									<c:forEach var="driver" items="${rs.rows}">
-										<option value="${driver.driver_id} - ${driver.driver_name}">${driver.driver_id}
-											- ${driver.driver_name}</option>
+										<option value="${driver.driver_id}">${driver.driver_id}-${driver.driver_name}</option>
 									</c:forEach>
 
 								</select>
@@ -129,7 +128,7 @@
 						<div class='col-auto'>
 							<fieldset class="form-group">
 								<sql:query dataSource="${db}" var="rs">
-						select fare from route where start ='${pickup}' and end ='${drop}';			
+						select fare from route where start ='${pickup_from}' and end ='${drop_at}';			
 					</sql:query>
 								<c:forEach var="f" items="${rs.rows}">
 									<label>Fare</label>
@@ -157,27 +156,21 @@
 var result = '${result}';
 if ( result.length > 0 )
 {
+	callParent();
+}
+else
+{
+	callAlert();
+}
+	
+$('#pickup_from').val('${pickup_from}');
+$('#drop_at').val('${drop_at}');
 
-	try
-	{
-		window.opener.popupResult(result);
-	}
-	catch(err){}
-	window.close();
-
-
-}	
-if ( '${pickup}' !="")
-	document.bookingInsert.pickup_from.value = '${pickup}';
-if ( '${drop}' !="")	
-	document.bookingInsert.drop_at.value = '${drop}';
-if ( '${fare}' !="")
-	document.bookingInsert.fare.value = '${fare}';		
 function submitOnChange()
 {
 	with(document.bookingInsert)
 	{
-		action ="Common";
+		action ="Booking?mode=dummy";
 		submit();
 	}
 }
@@ -190,9 +183,11 @@ function submitCall(success)
 			alert('Customer name has Invalid Special Characters !')
 		else if ( check( (document.forms[0].email.value).trim() , 'email') )
 				alert('Email has Invalid Special Characters !')
+		else if ( !(document.forms[0].email.value).trim().includes('@') || !(document.forms[0].email.value).trim().includes('.com') )
+				alert('Enter Valid Email')
 		else
 		{
-					document.forms[0].action = 'Booking';
+					document.forms[0].action = 'Booking?mode=I';
 					document.forms[0].submit();
 		}
 	}

@@ -77,6 +77,13 @@ public class Driver {
 		this.id = id;
 	}
 
+
+    @Override
+    public String toString() {
+        return "Driver [name=" + name + ", gender=" + gender + ", city=" + city + ", phone=" + phone + ", no=" + no
+                + ", age=" + age + ", id=" + id + "]";
+    }
+
 	
 	
 	

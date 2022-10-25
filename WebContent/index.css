@@ -131,7 +131,7 @@ thead>tr>th {
 
 .table-wrapper {
 	overflow-y: scroll;
-	max-height: 60vh;
+	max-height: 58vh;
 }
 
 button:hover, input.button:hover {
@@ -150,7 +150,7 @@ h5 {
 .home-button {
 	text-align: center;
 	padding: .8rem 3rem;
-	display: inline-block;
+	display: inherit;
 	color : #0000cc;
 	border: none;
 	cursor: pointer;
@@ -172,8 +172,8 @@ h5 {
 	right: 0;
 	width: 0%;
 	height: 100%;
-	background: red;
-	transition: .3s linear;
+	background: green;
+	transition: 1s ease;
 	z-index: -1;
 	-webkit-transition: .3s linear;
 	-moz-transition: .3s linear;
@@ -183,6 +183,7 @@ h5 {
 
 .home-button:hover::before {
 	width: 100%;
+	color:yellow;
 	left: 0;
 }
 
@@ -243,7 +244,84 @@ keyframes spin { 100% {
 	position: absolute;
 }
 
+.loader-alt
+{
+	display :inline-block;
+	width : 58px ;
+	height : 58px;
+	position : relative ;
+	border : 4px solid #9B87FE;
+	animation : loader 1.5s infinite ease;
+}
+.load 
+{
+	vertical-align:top ;
+	display : inline-block ;
+	width : 100%;
+	background-color : #FFB870;
+	animation : load 1.5s infinite ease-in;
+}
+.btn-link
+{
+	cursor:pointer;
+	color : yellow;
+}
+.btn-link:hover
+{
+	cursor:pointer;
+	font-size : 3.7rem;
+	color : #ff0080;
+	text-decoration : none ;
+}
 
+
+@keyframes loader 
+{
+	0% 
+	{
+		transform : rotate(0deg);
+	}
+	25% 
+	{
+		transform : rotate(100deg);
+	}
+	50% 
+	{
+		transform : rotate(180deg);
+	}
+	75% 
+	{
+		transform : rotate(360deg);
+	}
+	100% 
+	{
+		transform : rotate(360deg);
+	}
+}
+
+@keyframes load 
+{
+	0% 
+	{
+		height : 0%;
+	}
+	25% 
+	{
+		height : 0%;
+	}
+	50% 
+	{
+		height : 100%;
+	}
+	75% 
+	{
+		height : 100%;
+	}
+	100% 
+	{
+		height : 0%;
+	}
+}
 
 @media screen and (max-width: 600px) {
 	html {
@@ -261,3 +339,33 @@ keyframes spin { 100% {
 	font-size : 20px;
 	margin-left: .3rem ; 
 }
+
+
+.info{
+		position : relative ;
+	}
+	.info-content{
+		width:40%;
+		position:absolute;
+		top:10%;
+		left:57%;
+		
+	}     
+	.icon{
+	 position: fixed;
+    top: 31vh;
+    right: 2vw;
+    color: black;
+    font-size: 21px;
+	}
+	@media screen and (max-width :992px){
+	.info-content{
+		height:82%;
+		width:40%;
+		position:absolute;
+		top:19%;
+		left:58%;
+		overflow-x:hidden ;
+		overflow-y :scroll;
+	}
+	}

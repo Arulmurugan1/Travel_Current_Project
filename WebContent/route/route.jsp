@@ -1,8 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ include file="dbconnection.jsp"%>
+<%@ include file="../dbconnection.jsp" %>
 
 <html>
 <head>
@@ -24,21 +25,11 @@ td.no::before {
 
 </head>
 <body style="overflow: hidden">
-	<jsp:include page="header.jsp" />
+	<jsp:include page="../header.jsp" />
 
 	<div class="container-fluid mt-1">
 		<c:if test="${sessionScope.role == 'Admin'}">
 			<div class="d-flex justify-content-center mb-2 mt-2">
-
-				<script> 
-	    	var msg = '${msg}';
-	    	var message = msg.trim();
-	    	if ( message !=null && message != '')
-	    		{
-	    			alert(message);
-	    			message =' ';
-	    		}    	
-	    	</script>
 				<div class="w-100 text-center">
 					<button class="btn btn-success button-length add w-50">Add
 						Route</button>
@@ -112,7 +103,7 @@ td.no::before {
 					<th>Boarding</th>
 					<th>Destination</th>
 					<th>Fare</th>
-					<c:if test="${sessionScope.role!='Guest'}">
+					<c:if test="${sessionScope.role == 'Admin'}">
 						<th>Action</th>
 					</c:if>
 				</tr>
@@ -127,7 +118,7 @@ td.no::before {
 						<td><c:out value="${lists.start}" /></td>
 						<td><c:out value="${lists.end}" /></td>
 						<td><c:out value="${lists.fare}" /></td>
-						<c:if test="${sessionScope.role!='Guest'}">
+						<c:if test="${sessionScope.role == 'Admin'}">
 							<td>
 								<%--                                        <a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />','<c:out value="${lists.fare}" />')">Edit</a>  --%>
 								&nbsp;&nbsp;&nbsp;&nbsp; <a

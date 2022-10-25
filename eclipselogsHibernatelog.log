@@ -1,0 +1,35 @@
+[16/10/22 08:10:00:000 IST]  INFO lang.Object: Hello this is an info message
+[16/10/22 08:10:32:032 IST]  INFO lang.Object: Hello this is an info message
+[16/10/22 08:11:57:057 IST]  INFO lang.Object: Hello this is an info message
+[16/10/22 08:17:21:021 IST]  INFO lang.Object: Hello this is an info message
+[16/10/22 08:18:15:015 IST]  INFO lang.Object: Hello this is an info message
+[16/10/22 08:45:39:039 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 08:45:39:039 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 08:45:39:039 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:11:28:028 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:11:28:028 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:11:28:028 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:11:50:050 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:11:50:050 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:11:50:050 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:22:38:038 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:22:38:038 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:22:38:038 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:22:47:047 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:22:47:047 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:22:47:047 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:23:47:047 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:23:47:047 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:23:47:047 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:24:25:025 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:24:25:025 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:24:25:025 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:24:36:036 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:24:36:036 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:24:36:036 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:24:40:040 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:24:40:040 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:24:40:040 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j
+[16/10/22 09:25:43:043 IST]  WARN common.LoggerExample: Log4j This warn : Learning Log4j
+[16/10/22 09:25:43:043 IST] ERROR common.LoggerExample: Log4j This is error Learning Log4j
+[16/10/22 09:25:43:043 IST] FATAL common.LoggerExample: Log4j This is fatal : Learning Log4j

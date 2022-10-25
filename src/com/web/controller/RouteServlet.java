@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.web.common.Constant;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
 import com.web.util.Dbmanager;
@@ -111,7 +112,7 @@ public class RouteServlet extends HttpServlet {
 			routeList = dao.getAllRoutes();
 			request.setAttribute("list", routeList);
 			dao.closeAll();
-			RequestDispatcher rd = request.getRequestDispatcher("route.jsp");
+			RequestDispatcher rd = request.getRequestDispatcher(Constant.ROUTE_JSP);
 			rd.forward(request, response);
 		}
 		catch( Throwable e) {e.printStackTrace();}

@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
+import com.web.common.Constant;
+import com.web.common.Log;
+import com.web.filter.AuthFilter;
 import com.web.modal.Logindao;
 import com.web.objects.Login;
 import com.web.util.Dbmanager;
@@ -40,7 +44,7 @@ public class LoginServlet extends HttpServlet {
 				System.out.println( "Logged Out at : "+ request.getSession().getLastAccessedTime() );
 				request.getSession().invalidate();
 				request.logout();
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 			}
 
 		}catch(Exception e)
@@ -72,7 +76,7 @@ public class LoginServlet extends HttpServlet {
 			{
 				System.out.println("Connection ::"+con);
 				request.setAttribute("msg","Could not create connection to database server. Attempted reconnect 3 times!");
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 			}
 			else	
 			{
@@ -84,10 +88,10 @@ public class LoginServlet extends HttpServlet {
 						String user =request.getParameter("txtUser").trim();
 						String password =request.getParameter("txtPassword").trim();
 
+//						log.info("Username : "+ user + " Password : "+password);
 						System.out.println(" Username : "+ user + " Password : "+password);
 
 //						DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a");  
-//
 //						String formattedDate = LocalDateTime.now().format(myFormatObj);  
 //						System.out.println("After Formatting: " + formattedDate);  
 
@@ -126,13 +130,13 @@ public class LoginServlet extends HttpServlet {
 						if (success)
 						{
 							dao.closeAll();
-							request.getRequestDispatcher("home.jsp").forward(request, response);
+							request.getRequestDispatcher(Constant.HOME_JSP).forward(request, response);
 						}
 
 						else
 						{
 							dao.closeAll();
-							request.getRequestDispatcher("index.jsp").forward(request, response);
+							request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 						}
 					}catch(Exception e) 
 					{
@@ -194,7 +198,7 @@ public class LoginServlet extends HttpServlet {
 
 						}
 						dao.closeAll();
-						request.getRequestDispatcher("index.jsp").forward(request, response);
+						request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 					}catch(Exception e) 
 					{
 						System.out.println("Exception in user addition ");e.printStackTrace();			
@@ -205,8 +209,9 @@ public class LoginServlet extends HttpServlet {
 		}
 		catch(Exception e) 
 		{
-			System.out.println("Exception in Connection");e.printStackTrace();	
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			System.out.println("Exception in Connection");
+			e.printStackTrace();	
+			request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 		}
 		finally
 		{

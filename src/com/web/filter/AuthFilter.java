@@ -2,18 +2,18 @@ package com.web.filter;
 
 import java.io.IOException;
 import java.util.Date;
-import java.util.Enumeration;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
+import com.web.common.Constant;
 
 //dispatcherTypes = {DispatcherType.FORWARD }
 //, 
@@ -26,7 +26,7 @@ import javax.servlet.http.HttpSession;
 		"/AuthFilter",
 		"/*"
 })
-public final class AuthFilter implements Filter {
+public final class AuthFilter implements Filter{
 
 	/**
 	 * Default constructor. 
@@ -47,7 +47,7 @@ public final class AuthFilter implements Filter {
 		HttpSession session = req.getSession(true) ;
 
 		//	System.out.println("Session Id ["+session.getId()+"] Request Id"+req.getRequestedSessionId());
-
+//		log.info("Session Id ["+session.getId()+"] Request Id"+req.getRequestedSessionId());
 		if ( req !=null && ( req.getServletPath().contains(".css") || req.getServletPath().contains(".js") ) )
 		{
 			chain.doFilter(request, response);
@@ -65,15 +65,15 @@ public final class AuthFilter implements Filter {
 				session.setAttribute("sessionid", session.getId() );
 			}
 
-			System.out.println(req.getRequestURL()   );
-			System.out.println(req.getServletPath()  );
-			System.out.println(req.getContextPath()  );
-			System.out.println(req.getRequestURI()   );  
-			
+//			System.out.println(req.getRequestURL()   );
+//			System.out.println(req.getServletPath()  );
+//			System.out.println(req.getContextPath()  );
+//			System.out.println(req.getRequestURI()   );  
+//			
 			req.getServletContext().setAttribute("localpath",req.getRequestURL());
 			
-			System.out.println("LocalPath :"+req.getServletContext().getAttribute("localpath"));
-
+//			System.out.println("LocalPath :"+req.getServletContext().getAttribute("localpath"));
+//
 			System.out.println("--------------- Authentication Ends --------------------");
 
 			if ( req.getServletPath().equals("/Login"))
@@ -82,7 +82,7 @@ public final class AuthFilter implements Filter {
 			}
 			else if ( session.getAttribute("user") == null && session.getAttribute("role") == null )
 			{
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 			}
 			/*else if (( session != null && 
 					session.getAttribute("localpath") != null && 
@@ -90,11 +90,11 @@ public final class AuthFilter implements Filter {
 					session.isNew())
 			{
 				System.out.println("--------------- Authentication Ends in index--------------------");
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 			}*/
 			else
 			{
-				System.out.println("--------------- Authentication Ends in chain--------------------");
+//				System.out.println("--------------- Authentication Ends in chain--------------------");
 				chain.doFilter(request, response);
 			}	
 		}

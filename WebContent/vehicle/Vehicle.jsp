@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ include file="dbconnection.jsp"%>
+<%@ include file="../dbconnection.jsp" %>
 
 <html>
 <head>
@@ -23,13 +23,13 @@ td.no::before {
 
 </head>
 <body>
-	<jsp:include page="header.jsp" />
+	<jsp:include page="../header.jsp" />
 	<div
 		class="container-fluid mt-1 text-center">
-		<c:if test="${sessionScope.role=='Admin'}">
+		<c:if test="${sessionScope.role == 'Admin'}">
 			<div class="m-2">
 				<a class="btn btn-success button-length w-25"
-					href="Vehicleform.jsp">Add New Vehicle</a>
+					href="Vehicle?mode=dummy">Add New Vehicle</a>
 			</div>
 		</c:if>
 		<div class="table-responsive table-wrapper">
@@ -42,7 +42,7 @@ td.no::before {
 					<th>Vehicle Model</th>
 					<th>Vehicle Type</th>
 					<th>Vehicle Color</th>
-					<c:if test="${sessionScope.role!='Guest'}">
+					<c:if test="${sessionScope.role == 'Admin'}">
 						<th>Action</th>
 					</c:if>
 				</tr>
@@ -58,7 +58,7 @@ td.no::before {
 						<td><c:out value="${user.type}" /></td>
 						<td><c:out value="${user.color}" /></td>
 
-						<c:if test="${sessionScope.role!='Guest'}">
+						<c:if test="${sessionScope.role == 'Admin'}">
  							<td>
 <!--
 <%-- 							 <a	href="Vehicleform.jsp?mode=E&no=<c:out value="${user.no}" />&model=<c:out value="${user.model}" />&type=<c:out value="${user.type}" />&color=<c:out value="${user.color}" />">Edit</a> --%>
@@ -73,10 +73,5 @@ td.no::before {
 			</tbody>
 		</table></div>
 	</div>
-	
-	<script>
-		if ( '${msg}' != '')
-			alert('${msg}');
-	</script>
 </body>
 </html>

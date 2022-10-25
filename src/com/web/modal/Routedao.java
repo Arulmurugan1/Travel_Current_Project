@@ -102,6 +102,7 @@ public class Routedao
 		System.out.println(ps);
 		rowsAffected = ps.executeUpdate() > 0;
 		System.out.println("Route deleted "+rowsAffected);
+		closeAll();
 		return rowsAffected;
 	}
 
@@ -116,7 +117,7 @@ public class Routedao
 		return rowUpdated;
 	}
 
-	public void closeAll() throws Throwable
+	public void closeAll() throws SQLException
 	{
 		if ( con !=null && !con.isClosed())
 		{

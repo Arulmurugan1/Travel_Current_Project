@@ -96,3 +96,21 @@ function Submit()
 	}
 	submitCall(success);
 }
+function submitCall(success)
+{
+	
+}
+function callParent()
+{
+	try
+	{
+		window.opener.popupResult(result);
+	}
+	catch(err){}
+	window.close();	
+}
+function callAlert()
+{
+	if ( ($('#msg').val()).trim() !='')
+		alert($('#msg').val());
+}

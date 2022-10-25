@@ -107,6 +107,11 @@ public class Customer {
 	public void setEnd(String end) {
 		this.end = end;
 	}
+    @Override
+    public String toString() {
+        return "Customer [customer_name=" + customer_name + ", start=" + start + ", end=" + end + ", age=" + age
+                + ", gender=" + gender + ", email=" + email + ", phone=" + phone + ", customer_id=" + customer_id + "]";
+    }
 	
 	
 }

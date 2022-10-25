@@ -14,9 +14,9 @@ import com.web.util.Dbmanager;
 
 public class Bookingdao {
 
-	private static final String INSERT_BOOKING = "INSERT INTO BOOKING VALUES(null,?,?,?,?,?,?);";
+	private static final String INSERT_BOOKING = "INSERT INTO BOOKING VALUES(null,?,?,?,?,?,?,'Arulmurugan',' ',sysdate())";
 	private static final String SELECT_USER_BY_ID = "select * from booking where booking_no =?";
-	private static final String SELECT_ALL_USERS = "SELECT A.*,B.CUSTOMER_NAME FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
+	private static final String SELECT_ALL_USERS = "SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
 	private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
 
 	static Connection con = null;
@@ -91,14 +91,20 @@ public class Bookingdao {
 			rs = ps.executeQuery();
 			while (rs.next()) {
 				u = new Booking();
-				u.setBooking_no(rs.getInt(1));
-				u.setPickup_from(rs.getString(2));
-				u.setDrop_at(rs.getString(3));
-				u.setCustomer_id(rs.getInt(4));
-				u.setVehicle_no(rs.getString(5));
-				u.setDriver_id(rs.getString(6));
-				u.setFare(rs.getDouble(7));
-				u.setCustomer_name(rs.getString(8));
+				u.setBooking_no(rs.getInt("booking_no"));
+				u.setPickup_from(rs.getString("pickup_from"));
+				u.setDrop_at(rs.getString("drop_at"));
+				u.setCustomer_id(rs.getInt("customer_id"));
+				u.setVehicle_no(rs.getString("vehicle_no"));
+				u.setDriver_id(rs.getString("driver_id"));
+				u.setFare(rs.getDouble("fare"));
+				u.setCustomer_name(rs.getString("customer_name"));
+				u.setAge(rs.getString("age"));
+				u.setGender(rs.getString("gender"));
+				u.setStart(rs.getString("start"));
+				u.setEmail(rs.getString("email"));
+				u.setEnd(rs.getString("end"));
+				u.setPhone(rs.getString("phone"));
 				ls.add(u);
 			}
 		} catch (Exception e) {
@@ -258,19 +264,16 @@ public class Bookingdao {
 		{
 			con.close();
 			con = null;
-			System.out.println("Connection Closed ::"+con);
 		}
 		if ( ps !=null )
 		{
 			ps.close();
 			ps = null;
-			System.out.println("Statement Closed ::"+ps);
 		}
 		if ( rs !=null  )
 		{
 			rs.close();
 			rs = null;
-			System.out.println("Resultset Closed ::"+rs);
 		}
 	}
 }

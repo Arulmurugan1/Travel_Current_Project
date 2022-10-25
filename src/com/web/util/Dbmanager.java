@@ -300,4 +300,14 @@ public class Dbmanager {
 		
 		return result ;
 	}
+	
+	public void close() throws Exception
+	{
+		if ( con !=null && !con.isClosed())
+		{
+			con.close();
+			con = null;
+			System.out.println("Connection Closed ::"+con);
+		}
+	}
 }

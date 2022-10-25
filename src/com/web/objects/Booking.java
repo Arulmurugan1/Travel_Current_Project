@@ -11,6 +11,12 @@ public class Booking {
 		private String driver_id;
 		private double fare;
 		private String customer_name;//Customer table column
+		private String start;
+		private String end ;
+		private String age;
+		private String gender;
+		private String email;
+		private String phone;
 		
 		public int getBooking_no() {
 			return booking_no;
@@ -64,12 +70,50 @@ public class Booking {
 		public void setCustomer_name(String customer_name) {
 			this.customer_name = customer_name;
 		}
+		public String getStart() {
+			return start;
+		}
+		public void setStart(String start) {
+			this.start = start;
+		}
+		public String getEnd() {
+			return end;
+		}
+		public void setEnd(String end) {
+			this.end = end;
+		}
+		public String getAge() {
+			return age;
+		}
+		public void setAge(String age) {
+			this.age = age;
+		}
+		public String getGender() {
+			return gender;
+		}
+		public void setGender(String gender) {
+			this.gender = gender;
+		}
+		public String getEmail() {
+			return email;
+		}
+		public void setEmail(String email) {
+			this.email = email;
+		}
+		public String getPhone() {
+			return phone;
+		}
+		public void setPhone(String phone) {
+			this.phone = phone;
+		}
 		@Override
 		public String toString() {
 			return "Booking [booking_no=" + booking_no + ", pickup_from=" + pickup_from + ", drop_at=" + drop_at
 					+ ", customer_id=" + customer_id + ", vehicle_no=" + vehicle_no + ", driver_id=" + driver_id
-					+ ", fare=" + fare + ", customer_name=" + customer_name + "]";
+					+ ", fare=" + fare + ", customer_name=" + customer_name + ", start=" + start + ", end=" + end
+					+ ", age=" + age + ", gender=" + gender + ", email=" + email + ", phone=" + phone + "]";
 		}
+		
 
 		
 		

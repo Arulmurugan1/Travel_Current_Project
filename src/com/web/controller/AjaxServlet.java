@@ -12,37 +12,29 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
+import org.json.JSONArray;
 
 import com.web.util.Dbmanager;
 
 
 @WebServlet("/Ajax")
-public class AjaxServlet extends HttpServlet {
+public class AjaxServlet extends HttpServlet 
+{
 	private static final long serialVersionUID = 1L;
-	Connection conn = null;            
-	PreparedStatement stmt = null; 
-	ResultSet rs = null;
-	JSONObject vehicleObj  = new JSONObject();
+	static Connection conn = null;            
+	static PreparedStatement stmt = null; 
+	static ResultSet rs = null;
+	static JSONArray data  = null;
 
-	public AjaxServlet() {
-		super();
-
-	}
-
-
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request,response);
-	}
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 
 		String vehicleNo = request.getParameter("vehicle_no");
 		String vehicleModel = request.getParameter("vehicle_model");
 		
 		System.out.println("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]");
-		System.out.println("Inside doPost from ajax");
+		
+		System.out.println("Inside ajax");
 		
 		response.setContentType("text/html");
 		response.setHeader("Cache-control", "no-cache, no-store");
@@ -58,39 +50,39 @@ public class AjaxServlet extends HttpServlet {
 		{
 			PrintWriter out = response.getWriter();
 			String no = getInfo(vehicleNo).trim();
-			System.out.println(no);
+			
 			if ( no !=null && no !="" )
 			{
-				System.out.println("Vehicle Found");
+				System.out.println(no);
 				out.print(no);
 			}
 			else
 			{
 				System.out.println("Not found");
-				out.print("not_found");
+				out.print("No Vehicle found");
 			}
 			out.close();
 		}
 		if ( vehicleModel!=null && vehicleModel.trim().length()  > 0)
 		{
 			PrintWriter out = response.getWriter();
-			vehicleObj = getVehicleType(vehicleModel);
+			data = getVehicleType(vehicleModel);
 			try
 			{
-				if( vehicleObj !=null &&  !vehicleObj.toString().equals("")){
-					System.out.println("data came true..");
+				if( data !=null &&  !data.toString().equals("")){
+					System.out.println("data found..");
 				}
 				else {
-					System.out.println("data came false..");
+					System.out.println("No data found..");
 				}
-				System.out.println(vehicleObj.toString());
+				System.out.println(data.toString());
 			}catch(Exception e)
 			{
 				e.printStackTrace();
 			}			
 			finally
 			{
-				out.println(vehicleObj.toString());
+				out.println(data.toString());
 				out.close();
 			}
 		}
@@ -124,20 +116,19 @@ public class AjaxServlet extends HttpServlet {
 
 	}  
 	
-	private JSONObject getVehicleType(String model)
+	private JSONArray getVehicleType(String model)
 	{
-		JSONObject obj = new JSONObject();
+	    JSONArray obj = new JSONArray();
 
 		try {    
 			System.out.println("Inside VehicleType for Vehicle Model call from ajax");
 			conn = Dbmanager.getConnection(); 
 			stmt = conn.prepareStatement("select m.title from car_brand c,model m where c.id = m.make_id and c.title=?");
 			stmt.setString(1, model.trim());
-			ResultSet rs = stmt.executeQuery(); 
-			int c = 1;
+			rs = stmt.executeQuery(); 
 			while(rs.next())
 			{ 
-				obj.put( "type"+ c++, rs.getString(1) ); 
+				obj.put(rs.getString(1));
 			} 
 			stmt.close();
 			rs.close();
@@ -147,8 +138,7 @@ public class AjaxServlet extends HttpServlet {
 		catch(Exception e)
 		{
 			e.getLocalizedMessage();
-		}  
-	
+		}
 		return  ( obj.toString().length() > 0 ) ? obj : null ;
 	}
 

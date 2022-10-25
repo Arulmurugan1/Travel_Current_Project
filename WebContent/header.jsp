@@ -104,7 +104,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 </head>
-<body>
 	<div class="d-flex justify-content-between sticky-top" id=announcement>
 		<div class="dropdown">
 			<a href="home.jsp"> <span><img
@@ -153,12 +152,14 @@
 		</div>
 		<div class="adminContent text-center m-3" style="width: 20%;">
 			<div>
-				  <c:if test="${sessionScope.role=='Admin'}">
-					Hi ${sessionScope.user}<i class="fa fa-thumbs-up ml-2" aria-hidden="true"></i><span class=ml-2>Role:${sessionScope.role}<i class="fa fa-unlock ml-2" style="font-size:25px;" aria-hidden="true"></i></span>    	
-				  </c:if>
-				   <c:if test="${sessionScope.role!='Admin'}">
-				    Hi ${sessionScope.user}<i class="fa fa-thumbs-up ml-2" aria-hidden="true"></i><span class=ml-2>Role:${sessionScope.role}<i class="fa fa-lock ml-2" style="font-size:25px;" aria-hidden="true"></i></span>
-				  </c:if>				
+			<c:choose>
+				<c:when test="${sessionScope.role == 'Admin'}">
+				Hi ${sessionScope.user}<i class="fa fa-thumbs-up ml-2" aria-hidden="true"></i><span class=ml-2>Role:${sessionScope.role}<i class="fa fa-unlock ml-2" style="font-size:25px;" aria-hidden="true"></i></span>
+				</c:when>
+				<c:otherwise>
+				 Hi ${sessionScope.user}<i class="fa fa-thumbs-up ml-2" aria-hidden="true"></i><span class=ml-2>Role:${sessionScope.role}<i class="fa fa-lock ml-2" style="font-size:25px;" aria-hidden="true"></i></span>
+				</c:otherwise>
+			</c:choose>			
 			</div>
 			<hr>
 			<div class="dropdown">

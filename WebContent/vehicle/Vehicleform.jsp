@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page import="java.util.*"%>
-<%@ include file="dbconnection.jsp"%>
+<%@ include file="../dbconnection.jsp" %>
 
 <html>
 <head>
@@ -23,7 +24,7 @@
 <script type="text/javascript" src="ajaxCall.js"></script>
 </head>
 <body style='overflow:hidden'>
-	<jsp:include page="header.jsp" />
+	<jsp:include page="../header.jsp" />
 	<div class="container" >
 		<div class="card border p-2" style="border-radius:30px">
 			<form name=vehicle method="post">

@@ -68,6 +68,12 @@ public class Route
 	public void setFare(double fare) {
 		this.fare = fare;
 	}
+
+
+    @Override
+    public String toString() {
+        return "Route [vehicle_no=" + vehicle_no + ", start=" + start + ", end=" + end + ", fare=" + fare + "]";
+    }
 	
 	
 	

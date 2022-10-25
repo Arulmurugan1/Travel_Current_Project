@@ -24,3 +24,6 @@
 <!-- 		        </div> -->
 <!-- 		        <span id="text">Loading...</span> -->
 <!--     </div></div> -->
+
+To call the customer details from booking
+ <a class=btn-link style='cursor:pointer;' onclick="javascript:window.open('Customer?mode=QE&customer_id=<c:out value="${user.customer_id}" />','_blank','top=50,left=190,toolbar=no,status=no,width=800,height=400');"> <c:out value="${user.customer_id}" /> </a>

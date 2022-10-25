@@ -10,107 +10,90 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.web.common.Constant;
 import com.web.modal.Driverdao;
 import com.web.objects.Driver;
 
-
 @WebServlet("/Driver")
 public class DriverServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
+    public DriverServlet() {
+        super();
 
-	public DriverServlet() {
-		super();
+    }
 
-	}
+    protected void service(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        Driver v = new Driver();
+        Driverdao dao = new Driverdao();
+        List<Driver> l = new ArrayList<Driver>();
+        String message = "", mode = "";
 
+        try {
+            mode = request.getParameter("mode");
+            System.out.println("mode Driver Servlet ::" + mode);
 
+            if (mode != null && !mode.trim().equals("N") && !mode.trim().equals(""))
+            {
+                String name = request.getParameter("driver_name");
+                String gender = request.getParameter("gender");
+                String city = request.getParameter("city");
+                String phone = request.getParameter("phone");
+                String no = request.getParameter("vehicle_no");
+                int age = Integer.parseInt(request.getParameter("age"));
 
-	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+                if (mode.equals("E")) {
+                    int id = Integer.parseInt(request.getParameter("driver_id"));
+                    v = dao.selectDriver(id);
+                    request.setAttribute("listUser", v);
+                }
+                if (mode.equals("I")) {
+                    v = new Driver(name, gender, city, phone, no, age, 0);
+                    if (dao.insertDriver(v)) {
+                        message = "success";
+                    } else {
+                        message = "Failed";
+                    }
+                }
 
-		Driver v = new Driver();
-		Driverdao dao = new Driverdao();
-		List<Driver> l = new ArrayList<Driver>();
+                if (mode.equals("U")) {
+                    int id = Integer.parseInt(request.getParameter("driver_id"));
+                    v = new Driver(name, gender, city, phone, no, age, id);
 
-		String mode=request.getParameter("mode") , message = "";
-		System.out.println("mode Driver Servlet ::"+mode);
+                    if (dao.updateDriver(v)) {
+                        message = "success";
+                    } else {
+                        message = "Failed";
+                    }
+                }
 
-		try
-		{
-			if ( !mode.trim().equals("N") && !mode.trim().equals("")) 
-			{
-				String name   = request.getParameter("driver_name");
-				String gender = request.getParameter("gender");
-				String city   = request.getParameter("city");
-				String phone  = request.getParameter("phone");
-				String no     = request.getParameter("vehicle_no");
-				int age    	  = Integer.parseInt( request.getParameter("age") );	
+                if (mode.equals("D")) {
+                    no = request.getParameter("vehicle_no");
 
-				if( mode !=null && mode.equals("E"))
-				{
-					int id 		  = Integer.parseInt( request.getParameter("driver_id") );
-					v = dao.selectDriver(id);
-					request.setAttribute("listUser", v);
-				}
-				if( mode !=null && mode.equals("I"))	    
-				{
-					v = new Driver(name, gender, city, phone, no, age, 0);
-					if (dao.insertDriver(v) )
-					{
-						message ="success";
-					}
-					else 
-					{
-						message ="Failed";
-					}
-				}	    
+                    if (dao.deleteDriver(no)) {
+                        message = "success";
+                    } else {
+                        message = "Failed";
+                    }
 
-				if( mode !=null && mode.equals("U"))	    
-				{
-					int id = Integer.parseInt( request.getParameter("driver_id") );
-					v = new Driver(name, gender, city, phone, no, age, id);
+                }
+            }
+                l = dao.getAllDriver();
+                dao.closeAll();
+        } catch (Exception e) {
+            e.printStackTrace();
+            message = e.getMessage();
+        } finally 
+        {
+            request.setAttribute("msg", message);
+            request.setAttribute("listUser", l);
+            if (message == "success" || mode.equals("")) {
+                request.getRequestDispatcher(Constant.DRIVER_JSP).forward(request, response);
 
-					if( dao.updateDriver(v) ) 
-					{			    
-						message ="success";
-					} 
-					else 
-					{
-						message ="Failed";
-					}
-				}
-
-				if( mode !=null && mode.equals("D"))
-				{
-					no  = request.getParameter("vehicle_no");
-
-					if(dao.deleteDriver(no))
-					{			    
-						message ="success";
-					}
-					else 
-					{
-						message ="Failed";
-					}
-
-				}
-			}
-		}
-		catch(Exception e) 
-		{
-			e.printStackTrace();
-		}
-		finally {
-			request.setAttribute("msg",message);
-
-			if ( message == "success" || mode.equals("") )
-			{
-				l = dao.getAllDriver();
-				request.setAttribute("listUser", l);
-				request.getRequestDispatcher("driver.jsp").forward(request, response);
-			}
-			else
-				request.getRequestDispatcher("driverform.jsp").forward(request, response);
-		}
-	}
+            } else {
+                request.getRequestDispatcher(Constant.DRIVER_INSERT_JSP).forward(request, response);
+            }
+        }
+    }
 }

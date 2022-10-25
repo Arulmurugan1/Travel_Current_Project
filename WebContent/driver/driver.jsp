@@ -1,8 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ include file="dbconnection.jsp" %>
+<%@ include file="../dbconnection.jsp" %>
 
 <html>
 <head>
@@ -26,10 +27,10 @@
 
 </head>
 <body >
-<jsp:include page="header.jsp" /> 
+<jsp:include page="../header.jsp" /> 
     
     <div class="container-fluid overflow-auto m-auto text-center">
-        <c:if test="${sessionScope.role =='Admin'}">
+        <c:if test="${sessionScope.role == 'Admin'}">
             <div class="m-3"> <a class="btn btn-success button-length w-25" href="Driver?mode=N">Add New Driver</a>
             </div>
         </c:if>
@@ -45,7 +46,7 @@
                     <th>City</th>
                     <th>Vehicle No</th>
 
-                    <c:if test="${sessionScope.role!='Guest'}">
+                    <c:if test="${sessionScope.role == 'Admin'}">
                         <th>Action</th>
                     </c:if>
                 </tr>
@@ -77,7 +78,7 @@
                         <td>
                             <c:out value="${user.no}" />
                         </td>
-                        <c:if test="${sessionScope.role!='Guest'}">
+                        <c:if test="${sessionScope.role == 'Admin'}">
                             <td>
                             <%-- <a href="Driver?mode=E&driver_id=<c:out value='${user.id}' />">Edit</a> --%> 
                             &nbsp;&nbsp;&nbsp;&nbsp; 
@@ -89,9 +90,5 @@
             </tbody>
         </table>
     </div>
-	<script>
-	if (  '${msg}' !='' )
-		alert('${msg}')
-	</script>
 </body>
 </html>

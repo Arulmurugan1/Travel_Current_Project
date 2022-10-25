@@ -105,3 +105,10 @@ public class CarInsertionCode
 	}
 
 }
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+
+title = 'SK_Travels';

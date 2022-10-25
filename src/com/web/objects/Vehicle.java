@@ -42,6 +42,12 @@ public class Vehicle {
 	public void setColor(String color) {
 		this.color = color;
 	}
+
+    @Override
+    public String toString() {
+        return "Vehicle [no=" + no + ", model=" + model + ", type=" + type + ", color=" + color + "]";
+    }
+ 
 	
 	
 }

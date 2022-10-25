@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.web.common.Constant;
 import com.web.modal.Customerdao;
 import com.web.objects.Customer;
 
@@ -38,20 +39,31 @@ public class CustomerServlet extends HttpServlet {
 			{
 				String id =request.getParameter("customer_id");
 				request.setAttribute("customer_id", id);
-				request.getRequestDispatcher("customer_detail.jsp").forward(request, response); 
 			}
 			else
 			{
 				listUser = customerdao.getAllCustomer();
 				request.setAttribute("listUser", listUser);
-				System.out.println(listUser);
 				customerdao.closeAll();
-				request.setAttribute("mode", mode);
-				request.getRequestDispatcher("customer.jsp").forward(request, response); 
+				request.setAttribute("mode", mode);			
 			}
 			   
-		}catch(Exception e ) 
-		{e.printStackTrace();}
+		}
+		catch(Exception e ) 
+		{
+		    e.printStackTrace();
+		    }
+		finally
+		{
+		    if( mode !=null && mode.equals("QE"))
+            {
+                request.getRequestDispatcher(Constant.CUSTOMER_DETAIL_JSP).forward(request, response); 
+            }
+		    else
+		    {
+		        request.getRequestDispatcher(Constant.CUSTOMER_JSP).forward(request, response); 
+		    }
+		}
 	}
 
 }

@@ -5,6 +5,8 @@ import java.util.*;
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.*;
+
+import com.web.common.Constant;
 import com.web.modal.*;
 import com.web.objects.*;
 
@@ -25,16 +27,17 @@ public class VehicleServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
+	    String no   = null ;
+        String model = null;
+        String type  = null;
+        String color = null;
+
+        String mode = request.getParameter("mode");
+        
+        System.out.println("Mode ::"+mode);
+        
 		try
 		{
-			String no 	 = null ;
-			String model = null;
-			String type  = null;
-			String color = null;
-
-			String mode = request.getParameter("mode");
-			
-			System.out.println("Mode ::"+mode);
 
 			if( mode!=null && mode.equals("I"))	    
 			{
@@ -45,8 +48,6 @@ public class VehicleServlet extends HttpServlet {
 				color = request.getParameter("vehicle_color").trim();
 
 				v = new Vehicle(no, model, type, color);
-
-				System.out.println(no +"-"+model+"-"+type+"-"+color);
 
 				if( dao.insertVehicle(v) )
 				{
@@ -96,13 +97,21 @@ public class VehicleServlet extends HttpServlet {
 			l = dao.getAllVehicle();
 			
 			request.setAttribute("listUser", l);
-			new Driverdao().closeAll();new Routedao().closeAll();
-			RequestDispatcher rd = request.getRequestDispatcher("Vehicle.jsp");
-			rd.forward(request, response);
 		}
-		catch(Throwable e)
+		catch(Exception e)
 		{
 			System.out.println("Exception in Vehicle Servlet "+e);
+		}
+		finally
+		{
+		    if ( mode.trim().equals("dummy") ) 
+		    {
+		        request.getRequestDispatcher(Constant.VEHICLE_INSERT_JSP).forward(request, response);
+		    }
+		    else
+		    {
+		        request.getRequestDispatcher(Constant.VEHICLE_JSP).forward(request, response);   
+		    }
 		}
 
 	}
