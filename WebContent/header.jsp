@@ -27,6 +27,10 @@
 	color: blue;
 	font-size: 40px;
 }
+.text-lg
+{
+	font-size :2rem;
+}
 
 @keyframes blinkingText 
 {
@@ -147,7 +151,7 @@
 		<div class="liveTime"
 			style="display: flex; justify-content: center; align-items: end;">
 			<h3>
-				Last Login<i class="fa fa-clock-o m-2" style="font-size:30px" aria-hidden="true"></i><span class="blinking">${sessionScope.timeStamp}</span>
+				<b class="text-lg">Last Logged at :</b> <span class="blinking">${sessionScope.timeStamp}</span>
 			</h3>
 		</div>
 		<div class="adminContent text-center m-3" style="width: 20%;">

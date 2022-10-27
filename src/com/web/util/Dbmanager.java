@@ -11,6 +11,7 @@ public class Dbmanager {
 	
 	
 	static Connection con = null;
+	public static String error   = null ;
 	
 	public static Connection getConnection() 
 	{
@@ -42,22 +43,15 @@ public class Dbmanager {
 			Class.forName(Driver);
 			con = DriverManager.getConnection(Url,User,Password);
 
-		}catch (Exception e1) {
+		}catch (Exception e1) 
+		{
+		    error = e1.getMessage();
+		    System.out.println("Connection error "+error);
 			return null;
 		}
 		return con;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	public static boolean insertObjects(String Query,Vector values) 
 	{
@@ -301,7 +295,7 @@ public class Dbmanager {
 		return result ;
 	}
 	
-	public void close() throws Exception
+	public static void close() throws Exception
 	{
 		if ( con !=null && !con.isClosed())
 		{

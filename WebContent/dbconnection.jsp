@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ page
-	import="java.io.*,java.util.*,java.sql.*,com.web.common.Constant"%>
+	import="java.io.*,java.util.*,java.sql.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -13,8 +13,8 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" href="bootstrap.css" type="text/css">
-<link rel="stylesheet" href="index.css" type="text/css">
+<link rel="stylesheet" href="styleSheet/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="styleSheet/index.css" type="text/css">
 <link rel="icon" type="image/x-icon"
 	href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMIKOBnQXvA_pFc1yd_NX8_Hijxkvo7fHPw&usqp=CAU">
 <!-- Font awesome icons -->
@@ -26,9 +26,10 @@
 	href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="loader.js"></script>
-<script src="Validator.js"></script>
-
+<script src="scripts/loader.js"></script>
+<script src="scripts/Validator.js"></script>
+<script src="scripts/common.js"></script>
+<script src="scripts/ajaxCall.js"></script>
 
 </head>
 <body>
@@ -44,8 +45,12 @@
 	  					<span class="sr-only">Loading...</span>
 					</div>
 				 -->
-		<span class="loader-alt ml-4"> <span class=load></span>
-		</span> <span class="mt-3 text-white" style="font-size: 30px;">Loading....</span>
+		<span class="loader-alt ml-4"> 
+			<span class=load></span>
+		</span> 
+		<span class="mt-3 text-white" style="font-size: 30px;">
+			Loading....
+		</span>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

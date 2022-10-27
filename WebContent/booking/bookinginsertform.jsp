@@ -63,7 +63,7 @@
 						select * from route r , vehicle v where r.start ='${pickup_from}' and r.end ='${drop_at}' and r.vehicle_no = v.vehicle_no;			
 				</sql:query>
 									<c:forEach var='vehicle' items='${rs.rows}'>
-										<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no}-${vehicle.brand}-${vehicle.model}-${vehicle.color}</option>
+										<option value="${vehicle.vehicle_no}">${vehicle.vehicle_no} - ${vehicle.brand} - ${vehicle.model} - ${vehicle.color}</option>
 									</c:forEach>
 								</select>
 							</fieldset>
@@ -78,7 +78,7 @@
                         	SELECT driver_id,driver_name from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup_from}' and r.end ='${drop_at}';
                         </sql:query>
 									<c:forEach var="driver" items="${rs.rows}">
-										<option value="${driver.driver_id}">${driver.driver_id}-${driver.driver_name}</option>
+										<option value="${driver.driver_id}">${driver.driver_id} - ${driver.driver_name}</option>
 									</c:forEach>
 
 								</select>
