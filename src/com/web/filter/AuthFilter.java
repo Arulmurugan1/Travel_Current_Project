@@ -22,10 +22,7 @@ import com.web.common.Constant;
  * Servlet Filter implementation class AuthFilter
  */
 
-@WebFilter(urlPatterns = { 
-		"/AuthFilter",
-		"/*"
-})
+@WebFilter(urlPatterns ={"/*"})
 public final class AuthFilter implements Filter{
 
 	/**
@@ -44,7 +41,7 @@ public final class AuthFilter implements Filter{
 	{
 		HttpServletRequest req = (HttpServletRequest) request;
 
-		HttpSession session = req.getSession(true) ;
+		HttpSession session = req.getSession() ;
 
 		//	System.out.println("Session Id ["+session.getId()+"] Request Id"+req.getRequestedSessionId());
 //		log.info("Session Id ["+session.getId()+"] Request Id"+req.getRequestedSessionId());
@@ -72,8 +69,8 @@ public final class AuthFilter implements Filter{
 //			
 			req.getServletContext().setAttribute("localpath",req.getRequestURL());
 			
-//			System.out.println("LocalPath :"+req.getServletContext().getAttribute("localpath"));
-//
+			System.out.println("LocalPath :"+req.getServletContext().getAttribute("localpath"));
+
 			System.out.println("--------------- Authentication Ends --------------------");
 
 			if ( req.getServletPath().equals("/Login"))

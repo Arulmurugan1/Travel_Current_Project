@@ -15,6 +15,9 @@
 
 <link rel="stylesheet" href="styleSheet/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="styleSheet/index.css" type="text/css">
+<link rel="stylesheet" href="styleSheet/Pagination.css" type="text/css">
+<link rel="stylesheet" href="styleSheet/searchBox.css" type="text/css">
+
 <link rel="icon" type="image/x-icon"
 	href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMIKOBnQXvA_pFc1yd_NX8_Hijxkvo7fHPw&usqp=CAU">
 <!-- Font awesome icons -->
@@ -26,6 +29,8 @@
 	href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 <script src="scripts/loader.js"></script>
 <script src="scripts/Validator.js"></script>
 <script src="scripts/common.js"></script>

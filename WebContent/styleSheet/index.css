@@ -251,7 +251,7 @@ keyframes spin { 100% {
 	height : 58px;
 	position : relative ;
 	border : 4px solid #9B87FE;
-	animation : loader 1.5s infinite ease;
+	animation : loader 2s infinite ease;
 }
 .load 
 {

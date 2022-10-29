@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
-        HttpSession session =request.getSession(true);
+        HttpSession session =request.getSession();
 
         String mode =request.getParameter("mode");
 
@@ -155,9 +155,8 @@ public class LoginServlet extends HttpServlet {
                 {
                     request.setAttribute("mode",mode);
                     System.out.println( "Logged Out at : "+ request.getSession().getLastAccessedTime() );
-                    request.getSession().invalidate();
+                    session.invalidate();
                     System.out.println("Session On Logout "+request.getSession());
-                    request.logout();
                 }
 
             }
