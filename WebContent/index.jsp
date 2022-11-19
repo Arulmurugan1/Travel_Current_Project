@@ -45,6 +45,10 @@
 										maxlength="15" value="">
 								</div>
 							</div>
+							<div class="row form-check">
+								<input class=form-check-input type=checkbox name=showPassword id=showPassword onclick="Check()">
+								<label for=showPassword title="Show Password" class="ml-1 form-check-label">Show Password</label>
+							</div>
 
 							<div class="row">
 								<div class="col text-center">
@@ -106,63 +110,6 @@
 		</div>
 	</div>
 
-	<script>
-		function Submit(mode) 
-		{
-			with (document.form) 
-			{
-				if (mode == 'login') 
-				{
-					if (((txtUser.value).trim()) == ""
-							|| ((txtPassword.value).trim()) == ""
-							|| ((txtUser.value).trim()).toLowerCase == 'null'
-							|| ((txtPassword.value).trim()).toLowerCase == 'null')
-						alert('Enter Login Credentials first ...');
-					else if ( check( (txtUser.value).trim(),'valid' ) || check( (txtPassword.value).trim(),'valid1' ) )
-						alert('Invalid Special Characters not allowed ...');
-					else
-					{
-						$('button').ready(function(){
-							$('button').empty();
-							$('button').append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
-						});
-						action = "Login?mode=" + mode;
-						submit();
-					}
-				}
-				if (mode == 'register') 
-				{
-					if ((username.value).trim() == ""
-							|| (pass1.value).trim() == ""
-							|| (pass2.value).trim() == ""
-							|| (user_id.value).trim() == "")
-						alert('Enter Account Credentials first ...');
-					else if (((username.value).trim()).toUpperCase() == "NULL"
-							|| ((pass1.value).trim()).toUpperCase() == "NULL"
-							|| ((pass2.value).trim()).toUpperCase() == "NULL"
-							|| ((user_id.value).trim()).toUpperCase() == "NULL")
-						alert('null Cannot be inserted ! Enter Valid Credentials ...');
-					else if ((pass1.value).trim() != (pass2.value).trim())
-						alert(' password mismatch ...');
-					else if (check((pass1.value).trim(), 'valid1')
-							|| check((pass2.value).trim(), 'valid1'))
-						alert(' Allowed Special Characters !@#$%&');
-					else if (check((username.value).trim(), 'valid')
-							|| check((user_id.value).trim(), 'valid'))
-						alert(' Special Characters not Allowed for Username or User Id');
-					else 
-					{
-						action = "Login?mode=" + mode;
-						submit();
-					}
-				}
-			}
-		}
-	</script>
-	<script>
-		if (("${msg}").trim() != "") {
-			alert("${msg}");
-		}
-	</script>
+	<script src="./scripts/index.js"></script>
 </body>
 </html>

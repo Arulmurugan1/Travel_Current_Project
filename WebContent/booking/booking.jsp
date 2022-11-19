@@ -1,5 +1,6 @@
 <%@ include file="../dbconnection.jsp" %>    
 <jsp:include page="../header.jsp" /> 
+<% int n=0; %>
 <form name=booking method=post>
 <c:if test="${sessionScope.role == 'Admin'}">
     <div class="container-fluid mt-2 text-white ">
@@ -50,6 +51,7 @@
 							<th>Driver id</th>
 							<th>Fare</th>
 							<th>Customer Name</th>
+							<th>Booking Status</th>
 							<c:if test="${sessionScope.role == 'Admin'}">
 								<th>Action</th>
 							</c:if>
@@ -60,7 +62,7 @@
 					<tbody>
 						<c:forEach var="user" items="${listUser}">
 
-							<tr>
+							<tr id='${user.booking_no}'>
 
 								<td><c:out value="${user.booking_no}" /></td>
 								<td><c:out value="${user.pickup_from}" /></td>
@@ -87,6 +89,37 @@
 								<td><c:out value="${user.driver_id}" /></td>
 								<td><c:out value="${user.fare}" /></td>
 								<td><c:out value="${user.customer_name}" /></td>
+								<td>
+								<c:choose>
+									<c:when test="${sessionScope.role == 'Admin'}">
+										<div class="btn-group dropleft">
+											<button type="button" class="btn dropdown-toggle "
+												data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												<c:choose>
+													<c:when test="${user.status !=''}">
+													${user.status}
+												</c:when>
+													<c:otherwise>
+													Booking Status
+												</c:otherwise>
+												</c:choose>
+											</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item text-danger"
+													 onclick="callAjax('WIP','<c:out value="${user.booking_no}" />')" >WIP</a>
+												<a class="dropdown-item text-primary"
+													onclick="callAjax('RAC','<c:out value="${user.booking_no}" />')" >RAC</a>
+												<a class="dropdown-item text-success"
+													onclick="callAjax('Confirmed','<c:out value="${user.booking_no}" />')" >Confirmed</a>
+											</div>
+										</div>
+									</c:when>
+									<c:otherwise>
+										<c:out value="${user.status}" />
+									</c:otherwise>
+								</c:choose>
+							</td>
 								<c:if test="${sessionScope.role == 'Admin'}">
 									<td>
 										<%--                             	<a href="Booking?mode=E&booking_no=<c:out value='${user.booking_no}' />">Edit</a> --%>
@@ -149,18 +182,16 @@
 
 <script>
 	
-	var info ="";
-	
-	function popupResult(result)
-	{
+
+	var info = "";
+
+	function popupResult(result) {
 		info = result.split(',');
-		with (document.booking)
-		{		
-			if ( info.length > 0 )
-			{
-				booking_no.value 		=  info[0];
-				customer_id.value	  	=  info[1];
-				fare.value	  			=  info[2];
+		with (document.booking) {
+			if (info.length > 0) {
+				booking_no.value = info[0];
+				customer_id.value = info[1];
+				fare.value = info[2];
 				booking_no.style.backgroundColor = "green";
 				booking_no.style.color = "yellow";
 				booking_no.style.cursor = "auto"
@@ -173,30 +204,61 @@
 			}
 		}
 	}
-	with (document.booking)
-	{
-			booking_no.style.backgroundColor = "grey";
-			customer_id.style.backgroundColor = "grey";
-			fare.style.backgroundColor = "grey";
-			booking_no.style.cursor = "not-allowed";
-			customer_id.style.cursor = "not-allowed";
-			fare.style.cursor = "not-allowed";
+	with (document.booking) {
+		booking_no.style.backgroundColor = "grey";
+		customer_id.style.backgroundColor = "grey";
+		fare.style.backgroundColor = "grey";
+		booking_no.style.cursor = "not-allowed";
+		customer_id.style.cursor = "not-allowed";
+		fare.style.cursor = "not-allowed";
 	}
-	
-	
-</script>
 
-	<script>
-		function Open(arr)
-		{
-			$('.info-content').removeClass('d-none');
-			var i1=1;
-			for ( var i in arr )
-				{
-					if ( i1 == 9)
-						return;
-					$('#c'+i1).val(arr[i]);
-					i1++;
-				}
+	function Open(arr) {
+		$('.info-content').removeClass('d-none');
+		var i1 = 1;
+		for ( var i of arr) {
+			if (i1 == 9)
+				return;
+			$('#c' + i1).val(i);
+			i1++;
 		}
+	}
+	function gridCall()
+	{
+		if ('${sessionScope.role}' == 'Admin')
+		{
+					$('tbody tr td button').removeClass();
+					
+					for ( var i=0;i < $('tbody tr td button').length ;i++)
+					{
+						if ( $('tbody tr td button')[i].innerText.trim() == "WIP")
+						{
+							$('tbody tr td button')[i].classList.add('btn');
+							$('tbody tr td button')[i].classList.add('dropdown-toggle');
+							$('tbody tr td button')[i].classList.add('btn-danger');
+							
+						}
+						else if ( $('tbody tr td button')[i].innerText.trim() == "RAC")
+						{
+							$('tbody tr td button')[i].classList.add('btn');
+							$('tbody tr td button')[i].classList.add('dropdown-toggle');
+							$('tbody tr td button')[i].classList.add('btn-primary');
+									}
+						else if ( $('tbody tr td button')[i].innerText.trim() == "Confirmed")
+						{
+							$('tbody tr td button')[i].classList.add('btn');
+							$('tbody tr td button')[i].classList.add('dropdown-toggle');
+							$('tbody tr td button')[i].classList.add('btn-success');
+						}
+						else
+						{
+							$('tbody tr td button')[i].classList.add('btn');
+							$('tbody tr td button')[i].classList.add('dropdown-toggle');
+							$('tbody tr td button')[i].classList.add('btn-warning');
+						}
+					}
+		}
+	}
+	gridCall();
+	
 </script>

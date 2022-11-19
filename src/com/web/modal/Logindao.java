@@ -5,13 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.format.DateTimeFormatter;
+import java.util.Vector;
 
+import com.web.common.InitString;
 import com.web.objects.Login;
 import com.web.util.Dbmanager;
 
-public class Logindao {
+public class Logindao{
     private static final String INSERT_USERS ="INSERT INTO login_info VALUES(?,?,?,?,?,?,?,?,sysdate(),sysdate())";
     private static final String UPDATE_USERS ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
@@ -92,62 +93,85 @@ public class Logindao {
             u.setLast_login((LocalDateTime) rs.getObject(5));
         }
         return u;  
-        }
-        public List<Login> getAllUsers()throws SQLException
+    }
+    public Vector<Object> getAllUsers()throws SQLException
+    {
+        Vector<String> v1 = new Vector<>();
+        Vector<String> v3 = new Vector<>();
+        Vector<Object> v2 = new Vector<>();
+
+        ps =con.prepareStatement(SELECT_ALL_USERS,ResultSet.TYPE_FORWARD_ONLY);
+
+        rs = ps.executeQuery();
+
+        int columnCount = rs.getMetaData().getColumnCount();
+
+        int index = 0 ;
+
+        while ( rs.next() )
         {
-            List<Login> u = new ArrayList<>();
-
-            Login u1 =null;
-            ps =con.prepareStatement(SELECT_ALL_USERS);
-            System.out.println(ps);
-            rs =ps.executeQuery();
-            while(rs.next()) {
-                u1 = new Login();
-                u1.setUsername(rs.getString(1));
-                u1.setPassword(rs.getString(2));
-                u1.setRole(rs.getString(3));
-                u1.setCreate_time(rs.getString(4));
-                u1.setUser_id(rs.getString(5));
-                u1.setCreated_user(rs.getString(6));
-                u.add(u1);
+            if ( index == 0 )
+            {
+                for ( int i1 = 1 ; i1 <= columnCount ; i1++ )
+                {
+                    v3.add( InitString.Init(rs.getMetaData().getColumnName(i1).toLowerCase()) );
+                }
+                v2.addElement(v3.clone());
             }
-            return u;
+            for ( int i = 1 ; i <= columnCount ; i++ )
+            {
+                if( rs.getMetaData().getColumnTypeName(i).equals("DATETIME"))
+                {
+                    v1.add( ((LocalDateTime) rs.getObject(i)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
+                }
+                else
+                {
+                    v1.add(rs.getString(i));
+                }
+                
+            }
+            v2.addElement(v1.clone());
+            v1.clear();
+            index++;
         }
-        public boolean checkUser(String id) throws SQLException
-        {
+        System.out.println(v2);
+        return v2;
+    }
+    public boolean checkUser(String id) throws SQLException
+    {
 
-            boolean rowsaffected = false;
-            System.out.println(CHECK_USER);
-            ps =con.prepareStatement(CHECK_USER);
-            ps.setString(1,id);
-            System.out.println(ps);
-            rs = ps.executeQuery();
-            if( rs.next() ) {
-                rowsaffected=true;
-            }
-
-
-            return rowsaffected;
+        boolean rowsaffected = false;
+        System.out.println(CHECK_USER);
+        ps =con.prepareStatement(CHECK_USER);
+        ps.setString(1,id);
+        System.out.println(ps);
+        rs = ps.executeQuery();
+        if( rs.next() ) {
+            rowsaffected=true;
         }
-        public void closeAll() throws Exception
+
+
+        return rowsaffected;
+    }
+    public void closeAll() throws Exception
+    {
+        if ( con !=null && !con.isClosed())
         {
-            if ( con !=null && !con.isClosed())
-            {
-                con.close();
-                con = null;
-                System.out.println("Connection Closed ::"+con);
-            }
-            if ( ps !=null )
-            {
-                ps.close();
-                ps = null;
-                System.out.println("Statement Closed ::"+ps);
-            }
-            if ( rs !=null  )
-            {
-                rs.close();
-                rs = null;
-                System.out.println("Resultset Closed ::"+rs);
-            }
+            con.close();
+            con = null;
+            System.out.println("Connection Closed ::"+con);
+        }
+        if ( ps !=null )
+        {
+            ps.close();
+            ps = null;
+            System.out.println("Statement Closed ::"+ps);
+        }
+        if ( rs !=null  )
+        {
+            rs.close();
+            rs = null;
+            System.out.println("Resultset Closed ::"+rs);
         }
     }
+}

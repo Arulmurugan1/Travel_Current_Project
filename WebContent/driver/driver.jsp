@@ -34,6 +34,7 @@
             <div class="m-3"> <a class="btn btn-success button-length w-25" href="Driver?mode=N">Add New Driver</a>
             </div>
         </c:if>
+        <div class=table-responsive>
         <table class="table table-bordered text-center text-white text-capitalize mt-2">
             <thead class="bg-primary">
                 <tr>
@@ -89,6 +90,7 @@
 
             </tbody>
         </table>
+        </div>
     </div>
 </body>
 </html>

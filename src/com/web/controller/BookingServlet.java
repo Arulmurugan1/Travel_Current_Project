@@ -124,23 +124,42 @@ public class BookingServlet extends HttpServlet{
 
             if(mode.equals("U"))	    
             {
+                String status = request.getParameter("status");
+                
                 int id = Integer.parseInt(request.getParameter("booking_no"));
-
-                int customer_id =Integer.parseInt(request.getParameter("customer_id"));
-
-                b = new Booking();
-                b.setBooking_no(id);
-                b.setCustomer_id(customer_id);
-                b.setVehicle_no(vehicle);
-                b.setDriver_id(driver);
-
-                if( dao.updateBooking(b))
+                
+                if ( status.equals(""))
                 {
-                    request.setAttribute("msg", "Booking edit Success");
+                    int customer_id =Integer.parseInt(request.getParameter("customer_id"));
+
+                    b = new Booking();
+                    b.setBooking_no(id);
+                    b.setCustomer_id(customer_id);
+                    b.setVehicle_no(vehicle);
+                    b.setDriver_id(driver);
+
+                    if( dao.updateBooking(b))
+                    {
+                        request.setAttribute("msg", "Booking edit Success");
+                    }
+                    else
+                    {
+                        request.setAttribute("msg", "Booking edit failed");
+                    }
                 }
                 else
                 {
-                    request.setAttribute("msg", "Booking edit failed");
+                    b = new Booking();
+                    b.setBooking_no(id);
+                    b.setStatus(status);
+                    if( dao.updateBooking(b))
+                    {
+                        
+                    }
+                    else
+                    {
+                        request.setAttribute("msg", "Booking update failed");
+                    }
                 }
             }
 
@@ -177,7 +196,7 @@ public class BookingServlet extends HttpServlet{
         {
             System.out.println(b);
             System.out.println(c);
-            if ( mode.trim().equals("") || mode.trim().equals("D"))
+            if ( mode.trim().equals("") || mode.trim().equals("D") || mode.trim().equals("U") )
             {
                 request.getRequestDispatcher(Constant.BOOKING_JSP).forward(request, response);
             }

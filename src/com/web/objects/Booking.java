@@ -3,22 +3,30 @@ package com.web.objects;
 
 
 public class Booking {
-		private int booking_no;
-		private String pickup_from;
-		private String drop_at;
-		private int customer_id;
-		private String vehicle_no;
-		private String driver_id;
-		private double fare;
-		private String customer_name;//Customer table column
-		private String start;
-		private String end ;
-		private String age;
-		private String gender;
-		private String email;
-		private String phone;
+		private int booking_no =0;
+		private String pickup_from ="";
+		private String drop_at="";
+		private int customer_id = 0;
+		private String vehicle_no="";
+		private String driver_id="";
+		private double fare = 0;
+		private String customer_name="";//Customer table column
+		private String start="";
+		private String end ="";
+		private String age="";
+		private String gender="";
+		private String email="";
+		private String phone="";
+		private String status="";
 		
-		public int getBooking_no() {
+		
+		public String getStatus() {
+            return this.status;
+        }
+        public void setStatus(String status) {
+            this.status = status;
+        }
+        public int getBooking_no() {
 			return booking_no;
 		}
 		public void setBooking_no(int booking_no) {

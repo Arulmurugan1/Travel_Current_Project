@@ -1,8 +1,3 @@
-if (document.readyState != "complete") 
-	{
-			if ( $.trim($('#msg').val()) !='')
-				alert($('#msg').val());
-	}
 function callParent()
 {
 	try
@@ -15,6 +10,18 @@ function callParent()
 function callAlert()
 {
 }
+
+$(document).ready( () =>{
+	if ( !$('.table-responsive').hasClass('table-wrapper') )
+	{
+		$('.table-responsive').addClass('table-wrapper')
+	}
+	if (document.readyState != "complete") 
+	{
+				if (  $.trim(  $('#msg').val()   ) !='')
+					alert($('#msg').val());
+	}
+});
 
 
 

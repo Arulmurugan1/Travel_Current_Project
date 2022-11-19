@@ -49,6 +49,8 @@ public class LoginServlet extends HttpServlet {
             
             if (  con == null )
             {
+
+                System.out.println("Connection error "+Dbmanager.error);
                 request.setAttribute("msg",Dbmanager.error);
             }
             else	

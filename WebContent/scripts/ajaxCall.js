@@ -124,6 +124,46 @@ function getInfo(){
 	}  
 }  
 
-
+function callAjax(status,booking_no)
+{
+	var url = 'Ajax?status='+status+'&booking_no='+booking_no ;
+	if(window.XMLHttpRequest)
+	{  
+		request=new XMLHttpRequest();  
+	}  
+	else if(window.ActiveXObject)
+	{  
+		request=new ActiveXObject("Microsoft.XMLHTTP");  
+	}  
+	try
+	{  
+		request.onreadystatechange=() => {
+			if(request.readyState==4)
+			{ 
+				var val= (request.responseText).trim();
+				
+				if ( val == "success")
+				{
+					$('#'+booking_no+' button')[0].innerText = status;
+					gridCall();
+				}
+				else if ( val == "exception" )
+				{
+					alert('Exception Occured ');
+				}
+				else if (val == 'failed')
+				{
+					alert('Booking Status failed to update');
+				}
+			}
+		};  
+		request.open("GET",url,true);  
+		request.send();  
+	}
+	catch(e)
+	{
+		alert("Unable to connect to server");
+	}
+}
 
 //Ajax Ends 

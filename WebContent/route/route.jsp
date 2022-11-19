@@ -31,7 +31,7 @@ td.no::before {
 		<c:if test="${sessionScope.role == 'Admin'}">
 			<div class="d-flex justify-content-center mb-2 mt-2">
 				<div class="w-100 text-center">
-					<button class="btn btn-success button-length add w-50">Add
+					<button class="btn btn-success button-length add w-25">Add
 						Route</button>
 				</div>
 			</div>
@@ -136,7 +136,7 @@ td.no::before {
 	    $(document).ready(function(){
 	    	 $("#insert").hide();
 	    	  $(".add").click(function(){
-	    	   	 $("#insert").fadeToggle(1000);
+	    	   	 $("#insert").toggle(1000);
 	    	  });
 	    	});
 	    

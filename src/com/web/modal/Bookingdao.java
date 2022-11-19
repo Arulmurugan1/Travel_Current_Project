@@ -105,6 +105,7 @@ public class Bookingdao {
 				u.setEmail(rs.getString("email"));
 				u.setEnd(rs.getString("end"));
 				u.setPhone(rs.getString("phone"));
+				u.setStatus(rs.getString("status").trim());
 				ls.add(u);
 			}
 		} catch (Exception e) {
@@ -148,6 +149,8 @@ public class Bookingdao {
 				sql += " driver_id = ?, ";
 			if ( user.getFare() > 0)
 				sql += " fare = ? ";
+			if ( user.getStatus().trim().length() > 0 )
+                sql += " status = ? ";
 			sql += " where booking_no = ?";	
 			
 			ps = con.prepareStatement(sql);
@@ -166,6 +169,8 @@ public class Bookingdao {
 				ps.setString(c++,user.getDriver_id());
 			if ( user.getFare() > 0)
 				ps.setDouble(c++,user.getFare());	
+			if ( user.getStatus().trim().length() > 0 )
+			    ps.setString(c++,user.getStatus());
 			ps.setInt(c++,user.getBooking_no());	
 
 			System.out.println(ps);

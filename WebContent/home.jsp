@@ -34,9 +34,16 @@
                     <div class="col-sm-12 col-md-6 col-lg-4 ">
                         <a class="home-button" onclick="Submit('RouteNew')" ><i class="fa fa-road" aria-hidden="true"></i>Routes</a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 ">
-                        <a class="bg-danger home-button" disabled>Users</a>
-                    </div>
+                    <c:if test="${sessionScope.role == 'Admin'}">
+                    	<div class="col-sm-12 col-md-6 col-lg-4 ">
+                       		 <a class="home-button d-flex flex-column" onclick="Submit('LoginInfo')" ><i class="fa fa-user" aria-hidden="true"></i>Users</a>
+                    	</div>
+                    </c:if>
+                    <c:if test="${sessionScope.role != 'Admin'}">
+                    	<div class="col-sm-12 col-md-6 col-lg-4 ">
+                       		 <a class="home-button d-flex flex-column " style="cursor:not-allowed;" disabled ><i class="fa fa-user" aria-hidden="true"></i>Users</a>
+                    	</div>
+                    </c:if>
                 </div></form>
             </div>
 

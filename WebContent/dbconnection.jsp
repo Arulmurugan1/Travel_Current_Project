@@ -10,27 +10,29 @@
 <html>
 <head lang="en">
 <meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="styleSheet/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="styleSheet/index.css" type="text/css">
 <link rel="stylesheet" href="styleSheet/Pagination.css" type="text/css">
 <link rel="stylesheet" href="styleSheet/searchBox.css" type="text/css">
+<link rel="stylesheet" href="styleSheet/loader.css" type="text/css">
+<link rel="stylesheet" href="styleSheet/home.css" type="text/css">
 
-<link rel="icon" type="image/x-icon"
-	href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMIKOBnQXvA_pFc1yd_NX8_Hijxkvo7fHPw&usqp=CAU">
+
+<link rel="icon" type="image/x-icon" href="https://uxwing.com/wp-content/themes/uxwing/download/location-travel-map/travel-icon.png">
 <!-- Font awesome icons -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Google Icons -->
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
 <script src="scripts/loader.js"></script>
 <script src="scripts/Validator.js"></script>
 <script src="scripts/common.js"></script>
@@ -38,6 +40,7 @@
 
 </head>
 <body>
+
 	<input type=hidden name=msg id=msg value='${msg}'>
 
 	<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"
@@ -45,11 +48,6 @@
 		user="root" password="root" />
 
 	<div id="load-content">
-		<!--  Round spinner 
-					<div class="spinner-border ml-3" style="width: 5.6rem; height: 5.6rem; color:white ;" role="status">
-	  					<span class="sr-only">Loading...</span>
-					</div>
-				 -->
 		<span class="loader-alt ml-4"> 
 			<span class=load></span>
 		</span> 

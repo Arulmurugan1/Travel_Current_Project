@@ -25,14 +25,6 @@
 	background: #fff;
 }
 
-#load-content {
-	display: grid;
-	position: absolute;
-	top: 40%;
-	left: 46%;
-	z-index: 1;
-}
-
 html, body {
 	width: 100%;
 	height: 90%
@@ -151,7 +143,7 @@ h5 {
 	text-align: center;
 	padding: .8rem 3rem;
 	display: inherit;
-	color : #0000cc;
+	color: #0000cc;
 	border: none;
 	cursor: pointer;
 	border-radius: 15px;
@@ -183,7 +175,7 @@ h5 {
 
 .home-button:hover::before {
 	width: 100%;
-	color:yellow;
+	color: yellow;
 	left: 0;
 }
 
@@ -244,83 +236,16 @@ keyframes spin { 100% {
 	position: absolute;
 }
 
-.loader-alt
-{
-	display :inline-block;
-	width : 58px ;
-	height : 58px;
-	position : relative ;
-	border : 4px solid #9B87FE;
-	animation : loader 2s infinite ease;
-}
-.load 
-{
-	vertical-align:top ;
-	display : inline-block ;
-	width : 100%;
-	background-color : #FFB870;
-	animation : load 1.5s infinite ease-in;
-}
-.btn-link
-{
-	cursor:pointer;
-	color : yellow;
-}
-.btn-link:hover
-{
-	cursor:pointer;
-	font-size : 3.7rem;
-	color : #ff0080;
-	text-decoration : none ;
+.btn-link {
+	cursor: pointer;
+	color: yellow;
 }
 
-
-@keyframes loader 
-{
-	0% 
-	{
-		transform : rotate(0deg);
-	}
-	25% 
-	{
-		transform : rotate(100deg);
-	}
-	50% 
-	{
-		transform : rotate(180deg);
-	}
-	75% 
-	{
-		transform : rotate(360deg);
-	}
-	100% 
-	{
-		transform : rotate(360deg);
-	}
-}
-
-@keyframes load 
-{
-	0% 
-	{
-		height : 0%;
-	}
-	25% 
-	{
-		height : 0%;
-	}
-	50% 
-	{
-		height : 100%;
-	}
-	75% 
-	{
-		height : 100%;
-	}
-	100% 
-	{
-		height : 0%;
-	}
+.btn-link:hover {
+	cursor: pointer;
+	font-size: 3.7rem;
+	color: #ff0080;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -329,43 +254,43 @@ keyframes spin { 100% {
 	}
 }
 
-.fsr
-{
-	font-size : 20px;
-	margin-right: .3rem ; 
-}
-.fsl
-{
-	font-size : 20px;
-	margin-left: .3rem ; 
+.fsr {
+	font-size: 20px;
+	margin-right: .3rem;
 }
 
+.fsl {
+	font-size: 20px;
+	margin-left: .3rem;
+}
 
-.info{
-		position : relative ;
+.info {
+	position: relative;
+}
+
+.info-content {
+	width: 40%;
+	position: absolute;
+	top: 10%;
+	left: 57%;
+}
+
+.icon {
+	position: fixed;
+	top: 31vh;
+	right: 2vw;
+	color: black;
+	font-size: 21px;
+}
+
+@media screen and (max-width :992px) {
+	.info-content {
+		height: 82%;
+		width: 40%;
+		position: absolute;
+		top: 19%;
+		left: 58%;
+		overflow-x: hidden;
+		overflow-y: scroll;
 	}
-	.info-content{
-		width:40%;
-		position:absolute;
-		top:10%;
-		left:57%;
-		
-	}     
-	.icon{
-	 position: fixed;
-    top: 31vh;
-    right: 2vw;
-    color: black;
-    font-size: 21px;
-	}
-	@media screen and (max-width :992px){
-	.info-content{
-		height:82%;
-		width:40%;
-		position:absolute;
-		top:19%;
-		left:58%;
-		overflow-x:hidden ;
-		overflow-y :scroll;
-	}
-	}
+}

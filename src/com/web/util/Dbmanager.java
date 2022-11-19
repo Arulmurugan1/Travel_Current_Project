@@ -46,7 +46,6 @@ public class Dbmanager {
 		}catch (Exception e1) 
 		{
 		    error = e1.getMessage();
-		    System.out.println("Connection error "+error);
 			return null;
 		}
 		return con;
