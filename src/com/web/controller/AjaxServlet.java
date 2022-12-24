@@ -40,7 +40,6 @@ public class AjaxServlet extends HttpServlet
 
             String status = request.getParameter("status");
             String booking_no = request.getParameter("booking_no");
-
             System.out.println("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]");
 
             System.out.println("Inside ajax");

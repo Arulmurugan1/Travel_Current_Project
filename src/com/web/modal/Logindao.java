@@ -18,7 +18,7 @@ public class Logindao{
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
     private static final String CHECK_USER   ="SELECT * FROM login_info WHERE USER_ID=?";
     private static final String SELECT_USERS_BY_ID ="SELECT USERNAME,PASSWORD1,ROLE,USER_ID,LAST_LOGIN FROM login_info WHERE USER_ID=?";
-    private static final String SELECT_ALL_USERS = "SELECT * FROM login_info";
+    private static final String SELECT_ALL_USERS = "SELECT * FROM login_info order by last_login desc";
 
     static Connection con =null;
     static PreparedStatement ps = null ;

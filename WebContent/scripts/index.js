@@ -52,12 +52,14 @@ function Submit(mode)
 
 function Check()
 {
-	if ( document.getElementById('showPassword').checked )
-	{
-		document.form.txtPassword.type ='text';
-	}
-	else
-	{
+	if (  !$('.check-icon').hasClass('fa-eye-slash')  ){
+		$('.check-icon').addClass('fa-eye-slash');
+		$('.check-icon').removeClass('fa-eye');
 		document.form.txtPassword.type ='password';
+	}
+	else{
+		$('.check-icon').removeClass('fa-eye-slash');
+		$('.check-icon').addClass('fa-eye');
+		document.form.txtPassword.type ='text';
 	}
 }

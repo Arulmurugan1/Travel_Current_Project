@@ -15,8 +15,10 @@ th.no::before {
 }
 </style>
 
-<div class=" mt-3">
-		<table class="table table-striped text-center table-light">
+
+<div class=" m-3 p-3">
+
+<table class="table  text-center table-info">
 		<caption class="text-white text-center m-auto" style="font-size:30px">List of users</caption>
 			<thead>
 				<tr class=text-white>
@@ -65,4 +67,6 @@ th.no::before {
 		}
 		%>
 		</table>
-	</div>
+</div>
+
+	

@@ -1,7 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 
 
-<%@ include file="dbconnection.jsp" %>
+<%@ include file="dbconnection.jsp"%>
 <!DOCTYPE html >
 <html>
 <head>
@@ -35,19 +36,23 @@
 								<div class="col-auto mb-3">
 									<label for="username">Enter UserName </label> <input
 										type="text" class="form-control " name="txtUser"
-										maxlength="30" value="${txtuser}">
+										maxlength="30" value="${txtuser}" size="25">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-auto mb-3 ">
-									<label for="password">Enter Password </label> <input
-										type="password" class="form-control " name="txtPassword"
-										maxlength="15" value="">
+									<label for="password">Enter Password </label>
+									<div class=input-group>
+										<input type="password" class="form-control "
+											name="txtPassword" maxlength="15" value="">
+										<div class=input-group-append>
+											<div class=input-group-text>
+												<span onclick="Check()"><i
+													class="fa fa-eye-slash check-icon" aria-hidden="true"></i></span>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="row form-check">
-								<input class=form-check-input type=checkbox name=showPassword id=showPassword onclick="Check()">
-								<label for=showPassword title="Show Password" class="ml-1 form-check-label">Show Password</label>
 							</div>
 
 							<div class="row">
@@ -74,15 +79,31 @@
 										class="form-control" name="username">
 								</div>
 								<div class="col-auto">
-									<label>Enter Password</label> <input type="password"
-										class="form-control" name="pass1">
+									<label>Enter Password</label>
+									<div class=input-group>
+										<input type="password" class="form-control" name="pass1" size="16">
+										<div class=input-group-append>
+											<div class=input-group-text>
+												<span onclick="Check()"><i
+													class="fa fa-eye-slash check-icon" aria-hidden="true"></i></span>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row p-lg-3">
 
-								<div class="col-auto">
-									<label>Re-Enter Password</label> <input type="text"
-										class="form-control" name="pass2">
+								<div class="col-lg-">
+									<label>Re-Enter Password</label>
+									<div class=input-group>
+										<input type="text" class="form-control" name="pass2" size="16">
+										<div class=input-group-append>
+											<div class=input-group-text>
+												<span onclick="Check()"><i
+													class="fa fa-eye-slash check-icon" aria-hidden="true"></i></span>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="col-auto">
 									<label>Enter Login Id</label> <input type="text"

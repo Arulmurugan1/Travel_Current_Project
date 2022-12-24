@@ -132,7 +132,7 @@ button:hover, input.button:hover {
 
 tbody>tr:hover {
 	background-color: green;
-	cursor: auto;
+	cursor: pointer;
 }
 
 h5 {
@@ -282,7 +282,9 @@ keyframes spin { 100% {
 	color: black;
 	font-size: 21px;
 }
-
+.fa:hover{
+	cursor :pointer ; 
+}
 @media screen and (max-width :992px) {
 	.info-content {
 		height: 82%;
