@@ -23,12 +23,6 @@ public class LoginInfoServlet extends HttpServlet {
             Enumeration<String> e = request.getParameterNames();
             data = new Logindao();
 
-            while ( e.hasMoreElements() )
-            {
-                String name = e.nextElement().toString();
-                System.out.println(name+" ["+request.getParameter(name)+"] ");
-            }
-
             switch(mode) {
                 case "I":
                 {
@@ -57,7 +51,7 @@ public class LoginInfoServlet extends HttpServlet {
         finally
         {
             
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getRequestDispatcher("UserDetails.jsp").forward(request, response);
         }
 
     }

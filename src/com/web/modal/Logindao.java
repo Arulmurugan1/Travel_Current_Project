@@ -4,8 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Vector;
 
 import com.web.common.InitString;
@@ -18,7 +21,7 @@ public class Logindao{
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
     private static final String CHECK_USER   ="SELECT * FROM login_info WHERE USER_ID=?";
     private static final String SELECT_USERS_BY_ID ="SELECT USERNAME,PASSWORD1,ROLE,USER_ID,LAST_LOGIN FROM login_info WHERE USER_ID=?";
-    private static final String SELECT_ALL_USERS = "SELECT * FROM login_info order by last_login desc";
+    private static final String SELECT_ALL_USERS = "SELECT * FROM login_info  order by last_login desc";
 
     static Connection con =null;
     static PreparedStatement ps = null ;
@@ -124,6 +127,17 @@ public class Logindao{
                 {
                     v1.add( ((LocalDateTime) rs.getObject(i)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
                 }
+                else if (rs.getMetaData().getColumnName(i).equals("dob") )
+                {
+                    String[] Date = rs.getString(i).split("-");
+                    
+                    LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
+                    
+                    Period diff = Period.between( date, LocalDate.now() );
+                    
+                    v1.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
+                    
+                }
                 else
                 {
                     v1.add(rs.getString(i));
@@ -134,7 +148,6 @@ public class Logindao{
             v1.clear();
             index++;
         }
-        System.out.println(v2);
         return v2;
     }
     public boolean checkUser(String id) throws SQLException

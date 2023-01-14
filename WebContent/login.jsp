@@ -13,10 +13,22 @@ th.no::before {
 	counter-increment: section;
 	content: counter(section);
 }
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
 </style>
 
 
-<div class=" m-3 p-3">
+<div class=" m-3 p-3" style="overflow-x:auto;">
 
 <table class="table  text-center table-info">
 		<caption class="text-white text-center m-auto" style="font-size:30px">List of users</caption>
@@ -29,7 +41,7 @@ th.no::before {
 					for ( int i=0 ; i < ( (Vector)list.elementAt(0)).size() ; i++)
 					{
 				%>
-						<th scope="col"><%= ( (Vector)list.elementAt(0)).elementAt(i) %></th>
+						<th align=center scope="col"><%= ( (Vector)list.elementAt(0)).elementAt(i) %></th>
 				<%
 					}
 				 %>
@@ -43,18 +55,18 @@ th.no::before {
 						for ( int i=1 ; i < list.size() ; i++ )
 						{
 					%>
-						<tr>
+						<tr >
 							<th scope="row" class="no text-center"></th>
 						<% 
 							for ( int j=0 ; j < ( (Vector)list.elementAt(0) ).size() ;j++)
 							{
 					 %>
-					 				<td><%= ( (Vector)list.elementAt(i) ).elementAt(j)  %></td>
+					 				<td align=center><%= ( (Vector)list.elementAt(i) ).elementAt(j)  %></td>
 					 <%
 					 		}
 					 %>
 					 		<c:if test="${sessionScope.role == 'Admin'}">
-								<td>
+								<td align=center>
 								<a href="#">Delete</a>
 								</td>
 						</c:if>
