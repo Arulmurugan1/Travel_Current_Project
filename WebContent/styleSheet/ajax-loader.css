@@ -1,0 +1,79 @@
+
+
+.loader-ajax {
+  font-size: 10px;
+
+ width: 6em;
+
+  height: 6em;
+
+  border-radius: 50%;
+
+  background: #00ffff;
+
+  background: linear-gradient(to right, #00ffff 10%, rgba(0, 255, 255, 0) 42%);
+
+  position: absolute;
+  
+  top:50%;
+  
+  left : 50%;
+  
+  z-index:101;
+
+  animation: load 1.2s infinite linear;
+
+  transform: translateZ(0);
+}
+
+.loader-ajax:before {
+  width: 50%;
+
+  height: 50%;
+
+  background: #00ffff;
+
+  border-radius: 100% 0 0 0;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  content: "";
+}
+
+.loader-ajax:after {
+  background: lightblue;
+
+  width: 75%;
+
+  height: 75%;
+
+  border-radius: 50%;
+
+  content: "";
+
+  margin: auto;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  bottom: 0;
+
+  right: 0;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

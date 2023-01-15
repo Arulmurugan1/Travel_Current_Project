@@ -25,24 +25,40 @@
 				{
 					for ( int i=1 ; i < list.size() ; i++ )
 					{
+							String id = ( (Vector)list.elementAt(i) ).elementAt(0).toString() ;
 							String Name = ( (Vector)list.elementAt(i) ).elementAt(1).toString() ;
 							String Password = ( (Vector)list.elementAt(i) ).elementAt(2).toString();
 							String age 		= ( (Vector)list.elementAt(i) ).elementAt(9).toString();
 							String gender = ( (Vector)list.elementAt(i) ).elementAt(3).toString() ;
 							String Last_Login = ( (Vector)list.elementAt(i) ).elementAt(7).toString();
 							String Status = ( (Vector)list.elementAt(i) ).elementAt(8).toString().equals("Y") ? "Approved" : "Pending";
-							
-							if ( gender !=null && gender.equals("F"))
-							{
 %>
       <div class="cards cards--two">
+      <%
+      if ( gender !=null && ( gender.equals("F") || gender.equals("T") ))
+		{
+	%>
         <img
           src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
           class="img-responsive"
           alt="Cards Image"
         />
+        <%
+		}
+      else
+      {
+        %>
+        <img
+          src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
+          class="img-responsive"
+          alt=""
+        />
+        <%
+      }
+        %>
         <span class="cards--two__rect"></span>
         <p> Name : <%= Name%><br>
+        		Login Id : <%=id %><br>
         		Password : <%= Password%><br> 
         		Age :  <%=age %><br>
         		Last Login :	<%= Last_Login%> <br> 
@@ -51,27 +67,6 @@
       </div>
       
       <%
-							}
-							else
-							{
-							
-      %>
-      <div class="cards cards--two">
-        <img
-          src="https://images.unsplash.com/photo-1480408144303-d874c5e12201?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=575213599ae24b3dbdfd84be79425c50&auto=format&fit=crop&w=634&q=80"
-          class="img-responsive"
-          alt=""
-        />
-        <span class="cards--two__rect"></span>
-        <p> Name : <%= Name%><br>
-        		Password : <%= Password%><br> 
-        		Age :  <%=age %><br>
-        		Last Login :	<%= Last_Login%> <br> 
-        		Status : <%= Status%>
-        </p>
-      </div>
-      <%
-							}
 						}
 				}
     %>

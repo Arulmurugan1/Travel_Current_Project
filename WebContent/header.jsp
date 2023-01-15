@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+	  <link rel="stylesheet" href="styleSheet/ajax-loader.css" type="text/css">
       <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
       <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
       <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
@@ -12,11 +13,14 @@
             font-weight: bold; 
          }  
 </style>  
-	<div id=dialog></div>
-	<div id=dialogContent>
+	<div id=editProfileDialog>
 		<jsp:include page="/editprofile.jsp"></jsp:include>
 	</div>
-      
+	<div id=editProfileAfterDialog>
+		
+	</div>
+		
+      <div class="loader-ajax"></div>
 	<div class="d-flex justify-content-between sticky-top" id=announcement>
 		<div class="dropdown">
 			<a href="home.jsp"> <span><img
@@ -96,13 +100,11 @@
 	</div>
 	
 	<script>
-		$('#dialogContent').hide();
-		
+		$('#editProfileDialog').hide();
+		$('.loader-ajax').hide();
 		function editProfile()
 		{
-					$('#dialog').empty();
-					$('#dialog').html($('#dialogContent').html());
-					$('#dialog').dialog({
+					$('#editProfileDialog').dialog({
 						autoOpen : false ,
 						buttons : {
 							Update  : ()=> {
@@ -122,7 +124,7 @@
 						draggable : false ,
 						modal : true ,
 					});
-					$('#dialog').dialog('open');
+					$('#editProfileDialog').dialog('open');
 		}
 	</script>
 	

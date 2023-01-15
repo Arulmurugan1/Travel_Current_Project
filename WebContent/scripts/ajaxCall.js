@@ -151,28 +151,18 @@ function callAjax(status,booking_no)
 // To update User Details 
 function callAjaxUpdate(frm)
 {
+	$('.loader-ajax').show();
 	createRequest();
 	try{
 		request.onreadystatechange= ()=> {
 			if(request.readyState ==4 )
 			{ 
-				$('#dialog').empty();
-				$('#dialog').text((request.responseText).trim());
-				$('#dialog').dialog({
-					autoOpen : false ,
-					buttons : {
-						OK : ()=>{
-							$('#dialog').dialog('close');
-						}
-					},
-					position :{
-						my : "center",
-						at : "center"
-					},
-					closeonescape : true ,
-					draggable : false ,
-					modal : true ,
-				});
+				setTimeout( ()=>{
+					$('.loader-ajax').hide();
+				}, 4000);
+				setTimeout( ()=>{
+					dialog(request);
+				}, 4000);
 			}
 		}
 		request.open("GET","LoginInfo?mode=ajax&"+$(frm).serialize(),true);  
@@ -184,6 +174,28 @@ function callAjaxUpdate(frm)
 	}
 }
 
+function dialog(request)
+{
+	$('#editProfileDialog').dialog('close');
+	$('#editProfileAfterDialog').empty();
+	$('#editProfileAfterDialog').text((request.responseText).trim());
+	$('#editProfileAfterDialog').dialog({
+		autoOpen : false ,
+		buttons : {
+			OK : ()=>{
+				$('#editProfileAfterDialog').dialog('close');
+			}
+		},
+		position :{
+			my : "center",
+			at : "center"
+		},
+		closeonescape : true ,
+		draggable : false ,
+		modal : true ,
+	});
+	$('#editProfileAfterDialog').dialog('open');
+}
 function createRequest()
 {
 	if(window.XMLHttpRequest)
