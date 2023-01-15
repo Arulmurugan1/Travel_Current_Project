@@ -79,11 +79,13 @@ public class LoginServlet extends HttpServlet {
                         System.out.println("DB Username : "+ u.getUsername() + " Password : "+u.getPassword() );
                         if(user.trim().equals( ( u.getUser_id().trim() )) && password.trim().equals( ( u.getPassword().trim()) )) 
                         {
+                            session.setAttribute("password", u.getPassword());
+                            session.setAttribute("user_id", u.getUser_id());
                             session.setAttribute("user", u.getUsername());
                             session.setAttribute("role", u.getRole());
                             session.setAttribute("timeStamp", u.getLast_login().format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
 
-                            if (dao.updateUser(u) )
+                            if (dao.updateUserLoginTtsamp(u) )
                                 System.out.println(" Last logged in updated ");
 
                             System.out.println("Logged in at : "+ session.getCreationTime());

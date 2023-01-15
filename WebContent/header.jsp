@@ -1,4 +1,22 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+
+ <style>  
+         .ui-widget-header,.ui-state-default, ui-button{  
+            background:crimson;  
+            border: 2px solid brown;  
+            color: white;  
+            font-weight: bold; 
+         }  
+</style>  
+	<div id=dialog></div>
+	<div id=dialogContent>
+		<jsp:include page="/editprofile.jsp"></jsp:include>
+	</div>
+      
 	<div class="d-flex justify-content-between sticky-top" id=announcement>
 		<div class="dropdown">
 			<a href="home.jsp"> <span><img
@@ -66,9 +84,45 @@
 					<a href="home.jsp">
 						<i class="fa fa-home mr-2 text-success" aria-hidden="true"></i>
 								Home
+					</a>
+					<a href="javascript:editProfile()">
+						<i class="fa fa-user mr-2" aria-hidden="true"></i>
+								Edit Profile
 					</a> 
 					<a href="Login?mode=L"><i class="fa fa-power-off mr-2 text-danger" aria-hidden="true"></i>Logout</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<script>
+		$('#dialogContent').hide();
+		
+		function editProfile()
+		{
+					$('#dialog').empty();
+					$('#dialog').html($('#dialogContent').html());
+					$('#dialog').dialog({
+						autoOpen : false ,
+						buttons : {
+							Update  : ()=> {
+								callAjaxUpdate(document.editProfile) ;
+							},
+							OK : ()=>{
+								document.editProfile.reset();
+								$('#dialog').dialog('close');
+							}
+						},
+						title : " Edit / Update Profile",
+						position :{
+							my : "center",
+							at : "center"
+						},
+// 						closeonescape : true ,
+						draggable : false ,
+						modal : true ,
+					});
+					$('#dialog').dialog('open');
+		}
+	</script>
+	

@@ -10,6 +10,30 @@ public class Login {
 	private String user_id;
 	private String created_user;
 	private LocalDateTime last_login;
+	   private String dob;
+	    private String gender;
+	
+	public String getDob() {
+        return this.dob;
+    }
+
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+
+    public String getGender() {
+        return this.gender;
+    }
+
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+
+ 
 
 	public String getCreated_user() {
 		return created_user;
@@ -63,8 +87,9 @@ public class Login {
 
     @Override
     public String toString() {
-        return "Login [username=" + username + ", password=" + password + ", role=" + role + ", create_time="
-                + create_time + ", user_id=" + user_id + ", created_user=" + created_user + ", last_login=" + last_login
+        return "Login [username=" + this.username + ", password=" + this.password + ", role=" + this.role
+                + ", create_time=" + this.create_time + ", user_id=" + this.user_id + ", created_user="
+                + this.created_user + ", last_login=" + this.last_login + ", dob=" + this.dob + ", gender=" + this.gender
                 + "]";
     }
 

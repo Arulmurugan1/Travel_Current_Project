@@ -17,7 +17,8 @@ import com.web.util.Dbmanager;
 
 public class Logindao{
     private static final String INSERT_USERS ="INSERT INTO login_info VALUES(?,?,?,?,?,?,?,?,sysdate(),sysdate())";
-    private static final String UPDATE_USERS ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
+    private static final String UPDATE_USERS_TSTAMP ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
+    private static final String UPDATE_USERS_INFO       ="UPDATE login_info SET gender=?,dob=STR_to_date(?,'%Y-%m-%d') WHERE USER_ID=?";
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
     private static final String CHECK_USER   ="SELECT * FROM login_info WHERE USER_ID=?";
     private static final String SELECT_USERS_BY_ID ="SELECT USERNAME,PASSWORD1,ROLE,USER_ID,LAST_LOGIN FROM login_info WHERE USER_ID=?";
@@ -56,18 +57,30 @@ public class Logindao{
         return rowsaffected;
     }
 
-    public boolean updateUser(Login user)throws SQLException
+    public boolean updateUserLoginTtsamp(Login user)throws SQLException
     {
 
         boolean rowsaffected = false;
-        ps =con.prepareStatement(UPDATE_USERS) ;
+        ps =con.prepareStatement(UPDATE_USERS_TSTAMP) ;
         ps.setString(1 , user.getUser_id()) ;
         System.out.println(ps);
         rowsaffected = ps.executeUpdate() > 0 ;
 
         return rowsaffected;
     }
+    public boolean updateUserInfo(Login user)throws SQLException
+    {
 
+        boolean rowsaffected = false;
+        ps =con.prepareStatement(UPDATE_USERS_INFO) ;
+        ps.setString(1 , user.getGender()) ;
+        ps.setString(2 , user.getDob()) ;
+        ps.setString(3 , user.getUser_id()) ;
+        System.out.println(ps);
+        rowsaffected = ps.executeUpdate() > 0 ;
+
+        return rowsaffected;
+    }
     public boolean deleteUser(String id)throws SQLException
     {
 

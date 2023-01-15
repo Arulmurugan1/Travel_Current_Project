@@ -1,4 +1,4 @@
-
+var request ;
 
 $(document).ready(function() {
 
@@ -57,8 +57,6 @@ $(document).ready(function() {
 
 
 //Ajax for vehicle Info Starts 
-
-var request;  
 function sendInfo()  
 {  
 	if ( !$('#vehicle_no').prop('readonly') )
@@ -68,15 +66,7 @@ function sendInfo()
 		if ( vehicleNo.length == 4 )
 		{ 
 			var url="Ajax?vehicle_no="+vehicleNo; 
-			if(window.XMLHttpRequest)
-			{  
-				request=new XMLHttpRequest();  
-			}  
-			else if(window.ActiveXObject)
-			{  
-				request=new ActiveXObject("Microsoft.XMLHTTP");  
-			}  
-
+			createRequest();
 			try
 			{  
 				request.onreadystatechange=getInfo;  
@@ -127,14 +117,7 @@ function getInfo(){
 function callAjax(status,booking_no)
 {
 	var url = 'Ajax?status='+status+'&booking_no='+booking_no ;
-	if(window.XMLHttpRequest)
-	{  
-		request=new XMLHttpRequest();  
-	}  
-	else if(window.ActiveXObject)
-	{  
-		request=new ActiveXObject("Microsoft.XMLHTTP");  
-	}  
+	createRequest();
 	try
 	{  
 		request.onreadystatechange=() => {
@@ -164,6 +147,53 @@ function callAjax(status,booking_no)
 	{
 		alert("Unable to connect to server");
 	}
+}
+// To update User Details 
+function callAjaxUpdate(frm)
+{
+	createRequest();
+	try{
+		request.onreadystatechange= ()=> {
+			if(request.readyState ==4 )
+			{ 
+				$('#dialog').empty();
+				$('#dialog').text((request.responseText).trim());
+				$('#dialog').dialog({
+					autoOpen : false ,
+					buttons : {
+						OK : ()=>{
+							$('#dialog').dialog('close');
+						}
+					},
+					position :{
+						my : "center",
+						at : "center"
+					},
+					closeonescape : true ,
+					draggable : false ,
+					modal : true ,
+				});
+			}
+		}
+		request.open("GET","LoginInfo?mode=ajax&"+$(frm).serialize(),true);  
+		request.send();  
+	}
+	catch(e)
+	{
+		alert(e);
+	}
+}
+
+function createRequest()
+{
+	if(window.XMLHttpRequest)
+	{  
+		request=new XMLHttpRequest();  
+	}  
+	else if(window.ActiveXObject)
+	{  
+		request=new ActiveXObject("Microsoft.XMLHTTP");  
+	}  
 }
 
 //Ajax Ends 
