@@ -9,28 +9,24 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
 import com.web.modal.Logindao;
-import com.web.objects.Login;
+import com.web.objects.Login_Info;
 
 @WebServlet("/LoginInfo")
-public class LoginInfoServlet extends HttpServlet {
+public class LoginInfoServlet extends CustomServlet {
     private static final long serialVersionUID = 1L;
     public Logindao data ;
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
+        
+        super.service(request,this);
+        
         String mode = request.getParameter("mode") == null ? "":request.getParameter("mode").trim();
         
         PrintWriter out = response.getWriter();
 
         try
         {
-            Enumeration<String> e = request.getParameterNames();
-            
-            while(e.hasMoreElements())
-            {
-                String s = e.nextElement();
-                System.out.println( s+" ["+request.getParameter(s) +"] ");
-            }
             
             data = new Logindao();
 
@@ -61,15 +57,15 @@ public class LoginInfoServlet extends HttpServlet {
                     response.setHeader("Access-Control-Max-Age", "86400");
 
                     try {
-                        Login detail = new Login();
+                        Login_Info detail = new Login_Info();
                         detail.setDob(request.getParameter("dob"));
                         detail.setGender(request.getParameter("gender"));
                         detail.setUser_id(request.getSession().getAttribute("user_id").toString());
+                        detail.setAltered_user(request.getSession().getAttribute("user").toString());
                         System.out.println(detail);
                         boolean result = data.updateUserInfo(detail);
-                        System.out.println(result);
                         System.out.println(result ? "Updated Successfully" : " Failed To Update");
-                        out.println(result ? "Updated Successfully" : " Failed To Update") ;
+                        out.println(result ? "Updated Successfully^"+detail.getDob()+"^"+detail.getGender() : " Failed To Update") ;
                         System.out.println(out);
                     }
                     catch (Exception e1) {

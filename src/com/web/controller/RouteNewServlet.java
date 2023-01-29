@@ -17,7 +17,7 @@ import com.web.objects.Route;
 
 
 @WebServlet("/RouteNew")
-public class RouteNewServlet extends HttpServlet {
+public class RouteNewServlet extends CustomServlet {
     Route r = null;
     Routedao dao  = new Routedao();
     Criteria c = null ;
@@ -36,6 +36,8 @@ public class RouteNewServlet extends HttpServlet {
             String end ="";
             String no ="";
             double fare = 0;
+            
+            super.service(request,this);
 
             String mode = request.getParameter("mode").trim();
             System.out.println("mode"+mode);

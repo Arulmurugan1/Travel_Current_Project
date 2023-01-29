@@ -3,26 +3,26 @@ package com.web.controller;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.web.common.Constant;
 import com.web.modal.Logindao;
-import com.web.objects.Login;
+import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
 
 
 @WebServlet("/Login")
-public class LoginServlet extends HttpServlet {
+public class LoginServlet extends CustomServlet {
     private static final long serialVersionUID = 1L;
     public Logindao dao = null;
-    public Login u =null;
+    public Login_Info u =null;
 
     public LoginServlet() {
         super();
@@ -33,19 +33,17 @@ public class LoginServlet extends HttpServlet {
         HttpSession session =request.getSession();
 
         String mode =request.getParameter("mode");
-
-        System.out.println("Mode "+mode);
+        
+        super.service(request,this);
 
         dao= new Logindao();
 
-        u = new Login();
+        u = new Login_Info();
 
         boolean success = false ;
 
-        Connection con = null;
-
         try {
-            con = Dbmanager.getConnection() ;
+            Connection con = Dbmanager.getConnection() ;
             
             if (  con == null )
             {
@@ -55,40 +53,33 @@ public class LoginServlet extends HttpServlet {
             }
             else	
             {
-                Dbmanager.close();
+                con.close();
                 
                 if ( mode.trim().equals("login"))
                 { 
                     String user =request.getParameter("txtUser").trim();
                     String password =request.getParameter("txtPassword").trim();
-
-                    System.out.println(" Username : "+ user + " Password : "+password);
-
-                    //						DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a");  
-                    //						String formattedDate = LocalDateTime.now().format(myFormatObj);  
-                    //						System.out.println("After Formatting: " + formattedDate);  
-
-
+                    
                     if(dao.checkUser(user)) 
                     {
-
                         u = dao.selectUser(user);
 
                         System.out.println( " Last Login "+u.getLast_login());
 
                         System.out.println("DB Username : "+ u.getUsername() + " Password : "+u.getPassword() );
+                        
                         if(user.trim().equals( ( u.getUser_id().trim() )) && password.trim().equals( ( u.getPassword().trim()) )) 
                         {
                             session.setAttribute("password", u.getPassword());
                             session.setAttribute("user_id", u.getUser_id());
                             session.setAttribute("user", u.getUsername());
                             session.setAttribute("role", u.getRole());
+                            session.setAttribute("gender", u.getGender().trim());
+                            session.setAttribute("dob", u.getDob());
+                            session.setAttribute("status", u.getStatus() == null ? " " : u.getStatus().trim().equals("Y") ? "Approved" : "Pending" );
                             session.setAttribute("timeStamp", u.getLast_login().format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
 
-                            if (dao.updateUserLoginTtsamp(u) )
-                                System.out.println(" Last logged in updated ");
-
-                            System.out.println("Logged in at : "+ session.getCreationTime());
+                            dao.updateUserLoginTtsamp(u) ;
                             success = true ;
                         }
                         else 
@@ -102,7 +93,8 @@ public class LoginServlet extends HttpServlet {
                     }
 
                     request.setAttribute("txtuser",user);
-                    dao.closeAll();                }
+                              
+                  }
 
                 if ( mode.trim().equals("register"))
                 {
@@ -114,45 +106,37 @@ public class LoginServlet extends HttpServlet {
                     if( ( name.equals("") || name.equalsIgnoreCase("null") )   || ( pass1.equals("") || pass1.equalsIgnoreCase("null") )  || 
                             ( pass2.equals("") || pass2.equalsIgnoreCase("null") )   || ( id.equals("") || id.equalsIgnoreCase("null") )   )
                     {
-                        System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
                         request.setAttribute("msg","Enter Login details first...");
                     }
                     else 
                     {
-                        System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
-                        if(pass1.contentEquals(pass2)) 
+                        u.setUser_id(id);
+                        u.setUsername(name);
+                        u.setLast_login(LocalDateTime.now());
+                        u.setPassword(pass1);
+                        u.setRole("Guest");
+                        u.setCreate_time(LocalDateTime.now());
+                        u.setStatus("N");
+                        
+                        if(dao.checkUser(id))
                         {
-                            u.setUser_id(id);
-                            u.setUsername(name);
-                            u.setLast_login(null);
-                            u.setPassword(pass1);
-                            if(dao.checkUser(id))
-                            {
-                                System.out.println( " In LoginServlet : name= "+name+" User already available");
-                                request.setAttribute("msg","User Account already exist as " + id);
-                            }
-                            else
-                            {
-                                if(dao.insertUser(u)) 
-                                {
-                                    System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
-                                    request.setAttribute("msg","User Added Successfully ...");
-                                }
-                                else
-                                {
-                                    System.out.println( " In LoginServlet : name= "+name+" Error in insertion");
-                                    request.setAttribute("msg","Adding failed Check the error occured...");
-                                }
-                            }
-
+                            System.out.println( " In LoginServlet : name= "+name+" User already available");
+                            request.setAttribute("msg","User Account already exist as " + id);
                         }
                         else
                         {
-                            request.setAttribute("msg","Password doesn't match...");
+                            if(dao.insertUser(u)) 
+                            {
+                                System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
+                                request.setAttribute("msg","User Added Successfully ...");
+                            }
+                            else
+                            {
+                                System.out.println( " In LoginServlet : name= "+name+" Error in insertion");
+                                request.setAttribute("msg","Adding failed Check the error occured...");
+                            }
                         }
-
                     }
-                    dao.closeAll();
                 }
 
                 if ( mode.equals("L"))
@@ -172,6 +156,22 @@ public class LoginServlet extends HttpServlet {
         }
         finally
         {
+            
+            if ( success )
+            {
+                try {
+                    Logindao.InsertAccessLog(request);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            
+            try {
+                dao.closeAll();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }     
+            
             if( success )
             {
                 request.getRequestDispatcher(Constant.HOME_JSP).forward(request, response);  

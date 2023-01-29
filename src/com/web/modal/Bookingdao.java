@@ -262,23 +262,20 @@ public class Bookingdao {
 		return sql;
 
 	}
-
-	public void closeAll() throws Exception
-	{
-		if ( con !=null && !con.isClosed())
-		{
-			con.close();
-			con = null;
-		}
-		if ( ps !=null )
-		{
-			ps.close();
-			ps = null;
-		}
-		if ( rs !=null  )
-		{
-			rs.close();
-			rs = null;
-		}
-	}
+    public void closeAll() throws Exception
+    {
+        if ( con !=null && !con.isClosed())
+        {
+            con.close();
+        }
+        if ( ps !=null && !ps.isClosed())
+        {
+            ps.close();
+        }
+        if ( rs !=null  && !rs.isClosed())
+        {
+            rs.close();
+        }
+        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
+    }
 }

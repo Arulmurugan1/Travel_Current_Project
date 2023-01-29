@@ -5,10 +5,10 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -20,7 +20,7 @@ import com.web.util.Dbmanager;
 
 
 @WebServlet("/Ajax")
-public class AjaxServlet extends HttpServlet 
+public class AjaxServlet extends CustomServlet 
 {
     private static final long serialVersionUID = 1L;
     static Connection conn = null;            
@@ -33,6 +33,9 @@ public class AjaxServlet extends HttpServlet
     {
         try
         {
+            
+            super.service(request,this);
+            
             out = response.getWriter();
 
             String vehicleNo = request.getParameter("vehicle_no");
@@ -102,10 +105,15 @@ public class AjaxServlet extends HttpServlet
                 }
             }
         }catch(Exception s) {
-            out.print("exception");
+            out.print("Exception in Ajax Servlet  "+s.getMessage());
         }
         finally
         {
+            try {
+                closeAll();
+            } catch (SQLException e) {
+                out.print("Exception in closing Connection "+e.getErrorCode()+" " +e.getSQLState()+" "+e.getMessage());
+            }
             out.close();
         }
     }
@@ -163,35 +171,22 @@ public class AjaxServlet extends HttpServlet
         }
         return  ( obj.toString().length() > 0 ) ? obj : null ;
     }
-
-
-
-    //	System.getProperty("java.classpath");
-
-    //	--------------Old Method to get Vehicle No  Starts-------------------------
-
-    //	Gson gson = new Gson(); 
-    //	JsonObject myObj = new JsonObject();
-    //	
-    //	if ( vehicleNo!=null && vehicleNo.trim().length() > 0)
-    //	{
-    //		Vehicle info = getInfo(vehicleNo);
-    //		JsonElement vehicleObj = gson.toJsonTree(info);
-    //		
-    //		System.out.println(vehicleObj.toString());
-    //		
-    //		if(info.getNo() == null){
-    //			System.out.println("data came false..");
-    //			myObj.addProperty("success", false);
-    //		}
-    //		else {
-    //			myObj.addProperty("success", true);
-    //			System.out.println("data came success..");
-    //		}
-    //		myObj.add("vehicleObj", vehicleObj);
-    //		out.println(myObj.toString());
-    //	}
-
-    //         --------------------------------  Ends Here -------------------------	
+    
+    private void closeAll() throws SQLException
+    {
+        if ( conn !=null )
+        {
+            conn.close();
+        }
+        if ( stmt !=null )
+        {
+            stmt.close();
+        }
+        if ( rs !=null  )
+        {
+            rs.close();
+        }
+        System.out.println("Connection ["+conn.isClosed()+"] Statement ["+stmt.isClosed()+"] Resultset ["+rs.isClosed()+"]");
+    }
 
 }

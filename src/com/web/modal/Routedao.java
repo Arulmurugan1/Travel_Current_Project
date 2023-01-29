@@ -102,7 +102,6 @@ public class Routedao
 		System.out.println(ps);
 		rowsAffected = ps.executeUpdate() > 0;
 		System.out.println("Route deleted "+rowsAffected);
-		closeAll();
 		return rowsAffected;
 	}
 
@@ -117,26 +116,20 @@ public class Routedao
 		return rowUpdated;
 	}
 
-	public void closeAll() throws SQLException
-	{
-		if ( con !=null && !con.isClosed())
-		{
-			con.close();
-			con = null;
-			System.out.println("Connection Closed ::"+con);
-		}
-		if ( ps !=null )
-		{
-			ps.close();
-			ps = null;
-			System.out.println("Statement Closed ::"+ps);
-		}
-		if ( rs !=null  )
-		{
-			rs.close();
-			rs = null;
-			System.out.println("Resultset Closed ::"+rs);
-		}
-	}
-
+    public void closeAll() throws Exception
+    {
+        if ( con !=null && !con.isClosed())
+        {
+            con.close();
+        }
+        if ( ps !=null && !ps.isClosed())
+        {
+            ps.close();
+        }
+        if ( rs !=null  && !rs.isClosed())
+        {
+            rs.close();
+        }
+        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
+    }
 }

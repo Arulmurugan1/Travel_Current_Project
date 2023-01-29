@@ -1,5 +1,6 @@
 package com.web.util;
 
+import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,10 +8,12 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Vector;
 
+import com.sun.istack.internal.FinalArrayList;
+
 public class Dbmanager {
 	
 	
-	static Connection con = null;
+	public static Connection con = null;
 	public static String error   = null ;
 	
 	public static Connection getConnection() 
@@ -50,7 +53,6 @@ public class Dbmanager {
 		}
 		return con;
 	}
-
 	
 	public static boolean insertObjects(String Query,Vector values) 
 	{
@@ -294,13 +296,89 @@ public class Dbmanager {
 		return result ;
 	}
 	
-	public static void close() throws Exception
-	{
-		if ( con !=null && !con.isClosed())
-		{
-			con.close();
-			con = null;
-			System.out.println("Connection Closed ::"+con);
-		}
-	}
+	public static String buildQuery(Object d,String Operation) throws IllegalArgumentException, IllegalAccessException 
+    {
+        Class obj = d.getClass();
+              
+        String columns = "" , values ="", finalQuery  ="";
+        
+        Field[] fields = obj.getDeclaredFields();
+        
+        switch(Operation.toUpperCase()) {
+            case "INSERT":
+            {
+                for(Field s : fields)
+                {
+                    columns +="\n"+s.getName()+",";
+                    
+                    if ( s.get(d) == null || s.get(d).toString().trim().length() == 0 )
+                        values    +=" \n' ',";
+                    else
+                        values    +="\n'"+s.get(d)+"',";
+                }
+                
+                columns = columns.substring(0,columns.length()-1);
+                values = values.substring(0,values.length()-1);
+                
+                 finalQuery = " INSERT INTO "+obj.getSimpleName()+" \n( "+columns+" )\n VALUES \n ( "+values+" )\n ";
+                 break;
+            }
+            case "UPDATE" :
+            {
+                for( Field s : fields)
+                {
+                    if ( s.get(d) == null || s.get(d).toString().trim().length() == 0 )
+                    {
+                        values += "\n"+s.getName()+" = ";
+                        values    +=" ' ',";
+                    }
+                    else
+                    {
+                        values += "\n"+s.getName()+" = ";
+                        values    +="'"+s.get(d)+"',";
+                    }   
+                }
+
+                values = values.substring(0,values.length()-1);
+                
+                finalQuery = " update "+obj.getSimpleName()+" set "+values+" where " + values.replaceAll(",", " and ");
+                break;
+            }
+            case "DELETE" :
+            {
+                for( Field s : fields)
+                {
+                    values += "\n"+s.getName()+" = ";
+                    
+                    if ( s.get(d) == null || s.get(d).toString().trim().length() == 0 )
+                        values    +=" ' ',\n";
+                    else
+                        values    +="'"+s.get(d)+"',\n";
+                    
+                }
+
+                values = values.substring(0,values.length()-1);
+                
+                finalQuery = " delete from  "+obj.getSimpleName()+" where " + values.replaceAll(",", " and ");
+                break;
+            }
+            case "SELECT" :
+            {
+                for( Field s : fields)
+                    columns += "\n"+s.getName()+",";
+                    
+                columns = columns.substring(0,columns.length()-1);
+                
+                finalQuery = " select "+columns+  " from "+obj.getSimpleName() ;
+                break;
+            }
+            default : 
+            {
+                System.out.println("Finished");
+            }
+        }
+        System.out.println(finalQuery);
+        return finalQuery;
+        
+    }
 }

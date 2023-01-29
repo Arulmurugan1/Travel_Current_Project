@@ -15,7 +15,7 @@ public class Constant {
     public static final String INDEX_JSP = "index.jsp";
     public static final String HOME_JSP = "home.jsp";
     
-    public static final String DBCONNECTION_JSP = "<%= Constant.DBCONNECTION_JSP %>";
+    public static final String DBCONNECTION_JSP = "";
     public static final String HEADER_JSP = "../header.jsp";
 
 }

@@ -120,17 +120,14 @@ public class Vehicledao {
         if ( con !=null && !con.isClosed())
         {
             con.close();
-            con = null;
         }
-        if ( ps !=null )
+        if ( ps !=null && !ps.isClosed())
         {
             ps.close();
-            ps = null;
         }
-        if ( rs !=null  )
+        if ( rs !=null  && !rs.isClosed())
         {
             rs.close();
-            rs = null;
         }
         System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
     }

@@ -28,7 +28,6 @@ public class Customerdao {
 
     public int insertCustomer(Customer user) throws SQLException
     {
-        System.out.println(INSERT_CUSTOMER);
         int result = 0;
         ps = con.prepareStatement(INSERT_CUSTOMER,Statement.RETURN_GENERATED_KEYS);
 
@@ -155,21 +154,16 @@ public class Customerdao {
         if ( con !=null && !con.isClosed())
         {
             con.close();
-            con = null;
-            System.out.println("Connection Closed ::"+con);
         }
-        if ( ps !=null )
+        if ( ps !=null && !ps.isClosed())
         {
             ps.close();
-            ps = null;
-            System.out.println("Statement Closed ::"+ps);
         }
-        if ( rs !=null )
+        if ( rs !=null  && !rs.isClosed())
         {
             rs.close();
-            rs = null;
-            System.out.println("Resultset Closed ::"+rs);
         }
+        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
     }
 
 }

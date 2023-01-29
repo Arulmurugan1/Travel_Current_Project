@@ -18,7 +18,7 @@ import com.web.util.Dbmanager;
 
 
 @WebServlet("/Route")
-public class RouteServlet extends HttpServlet {
+public class RouteServlet extends CustomServlet {
 	private static final long serialVersionUID = 1L;
 	Route r ;
 	Routedao dao  = new Routedao();
@@ -33,7 +33,7 @@ public class RouteServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-
+	    super.service(request,this);
 		try
 		{
 			String start ="";

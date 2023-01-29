@@ -12,7 +12,7 @@ import com.web.objects.*;
 
 
 @WebServlet("/Vehicle")
-public class VehicleServlet extends HttpServlet {
+public class VehicleServlet extends CustomServlet {
 	private static final long serialVersionUID = 1L;
 	Vehicle v = null; 
 	Vehicledao dao = new Vehicledao();
@@ -31,6 +31,8 @@ public class VehicleServlet extends HttpServlet {
         String model = null;
         String type  = null;
         String color = null;
+        
+        super.service(request,this);
 
         String mode = request.getParameter("mode");
         

@@ -104,6 +104,7 @@
 		$('.loader-ajax').hide();
 		function editProfile()
 		{
+					setProfileValues();
 					$('#editProfileDialog').dialog({
 						autoOpen : false ,
 						buttons : {
@@ -111,8 +112,8 @@
 								callAjaxUpdate(document.editProfile) ;
 							},
 							OK : ()=>{
-								document.editProfile.reset();
-								$('#dialog').dialog('close');
+								setProfileValues();
+								$('#editProfileDialog').dialog('close');
 							}
 						},
 						title : " Edit / Update Profile",

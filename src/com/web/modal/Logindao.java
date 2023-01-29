@@ -8,20 +8,20 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.Vector;
 
+import javax.servlet.http.HttpServletRequest;
+
 import com.web.common.InitString;
-import com.web.objects.Login;
+import com.web.objects.AccessLog;
+import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
 
 public class Logindao{
-    private static final String INSERT_USERS ="INSERT INTO login_info VALUES(?,?,?,?,?,?,?,?,sysdate(),sysdate())";
     private static final String UPDATE_USERS_TSTAMP ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
-    private static final String UPDATE_USERS_INFO       ="UPDATE login_info SET gender=?,dob=STR_to_date(?,'%Y-%m-%d') WHERE USER_ID=?";
+    private static final String UPDATE_USERS_INFO       ="UPDATE login_info SET gender=?,dob=STR_to_date(?,'%Y-%m-%d'),altered_user=? WHERE USER_ID=?";
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
     private static final String CHECK_USER   ="SELECT * FROM login_info WHERE USER_ID=?";
-    private static final String SELECT_USERS_BY_ID ="SELECT USERNAME,PASSWORD1,ROLE,USER_ID,LAST_LOGIN FROM login_info WHERE USER_ID=?";
     private static final String SELECT_ALL_USERS = "SELECT * FROM login_info  order by last_login desc";
 
     static Connection con =null;
@@ -35,29 +35,16 @@ public class Logindao{
             System.out.println("Login Connection created");
     }
 
-    public boolean insertUser(Login user)throws SQLException
+    public boolean insertUser(Login_Info user)throws SQLException, IllegalArgumentException, IllegalAccessException
     {
-
         boolean rowsaffected = false;
-        int c =1 ;
-        ps =con.prepareStatement(INSERT_USERS);
-        ps.setString(c++, user.getUser_id());
-        ps.setString(c++, user.getUsername());
-        ps.setString(c++, user.getPassword());
-        ps.setString(c++, " ");
-        ps.setString(c++, " ");
-        ps.setString(c++, " ");
-        ps.setString(c++, "Guest");			
-        ps.setString(c++, "Others");
-
-        System.out.println(ps);
+        ps =con.prepareStatement( Dbmanager.buildQuery(user, "insert") ) ;
         rowsaffected=ps.executeUpdate() > 0 ;
-
-
         return rowsaffected;
     }
-
-    public boolean updateUserLoginTtsamp(Login user)throws SQLException
+    
+    
+    public boolean updateUserLoginTtsamp(Login_Info user)throws SQLException
     {
 
         boolean rowsaffected = false;
@@ -68,14 +55,16 @@ public class Logindao{
 
         return rowsaffected;
     }
-    public boolean updateUserInfo(Login user)throws SQLException
+    public boolean updateUserInfo(Login_Info user)throws SQLException
     {
 
         boolean rowsaffected = false;
         ps =con.prepareStatement(UPDATE_USERS_INFO) ;
         ps.setString(1 , user.getGender()) ;
         ps.setString(2 , user.getDob()) ;
-        ps.setString(3 , user.getUser_id()) ;
+        ps.setString(3 , user.getAltered_user()) ;
+        ps.setString(4 , user.getUser_id()) ;
+        
         System.out.println(ps);
         rowsaffected = ps.executeUpdate() > 0 ;
 
@@ -92,21 +81,24 @@ public class Logindao{
         return rowsaffected;
     }
 
-    public Login selectUser(String id) throws SQLException
+    public Login_Info selectUser(String id) throws SQLException
     {
 
-        Login u =new Login();
-        ps =con.prepareStatement(SELECT_USERS_BY_ID);
+        Login_Info u =new Login_Info();
+        ps =con.prepareStatement(CHECK_USER);
         ps.setString(1,id);
         System.out.println(ps);
         rs =ps.executeQuery();
 
         while(rs.next()) {
-            u.setUsername(rs.getString(1));
-            u.setPassword(rs.getString(2));
-            u.setRole(rs.getString(3));
-            u.setUser_id(rs.getString(4));
-            u.setLast_login((LocalDateTime) rs.getObject(5));
+            u.setUsername(rs.getString("username"));
+            u.setPassword(rs.getString("password1"));
+            u.setRole(rs.getString("role"));
+            u.setUser_id(rs.getString("user_id"));
+            u.setLast_login((LocalDateTime) rs.getObject("last_login"));
+            u.setDob(rs.getString("dob"));
+            u.setGender(rs.getString("gender"));
+            u.setStatus(rs.getString("status"));
         }
         return u;  
     }
@@ -179,25 +171,47 @@ public class Logindao{
 
         return rowsaffected;
     }
+
     public void closeAll() throws Exception
     {
         if ( con !=null && !con.isClosed())
         {
             con.close();
-            con = null;
-            System.out.println("Connection Closed ::"+con);
         }
-        if ( ps !=null )
+        if ( ps !=null && !ps.isClosed())
         {
             ps.close();
-            ps = null;
-            System.out.println("Statement Closed ::"+ps);
         }
-        if ( rs !=null  )
+        if ( rs !=null  && !rs.isClosed())
         {
             rs.close();
-            rs = null;
-            System.out.println("Resultset Closed ::"+rs);
         }
+        System.out.println("Connection Closed ["+con.isClosed()+"] Statement Closed ["+ps.isClosed()+"] Resultset Closed ["+rs.isClosed()+"]");
     }
+
+    public static void InsertAccessLog(HttpServletRequest req) throws SQLException, IllegalArgumentException, IllegalAccessException 
+    {
+        AccessLog al = new AccessLog();
+
+        al.setUser_id(req.getSession().getAttribute("user_id")+"");
+        al.setUsername(req.getSession().getAttribute("user")+"");
+        al.setRole(req.getSession().getAttribute("role")+"");
+        al.setProtocol(req.getProtocol());
+        al.setUrl(req.getRequestURL()+"");
+        al.setRemote_host(req.getRemoteHost()+"");
+        al.setRemote_address(req.getRemoteAddr()+"");
+        al.setLocal_address(req.getLocalAddr()+"");
+        al.setLocal_name(req.getLocalName()+"");
+        al.setLocal_lang(req.getLocale()+"");
+        al.setLogged_time(req.getSession().getAttribute("timeStamp")+"");
+        al.setAccess_time(LocalDateTime.now());
+        al.setPlatform(req.getHeader("sec-ch-ua-platform")+"");
+        al.setAccept_language(req.getHeader("accept-language")+"");
+
+        String InsertQuery = Dbmanager.buildQuery(al, "insert");
+        ps =con.prepareStatement(InsertQuery);
+        System.out.println("Access Log Entered "+( ps.executeUpdate() > 0 ) );
+
+    } 
+    
 }

@@ -250,10 +250,9 @@ keyframes spin { 100% {
 
 @media screen and (max-width: 600px) {
 	html {
-		font-size: 4px;
+		font-size: 18px;
 	}
 }
-
 .fsr {
 	font-size: 20px;
 	margin-right: .3rem;
@@ -285,7 +284,14 @@ keyframes spin { 100% {
 .fa:hover{
 	cursor :pointer ; 
 }
-@media screen and (max-width :992px) {
+@media screen and (max-width :1440px) {
+html {
+		font-size: 15px;
+	}
+
+.content {
+	width: 50%;
+}
 	.info-content {
 		height: 82%;
 		width: 40%;

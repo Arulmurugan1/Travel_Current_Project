@@ -107,7 +107,6 @@ public class Driverdao {
         ps.setString(++cntl, id);
         System.out.println(ps);
         rowsAffected = ps.executeUpdate() > 0;
-        closeAll();
         System.out.println("Deleted driver"+rowsAffected);
         return rowsAffected;
     }
@@ -129,26 +128,20 @@ public class Driverdao {
         return rowUpdated;
     }
 
-    public void closeAll() throws SQLException
+    public void closeAll() throws Exception
     {
         if ( con !=null && !con.isClosed())
         {
             con.close();
-            con = null;
-            System.out.println("Connection Closed ::"+con);
         }
-        if ( ps !=null )
+        if ( ps !=null && !ps.isClosed())
         {
             ps.close();
-            ps = null;
-            System.out.println("Statement Closed ::"+ps);
         }
-        if ( rs !=null  )
+        if ( rs !=null  && !rs.isClosed())
         {
             rs.close();
-            rs = null;
-            System.out.println("Resultset Closed ::"+rs);
         }
+        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
     }
-
 }

@@ -15,7 +15,7 @@ import com.web.modal.Driverdao;
 import com.web.objects.Driver;
 
 @WebServlet("/Driver")
-public class DriverServlet extends HttpServlet {
+public class DriverServlet extends CustomServlet {
     private static final long serialVersionUID = 1L;
 
     public DriverServlet() {
@@ -31,6 +31,9 @@ public class DriverServlet extends HttpServlet {
         String message = "", mode = "";
 
         try {
+            
+            super.service(request,this);
+            
             mode = request.getParameter("mode");
             System.out.println("mode Driver Servlet ::" + mode);
 

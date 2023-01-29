@@ -178,7 +178,19 @@ function dialog(request)
 {
 	$('#editProfileDialog').dialog('close');
 	$('#editProfileAfterDialog').empty();
-	$('#editProfileAfterDialog').text((request.responseText).trim());
+	
+	if ( request.responseText.split('^')[0].trim() == "Updated Successfully" )
+	{
+		document.editProfile.hGender.value = request.responseText.split('^')[2].trim();
+		document.editProfile.hdob.value = request.responseText.split('^')[1].trim();
+	}
+	else
+	{
+		document.editProfile.hGender.value = '${sessionScrope.gender }';
+		document.editProfile.hdob.value = '${sessionScrope.dob}';
+	}
+	
+	$('#editProfileAfterDialog').text(request.responseText.split('^')[0]);
 	$('#editProfileAfterDialog').dialog({
 		autoOpen : false ,
 		buttons : {
