@@ -1,16 +1,14 @@
 package com.web.modal;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.web.common.Generic;
 import com.web.objects.Driver;
-import com.web.util.Dbmanager;
 
-public class Driverdao {
+public class Driverdao extends Generic{
 
     boolean rowsAffected =false ;
 
@@ -20,18 +18,7 @@ public class Driverdao {
     private static final String DELETE_DRIVER = "delete from DRIVER where vehicle_no = ?;";
     private static final String UPDATE_DRIVER = "update DRIVER set driver_id = ?,driver_name= ?, gender =?,age=?,city=?,phone=?,vehicle_no=? where driver_id = ?";
 
-
-    static Connection con = null;
-    static PreparedStatement ps = null;
-    static ResultSet rs = null;
-
-    public Driverdao() { con = Dbmanager.getConnection();}
-
     Driver v = null;
-
-
-
-
 
     public boolean insertDriver(Driver d)throws SQLException
     {
@@ -126,22 +113,5 @@ public class Driverdao {
         ps.setInt(++cntl,v.getId());
         rowUpdated = ps.executeUpdate() > 0;
         return rowUpdated;
-    }
-
-    public void closeAll() throws Exception
-    {
-        if ( con !=null && !con.isClosed())
-        {
-            con.close();
-        }
-        if ( ps !=null && !ps.isClosed())
-        {
-            ps.close();
-        }
-        if ( rs !=null  && !rs.isClosed())
-        {
-            rs.close();
-        }
-        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
     }
 }

@@ -21,8 +21,6 @@ public class LoginInfoServlet extends CustomServlet {
         
         super.service(request,this);
         
-        String mode = request.getParameter("mode") == null ? "":request.getParameter("mode").trim();
-        
         PrintWriter out = response.getWriter();
 
         try
@@ -80,6 +78,7 @@ public class LoginInfoServlet extends CustomServlet {
                 default :
                 {
                     request.setAttribute("list", data.getAllUsers() );
+                    System.out.println(request.getAttribute("list"));
                 }
             }
             data.closeAll();

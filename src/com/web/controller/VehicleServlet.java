@@ -33,10 +33,6 @@ public class VehicleServlet extends CustomServlet {
         String color = null;
         
         super.service(request,this);
-
-        String mode = request.getParameter("mode");
-        
-        System.out.println("Mode ::"+mode);
         
 		try
 		{

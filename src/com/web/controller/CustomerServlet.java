@@ -29,7 +29,6 @@ public class CustomerServlet extends CustomServlet {
     {
         Customerdao customerdao = new Customerdao();
         List<Customer> listUser = new ArrayList<>();
-        String mode=request.getParameter("mode");
         try {
 
             super.service(request,this);

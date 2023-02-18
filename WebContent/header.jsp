@@ -23,30 +23,30 @@
       <div class="loader-ajax"></div>
 	<div class="d-flex justify-content-between sticky-top" id=announcement>
 		<div class="dropdown">
-			<a href="home.jsp"> <span><img
-					src="https://cdn5.vectorstock.com/i/1000x1000/96/74/travel-logo-vector-19189674.jpg"
+			<a href="home.jsp" title ="Back To Home"> <span><img
+					src="./Images/Carousel/travel-logo-vector-19189674.jpg"
 					alt="#logo img" width="120px" class="img-thumbnail clearfix ml-4"></span>
 			</a>
 			<div class="dropdown-content" style="width:75vh;">
 				<div id="imge-slide" class="carousel slide" data-interval=1500 data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<img class="d-block w-100" src="https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg" alt="Time To Travel">
+							<img class="d-block w-100" src="./Images/Carousel/time-to-travel-wooden-sign-beach-background-49509295.jpg" alt="Time To Travel">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100" src="https://static.toiimg.com/thumb/msid-90681912,width-748,height-499,resizemode=4,imgsize-64316/Travelling-in-2022.jpg" alt="Whole world">
+							<img class="d-block w-100" src="./Images/Carousel/Travelling-in-2022.webp" alt="Whole world">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100" src="https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg" alt="Take A Break">
+							<img class="d-block w-100" src="./Images/Carousel/travel-world.jpg" alt="Take A Break">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100" src="https://i.pinimg.com/736x/c0/29/a1/c029a13f80eca5c461644f003184b58c--mobile-backgrounds-desktop-backgrounds.jpg" alt="Take A Break">
+							<img class="d-block w-100" src="./Images/Carousel/c029a13f80eca5c461644f003184b58c--mobile-backgrounds-desktop-backgrounds.jpg" alt="Take A Break">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100" src="https://imageio.forbes.com/specials-images/imageserve//62a31db6a2f18e6796812329/0x0.jpg?format=jpg&crop=1943,1183,x0,y113,safe&width=1200" alt="Take A Break">
+							<img class="d-block w-100" src="./Images/Carousel/0x0.jpg" alt="Take A Break">
 						</div>
 						<div class="carousel-item">
-							<img class="d-block w-100" src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Take A Break">
+							<img class="d-block w-100" src="./Images/Carousel/pexels-photo-3278215.jpeg" alt="Take A Break">
 						</div>
 					</div>
 <!-- 					<button type=button class="carousel-control-prev" href="#imge-slide" data-slide="prev">  -->

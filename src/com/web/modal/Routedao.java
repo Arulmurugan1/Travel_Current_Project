@@ -1,16 +1,13 @@
 package com.web.modal;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.web.common.Generic;
 import com.web.objects.Route;
-import com.web.util.Dbmanager;
 
-public class Routedao 
+public class Routedao extends Generic
 {
 
 
@@ -23,15 +20,6 @@ public class Routedao
 	private static final String DELETE = "delete from ROUTE where VEHICLE_NO = ?;";
 	private static final String UPDATE = "update ROUTE set START=?,END=? where VEHICLE_NO = ?";	
 	private static final String CHECK  = "SELECT vehicle_no FROM ROUTE WHERE START = ? AND END =?;";
-
-	static Connection con = null ;
-	static PreparedStatement ps = null;
-	static ResultSet rs = null;
-
-	public Routedao() 
-	{
-		con = Dbmanager.getConnection();
-	}
 
 	public boolean insert(Route r) throws SQLException{
 		boolean rowsAffected =false ;
@@ -115,21 +103,4 @@ public class Routedao
 		rowUpdated = ps.executeUpdate() > 0;
 		return rowUpdated;
 	}
-
-    public void closeAll() throws Exception
-    {
-        if ( con !=null && !con.isClosed())
-        {
-            con.close();
-        }
-        if ( ps !=null && !ps.isClosed())
-        {
-            ps.close();
-        }
-        if ( rs !=null  && !rs.isClosed())
-        {
-            rs.close();
-        }
-        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
-    }
 }

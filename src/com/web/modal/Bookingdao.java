@@ -1,32 +1,24 @@
 package com.web.modal;
 
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.web.common.Generic;
 import com.web.objects.Booking;
 import com.web.objects.Customer;
 import com.web.util.Dbmanager;
 
-public class Bookingdao {
+public class Bookingdao extends Generic{
 
 	private static final String INSERT_BOOKING = "INSERT INTO BOOKING VALUES(null,?,?,?,?,?,?,'Arulmurugan',' ',sysdate())";
 	private static final String SELECT_USER_BY_ID = "select * from booking where booking_no =?";
 	private static final String SELECT_ALL_USERS = "SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
 	private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
 
-	static Connection con = null;
-	static PreparedStatement ps = null;
-	static ResultSet rs = null;
 	Booking u = null ;
-
-	public Bookingdao() {
-		con = Dbmanager.getConnection();
-	}
 
 	public int insertBooking(Booking user) 
 	{
@@ -262,20 +254,4 @@ public class Bookingdao {
 		return sql;
 
 	}
-    public void closeAll() throws Exception
-    {
-        if ( con !=null && !con.isClosed())
-        {
-            con.close();
-        }
-        if ( ps !=null && !ps.isClosed())
-        {
-            ps.close();
-        }
-        if ( rs !=null  && !rs.isClosed())
-        {
-            rs.close();
-        }
-        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
-    }
 }

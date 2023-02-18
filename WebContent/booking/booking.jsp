@@ -126,12 +126,12 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="card info-content d-none">
+		<div class="card info-content">
 			<div class=row>
 				<div class=col>
 					<div class="card-body bg-white px-lg-5">
 						<span style="font-size: 20px; cursor: pointer;"
-							onclick="$('.info-content').addClass('d-none');"><i
+							onclick="$('.info-content').hide();"><i
 							class="fa fa-times" aria-hidden="true"></i></span>
 						<div class="form-row justify-content-center mt-2">
 							<div class='col-lg-6   form-group'>
@@ -181,20 +181,20 @@
 			
 			if (info.length > 0) 
 			{
-				$(booking_no).val(info[0]);
-				$(customer_id).val(info[1]);
-				$(fare).val(info[2]);
-				$(booking_no).css({
+				$('#booking_no').val(info[0]);
+				$('#customer_id').val(info[1]);
+				$('#fare').val(info[2]);
+				$('#booking_no').css({
 					"backgroundColor" : "green",
 					"color":"yellow",
 					"cursor":"auto"
 				});
-				$(customer_id).css({
+				$('#customer_id').css({
 					"backgroundColor" : "green",
 					"color":"yellow",
 					"cursor":"auto"
 				});
-				$(fare).css({
+				$('#fare').css({
 					"backgroundColor" : "green",
 					"color":"yellow",
 					"cursor":"auto"
@@ -204,25 +204,22 @@
 	}
 	with (document.booking) 
 	{
-		$(booking_no).css({
+		$('#booking_no').css({
 			"backgroundColor" : "grey",
 			"cursor":"not-allowed"
 		});
-		$(customer_id).css({
+		$('#customer_id').css({
 			"backgroundColor" : "grey",
 			"cursor":"not-allowed"
 		});
-		$(fare).css({
+		$('#fare').css({
 			"backgroundColor" : "grey",
 			"cursor":"not-allowed"
 		});
 	}
 
 	function Open(arr) {
-		if ( $('.info-content').hasClass('d-none') )
-			$('.info-content').removeClass('d-none');
-		else
-			$('.info-content').addClass('d-none');
+			$('.info-content').show();
 		var i1 = 1;
 		for ( var i of arr) {
 			if (i)
@@ -256,5 +253,6 @@
 		}
 	}
 	gridCall();
+	$('.info-content').hide();
 	
 </script>

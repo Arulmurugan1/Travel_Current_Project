@@ -32,8 +32,6 @@ public class BookingServlet extends CustomServlet{
         Booking b = null ;
         Customer c = null ;
 
-        String mode             = request.getParameter("mode") == null ? "" : request.getParameter("mode");
-
         try
         {
 
@@ -167,6 +165,10 @@ public class BookingServlet extends CustomServlet{
                         System.out.println("Booking deletion failed ");
                     }
                     break;
+                }
+                case "dummy" :
+                {
+                    super.setParameters(request);
                 }
                 default :
                 {

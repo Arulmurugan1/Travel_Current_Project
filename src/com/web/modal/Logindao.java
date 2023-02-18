@@ -1,7 +1,5 @@
 package com.web.modal;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -10,30 +8,18 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.web.common.Generic;
 import com.web.common.InitString;
-import com.web.objects.AccessLog;
 import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
 
-public class Logindao{
+public class Logindao extends Generic{
     private static final String UPDATE_USERS_TSTAMP ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
     private static final String UPDATE_USERS_INFO       ="UPDATE login_info SET gender=?,dob=STR_to_date(?,'%Y-%m-%d'),altered_user=? WHERE USER_ID=?";
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
     private static final String CHECK_USER   ="SELECT * FROM login_info WHERE USER_ID=?";
     private static final String SELECT_ALL_USERS = "SELECT * FROM login_info  order by last_login desc";
 
-    static Connection con =null;
-    static PreparedStatement ps = null ;
-    static ResultSet rs = null ;
-
-    public Logindao()
-    {
-        con = Dbmanager.getConnection();
-        if ( con != null)
-            System.out.println("Login Connection created");
-    }
 
     public boolean insertUser(Login_Info user)throws SQLException, IllegalArgumentException, IllegalAccessException
     {
@@ -128,24 +114,31 @@ public class Logindao{
             }
             for ( int i = 1 ; i <= columnCount ; i++ )
             {
-                if( rs.getMetaData().getColumnTypeName(i).equals("DATETIME"))
+                try
                 {
-                    v1.add( ((LocalDateTime) rs.getObject(i)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
-                }
-                else if (rs.getMetaData().getColumnName(i).equals("dob") )
+                    if( rs.getMetaData().getColumnTypeName(i).equals("DATETIME"))
+                    {
+                        v1.add( ((LocalDateTime) rs.getObject(i)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
+                    }
+                    else if (rs.getMetaData().getColumnName(i).equals("dob") )
+                    {
+                        String[] Date = rs.getString(i).split("-");
+
+                        LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
+
+                        Period diff = Period.between( date, LocalDate.now() );
+
+                        v1.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
+
+                    }
+                    else
+                    {
+                        v1.add(rs.getString(i));
+                    }
+                }catch(Exception e)
                 {
-                    String[] Date = rs.getString(i).split("-");
-                    
-                    LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
-                    
-                    Period diff = Period.between( date, LocalDate.now() );
-                    
-                    v1.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
-                    
-                }
-                else
-                {
-                    v1.add(rs.getString(i));
+                    v1.add(" ");
+                    e.printStackTrace();
                 }
                 
             }
@@ -155,63 +148,4 @@ public class Logindao{
         }
         return v2;
     }
-    public boolean checkUser(String id) throws SQLException
-    {
-
-        boolean rowsaffected = false;
-        System.out.println(CHECK_USER);
-        ps =con.prepareStatement(CHECK_USER);
-        ps.setString(1,id);
-        System.out.println(ps);
-        rs = ps.executeQuery();
-        if( rs.next() ) {
-            rowsaffected=true;
-        }
-
-
-        return rowsaffected;
-    }
-
-    public void closeAll() throws Exception
-    {
-        if ( con !=null && !con.isClosed())
-        {
-            con.close();
-        }
-        if ( ps !=null && !ps.isClosed())
-        {
-            ps.close();
-        }
-        if ( rs !=null  && !rs.isClosed())
-        {
-            rs.close();
-        }
-        System.out.println("Connection Closed ["+con.isClosed()+"] Statement Closed ["+ps.isClosed()+"] Resultset Closed ["+rs.isClosed()+"]");
-    }
-
-    public static void InsertAccessLog(HttpServletRequest req) throws SQLException, IllegalArgumentException, IllegalAccessException 
-    {
-        AccessLog al = new AccessLog();
-
-        al.setUser_id(req.getSession().getAttribute("user_id")+"");
-        al.setUsername(req.getSession().getAttribute("user")+"");
-        al.setRole(req.getSession().getAttribute("role")+"");
-        al.setProtocol(req.getProtocol());
-        al.setUrl(req.getRequestURL()+"");
-        al.setRemote_host(req.getRemoteHost()+"");
-        al.setRemote_address(req.getRemoteAddr()+"");
-        al.setLocal_address(req.getLocalAddr()+"");
-        al.setLocal_name(req.getLocalName()+"");
-        al.setLocal_lang(req.getLocale()+"");
-        al.setLogged_time(req.getSession().getAttribute("timeStamp")+"");
-        al.setAccess_time(LocalDateTime.now());
-        al.setPlatform(req.getHeader("sec-ch-ua-platform")+"");
-        al.setAccept_language(req.getHeader("accept-language")+"");
-
-        String InsertQuery = Dbmanager.buildQuery(al, "insert");
-        ps =con.prepareStatement(InsertQuery);
-        System.out.println("Access Log Entered "+( ps.executeUpdate() > 0 ) );
-
-    } 
-    
 }

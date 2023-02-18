@@ -40,8 +40,6 @@ public class RouteServlet extends CustomServlet {
 			String end ="";
 			String no ="";
 
-			String mode=request.getParameter("mode");
-
 			if(mode.equals("I"))	    
 			{
 

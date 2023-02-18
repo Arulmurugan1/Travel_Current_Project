@@ -28,14 +28,11 @@ public class DriverServlet extends CustomServlet {
         Driver v = new Driver();
         Driverdao dao = new Driverdao();
         List<Driver> l = new ArrayList<Driver>();
-        String message = "", mode = "";
+        String message = "";
 
         try {
             
             super.service(request,this);
-            
-            mode = request.getParameter("mode");
-            System.out.println("mode Driver Servlet ::" + mode);
 
             if (mode != null && !mode.trim().equals("N") && !mode.trim().equals(""))
             {

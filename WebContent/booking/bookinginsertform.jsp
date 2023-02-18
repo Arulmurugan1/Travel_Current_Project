@@ -17,17 +17,15 @@
 		<div class="card">
 			<div class="card-body bg-white">
 				<form name="bookingInsert" method="post">
-					<!-- class="needs-validation" -->
-					<!-- novalidate -->
 					<div class="row d-flex justify-content-center">
 						<h4 style='color: green;'>${msg}</h4>
 					</div>
 					<div class="row d-flex justify-content-center">
-						<div class='col-auto '>
+						<div class='col-sm-6 px-lg-3 '>
 							<fieldset class="form-group">
 								<label>Pickup From</label> <select
 									class="form-select form-control" name="pickup_from"
-									id="pickup_from" style="width: 340px"
+									id="pickup_from"
 									onChange="submitOnChange()">
 									<option value="" selected></option>
 									<sql:query dataSource="${db}" var="rs">
@@ -39,10 +37,10 @@
 								</select>
 							</fieldset>
 						</div>
-						<div class='col-auto '>
+						<div class='col-sm-6 px-lg-3 '>
 							<fieldset class="form-group">
 								<label>Drop To</label> <select class="form-select form-control"
-									name="drop_at" id="drop_at" style="width: 340px"
+									name="drop_at" id="drop_at"
 									onChange="submitOnChange()">
 									<option value="" selected></option>
 									<sql:query dataSource="${db}" var="rs">
@@ -54,11 +52,11 @@
 								</select>
 							</fieldset>
 						</div>
-						<div class='col-auto '>
+						<div class='col-sm-6 px-lg-3 '>
 							<fieldset class="form-group">
 								<label>Vehicle No</label> <select
 									class="form-select form-control" name="vehicle_no"
-									id="vehicle_no" style="width: 340px"  readonly>
+									id="vehicle_no"  readonly>
 				<sql:query dataSource="${db}" var="rs">
 						select * from route r , vehicle v where r.start ='${pickup_from}' and r.end ='${drop_at}' and r.vehicle_no = v.vehicle_no;			
 				</sql:query>
@@ -68,12 +66,12 @@
 								</select>
 							</fieldset>
 						</div>
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 
 							<fieldset class="form-group">
 								<label>Driver Id</label> <select
 									class="form-select form-control" name="driver_id"
-									id="driver_id" readonly style="width: 340px">
+									id="driver_id" readonly >
 									<sql:query dataSource="${db}" var="rs">
                         	SELECT driver_id,driver_name from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup_from}' and r.end ='${drop_at}';
                         </sql:query>
@@ -84,24 +82,24 @@
 								</select>
 							</fieldset>
 						</div>
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Customer Name</label> <input type=text
 									class="form-control" name="customer_name" id="customer_name"
 									size=38>
 							</fieldset>
 						</div>
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Age</label> <input type="number" class=" form-control"
 									id="age" name="age" min="4" max="60" step="1">
 							</fieldset>
 						</div>
 
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Gender</label> <select class="form-select form-control"
-									name="gender" id="gender" style="width: 220px">
+									name="gender" id="gender">
 									<option value="" selected></option>
 									<c:forTokens items="Male,Female,Transgender" delims=","
 										var="gender">
@@ -111,13 +109,13 @@
 							</fieldset>
 						</div>
 
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Email</label> <input class="form-control" name="email"
 									id="email" value='@gmail.com' size=38>
 							</fieldset>
 						</div>
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Phone/WhatsApp</label> <input type=text
 									class="form-control" size=38 maxlength=10 name="phone"
@@ -125,7 +123,7 @@
 									onkeypress='return isNumber()'>
 							</fieldset>
 						</div>
-						<div class='col-auto'>
+						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<sql:query dataSource="${db}" var="rs">
 						select fare from route where start ='${pickup_from}' and end ='${drop_at}';			

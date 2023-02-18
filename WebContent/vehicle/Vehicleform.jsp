@@ -21,7 +21,6 @@
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
 	type="text/javascript"></script>
-<script type="text/javascript" src="ajaxCall.js"></script>
 </head>
 <body style='overflow:hidden'>
 	<jsp:include page="../header.jsp" />

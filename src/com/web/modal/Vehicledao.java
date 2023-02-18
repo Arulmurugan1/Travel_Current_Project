@@ -1,17 +1,15 @@
 package com.web.modal;
 
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.web.common.Generic;
 import com.web.objects.Vehicle;
 import com.web.util.Dbmanager;
 
-public class Vehicledao {
+public class Vehicledao extends Generic{
 
 
     private static final String INSERT_VEHICLE ="INSERT INTO vehicle VALUES(?,?,?,?);" ;
@@ -20,14 +18,7 @@ public class Vehicledao {
     private static final String DELETE_VEHICLE = "delete from vehicle where vehicle_no = ?;";
     private static final String UPDATE_VEHICLE = "update vehicle set vehicle_model = ?,vehicle_no= ?, vehicle_type =?,vehicle_color=? where vehicle_no = ?;";
 
-
-
     private static Vehicle v ;
-    private static PreparedStatement ps ;
-    private static ResultSet rs ;
-    private static Connection con ;
-
-    public Vehicledao() { con = Dbmanager.getConnection();}
 
     public boolean insertVehicle(Vehicle v)throws SQLException
     {
@@ -113,22 +104,5 @@ public class Vehicledao {
 
         System.out.println(ps);
         return rowUpdated;
-    }
-
-    public void closeAll() throws Exception
-    {
-        if ( con !=null && !con.isClosed())
-        {
-            con.close();
-        }
-        if ( ps !=null && !ps.isClosed())
-        {
-            ps.close();
-        }
-        if ( rs !=null  && !rs.isClosed())
-        {
-            rs.close();
-        }
-        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
     }
 }

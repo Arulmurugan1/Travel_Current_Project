@@ -1,30 +1,21 @@
 package com.web.modal;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.web.common.Generic;
 import com.web.objects.Customer;
-import com.web.util.Dbmanager;
 
-public class Customerdao {
+public class Customerdao extends Generic{
 
     private static final String INSERT_CUSTOMER 		= "INSERT INTO CUSTOMER VALUES(null,?,?,?,?,?,?,?)" ;
     private static final String SELECT_CUSTOMER_BY_ID 	= "select * from CUSTOMER where CUSTOMER_ID =?";
     private static final String SELECT_ALL_CUSTOMERS	= "select * from CUSTOMER";
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";
     private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?";
-
-    Connection con ; ResultSet rs ; PreparedStatement ps		 ;
-
-    public Customerdao() 
-    {
-        con = Dbmanager.getConnection();
-    }
 
     public int insertCustomer(Customer user) throws SQLException
     {
@@ -147,23 +138,6 @@ public class Customerdao {
         result =  ps.executeUpdate() > 0 ;
 
         return result;
-    }
-
-    public void closeAll() throws Exception
-    {
-        if ( con !=null && !con.isClosed())
-        {
-            con.close();
-        }
-        if ( ps !=null && !ps.isClosed())
-        {
-            ps.close();
-        }
-        if ( rs !=null  && !rs.isClosed())
-        {
-            rs.close();
-        }
-        System.out.println("Connection ["+con+"] Statement ["+ps+"] Resultset ["+rs+"]");
     }
 
 }

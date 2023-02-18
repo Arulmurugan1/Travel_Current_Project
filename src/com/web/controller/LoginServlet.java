@@ -2,7 +2,6 @@ package com.web.controller;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -31,8 +30,8 @@ public class LoginServlet extends CustomServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         HttpSession session =request.getSession();
-
-        String mode =request.getParameter("mode");
+        
+        Connection con = null ;
         
         super.service(request,this);
 
@@ -43,7 +42,7 @@ public class LoginServlet extends CustomServlet {
         boolean success = false ;
 
         try {
-            Connection con = Dbmanager.getConnection() ;
+            con = Dbmanager.getConnection() ;
             
             if (  con == null )
             {
@@ -52,17 +51,17 @@ public class LoginServlet extends CustomServlet {
                 request.setAttribute("msg",Dbmanager.error);
             }
             else	
-            {
-                con.close();
-                
+            {   
                 if ( mode.trim().equals("login"))
                 { 
                     String user =request.getParameter("txtUser").trim();
                     String password =request.getParameter("txtPassword").trim();
                     
-                    if(dao.checkUser(user)) 
+                    u = dao.selectUser(user);
+                    
+                    if( u.getUser_id().trim().length() > 0 ) 
                     {
-                        u = dao.selectUser(user);
+                        
 
                         System.out.println( " Last Login "+u.getLast_login());
 
@@ -118,7 +117,7 @@ public class LoginServlet extends CustomServlet {
                         u.setCreate_time(LocalDateTime.now());
                         u.setStatus("N");
                         
-                        if(dao.checkUser(id))
+                        if(dao.selectUser(id).getUser_id().length() > 0)
                         {
                             System.out.println( " In LoginServlet : name= "+name+" User already available");
                             request.setAttribute("msg","User Account already exist as " + id);
@@ -168,6 +167,10 @@ public class LoginServlet extends CustomServlet {
             
             try {
                 dao.closeAll();
+                
+                if ( con !=null)
+                        con.close();
+                
             } catch (Exception e) {
                 e.printStackTrace();
             }     

@@ -39,7 +39,6 @@ public class RouteNewServlet extends CustomServlet {
             
             super.service(request,this);
 
-            String mode = request.getParameter("mode").trim();
             System.out.println("mode"+mode);
 
             if( mode !=null && !mode.equals(""))	    

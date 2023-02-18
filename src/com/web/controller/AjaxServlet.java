@@ -186,7 +186,7 @@ public class AjaxServlet extends CustomServlet
         {
             rs.close();
         }
-        System.out.println("Connection ["+conn.isClosed()+"] Statement ["+stmt.isClosed()+"] Resultset ["+rs.isClosed()+"]");
+        System.out.println("Connection ["+conn+"] Statement ["+stmt+"] Resultset ["+rs+"]");
     }
 
 }

@@ -377,7 +377,7 @@ public class Dbmanager {
                 System.out.println("Finished");
             }
         }
-        System.out.println(finalQuery);
+//        System.out.println(finalQuery);
         return finalQuery;
         
     }

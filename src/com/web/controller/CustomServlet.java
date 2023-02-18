@@ -12,11 +12,27 @@ import javax.servlet.http.HttpServletRequest;
 @WebServlet("/CustomServlet")
 public class CustomServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	public String mode ;
     
 	protected void service(HttpServletRequest request,Object d) throws ServletException, IOException 
 	{
+	    mode = request.getParameter("mode") == null ? "" : request.getParameter("mode");
 	    PrintDetails(request, d);
 	}
+	
+	protected void setParameters(HttpServletRequest request) throws Exception
+    {
+        
+	    Enumeration<String> e = request.getParameterNames();
+	    
+	    while(e.hasMoreElements())
+        {
+            String s = e.nextElement();
+            String value = request.getParameter(s);
+            
+            request.setAttribute(s, value);
+        }
+    }
 	
 	private void PrintDetails(HttpServletRequest request,Object d) 
 	{
