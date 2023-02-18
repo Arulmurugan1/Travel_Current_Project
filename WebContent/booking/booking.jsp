@@ -38,6 +38,10 @@
 						onclick='location.reload();'>
 						<i class="fa fa-refresh mr-2"></i>Refresh
 					</button>
+					<button type=button class='btn btn-success button-length ml-2'
+						onclick='history.back()'>
+						<i class="fa fa-backward mr-2"></i>Back
+					</button>
 				</div>
 			</div>
 		</div>

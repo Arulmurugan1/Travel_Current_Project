@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 @WebServlet("/CustomServlet")
 public class CustomServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	public String mode ;
+	public String mode = null ;
     
 	protected void service(HttpServletRequest request,Object d) throws ServletException, IOException 
 	{
