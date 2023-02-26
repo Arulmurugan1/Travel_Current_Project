@@ -1,9 +1,10 @@
 .pagination ul
 {
-        display: flex;
+        display: contents;
         background-color: white;
         padding: 8px;
         border-radius: 50px;
+        color : white ;
 }
 .pagination ul li
 {
@@ -14,7 +15,7 @@
         font-weight: 500;
         cursor: pointer;
         user-select: none;
-        transition: all 0.1s ease;
+        transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
 }
 .pagination ul li.num{
         border-radius: 50%;
@@ -42,4 +43,8 @@
 {
         color: #ffff;
         background-color: aqua;
+}
+
+#maxRows{
+	border-radius : 25px;
 }

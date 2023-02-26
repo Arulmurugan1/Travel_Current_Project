@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="WebContent/WEB-INF/classes" path="src"/>
 	<classpathentry exported="true" kind="lib" path="M:/Git/My Repository/Completed/Travel_Current_Project/WebContent/WEB-INF/lib/antlr-2.7.7.jar"/>
 	<classpathentry exported="true" kind="lib" path="M:/Git/My Repository/Completed/Travel_Current_Project/WebContent/WEB-INF/lib/byte-buddy-1.8.12.jar"/>
 	<classpathentry exported="true" kind="lib" path="M:/Git/My Repository/Completed/Travel_Current_Project/WebContent/WEB-INF/lib/c3p0-0.9.5.2.jar"/>

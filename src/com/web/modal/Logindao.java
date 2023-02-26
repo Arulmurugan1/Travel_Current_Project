@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
 import com.web.common.Generic;
-import com.web.common.InitString;
+import com.web.common.StringChecker;
 import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
 
@@ -108,7 +108,7 @@ public class Logindao extends Generic{
             {
                 for ( int i1 = 1 ; i1 <= columnCount ; i1++ )
                 {
-                    v3.add( InitString.Init(rs.getMetaData().getColumnName(i1).toLowerCase()) );
+                    v3.add( StringChecker.Init(rs.getMetaData().getColumnName(i1).toLowerCase()) );
                 }
                 v2.addElement(v3.clone());
             }

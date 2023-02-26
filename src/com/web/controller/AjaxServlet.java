@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONArray;
 
+import com.web.common.LoggerFactory;
 import com.web.modal.Bookingdao;
 import com.web.objects.Booking;
 import com.web.util.Dbmanager;
@@ -43,9 +44,9 @@ public class AjaxServlet extends CustomServlet
 
             String status = request.getParameter("status");
             String booking_no = request.getParameter("booking_no");
-            System.out.println("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]");
+            logContent("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]" , LoggerFactory.DEBUG, null);;
 
-            System.out.println("Inside ajax");
+            logContent("Inside ajax" , LoggerFactory.INFO, null);
 
             response.setContentType("text/html");
             response.setHeader("Cache-control", "no-cache, no-store");
@@ -61,29 +62,23 @@ public class AjaxServlet extends CustomServlet
             {
                 String no = getInfo(vehicleNo).trim();
 
-                if ( no !=null && no !="" )
-                {
-                    System.out.println(no);
+                if ( no !="" )
                     out.print(no);
-                }
                 else
-                {
-                    System.out.println("Not found");
                     out.print("No Vehicle found");
-                }
             }
             if ( vehicleModel!=null && vehicleModel.trim().length()  > 0)
             {
                 data = getVehicleType(vehicleModel);
                 if( data !=null &&  !data.toString().equals(""))
                 {
-                    System.out.println("data found..");
+                    logContent("data found.." , LoggerFactory.INFO, null);
                 }
                 else 
                 {
-                    System.out.println("No data found..");
+                    logContent("No data found.." , LoggerFactory.INFO, null);
                 }
-                System.out.println(data.toString());
+                logContent(data.toString() , LoggerFactory.INFO, null);
 
                 out.println(data.toString());
             }
@@ -105,6 +100,8 @@ public class AjaxServlet extends CustomServlet
                 }
             }
         }catch(Exception s) {
+            logContent("Exception in Ajax Servlet", LoggerFactory.ERROR, s);
+            
             out.print("Exception in Ajax Servlet  "+s.getMessage());
         }
         finally
@@ -121,21 +118,19 @@ public class AjaxServlet extends CustomServlet
     private String getInfo(String vehicleNo) {
         String sql ="";
         try {  
-            System.out.println("Inside getInfo for Vehicle No call from ajax");
+            logContent("Inside getInfo for Vehicle No call from ajax" , LoggerFactory.INFO, null);
             conn = Dbmanager.getConnection();
             stmt = conn.prepareStatement("Select vehicle_no from vehicle where vehicle_no =?");
             stmt.setString(1, vehicleNo.trim());
             rs = stmt.executeQuery(); 
-            System.out.println(stmt);
+            
 
             while(rs.next())
             { 
                 sql = rs.getString(1);
-                System.out.println(sql);
+                logContent("vehicle_no => "+sql , LoggerFactory.INFO, null);
             } 
-            stmt.close();
-            rs.close();
-            conn.close();
+            closeAll();
         }                                                               
         catch(Exception e)
         {
@@ -151,7 +146,7 @@ public class AjaxServlet extends CustomServlet
         JSONArray obj = new JSONArray();
 
         try {    
-            System.out.println("Inside VehicleType for Vehicle Model call from ajax");
+            logContent("Inside VehicleType for Vehicle Model call from ajax" , LoggerFactory.DEBUG, null);
             conn = Dbmanager.getConnection(); 
             stmt = conn.prepareStatement("select m.title from car_brand c,model m where c.id = m.make_id and c.title=?");
             stmt.setString(1, model.trim());
@@ -160,14 +155,12 @@ public class AjaxServlet extends CustomServlet
             { 
                 obj.put(rs.getString(1));
             } 
-            stmt.close();
-            rs.close();
-            conn.close();
-            System.out.println("Connection closed");
+            closeAll();
+            logContent("Connection closed" , LoggerFactory.DEBUG, null);
         }                                                               
         catch(Exception e)
         {
-            e.getLocalizedMessage();
+            logContent("", LoggerFactory.ERROR, e);
         }
         return  ( obj.toString().length() > 0 ) ? obj : null ;
     }
@@ -186,7 +179,7 @@ public class AjaxServlet extends CustomServlet
         {
             rs.close();
         }
-        System.out.println("Connection ["+conn+"] Statement ["+stmt+"] Resultset ["+rs+"]");
+        logContent("Connection ["+conn+"] Statement ["+stmt+"] Resultset ["+rs+"]" , LoggerFactory.DEBUG, null);
     }
 
 }

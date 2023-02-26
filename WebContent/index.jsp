@@ -3,16 +3,8 @@
 
 
 <%@ include file="dbconnection.jsp"%>
-<!DOCTYPE html >
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel</title>
-</head>
-<body>
 
+<body>
 	<div class="container">
 		<div class="content">
 			<div class="card-body">
@@ -36,7 +28,7 @@
 								<div class="col-auto mb-3">
 									<label for="username">Enter UserName </label> <input
 										type="text" class="form-control " name="txtUser"
-										maxlength="30" value="${txtuser}" size="25">
+										maxlength="30" value="${txtuser}" size="25" autocomplete="on" spellcheck="false" >
 								</div>
 							</div>
 							<div class="row">
@@ -48,7 +40,7 @@
 										<div class=input-group-append>
 											<div class=input-group-text>
 												<span onclick="Check()"><i
-													class="fa fa-eye-slash check-icon" aria-hidden="true"></i></span>
+													class="fa fa-eye-slash check-icon" aria-hidden="true" ></i></span>
 											</div>
 										</div>
 									</div>
@@ -133,4 +125,3 @@
 
 	<script src="./scripts/index.js"></script>
 </body>
-</html>

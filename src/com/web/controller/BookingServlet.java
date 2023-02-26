@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
 import com.web.modal.Bookingdao;
 import com.web.modal.Customerdao;
 import com.web.objects.Booking;
@@ -31,6 +32,7 @@ public class BookingServlet extends CustomServlet{
         Customerdao cdao = new Customerdao();
         Booking b = null ;
         Customer c = null ;
+       
 
         try
         {
@@ -76,7 +78,7 @@ public class BookingServlet extends CustomServlet{
                     if( customerId > 0 )
                     {
 
-                        System.out.println("Customer Added ");
+                        logContent("Customer Added " , LoggerFactory.INFO, null);
 
                         b= new Booking();
                         b.setPickup_from(pickup);
@@ -91,7 +93,7 @@ public class BookingServlet extends CustomServlet{
                         if ( bookingNo > 0 )
                         {
                             request.setAttribute("result", bookingNo +","+customerId+","+fare);
-                            System.out.println("Booking Added ");
+                            logContent("Booking Added " , LoggerFactory.INFO, null);;
                         }
                         else 
                         {
@@ -157,12 +159,12 @@ public class BookingServlet extends CustomServlet{
                     if( cdao.deleteCustomer(customerId) && dao.deleteBooking(id))
                     {
                         //				request.setAttribute("msg", "Booking deleted");
-                        System.out.println("Booking deleted ");
+                        logContent("Booking deleted " , LoggerFactory.INFO, null);;
                     }
                     else
                     {
                         request.setAttribute("msg", "Booking failed to delete");
-                        System.out.println("Booking deletion failed ");
+                        logContent("Booking deletion failed " , LoggerFactory.ERROR, null);;
                     }
                     break;
                 }

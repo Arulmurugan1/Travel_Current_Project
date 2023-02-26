@@ -7,6 +7,7 @@ import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
 import com.web.modal.*;
 import com.web.objects.*;
 
@@ -98,7 +99,7 @@ public class VehicleServlet extends CustomServlet {
 		}
 		catch(Exception e)
 		{
-			System.out.println("Exception in Vehicle Servlet "+e);
+		    logContent(e.toString(), LoggerFactory.ERROR, e);
 		}
 		finally
 		{

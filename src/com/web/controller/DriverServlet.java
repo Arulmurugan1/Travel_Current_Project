@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
 import com.web.modal.Driverdao;
 import com.web.objects.Driver;
 
@@ -82,12 +83,13 @@ public class DriverServlet extends CustomServlet {
                 l = dao.getAllDriver();
                 dao.closeAll();
         } catch (Exception e) {
-            e.printStackTrace();
+            logContent(e.toString(), LoggerFactory.ERROR, e);
             message = e.getMessage();
         } finally 
         {
             request.setAttribute("msg", message);
             request.setAttribute("listUser", l);
+            
             if (message == "success" || mode.equals("")) {
                 request.getRequestDispatcher(Constant.DRIVER_JSP).forward(request, response);
 

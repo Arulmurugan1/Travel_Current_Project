@@ -35,8 +35,8 @@ public class HibernateHelper
             }
             else
             {
-               delete(d,crud);
-               result =true;
+               session.delete(d);
+               result = true;
             }
             t.commit();
             System.out.println("Transaction commited ");
@@ -44,7 +44,7 @@ public class HibernateHelper
         catch(Exception e)
         {
             e.printStackTrace();
-            if ( t != null )
+            if ( t != null)
             {
                 t.rollback();
                 System.out.println("Transaction rollbacked");
@@ -64,16 +64,14 @@ public class HibernateHelper
         return result;
     }
     
-    public static boolean delete(Route d,String crud)
+    public static boolean delete(Route d,String crud) // Query method to delete routes
     {
         try
-        {
-            System.out.println("crud "+crud);
-            session = getSession();
-            t = session.beginTransaction();
+        {   
+            System.out.println(d);   
             Query query=session.createQuery("delete from route where vehicle_no=:no");  
             query.setParameter("no",d.getVehicle_no());  
-            int status=query.executeUpdate();
+            int status= query.executeUpdate();
             
             if ( status > 0 )
             {
@@ -85,6 +83,7 @@ public class HibernateHelper
             }
             t.commit();
             System.out.println("Transaction commited ");
+            System.out.println("Object deleted ..");
         }
         catch(Exception e)
         {
@@ -105,7 +104,6 @@ public class HibernateHelper
                 session.close();
             }
         }
-        System.out.println("Object deleted ..");
         return result ;
     }
 }

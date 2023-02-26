@@ -25,22 +25,26 @@ public abstract class Generic
     
     public void closeAll() throws Exception
     {
-        if ( con !=null)
-        {
+        
+        String connectionInfo = "";
+        
+        if ( con !=null && !con.isClosed() ) {
             con.close();
+            connectionInfo+= " Connection ["+con.isClosed()+"] ";
         }
-        if ( ps !=null)
-        {
+            
+        if ( ps !=null && !ps.isClosed() ) {
             ps.close();
+            connectionInfo+=  " Statement ["+ps.isClosed()+"] ";
         }
-        if ( rs !=null)
-        {
+            
+        if ( rs !=null && !rs.isClosed() ) {
             rs.close();
+            connectionInfo+=  " ResultSet ["+rs.isClosed()+"]";
         }
+            
         
-        con=null ; ps=null ; rs=null ;
-        
-        System.out.println("Connection Closed ["+con+"] Statement Closed ["+ps+"] Resultset Closed ["+rs+"]");
+        System.out.println(getClass().getSimpleName() + connectionInfo );
     }
 
     public static void InsertAccessLog(HttpServletRequest req) throws SQLException, IllegalArgumentException, IllegalAccessException 

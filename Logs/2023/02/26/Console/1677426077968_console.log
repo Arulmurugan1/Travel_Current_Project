@@ -1,0 +1,9 @@
+Inside if mode
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = '' AND END ='';
+crud D
+Transaction commited 
+Object saved ..
+Session Created 7DAAD21EDDD1380E2F3560FD1CC5A38B
+consoleFile =>/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/02/26/Console/1677426347109_console.log
+Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/02/26/Log4j/
+ File Path Added to session 

@@ -1,0 +1,11 @@
+Logindao Connection Closed [true]
+Logindao Connection Closed [true]
+Logindao Connection Closed [true]
+Logindao Connection Closed [true]
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM login_info WHERE USER_ID='arul'
+com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul'
+Access Log Entered true
+Logindao Connection Closed [true]
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection Closed [true]
+Customerdao

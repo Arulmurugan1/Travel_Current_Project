@@ -69,7 +69,6 @@ function element(totalPage, page)
 
 $(document).ready(function()
 {
-			var table ='#mytable';
 			$('#maxRows').on('change',function(){
 				$('.pagination').removeClass('d-none');
 				$('.pagination ul').empty();

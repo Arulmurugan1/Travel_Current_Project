@@ -1,0 +1,64 @@
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM login_info WHERE USER_ID='arul'
+com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul'
+Access Log Entered true
+Logindao Connection [true] 
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 185
+com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'RAC'  where booking_no = 2
+com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'RAC'  where booking_no = 2
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID
+Bookingdao Connection [true] 
+Customerdao
+select * from CUSTOMER
+com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER
+Customerdao Connection [true] 

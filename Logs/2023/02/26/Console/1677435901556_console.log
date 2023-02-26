@@ -1,0 +1,13 @@
+Logindao Connection [true] 
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM login_info WHERE USER_ID='arul'
+com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul'
+Access Log Entered true
+Logindao Connection [true] 
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM login_info WHERE USER_ID='arul'
+com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul'
+Access Log Entered true
+Logindao Connection [true] 
+Session Created 8ACB2909B833B51ACECB907812A3087C
+consoleFile =>/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/02/26/Console/1677435944788_console.log
+Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/02/26/Log4j/
+ File Path Added to session 

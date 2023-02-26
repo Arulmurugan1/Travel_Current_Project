@@ -1,0 +1,9 @@
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM login_info WHERE USER_ID='arul'
+com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul'
+Access Log Entered true
+Logindao Connection [true] 
+Inside if mode
+Session Created F54B3FE0FF332B5F99165D11673B36CD
+consoleFile =>/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/02/26/Console/1677426608560_console.log
+Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/02/26/Log4j/
+ File Path Added to session 

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
 import com.web.modal.Logindao;
 import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
@@ -23,15 +24,14 @@ public class LoginServlet extends CustomServlet {
     public Logindao dao = null;
     public Login_Info u =null;
 
-    public LoginServlet() {
-        super();
-    }
-
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         HttpSession session =request.getSession();
         
         Connection con = null ;
+        
+        if ( request.getParameter("txtUser") != null)
+            session.setAttribute("user_id", request.getParameter("txtUser").trim() ); // Set UserName before checking 
         
         super.service(request,this);
 
@@ -42,13 +42,14 @@ public class LoginServlet extends CustomServlet {
         boolean success = false ;
 
         try {
+            
             con = Dbmanager.getConnection() ;
             
             if (  con == null )
             {
 
-                System.out.println("Connection error "+Dbmanager.error);
-                request.setAttribute("msg",Dbmanager.error);
+                logContent("Connection error "+Dbmanager.error, LoggerFactory.DEBUG, null);
+                request.setAttribute("msg",Dbmanager.error );
             }
             else	
             {   
@@ -59,13 +60,13 @@ public class LoginServlet extends CustomServlet {
                     
                     u = dao.selectUser(user);
                     
-                    if( u.getUser_id().trim().length() > 0 ) 
+                    if( u.getUser_id() != null ) 
                     {
                         
 
-                        System.out.println( " Last Login "+u.getLast_login());
+                        logContent( " Last Login "+u.getLast_login(), LoggerFactory.DEBUG, null);
 
-                        System.out.println("DB Username : "+ u.getUsername() + " Password : "+u.getPassword() );
+                        logContent("DB UserId : "+u.getUser_id()+" Username : "+ u.getUsername() + " Password : "+u.getPassword() , LoggerFactory.DEBUG, null);
                         
                         if(user.trim().equals( ( u.getUser_id().trim() )) && password.trim().equals( ( u.getPassword().trim()) )) 
                         {
@@ -117,21 +118,21 @@ public class LoginServlet extends CustomServlet {
                         u.setCreate_time(LocalDateTime.now());
                         u.setStatus("N");
                         
-                        if(dao.selectUser(id).getUser_id().length() > 0)
+                        if(dao.selectUser(id).getUser_id() != null)
                         {
-                            System.out.println( " In LoginServlet : name= "+name+" User already available");
+                            logContent( " In LoginServlet : name= "+name+" User already available" ,  LoggerFactory.DEBUG, null);
                             request.setAttribute("msg","User Account already exist as " + id);
                         }
                         else
                         {
                             if(dao.insertUser(u)) 
                             {
-                                System.out.println( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id);
+                                logContent( " In LoginServlet : name= "+name+" ; password1 = "+pass1+" Password 2 = "+pass2+" User_id = "+id ,  LoggerFactory.DEBUG, null);
                                 request.setAttribute("msg","User Added Successfully ...");
                             }
                             else
                             {
-                                System.out.println( " In LoginServlet : name= "+name+" Error in insertion");
+                                logContent( " In LoginServlet : name= "+name+" Error in insertion" ,  LoggerFactory.DEBUG, null);
                                 request.setAttribute("msg","Adding failed Check the error occured...");
                             }
                         }
@@ -141,21 +142,19 @@ public class LoginServlet extends CustomServlet {
                 if ( mode.equals("L"))
                 {
                     request.setAttribute("mode",mode);
-                    System.out.println( "Logged Out at : "+ request.getSession().getLastAccessedTime() );
                     session.invalidate();
-                    System.out.println("Session On Logout "+request.getSession());
+                    logContent("Session On Logout "+session, LoggerFactory.DEBUG, null);
                 }
 
             }
         }
         catch(Exception e) 
         {
-            System.out.println("Exception in Login Servlet");
+            logContent("Exception in Login Servlet" ,  LoggerFactory.DEBUG, e);
             e.printStackTrace();	
         }
         finally
         {
-            
             if ( success )
             {
                 try {
@@ -172,8 +171,8 @@ public class LoginServlet extends CustomServlet {
                         con.close();
                 
             } catch (Exception e) {
-                e.printStackTrace();
-            }     
+                logContent("Error in Login Servlet",LoggerFactory.ERROR,e);
+            }
             
             if( success )
             {

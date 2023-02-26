@@ -8,8 +8,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
-<title>Travel</title>
 </head>
 <body>
 
@@ -26,7 +24,7 @@
 								<label>Pickup From</label> <select
 									class="form-select form-control" name="pickup_from"
 									id="pickup_from"
-									onChange="submitOnChange()">
+									onChange="submitOnChange()" required>
 									<option value="" selected></option>
 									<sql:query dataSource="${db}" var="rs">
 								select Distinct start from route order by start;			
@@ -41,7 +39,7 @@
 							<fieldset class="form-group">
 								<label>Drop To</label> <select class="form-select form-control"
 									name="drop_at" id="drop_at"
-									onChange="submitOnChange()">
+									onChange="submitOnChange()" required>
 									<option value="" selected></option>
 									<sql:query dataSource="${db}" var="rs">
 								select Distinct end from route where start ='${pickup_from}' order by end;			
@@ -56,7 +54,7 @@
 							<fieldset class="form-group">
 								<label>Vehicle No</label> <select
 									class="form-select form-control" name="vehicle_no"
-									id="vehicle_no"  readonly>
+									id="vehicle_no"  readonly required>
 				<sql:query dataSource="${db}" var="rs">
 						select * from route r , vehicle v where r.start ='${pickup_from}' and r.end ='${drop_at}' and r.vehicle_no = v.vehicle_no;			
 				</sql:query>
@@ -71,7 +69,7 @@
 							<fieldset class="form-group">
 								<label>Driver Id</label> <select
 									class="form-select form-control" name="driver_id"
-									id="driver_id" readonly >
+									id="driver_id" readonly  required>
 									<sql:query dataSource="${db}" var="rs">
                         	SELECT driver_id,driver_name from driver d,route r where d.vehicle_no =r.vehicle_no and r.start ='${pickup_from}' and r.end ='${drop_at}';
                         </sql:query>
@@ -86,20 +84,20 @@
 							<fieldset class="form-group">
 								<label>Customer Name</label> <input type=text
 									class="form-control" name="customer_name" id="customer_name"
-									size=38>
+									size=38 required>
 							</fieldset>
 						</div>
 						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Age</label> <input type="number" class=" form-control"
-									id="age" name="age" min="4" max="60" step="1">
+									id="age" name="age" min="4" max="60" step="1" required>
 							</fieldset>
 						</div>
 
 						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
 								<label>Gender</label> <select class="form-select form-control"
-									name="gender" id="gender">
+									name="gender" id="gender" required>
 									<option value="" selected></option>
 									<c:forTokens items="Male,Female,Transgender" delims=","
 										var="gender">
@@ -111,8 +109,9 @@
 
 						<div class='col-sm-6 px-lg-3'>
 							<fieldset class="form-group">
-								<label>Email</label> <input class="form-control" name="email"
-									id="email" value='@gmail.com' size=38>
+								<label>Email</label> 
+								<input class="form-control" type="email"  autocomplete="off"  name="email"
+									id="email" size=38>
 							</fieldset>
 						</div>
 						<div class='col-sm-6 px-lg-3'>
@@ -120,7 +119,7 @@
 								<label>Phone/WhatsApp</label> <input type=text
 									class="form-control" size=38 maxlength=10 name="phone"
 									id="phone"
-									onkeypress='return isNumber()'>
+									onkeypress='return isNumber()' required>
 							</fieldset>
 						</div>
 						<div class='col-sm-6 px-lg-3'>
@@ -131,7 +130,7 @@
 								<c:forEach var="f" items="${rs.rows}">
 									<label>Fare</label>
 									<input class="form-control" name="fare" id="fare"
-										value='${f.fare}' style='cursor: not-allowed;' readonly>
+										value='${f.fare}' style='cursor: not-allowed;' readonly required>
 								</c:forEach>
 							</fieldset>
 						</div>
@@ -139,7 +138,7 @@
 					<div class="row d-flex justify-content-center  mb-4">
 
 						<button type="button" class="btn btn-primary mr-2 button-length"
-							onclick="Submit()">Add</button>
+							onclick="Submit(document.bookingInsert)">Add</button>
 						<br> <input type="reset"
 							class="btn btn-success  button-length mr-2" value=Reset>
 						<input type="button" class="btn btn-success  button-length"

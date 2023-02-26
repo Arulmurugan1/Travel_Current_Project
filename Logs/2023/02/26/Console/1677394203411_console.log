@@ -1,0 +1,10 @@
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT * FROM login_info WHERE USER_ID='arul'
+com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul'
+Access Log Entered true
+Logindao Connection Closed [true]
+Inside if mode
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = '' AND END ='';
+crud D
+Transaction rollbacked
+Transaction rollbacked
+Object saved ..

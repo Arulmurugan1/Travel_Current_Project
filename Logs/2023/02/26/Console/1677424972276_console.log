@@ -1,0 +1,8 @@
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = '' AND END ='';
+crud D
+Transaction commited 
+Object saved ..
+com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = '' AND END ='';
+crud D
+Transaction commited 
+Object saved ..

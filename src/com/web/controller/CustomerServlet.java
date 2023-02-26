@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
 import com.web.modal.Customerdao;
 import com.web.objects.Customer;
 
@@ -20,7 +21,8 @@ public class CustomerServlet extends CustomServlet {
     private static final long serialVersionUID = 1L;
 
 
-    public CustomerServlet() {
+    public CustomerServlet() 
+    {
         super();
 
     }
@@ -49,7 +51,7 @@ public class CustomerServlet extends CustomServlet {
         }
         catch(Exception e ) 
         {
-            e.printStackTrace();
+            logContent(e.toString(), LoggerFactory.ERROR, e);
         }
         finally
         {

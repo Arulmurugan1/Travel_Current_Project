@@ -58,6 +58,9 @@ document.onreadystatechange = function() {
 		{
 			document.querySelector("#announcement").style.opacity = "1";
 		}
+		
+			callAlert();
+		
 	}
 };
 

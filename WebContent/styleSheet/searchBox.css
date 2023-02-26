@@ -8,14 +8,13 @@
 }
 .search-btn{
     color: #e84118;
-    float: right;
-    width: 40px;
+    width: 34px;
     height: 30px;
+    float:right;
     border-radius: 50%;
     background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items:center;
     transition: 0.4s;   
 }
 .search-txt
@@ -23,21 +22,21 @@
     border: none;
     background: none;
     outline: none;
-    float: left;
-    padding: 0 ;
-    margin : 0;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     transition: 0.4s;
     line-height: 30px;
-    width :0;
+    width:0;
+    text-align:center;
 }
 
 .search-box:hover > .search-txt{
     width: 240px;
-    padding: 0px 6px;
+    pdding: 10px 30px;
 }
 
 .search-box:hover > .search-btn{
-    color: white;
+    position:absolute ;
+    top:10px;
+    right : 10px;
 }

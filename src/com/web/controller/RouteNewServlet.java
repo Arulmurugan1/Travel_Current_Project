@@ -12,6 +12,8 @@ import org.hibernate.Criteria;
 
 import com.web.Factory.HibernateHelper;
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
+import com.web.common.StringChecker;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
 
@@ -27,7 +29,6 @@ public class RouteNewServlet extends CustomServlet {
     {
         super();
     }
-    @SuppressWarnings("deprecation")
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         try
@@ -39,41 +40,34 @@ public class RouteNewServlet extends CustomServlet {
             
             super.service(request,this);
 
-            System.out.println("mode"+mode);
-
             if( mode !=null && !mode.equals(""))	    
             {
                 System.out.println("Inside if mode");
 
-                start =request.getParameter("start").trim();
-                end   = request.getParameter("end").trim();
-                no = request.getParameter("vehicle_no").trim();
+                start = StringChecker.isNull(request.getParameter("start"));
+                end   = StringChecker.isNull(request.getParameter("end"));
+                no = StringChecker.isNull(request.getParameter("vehicle_no"));
 
-                if ( request.getParameter("fare").trim() !="")
+                if ( StringChecker.isNull(request.getParameter("fare")) !="")
                     fare = Double.parseDouble( request.getParameter("fare").trim() );
                 
                 r = new Route(no, start, end,fare);
+                
+                String checkRoutes = dao.check(r); 
 
-                if ( dao.check(r).length() == 0 )
+                if ( checkRoutes.length() == 0 )
                 {
 
                     if ( HibernateHelper.Operation(r,mode) )
                     {	
                         String msg ="";
-                        System.out.println("Inside After Operation");
 
                         if ( mode.equalsIgnoreCase("I") )
-                        {
                             msg="Added";
-                        }
                         if ( mode.equalsIgnoreCase("U") )
-                        {
                             msg="Updated";
-                        }
                         if ( mode.equalsIgnoreCase("D") )
-                        {
                             msg="Deleted";
-                        }
                         request.setAttribute("msg", " Routes "+msg+" for "+no);
                     }	
                     else 
@@ -83,18 +77,18 @@ public class RouteNewServlet extends CustomServlet {
                 }
                 else
                 {
-                    request.setAttribute("msg", "Routes already added to "+dao.check(r)) ;
+                    request.setAttribute("msg", "Routes already added to "+checkRoutes) ;
                 }
             }
         }
         catch(Exception e ) 
         {
             request.setAttribute("msg",e.getMessage()) ;
-            e.printStackTrace();
+            logContent(e.toString(), LoggerFactory.ERROR, e);
         }
         finally
         {
-            c= HibernateHelper.getSession().createCriteria(Route.class); //passing Class class argument
+            c= HibernateHelper.getSession().createCriteria(Route.class); //passing class argument
             request.setAttribute("list", c.list() );
             request.getRequestDispatcher(Constant.ROUTE_JSP).forward(request, response);
         }

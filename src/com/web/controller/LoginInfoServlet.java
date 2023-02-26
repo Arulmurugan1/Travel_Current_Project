@@ -2,12 +2,13 @@ package com.web.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+import com.web.common.LoggerFactory;
 import com.web.modal.Logindao;
 import com.web.objects.Login_Info;
 
@@ -60,13 +61,14 @@ public class LoginInfoServlet extends CustomServlet {
                         detail.setGender(request.getParameter("gender"));
                         detail.setUser_id(request.getSession().getAttribute("user_id").toString());
                         detail.setAltered_user(request.getSession().getAttribute("user").toString());
-                        System.out.println(detail);
+                        logContent(detail.toString() , LoggerFactory.INFO, null);
                         boolean result = data.updateUserInfo(detail);
-                        System.out.println(result ? "Updated Successfully" : " Failed To Update");
+                        logContent(result ? "Updated Successfully" : " Failed To Update" , LoggerFactory.INFO, null);
                         out.println(result ? "Updated Successfully^"+detail.getDob()+"^"+detail.getGender() : " Failed To Update") ;
-                        System.out.println(out);
+                        logContent(out.toString() , LoggerFactory.INFO, null);;
                     }
                     catch (Exception e1) {
+                        logContent(e1.toString(), LoggerFactory.ERROR, e1);
                             out.println(e1.getMessage());
                     }  
                     finally
@@ -78,14 +80,14 @@ public class LoginInfoServlet extends CustomServlet {
                 default :
                 {
                     request.setAttribute("list", data.getAllUsers() );
-                    System.out.println(request.getAttribute("list"));
+                    logContent((String) request.getAttribute("list"), LoggerFactory.INFO, null);
                 }
             }
             data.closeAll();
         }
         catch(Exception e )
         {
-            e.printStackTrace();
+            logContent(e.toString(), LoggerFactory.ERROR, e);
             request.setAttribute("msg", e.getMessage());
         }
         finally

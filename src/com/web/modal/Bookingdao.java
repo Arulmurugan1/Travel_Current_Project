@@ -78,7 +78,7 @@ public class Bookingdao extends Generic{
 
 		List<Booking> ls = new ArrayList<>();
 		try {
-			ps = Dbmanager.getConnection().prepareStatement(SELECT_ALL_USERS);
+			ps = con.prepareStatement(SELECT_ALL_USERS);
 			System.out.println(ps);
 			rs = ps.executeQuery();
 			while (rs.next()) {

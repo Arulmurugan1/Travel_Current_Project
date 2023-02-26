@@ -1,16 +1,19 @@
 package com.web.util;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Properties;
 import java.util.Vector;
 
-import com.sun.istack.internal.FinalArrayList;
-
-public class Dbmanager {
+public class Dbmanager{
 	
 	
 	public static Connection con = null;
@@ -18,40 +21,56 @@ public class Dbmanager {
 	
 	public static Connection getConnection() 
 	{
-		try {
-			
-		final String Driver = "com.mysql.cj.jdbc.Driver";
-		final String Url = "jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false";
-		final String User = "root";
-		final String Password = "root";
-			
-//			--------Put it in classpath------
-//			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-//			InputStream input = classLoader.getResourceAsStream("foo.properties");
-			
-//			---- Put it in webcontent----
-//			InputStream input = getServletContext().getResourceAsStream("/WEB-INF/foo.properties");
-			
-//			---Put it in local disk file system--
-//			InputStream input = new FileInputStream("/absolute/path/to/foo.properties");
-			
-//			System.out.println(new File(".").getAbsolutePath());---to get absolute local file path
+	    try 
+	    {
+	        
+	        Properties prop = getConnectionProperties();
+	        
+	        if ( prop == null)
+	        {
+	            throw new RuntimeException("Sorry ! Unable to Load the DB Properties");
+	        }
+	        
+	        final String driver    = prop.getProperty("driver");
+	        final String Url       = prop.getProperty("url");
+	        final String User      = prop.getProperty("user");
+	        final String Password  = prop.getProperty("password");
+
+	        Class.forName(driver);
+	        
+	        con = DriverManager.getConnection(Url,User,Password);
+
+	    }catch (Exception e1) 
+	    {
+	        System.out.println(e1);
+	        error = e1.getMessage();
+	        return null;
+	    }
+	    return con;
+	}
 	
-//			InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
-//			Properties db = new Properties();
-//			db.load(f);
-			
+	public static Properties getConnectionProperties() throws IOException
+	{
+	    InputStream in = null;
+	    Properties prop = null;
+	    
+	    try
+	    {
+	        File f = new File("/Git/My Repository/Completed/Travel_Current_Project/Properties/dbConnection.properties");
 
-			
-			Class.forName(Driver);
-			con = DriverManager.getConnection(Url,User,Password);
+	        in = new FileInputStream(f);
 
-		}catch (Exception e1) 
-		{
-		    error = e1.getMessage();
-			return null;
-		}
-		return con;
+	        prop = new Properties();
+
+	        prop.load(in);
+
+	        return prop;
+	    }
+	    finally
+	    {
+	        in.close();
+	    }
+	    
 	}
 	
 	public static boolean insertObjects(String Query,Vector values) 
@@ -382,3 +401,27 @@ public class Dbmanager {
         
     }
 }
+
+
+
+
+
+
+
+
+
+//--------Put it in classpath------
+//ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+//InputStream input = classLoader.getResourceAsStream("foo.properties");
+
+//---- Put it in webcontent----
+//InputStream input = getServletContext().getResourceAsStream("/WEB-INF/foo.properties");
+
+//---Put it in local disk file system--
+//InputStream input = new FileInputStream("/absolute/path/to/foo.properties");
+
+//System.out.println(new File(".").getAbsolutePath());---to get absolute local file path
+
+//InputStream f = new FileInputStream("M:\\eclipse\\DB Connection\\dbdivers\\dbtaxi.properties");
+//Properties db = new Properties();
+//db.load(f);
