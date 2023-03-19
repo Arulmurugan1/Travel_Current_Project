@@ -75,9 +75,9 @@ public class Routedao extends Generic
 		rs = ps.executeQuery();
 
 		// Step 4: Process the ResultSet object.
-		while (rs.next()) {
-			int c =1;
-			users.add( new Route(rs.getString(c++), rs.getString(c++), rs.getString(c++)));
+		while (rs.next()) 
+		{
+			users.add( new Route(rs.getString("vehicle_no"), rs.getString("start"), rs.getString("end"),rs.getDouble("fare")));
 		}
 		return users;
 	}

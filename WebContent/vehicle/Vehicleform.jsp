@@ -1,10 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false"
+		user="root" password="root" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page import="java.util.*"%>
-<%@ include file="../dbconnection.jsp" %>
 
 <html>
 <head>
@@ -22,13 +26,9 @@
 	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"
 	type="text/javascript"></script>
 </head>
-<body style='overflow:hidden'>
-	<jsp:include page="../header.jsp" />
-	<div class="container" >
-		<div class="card border p-2" style="border-radius:30px">
+<body>
 			<form name=vehicle method="post">
-				<div class="card-body bg-white text-center">
-					<h2>Add New Vehicle</h2>
+				<div class="card-body text-white">
 					<div class="row d-flex justify-content-center">
 
 						<div class=col-auto>
@@ -74,19 +74,15 @@
 
 					</div>
 				</div>
-				<div class="row mt-2 mb-4 mt-3">
+				<div class="row m-3">
 					<div class="col text-center">
-					<c:if test="${mode!='E'}"><button type="button" class="btn btn-success button-length" onClick="Submit(document.vehicle)">Add</button></c:if>
-				    <c:if test="'${mode=='E'}"><button type="button" class="btn btn-danger button-length" onClick="Submit(document.vehicle)">Update</button></c:if>
+						<button type="button" class="btn btn-success button-length" onClick="Submit(document.vehicle)">Add</button>
 						<input type="reset" class="btn btn-success button-length"
-							value=Reset> <a href="Vehicle"
-							class="btn btn-success button-length">Back</a>
+							value=Reset> 
 					</div>
 				</div>
 
 			</form>
-		</div>
-	</div>
 
 	<script>
     		

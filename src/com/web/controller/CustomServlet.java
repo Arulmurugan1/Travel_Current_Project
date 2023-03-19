@@ -20,14 +20,14 @@ import org.apache.log4j.Level;
 import org.apache.log4j.PatternLayout;
 
 import com.web.common.LoggerFactory;
+import com.web.objects.Login_Info;
 
 @WebServlet("/CustomServlet")
 public class CustomServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     public String mode = null;
     private PrintStream ps = null;
-
-    private HttpServletRequest req = null ;
+    private HttpServletRequest req = null;
 
     public CustomServlet() {
         super();
@@ -36,12 +36,12 @@ public class CustomServlet extends HttpServlet {
     protected void service(HttpServletRequest request, Object d) throws ServletException, IOException {
 
         this.req = request;
-
-        mode = request.getParameter("mode") == null ? "" : request.getParameter("mode");
         
-        setFilePath(request);
+        mode = req.getParameter("mode") == null ? "" : req.getParameter("mode");
         
-        PrintDetails(request, d);
+        setFilePath();
+        
+        PrintDetails(d);
     }
 
     private void setLogAppenders(HttpSession session) 
@@ -74,13 +74,11 @@ public class CustomServlet extends HttpServlet {
 
     }
 
-    /**
-     * @param request
-     */
-    private void setFilePath(HttpServletRequest request) 
+
+    private void setFilePath() 
     {
 
-        if ( request.getSession().getAttribute("consoleFilePath") == null )
+        if ( req.getSession().getAttribute("consoleFilePath") == null )
         {
             String consoleFilePath = "/Git/My Repository/Completed/Travel_Current_Project/Logs/"
                     + LocalDate.now().toString().replaceAll("-", "/")  +"/Console";
@@ -93,43 +91,42 @@ public class CustomServlet extends HttpServlet {
             System.out.println("consoleFile =>"+consoleFilePath + consoleFileName);
             System.out.println("Log File Path =>"+loggerFilePath);
 
-            request.getSession().setAttribute("consoleFilePath", consoleFilePath);
-            request.getSession().setAttribute("consoleFileName", consoleFileName);
-            request.getSession().setAttribute("loggerFilePath", loggerFilePath);
+            req.getSession().setAttribute("consoleFilePath", consoleFilePath);
+            req.getSession().setAttribute("consoleFileName", consoleFileName);
+            req.getSession().setAttribute("loggerFilePath", loggerFilePath);
             
             System.out.println(" File Path Added to session ");
         }
 
-        setLogAppenders(request.getSession());
-        setConsoleLogPrintStream(request.getSession());
+//        setLogAppenders(request.getSession());  
+//        setConsoleLogPrintStream(req.getSession());
     }
 
     /**
      * @param request
      * @throws Exception
      */
-    protected void setParameters(HttpServletRequest request) throws Exception {
+    protected void setParameters() throws Exception {
 
-        Enumeration<String> e = request.getParameterNames();
+        Enumeration<String> e = req.getParameterNames();
 
         while (e.hasMoreElements()) {
             String s = e.nextElement();
-            String value = request.getParameter(s);
+            String value = req.getParameter(s);
 
-            request.setAttribute(s, value);
+            req.setAttribute(s, value);
         }
     }
 
     /**
-     * @param request
      * @param d
      */
-    private void PrintDetails(HttpServletRequest request, Object d) {
-        Enumeration<String> e = request.getParameterNames();
+    private void PrintDetails(Object d) {
+        Enumeration<String> e = req.getParameterNames();
 
         while (e.hasMoreElements()) {
             String s = e.nextElement();
-            String value = request.getParameter(s);
+            String value = req.getParameter(s);
 
             logContent(String.format(Locale.getDefault(),
                     " %-25s =>  %s " , s , value) , LoggerFactory.DEBUG, null);
@@ -196,9 +193,9 @@ public class CustomServlet extends HttpServlet {
      * @param logLevel
      * @param e
      */
-    public void logContent(String message, Level logLevel, Exception e) 
+    public void logContent(String message, Level logLevel, Exception e)
     {
-        LoggerFactory.displayDiffLogLevels(message, logLevel, e, this, this.req.getSession());
+        LoggerFactory.displayDiffLogLevels(message, logLevel, e, this);
     }
 
 }

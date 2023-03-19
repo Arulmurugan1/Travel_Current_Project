@@ -28,10 +28,17 @@
 <jsp:include page="../header.jsp" /> 
     
     <div class="container-fluid overflow-auto m-auto text-center">
+    	<div class="m-3"> 
         <c:if test="<%= adminUser %>">
-            <div class="m-3"> <a class="btn btn-success button-length w-25" href="Driver?mode=N">Add New Driver</a>
-            </div>
+            <a class="btn btn-success button-length w-25" href="Driver?mode=N">Add New Driver</a>
         </c:if>
+        	<button type=button class='btn btn-success button-length ml-2' onclick='location.reload();'>
+						<i class="fa fa-refresh mr-2"></i>Refresh
+			</button>
+			<a type=button class='btn btn-success button-length ml-2' href='home.jsp'>
+						<i class="fa fa-backward mr-2"></i>Back
+			</a>
+			</div>
         <div class=table-responsive>
         <table class="table table-bordered text-center text-white text-capitalize mt-2">
             <thead class="bg-primary">

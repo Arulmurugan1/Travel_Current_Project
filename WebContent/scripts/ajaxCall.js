@@ -1,4 +1,4 @@
-var request ;
+var request ,cities;
 
 $(document).ready(function() {
 
@@ -208,6 +208,32 @@ function dialog(request)
 	});
 	$('#editProfileAfterDialog').dialog('open');
 }
+
+function getLocationInfo(event)
+{
+	createRequest();
+	
+	try{
+		request.onreadystatechange= ()=> {
+			if(request.readyState ==4 )
+			{ 
+				if (request.responseText)
+				{
+					cities = request.responseText.split('\r\n');
+					LOCATION_INFO = cities ;
+					getLocations(event);
+				}
+			}
+		}
+		request.open("GET","locations/Locations.txt",true);  
+		request.send();  
+	}
+	catch(e)
+	{
+		alert(e);
+	}
+}
+
 function createRequest()
 {
 	if(window.XMLHttpRequest)

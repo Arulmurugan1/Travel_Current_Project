@@ -170,7 +170,7 @@ public class BookingServlet extends CustomServlet{
                 }
                 case "dummy" :
                 {
-                    super.setParameters(request);
+                    super.setParameters();
                 }
                 default :
                 {

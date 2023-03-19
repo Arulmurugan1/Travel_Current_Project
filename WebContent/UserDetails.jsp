@@ -25,13 +25,15 @@
 				{
 					for ( int i=1 ; i < list.size() ; i++ )
 					{
-							String id = ( (Vector)list.elementAt(i) ).elementAt(0).toString() ;
-							String Name = ( (Vector)list.elementAt(i) ).elementAt(1).toString() ;
-							String Password = ( (Vector)list.elementAt(i) ).elementAt(2).toString();
-							String age 		= ( (Vector)list.elementAt(i) ).elementAt(9).toString();
-							String gender = ( (Vector)list.elementAt(i) ).elementAt(3).toString() ;
-							String Last_Login = ( (Vector)list.elementAt(i) ).elementAt(7).toString();
-							String Status = ( (Vector)list.elementAt(i) ).elementAt(8).toString().equals("Y") ? "Approved" : "Pending";
+							Vector<String> data = (Vector)list.elementAt(i);
+
+							String id = data.elementAt(0) ;
+							String Name = data.elementAt(1) ;
+							String Password = data.elementAt(2);
+							String age 		= data.elementAt(9);
+							String gender = data.elementAt(3);
+							String Last_Login = data.elementAt(7);
+							String Status = data.elementAt(8).toString().equals("Y") ? "Approved" : "Pending";
 %>
       <div class="cards cards--two">
       <%

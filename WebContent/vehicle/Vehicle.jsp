@@ -24,14 +24,23 @@ td.no::before {
 </head>
 <body>
 	<jsp:include page="../header.jsp" />
-	<div
-		class="container-fluid mt-1 text-center">
+	<div class="container-fluid mt-1 text-center">
+		<div class="row">
+			<div class="col pt-4 pb-2 text-center">
 		<c:if test="<%= adminUser %>">
-			<div class="m-2">
-				<a class="btn btn-success button-length w-25"
-					href="Vehicle?mode=dummy">Add New Vehicle</a>
-			</div>
+				<button class="btn btn-success button-length " id=newVehicle>Add New Vehicle</button>
 		</c:if>
+			<button type=button class='btn btn-success button-length ml-2' onclick='location.reload();'>
+						<i class="fa fa-refresh mr-2"></i>Refresh
+			</button>
+			<button type=button class='btn btn-success button-length ml-2' onclick='history.back()'>
+						<i class="fa fa-backward mr-2"></i>Back
+			</button>
+			</div>	
+		</div>
+		<div id =vehicleForm>
+			<jsp:include page="Vehicleform.jsp"></jsp:include>
+		</div>
 		<div class="table-responsive table-wrapper">
 		<table
 			class="table table-bordered  text-center text-white text-capitalize">
@@ -73,5 +82,19 @@ td.no::before {
 			</tbody>
 		</table></div>
 	</div>
+	
+	<script type="text/javascript">
+	$(document).ready(()=>{
+		
+		$('#vehicleForm').hide();
+		
+		$('#newVehicle').click(()=>{
+			$('#vehicleForm').fadeToggle(500);
+		});
+	})
+		
+	</script>	
+	
+	
 </body>
 </html>

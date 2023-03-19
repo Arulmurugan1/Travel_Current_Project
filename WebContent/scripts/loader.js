@@ -34,32 +34,24 @@
 //}
 //};
 
-document.onreadystatechange = function() {
+document.onreadystatechange = ()=> {
+	
+	$("#load-content").show();
+	
 	if (document.readyState != "complete") 
 	{
-		document.querySelector("#load-content").style.visibility = "visible";
-		if ( document.querySelector(".container") !=null )
-		{
-			document.querySelector(".container").style.opacity = "0.3";
-		}
-		if ( document.querySelector("#announcement") !=null )
-		{
-			document.querySelector("#announcement").style.opacity = "0.3";
-		}
+		if ( $("div:not(#load-content)") )
+			$("div:not(#load-content)").css({opacity:0.3});
 	} 
 	else 
 	{
-		document.querySelector("#load-content").style.visibility = "hidden";
-		if ( document.querySelector(".container") !=null )
-		{
-			document.querySelector(".container").style.opacity = "1";
-		}
-		if( document.querySelector("#announcement") !=null )
-		{
-			document.querySelector("#announcement").style.opacity = "1";
-		}
+		$("#load-content").hide();
 		
-			callAlert();
+		if ( $("div:not(#load-content)") )
+			$("div:not(#load-content)").css({opacity:1});
+		
+		
+		callAlert();
 		
 	}
 };

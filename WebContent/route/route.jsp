@@ -28,15 +28,25 @@ td.no::before {
 	<jsp:include page="../header.jsp" />
 
 	<div class="container-fluid mt-1">
-		<c:if test="<%= adminUser %>">
-			<div class="d-flex justify-content-center mb-2 mt-2">
+		<div class="d-flex justify-content-center mb-2 mt-2">
 				<div class="w-100 text-center">
+		<c:if test="<%= adminUser %>">
+			
 					<button class="btn btn-success button-length add w-25">Add
 						Route</button>
-				</div>
-			</div>
+				
 		</c:if>
-
+		
+		<button type=button class='btn btn-success button-length ml-2'
+						onclick='location.reload();'>
+						<i class="fa fa-refresh mr-2"></i>Refresh
+					</button>
+					<a type=button class='btn btn-success button-length ml-2'
+						href='home.jsp'>
+						<i class="fa fa-backward mr-2"></i>Back
+					</a>
+</div>
+			</div>
 		<form name=route method=post>
 			<div id=insert style="margin-bottom: 20px; color: white;">
 				<input type="hidden" name=mode id=mode value=''>
@@ -82,11 +92,6 @@ td.no::before {
 					<div class="col text-center">
 						<button type=button class="btn btn-danger button-length mt-4"
 							onclick="Submit(document.route)">Finish</button>
-						<button type=button
-							class='btn btn-success button-length ml-2 mt-4'
-							onclick='location.reload();'>
-							<i class="fa fa-refresh mr-2"></i>Refresh
-						</button>
 					</div>
 				</div>
 

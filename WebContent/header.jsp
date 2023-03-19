@@ -11,7 +11,7 @@
             border: 2px solid brown;  
             color: white;  
             font-weight: bold; 
-         }  
+         }
 </style>  
 	<div id=editProfileDialog>
 		<jsp:include page="/editprofile.jsp"></jsp:include>
@@ -68,6 +68,7 @@
 		</div>
 		<div class="adminContent text-center p-2">
 			<div>
+				<i class="fa fa-wifi" aria-hidden="true" style="font-size:30px;"></i>				
 			<c:choose>
 				<c:when test="${sessionScope.role == 'Admin'}">
 				Hi ${sessionScope.user}<i class="fa fa-thumbs-up ml-2" aria-hidden="true"></i><span class=ml-2>Role:${sessionScope.role}<i class="fa fa-unlock ml-2" style="font-size:25px;" aria-hidden="true"></i></span>
@@ -77,22 +78,32 @@
 				</c:otherwise>
 			</c:choose>			
 			</div>
-			<div class="dropdown pt-3">
-				<span class=dropbtn> 
-					<i class="fa fa-hand-o-right mr-3" aria-hidden="true"></i> More 
-					<i class="fa fa-caret-down ml-2" aria-hidden="true"></i>
-				</span>
-				<div class=dropdown-content>
-					<a href="home.jsp">
-						<i class="fa fa-home mr-2 text-success" aria-hidden="true"></i>
-								Home
-					</a>
-					<a href="javascript:editProfile()">
-						<i class="fa fa-user mr-2" aria-hidden="true"></i>
-								Edit Profile
+<!-- 			<div class="dropdown pt-3"> -->
+<!-- 				<span class=dropbtn>  -->
+<!-- 					<i class="fa fa-hand-o-right mr-3" aria-hidden="true"></i> More  -->
+<!-- 					<i class="fa fa-caret-down ml-2" aria-hidden="true"></i> -->
+<!-- 				</span> -->
+<!-- 				<div class=dropdown-content> -->
+<!-- 					<a href="home.jsp"> -->
+<!-- 						<i class="fa fa-home mr-2 text-success" aria-hidden="true"></i> -->
+<!-- 								Home -->
+<!-- 					</a> -->
+<!-- 					<a href="javascript:editProfile()"> -->
+<!-- 						<i class="fa fa-user mr-2" aria-hidden="true"></i> -->
+<!-- 								Edit Profile -->
+<!-- 					</a>  -->
+<!-- 					<a href="Login?mode=L"><i class="fa fa-power-off mr-2 text-danger" aria-hidden="true"></i>Logout</a> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+
+
+			<div class="pt-3">
+				<a href="home.jsp" class="mr-2"><i class="fa fa-home mr-2 text-success" aria-hidden="true"></i>
+						Home</a>
+					<a href="javascript:editProfile()" class="mr-2">
+						<i class="fa fa-user mr-2 text-dark" aria-hidden="true"></i>Edit Profile
 					</a> 
-					<a href="Login?mode=L"><i class="fa fa-power-off mr-2 text-danger" aria-hidden="true"></i>Logout</a>
-				</div>
+					<a href="Login?mode=L" class="mr-2"><i class="fa fa-power-off mr-2 text-danger" aria-hidden="true"></i>Logout</a>
 			</div>
 		</div>
 	</div>

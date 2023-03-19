@@ -6,9 +6,11 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
+import com.web.common.Generic;
+import com.web.common.LoggerFactory;
 import com.web.objects.Route;
 
-public class HibernateHelper
+public class HibernateHelper extends Generic
 {
     private static Session session;
     private static SessionFactory factory ;
@@ -24,7 +26,7 @@ public class HibernateHelper
     {
         try
         {
-            System.out.println("crud "+crud);
+            logContent("Crud =>"+crud, LoggerFactory.INFO, null);
             session = getSession();
             t = session.beginTransaction();
             if ( crud.equalsIgnoreCase("I") || crud.equalsIgnoreCase("U") )

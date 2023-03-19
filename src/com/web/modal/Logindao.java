@@ -122,14 +122,19 @@ public class Logindao extends Generic{
                     }
                     else if (rs.getMetaData().getColumnName(i).equals("dob") )
                     {
-                        String[] Date = rs.getString(i).split("-");
+                            String[] Date = rs.getString(i).split("-");
+                            
+                            if ( Date.length == 3)
+                            {
 
-                        LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
+                                LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
 
-                        Period diff = Period.between( date, LocalDate.now() );
+                                Period diff = Period.between( date, LocalDate.now() );
 
-                        v1.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
-
+                                v1.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
+                            }
+                            else
+                                v1.add(" ");
                     }
                     else
                     {
@@ -139,6 +144,7 @@ public class Logindao extends Generic{
                 {
                     v1.add(" ");
                     e.printStackTrace();
+                    continue;
                 }
                 
             }

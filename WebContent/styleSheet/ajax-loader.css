@@ -1,4 +1,12 @@
 
+a{
+	text-decoration:none;
+	color: black;
+}
+a:hover 
+{
+	text-decoration:none;
+}
 
 .loader-ajax {
   font-size: 10px;

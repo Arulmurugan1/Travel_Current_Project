@@ -20,10 +20,10 @@
 						onclick='location.reload();'>
 						<i class="fa fa-refresh mr-2"></i>Refresh
 					</button>
-					<button type=button class='btn btn-success button-length ml-2'
-						onclick='history.back()'>
+					<a type=button class='btn btn-success button-length ml-2'
+						href=home.jsp>
 						<i class="fa fa-backward mr-2"></i>Back
-					</button>
+					</a>
 				</div>
 			</div>
 	<div class="my-auto">

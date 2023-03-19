@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Level;
+
 import com.web.objects.AccessLog;
 import com.web.util.Dbmanager;
 
@@ -71,5 +73,9 @@ public abstract class Generic
         System.out.println("Access Log Entered "+( ps.executeUpdate() > 0 ) );
 
     } 
-
+    
+    public static void logContent(String message, Level logLevel, Exception e) 
+    {
+        LoggerFactory.displayDiffLogLevels(message, logLevel, e,Object.class);
+    }
 }

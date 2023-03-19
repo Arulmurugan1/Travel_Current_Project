@@ -124,7 +124,6 @@ thead>tr>th {
 
 .table-wrapper {
 	overflow-y: scroll;
-	max-height: 64.1vh;
 }
 
 button:hover, input.button:hover {
@@ -192,7 +191,7 @@ h5 {
 }
 
 .button-length {
-	width: 100px;
+	width: 160px;
 	border-radius: 30px;
 }
 

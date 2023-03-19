@@ -28,7 +28,7 @@
 								class="fa fa-users" aria-hidden="true"></i>Drivers</a>
 						</div>
 						<div class="col-sm-12 col-md-6 col-lg-4 ">
-							<a class="home-button" onclick="Submit('RouteNew')"><i
+							<a class="home-button" onclick="Submit('Route')"><i
 								class="fa fa-road" aria-hidden="true"></i>Routes</a>
 						</div>
 						<c:if test="<%= adminUser %>">

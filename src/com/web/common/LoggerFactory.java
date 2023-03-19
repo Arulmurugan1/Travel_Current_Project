@@ -1,15 +1,12 @@
 package com.web.common;
-import javax.servlet.http.HttpSession;
-
-import org.apache.log4j.Appender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
 public class LoggerFactory
 {
     private static Logger logger = null;
-    private static Appender appender ;
-    
+//  private static Appender appender ;
+
     public static Level INFO   = Level.INFO;
     public static Level ERROR  = Level.ERROR;
     public static Level DEBUG  = Level.DEBUG;
@@ -20,35 +17,35 @@ public class LoggerFactory
      * @param logLevel
      * @param fileName
      * @param exception
+     * @param d 
      * @param d
-     * @param session
+     * @param logInfo
+     * @param request 
      */
-    public static void displayDiffLogLevels(String whattoprint,Level logLevel, Exception exception, Object d,HttpSession session) 
+    public static void displayDiffLogLevels(String whattoprint,Level logLevel, Exception exception, Object d) 
     {
         try {
-
+            
             logger = Logger.getLogger(d.getClass());
-            
-            appender = (Appender) session.getAttribute("loggerappender");
-            
-            logger.addAppender(appender);
-            
+
+            //            appender = (Appender) session.getAttribute("loggerappender");
+
+            //            logger.addAppender(appender);
+
             if ( exception !=null)
             {
-                logger.log(logLevel
-                        , "["+session.getAttribute("user_id")+"] - "+ whattoprint+" ** Error in ***"
-                                +exception.getClass().getCanonicalName() +" => "+exception.getMessage());
-            }   
+                    logger.log(logLevel
+                            , whattoprint+" ** Error in ***"
+                                    +exception.getClass().getCanonicalName() +" => "+exception.getMessage());
+            }         
             else
             {
-                logger.log(logLevel,"["+session.getAttribute("user_id")+"] - "+whattoprint);
+               logger.log(logLevel,whattoprint);
             }
-                
-            
-            
+
         }catch(Exception e)
         {
-            System.out.println(e);
+            throw e ;
         }
 
     }    

@@ -18,12 +18,15 @@ public class Dbmanager{
 	
 	public static Connection con = null;
 	public static String error   = null ;
+
+    private static InputStream in = null ; 
+    private static Properties prop = null ;
+    
 	
 	public static Connection getConnection() 
 	{
 	    try 
 	    {
-	        
 	        Properties prop = getConnectionProperties();
 	        
 	        if ( prop == null)
@@ -50,10 +53,7 @@ public class Dbmanager{
 	}
 	
 	public static Properties getConnectionProperties() throws IOException
-	{
-	    InputStream in = null;
-	    Properties prop = null;
-	    
+	{   
 	    try
 	    {
 	        File f = new File("/Git/My Repository/Completed/Travel_Current_Project/Properties/dbConnection.properties");
@@ -78,8 +78,6 @@ public class Dbmanager{
 		boolean result = false ;
 		Connection con = null;
 		PreparedStatement ps = null ;		
-		ResultSet rs = null ;
-		
 		con = getConnection();
 		
 		if (Query.length() > 0 && values.size() > 0)
