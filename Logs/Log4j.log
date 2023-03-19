@@ -1343,3 +1343,69 @@
 [19-03-2023 12:25:32:032 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
 [19-03-2023 12:25:33:033 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-19T12:21:59 
 [19-03-2023 12:25:33:033 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  login  
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  txtUser                   =>  arul  
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  txtPassword               =>  arul  
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  username                  =>    
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  pass1                     =>    
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  pass2                     =>    
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-19T12:25:33 
+[19-03-2023 12:26:50:050 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  login  
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  txtUser                   =>  arul  
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  txtPassword               =>  arul  
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  username                  =>    
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  pass1                     =>    
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  pass2                     =>    
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-19T12:26:50 
+[19-03-2023 12:29:48:048 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[19-03-2023 12:30:20:020 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:32:48:048 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:33:56:056 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:36:19:019 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:41:34:034 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:43:25:025 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:44:50:050 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:47:50:050 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:48:47:047 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:50:20:020 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 12:51:22:022 PM IST] DEBUG CustomerServlet[Line:43] -  mode                      =>    
+[19-03-2023 01:07:33:033 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  L  
+[19-03-2023 01:07:33:033 PM IST] DEBUG LoginServlet[Line:43] - Session On Logout org.apache.catalina.session.StandardSessionFacade@492aa695 
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  login  
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  txtUser                   =>  arul  
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  txtPassword               =>  arul  
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  username                  =>    
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  pass1                     =>    
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  pass2                     =>    
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-19T12:29:48 
+[19-03-2023 01:07:35:035 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  login  
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  txtUser                   =>  arul  
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  txtPassword               =>  arul  
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  username                  =>    
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  pass1                     =>    
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  pass2                     =>    
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-19T13:07:35 
+[19-03-2023 01:07:48:048 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[19-03-2023 01:07:51:051 PM IST] DEBUG BookingServlet[Line:43] -  mode                      =>    
+[19-03-2023 01:07:57:057 PM IST] DEBUG AjaxServlet[Line:43] -  status                    =>  Confirmed  
+[19-03-2023 01:07:57:057 PM IST] DEBUG AjaxServlet[Line:43] -  booking_no                =>  84  
+[19-03-2023 01:07:57:057 PM IST] DEBUG AjaxServlet[Line:43] - VehicleNo [null] Vehicle Model [null] 
+[19-03-2023 01:07:57:057 PM IST] INFO  AjaxServlet[Line:43] - Inside ajax 
+[19-03-2023 01:07:57:057 PM IST] DEBUG AjaxServlet[Line:43] - Connection [null] Statement [null] Resultset [null] 
+[19-03-2023 01:13:09:009 PM IST] DEBUG LoginInfoServlet[Line:43] -  mode                      =>    
+[19-03-2023 01:13:09:009 PM IST] ERROR LoginInfoServlet[Line:37] - java.lang.ClassCastException: java.util.Vector cannot be cast to java.lang.String ** Error in ***java.lang.ClassCastException => java.util.Vector cannot be cast to java.lang.String 
+[19-03-2023 01:13:27:027 PM IST] DEBUG DriverServlet[Line:43] -  mode                      =>    
+[19-03-2023 01:13:29:029 PM IST] DEBUG DriverServlet[Line:43] -  mode                      =>  N  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  mode                      =>  I  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  driver_name               =>  Saravanan  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  age                       =>  29  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  gender                    =>  Male  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  phone                     =>  8754191725  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  city                      =>  Chennai  
+[19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  vehicle_no                =>  5673  
