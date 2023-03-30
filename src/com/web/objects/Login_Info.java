@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 public class Login_Info {
     public String username;
     public String password1;
+    public String password2;
     public String role;
     public LocalDateTime create_time;
     public String user_id;
@@ -13,6 +14,28 @@ public class Login_Info {
     public String dob;
     public String gender;
     public String status;
+    
+    
+
+    public String getPassword1() {
+        return this.password1;
+    }
+
+
+    public void setPassword1(String password1) {
+        this.password1 = password1;
+    }
+
+
+    public String getPassword2() {
+        return this.password2;
+    }
+
+
+    public void setPassword2(String password2) {
+        this.password2 = password2;
+    }
+
 
     public String getDob() {
         return this.dob;
@@ -102,10 +125,11 @@ public class Login_Info {
 
     @Override
     public String toString() {
-        return "Login [username=" + this.username + ", password1=" + this.password1 + ", role=" + this.role
-                + ", create_time=" + this.create_time + ", user_id=" + this.user_id + ", altered_user="
-                + this.altered_user + ", last_login=" + this.last_login + ", dob=" + this.dob + ", gender="
-                + this.gender + ", status=" + this.status + "]";
+        return "Login_Info [username=" + this.username + ", password1=" + this.password1 + ", password2="
+                + this.password2 + ", role=" + this.role + ", create_time=" + this.create_time + ", user_id="
+                + this.user_id + ", altered_user=" + this.altered_user + ", last_login=" + this.last_login + ", dob="
+                + this.dob + ", gender=" + this.gender + ", status=" + this.status + "]";
     }
-
+    
+    
 }

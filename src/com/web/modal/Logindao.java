@@ -78,6 +78,7 @@ public class Logindao extends Generic{
 
         while(rs.next()) {
             u.setUsername(rs.getString("username"));
+            u.setPassword2(rs.getString("password2"));
             u.setPassword(rs.getString("password1"));
             u.setRole(rs.getString("role"));
             u.setUser_id(rs.getString("user_id"));
@@ -91,7 +92,6 @@ public class Logindao extends Generic{
     public Vector<Object> getAllUsers()throws SQLException
     {
         Vector<String> v1 = new Vector<>();
-        Vector<String> v3 = new Vector<>();
         Vector<Object> v2 = new Vector<>();
 
         ps =con.prepareStatement(SELECT_ALL_USERS,ResultSet.TYPE_FORWARD_ONLY);
@@ -108,14 +108,16 @@ public class Logindao extends Generic{
             {
                 for ( int i1 = 1 ; i1 <= columnCount ; i1++ )
                 {
-                    v3.add( StringChecker.Init(rs.getMetaData().getColumnName(i1).toLowerCase()) );
+                    v1.add( StringChecker.Init(rs.getMetaData().getColumnName(i1).toLowerCase()) );
                 }
-                v2.addElement(v3.clone());
+                v2.addElement(v1.clone());
             }
             for ( int i = 1 ; i <= columnCount ; i++ )
             {
                 try
                 {
+                    v1.clear();
+                    
                     if( rs.getMetaData().getColumnTypeName(i).equals("DATETIME"))
                     {
                         v1.add( ((LocalDateTime) rs.getObject(i)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
@@ -149,7 +151,6 @@ public class Logindao extends Generic{
                 
             }
             v2.addElement(v1.clone());
-            v1.clear();
             index++;
         }
         return v2;

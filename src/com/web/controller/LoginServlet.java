@@ -15,7 +15,6 @@ import com.web.common.Constant;
 import com.web.common.LoggerFactory;
 import com.web.modal.Logindao;
 import com.web.objects.Login_Info;
-import com.web.util.Dbmanager;
 
 
 @WebServlet("/Login")
@@ -53,6 +52,8 @@ public class LoginServlet extends CustomServlet {
 
                 if( u.getUser_id() != null ) 
                 {
+                    
+                    
                     
                     logContent( " Last Login "+u.getLast_login(), LoggerFactory.DEBUG, null);
 

@@ -27,8 +27,8 @@
 							<div class="row">
 								<div class="col-auto mb-3">
 									<label for="username">Enter UserName </label> <input
-										type="text" class="form-control " name="txtUser"
-										maxlength="30" value="${txtuser}" size="25" autocomplete="on" spellcheck="false" >
+										type="text" class="form-control " name="txtUser" id=txtUser
+										maxlength="30" value="${txtuser}" size="25" autocomplete="off" spellcheck="false" >
 								</div>
 							</div>
 							<div class="row">
@@ -36,11 +36,11 @@
 									<label for="password">Enter Password </label>
 									<div class=input-group>
 										<input type="password" class="form-control "
-											name="txtPassword" maxlength="15" value="">
+											name="txtPassword" id=txtPassword maxlength="15" value="" autocomplete="off">
 										<div class=input-group-append>
 											<div class=input-group-text>
 												<span onclick="Check()"><i
-													class="fa fa-eye-slash check-icon" aria-hidden="true" ></i></span>
+													class="fa fa-eye-slash check-icon"  aria-hidden="true" ></i></span>
 											</div>
 										</div>
 									</div>
@@ -124,4 +124,5 @@
 	</div>
 
 	<script src="./scripts/index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

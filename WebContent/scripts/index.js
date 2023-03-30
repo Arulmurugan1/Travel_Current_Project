@@ -17,7 +17,7 @@ function Submit(mode)
 					$('button').empty();
 					$('button').append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
 				});
-				action = "Login?mode=" + mode;
+				action = "Login?mode=" + mode +"&encodePassword="+encodeHashing();
 				submit();
 			}
 		}
@@ -62,4 +62,13 @@ function Check()
 		$('.check-icon').addClass('fa-eye');
 		document.form.txtPassword.type ='text';
 	}
+}
+
+function encodeHashing()
+{
+	const password = $('#txtPassword').val();
+	const salt = "jghdquytzqbnixqgevytbeuyxbqe";
+	const encodedPassword = CryptoJS.SHA256(password + salt).toString();
+	return encodedPassword ; 
+	
 }

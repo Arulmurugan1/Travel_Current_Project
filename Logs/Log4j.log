@@ -1409,3 +1409,27 @@
 [19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  phone                     =>  8754191725  
 [19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  city                      =>  Chennai  
 [19-03-2023 01:13:53:053 PM IST] DEBUG DriverServlet[Line:43] -  vehicle_no                =>  5673  
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  login  
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  txtUser                   =>  arul  
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  txtPassword               =>  arul  
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  username                  =>    
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  pass1                     =>    
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  pass2                     =>    
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-19T13:07:48 
+[25-03-2023 05:24:38:038 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[25-03-2023 05:24:45:045 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  L  
+[25-03-2023 05:24:45:045 PM IST] DEBUG LoginServlet[Line:43] - Session On Logout org.apache.catalina.session.StandardSessionFacade@202d4666 
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  login  
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  txtUser                   =>  arul  
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  txtPassword               =>  arul  
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  username                  =>    
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  pass1                     =>    
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  pass2                     =>    
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  user_id                   =>    
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] -  Last Login 2023-03-25T17:24:38 
+[25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
+[25-03-2023 05:25:04:004 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  L  
+[25-03-2023 05:25:04:004 PM IST] DEBUG LoginServlet[Line:43] - Session On Logout org.apache.catalina.session.StandardSessionFacade@31096f76 
