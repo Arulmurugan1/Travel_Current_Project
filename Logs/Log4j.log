@@ -1433,3 +1433,241 @@
 [25-03-2023 05:25:00:000 PM IST] DEBUG LoginServlet[Line:43] - DB UserId : arul Username : Arulmurugan Password : arul 
 [25-03-2023 05:25:04:004 PM IST] DEBUG LoginServlet[Line:43] -  mode                      =>  L  
 [25-03-2023 05:25:04:004 PM IST] DEBUG LoginServlet[Line:43] - Session On Logout org.apache.catalina.session.StandardSessionFacade@31096f76 
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 09:51:20:020 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 09:51:36:036 PM IST] DEBUG LoginServlet[Line:49] - Exception in Login Servlet ** Error in ***java.lang.NullPointerException => null 
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 10:07:56:056 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 10:08:12:012 PM IST] DEBUG LoginServlet[Line:49] - Exception in Login Servlet ** Error in ***java.lang.NullPointerException => null 
+[01-04-2023 10:10:09:009 PM IST] DEBUG LoginServlet[Line:49] - Exception in Login Servlet ** Error in ***java.lang.NullPointerException => null 
+[01-04-2023 10:17:01:001 PM IST] DEBUG LoginServlet[Line:49] - Exception in Login Servlet ** Error in ***java.lang.NullPointerException => null 
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 10:38:33:033 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 10:38:34:034 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-03-25T17:25 
+[01-04-2023 10:38:34:034 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-01T22:38:34 
+[01-04-2023 10:43:41:041 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-01T22:43:41 
+[01-04-2023 10:44:13:013 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-01T22:44:13 
+[01-04-2023 10:44:49:049 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-01T22:44:49 
+[01-04-2023 10:45:10:010 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[01-04-2023 10:45:48:048 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[01-04-2023 10:46:32:032 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[01-04-2023 10:46:47:047 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[01-04-2023 10:46:54:054 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[01-04-2023 10:47:29:029 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[01-04-2023 10:47:30:030 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[01-04-2023 10:50:06:006 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[01-04-2023 10:50:59:059 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-01T22:45:10 
+[02-04-2023 11:53:08:008 AM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[02-04-2023 11:53:38:038 AM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 11:54:48:048 AM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 11:58:13:013 AM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:02:29:029 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:03:25:025 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:05:02:002 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:06:33:033 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:12:01:001 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:12:56:056 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:13:30:030 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:18:30:030 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:24:39:039 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:28:57:057 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:30:12:012 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:30:58:058 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:31:48:048 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:32:14:014 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:34:57:057 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:35:25:025 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:42:18:018 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:44:50:050 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 12:46:05:005 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  Confirmed  
+[02-04-2023 12:46:05:005 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  22  
+[02-04-2023 12:46:05:005 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 12:46:05:005 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 12:46:05:005 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 12:46:08:008 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  Confirmed  
+[02-04-2023 12:46:08:008 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  21  
+[02-04-2023 12:46:08:008 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 12:46:08:008 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 12:46:08:008 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 12:46:46:046 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  Confirmed  
+[02-04-2023 12:46:46:046 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  34  
+[02-04-2023 12:46:46:046 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 12:46:46:046 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 12:46:46:046 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 01:05:26:026 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:05:54:054 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:07:12:012 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>  D  
+[02-04-2023 01:07:12:012 PM IST] DEBUG BookingServlet[Line:55] -  booking_no                =>  1  
+[02-04-2023 01:07:12:012 PM IST] DEBUG BookingServlet[Line:55] -  customer_id               =>  1  
+[02-04-2023 01:07:12:012 PM IST] INFO  BookingServlet[Line:55] - Booking deleted  
+[02-04-2023 01:07:19:019 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:10:12:012 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:11:58:058 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:14:01:001 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:14:34:034 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:14:49:049 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  Confirmed  
+[02-04-2023 01:14:49:049 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  71  
+[02-04-2023 01:14:49:049 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 01:14:49:049 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 01:14:49:049 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 01:14:53:053 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  RAC  
+[02-04-2023 01:14:53:053 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  72  
+[02-04-2023 01:14:53:053 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 01:14:53:053 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 01:14:53:053 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 01:14:55:055 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  Confirmed  
+[02-04-2023 01:14:55:055 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  73  
+[02-04-2023 01:14:55:055 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 01:14:55:055 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 01:14:55:055 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 01:15:09:009 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  Confirmed  
+[02-04-2023 01:15:09:009 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  74  
+[02-04-2023 01:15:09:009 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 01:15:09:009 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 01:15:09:009 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 01:15:29:029 PM IST] DEBUG AjaxServlet[Line:55] -  status                    =>  RAC  
+[02-04-2023 01:15:29:029 PM IST] DEBUG AjaxServlet[Line:55] -  booking_no                =>  75  
+[02-04-2023 01:15:29:029 PM IST] DEBUG AjaxServlet[Line:55] - VehicleNo [null] Vehicle Model [null] 
+[02-04-2023 01:15:29:029 PM IST] INFO  AjaxServlet[Line:55] - Inside ajax 
+[02-04-2023 01:15:29:029 PM IST] DEBUG AjaxServlet[Line:55] - Connection [null] Statement [null] Resultset [null] 
+[02-04-2023 01:16:06:006 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 01:16:13:013 PM IST] DEBUG BookingServlet[Line:55] -  mode                      =>    
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-02T11:53:08 
+[02-04-2023 08:03:48:048 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[02-04-2023 08:03:57:057 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[02-04-2023 08:03:59:059 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 08:07:11:011 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 08:07:39:039 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 08:12:13:013 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-02T20:03:48 
+[02-04-2023 08:12:25:025 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[02-04-2023 08:12:30:030 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[02-04-2023 08:12:31:031 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 08:14:07:007 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-02T20:12:25 
+[02-04-2023 09:17:52:052 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-02T21:17:52 
+[02-04-2023 09:18:36:036 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[02-04-2023 09:18:43:043 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[02-04-2023 09:18:44:044 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:22:21:021 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:25:53:053 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:27:49:049 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:32:52:052 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:35:06:006 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  login  
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  txtUser                   =>  arul  
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  txtPassword               =>  arul  
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  username                  =>    
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  pass1                     =>    
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  pass2                     =>    
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  user_id                   =>    
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] -  Last Login 2023-04-02T21:18:36 
+[02-04-2023 09:35:38:038 PM IST] DEBUG LoginServlet[Line:55] - DB UserId : arul Username : Arulmurugan Password : arul 
+[02-04-2023 09:35:42:042 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[02-04-2023 09:35:44:044 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:42:33:033 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:42:42:042 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:42:47:047 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 09:49:12:012 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 10:22:34:034 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 10:33:23:023 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>  N  
+[02-04-2023 10:33:57:057 PM IST] DEBUG DriverServlet[Line:55] -  mode                      =>    
+[02-04-2023 10:34:01:001 PM IST] DEBUG LoginServlet[Line:55] -  mode                      =>  L  
+[02-04-2023 10:34:01:001 PM IST] DEBUG LoginServlet[Line:55] - Session On Logout org.apache.catalina.session.StandardSessionFacade@408d4d63 

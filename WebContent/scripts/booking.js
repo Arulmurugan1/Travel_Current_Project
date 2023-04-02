@@ -1,89 +1,97 @@
-	function popupResult(result) 
-	{
-		var info = result.split(',');
-		with (document.booking) {
-			
-			if (info.length > 0) 
-			{
-				$('#booking_no').val(info[0]);
-				$('#customer_id').val(info[1]);
-				$('#fare').val(info[2]);
-				$('#booking_no').css({
-					"backgroundColor" : "green",
-					"color":"yellow",
-					"cursor":"auto"
-				});
-				$('#customer_id').css({
-					"backgroundColor" : "green",
-					"color":"yellow",
-					"cursor":"auto"
-				});
-				$('#fare').css({
-					"backgroundColor" : "green",
-					"color":"yellow",
-					"cursor":"auto"
-				});
-			}
-		}
-	}
-	
-		$('#booking_no').css({
-			"backgroundColor" : "grey",
-			"cursor":"not-allowed"
-		});
-		$('#customer_id').css({
-			"backgroundColor" : "grey",
-			"cursor":"not-allowed"
-		});
-		$('#fare').css({
-			"backgroundColor" : "grey",
-			"cursor":"not-allowed"
-		});
 
-	function Open(arr) 
-	{
-		$('.info-content').show();
-		
-		for ( var i in arr) 
-			$('#c' + i ).val(arr[i]);
-	}
-	function gridCall()
-	{
-		if ( ADMIN_USER )
+const statusColor = 
+{ 
+		WIP 				: "btn-danger" , 
+		RAC					: "btn-primary" , 
+		Confirmed 		 	: "btn-success" ,
+		"Booking Status" 	: "btn-warning"
+} , Info_Content = '.info-content' ;
+
+function popupResult(result) 
+{
+	var info = result.split(',');
+	with (document.booking) {
+
+		if (info.length > 0) 
 		{
-					$('tbody tr td button').removeClass();
-					$('tbody tr td button').addClass('btn dropdown-toggle ');
-					
-					for ( var i=0;i < $('tbody tr td button').length ;i++)
-					{
-						if ( $('tbody tr td button')[i].innerText.trim() == "WIP"){
-							$('tbody tr td button')[i].classList.add('btn-danger');
-						}
-						else if ( $('tbody tr td button')[i].innerText.trim() == "RAC"){
-							$('tbody tr td button')[i].classList.add('btn-primary');
-						}
-						else if ( $('tbody tr td button')[i].innerText.trim() == "Confirmed"){
-							$('tbody tr td button')[i].classList.add('btn-success');
-						}
-						else{
-							$('tbody tr td button')[i].classList.add('btn-warning');
-						}
-					}
+			$('#booking_no').val(info[0]);
+			$('#customer_id').val(info[1]);
+			$('#fare').val(info[2]);
+
+			$('fieldset label input').css({
+				backgroundColor : "green",
+				color:"yellow",
+				cursor:"auto"
+			});
 		}
 	}
-	
-	gridCall();
-	
-	
-	$(document).ready(()=>{
-		$('button').css({
-			"border-radius" : "25px",
-			"padding" : "5px"
+}
+
+$('fieldset label input').css({
+	backgroundColor : "grey",
+	cursor:"not-allowed"
+});
+
+$('td a.user-detail').click( (e) => {
+
+	$(Info_Content).show();
+
+	const detail = $(e.target).find('#detail').text().split(',') ;
+
+	for ( const i in detail) 
+		$('#c' + i ).val(detail[i]);
+
+
+});
+
+
+function bookingStatusCall()
+{
+	if ( ADMIN_USER )
+	{
+		let bg_color , target ='tbody tr td button' ;
+
+		$(target).removeClass();
+		$(target).addClass('btn dropdown-toggle ');
+
+		$(target).each( (index,element)=>
+		{
+			bg_color = statusColor[$.trim( $(element).text() )] ; 	
+
+			if ( bg_color )
+				$(element).addClass(bg_color);
+			else
+				$(element).addClass('btn-dark');
 		});
-		
-		$('a.status').click((e)=>{
-			callAjax(e.target.getAttribute('status'),e.target.id);
-		});
-		
-		
+	}
+}
+
+
+bookingStatus();
+
+function successGridCall(element,status)
+{
+	if ( ADMIN_USER )
+	{
+		$(element).removeClass();
+		$(element).addClass('btn dropdown-toggle '+statusColor[status]);
+	}
+}
+
+
+$(document).ready(()=>{
+	$('button').css({
+		"border-radius" : "25px",
+		padding : "5px"
 	});
+
+	$('a.status').click((e)=>{
+		callAjax(e.target.getAttribute('status'),e.target.id);
+	});
+
+	$(this).mousedown( (e) =>{ 
+		if( !$(Info_Content).has(e.target)[0] )
+			$(Info_Content).hide(); 
+	});
+
+});

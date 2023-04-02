@@ -26,6 +26,18 @@ public class LoggerFactory
     {
         try {
             
+            boolean isLoggable = false ;
+            
+            if ( isLoggable )
+            {
+                if( exception !=null && exception instanceof Throwable)
+                    exception.printStackTrace();
+                else
+                    System.out.println(whattoprint);
+                
+                return;
+            }
+            
             logger = Logger.getLogger(d.getClass());
 
             //            appender = (Appender) session.getAttribute("loggerappender");

@@ -1,0 +1,80 @@
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.53
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 6 2021 19:09:00 UTC
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.53.0
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\conf\logging.properties
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2023 09:52:50.536 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\temp
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01-Apr-2023 09:52:50.552 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+01-Apr-2023 09:52:51.027 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1000"]
+01-Apr-2023 09:52:51.058 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [798] milliseconds
+01-Apr-2023 09:52:51.106 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Apr-2023 09:52:51.106 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.53]
+01-Apr-2023 09:52:51.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\docs]
+01-Apr-2023 09:52:51.532 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [142] milliseconds.
+01-Apr-2023 09:52:51.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\docs] has finished in [449] ms
+01-Apr-2023 09:52:51.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\examples]
+01-Apr-2023 09:52:52.273 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\examples] has finished in [703] ms
+01-Apr-2023 09:52:52.273 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\host-manager]
+01-Apr-2023 09:52:52.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\host-manager] has finished in [32] ms
+01-Apr-2023 09:52:52.305 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\manager]
+01-Apr-2023 09:52:52.336 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\manager] has finished in [31] ms
+01-Apr-2023 09:52:52.336 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\ROOT]
+01-Apr-2023 09:52:52.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\ROOT] has finished in [31] ms
+01-Apr-2023 09:52:52.371 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1000"]
+01-Apr-2023 09:52:52.399 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1334] milliseconds
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.53
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 6 2021 19:09:00 UTC
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.53.0
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_241\jre
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_241-b07
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\conf\logging.properties
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+01-Apr-2023 09:53:15.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\temp
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+01-Apr-2023 09:53:15.015 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01-Apr-2023 09:53:15.031 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+01-Apr-2023 09:53:15.472 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-1000"]
+01-Apr-2023 09:53:15.504 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [742] milliseconds
+01-Apr-2023 09:53:15.551 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+01-Apr-2023 09:53:15.551 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.53]
+01-Apr-2023 09:53:15.566 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\docs]
+01-Apr-2023 09:53:16.012 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [177] milliseconds.
+01-Apr-2023 09:53:16.039 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\docs] has finished in [473] ms
+01-Apr-2023 09:53:16.039 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\examples]
+01-Apr-2023 09:53:16.449 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\examples] has finished in [410] ms
+01-Apr-2023 09:53:16.465 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\host-manager]
+01-Apr-2023 09:53:16.497 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\host-manager] has finished in [32] ms
+01-Apr-2023 09:53:16.497 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\manager]
+01-Apr-2023 09:53:16.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\manager] has finished in [48] ms
+01-Apr-2023 09:53:16.545 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\ROOT]
+01-Apr-2023 09:53:16.560 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [M:\Git\My Repository\Completed\Travel_Current_Project\Tomcat-Server\webapps\ROOT] has finished in [15] ms
+01-Apr-2023 09:53:16.576 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-1000"]
+01-Apr-2023 09:53:16.608 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1097] milliseconds

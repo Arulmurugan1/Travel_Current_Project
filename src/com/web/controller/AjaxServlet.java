@@ -35,7 +35,7 @@ public class AjaxServlet extends CustomServlet
         try
         {
             
-            super.service(request,this);
+            super.service(request,this, response);
             
             out = response.getWriter();
 

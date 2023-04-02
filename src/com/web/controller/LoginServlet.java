@@ -15,6 +15,7 @@ import com.web.common.Constant;
 import com.web.common.LoggerFactory;
 import com.web.modal.Logindao;
 import com.web.objects.Login_Info;
+import com.web.util.Dbmanager;
 
 
 @WebServlet("/Login")
@@ -26,13 +27,18 @@ public class LoginServlet extends CustomServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         HttpSession session =request.getSession();
-
-        Connection con = null ;
+        
+        if(Dbmanager.getConnection() == null )
+        {
+            request.setAttribute("msg", Dbmanager.error);
+            request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
+            return;
+        }
 
         if ( request.getParameter("txtUser") != null)
             session.setAttribute("user_id", request.getParameter("txtUser").trim() ); // Set UserName before checking 
-        
-        super.service(request,this);
+
+        super.service(request,this, response);
 
         dao= new Logindao();
 
@@ -52,14 +58,14 @@ public class LoginServlet extends CustomServlet {
 
                 if( u.getUser_id() != null ) 
                 {
-                    
-                    
-                    
+
+
+
                     logContent( " Last Login "+u.getLast_login(), LoggerFactory.DEBUG, null);
 
                     logContent("DB UserId : "+u.getUser_id()+" Username : "+ u.getUsername() + " Password : "+u.getPassword() , LoggerFactory.DEBUG, null);
 
-                    
+
                     if(user.trim().equals( ( u.getUser_id().trim() )) && password.trim().equals( ( u.getPassword().trim()) )) 
                     {
                         session.setAttribute("password", u.getPassword());
@@ -158,8 +164,6 @@ public class LoginServlet extends CustomServlet {
             try {
                 dao.closeAll();
 
-                if ( con !=null)
-                    con.close();
 
             } catch (Exception e) {
                 logContent("Error in Login Servlet",LoggerFactory.ERROR,e);

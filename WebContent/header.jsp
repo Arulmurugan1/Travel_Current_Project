@@ -68,7 +68,8 @@
 		</div>
 		<div class="adminContent text-center p-2">
 			<div>
-				<i class="fa fa-wifi" aria-hidden="true" style="font-size:30px;"></i>				
+<!-- 				<i class="fa fa-wifi" aria-hidden="true" style="font-size:30px;"></i>				 -->
+				<span class="fa fa-wifi">ONLINE</span>
 			<c:choose>
 				<c:when test="${sessionScope.role == 'Admin'}">
 				Hi ${sessionScope.user}<i class="fa fa-thumbs-up ml-2" aria-hidden="true"></i><span class=ml-2>Role:${sessionScope.role}<i class="fa fa-unlock ml-2" style="font-size:25px;" aria-hidden="true"></i></span>
@@ -108,33 +109,4 @@
 		</div>
 	</div>
 	
-	<script>
-		$('#editProfileDialog').hide();
-		$('.loader-ajax').hide();
-		function editProfile()
-		{
-					setProfileValues();
-					$('#editProfileDialog').dialog({
-						autoOpen : false ,
-						buttons : {
-							Update  : ()=> {
-								callAjaxUpdate(document.editProfile) ;
-							},
-							OK : ()=>{
-								setProfileValues();
-								$('#editProfileDialog').dialog('close');
-							}
-						},
-						title : " Edit / Update Profile",
-						position :{
-							my : "center",
-							at : "center"
-						},
- 						closeonescape : true ,
-						draggable : false ,
-						modal : true ,
-					});
-					$('#editProfileDialog').dialog('open');
-		}
-	</script>
-	
+	<script src="scripts/header.js" type="text/javascript"></script>

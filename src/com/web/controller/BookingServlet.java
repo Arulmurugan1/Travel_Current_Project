@@ -26,7 +26,7 @@ public class BookingServlet extends CustomServlet{
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
 
-        super.service(request,this);
+        super.service(request,this, response);
 
         Bookingdao dao =new Bookingdao();
         Customerdao cdao = new Customerdao();

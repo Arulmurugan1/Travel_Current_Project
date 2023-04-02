@@ -35,8 +35,7 @@
 
 
 <%
-	boolean adminUser = StringChecker.isNull(session.getAttribute("role")).equals("Admin");
-
+	boolean adminUser = StringChecker.isNull(session.getAttribute("role")).equals("Admin") ;
 %>
 
 <script>

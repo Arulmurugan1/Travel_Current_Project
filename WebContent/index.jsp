@@ -39,8 +39,7 @@
 											name="txtPassword" id=txtPassword maxlength="15" value="" autocomplete="off">
 										<div class=input-group-append>
 											<div class=input-group-text>
-												<span onclick="Check()"><i
-													class="fa fa-eye-slash check-icon"  aria-hidden="true" ></i></span>
+												<i class="fa fa-eye-slash check-icon"  aria-hidden="true" ></i>
 											</div>
 										</div>
 									</div>
@@ -76,8 +75,7 @@
 										<input type="password" class="form-control" name="pass1" size="16">
 										<div class=input-group-append>
 											<div class=input-group-text>
-												<span onclick="Check()"><i
-													class="fa fa-eye-slash check-icon" aria-hidden="true"></i></span>
+												<i class="fa fa-eye-slash check-icon" aria-hidden="true"></i>
 											</div>
 										</div>
 									</div>
@@ -91,8 +89,7 @@
 										<input type="text" class="form-control" name="pass2" size="16">
 										<div class=input-group-append>
 											<div class=input-group-text>
-												<span onclick="Check()"><i
-													class="fa fa-eye-slash check-icon" aria-hidden="true"></i></span>
+											<i class="fa fa-eye-slash check-icon" aria-hidden="true"></i>
 											</div>
 										</div>
 									</div>

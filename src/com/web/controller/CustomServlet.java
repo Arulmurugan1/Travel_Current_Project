@@ -3,6 +3,7 @@ package com.web.controller;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.sql.Connection;
 import java.time.LocalDate;
 import java.util.Enumeration;
 import java.util.Locale;
@@ -11,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Appender;
@@ -21,6 +23,7 @@ import org.apache.log4j.PatternLayout;
 
 import com.web.common.LoggerFactory;
 import com.web.objects.Login_Info;
+import com.web.util.Dbmanager;
 
 @WebServlet("/CustomServlet")
 public class CustomServlet extends HttpServlet {
@@ -33,9 +36,10 @@ public class CustomServlet extends HttpServlet {
         super();
     }
 
-    protected void service(HttpServletRequest request, Object d) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, Object d, HttpServletResponse res) throws ServletException, IOException {
 
         this.req = request;
+        
         
         mode = req.getParameter("mode") == null ? "" : req.getParameter("mode");
         

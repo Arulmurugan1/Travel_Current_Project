@@ -38,7 +38,7 @@ public class RouteNewServlet extends CustomServlet {
             String no ="";
             double fare = 0;
             
-            super.service(request,this);
+            super.service(request,this, response);
 
             if( mode !=null && !mode.equals(""))	    
             {

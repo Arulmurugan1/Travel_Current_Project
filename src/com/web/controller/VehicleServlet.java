@@ -33,7 +33,7 @@ public class VehicleServlet extends CustomServlet {
         String type  = null;
         String color = null;
         
-        super.service(request,this);
+        super.service(request,this, response);
         
 		try
 		{

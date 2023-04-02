@@ -26,12 +26,3 @@ function callAlert()
 		}
 	},200);
 }
-
-$(document).ready( ()=>{
-	
-	setInterval( ()=>{
-		document.querySelector('.fa-wifi').style.color = navigator.onLine ?"green" :"red";
-		document.querySelector('.fa-wifi').setAttribute( 'title',navigator.onLine ? "Connected" : " Disconnected");
-	} , 3000);
-	
-});

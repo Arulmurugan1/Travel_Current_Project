@@ -33,7 +33,7 @@ public class CustomerServlet extends CustomServlet {
         List<Customer> listUser = new ArrayList<>();
         try {
 
-            super.service(request,this);
+            super.service(request,this, response);
 
             if( mode !=null && mode.equals("QE"))
             {

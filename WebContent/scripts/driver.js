@@ -24,7 +24,6 @@ function getLocations(event)
 			}
 		}
 	}
-
 }
 
 function selectLocation(event)
@@ -43,5 +42,11 @@ function submitCall(success)
 	return;
 }
 
-document.getElementById('city').addEventListener('input',(e) => { if( !LOCATION_INFO ) getLocationInfo(e); else getLocations(e); } );
+document.getElementById('city').addEventListener('input',(e) => { $('div .location').show(); if( !LOCATION_INFO ) getLocationInfo(e); else getLocations(e); } );
 document.querySelector('.location ul').addEventListener('click',(e) => selectLocation(e));
+
+$(document).mouseup( (e)=> {
+	if( e.button == 0 && e.target.id != 'city'  )
+		$('div .location').hide() 
+		
+} );

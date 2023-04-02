@@ -60,16 +60,11 @@
 							<td>${user.booking_no}</td>
 							<td>${user.pickup_from}</td>
 							<td>${user.drop_at}</td>
-							<td><a class="btn w-50" style="border-radius : 25px 0;background: linear-gradient(360deg,pink,orange);"
-								id='${user.booking_no}'
-								onclick="Open(['${user.customer_id}',
-	                                   '${user.customer_name}',
-	                                   '${user.start}',
-	                                   '${user.end}',
-	                                   '${user.age}',
-	                                   '${user.gender}',
-	                                   '${user.email}',
-	                                   '${user.phone}'])">${user.customer_id}</a>
+							<td><a class="btn w-50 user-detail" style="border-radius : 25px 0;background: linear-gradient(360deg,pink,orange);"
+								id='${user.booking_no}'>
+									${user.customer_id}
+								<span id=detail class=d-none>${user.customer_id},${user.customer_name},${user.start},${user.end},${user.age},${user.gender},${user.email},${user.phone}</span>
+								</a>
                            </td>
 							<td>${user.vehicle_no}</td>
 							<td>${user.driver_id}</td>

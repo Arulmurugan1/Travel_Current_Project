@@ -13,11 +13,14 @@ function Submit(mode)
 				alert('Invalid Special Characters not allowed ...');
 			else
 			{
-				$('button').ready(function(){
-					$('button').empty();
-					$('button').append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
-				});
+				var button = 'button:submit';
+
+				$(button).empty();
+				$(button).attr('disabled',true);
+				$(button).append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
+
 				action = "Login?mode=" + mode +"&encodePassword="+encodeHashing();
+				
 				submit();
 			}
 		}
@@ -50,19 +53,21 @@ function Submit(mode)
 	}
 }
 
-function Check()
-{
-	if (  !$('.check-icon').hasClass('fa-eye-slash')  ){
-		$('.check-icon').addClass('fa-eye-slash');
-		$('.check-icon').removeClass('fa-eye');
+ $('.check-icon').click( (e)=>{
+	if (  !$(e.target).hasClass('fa-eye-slash')  )
+	{
+		$(e.target).addClass('fa-eye-slash');
+		$(e.target).removeClass('fa-eye');
+		
 		document.form.txtPassword.type ='password';
 	}
-	else{
-		$('.check-icon').removeClass('fa-eye-slash');
-		$('.check-icon').addClass('fa-eye');
+	else
+	{
+		$(e.target).removeClass('fa-eye-slash');
+		$(e.target).addClass('fa-eye');
 		document.form.txtPassword.type ='text';
 	}
-}
+} );
 
 function encodeHashing()
 {
@@ -70,5 +75,5 @@ function encodeHashing()
 	const salt = "jghdquytzqbnixqgevytbeuyxbqe";
 	const encodedPassword = CryptoJS.SHA256(password + salt).toString();
 	return encodedPassword ; 
-	
+
 }

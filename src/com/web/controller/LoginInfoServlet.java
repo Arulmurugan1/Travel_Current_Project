@@ -20,7 +20,7 @@ public class LoginInfoServlet extends CustomServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         
-        super.service(request,this);
+        super.service(request,this, response);
         
         PrintWriter out = response.getWriter();
 
