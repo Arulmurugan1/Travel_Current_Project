@@ -28,7 +28,7 @@ public class DriverServlet extends CustomServlet {
             throws ServletException, IOException {
         Driver v = new Driver();
         Driverdao dao = new Driverdao();
-        List<Driver> l = new ArrayList<Driver>();
+        List<Driver> l = null;
         String message = "";
 
         try {

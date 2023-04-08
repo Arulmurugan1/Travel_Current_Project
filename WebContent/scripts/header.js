@@ -1,4 +1,5 @@
 $(document).ready( ()=>{
+	
 	setInterval( ()=>{
 		if( document.querySelector('.fa-wifi') )
 		{
@@ -18,6 +19,7 @@ $('.loader-ajax').hide();
 function editProfile()
 {
 			setProfileValues();
+			
 			$('#editProfileDialog').dialog({
 				autoOpen : false ,
 				buttons : {
@@ -29,12 +31,14 @@ function editProfile()
 						$('#editProfileDialog').dialog('close');
 					}
 				},
+				
 				title : " Edit / Update Profile",
 				position :{
 					my : "center",
 					at : "center"
 				},
-					closeonescape : true ,
+					
+				closeonescape : true ,
 				draggable : false ,
 				modal : true ,
 			});

@@ -18,7 +18,7 @@ function popupResult(result)
 			$('#customer_id').val(info[1]);
 			$('#fare').val(info[2]);
 
-			$('fieldset label input').css({
+			$(document.booking).find('fieldset input').css({
 				backgroundColor : "green",
 				color:"yellow",
 				cursor:"auto"
@@ -27,7 +27,7 @@ function popupResult(result)
 	}
 }
 
-$('fieldset label input').css({
+$('fieldset input').css({
 	backgroundColor : "grey",
 	cursor:"not-allowed"
 });
@@ -67,7 +67,7 @@ function bookingStatusCall()
 }
 
 
-bookingStatus();
+bookingStatusCall();
 
 function successGridCall(element,status)
 {
@@ -85,12 +85,10 @@ $(document).ready(()=>{
 		padding : "5px"
 	});
 
-	$('a.status').click((e)=>{
-		callAjax(e.target.getAttribute('status'),e.target.id);
-	});
+	$('a.status').click( (e)=> callAjax(e.target.getAttribute('status'),e.target.id) );
 
 	$(this).mousedown( (e) =>{ 
-		if( !$(Info_Content).has(e.target)[0] )
+		if( e.button === 0 && !$(Info_Content).has(e.target)[0] )
 			$(Info_Content).hide(); 
 	});
 

@@ -28,8 +28,6 @@ public class BookingServlet extends CustomServlet{
 
         super.service(request,this, response);
 
-        Bookingdao dao =new Bookingdao();
-        Customerdao cdao = new Customerdao();
         Booking b = null ;
         Customer c = null ;
        
@@ -54,7 +52,7 @@ public class BookingServlet extends CustomServlet{
                 {
                     int id = Integer.parseInt(request.getParameter("booking_no"));
 
-                    b = dao.selectBooking(id);
+                    b = Bookingdao.getInstance().selectBooking(id);
                     request.setAttribute("user", b);
                     break;
                 }
@@ -73,7 +71,7 @@ public class BookingServlet extends CustomServlet{
 
                     c	=new Customer(customer_name, pickup, drop, age, gender, email, phone);
 
-                    int customerId = cdao.insertCustomer(c) ;
+                    int customerId = Customerdao.getInstance().insertCustomer(c) ;
 
                     if( customerId > 0 )
                     {
@@ -88,7 +86,7 @@ public class BookingServlet extends CustomServlet{
                         b.setDriver_id(driver);
                         b.setFare(fare);
 
-                        int bookingNo = dao.insertBooking(b);
+                        int bookingNo = Bookingdao.getInstance().insertBooking(b);
 
                         if ( bookingNo > 0 )
                         {
@@ -124,7 +122,7 @@ public class BookingServlet extends CustomServlet{
                         b.setVehicle_no(vehicle);
                         b.setDriver_id(driver);
 
-                        if( dao.updateBooking(b))
+                        if( Bookingdao.getInstance().updateBooking(b))
                         {
                             request.setAttribute("msg", "Booking edit Success");
                         }
@@ -139,7 +137,7 @@ public class BookingServlet extends CustomServlet{
                         b = new Booking();
                         b.setBooking_no(id);
                         b.setStatus(status);
-                        if( dao.updateBooking(b))
+                        if( Bookingdao.getInstance().updateBooking(b))
                         {
 
                         }
@@ -156,14 +154,14 @@ public class BookingServlet extends CustomServlet{
                     int customerId		= Integer.parseInt(request.getParameter("customer_id"));
 
 
-                    if( cdao.deleteCustomer(customerId) && dao.deleteBooking(id))
+                    if( Customerdao.getInstance().deleteCustomer(customerId) && Bookingdao.getInstance().deleteBooking(id))
                     {
-                        //				request.setAttribute("msg", "Booking deleted");
+                        request.setAttribute("msg", "Booking No "+id+" deleted");
                         logContent("Booking deleted " , LoggerFactory.INFO, null);;
                     }
                     else
                     {
-                        request.setAttribute("msg", "Booking failed to delete");
+                        request.setAttribute("msg", "Booking failed for no. "+id);
                         logContent("Booking deletion failed " , LoggerFactory.ERROR, null);;
                     }
                     break;
@@ -174,16 +172,15 @@ public class BookingServlet extends CustomServlet{
                 }
                 default :
                 {
-                    request.setAttribute("listUser", dao.getAllBooking());
+                    
                 }
             }
-            dao.closeAll();
-            cdao.closeAll();
-
+            
+            request.setAttribute("listUser", Bookingdao.getInstance().getAllBooking());
         } 
         catch (Exception e) 
         {
-            request.setAttribute("msg", e.getMessage() );
+            request.setAttribute("msg", e.getLocalizedMessage() );
             e.printStackTrace();
         }
         finally
@@ -197,6 +194,13 @@ public class BookingServlet extends CustomServlet{
                 request.getRequestDispatcher(Constant.BOOKING_INSERT_JSP).forward(request, response);
             }
 
+            try {
+            Bookingdao.getInstance().closeAll();
+            Customerdao.getInstance().closeAll();
+            }
+            catch(Exception e ) {
+                e.printStackTrace();
+            }
         }
     }
 }

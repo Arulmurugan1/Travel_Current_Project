@@ -8,6 +8,7 @@ import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
+import com.mysql.cj.protocol.Resultset;
 import com.web.common.Generic;
 import com.web.common.StringChecker;
 import com.web.objects.Login_Info;
@@ -91,68 +92,104 @@ public class Logindao extends Generic{
     }
     public Vector<Object> getAllUsers()throws SQLException
     {
-        Vector<String> v1 = new Vector<>();
-        Vector<Object> v2 = new Vector<>();
+        Vector<Object> users = new Vector<>();
 
-        ps =con.prepareStatement(SELECT_ALL_USERS,ResultSet.TYPE_FORWARD_ONLY);
+        ps =con.prepareStatement(SELECT_ALL_USERS);
 
         rs = ps.executeQuery();
+        
+        
 
-        int columnCount = rs.getMetaData().getColumnCount();
-
-        int index = 0 ;
-
-        while ( rs.next() )
+        while(rs.next() )
         {
-            if ( index == 0 )
+            if ( users.size() == 0 )
             {
-                for ( int i1 = 1 ; i1 <= columnCount ; i1++ )
-                {
-                    v1.add( StringChecker.Init(rs.getMetaData().getColumnName(i1).toLowerCase()) );
-                }
-                v2.addElement(v1.clone());
+                users.add(getColumnNames().clone());
+                users.add(getUsers().clone());
             }
-            for ( int i = 1 ; i <= columnCount ; i++ )
+            else
+            {
+                users.add(getUsers().clone());
+            }
+        }
+        return users;
+    }
+    
+    public static Vector<String> getColumnNames()
+    {
+        Vector<String> columns = new Vector<String>();
+
+        try
+        {
+            for ( int index = 1 ; index <=  rs.getMetaData().getColumnCount() ; index++ )
             {
                 try
                 {
-                    v1.clear();
-                    
-                    if( rs.getMetaData().getColumnTypeName(i).equals("DATETIME"))
+                    columns.add( StringChecker.Init(rs.getMetaData().getColumnName(index).toLowerCase()) );
+                }
+                catch(Exception e)
+                {
+                    columns.add("");
+                }
+            }
+
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        return columns; 
+    }
+    
+    public static Vector<Object> getUsers()
+    {
+        Vector<Object> columns = new Vector<Object>();
+
+        try
+        {
+
+            for ( int index = 1 ; index <=  rs.getMetaData().getColumnCount() ; index++ )
+            {
+                try
+                {
+                    if( rs.getMetaData().getColumnTypeName(index).equals("DATETIME"))
                     {
-                        v1.add( ((LocalDateTime) rs.getObject(i)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
+                        columns.add( ((LocalDateTime) rs.getObject(index)).format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")).toString() );
                     }
-                    else if (rs.getMetaData().getColumnName(i).equals("dob") )
+                    else if (rs.getMetaData().getColumnName(index).equals("dob") )
                     {
-                            String[] Date = rs.getString(i).split("-");
-                            
-                            if ( Date.length == 3)
-                            {
+                        String[] Date = rs.getString(index).split("-");
 
-                                LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
+                        if ( Date.length == 3)
+                        {
 
-                                Period diff = Period.between( date, LocalDate.now() );
+                            LocalDate date = LocalDate.of(Integer.parseInt(Date[0]),Integer.parseInt(Date[1]),Integer.parseInt(Date[2]));
 
-                                v1.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
-                            }
-                            else
-                                v1.add(" ");
+                            Period diff = Period.between( date, LocalDate.now() );
+
+                            columns.add(diff.getYears() +" yrs "+diff.getMonths()+" mon "+diff.getDays()+" days ");
+                        }
+                        else
+                            columns.add(" ");
                     }
                     else
                     {
-                        v1.add(rs.getString(i));
+                        columns.add(rs.getString(index));
                     }
-                }catch(Exception e)
-                {
-                    v1.add(" ");
-                    e.printStackTrace();
-                    continue;
                 }
-                
+                catch(Exception e)
+                {
+                    columns.add("");
+                    e.printStackTrace();
+                }
             }
-            v2.addElement(v1.clone());
-            index++;
         }
-        return v2;
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        
+        return columns ;
     }
 }

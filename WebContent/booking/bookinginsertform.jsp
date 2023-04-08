@@ -176,9 +176,9 @@ function submitCall(success)
 {
 	if ( success )
 	{
-		if ( check( (document.forms[0].customer_name.value).trim() , 'valid') )
+		if ( check( "customer_name" , 'valid') )
 			alert('Customer name has Invalid Special Characters !')
-		else if ( check( (document.forms[0].email.value).trim() , 'email') )
+		else if ( check("email", 'email') ) 
 				alert('Email has Invalid Special Characters !')
 		else if ( !(document.forms[0].email.value).trim().includes('@') || !(document.forms[0].email.value).trim().includes('.com') )
 				alert('Enter Valid Email')

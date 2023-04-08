@@ -221,7 +221,7 @@ function getLocationInfo(event)
 				if (request.responseText)
 				{
 					cities = request.responseText.split('\r\n');
-					LOCATION_INFO = cities ;
+					LOCATION_INFO = cities && cities.sort() ;
 					getLocations(event);
 				}
 			}

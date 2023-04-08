@@ -15,37 +15,37 @@ import com.web.util.Dbmanager;
 
 public abstract class Generic 
 {
- 
-    public static Connection con = null;
+
+    public static Connection con = Dbmanager.getConnection();
     public static PreparedStatement ps = null ;
     public static ResultSet rs = null ;
-    
+
     public Generic()
     {
-       con = Dbmanager.getConnection();
+        setConnection();
     }
-    
     public void closeAll() throws Exception
     {
-        
+
         String connectionInfo = "";
-        
-        if ( con !=null && !con.isClosed() ) {
+
+        if ( con !=null && !con.isClosed() ) 
+        {
             con.close();
             connectionInfo+= " Connection ["+con.isClosed()+"] ";
         }
-            
-        if ( ps !=null && !ps.isClosed() ) {
+
+        if ( ps !=null && !ps.isClosed() ) 
+        {
             ps.close();
             connectionInfo+=  " Statement ["+ps.isClosed()+"] ";
         }
-            
-        if ( rs !=null && !rs.isClosed() ) {
+
+        if ( rs !=null && !rs.isClosed() ) 
+        {
             rs.close();
             connectionInfo+=  " ResultSet ["+rs.isClosed()+"]";
         }
-            
-        
         System.out.println(getClass().getSimpleName() + connectionInfo );
     }
 
@@ -73,9 +73,22 @@ public abstract class Generic
         System.out.println("Access Log Entered "+( ps.executeUpdate() > 0 ) );
 
     } 
-    
+
     public static void logContent(String message, Level logLevel, Exception e) 
     {
         LoggerFactory.displayDiffLogLevels(message, logLevel, e,Object.class);
+    }
+
+    public static void setConnection()
+    {
+        try {
+            if ( con == null || con.isClosed() )
+            {
+                con = Dbmanager.getConnection();
+            }
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+        }
     }
 }

@@ -1,6 +1,7 @@
-function check(value,chars)
+function check(id,chars)
 {
-	var valid = "";
+	
+	let value = $.trim( $('#'+id).val() ) , valid = "" ;
 
 	if ( chars.trim() == "valid" )
 	{
@@ -20,16 +21,17 @@ function check(value,chars)
 		valid += "'";
 		valid += '"';
 	}
-	var n = false ;
-	for ( var i = 0 ; i < valid.length ; i++ )
+	
+	valid = [...valid] ;
+	
+	for (const char of valid)
 	{
-		if ( value.includes( valid.charAt(i) ) )
+		if ( value.includes(char) )
 		{
-			n = true ;
-			break ;
+			return true;
 		}
 	}
-	return n ;
+	return false ;
 }
 function isNumber()
 {
@@ -99,4 +101,22 @@ function Submit(form)
 function submitCall(success)
 {
 	
+}
+
+function isEmptyNull(...args)
+{
+	for ( const arg of args)
+	{
+		if( $('#'+arg).val().trim() === ''   )
+		{
+//			alert( $('#'+arg).prev().text().trim() +' is mandatory ' );
+			return true;
+		}
+		else if ( $('#'+arg).val().trim().toLowerCase() === 'null' )
+		{
+//			alert( $('#'+arg).prev().text().trim() +' cannot be null ' );
+			return true;
+		}
+	}
+	return false ;
 }

@@ -17,6 +17,8 @@ public class Customerdao extends Generic{
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";
     private static final String UPDATE_CUSTOMER 		= "update Customer set start= ?, end =?,email=?,phone=? where CUSTOMER_ID = ?";
 
+    private static Customerdao customer = new Customerdao();
+
     public int insertCustomer(Customer user) throws SQLException
     {
         int result = 0;
@@ -138,6 +140,15 @@ public class Customerdao extends Generic{
         result =  ps.executeUpdate() > 0 ;
 
         return result;
+    }
+
+    public static Customerdao getInstance()
+    {
+        setConnection();
+        if ( customer != null)
+            return customer;
+        else
+            return new Customerdao();
     }
 
 }

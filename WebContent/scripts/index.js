@@ -4,16 +4,13 @@ function Submit(mode)
 	{
 		if (mode == 'login') 
 		{
-			if (((txtUser.value).trim()) == ""
-				|| ((txtPassword.value).trim()) == ""
-					|| ((txtUser.value).trim()).toLowerCase == 'null'
-						|| ((txtPassword.value).trim()).toLowerCase == 'null')
+			if ( isEmptyNull('txtUser','txtPassword') )
 				alert('Enter Login Credentials first ...');
-			else if ( check( (txtUser.value).trim(),'valid' ) || check( (txtPassword.value).trim(),'valid1' ) )
-				alert('Invalid Special Characters not allowed ...');
+			else if ( check( 'txtUser','valid' ) || check( 'txtPassword' ,'valid1' ) )
+				alert( 'Invalid Special Characters not allowed ...' );
 			else
 			{
-				var button = 'button:submit';
+				const button = 'button:submit';
 
 				$(button).empty();
 				$(button).attr('disabled',true);
@@ -26,23 +23,14 @@ function Submit(mode)
 		}
 		if (mode == 'register') 
 		{
-			if ((username.value).trim() == ""
-				|| (pass1.value).trim() == ""
-					|| (pass2.value).trim() == ""
-						|| (user_id.value).trim() == "")
+			if ( isEmptyNull('username','pass1','pass2','user_id') )
 				alert('Enter Account Credentials first ...');
-			else if (((username.value).trim()).toUpperCase() == "NULL"
-				|| ((pass1.value).trim()).toUpperCase() == "NULL"
-					|| ((pass2.value).trim()).toUpperCase() == "NULL"
-						|| ((user_id.value).trim()).toUpperCase() == "NULL")
-				alert('null Cannot be inserted ! Enter Valid Credentials ...');
-			else if ((pass1.value).trim() != (pass2.value).trim())
+			else if (pass1.value.trim() != pass2.value.trim())
 				alert(' password mismatch ...');
-			else if (check((pass1.value).trim(), 'valid1')
-					|| check((pass2.value).trim(), 'valid1'))
+			else if (check('pass1', 'valid1')
+					|| check('pass2', 'valid1'))
 				alert(' Allowed Special Characters !@#$%&');
-			else if (check((username.value).trim(), 'valid')
-					|| check((user_id.value).trim(), 'valid'))
+			else if (check('username', 'valid') || check('user_id', 'valid') )
 				alert(' Special Characters not Allowed for Username or User Id');
 			else 
 			{

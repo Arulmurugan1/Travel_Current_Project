@@ -4,13 +4,11 @@ function getLocations(event)
 {
 	const inputValue = event.target.value ;
 
-	let locations = LOCATION_INFO.sort();
-
 	$('fieldset ul').empty();
 
 	if( inputValue && inputValue != "" )
 	{
-		for ( const loc of locations)
+		for ( const loc of LOCATION_INFO )
 		{
 			if( loc.toUpperCase().startsWith( inputValue.toUpperCase() ) )
 			{
@@ -18,7 +16,7 @@ function getLocations(event)
 				
 				li.setAttribute('value',loc);
 
-				li.innerHTML = "<b>"+loc.substr(0,inputValue.length)+"</b>"+loc.substr(inputValue.length);
+				li.innerHTML = "<strong>"+loc.substr(0,inputValue.length)+"</strong>"+loc.substr(inputValue.length);
 
 				document.getElementsByTagName('ul')[0].appendChild(li);
 			}

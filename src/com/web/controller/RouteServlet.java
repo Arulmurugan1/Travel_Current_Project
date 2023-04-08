@@ -20,10 +20,6 @@ import com.web.util.Dbmanager;
 @WebServlet("/Route")
 public class RouteServlet extends CustomServlet {
 	private static final long serialVersionUID = 1L;
-	Route r ;
-	Routedao dao  = new Routedao();
-	List<Route> routeList = new ArrayList<Route>();
-
 
 	public RouteServlet() 
 	{
@@ -34,6 +30,11 @@ public class RouteServlet extends CustomServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
 	    super.service(request,this, response);
+	    
+	    Route r = null ;
+	    Routedao dao  = new Routedao();
+	    List<Route> routeList = new ArrayList<Route>();
+	    
 		try
 		{
 			String start ="";

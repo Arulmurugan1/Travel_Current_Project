@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('#search').keyup(function(){
+	$('#search').keyup( function(e){
 		search_table($(this).val())
 	});
 });
@@ -20,6 +20,28 @@ function search_table(value)
 		}
 		else{
 			$(this).hide();
+		}
+	});
+}
+
+function search_table_specific(args)
+{
+	$('tbody tr:not(.d-none)').each( function(){
+		let found = false ;
+		$(this).each(function(){
+
+			if( $(this).text().toLowerCase().indexOf(args.toLowerCase()) >= 0)
+			{
+				found = true ;
+			}
+		});
+		if ( found )
+		{
+			$(this).removeClass('d-none');
+		}
+		else
+		{
+			$(this).addClass('d-none');
 		}
 	});
 }

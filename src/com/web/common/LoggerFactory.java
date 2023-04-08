@@ -28,10 +28,10 @@ public class LoggerFactory
             
             boolean isLoggable = false ;
             
-            if ( isLoggable )
+            if ( !isLoggable )
             {
                 if( exception !=null && exception instanceof Throwable)
-                    exception.printStackTrace();
+                    System.out.println(exception.getStackTrace() );
                 else
                     System.out.println(whattoprint);
                 

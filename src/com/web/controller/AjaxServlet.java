@@ -88,7 +88,7 @@ public class AjaxServlet extends CustomServlet
                 b.setStatus(status);
                 b.setBooking_no(Integer.parseInt(booking_no));
                 
-                boolean result = new Bookingdao().updateBooking(b);
+                boolean result = Bookingdao.getInstance().updateBooking(b);
                 
                 if ( result )
                 {

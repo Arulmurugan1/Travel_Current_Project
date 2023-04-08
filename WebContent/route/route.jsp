@@ -143,6 +143,11 @@ td.no::before {
 	    	  $(".add").click(function(){
 	    	   	 $("#insert").toggle(300);
 	    	  });
+	    	  
+	    	  $('select:not(#vehicle_no)').change( function(e){
+	    		  search_table_specific($(this).val())
+	    	  });
+	    	  
 	    	});
 	    
 		function submitCall(success)
@@ -185,7 +190,9 @@ td.no::before {
 	    	}
 	    }
 	    
+	    
+	    
     </script>
-
+<script src="scripts/search.js"></script>
 </body>
 </html>

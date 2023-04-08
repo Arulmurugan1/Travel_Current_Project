@@ -1,3 +1,9 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%
+	boolean adminUser = session.getAttribute("role").equals("Admin") ;
+%>
+
 <div class="d-flex justify-content-around ">
 	<div class="d-flex">
 		<div class=form-group>
@@ -11,11 +17,13 @@
 	</div>
 	<div class="row">
 				<div class='col py-1 text-center'>
+				  <c:if test="<%= adminUser %>">
 					<a
 						onclick="javascript:window.open('Booking?mode=dummy','_blank','top=80,left=340,toolbar=no,status=no,width=800,height=600');"
 						class='btn btn-success button-length' style='width: 170px;'>
 						<i class="fa fa-plus mr-2"></i>Add New Booking
 					</a>
+				</c:if>
 					<button type=button class='btn btn-success button-length ml-2'
 						onclick='location.reload();'>
 						<i class="fa fa-refresh mr-2"></i>Refresh

@@ -29,7 +29,7 @@
 			</div>
 		</div>
 	</c:if>
-	<div class="container-fluid info">
+	<div class="container-fluid info mt-3">
 		<jsp:include page="../tableComponents.jsp"></jsp:include>
 		<div class="table-responsive mt-1">
 			<table

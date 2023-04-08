@@ -21,24 +21,24 @@
 </div>
 <div class="card__collection clear-fix">
 <%
-				if (list !=null && list.size() > 0 )
-				{
-					for ( int i=1 ; i < list.size() ; i++ )
-					{
-							Vector<String> data = (Vector)list.elementAt(i);
+	if (list !=null && list.size() > 0 )
+	{
+		for ( int i=1 ; i < list.size() ; i++ )
+		{
+				Vector<Object> data = (Vector)list.elementAt(i);
 
-							String id = data.elementAt(0) ;
-							String Name = data.elementAt(1) ;
-							String Password = data.elementAt(2);
-							String age 		= data.elementAt(9);
-							String gender = data.elementAt(3);
-							String Last_Login = data.elementAt(7);
-							String Status = data.elementAt(8).toString().equals("Y") ? "Approved" : "Pending";
+				String id 			= data.elementAt(0).toString();
+				String Name 		= data.elementAt(1).toString();
+				String Password 	= data.elementAt(2).toString();
+				String age 			= data.elementAt(10).toString();
+				String gender 		= data.elementAt(4).toString();
+				String Last_Login 	= data.elementAt(8).toString();
+				String Status 		= data.elementAt(9).toString().equals("Y") ? "Approved" : "Pending";
 %>
       <div class="cards cards--two">
       <%
       if ( gender !=null && ( gender.equals("F") || gender.equals("T") ))
-		{
+	  {
 	%>
         <img
           src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d702cb99ca804bffcfa8820c46483264&auto=format&fit=crop&w=651&q=80"
@@ -46,7 +46,7 @@
           alt="Cards Image"
         />
         <%
-		}
+	  }
       else
       {
         %>
@@ -59,18 +59,18 @@
       }
         %>
         <span class="cards--two__rect"></span>
-        <p> Name : <%= Name%><br>
-        		Login Id : <%=id %><br>
-        		Password : <%= Password%><br> 
-        		Age :  <%=age %><br>
-        		Last Login :	<%= Last_Login%> <br> 
-        		Status : <%= Status%>
+        <p> 	Name 	   : <%= Name%><br>
+        		Login Id   : <%= id %><br>
+        		Password   : <%= Password%><br> 
+        		Age        : <%= age %><br>
+        		Last Login : <%= Last_Login%> <br> 
+        		Status     : <%= Status%>
         </p>		
       </div>
       
       <%
-						}
-				}
+			}
+		}
     %>
     </div>
     </body>

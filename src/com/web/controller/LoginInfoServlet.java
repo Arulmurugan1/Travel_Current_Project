@@ -2,6 +2,7 @@ package com.web.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Vector;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,12 +16,13 @@ import com.web.objects.Login_Info;
 @WebServlet("/LoginInfo")
 public class LoginInfoServlet extends CustomServlet {
     private static final long serialVersionUID = 1L;
-    public Logindao data ;
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         
         super.service(request,this, response);
+        
+        Logindao data = null;
         
         PrintWriter out = response.getWriter();
 
@@ -56,13 +58,17 @@ public class LoginInfoServlet extends CustomServlet {
                     response.setHeader("Access-Control-Max-Age", "86400");
 
                     try {
+                        
                         Login_Info detail = new Login_Info();
                         detail.setDob(request.getParameter("dob"));
                         detail.setGender(request.getParameter("gender"));
                         detail.setUser_id(request.getSession().getAttribute("user_id").toString());
                         detail.setAltered_user(request.getSession().getAttribute("user").toString());
+                        
                         logContent(detail.toString() , LoggerFactory.INFO, null);
+                        
                         boolean result = data.updateUserInfo(detail);
+                        
                         logContent(result ? "Updated Successfully" : " Failed To Update" , LoggerFactory.INFO, null);
                         out.println(result ? "Updated Successfully^"+detail.getDob()+"^"+detail.getGender() : " Failed To Update") ;
                         logContent(out.toString() , LoggerFactory.INFO, null);;
@@ -70,6 +76,7 @@ public class LoginInfoServlet extends CustomServlet {
                     catch (Exception e1) {
                         logContent(e1.toString(), LoggerFactory.ERROR, e1);
                             out.println(e1.getMessage());
+                            e1.printStackTrace();
                     }  
                     finally
                     {
@@ -79,8 +86,11 @@ public class LoginInfoServlet extends CustomServlet {
                 }
                 default :
                 {
-                    request.setAttribute("list", data.getAllUsers() );
-                    logContent((String) request.getAttribute("list"), LoggerFactory.INFO, null);
+                    Vector<Object> users = data.getAllUsers();
+                    
+//                    users.forEach(System.out::println);
+                    
+                    request.setAttribute("list", users );
                 }
             }
             data.closeAll();
@@ -88,6 +98,7 @@ public class LoginInfoServlet extends CustomServlet {
         catch(Exception e )
         {
             logContent(e.toString(), LoggerFactory.ERROR, e);
+            e.printStackTrace();
             request.setAttribute("msg", e.getMessage());
         }
         finally
