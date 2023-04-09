@@ -12,7 +12,7 @@ import com.web.objects.Customer;
 
 public class Bookingdao extends Generic{
 
-    private static final String INSERT_BOOKING = "INSERT INTO BOOKING VALUES(null,?,?,?,?,?,?,'Arulmurugan',' ',sysdate())";
+    private static final String INSERT_BOOKING = "INSERT INTO BOOKING VALUES(null,?,?,?,?,?,?,?,'WIP',sysdate())";
     private static final String SELECT_USER_BY_ID = "select * from booking where booking_no =?";
     private static final String SELECT_ALL_USERS = "SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
     private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
@@ -32,6 +32,7 @@ public class Bookingdao extends Generic{
             ps.setString(4,user.getVehicle_no() );
             ps.setString(5,user.getDriver_id() );
             ps.setDouble(6,user.getFare() );	
+            ps.setString(7, user.getBooked_by());
             System.out.println(ps);
             ps.executeUpdate();
             rs = ps.getGeneratedKeys();

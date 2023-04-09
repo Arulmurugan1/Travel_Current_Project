@@ -31,6 +31,7 @@ public class BookingServlet extends CustomServlet{
         Booking b = null ;
         Customer c = null ;
        
+        String user = request.getSession().getAttribute("user").toString();
 
         try
         {
@@ -85,6 +86,7 @@ public class BookingServlet extends CustomServlet{
                         b.setVehicle_no(vehicle);
                         b.setDriver_id(driver);
                         b.setFare(fare);
+                        b.setBooked_by(user);
 
                         int bookingNo = Bookingdao.getInstance().insertBooking(b);
 

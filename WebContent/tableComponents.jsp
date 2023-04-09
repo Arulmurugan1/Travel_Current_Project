@@ -4,10 +4,10 @@
 	boolean adminUser = session.getAttribute("role").equals("Admin") ;
 %>
 
-<div class="d-flex justify-content-around ">
+<div class="container-fluid d-flex justify-content-around mt-3">
 	<div class="d-flex">
 		<div class=form-group>
-			<select name=state id=maxRows class="form-control text-center">
+			<select name=state id=maxRows class="form-control">
 				<option value=5000>--Select No of Rows--</option>
 				<option value=5000>Show All Records </option>
 				<option value=5>5 - records</option>
@@ -36,7 +36,7 @@
 			</div>
 	<div class="my-auto">
 		<div class="search-box">
-    		<input type="text" name="search" id="search" class="search-txt" placeholder="Type To Search...">
+    		<input type="text" name="search" id="search" class="search-txt" placeholder="Type To Search..." autocomplete="true">
 		    	<div class="search-btn">
 		        	<i class="fa fa-search" aria-hidden="true"></i>
 		    	</div>

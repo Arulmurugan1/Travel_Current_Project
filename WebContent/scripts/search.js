@@ -1,8 +1,7 @@
-$(document).ready(function(){
-	$('#search').keyup( function(e){
-		search_table($(this).val())
+
+	document.getElementById('search').addEventListener('input', function(e){
+		search_table(this.value);
 	});
-});
 
 function search_table(value)
 {

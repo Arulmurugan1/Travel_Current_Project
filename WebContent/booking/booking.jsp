@@ -29,8 +29,8 @@
 			</div>
 		</div>
 	</c:if>
-	<div class="container-fluid info mt-3">
-		<jsp:include page="../tableComponents.jsp"></jsp:include>
+	<jsp:include page="../tableComponents.jsp"></jsp:include>
+	<div class="info mt-2">
 		<div class="table-responsive mt-1">
 			<table
 				class="table table-bordered  text-center text-white text-capitalize mb-1 ">

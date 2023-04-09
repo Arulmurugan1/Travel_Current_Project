@@ -30,7 +30,6 @@
 
 
 <script src="scripts/Validator.js"></script>
-<script src="scripts/common.js"></script>
 <script src="scripts/ajaxCall.js"></script>
 
 

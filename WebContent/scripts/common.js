@@ -17,7 +17,8 @@ function callAlert()
 //	{
 //	$('.table-responsive').addClass('table-wrapper') ;
 //	}
-	$('div.table-responsive').css({height: screen.availHeight - 448});
+	$('div.table-responsive').css({height: screen.availHeight - 450});
+	$('div.table-responsive').height(screen.availHeight - $('div.table-responsive').height() );
 
 	if ( !$('div.table-responsive table tbody').hasClass('table-wrapper') )
 	{

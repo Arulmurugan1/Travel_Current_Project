@@ -110,3 +110,4 @@
 	</div>
 	
 	<script src="scripts/header.js" type="text/javascript"></script>
+	<script src="scripts/common.js" type="text/javascript"></script>
