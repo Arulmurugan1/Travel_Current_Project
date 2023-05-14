@@ -39,7 +39,7 @@
 											name="txtPassword" id=txtPassword maxlength="15" value="" autocomplete="off">
 										<div class=input-group-append>
 											<div class=input-group-text>
-												<i class="fa fa-eye-slash check-icon"  aria-hidden="true" ></i>
+												<i class="fa fa-eye-slash check-icon" data-target=txtPassword aria-hidden="true" ></i>
 											</div>
 										</div>
 									</div>
@@ -67,15 +67,15 @@
 							<div class=row>
 								<div class="col-auto">
 									<label>Enter UserName</label> <input type="text"
-										class="form-control" name="username">
+										class="form-control" name="username" id=username>
 								</div>
 								<div class="col-auto">
 									<label>Enter Password</label>
 									<div class=input-group>
-										<input type="password" class="form-control" name="pass1" size="16">
+										<input type="password" class="form-control" name="pass1" id=pass1 size="16">
 										<div class=input-group-append>
 											<div class=input-group-text>
-												<i class="fa fa-eye-slash check-icon" aria-hidden="true"></i>
+												<i class="fa fa-eye-slash check-icon" data-target=pass1 aria-hidden="true"></i>
 											</div>
 										</div>
 									</div>
@@ -86,17 +86,17 @@
 								<div class="col-lg-">
 									<label>Re-Enter Password</label>
 									<div class=input-group>
-										<input type="text" class="form-control" name="pass2" size="16">
+										<input type="password" class="form-control" name="pass2" id=pass2 size="16">
 										<div class=input-group-append>
 											<div class=input-group-text>
-											<i class="fa fa-eye-slash check-icon" aria-hidden="true"></i>
+											<i class="fa fa-eye-slash check-icon" data-target=pass2 aria-hidden="true"></i>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="col-auto">
 									<label>Enter Login Id</label> <input type="text"
-										class="form-control" name="user_id">
+										class="form-control" name="user_id" id=user_id>
 								</div>
 							</div>
 

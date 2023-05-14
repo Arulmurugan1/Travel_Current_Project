@@ -1,9 +1,11 @@
 function Submit(mode) 
 {
-	with (document.form) 
+
+	if (mode == 'login') 
 	{
-		if (mode == 'login') 
+		with (document.form) 
 		{
+
 			if ( isEmptyNull('txtUser','txtPassword') )
 				alert('Enter Login Credentials first ...');
 			else if ( check( 'txtUser','valid' ) || check( 'txtPassword' ,'valid1' ) )
@@ -17,11 +19,14 @@ function Submit(mode)
 				$(button).append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
 
 				action = "Login?mode=" + mode +"&encodePassword="+encodeHashing();
-				
+
 				submit();
 			}
 		}
-		if (mode == 'register') 
+	}
+	if (mode == 'register') 
+	{
+		with (document.form) 
 		{
 			if ( isEmptyNull('username','pass1','pass2','user_id') )
 				alert('Enter Account Credentials first ...');
@@ -47,13 +52,13 @@ function Submit(mode)
 		$(e.target).addClass('fa-eye-slash');
 		$(e.target).removeClass('fa-eye');
 		
-		document.form.txtPassword.type ='password';
+		$('#'+ e.target.getAttribute('data-target') ).attr('type','password');
 	}
 	else
 	{
 		$(e.target).removeClass('fa-eye-slash');
 		$(e.target).addClass('fa-eye');
-		document.form.txtPassword.type ='text';
+		$('#'+ e.target.getAttribute('data-target') ).attr('type','text');
 	}
 } );
 

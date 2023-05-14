@@ -75,7 +75,7 @@ td.no::before {
 					</div>
 					<div class=col-auto>
 						<label for="end">Destination</label> <select class="form-control"
-							name="end" id="end" style="width: 210px;" required data-target='end'>
+							name="end" id="end" style="width: 210px;" required data-target='start,end'>
 							<option value="" selected></option>
 							<sql:query dataSource="${db}" var="rs">select end from route_service </sql:query>
 							<c:forEach var='board' items='${rs.rows}'>

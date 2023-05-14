@@ -25,7 +25,7 @@ function search_table_specific(args,target)
 	{
 			
 		$('tbody tr').each( function(){
-
+			
 			const data = JSON.parse( $(this).attr('data') ) ;
 			
 			if( data && data[target] === args )

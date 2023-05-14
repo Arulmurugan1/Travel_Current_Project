@@ -2,18 +2,17 @@ package com.web.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 import java.util.Vector;
 
-public class Dbmanager{
+import com.web.common.StringChecker;
+
+public class Dbmanager extends StringChecker{
 	
 	
 	public static Connection con = null;
@@ -27,6 +26,7 @@ public class Dbmanager{
 	{
 	    try 
 	    {
+	        
 	        Properties prop = getConnectionProperties();
 	        
 	        if ( prop == null)
@@ -51,8 +51,8 @@ public class Dbmanager{
 	    }
 	    return con;
 	}
-	
-	public static Properties getConnectionProperties() throws IOException
+
+    public static Properties getConnectionProperties() throws IOException
 	{   
 	    try
 	    {
@@ -398,6 +398,48 @@ public class Dbmanager{
         return finalQuery;
         
     }
+	
+	public static String getPropertiesPath(String key)
+	{
+	    Connection con = null ;
+
+	    try {
+
+	        con = getConnection();
+
+	        String sql =" select value from properties_path where key ='"+isNull(key)+"'";
+
+	        Statement stat = con.createStatement();
+
+	        ResultSet rs = stat.executeQuery(sql);
+
+	        while(rs.next())
+	        {
+	            System.out.println("KEY => ["+key+" => "+isNull( rs.getString("value") )+"]");
+	            
+	            return isNull( rs.getString("value") );
+	        }
+
+	    }
+	    catch(Exception e) 
+	    {
+	        e.printStackTrace();
+	    }
+	    finally 
+	    {
+	        try 
+	        {
+	            if( con == null && !con.isClosed())
+	                con.close();
+	        } 
+	        catch (SQLException e) 
+	        {
+	            e.printStackTrace();
+	        }
+	    }
+
+	    return null; 
+	}
 }
 
 

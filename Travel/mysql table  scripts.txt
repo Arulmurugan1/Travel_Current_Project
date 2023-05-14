@@ -285,3 +285,10 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-09-20  7:17:38
+
+
+CREATE TABLE `taxi`.`properties_path` (
+  `id` INT ZEROFILL NOT NULL AUTO_INCREMENT,
+  `key` VARCHAR(400) NOT NULL DEFAULT ' ',
+  `value` VARCHAR(400) NOT NULL DEFAULT ' ',
+  PRIMARY KEY (`id`, `key`));

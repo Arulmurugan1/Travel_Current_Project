@@ -8,7 +8,7 @@
 <meta charset="ISO-8859-1">
 
 
-<link rel="stylesheet" href="styleSheet/500-error.css" type="text/css">
+<link rel="stylesheet" href="/styleSheet/500-error.css" type="text/css">
 
 </head>
 
