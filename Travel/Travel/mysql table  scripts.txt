@@ -1,0 +1,301 @@
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+--
+-- Host: localhost    Database: taxi
+-- ------------------------------------------------------
+-- Server version	8.0.30
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `booking`
+--
+
+DROP TABLE IF EXISTS `booking`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `booking` (
+  `booking_no` int NOT NULL AUTO_INCREMENT,
+  `pickup_from` varchar(45) NOT NULL,
+  `drop_at` varchar(45) NOT NULL,
+  `customer_id` int NOT NULL,
+  `vehicle_no` varchar(45) NOT NULL,
+  `driver_id` varchar(45) NOT NULL,
+  `fare` double NOT NULL,
+  PRIMARY KEY (`booking_no`),
+  UNIQUE KEY `booking_no_UNIQUE` (`booking_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To store booking info';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `booking`
+--
+
+LOCK TABLES `booking` WRITE;
+/*!40000 ALTER TABLE `booking` DISABLE KEYS */;
+INSERT INTO `booking` VALUES (1,'Chennai','Coimbatore',1,'2345','2',2000),(2,'Chennai','Erode',2,'2314','4',1400),(3,'Chennai','Salem',3,'1214','1',1200),(4,'Chennai','Trichy',4,'2332','5',1300),(5,'Chennai','Vellore',5,'1215','3',900),(6,'Chennai','Erode',6,'2314','4',1400),(7,'Chennai','Coimbatore',7,'2345','2',2000),(8,'Chennai','Trichy',8,'2332','5',1300),(9,'Chennai','Vellore',9,'1215','3',900);
+/*!40000 ALTER TABLE `booking` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `car_brand`
+--
+
+DROP TABLE IF EXISTS `car_brand`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `car_brand` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(55) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `car_brand`
+--
+
+LOCK TABLES `car_brand` WRITE;
+/*!40000 ALTER TABLE `car_brand` DISABLE KEYS */;
+INSERT INTO `car_brand` VALUES (1,'Ashok Leyland'),(2,'Aston Martin'),(3,'Audi'),(4,'Bentley'),(5,'BMW'),(6,'Bugatti'),(7,'Caterham'),(8,'Chevrolet'),(9,'Daewoo'),(10,'Datsun'),(11,'DC'),(12,'Eicher Polaris'),(13,'Ferrari'),(14,'Fiat'),(15,'Force Motors'),(16,'Ford'),(17,'Hindustan Motors'),(18,'Honda'),(19,'Hyundai'),(20,'ICML'),(21,'Isuzu'),(22,'Jaguar'),(23,'Jeep'),(24,'Kia'),(25,'Lamborghini'),(26,'Land Rover'),(27,'Lexus'),(28,'Mahindra'),(29,'Mahindra-Renault'),(30,'Maini'),(31,'Maruti Suzuki'),(32,'Maserati'),(33,'Maybach'),(34,'Mercedes-Benz'),(35,'MG'),(36,'Mini'),(37,'Mitsubishi'),(38,'Nissan'),(39,'Opel'),(40,'Porsche'),(41,'Premier'),(42,'Renault'),(43,'Rolls-Royce'),(44,'San'),(45,'Skoda'),(46,'Ssangyong'),(47,'Tata'),(48,'Toyota'),(49,'Volkswagen'),(50,'Volvo'),(51,'Willys');
+/*!40000 ALTER TABLE `car_brand` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `customer`
+--
+
+DROP TABLE IF EXISTS `customer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `customer` (
+  `customer_id` int NOT NULL AUTO_INCREMENT,
+  `customer_name` varchar(200) NOT NULL,
+  `start` varchar(45) NOT NULL,
+  `end` varchar(45) NOT NULL,
+  `age` varchar(45) NOT NULL,
+  `gender` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `phone` varchar(45) NOT NULL,
+  PRIMARY KEY (`customer_id`),
+  UNIQUE KEY `customer_id_UNIQUE` (`customer_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To store customer info';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `customer`
+--
+
+LOCK TABLES `customer` WRITE;
+/*!40000 ALTER TABLE `customer` DISABLE KEYS */;
+INSERT INTO `customer` VALUES (1,'Arulmurugan C','Chennai','Coimbatore','29','M','arulmurugansk7@gmail.com','8939523379'),(2,'Guna','Chennai','Erode','43','M','gunathiru@gmail.com','8434567896'),(3,'Venkat','Chennai','Salem','33','M','Venk@gmail.com','9885643454'),(4,'Danniel','Chennai','Trichy','43','M','dannitrs@gmail.com','8765654675'),(5,'Arivu','Chennai','Vellore','23','F','ariv8775@gmail.com','9097654564'),(6,'Mathi','Chennai','Erode','32','F','mathii7665@gmail.com','9876564556'),(7,'ARULMURUGAN CHANDRAN','Chennai','Coimbatore','22','M','arulmurugansk7@gmail.com','8939523379'),(8,'Arulmurugan C','Chennai','Trichy','43','M','arulmurugansk7@gmail.com','8939523379'),(9,'Maha','Chennai','Vellore','23','F','maha756@gmail.com','9876535446');
+/*!40000 ALTER TABLE `customer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `driver`
+--
+
+DROP TABLE IF EXISTS `driver`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `driver` (
+  `driver_id` int NOT NULL AUTO_INCREMENT,
+  `driver_name` varchar(45) NOT NULL,
+  `age` int NOT NULL,
+  `gender` varchar(45) NOT NULL,
+  `city` varchar(45) NOT NULL,
+  `phone` varchar(45) NOT NULL,
+  `vehicle_no` int NOT NULL,
+  PRIMARY KEY (`driver_id`),
+  KEY `no` (`vehicle_no`),
+  CONSTRAINT `driver_ibfk_1` FOREIGN KEY (`vehicle_no`) REFERENCES `vehicle` (`vehicle_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To store driver info';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `driver`
+--
+
+LOCK TABLES `driver` WRITE;
+/*!40000 ALTER TABLE `driver` DISABLE KEYS */;
+INSERT INTO `driver` VALUES (1,'Arul',21,'Male','Salem','9853724268',1214),(2,'Murugesan',53,'Male','Madurai','6545346467',2345),(3,'Kumar',34,'Male','Chennai','8655345656',1215),(4,'Murugesan',21,'Male','Tuticorin','6538762834',2314),(5,'Kumar',24,'Male','Chennai','9456765434',2332);
+/*!40000 ALTER TABLE `driver` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `login_info`
+--
+
+DROP TABLE IF EXISTS `login_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `login_info` (
+  `user_id` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password1` varchar(45) NOT NULL,
+  `password2` varchar(45) NOT NULL,
+  `password3` varchar(45) NOT NULL,
+  `password4` varchar(45) NOT NULL,
+  `role` varchar(45) NOT NULL,
+  `created_user` varchar(45) NOT NULL,
+  `create_time` datetime NOT NULL,
+  `last_login` datetime NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_id_UNIQUE` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To store login users and their activity';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `login_info`
+--
+
+LOCK TABLES `login_info` WRITE;
+/*!40000 ALTER TABLE `login_info` DISABLE KEYS */;
+INSERT INTO `login_info` VALUES ('arul','Arulmurugan','arul',' ',' ',' ','Admin','Arulmurugan','2022-08-24 23:05:22','2022-09-18 15:59:30'),('chandran','Chandran','chandran',' ',' ',' ','Guest','Others','2022-09-13 23:33:14','2022-09-17 18:36:27');
+/*!40000 ALTER TABLE `login_info` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `model`
+--
+
+DROP TABLE IF EXISTS `model`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `model` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `make_id` int NOT NULL DEFAULT '0',
+  `title` varchar(125) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=449 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `model`
+--
+
+LOCK TABLES `model` WRITE;
+/*!40000 ALTER TABLE `model` DISABLE KEYS */;
+INSERT INTO `model` VALUES (1,1,'Stile'),(2,2,'DB11'),(3,2,'DB9'),(4,2,'DBS'),(5,2,'Rapide'),(6,2,'V12 Vantage'),(7,2,'V8 Vantage'),(8,2,'Vanquish'),(9,3,'A3'),(10,3,'A3 Cabriolet'),(11,3,'A4'),(12,3,'A5'),(13,3,'A5 Cabriolet'),(14,3,'A6'),(15,3,'A7'),(16,3,'A8 L'),(17,3,'Q3'),(18,3,'Q5'),(19,3,'Q7'),(20,3,'Q8'),(21,3,'R8'),(22,3,'RS5'),(23,3,'RS6'),(24,3,'RS7 Sportback'),(25,3,'S5 Sportback'),(26,3,'S6'),(27,3,'TT'),(28,4,'Arnage'),(29,4,'Azure'),(30,4,'Bentayga'),(31,4,'Continental Flying Spur'),(32,4,'Continental GT'),(33,4,'Continental GTC'),(34,4,'Mulsanne'),(35,5,'1 Series'),(36,5,'3 Series'),(37,5,'3 Series GT'),(38,5,'5 Series'),(39,5,'5 Series GT'),(40,5,'6 Series'),(41,5,'6 Series Gran Coupe'),(42,5,'6 Series GT'),(43,5,'7 Series'),(44,5,'i8'),(45,5,'M2'),(46,5,'M3'),(47,5,'M4'),(48,5,'M5'),(49,5,'M6'),(50,5,'X1'),(51,5,'X3'),(52,5,'X4'),(53,5,'X5'),(54,5,'X6'),(55,5,'X7'),(56,5,'Z4'),(57,6,'Veyron'),(58,7,'7'),(59,8,'Aveo'),(60,8,'Aveo U-VA'),(61,8,'Beat'),(62,8,'Captiva'),(63,8,'Cruze'),(64,8,'Enjoy'),(65,8,'Forester'),(66,8,'Optra'),(67,8,'Optra Magnum'),(68,8,'Optra SRV'),(69,8,'Sail'),(70,8,'Sail Hatchback'),(71,8,'Sail U-VA'),(72,8,'Spark'),(73,8,'Tavera'),(74,8,'Trailblazer'),(75,9,'Cielo'),(76,9,'Matiz'),(77,9,'Nexia'),(78,10,'GO'),(79,10,'Go'),(80,10,'Go +'),(81,10,'GO Plus'),(82,10,'Go Plus'),(83,10,'GO+'),(84,10,'Redi-GO'),(85,11,'Avanti'),(86,12,'Multix'),(87,13,'458'),(88,13,'488'),(89,13,'599 GTB Fiorano'),(90,13,'812'),(91,13,'California'),(92,13,'F12berlinetta'),(93,13,'FF'),(94,13,'GTC4 Lusso'),(95,13,'Portofino'),(96,14,'500'),(97,14,'Abarth 595'),(98,14,'Abarth Punto'),(99,14,'Adventure'),(100,14,'Avventura'),(101,14,'Linea'),(102,14,'Linea Classic'),(103,14,'Palio D'),(104,14,'Palio NV'),(105,14,'Palio Stile'),(106,14,'Petra'),(107,14,'Petra D'),(108,14,'Punto'),(109,14,'Punto Evo'),(110,14,'Punto Pure'),(111,14,'Uno'),(112,14,'Urban Cross'),(113,15,'Force One'),(114,15,'Gurkha'),(115,16,'Aspire'),(116,16,'Classic'),(117,16,'EcoSport'),(118,16,'Endeavour'),(119,16,'Escort'),(120,16,'Fiesta'),(121,16,'Fiesta Classic'),(122,16,'Figo'),(123,16,'Freestyle'),(124,16,'Fusion'),(125,16,'Ikon'),(126,16,'Mondeo'),(127,16,'Mustang'),(128,17,'Ambassador'),(129,17,'Contessa'),(130,18,'Accord'),(131,18,'Amaze'),(132,18,'Brio'),(133,18,'BR-V'),(134,18,'City'),(135,18,'City ZX'),(136,18,'Civic'),(137,18,'CR-V'),(138,18,'Jazz'),(139,18,'Mobilio'),(140,18,'WR-V'),(141,19,'Accent'),(142,19,'Accent Viva'),(143,19,'Aura'),(144,19,'Creta'),(145,19,'Elantra'),(146,19,'Elite i20'),(147,19,'Eon'),(148,19,'Fluidic Verna 4S'),(149,19,'Getz'),(150,19,'Getz Prime'),(151,19,'Grand i10'),(152,19,'Grand i10 Nios'),(153,19,'i10'),(154,19,'i20'),(155,19,'i20 Active'),(156,19,'Kona Electric'),(157,19,'Santa Fe'),(158,19,'Santro'),(159,19,'Santro Xing'),(160,19,'Sonata'),(161,19,'Sonata Embera'),(162,19,'Sonata Transform'),(163,19,'Tucson'),(164,19,'Venue'),(165,19,'Verna'),(166,19,'Verna Transform'),(167,19,'Xcent'),(168,20,'Extreme'),(169,20,'Rhino Rx'),(170,21,'D-Max V-Cross'),(171,21,'D-MAX V-Cross'),(172,21,'MU7'),(173,21,'MU-X'),(174,22,'F-Pace'),(175,22,'F-Type'),(176,22,'XE'),(177,22,'XF'),(178,22,'XJ L'),(179,22,'XK'),(180,23,'Compass'),(181,23,'Grand Cherokee'),(182,23,'Wrangler'),(183,24,'Carnival'),(184,24,'Seltos'),(185,25,'Aventador'),(186,25,'Gallardo'),(187,25,'Huracan'),(188,25,'Murcielago'),(189,25,'Urus'),(190,26,'Defender'),(191,26,'Discovery'),(192,26,'Discovery 3'),(193,26,'Discovery 4'),(194,26,'Discovery Sport'),(195,26,'Freelander 2'),(196,26,'Range Rover'),(197,26,'Range Rover Evoque'),(198,26,'Range Rover Sport'),(199,26,'Range Rover Velar'),(200,27,'ES'),(201,27,'LC 500h'),(202,27,'LS'),(203,27,'LX'),(204,27,'NX'),(205,27,'RX'),(206,28,'Alturas G4'),(207,28,'Bolero'),(208,28,'e2o'),(209,28,'e2o Plus'),(210,28,'KUV100'),(211,28,'KUV100 NXT'),(212,28,'Marazzo'),(213,28,'NuvoSport'),(214,28,'Quanto'),(215,28,'REVAi'),(216,28,'Scorpio'),(217,28,'Scorpio Getaway'),(218,28,'Thar'),(219,28,'TUV300'),(220,28,'TUV300 PLUS'),(221,28,'Verito'),(222,28,'Verito Vibe CS'),(223,28,'XUV300'),(224,28,'XUV500'),(225,28,'Xylo'),(226,29,'Logan'),(227,29,'Logan Edge'),(228,30,'Reva'),(229,30,'REVAi'),(230,31,'800'),(231,31,'Alto'),(232,31,'Alto 800'),(233,31,'Alto K10'),(234,31,'A-Star'),(235,31,'Baleno'),(236,31,'Celerio'),(237,31,'Celerio X'),(238,31,'Ciaz'),(239,31,'Dzire'),(240,31,'Eeco'),(241,31,'Ertiga'),(242,31,'Esteem'),(243,31,'Estilo'),(244,31,'Grand Vitara'),(245,31,'Gypsy'),(246,31,'Ignis'),(247,31,'Kizashi'),(248,31,'Omni'),(249,31,'Ritz'),(250,31,'S-Cross'),(251,31,'S-Presso'),(252,31,'Stingray'),(253,31,'Swift'),(254,31,'Swift Dzire'),(255,31,'Swift DZire'),(256,31,'SX4'),(257,31,'Versa'),(258,31,'Vitara Brezza'),(259,31,'Wagon R'),(260,31,'Wagon R 1.0'),(261,31,'XL6'),(262,31,'Zen'),(263,32,'Ghibli'),(264,32,'GranCabrio'),(265,32,'GranTurismo'),(266,32,'Levante'),(267,32,'Quattroporte'),(268,33,'57S'),(269,33,'62'),(270,34,'A-Class'),(271,34,'A-Class Limousine'),(272,34,'AMG GT'),(273,34,'AMG GT 4-Door Coupe'),(274,34,'B-Class'),(275,34,'C-Class'),(276,34,'C-Class Cabriolet'),(277,34,'C-Coupe'),(278,34,'CLA'),(279,34,'CLS'),(280,34,'E-Class'),(281,34,'E-Class All Terrain'),(282,34,'E-Class Cabriolet'),(283,34,'G-Class'),(284,34,'GL'),(285,34,'GLA'),(286,34,'GLC'),(287,34,'GLC Coupe'),(288,34,'GLE'),(289,34,'GLE Coupe'),(290,34,'GLS'),(291,34,'M-Class'),(292,34,'R-Class'),(293,34,'S-Class'),(294,34,'S-Class Cabriolet'),(295,34,'S-Coupe'),(296,34,'SL'),(297,34,'SLC'),(298,34,'SLK'),(299,34,'SLK-Class'),(300,34,'SLS AMG'),(301,34,'V-Class'),(302,35,'Hector'),(303,35,'ZS EV'),(304,36,'Clubman'),(305,36,'Cooper'),(306,36,'Cooper Convertible'),(307,36,'Cooper Countryman'),(308,36,'Cooper S'),(309,36,'Countryman'),(310,37,'Cedia'),(311,37,'Challenger'),(312,37,'Lancer'),(313,37,'Lancer Evolution'),(314,37,'Montero'),(315,37,'Outlander'),(316,37,'Pajero'),(317,37,'Pajero Sport'),(318,38,'370Z'),(319,38,'Evalia'),(320,38,'GT-R'),(321,38,'Kicks'),(322,38,'Micra'),(323,38,'Micra Active'),(324,38,'Sunny'),(325,38,'Teana'),(326,38,'Terrano'),(327,38,'X-Trail'),(328,39,'Astra'),(329,39,'Corsa'),(330,39,'Vectra'),(331,40,'718'),(332,40,'911'),(333,40,'992 911'),(334,40,'Boxster'),(335,40,'Cayenne'),(336,40,'Cayenne Coupe'),(337,40,'Cayman'),(338,40,'Macan'),(339,40,'Panamera'),(340,41,'Padmini'),(341,41,'Rio'),(342,42,'Captur'),(343,42,'Duster'),(344,42,'Fluence'),(345,42,'Koleos'),(346,42,'Kwid'),(347,42,'Lodgy'),(348,42,'Pulse'),(349,42,'Scala'),(350,42,'Triber'),(351,43,'Cullinan'),(352,43,'Dawn'),(353,43,'Drophead Coupe'),(354,43,'Ghost'),(355,43,'Ghost Series II'),(356,43,'Phantom'),(357,43,'Phantom Coupe'),(358,43,'Phantom VIII'),(359,43,'Wraith'),(360,44,'Storm'),(361,45,'Fabia'),(362,45,'Fabia Scout'),(363,45,'Kodiaq'),(364,45,'Laura'),(365,45,'Octavia'),(366,45,'Octavia Combi'),(367,45,'Rapid'),(368,45,'Superb'),(369,45,'Yeti'),(370,46,'Rexton'),(371,47,'Altroz'),(372,47,'Aria'),(373,47,'Bolt'),(374,47,'Harrier'),(375,47,'Hexa'),(376,47,'Indica'),(377,47,'Indica eV2'),(378,47,'Indica V2'),(379,47,'Indica Vista'),(380,47,'Indigo'),(381,47,'Indigo CS'),(382,47,'Indigo eCS'),(383,47,'Indigo Marina'),(384,47,'Indigo XL'),(385,47,'Manza'),(386,47,'Movus'),(387,47,'Nano'),(388,47,'Nano GenX'),(389,47,'Nexon'),(390,47,'Nexon EV'),(391,47,'Safari'),(392,47,'Safari Storme'),(393,47,'Sumo Gold'),(394,47,'Sumo Grande'),(395,47,'Sumo Grande MK II'),(396,47,'Sumo Spacio'),(397,47,'Sumo Victa'),(398,47,'Tiago'),(399,47,'Tiago JTP'),(400,47,'Tiago NRG'),(401,47,'Tigor'),(402,47,'Tigor EV'),(403,47,'Tigor JTP'),(404,47,'Venture'),(405,47,'Vista Tech'),(406,47,'Winger'),(407,47,'Xenon XT'),(408,47,'Zest'),(409,48,'Camry'),(410,48,'Corolla'),(411,48,'Corolla Altis'),(412,48,'Etios'),(413,48,'Etios Cross'),(414,48,'Etios Liva'),(415,48,'Fortuner'),(416,48,'Glanza'),(417,48,'Innova'),(418,48,'Innova Crysta'),(419,48,'Land Cruiser'),(420,48,'Land Cruiser Prado'),(421,48,'Platinum Etios'),(422,48,'Prius'),(423,48,'Qualis'),(424,48,'Vellfire'),(425,48,'Yaris'),(426,49,'Ameo'),(427,49,'Beetle'),(428,49,'Cross Polo'),(429,49,'GTI'),(430,49,'Jetta'),(431,49,'Passat'),(432,49,'Phaeton'),(433,49,'Polo'),(434,49,'Tiguan'),(435,49,'Tiguan AllSpace'),(436,49,'Touareg'),(437,49,'T-Roc'),(438,49,'Vento'),(439,50,'S60'),(440,50,'S80'),(441,50,'S90'),(442,50,'V40'),(443,50,'V40 Cross Country'),(444,50,'V90 Cross Country'),(445,50,'XC40'),(446,50,'XC60'),(447,50,'XC90'),(448,51,'MB');
+/*!40000 ALTER TABLE `model` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `route`
+--
+
+DROP TABLE IF EXISTS `route`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `route` (
+  `vehicle_no` int NOT NULL,
+  `start` varchar(45) NOT NULL,
+  `end` varchar(45) NOT NULL,
+  `fare` double NOT NULL,
+  PRIMARY KEY (`vehicle_no`),
+  KEY `start_idx` (`start`),
+  KEY `end_idx` (`end`),
+  CONSTRAINT `end` FOREIGN KEY (`end`) REFERENCES `route_service` (`end`),
+  CONSTRAINT `start` FOREIGN KEY (`start`) REFERENCES `route_service` (`start`),
+  CONSTRAINT `vehicle_no` FOREIGN KEY (`vehicle_no`) REFERENCES `vehicle` (`vehicle_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To Store available  route services ';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `route`
+--
+
+LOCK TABLES `route` WRITE;
+/*!40000 ALTER TABLE `route` DISABLE KEYS */;
+INSERT INTO `route` VALUES (1214,'Chennai','Salem',1200),(1215,'Chennai','Vellore',900),(2314,'Chennai','Erode',1400),(2332,'Chennai','Trichy',1300),(2345,'Chennai','Coimbatore',2000);
+/*!40000 ALTER TABLE `route` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `route_service`
+--
+
+DROP TABLE IF EXISTS `route_service`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `route_service` (
+  `start` varchar(50) NOT NULL,
+  `end` varchar(45) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`start`,`end`),
+  UNIQUE KEY `id` (`id`),
+  UNIQUE KEY `start_UNIQUE` (`start`),
+  UNIQUE KEY `end_UNIQUE` (`end`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To store routes of service';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `route_service`
+--
+
+LOCK TABLES `route_service` WRITE;
+/*!40000 ALTER TABLE `route_service` DISABLE KEYS */;
+INSERT INTO `route_service` VALUES ('Chennai','Chennai',1),('Salem','Salem',2),('Erode','Erode',3),('Coimbatore','Coimbatore',4),('Vellore','Vellore',5),('Trichy','Trichy',6),('Madurai','Madurai',7),('Dindugal','Dindugal',8),('Tuticorin','Tuticorin',9),('Kanyakumari','Kanyakumari',10);
+/*!40000 ALTER TABLE `route_service` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `vehicle`
+--
+
+DROP TABLE IF EXISTS `vehicle`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `vehicle` (
+  `vehicle_no` int NOT NULL,
+  `brand` varchar(45) NOT NULL,
+  `model` varchar(45) NOT NULL,
+  `color` varchar(45) NOT NULL,
+  PRIMARY KEY (`vehicle_no`),
+  UNIQUE KEY `no_UNIQUE` (`vehicle_no`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='To store vehicle info';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `vehicle`
+--
+
+LOCK TABLES `vehicle` WRITE;
+/*!40000 ALTER TABLE `vehicle` DISABLE KEYS */;
+INSERT INTO `vehicle` VALUES (1214,'Maruti Suzuki','Alto 800','Blue'),(1215,'Mitsubishi','Lancer','White'),(2314,'DC','Avanti','Red'),(2332,'Aston Martin','Rapide','Brown'),(2345,'Maruti Suzuki','Dzire','Green');
+/*!40000 ALTER TABLE `vehicle` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-09-20  7:17:38
+
+
+CREATE TABLE `taxi`.`properties_path` (
+  `id` INT ZEROFILL NOT NULL AUTO_INCREMENT,
+  `key` VARCHAR(400) NOT NULL DEFAULT ' ',
+  `value` VARCHAR(400) NOT NULL DEFAULT ' ',
+  PRIMARY KEY (`id`, `key`));
+
+CREATE TABLE `taxi`.`user_image` (
+  `user_id` VARCHAR(500) NULL DEFAULT ' ',
+  `image_name` VARCHAR(500) NULL DEFAULT ' ',
+  `iimage_path` VARCHAR(500) NULL DEFAULT ' ',
+  `uploaded_time` DATETIME NULL DEFAULT NULL,
+  `uploaded_by` VARCHAR(500) NULL DEFAULT ' ');

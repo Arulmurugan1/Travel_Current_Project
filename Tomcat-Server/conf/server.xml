@@ -151,18 +151,15 @@
 	  
 	  
 	  
-      <Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true">
+      <Host name="localhost"  appBase="M:\Git\My Repository\Completed\Travel_Current_Project\Travel" path="" unpackWARs="true" autoDeploy="true" reloadable="true" >
 	  
-	 <!-- <Context docBase="Travel" path="/Travel" reloadable="true" source="org.eclipse.jst.jee.server:Travel"/> -->
-
-     <!-- <Host name="localhost"  appBase="webapps"
-            unpackWARs="true" autoDeploy="true"> --> <!-- Old one replaced -->
-
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--
         <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
         -->
+		
+		<!--	<Context docbase="Travel" source="M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel" path="" reloadable="true" />  -->
 
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html

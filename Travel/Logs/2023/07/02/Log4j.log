@@ -1,0 +1,210 @@
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [Class]	[arul]	Inside do fIletr 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	Inside Login sERVLET 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 mode                      =>  login  
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 txtUser                   =>  arul  
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 txtPassword               =>  arul  
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 username                  =>    
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 pass1                     =>    
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 pass2                     =>    
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 user_id                   =>    
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 Last Login 2023-07-02T02:10:03 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	DB UserId : arul Username : Arulmurugan Password : arul 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [Class]	[arul]	Access Log Entered true 
+[02-07-2023 02:35:27:027 AM IST] DEBUG [Line:56] - [Class]	[arul]	Logindao Connection Closed [true]  
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [Class]	[arul]	File created true File Name :1688245547950_console.log 
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get File Path => M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Logs\2023\07\02\Console\1688245547950_console.log 
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [] 
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:35:47:047 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:35:48:048 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:35:48:048 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:36:21:021 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:36:21:021 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:36:21:021 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:36:21:021 AM IST] DEBUG [Line:56] - [VehicleServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:36:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:36:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:36:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:36:40:040 AM IST] DEBUG [Line:56] - [DriverServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:36:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[02-07-2023 02:36:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Driverdao Connection Closed [true]  
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:38:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 status                    =>  Confirmed  
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 booking_no                =>  42  
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	VehicleNo [null] Vehicle Model [null] 
+[02-07-2023 02:38:20:020 AM IST] INFO  [Line:56] - [AjaxServlet]	[arul]	Inside ajax 
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 42 
+[02-07-2023 02:38:20:020 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	Connection [null] Statement [null] Resultset [null] 
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:38:40:040 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 status                    =>  Confirmed  
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 booking_no                =>  14  
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	VehicleNo [null] Vehicle Model [null] 
+[02-07-2023 02:39:04:004 AM IST] INFO  [Line:56] - [AjaxServlet]	[arul]	Inside ajax 
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 14 
+[02-07-2023 02:39:04:004 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	Connection [null] Statement [null] Resultset [null] 
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 status                    =>  Confirmed  
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 booking_no                =>  30  
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	VehicleNo [null] Vehicle Model [null] 
+[02-07-2023 02:39:07:007 AM IST] INFO  [Line:56] - [AjaxServlet]	[arul]	Inside ajax 
+[02-07-2023 02:39:07:007 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 30 
+[02-07-2023 02:39:08:008 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	Connection [null] Statement [null] Resultset [null] 
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 status                    =>  Confirmed  
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	 booking_no                =>  41  
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	VehicleNo [null] Vehicle Model [null] 
+[02-07-2023 02:39:10:010 AM IST] INFO  [Line:56] - [AjaxServlet]	[arul]	Inside ajax 
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 41 
+[02-07-2023 02:39:10:010 AM IST] DEBUG [Line:56] - [AjaxServlet]	[arul]	Connection [null] Statement [null] Resultset [null] 
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@7dff0a12Property [java.io.PrintStream@7dff0a12] 
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [CustomerServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [Class]	[arul]	select * from CUSTOMER 
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[02-07-2023 02:39:41:041 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:41:13:013 AM IST] DEBUG [Line:56] - [CustomerServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:41:13:013 AM IST] DEBUG [Line:56] - [Class]	[arul]	select * from CUSTOMER 
+[02-07-2023 02:41:13:013 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[02-07-2023 02:41:13:013 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [Class]	[arul]	Inside do fIletr 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	Inside Login sERVLET 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 mode                      =>  login  
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 txtUser                   =>  arul  
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 txtPassword               =>  arul  
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 username                  =>    
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 pass1                     =>    
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 pass2                     =>    
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 user_id                   =>    
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 Last Login 2023-07-02T02:35:27 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	DB UserId : arul Username : Arulmurugan Password : arul 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [Class]	[arul]	Access Log Entered true 
+[02-07-2023 02:41:28:028 AM IST] DEBUG [Line:56] - [Class]	[arul]	Logindao Connection Closed [true]  
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	Inside do fIletr 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	Inside Login sERVLET 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/07/02/2023/07/02/Log4j/ 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	 File Path Added to session  
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	File created true File Name :1688245935378_console.log 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get File Path => M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Logs\2023\07\02\Console\1688245935378_console.log 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	Get PrintStream [java.io.PrintStream@4f8421abProperty [] 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 mode                      =>  login  
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 txtUser                   =>  arul  
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 txtPassword               =>  arul  
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 username                  =>    
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 pass1                     =>    
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 pass2                     =>    
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 user_id                   =>    
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	 Last Login 2023-07-02T02:41:28 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [LoginServlet]	[arul]	DB UserId : arul Username : Arulmurugan Password : arul 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	Access Log Entered true 
+[02-07-2023 02:42:15:015 AM IST] DEBUG [Line:56] - [Class]	[arul]	Logindao Connection Closed [true]  
+[02-07-2023 02:42:42:042 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:42:42:042 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:42:42:042 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:42:42:042 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:42:52:052 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>  dummy  
+[02-07-2023 02:42:52:052 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:42:52:052 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:42:52:052 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>  dummy  
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 pickup_from               =>  Coimbatore  
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 drop_at                   =>    
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 customer_name             =>    
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 age                       =>    
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 gender                    =>    
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 email                     =>    
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 phone                     =>    
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:42:55:055 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>  dummy  
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 pickup_from               =>  Coimbatore  
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 drop_at                   =>  Dindugal  
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 customer_name             =>    
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 age                       =>    
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 gender                    =>    
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 email                     =>    
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 phone                     =>    
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:42:57:057 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 mode                      =>  I  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 pickup_from               =>  Coimbatore  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 drop_at                   =>  Dindugal  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 vehicle_no                =>  2315  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 driver_id                 =>  9  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 customer_name             =>  Arulmurugan C  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 age                       =>  21  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 gender                    =>  Male  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 email                     =>  arulmurugansk7@gmail.com  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 phone                     =>  8939523379  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [BookingServlet]	[arul]	 fare                      =>  1600.0  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO CUSTOMER VALUES(null,'Arulmurugan C','Coimbatore','Dindugal','21','M','arulmurugansk7@gmail.com','8939523379') 
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	Generated Customer ::299 
+[02-07-2023 02:43:05:005 AM IST] INFO  [Line:56] - [BookingServlet]	[arul]	Customer Added  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO BOOKING VALUES(null,'Coimbatore','Dindugal',299,'2315','9',1600.0,'Arulmurugan','WIP',sysdate()) 
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	Booking No ::275 
+[02-07-2023 02:43:05:005 AM IST] INFO  [Line:56] - [BookingServlet]	[arul]	Booking Added  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:43:05:005 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:44:12:012 AM IST] DEBUG [Line:56] - [CustomerServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:44:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	select * from CUSTOMER 
+[02-07-2023 02:44:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[02-07-2023 02:44:12:012 AM IST] DEBUG [Line:56] - [Class]	[arul]	Customerdao Connection Closed [true]  
+[02-07-2023 02:44:35:035 AM IST] DEBUG [Line:56] - [DriverServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:44:35:035 AM IST] DEBUG [Line:56] - [Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[02-07-2023 02:44:35:035 AM IST] DEBUG [Line:56] - [Class]	[arul]	Driverdao Connection Closed [true]  
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	Inside do fIletr 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	Inside Login sERVLET 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 mode                      =>  login  
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 txtUser                   =>  arul  
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 txtPassword               =>  arul  
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 username                  =>    
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 pass1                     =>    
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 pass2                     =>    
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 user_id                   =>    
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	 Last Login 2023-07-02T02:42:15 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [com.web.controller.LoginServlet]	[arul]	DB UserId : arul Username : Arulmurugan Password : arul 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	Access Log Entered true 
+[02-07-2023 02:45:12:012 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	Logindao Connection Closed [true]  
+[02-07-2023 02:45:43:043 AM IST] DEBUG [Line:48] - [com.web.controller.BookingServlet]	[arul]	 mode                      =>    
+[02-07-2023 02:45:43:043 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[02-07-2023 02:45:43:043 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	Bookingdao Connection Closed [true]  
+[02-07-2023 02:45:43:043 AM IST] DEBUG [Line:48] - [java.lang.Class]	[arul]	Customerdao Connection Closed [true]  
