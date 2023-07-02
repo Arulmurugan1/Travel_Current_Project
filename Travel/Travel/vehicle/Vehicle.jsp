@@ -84,7 +84,7 @@ td.no::before {
 	</div>
 	
 	<script type="text/javascript">
-	$(document).ready(()=>{
+$(document).ready(()=>{
 		
 		$('#vehicleForm').hide();
 		

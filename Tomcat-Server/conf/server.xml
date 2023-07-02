@@ -151,7 +151,7 @@
 	  
 	  
 	  
-      <Host name="localhost"  appBase="M:\Git\My Repository\Completed\Travel_Current_Project\Travel" path="" unpackWARs="true" autoDeploy="true" reloadable="true" >
+      <Host name="localhost"  appBase="M:\Git\My Repository\Completed\Travel_Current_Project\Travel" unpackWARs="true" autoDeploy="true" reloadable="true" >
 	  
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->

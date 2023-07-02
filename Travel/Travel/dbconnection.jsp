@@ -12,27 +12,27 @@
 
 <title>SK Travels</title>
 
-<link rel="stylesheet" href="styleSheet/bootstrap.css" type="text/css">
-<link rel="stylesheet" href="styleSheet/index.css" type="text/css">
-<link rel="stylesheet" href="styleSheet/Pagination.css" type="text/css">
-<link rel="stylesheet" href="styleSheet/searchBox.css" type="text/css">
-<link rel="stylesheet" href="styleSheet/header.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/index.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/Pagination.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/searchBox.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/header.css" type="text/css">
 
 
 <link rel="icon" type="image/x-icon" href="/Images/favIcon/fav.png">
 
 <!-- Font awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-<script src="scripts/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
-<script src="scripts/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-<script src="scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
-<script src="scripts/ajax/libs/jquery/3.5.0/jquery.min.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath() %>/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/3.5.0/jquery.min.js" type="text/javascript"></script>
 
 
-<script src="scripts/Validator.js"></script>
-<script src="scripts/ajaxCall.js"></script>
-<script src="scripts/common.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/Validator.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/ajaxCall.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/common.js"></script>
 
 
 <%

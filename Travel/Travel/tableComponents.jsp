@@ -46,5 +46,5 @@
 	</div>
 </div>
 
-<script src="scripts/Pagination.js"></script>
-<script src="scripts/search.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/Pagination.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/search.js"></script>

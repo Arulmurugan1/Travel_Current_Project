@@ -10,8 +10,6 @@ $(document).ready(function() {
 	// Vehicle models 
 	$("#vehicle_model").change((e)=>{
 
-		if ( dataString != "" )
-		{
 			$.ajax({
 				type: "POST",
 				url: "Ajax",
@@ -50,8 +48,6 @@ $(document).ready(function() {
 				}
 
 			});  
-
-		}
 	});
 });
 

@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 
 
-<link rel="stylesheet" href="/styleSheet/404-error.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/404-error.css" type="text/css">
 
 </head>
 <body>
