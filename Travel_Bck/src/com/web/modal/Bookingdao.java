@@ -266,4 +266,10 @@ public class Bookingdao extends Generic{
         else
             return new Bookingdao();
     }
+    
+    public ResultSet getResultSet()
+    {
+    	return rs ;
+    }
+    
 }
