@@ -15,11 +15,11 @@ public class Routedao extends Generic
 
 
 
-	private static final String INSERT ="INSERT INTO ROUTE VALUES(?,?,?)" ;
+	private static final String INSERT ="INSERT INTO ROUTE VALUES(?,?,?,?)" ;
 	private static final String SELECTBYNO = "select * from ROUTE where VEHICLE_NO =?";
 	private static final String SELECTALL = "select * from ROUTE ORDER BY START";
 	private static final String DELETE = "delete from ROUTE where VEHICLE_NO = ?;";
-	private static final String UPDATE = "update ROUTE set START=?,END=? where VEHICLE_NO = ?";	
+	private static final String UPDATE = "update ROUTE set START=?,END=?,Vehicle_no=? , fare=? where VEHICLE_NO = ?";	
 	private static final String CHECK  = "SELECT vehicle_no FROM ROUTE WHERE START = ? AND END =?;";
 
 	public boolean insert(Route r) throws SQLException{
@@ -29,6 +29,7 @@ public class Routedao extends Generic
 		ps.setString(++cntl,r.getVehicle_no() );
 		ps.setString(++cntl,r.getStart() );
 		ps.setString(++cntl,r.getEnd() );
+		ps.setDouble(++cntl, r.getFare());
 		logContent(ps,LoggerFactory.DEBUG , null, this);
 		rowsAffected = ps.executeUpdate() > 0;
 		return rowsAffected;
@@ -101,6 +102,8 @@ public class Routedao extends Generic
 		ps.setString(++cntl,r.getStart() );
 		ps.setString(++cntl,r.getEnd() );
 		ps.setString(++cntl,r.getVehicle_no() );
+		ps.setDouble(++cntl, r.getFare());
+		
 		rowUpdated = ps.executeUpdate() > 0;
 		return rowUpdated;
 	}

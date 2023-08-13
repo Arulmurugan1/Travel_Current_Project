@@ -6,7 +6,7 @@ $(document).ready(function() {
 	$("#vehicle").submit(function(e){
 		e.preventDefault();
 	});
-
+	
 	// Vehicle models 
 	$("#vehicle_model").change((e)=>{
 
@@ -245,5 +245,6 @@ function createRequest()
 		request=new ActiveXObject("Microsoft.XMLHTTP");  
 	}  
 }
+
 
 //Ajax Ends 

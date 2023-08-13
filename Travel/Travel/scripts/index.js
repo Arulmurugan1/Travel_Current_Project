@@ -1,6 +1,5 @@
 function Submit(mode) 
 {
-
 	if (mode == 'login') 
 	{
 		with (document.form) 
@@ -17,9 +16,7 @@ function Submit(mode)
 				$(button).empty();
 				$(button).attr('disabled',true);
 				$(button).append('<i class="fa fa-spinner fa-spin mr-2" style="font-size:15px;"></i>Loading')	;
-
 				action = "Login?mode=" + mode +"&encodePassword="+encodeHashing();
-
 				submit();
 			}
 		}
@@ -68,5 +65,4 @@ function encodeHashing()
 	const salt = "jghdquytzqbnixqgevytbeuyxbqe";
 	const encodedPassword = CryptoJS.SHA256(password + salt).toString();
 	return encodedPassword ; 
-
 }

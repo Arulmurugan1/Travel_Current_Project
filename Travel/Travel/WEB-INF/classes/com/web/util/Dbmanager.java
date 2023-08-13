@@ -5,53 +5,44 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.net.URL;
-import java.net.URLDecoder;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.time.LocalDate;
 import java.util.Properties;
 import java.util.Vector;
 
+import com.web.common.Generic;
+import com.web.common.LoggerFactory;
+
 public class Dbmanager extends com.web.common.StringChecker {
 	
-	private static final String USER       = "db.user";
-	private static final String PASSWORD   = "db.password";
-	private static final String DRIVER     = "db.driver";
-	private static final String URL        = "db.url";
-	
-	public static Connection con = null;
+	private static Connection con = null;
 	public static String error   = null ;
+	
+	private static PreparedStatement ps = null ;		
+	private static ResultSet rs = null ;
 
     private static InputStream in = null ; 
-    private static Properties prop = null ;
-    
-    private static final String CONNECTION_PROPERTIES = "ConnectionFile.properties";
-    private static final String LOG_PROPERTIES = "log4j.properties";
-    
+    private static Properties prop = new Properties() ;
+
 	
 	public static Connection getConnection() 
 	{
 	    try 
 	    {
 	        
-	        Properties prop = getProperties(CONNECTION_PROPERTIES);
+	        prop = getProperties(CONNECTION_PROPERTIES);
 	        
 	        if ( prop == null)
 	        {
 	            throw new RuntimeException("Sorry ! Unable to Load the DB Properties");
 	        }
-	        else
-	        {
-	        	setProperties();
-	        }
 	        
-	        final String driver    = prop.getProperty(DRIVER);
-	        final String Url       = prop.getProperty(URL);
-	        final String User      = prop.getProperty(USER);
+	        final String driver    		= prop.getProperty(DRIVER);
+	        final String Url    			= prop.getProperty(URL);
+	        final String User      		= prop.getProperty(USER);
 	        final String Password  = prop.getProperty(PASSWORD);
 
 	        Class.forName(driver);
@@ -63,9 +54,9 @@ public class Dbmanager extends com.web.common.StringChecker {
 	            throw new Exception(" Connection is null");
 	        }
 
-	    }catch (Exception e1) 
+	    }
+	    catch (Exception e1) 
 	    {
-	        System.out.println(e1);
 	        error = e1.getMessage();
 	        return null;
 	    }
@@ -79,8 +70,6 @@ public class Dbmanager extends com.web.common.StringChecker {
 	        
 	        in = currentThread().getContextClassLoader().getResource(name).openStream();
 	        
-	        prop = new Properties();
-	        
 	        prop.load(in);
 	        
 	        return prop;
@@ -93,9 +82,11 @@ public class Dbmanager extends com.web.common.StringChecker {
 	    
 	}
     
-    public static void setProperties(String key , String value) throws Exception
+    public static boolean setProperties(String key , String value) throws Exception
     {
     	prop = getProperties(LOG_PROPERTIES);
+    	
+    	boolean ret = false ;
     	
     	URL fileURL = currentThread().getContextClassLoader().getResource(LOG_PROPERTIES) ;
     	
@@ -106,32 +97,12 @@ public class Dbmanager extends com.web.common.StringChecker {
             prop.store(new FileOutputStream(new File(fileURL.toURI())),"Log Path Updated");
             
             System.out.println("Log Properties Updated for Key ["+key+"] value ["+value+"]");
+            
+            ret = prop.containsKey(key);
         }
+    	return ret ;
     }
-    
-    private static void setProperties() throws Exception 
-    {
-        URL fileURL = currentThread().getContextClassLoader().getResource(LOG_PROPERTIES) ;
-        
-        String url = URLDecoder.decode(isNull(fileURL), "UTF-8");
-        
-        if( !url.isEmpty())
-        {
-        	int endString = url.lastIndexOf("Travel") ;
-        	
-            url = url.substring(url.lastIndexOf(":")+1, endString != -1 ? endString : url.length() ) +"Logs/".concat(LocalDate.now().toString().replaceAll("-", "/"))  ;
-            
-            System.out.println("Log will be redirected to "+url);
-            
-            setProperties("log",url);
-            
-        }
-        else
-        {
-            throw new RuntimeException("Sorry ! Unable to Set the Log Properties"); 
-        }
-    }
-    
+     
     public static String getKeyProperties(String key) throws Exception
     {
         prop = getProperties(LOG_PROPERTIES);
@@ -196,7 +167,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 					j++;k++;
 				}
 				
-				System.out.println(" Booking Query with filter : " + ps);
+				System.out.println(" Insert Query with filter : " + ps);
 				
 				result = ps.executeUpdate() > 0;
 				
@@ -277,7 +248,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 					j++;k++;
 				}
 				
-				System.out.println(" Booking Query with filter : " + ps);
+				System.out.println(" update Query : " + ps);
 				
 				result = ps.executeUpdate() > 0;
 				
@@ -357,7 +328,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 					j++;k++;
 				}
 				
-				System.out.println(" Booking Query with filter : " + ps);
+				System.out.println("delete Query : " + ps);
 				
 				result = ps.executeUpdate() > 0;
 				
@@ -475,25 +446,21 @@ public class Dbmanager extends com.web.common.StringChecker {
         
     }
 	
-	public static String getPropertiesPath(String key)
+	public static String getPropertiesPath(String key) throws Exception
 	{
-	    Connection con = null ;
-
 	    try {
 
 	        con = getConnection();
 
-	        String sql =" select value from properties_path where key ='"+isNull(key)+"'";
+	        ps = con.prepareStatement(" select prop_value from properties_path where prop_key ='"+isNull(key)+"'");
 
-	        Statement stat = con.createStatement();
-
-	        ResultSet rs = stat.executeQuery(sql);
+	        rs = ps.executeQuery();
 
 	        while(rs.next())
 	        {
-	            System.out.println("KEY => ["+key+" => "+isNull( rs.getString("value") )+"]");
+	            System.out.println("KEY => ["+isNull(key)+" => "+isNull( rs.getString(1) )+"]");
 	            
-	            return isNull( rs.getString("value") );
+	            return isNull( rs.getString(1) );
 	        }
 
 	    }
@@ -503,20 +470,46 @@ public class Dbmanager extends com.web.common.StringChecker {
 	    }
 	    finally 
 	    {
-	        try 
-	        {
-	            if( con == null && !con.isClosed())
-	                con.close();
-	        } 
-	        catch (SQLException e) 
-	        {
-	            e.printStackTrace();
-	        }
+	    	closeAll();	
 	    }
 
 	    return null; 
 	}
+	
+	private static void closeAll() throws Exception 
+	{
+		closeAll(con, ps, rs);
+	}
+
+	public static void closeAll(Connection con , PreparedStatement ps, ResultSet rs) throws Exception
+	{
+
+	    StringBuilder sb = new StringBuilder();
+
+	    if ( con !=null && !con.isClosed() ) 
+	    {
+	        con.close();
+	        sb.append(" Connection Closed [").append(con.isClosed()).append("] ");
+	    }
+
+	    if ( ps !=null && !ps.isClosed() ) 
+	    {
+	        ps.close();
+	        sb.append(" Statement Closed [").append(ps.isClosed()).append("] ");
+	    }
+
+	    if ( rs !=null && !rs.isClosed() ) 
+	    {
+	        rs.close();
+	        sb.append(" ResultSet Closed [").append(rs.isClosed()).append("] ");
+	    }
+	         
+	    if(!sb.isEmpty())
+	    	Generic.logContent(sb.toString() ,LoggerFactory.DEBUG , null, new Dbmanager());
+	}
+	
 }
+
 
 
 

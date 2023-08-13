@@ -26,6 +26,25 @@ public final class AuthFilter implements Filter{
 
 		HttpSession session = req.getSession() ;
 		
+		if ( req.getServletPath().equals("/Login"))
+		{
+			if(req.getParameter("txtUser") != null);
+			{
+				session.setAttribute("user_id", req.getParameter("txtUser"));
+			}
+			
+			System.out.println( "propertiesSet "+session.getAttribute("propertiesSet") );
+			
+			if( session.getAttribute("propertiesSet") ==null || !(Boolean)session.getAttribute("propertiesSet") )
+			{
+				System.out.println("Inside Log Path from " +this.getClass().getSimpleName());
+				Generic prop = new Generic(req);
+				session.setAttribute("propertiesSet", prop.setLogConsoleProperties() );
+				prop.closeAll();
+			}
+			
+		}
+		
 		if ( req !=null && ( req.getServletPath().contains(".css") || req.getServletPath().contains(".js") ) )
 		{
 			chain.doFilter(request, response);
@@ -33,6 +52,7 @@ public final class AuthFilter implements Filter{
 		else
 		{
 		    session.setMaxInactiveInterval(50000); 
+		    
 		    
 			if ( session.isNew() )
 			{
@@ -45,6 +65,7 @@ public final class AuthFilter implements Filter{
 			
 			if ( req.getServletPath().equals("/Login"))
 			{
+				
 			    Generic.logContent("Inside do fIletr",LoggerFactory.DEBUG , null, this);
 				chain.doFilter(request, response);
 			}

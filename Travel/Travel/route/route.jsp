@@ -127,7 +127,7 @@ td.no::before {
 							<td>
 								<%--                                        <a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />','<c:out value="${lists.fare}" />')">Edit</a>  --%>
 								&nbsp;&nbsp;&nbsp;&nbsp; <a
-								href="RouteNew?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a>
+								href="<%=Constant.ROUTE_SERVLET %>>?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a>
 							</td>
 						</c:if>
 					</tr>
@@ -163,7 +163,7 @@ td.no::before {
 						}
 					else
 					{
-						action = "RouteNew?mode=I";
+						action = "<%=Constant.ROUTE_SERVLET %>?mode=I";
 						submit();	
 					}
 				}	

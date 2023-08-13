@@ -24,7 +24,7 @@ public class LoginServlet extends CustomServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
-        logContent("Inside Login sERVLET" ,LoggerFactory.DEBUG , null);
+        System.out.println("Inside Login sERVLET");
         HttpSession session =request.getSession();
 
         if ( request.getParameter("txtUser") != null)

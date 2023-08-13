@@ -28,7 +28,7 @@
 								<div class="col-auto mb-3">
 									<label for="username">Enter UserName </label> <input
 										type="text" class="form-control " name="txtUser" id=txtUser
-										maxlength="30" value="${txtuser}" size="25" autocomplete="off" spellcheck="false" >
+										maxlength="10" value="${txtuser}" size="25" autocomplete="off" spellcheck="false" >
 								</div>
 							</div>
 							<div class="row">

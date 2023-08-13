@@ -1,0 +1,637 @@
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ]  Console File Path [null] 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/14/log4j 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ]  File Path Added to session  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ]  Console File Path [null] isLog [true]  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/14/Console/] fileName [1691952439151_console.log] 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] File created true File Name :1691952439151_console.log 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Get PrintStream [java.io.PrintStream@b0b0b3e] 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [AuthFilter          ] [arul                ] Inside do fIletr 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  mode                      =>  login  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  txtUser                   =>  arul  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  txtPassword               =>  arul  
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  username                  =>    
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  pass1                     =>    
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  pass2                     =>    
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  user_id                   =>    
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Logindao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  Last Login 2023-08-14T00:11:56 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ] DB UserId : arul Username : Arulmurugan Password : arul 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Logindao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Access Log Entered true 
+[14-08-2023 12:17:19:019 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:21:021 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  mode                      =>    
+[14-08-2023 12:17:21:021 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[14-08-2023 12:17:22:022 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:22:022 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:24:024 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  mode                      =>  dummy  
+[14-08-2023 12:17:24:024 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[14-08-2023 12:17:25:025 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:25:025 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  mode                      =>  dummy  
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  pickup_from               =>  Chennai  
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  drop_at                   =>    
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  customer_name             =>    
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  age                       =>    
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  gender                    =>    
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  email                     =>    
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  phone                     =>    
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:27:027 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  mode                      =>  dummy  
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  pickup_from               =>  Chennai  
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  drop_at                   =>  Dindugal  
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  customer_name             =>    
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  age                       =>    
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  gender                    =>    
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  email                     =>    
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  phone                     =>    
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:29:029 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  pickup_from               =>  Chennai  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  drop_at                   =>  Dindugal  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  vehicle_no                =>  1214  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  driver_id                 =>  1  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  customer_name             =>  Arulmurugan C  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  age                       =>  21  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  gender                    =>  Male  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  email                     =>  arulmurugansk7@gmail.com  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  phone                     =>  8939523379  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  fare                      =>  1200.0  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Customerdao         ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO CUSTOMER VALUES(null,'Arulmurugan C','Chennai','Dindugal','21','M','arulmurugansk7@gmail.com','8939523379') 
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Customerdao         ] [arul                ] Generated Customer ::301 
+[14-08-2023 12:17:38:038 am IST] INFO  [Line:65] - [BookingServlet      ] [arul                ] Customer Added  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO BOOKING VALUES(null,'Chennai','Dindugal',301,'1214','1',1200.0,'Arulmurugan','WIP',sysdate()) 
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] Booking No ::277 
+[14-08-2023 12:17:38:038 am IST] INFO  [Line:65] - [BookingServlet      ] [arul                ] Booking Added  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:38:038 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:40:040 am IST] DEBUG [Line:65] - [BookingServlet      ] [arul                ]  mode                      =>    
+[14-08-2023 12:17:40:040 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[14-08-2023 12:17:40:040 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:40:040 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:17:47:047 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  status                    =>  Confirmed  
+[14-08-2023 12:17:47:047 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  booking_no                =>  277  
+[14-08-2023 12:17:47:047 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] Inside ajax 
+[14-08-2023 12:17:47:047 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ] VehicleNo [null] Vehicle Model [null] 
+[14-08-2023 12:17:47:047 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 277 
+[14-08-2023 12:17:48:048 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  status                    =>  Confirmed  
+[14-08-2023 12:17:48:048 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  booking_no                =>  253  
+[14-08-2023 12:17:48:048 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] Inside ajax 
+[14-08-2023 12:17:48:048 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ] VehicleNo [null] Vehicle Model [null] 
+[14-08-2023 12:17:48:048 am IST] DEBUG [Line:65] - [Bookingdao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 253 
+[14-08-2023 12:17:53:053 am IST] DEBUG [Line:65] - [CustomerServlet     ] [arul                ]  mode                      =>    
+[14-08-2023 12:17:53:053 am IST] DEBUG [Line:65] - [Customerdao         ] [arul                ] select * from CUSTOMER 
+[14-08-2023 12:17:53:053 am IST] DEBUG [Line:65] - [Customerdao         ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[14-08-2023 12:17:53:053 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:00:000 am IST] DEBUG [Line:65] - [VehicleServlet      ] [arul                ]  mode                      =>    
+[14-08-2023 12:18:07:007 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:18:07:007 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] Inside ajax 
+[14-08-2023 12:18:07:007 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ] VehicleNo [3212] Vehicle Model [null] 
+[14-08-2023 12:18:07:007 am IST] DEBUG [Line:65] - [AjaxProcess         ] [arul                ] Inside VehicleType for Vehicle Model call from ajax 
+[14-08-2023 12:18:07:007 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:10:010 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  vehicle_model             =>  Ashok Leyland  
+[14-08-2023 12:18:10:010 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  dummyData                 =>  whatever  
+[14-08-2023 12:18:10:010 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] Inside ajax 
+[14-08-2023 12:18:10:010 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ] VehicleNo [null] Vehicle Model [Ashok Leyland] 
+[14-08-2023 12:18:10:010 am IST] DEBUG [Line:65] - [AjaxProcess         ] [arul                ] Inside VehicleType for Vehicle Model call from ajax 
+[14-08-2023 12:18:10:010 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:10:010 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] data found.. 
+[14-08-2023 12:18:10:010 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] ["Stile"] 
+[14-08-2023 12:18:13:013 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  vehicle_model             =>  Bentley  
+[14-08-2023 12:18:13:013 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  dummyData                 =>  whatever  
+[14-08-2023 12:18:13:013 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] Inside ajax 
+[14-08-2023 12:18:13:013 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ] VehicleNo [null] Vehicle Model [Bentley] 
+[14-08-2023 12:18:13:013 am IST] DEBUG [Line:65] - [AjaxProcess         ] [arul                ] Inside VehicleType for Vehicle Model call from ajax 
+[14-08-2023 12:18:13:013 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:13:013 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] data found.. 
+[14-08-2023 12:18:13:013 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] ["Arnage","Azure","Bentayga","Continental Flying Spur","Continental GT","Continental GTC","Mulsanne"] 
+[14-08-2023 12:18:17:017 am IST] DEBUG [Line:65] - [VehicleServlet      ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:18:17:017 am IST] DEBUG [Line:65] - [VehicleServlet      ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:18:17:017 am IST] DEBUG [Line:65] - [VehicleServlet      ] [arul                ]  vehicle_model             =>  Bentley  
+[14-08-2023 12:18:17:017 am IST] DEBUG [Line:65] - [VehicleServlet      ] [arul                ]  vehicle_type              =>  Arnage  
+[14-08-2023 12:18:17:017 am IST] DEBUG [Line:65] - [VehicleServlet      ] [arul                ]  vehicle_color             =>  Blue  
+[14-08-2023 12:18:17:017 am IST] DEBUG [Line:65] - [Vehicledao          ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO vehicle VALUES('3212','Bentley','Arnage','Blue'); 
+[14-08-2023 12:18:26:026 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ]  vehicle_no                =>  1214  
+[14-08-2023 12:18:26:026 am IST] INFO  [Line:65] - [AjaxServlet         ] [arul                ] Inside ajax 
+[14-08-2023 12:18:26:026 am IST] DEBUG [Line:65] - [AjaxServlet         ] [arul                ] VehicleNo [1214] Vehicle Model [null] 
+[14-08-2023 12:18:26:026 am IST] DEBUG [Line:65] - [AjaxProcess         ] [arul                ] Inside VehicleType for Vehicle Model call from ajax 
+[14-08-2023 12:18:26:026 am IST] DEBUG [Line:65] - [AjaxProcess         ] [arul                ] Inside VehicleType for Vehicle Model call from ajax 
+[14-08-2023 12:18:26:026 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:35:035 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  mode                      =>    
+[14-08-2023 12:18:35:035 am IST] DEBUG [Line:65] - [Driverdao           ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[14-08-2023 12:18:35:035 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:36:036 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  mode                      =>  N  
+[14-08-2023 12:18:36:036 am IST] DEBUG [Line:65] - [Driverdao           ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[14-08-2023 12:18:36:036 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  driver_name               =>  Murugesan  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  age                       =>  22  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  gender                    =>  Male  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  phone                     =>  8939523379  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  city                      =>  Chennai  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [DriverServlet       ] [arul                ]  vehicle_no                =>  3123  
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [Driverdao           ] [arul                ] INSERT INTO DRIVER VALUES(null,?,?,?,?,?,?) 
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [Driverdao           ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO DRIVER VALUES(null,'Murugesan',22,'Male','Chennai','8939523379','3123') 
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [Driverdao           ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[14-08-2023 12:18:55:055 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:18:58:058 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:18:58:058 am IST] DEBUG [Line:65] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:18:58:058 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [RouteNewServlet     ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [RouteNewServlet     ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [RouteNewServlet     ] [arul                ]  start                     =>  Salem  
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [RouteNewServlet     ] [arul                ]  end                       =>  Vellore  
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [RouteNewServlet     ] [arul                ]  fare                      =>  900  
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [RouteNewServlet     ] [arul                ] Inside if mode 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Salem' AND END ='Vellore'; 
+[14-08-2023 12:19:09:009 am IST] INFO  [Line:65] - [Class               ] [arul                ] Crud =>I 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:28] - Logging Provider: org.jboss.logging.Log4jLoggerProvider 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator]. 
+[14-08-2023 12:19:09:009 am IST] ERROR [Line:67] - [RouteNewServlet] [arul      ] java.lang.NullPointerException: Cannot invoke "org.hibernate.SessionFactory.close()" because "com.web.Factory.HibernateHelper.factory" is null  ** Error in *** java.lang.NullPointerException => Cannot invoke "org.hibernate.SessionFactory.close()" because "com.web.Factory.HibernateHelper.factory" is null 
+java.lang.NullPointerException: Cannot invoke "org.hibernate.SessionFactory.close()" because "com.web.Factory.HibernateHelper.factory" is null
+	at com.web.Factory.HibernateHelper.Operation(HibernateHelper.java:58)
+	at com.web.controller.RouteNewServlet.service(RouteNewServlet.java:61)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+ 
+java.lang.NullPointerException: Cannot invoke "org.hibernate.SessionFactory.close()" because "com.web.Factory.HibernateHelper.factory" is null
+	at com.web.Factory.HibernateHelper.Operation(HibernateHelper.java:58)
+	at com.web.controller.RouteNewServlet.service(RouteNewServlet.java:61)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:46] - Adding Integrator [org.hibernate.envers.boot.internal.EnversIntegrator]. 
+[14-08-2023 12:19:09:009 am IST] DEBUG [Line:65] - [AuthFilter          ] [arul                ] Auth Filter Exception org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:234) 
+[14-08-2023 12:24:02:002 am IST] DEBUG [Line:65] - [LoginInfoServlet    ] [arul                ]  mode                      =>    
+[14-08-2023 12:24:02:002 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:24:24:024 am IST] DEBUG [Line:65] - [AuthFilter          ] [arul                ] Inside do fIletr 
+[14-08-2023 12:24:24:024 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  mode                      =>  L  
+[14-08-2023 12:24:24:024 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ] Session On Logout org.apache.catalina.session.StandardSessionFacade@7f7cb744 
+[14-08-2023 12:24:24:024 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ]  Console File Path [null] 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/14/log4j 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ]  File Path Added to session  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ]  Console File Path [null] isLog [true]  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/14/Console/] fileName [1691952866955_console.log] 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] File created true File Name :1691952866955_console.log 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Get PrintStream [java.io.PrintStream@fcf6614] 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [AuthFilter          ] [arul                ] Inside do fIletr 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  mode                      =>  login  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  txtUser                   =>  arul  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  txtPassword               =>  arul  
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  username                  =>    
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  pass1                     =>    
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  pass2                     =>    
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  user_id                   =>    
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Logindao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ]  Last Login 2023-08-14T00:17:19 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [LoginServlet        ] [arul                ] DB UserId : arul Username : Arulmurugan Password : arul 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Logindao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[14-08-2023 12:24:26:026 am IST] DEBUG [Line:65] - [Generic             ] [arul                ] Access Log Entered true 
+[14-08-2023 12:24:27:027 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:24:29:029 am IST] DEBUG [Line:65] - [LoginInfoServlet    ] [arul                ]  mode                      =>    
+[14-08-2023 12:24:29:029 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:24:47:047 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:24:47:047 am IST] DEBUG [Line:65] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:24:47:047 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:31:50:050 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:31:50:050 am IST] DEBUG [Line:65] - [AuthFilter          ] [arul                ] Auth Filter Exception com.web.controller.RouteServlet.service(RouteServlet.java:36) 
+[14-08-2023 12:33:26:026 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:33:26:026 am IST] DEBUG [Line:65] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:33:26:026 am IST] DEBUG [Line:65] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:34:47:047 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:34:47:047 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:34:47:047 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  start                     =>  Madurai  
+[14-08-2023 12:34:47:047 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  end                       =>  Dindugal  
+[14-08-2023 12:34:47:047 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:34:47:047 am IST] ERROR [Line:67] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.lang.StringIndexOutOfBoundsException => begin 1, end 1000, length 7 
+java.lang.StringIndexOutOfBoundsException: begin 1, end 1000, length 7
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+ 
+java.lang.StringIndexOutOfBoundsException: begin 1, end 1000, length 7
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:36:17:017 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:36:17:017 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:36:17:017 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  start                     =>  Madurai  
+[14-08-2023 12:36:17:017 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  end                       =>  Dindugal  
+[14-08-2023 12:36:17:017 am IST] DEBUG [Line:65] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:36:17:017 am IST] ERROR [Line:67] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.lang.StringIndexOutOfBoundsException => begin 1, end 1000, length 7 
+ 
+java.lang.StringIndexOutOfBoundsException: begin 1, end 1000, length 7
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:40:16:016 am IST] DEBUG [Line:68] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:40:16:016 am IST] DEBUG [Line:68] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:40:16:016 am IST] DEBUG [Line:68] - [RouteServlet        ] [arul                ]  start                     =>  Madurai  
+[14-08-2023 12:40:16:016 am IST] DEBUG [Line:68] - [RouteServlet        ] [arul                ]  end                       =>  Dindugal  
+[14-08-2023 12:40:16:016 am IST] DEBUG [Line:68] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:40:16:016 am IST] ERROR [Line:68] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.lang.StringIndexOutOfBoundsException => begin 1, end 1000, length 7 
+java.lang.StringIndexOutOfBoundsException: begin 1, end 1000, length 7
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4601)
+	at java.base/java.lang.String.substring(String.java:2704)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+ 
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Madurai  
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Dindugal  
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Madurai' AND END ='Dindugal'; 
+[14-08-2023 12:42:03:003 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO ROUTE VALUES('3212','Madurai','Dindugal') 
+[14-08-2023 12:42:03:003 am IST] ERROR [Line:61] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.sql.SQLException => Column count doesn't match value count at row 1 
+ 
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.web.modal.Routedao.insert(Routedao.java:33)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:53)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:42:08:008 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:42:08:008 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:42:08:008 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Salem  
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Madurai  
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Salem' AND END ='Madurai'; 
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] Route for vehicle3242 
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Salem' AND END ='Madurai'; 
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] Route for vehicle3242 
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:42:17:017 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Salem  
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Vellore  
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  900  
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Salem' AND END ='Vellore'; 
+[14-08-2023 12:43:00:000 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO ROUTE VALUES('3212','Salem','Vellore') 
+[14-08-2023 12:43:00:000 am IST] ERROR [Line:61] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.sql.SQLException => Column count doesn't match value count at row 1 
+ 
+java.sql.SQLException: Column count doesn't match value count at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.web.modal.Routedao.insert(Routedao.java:33)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:53)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Salem  
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Vellore  
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  900  
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Salem' AND END ='Vellore'; 
+[14-08-2023 12:48:14:014 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO ROUTE VALUES('3212','Salem','Vellore',** NOT SPECIFIED **) 
+[14-08-2023 12:48:14:014 am IST] ERROR [Line:61] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.sql.SQLException => No value specified for parameter 4 
+ 
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1084)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.web.modal.Routedao.insert(Routedao.java:33)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:48:17:017 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:48:17:017 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:48:17:017 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Chennai  
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Tuticorin  
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Chennai' AND END ='Tuticorin'; 
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] Route for vehicle3123 
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Chennai' AND END ='Tuticorin'; 
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] Route for vehicle3123 
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:48:24:024 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Dindugal  
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Erode  
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  1200  
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Dindugal' AND END ='Erode'; 
+[14-08-2023 12:48:33:033 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO ROUTE VALUES('3212','Dindugal','Erode',** NOT SPECIFIED **) 
+[14-08-2023 12:48:33:033 am IST] ERROR [Line:61] - [RouteServlet   ] [arul      ] Exception in Route   ** Error in *** java.sql.SQLException => No value specified for parameter 4 
+ 
+java.sql.SQLException: No value specified for parameter 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1084)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.web.modal.Routedao.insert(Routedao.java:33)
+	at com.web.controller.RouteServlet.service(RouteServlet.java:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [AuthFilter          ] [arul                ] Inside do fIletr 
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  mode                      =>  login  
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  txtUser                   =>  arul  
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  txtPassword               =>  arul  
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  username                  =>    
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  pass1                     =>    
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  pass2                     =>    
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  user_id                   =>    
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [Logindao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ]  Last Login 2023-08-14T00:24:26 
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul                ] DB UserId : arul Username : Arulmurugan Password : arul 
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [Logindao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [Generic             ] [arul                ] Access Log Entered true 
+[14-08-2023 12:52:52:052 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:53:27:027 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>    
+[14-08-2023 12:53:27:027 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:53:27:027 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  mode                      =>  I  
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  vehicle_no                =>  3212  
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  start                     =>  Coimbatore  
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  end                       =>  Chennai  
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [RouteServlet        ] [arul                ]  fare                      =>  2000  
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Coimbatore' AND END ='Chennai'; 
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO ROUTE VALUES('3212','Coimbatore','Chennai',2000.0) 
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [Routedao            ] [arul                ] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[14-08-2023 12:53:42:042 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul                ]  Connection Closed [true]  

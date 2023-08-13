@@ -1,4 +1,7 @@
 package com.web.common;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -31,20 +34,19 @@ public class LoggerFactory extends org.apache.log4j.Level
 
             String user = Dbmanager.getKeyProperties("log_user");
             
+            String className = d.getClass().getSimpleName();
+            
             boolean isLoggable = StringChecker.isNull(Dbmanager.getKeyProperties("isLoggable")).trim().equalsIgnoreCase("Y");
 
             if( exception != null)
             {
-                sb.append("["+d.getClass().getName()+"]\t"+
-                        	"["+user+"]\t"
-                                +whattoprint 
-                                +" ** Error in ***"
-                                +exception.getClass().getName() 
-                                +" => "+exception.getMessage()).append("\n").append(exception.getStackTrace()[0]);
+            	Throwable t = exception ;
+            	
+                sb.append(String.format("[%-15s] [%-10s] "+whattoprint+"  ** Error in *** %-20s => %-20s ", className,user,t.getClass().getName(),t.getMessage() )).append("\r\n");
             }
             else
             {
-                sb.append("["+d.getClass().getName()+"]\t"+"["+user+"]\t"+whattoprint );
+                sb.append(String.format("[%-20s] [%-20s] "+whattoprint, className,user ));
             }
 
             if ( !isLoggable )
@@ -53,8 +55,10 @@ public class LoggerFactory extends org.apache.log4j.Level
                 return;
             }
 
-            Logger.getRootLogger().log(logLevel,sb.toString());
-
+            if(exception == null)
+            	Logger.getRootLogger().log(logLevel,sb.toString());
+            else
+            	Logger.getRootLogger().error(sb.toString(), exception);
         }
         catch(Exception e)
         {

@@ -14,7 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Level;
 
 import com.web.common.Constant;
-import com.web.common.Generic;
 import com.web.common.LoggerFactory;
 import com.web.util.Dbmanager;
 
@@ -45,13 +44,6 @@ public class CustomServlet extends HttpServlet {
         {
             try 
             {
-            	
-                Dbmanager.setProperties("log_user",request.getSession().getAttribute("user_id").toString());
-                
-                Generic.setFilePath(request.getSession());
-                
-                Generic.setConsoleLogPrintStream(request.getSession());
-                
                 con.close();
             }
             catch (Exception e)
@@ -97,7 +89,7 @@ public class CustomServlet extends HttpServlet {
         }
     }
     
-    /**
+    /** 
      * @param message
      * @param logLevel
      * @param e

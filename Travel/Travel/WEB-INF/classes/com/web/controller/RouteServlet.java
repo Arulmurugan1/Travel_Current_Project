@@ -7,14 +7,14 @@ import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
+import com.web.common.LoggerFactory;
+import com.web.common.StringChecker;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
-import com.web.util.Dbmanager;
 
 
 @WebServlet("/Route")
@@ -33,23 +33,26 @@ public class RouteServlet extends CustomServlet {
 	    
 	    Route r = null ;
 	    Routedao dao  = new Routedao();
-	    List<Route> routeList = new ArrayList<Route>();
 	    
 		try
 		{
 			String start ="";
 			String end ="";
 			String no ="";
+			 double fare = 0;
 
 			if(mode.equals("I"))	    
 			{
 
-				start =request.getParameter("start").trim();
-				end   = request.getParameter("end").trim();
-				no = request.getParameter("vehicle_no").trim();
+				start = StringChecker.isNull(request.getParameter("start"));
+                end   = StringChecker.isNull(request.getParameter("end"));
+                no = StringChecker.isNull(request.getParameter("vehicle_no"));
 
-				r = new Route(no, start, end);
-
+                if ( StringChecker.isNull(request.getParameter("fare")) !="")
+                    fare = Double.parseDouble( request.getParameter("fare").trim() );
+                
+                r = new Route(no, start, end,fare);
+				
 				if ( start !="" && end !="" && no!="" && dao.check(r).length() == 0 )
 				{
 					if (dao.insert(r) )
@@ -108,12 +111,17 @@ public class RouteServlet extends CustomServlet {
 
 
 			}
-			routeList = dao.getAllRoutes();
-			request.setAttribute("list", routeList);
+			request.setAttribute("list",dao.getAllRoutes());
 			dao.closeAll();
+		}
+		catch( Throwable e) 
+		{
+			logContent("Exception in Route ", LoggerFactory.ERROR, e);
+		}
+		finally
+		{
 			RequestDispatcher rd = request.getRequestDispatcher(Constant.ROUTE_JSP);
 			rd.forward(request, response);
 		}
-		catch( Throwable e) {e.printStackTrace();}
 	}
 }
