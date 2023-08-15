@@ -65,7 +65,7 @@ td.no::before {
 					</div>
 					<div class=col-auto>
 						<label for="start">Boarding</label> <select class="form-control"
-							name="start" id="start" style="width: 210px;" required data-target='start'>
+							name="start" id="start" style="width: 210px;">
 							<option value="" selected></option>
 							<sql:query dataSource="${db}" var="rs">select start from route_service where start not in (select start from route group by start having count(*) = 9)</sql:query>
 							<c:forEach var='board' items='${rs.rows}'>
@@ -75,7 +75,7 @@ td.no::before {
 					</div>
 					<div class=col-auto>
 						<label for="end">Destination</label> <select class="form-control"
-							name="end" id="end" style="width: 210px;" required data-target='start,end'>
+							name="end" id="end" style="width: 210px;">
 							<option value="" selected></option>
 							<sql:query dataSource="${db}" var="rs">select end from route_service </sql:query>
 							<c:forEach var='board' items='${rs.rows}'>
@@ -117,17 +117,17 @@ td.no::before {
 
 				<c:forEach var="lists" items="${list}">
 
-					<tr data='{"vehicle_no": "${lists.vehicle_no}","start":"${lists.start}","end":"${lists.end}","fare":"${lists.fare}"}'>
+					<tr>
 						<td class="no text-center"></td>
 						<td><c:out value="${lists.vehicle_no}" /></td>
-						<td><c:out value="${lists.start}" /></td>
-						<td><c:out value="${lists.end}" /></td>
+						<td id='data-start'><c:out value="${lists.start}" /></td>
+						<td id='data-end'><c:out value="${lists.end}" /></td>
 						<td><c:out value="${lists.fare}" /></td>
 						<c:if test="<%= adminUser %>">
 							<td>
 								<%--                                        <a href=#  onclick="edit('<c:out value="${lists.vehicle_no}" />','<c:out value="${lists.start}" />','<c:out value="${lists.end}" />','<c:out value="${lists.fare}" />')">Edit</a>  --%>
 								&nbsp;&nbsp;&nbsp;&nbsp; <a
-								href="<%=Constant.ROUTE_SERVLET %>>?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a>
+								href="<%=Constant.ROUTE_SERVLET %>?mode=D&vehicle_no=<c:out value='${lists.vehicle_no}' />">Delete</a>
 							</td>
 						</c:if>
 					</tr>
@@ -145,7 +145,7 @@ td.no::before {
 	    	  });
 	    	  
 	    	  $('select:not(#vehicle_no)').change( function(e){
-	    		  search_table_specific($(this).val(),$(this).attr('data-target'))
+	    		  search_table_specific()
 	    	  });
 	    	  
 	    	});
@@ -189,10 +189,7 @@ td.no::before {
 	    		mode.value		 	='U';
 	    	}
 	    }
-	    
-	    
-	    
     </script>
-<script src="scripts/search.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/search.js"></script>
 </body>
 </html>

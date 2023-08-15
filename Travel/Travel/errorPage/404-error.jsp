@@ -15,7 +15,7 @@
         <h2>Oops ! Look's Like your Page is missing</h2>
         <h1>404</h1>
         <h3> We Can't Find anything from the Location</h3>
-        <a type="button" href="/">Go Home</a>
+        <a type="button" href="<%=request.getContextPath() %>">Go Home</a>
     </div>
 	
 </body>

@@ -27,7 +27,7 @@ function callAlert()
 	
 	$('table tbody td a').each( function(){
 		if ( $(this).text().trim().toLowerCase() === 'delete' )
-			$(this).addClass('btn btn-primary');
+			$(this).addClass('btn btn-primary rounded-circle');
 	});
 
 	setTimeout( ()=>{

@@ -1,0 +1,14 @@
+#load-content 
+{
+	display: grid;
+	position: absolute;
+	text-align:center;
+	top: 40%;
+	left: 46%;
+	z-index: 1;
+}
+span.spinner
+{
+	font-size : 70px;
+	color 	  : white;
+}

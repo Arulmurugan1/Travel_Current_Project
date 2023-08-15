@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styleSheet/loader.css" type="text/css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/loader/loader.css" type="text/css">
 
 
 <div id="load-content">
@@ -11,4 +11,4 @@
 </div>
 
 
-<script src="scripts/loader.js"></script>
+<script src="<%=request.getContextPath() %>/scripts/loader/loader.js"></script>

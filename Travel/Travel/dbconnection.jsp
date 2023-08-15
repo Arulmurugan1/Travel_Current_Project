@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/header.css" type="text/css">
 
 
-<link rel="icon" type="image/x-icon" href="/Images/favIcon/fav.png">
+<link rel="icon" type="image/x-icon" href="<%=request.getContextPath() %>/Images/favIcon/fav.png">
 
 <!-- Font awesome icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -54,7 +54,7 @@
 	<input type=hidden name=msg id=msg value='${msg}'>
 	<input type=hidden name=adminUser id=adminUser value= <%= adminUser %> >
 
-	<%@ include file="loader.jsp" %>
+	<%@ include file="loader/loader.jsp" %>
 
 	<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false"
