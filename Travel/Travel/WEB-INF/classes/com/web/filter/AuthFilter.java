@@ -16,7 +16,6 @@ import com.web.common.CommonFactory;
 import com.web.common.Constant;
 import com.web.common.Generic;
 import com.web.common.LoggerFactory;
-import com.web.util.Dbmanager;
 
 @WebFilter(urlPatterns ={"/*"})
 public final class AuthFilter implements Filter{
