@@ -13,10 +13,11 @@ import java.sql.SQLException;
 import java.util.Properties;
 import java.util.Vector;
 
+import com.web.common.CommonFactory;
 import com.web.common.Generic;
 import com.web.common.LoggerFactory;
 
-public class Dbmanager extends com.web.common.StringChecker {
+public class Dbmanager extends CommonFactory {
 	
 	private static Connection con = null;
 	public static String error   = null ;
@@ -25,13 +26,14 @@ public class Dbmanager extends com.web.common.StringChecker {
 	private static ResultSet rs = null ;
 
     private static InputStream in = null ; 
-    private static Properties prop = new Properties() ;
+    private static Properties prop = null ;
 
 	
 	public static Connection getConnection() 
 	{
 	    try 
 	    {
+	        prop = null ;
 	        
 	        prop = getProperties(CONNECTION_PROPERTIES);
 	        
@@ -67,7 +69,8 @@ public class Dbmanager extends com.web.common.StringChecker {
 	{   
 	    try
 	    {
-	        
+	        prop = new Properties();
+	    	
 	        in = currentThread().getContextClassLoader().getResource(name).openStream();
 	        
 	        prop.load(in);
@@ -82,8 +85,10 @@ public class Dbmanager extends com.web.common.StringChecker {
 	    
 	}
     
-    public static boolean setProperties(String key , String value) throws Exception
+    public synchronized static boolean setProperties(String key , String value) throws Exception
     {
+    	prop = null ;
+    	
     	prop = getProperties(LOG_PROPERTIES);
     	
     	boolean ret = false ;
@@ -92,11 +97,18 @@ public class Dbmanager extends com.web.common.StringChecker {
     	
     	if( prop != null)
         {
-            prop.setProperty(key, value);
-            
+    		if(prop.containsKey(key))
+    			prop.remove(key);
+    		
+    		System.out.println("Before "+prop);
+    		
+    		prop.setProperty(key, value);
+    		
             prop.store(new FileOutputStream(new File(fileURL.toURI())),"Log Path Updated");
             
-            System.out.println("Log Properties Updated for Key ["+key+"] value ["+value+"]");
+            System.out.println("Log Properties Updated for Key ["+key+"] value ["+prop.getProperty(key)+"]");
+            
+            System.out.println("After "+prop);
             
             ret = prop.containsKey(key);
         }
@@ -202,10 +214,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 	public static boolean updateObjects(String Query,Vector values)
 	{
 		boolean result = false ;
-		Connection con = null;
-		PreparedStatement ps = null ;		
-		ResultSet rs = null ;
-		
+
 		con = getConnection();
 		
 		if (Query.length() > 0 && values.size() > 0)
@@ -282,10 +291,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 	public static boolean deleteObjects(String Query,Vector values)
 	{
 		boolean result = false ;
-		Connection con = null;
-		PreparedStatement ps = null ;		
-		ResultSet rs = null ;
-		
+	
 		con = getConnection();
 		
 		if (Query.length() > 0 && values.size() > 0)
@@ -360,7 +366,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 		return result ;
 	}
 	
-	public static String buildQuery(Object d,String Operation) throws IllegalArgumentException, IllegalAccessException 
+	public static String buildQuery(Object d,String Operation, String except) throws IllegalArgumentException, IllegalAccessException 
     {
         Class obj = d.getClass();
               
@@ -372,21 +378,32 @@ public class Dbmanager extends com.web.common.StringChecker {
         {
             case "INSERT":
             {
-                for(Field s : fields)
-                {
-                    columns +="\n"+s.getName()+",";
-                    
-                    if ( s.get(d) == null || s.get(d).toString().trim().length() == 0 )
-                        values    +=" \n' ',";
-                    else
-                        values    +="\n'"+s.get(d)+"',";
-                }
-                
-                columns = columns.substring(0,columns.length()-1);
-                values = values.substring(0,values.length()-1);
-                
-                 finalQuery = " INSERT INTO "+obj.getSimpleName()+" \n( "+columns+" )\n VALUES \n ( "+values+" )\n ";
-                 break;
+            	for(Field s : fields)
+            	{
+            		try
+            		{
+            			if(except !=null && except.trim().equalsIgnoreCase(s.getName()))
+            				continue;
+            			
+            			columns +="\n"+s.getName()+",";
+
+            			if ( s.get(d) == null || s.get(d).toString().trim().length() == 0 )
+            				values    +=" \n' ',";
+            			else
+            				values    +="\n'"+s.get(d)+"',";
+            		}
+            		catch(Exception e)
+            		{	
+            			Generic.logContent(e.toString(), LoggerFactory.ERROR, e, new Dbmanager());
+            			continue;
+            		}
+            	}
+
+            	columns = columns.substring(0,columns.length()-1);
+            	values = values.substring(0,values.length()-1);
+
+            	finalQuery = " INSERT INTO "+obj.getSimpleName()+" \n( "+columns+" )\n VALUES \n ( "+values+" )\n ";
+            	break;
             }
             case "UPDATE" :
             {
@@ -448,6 +465,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 	
 	public static String getPropertiesPath(String key) throws Exception
 	{
+		String value = "" ;
 	    try {
 
 	        con = getConnection();
@@ -460,7 +478,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 	        {
 	            System.out.println("KEY => ["+isNull(key)+" => "+isNull( rs.getString(1) )+"]");
 	            
-	            return isNull( rs.getString(1) );
+	            value = isNull( rs.getString(1) );
 	        }
 
 	    }
@@ -473,7 +491,7 @@ public class Dbmanager extends com.web.common.StringChecker {
 	    	closeAll();	
 	    }
 
-	    return null; 
+	    return value; 
 	}
 	
 	private static void closeAll() throws Exception 
@@ -486,19 +504,19 @@ public class Dbmanager extends com.web.common.StringChecker {
 
 	    StringBuilder sb = new StringBuilder();
 
-	    if ( con !=null && !con.isClosed() ) 
+	    if ( con !=null ) 
 	    {
 	        con.close();
 	        sb.append(" Connection Closed [").append(con.isClosed()).append("] ");
 	    }
 
-	    if ( ps !=null && !ps.isClosed() ) 
+	    if ( ps !=null ) 
 	    {
 	        ps.close();
 	        sb.append(" Statement Closed [").append(ps.isClosed()).append("] ");
 	    }
 
-	    if ( rs !=null && !rs.isClosed() ) 
+	    if ( rs !=null ) 
 	    {
 	        rs.close();
 	        sb.append(" ResultSet Closed [").append(rs.isClosed()).append("] ");

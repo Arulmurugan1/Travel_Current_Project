@@ -10,6 +10,16 @@ $(document).ready( ()=>{
 		
 	} , 1000);
 	
+	let imageInput = document.getElementById('imageFile');
+	let imageSrc   = document.getElementById('img-profile');
+	
+	if( imageSrc && imageInput)
+	{
+		imageInput.addEventListener('change',()=>{
+			imageSrc.src = URL.createObjectURL(imageInput.files[0]);
+		});
+	}
+	
 });
 
 

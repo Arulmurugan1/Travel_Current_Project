@@ -52,6 +52,49 @@ $(document).ready(function() {
 });
 
 
+function callAjaxUserAccess (userId,Access)
+{
+	
+	let datum = `user=${userId}&id=${Access}`;
+	
+	console.log(datum);
+	
+	$('.loader-ajax').show();
+	
+	createRequest();
+
+	try{
+		request.onreadystatechange= ()=> {
+			if(request.readyState ==4 )
+			{ 
+				if (request.responseText)
+				{
+					let data = JSON.parse(request.responseText);
+					
+					setTimeout( ()=>{
+						if(data)
+						{
+							let css  = data.status == "Approved" ? "btn-success" : "btn-danger" ;
+							let approval = data.status == "Approved" ? "Y" : "N";
+							
+							$('.loader-ajax').hide();
+							$('#'+userId).removeClass();
+							$('#'+userId).addClass('btn '+ css);
+							$('#'+userId).val(data.status);
+							$('#'+userId).attr('onclick',"callAjaxUserAccess('"+userId+"','"+approval+"')");
+						}
+						},2000);
+				}
+			}
+		}
+		request.open("GET","Ajax?mode=updateUserAccess&"+datum,true);  
+		request.send();  
+	}
+	catch(e)
+	{
+		alert(e);
+	}
+}
 
 //Ajax for vehicle Info Starts 
 function sendInfo()  
@@ -116,7 +159,8 @@ function callAjax(status,booking_no)
 	var url = 'Ajax?status='+status+'&booking_no='+booking_no ;
 	createRequest();
 	try
-	{  
+	{
+		  
 		request.onreadystatechange=() => {
 			if(request.readyState==4)
 			{ 
@@ -151,27 +195,54 @@ function callAjax(status,booking_no)
 //To update User Details 
 function callAjaxUpdate(frm)
 {
-	$('.loader-ajax').show();
-	createRequest();
+	frm.action = "Ajax?mode=userProfileSubmit"
+	frm.submit();
 	
-	let url = `LoginInfo?mode=ajax&${ $(frm).serialize() }`;
+	/*$('.loader-ajax').show();
+	
+	let formData = getFormData(frm);
+	
 	try{
-		request.onreadystatechange= ()=> {
-			if(request.readyState ==4 )
-			{ 
-				setTimeout( ()=>{
+		
+		/*frm.action = "Ajax?mode=userProfileSubmit";
+		frm.method = "POST";
+		frm.submit();*/
+		
+		/*$.ajax({
+				type: "POST",
+				url: "Ajax",
+				data: formData,
+				dataType: "json",
+				success: function( data, textStatus, jqXHR)
+				{
+					setTimeout( ()=>{
+							$('.loader-ajax').hide();
+							alert(data);
+						}, 3000);
+				},
+				error: function(jqXHR, textStatus, errorThrown)
+				{
+					alert("Something happened " + textStatus);
+					console.log(errorThrown);
+				},
+
+
+				beforeSend:function(jqXHR, settings)
+				{
+					settings.data += "&mode=userProfileSubmit";
+				},
+				complete:function(jqXHR, textStatus)
+				{
 					$('.loader-ajax').hide();
-					dialog(request);
-				}, 3000);
-			}
-		}
-		request.open("GET",url,true);  
-		request.send(null);  
+				},
+				processData : false,
+			});
+		
 	}
 	catch(e)
 	{
 		alert(e);
-	}
+	}*/
 }
 
 function dialog(request)

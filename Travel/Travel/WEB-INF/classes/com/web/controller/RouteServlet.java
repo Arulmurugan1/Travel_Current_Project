@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
 import com.web.common.LoggerFactory;
-import com.web.common.StringChecker;
+import com.web.common.CommonFactory;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
 
@@ -34,6 +34,8 @@ public class RouteServlet extends CustomServlet {
 	    Route r = null ;
 	    Routedao dao  = new Routedao();
 	    
+	    dao.setHttpServlets(request, response);
+	    
 		try
 		{
 			String start ="";
@@ -44,11 +46,11 @@ public class RouteServlet extends CustomServlet {
 			if(mode.equals("I"))	    
 			{
 
-				start = StringChecker.isNull(request.getParameter("start"));
-                end   = StringChecker.isNull(request.getParameter("end"));
-                no = StringChecker.isNull(request.getParameter("vehicle_no"));
+				start = CommonFactory.isNull(request.getParameter("start"));
+                end   = CommonFactory.isNull(request.getParameter("end"));
+                no = CommonFactory.isNull(request.getParameter("vehicle_no"));
 
-                if ( StringChecker.isNull(request.getParameter("fare")) !="")
+                if ( CommonFactory.isNull(request.getParameter("fare")) !="")
                     fare = Double.parseDouble( request.getParameter("fare").trim() );
                 
                 r = new Route(no, start, end,fare);

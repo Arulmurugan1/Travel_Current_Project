@@ -1,0 +1,148 @@
+[27-08-2023 11:03:03:003 am IST] DEBUG [Line:59] - [BookingServlet      ] [jiyara]  mode                      =>    
+[27-08-2023 11:03:03:003 am IST] DEBUG [Line:59] - [Bookingdao          ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[27-08-2023 11:03:03:003 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  
+[27-08-2023 11:23:47:047 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:23:47:047 am IST] DEBUG [Line:59] - [AuthFilter          ] [jiyara] Auth Filter Exception com.web.common.Generic.setProperties(Generic.java:217) 
+[27-08-2023 11:24:42:042 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:24:42:042 am IST] DEBUG [Line:59] - [AuthFilter          ] [jiyara] Auth Filter Exception com.web.common.Generic.setProperties(Generic.java:217) 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  Console File Path [null] 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  File Path Added to session  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  Console File Path [null] isLog [true]  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/27/Console/] fileName [1693115702899_console.log] 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Get PrintStream [java.io.PrintStream@59fde984] 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [AuthFilter          ] [jiyara] Inside do fIletr 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  mode                      =>  login  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  txtUser                   =>  jiyara  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  txtPassword               =>  jiyara  
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  username                  =>    
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  pass1                     =>    
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  pass2                     =>    
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  user_id                   =>    
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  Last Login 2023-08-27T11:15:50 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Access Log Entered true 
+[27-08-2023 11:25:02:002 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [AuthFilter          ] [jiyara] Inside do fIletr 
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  mode                      =>  login  
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650  
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  txtUser                   =>  jiyara  
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  txtPassword               =>  jiyara  
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  username                  =>    
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  pass1                     =>    
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  pass2                     =>    
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  user_id                   =>    
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara]  Last Login 2023-08-27T11:25:02 
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Access Log Entered true 
+[27-08-2023 11:27:29:029 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  mode                      =>  userProfileSubmit  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  hGender                   =>  F  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  hdob                      =>  2020-03-19  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  gender                    =>  F  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  dob                       =>  2020-03-19  
+[27-08-2023 11:29:19:019 am IST] INFO  [Line:59] - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[27-08-2023 11:29:19:019 am IST] INFO  [Line:59] - [AjaxServlet         ] [jiyara] Inside ajax 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  Image Upload Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/jiyara/]  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header [form-data; name="imageFile"; filename="IMG_20210203_080358_optimized.jpg"] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header elem [form-data] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header elem [ name="imageFile"] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header elem [ filename="IMG_20210203_080358_optimized.jpg"] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header FileName [IMG_20210203_080358_optimized.jpg] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  filePart [org.apache.catalina.core.ApplicationPart@5aaeebc1] fileName [IMG_20210203_080358_optimized.jpg] filePath [/Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/jiyara/\IMG_20210203_080358_optimized.jpg]  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  fileContent [sun.nio.ch.ChannelInputStream@59af0519]	 fileOutputStream [java.io.FileOutputStream@1900925f] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload Successful 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxProcess         ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[27-08-2023 11:29:19:019 am IST] ERROR [Line:65] -   
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxProcess         ] [jiyara] ImagePath Of User jiyara 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE VALUES('jiyara','IMG_20210203_080358_optimized.jpg','Images/jiyara',sysdate(),'jiyara') 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [AjaxProcess         ] [jiyara] User Image Info Updated [true] 
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:29:19:019 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  mode                      =>  userProfileSubmit  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  hGender                   =>  F  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  hdob                      =>  2020-03-19  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  gender                    =>  F  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [jiyara]  dob                       =>  2020-03-19  
+[27-08-2023 11:29:59:059 am IST] INFO  [Line:59] - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[27-08-2023 11:29:59:059 am IST] INFO  [Line:59] - [AjaxServlet         ] [jiyara] Inside ajax 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  Image Upload Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/jiyara/]  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header [form-data; name="imageFile"; filename="IMG_20210203_080358_optimized.jpg"] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header elem [form-data] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header elem [ name="imageFile"] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header elem [ filename="IMG_20210203_080358_optimized.jpg"] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload header FileName [IMG_20210203_080358_optimized.jpg] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  filePart [org.apache.catalina.core.ApplicationPart@7c9cee64] fileName [IMG_20210203_080358_optimized.jpg] filePath [/Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/jiyara/\IMG_20210203_080358_optimized.jpg]  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara]  fileContent [sun.nio.ch.ChannelInputStream@2f1a3a4d]	 fileOutputStream [java.io.FileOutputStream@e38b844] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Generic             ] [jiyara] Upload Successful 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxProcess         ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[27-08-2023 11:29:59:059 am IST] ERROR [Line:65] -   
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxProcess         ] [jiyara] ImagePath Of User jiyara 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE VALUES('jiyara','IMG_20210203_080358_optimized.jpg','Images/jiyara',sysdate(),'jiyara') 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [AjaxProcess         ] [jiyara] User Image Info Updated [true] 
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  
+[27-08-2023 11:29:59:059 am IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  
+[27-08-2023 11:32:27:027 am IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:32:27:027 am IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/27/Console/] 
+[27-08-2023 11:32:27:027 am IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  
+[27-08-2023 11:32:27:027 am IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[27-08-2023 11:32:27:027 am IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  L  
+[27-08-2023 11:32:27:027 am IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@7781034a 
+[27-08-2023 11:32:27:027 am IST] ERROR [Line:65] -   
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Generic             ] [ramya]  Console File Path [null] 
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Generic             ] [ramya]  File Path Added to session  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Generic             ] [ramya]  Console File Path [null] isLog [true]  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/27/Console/] fileName [1693116149986_console.log] 
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Get PrintStream [java.io.PrintStream@436c49a5] 
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [AuthFilter          ] [ramya] Inside do fIletr 
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  mode                      =>  login  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  txtUser                   =>  ramya  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  txtPassword               =>  ramya  
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  username                  =>    
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  pass1                     =>    
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  pass2                     =>    
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  user_id                   =>    
+[27-08-2023 11:32:29:029 am IST] DEBUG [Line:59] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[27-08-2023 11:32:30:030 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  Last Login 2023-08-22T00:05:22 
+[27-08-2023 11:32:30:030 am IST] DEBUG [Line:59] - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[27-08-2023 11:32:30:030 am IST] DEBUG [Line:59] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[27-08-2023 11:32:30:030 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Access Log Entered true 
+[27-08-2023 11:32:30:030 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [ramya]  mode                      =>  userProfileSubmit  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [ramya]  hGender                   =>  F  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [ramya]  hdob                      =>  1997-07-31  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [ramya]  gender                    =>  F  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [ramya]  dob                       =>  1997-07-31  
+[27-08-2023 11:32:54:054 am IST] INFO  [Line:59] - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[27-08-2023 11:32:54:054 am IST] INFO  [Line:59] - [AjaxServlet         ] [ramya] Inside ajax 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya]  Image Upload Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/ramya/]  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Upload header [form-data; name="imageFile"; filename="DSC_0027.JPG"] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Upload header elem [form-data] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Upload header elem [ name="imageFile"] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Upload header elem [ filename="DSC_0027.JPG"] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Upload header FileName [DSC_0027.JPG] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya]  filePart [org.apache.catalina.core.ApplicationPart@182d1e77] fileName [DSC_0027.JPG] filePath [/Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/ramya/\DSC_0027.JPG]  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya]  fileContent [sun.nio.ch.ChannelInputStream@6e68708d]	 fileOutputStream [java.io.FileOutputStream@6ba86ec4] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Generic             ] [ramya] Upload Successful 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxProcess         ] [ramya] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=ramya, altered_user=Ramya SivaSankar, last_login=null, dob=1997-07-31, gender=F, status=null] 
+[27-08-2023 11:32:54:054 am IST] ERROR [Line:65] -   
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxProcess         ] [ramya] ImagePath Of User ramya 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE VALUES('ramya','DSC_0027.JPG','Images/ramya',sysdate(),'ramya') 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [AjaxProcess         ] [ramya] User Image Info Updated [true] 
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:32:54:054 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[27-08-2023 11:33:34:034 am IST] DEBUG [Line:59] - [DriverServlet       ] [ramya]  mode                      =>    
+[27-08-2023 11:33:34:034 am IST] DEBUG [Line:59] - [Driverdao           ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[27-08-2023 11:33:34:034 am IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  

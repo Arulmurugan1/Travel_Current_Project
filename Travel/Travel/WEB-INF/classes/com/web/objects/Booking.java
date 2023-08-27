@@ -1,7 +1,5 @@
 package com.web.objects;
 
-
-
 public class Booking 
 {
     private String  pickup_from, drop_at, vehicle_no, driver_id,  booked_by, status, booking_time ,customer_name,

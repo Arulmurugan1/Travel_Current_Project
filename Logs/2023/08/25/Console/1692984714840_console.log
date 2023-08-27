@@ -1,0 +1,49 @@
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Inside Login sERVLET
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+ User Id : from auth filter null
+propertiesSet true
+Inside Log Path from AuthFilter
+Inside Log Path from Genericuser[]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Travel/]
+Properties key[isLoggable] value[Y]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/] folder [Logs/2023/08/25/]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/25/
+Before {log4j.appender.stdout.Target=System.out, log4j.appender.file.MaxFileSize=1000KB, isLoggable=Y, log4j.appender.stdout.layout=org.apache.log4j.PatternLayout], log=/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/25/, log4j.appender.file=org.apache.log4j.RollingFileAppender, format=[%d{dd-MM-yyyy hh:mm:ss:sss a z}] %-5p [Line:%-2L] - %m %n, log4j.appender.stdout.layout.ConversionPattern=${format}, log4j.appender.file.layout=org.apache.log4j.PatternLayout, log4j.appender.file.layout.ConversionPattern=${format}, log4j.appender.stdout=org.apache.log4j.ConsoleAppender, log4j.rootLogger=DEBUG , file, log4j.appender.file.File=${log}log4j/log4j.log, log4j.appender.file.MaxBackupIndex=3}
+Log Properties Updated for Key [user] value []
+After {log4j.appender.stdout.Target=System.out, log4j.appender.file.MaxFileSize=1000KB, isLoggable=Y, log4j.appender.stdout.layout=org.apache.log4j.PatternLayout], log=/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/25/, log4j.appender.file=org.apache.log4j.RollingFileAppender, format=[%d{dd-MM-yyyy hh:mm:ss:sss a z}] %-5p [Line:%-2L] - %m %n, log4j.appender.stdout.layout.ConversionPattern=${format}, log4j.appender.file.layout=org.apache.log4j.PatternLayout, log4j.appender.file.layout.ConversionPattern=${format}, log4j.appender.stdout=org.apache.log4j.ConsoleAppender, log4j.rootLogger=DEBUG , file, log4j.appender.file.File=${log}log4j/log4j.log, log4j.appender.file.MaxBackupIndex=3, user=}
+Before {log4j.appender.stdout.Target=System.out, log4j.appender.file.MaxFileSize=1000KB, isLoggable=Y, log4j.appender.stdout.layout=org.apache.log4j.PatternLayout], log4j.appender.file=org.apache.log4j.RollingFileAppender, format=[%d{dd-MM-yyyy hh:mm:ss:sss a z}] %-5p [Line:%-2L] - %m %n, log4j.appender.stdout.layout.ConversionPattern=${format}, log4j.appender.file.layout=org.apache.log4j.PatternLayout, log4j.appender.file.layout.ConversionPattern=${format}, log4j.appender.stdout=org.apache.log4j.ConsoleAppender, log4j.rootLogger=DEBUG , file, log4j.appender.file.File=${log}log4j/log4j.log, log4j.appender.file.MaxBackupIndex=3}
+Log Properties Updated for Key [log] value [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/25/]
+After {log4j.appender.stdout.Target=System.out, log4j.appender.file.MaxFileSize=1000KB, isLoggable=Y, log4j.appender.stdout.layout=org.apache.log4j.PatternLayout], log=/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/25/, log4j.appender.file=org.apache.log4j.RollingFileAppender, format=[%d{dd-MM-yyyy hh:mm:ss:sss a z}] %-5p [Line:%-2L] - %m %n, log4j.appender.stdout.layout.ConversionPattern=${format}, log4j.appender.file.layout=org.apache.log4j.PatternLayout, log4j.appender.file.layout.ConversionPattern=${format}, log4j.appender.stdout=org.apache.log4j.ConsoleAppender, log4j.rootLogger=DEBUG , file, log4j.appender.file.File=${log}log4j/log4j.log, log4j.appender.file.MaxBackupIndex=3}
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]
+Inside Login sERVLET
+Properties key[isLoggable] value[Y]
+Properties key[isLoggable] value[Y]

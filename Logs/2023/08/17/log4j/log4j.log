@@ -1,0 +1,28 @@
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara              ]  Connection Closed [true]  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ]  Console File Path [null] 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ] Log File Path =>/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/17/log4j 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ]  File Path Added to session  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ]  Console File Path [null] isLog [true]  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/17/Console/] fileName [1692373252488_console.log] 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ] File created true File Name :1692373252488_console.log 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ] Get PrintStream [java.io.PrintStream@5798bf9e] 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara              ]  Connection Closed [true]  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [AuthFilter          ] [jiyara              ] Inside do fIletr 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  mode                      =>  login  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  txtUser                   =>  arul  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  txtPassword               =>  arul  
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  username                  =>    
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  pass1                     =>    
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  pass2                     =>    
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  user_id                   =>    
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Logindao            ] [jiyara              ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ]  Last Login 2023-08-17T22:18:09 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [jiyara              ] DB UserId : arul Username : Arulmurugan Password : arul 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Logindao            ] [jiyara              ] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [jiyara              ] Access Log Entered true 
+[18-08-2023 09:10:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara              ]  Connection Closed [true]  
+[18-08-2023 09:11:52:052 pm IST] DEBUG [Line:59] - [BookingServlet      ] [jiyara              ]  mode                      =>    
+[18-08-2023 09:11:52:052 pm IST] DEBUG [Line:59] - [Bookingdao          ] [jiyara              ] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[18-08-2023 09:11:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara              ]  Connection Closed [true]  
+[18-08-2023 09:11:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [jiyara              ]  Connection Closed [true]  

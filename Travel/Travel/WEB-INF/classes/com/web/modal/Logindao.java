@@ -9,7 +9,7 @@ import java.util.Vector;
 
 import com.web.common.Generic;
 import com.web.common.LoggerFactory;
-import com.web.common.StringChecker;
+import com.web.common.CommonFactory;
 import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
 
@@ -18,14 +18,14 @@ public class Logindao extends Generic
     private static final String UPDATE_USERS_TSTAMP ="UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID=?";
     private static final String UPDATE_USERS_INFO       ="UPDATE login_info SET gender=?,dob=STR_to_date(?,'%Y-%m-%d'),altered_user=? WHERE USER_ID=?";
     private static final String DELETE_USERS ="DELETE FROM login_info WHERE USER_ID=?";
-    private static final String CHECK_USER   ="SELECT li.*,ui.image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID=?";
+    private static final String CHECK_USER   ="SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID=?";
     private static final String SELECT_ALL_USERS = "SELECT * FROM login_info  order by last_login desc";
 
 
     public boolean insertUser(Login_Info user)throws SQLException, IllegalArgumentException, IllegalAccessException
     {
         boolean rowsaffected = false;
-        ps =con.prepareStatement( Dbmanager.buildQuery(user, "insert") ) ;
+        ps =con.prepareStatement( Dbmanager.buildQuery(user, "insert", "image_path") ) ;
         rowsaffected=ps.executeUpdate() > 0 ;
         return rowsaffected;
     }
@@ -123,7 +123,7 @@ public class Logindao extends Generic
             {
                 try
                 {
-                    columns.add( StringChecker.Init(rs.getMetaData().getColumnName(index).toLowerCase()) );
+                    columns.add( CommonFactory.Init(rs.getMetaData().getColumnName(index).toLowerCase()) );
                 }
                 catch(Exception e)
                 {

@@ -30,6 +30,12 @@ public class BookingServlet extends CustomServlet{
 
         Booking b = null ;
         Customer c = null ;
+        
+        Bookingdao bookingDao = Bookingdao.getInstance() ;
+        Customerdao customerDao = Customerdao.getInstance() ;
+        
+        bookingDao.setHttpServlets(request, response);
+        customerDao.setHttpServlets(request, response);
        
         String user = request.getSession().getAttribute("user").toString();
 
@@ -53,7 +59,7 @@ public class BookingServlet extends CustomServlet{
                 {
                     int id = Integer.parseInt(request.getParameter("booking_no"));
 
-                    b = Bookingdao.getInstance().selectBooking(id);
+                    b = bookingDao.selectBooking(id);
                     request.setAttribute("user", b);
                     break;
                 }
@@ -72,7 +78,7 @@ public class BookingServlet extends CustomServlet{
 
                     c	=new Customer(customer_name, pickup, drop, age, gender, email, phone);
 
-                    int customerId = Customerdao.getInstance().insertCustomer(c) ;
+                    int customerId = customerDao.insertCustomer(c) ;
 
                     if( customerId > 0 )
                     {
@@ -88,12 +94,12 @@ public class BookingServlet extends CustomServlet{
                         b.setFare(fare);
                         b.setBooked_by(user);
 
-                        int bookingNo = Bookingdao.getInstance().insertBooking(b);
+                        int bookingNo = bookingDao.insertBooking(b);
 
                         if ( bookingNo > 0 )
                         {
                             request.setAttribute("result", bookingNo +","+customerId+","+fare);
-                            logContent("Booking Added " , LoggerFactory.INFO, null);;
+                            logContent("Booking Added for No["+bookingNo +"] custId ["+customerId+"] fare["+fare+"]" , LoggerFactory.INFO, null);;
                         }
                         else 
                         {
@@ -124,7 +130,7 @@ public class BookingServlet extends CustomServlet{
                         b.setVehicle_no(vehicle);
                         b.setDriver_id(driver);
 
-                        if( Bookingdao.getInstance().updateBooking(b))
+                        if( bookingDao.updateBooking(b))
                         {
                             request.setAttribute("msg", "Booking edit Success");
                         }
@@ -139,7 +145,7 @@ public class BookingServlet extends CustomServlet{
                         b = new Booking();
                         b.setBooking_no(id);
                         b.setStatus(status);
-                        if( Bookingdao.getInstance().updateBooking(b))
+                        if( bookingDao.updateBooking(b))
                         {
 
                         }
@@ -156,7 +162,7 @@ public class BookingServlet extends CustomServlet{
                     int customerId		= Integer.parseInt(request.getParameter("customer_id"));
 
 
-                    if( Customerdao.getInstance().deleteCustomer(customerId) && Bookingdao.getInstance().deleteBooking(id))
+                    if( customerDao.deleteCustomer(customerId) && bookingDao.deleteBooking(id))
                     {
                         request.setAttribute("msg", "Booking No "+id+" deleted");
                         logContent("Booking deleted " , LoggerFactory.INFO, null);;
@@ -178,31 +184,34 @@ public class BookingServlet extends CustomServlet{
                 }
             }
             
-            request.setAttribute("listUser", Bookingdao.getInstance().getAllBooking());
+            request.setAttribute("listUser", bookingDao.getAllBooking());
         } 
         catch (Exception e) 
         {
             request.setAttribute("msg", e.getLocalizedMessage() );
-            e.printStackTrace();
+            logContent(e.getMessage(), LoggerFactory.ERROR, e);
         }
         finally
         {
-            if ( mode.trim().equals("") || mode.trim().equals("D") || mode.trim().equals("U") )
-            {
-                request.getRequestDispatcher(Constant.BOOKING_JSP).forward(request, response);
-            }
-            else
-            {
-                request.getRequestDispatcher(Constant.BOOKING_INSERT_JSP).forward(request, response);
-            }
 
-            try {
-            Bookingdao.getInstance().closeAll();
-            Customerdao.getInstance().closeAll();
-            }
-            catch(Exception e ) {
-                e.printStackTrace();
-            }
+        	try 
+        	{
+        		bookingDao.closeAll();
+        		customerDao.closeAll();
+        	}
+        	catch(Exception e ) {
+        		logContent(e.getMessage(), LoggerFactory.ERROR, e);
+        	}
+
+        	if ( mode.trim().equals("") || mode.trim().equals("D") || mode.trim().equals("U") )
+        	{
+        		request.getRequestDispatcher(Constant.BOOKING_JSP).forward(request, response);
+        	}
+        	else
+        	{
+        		request.getRequestDispatcher(Constant.BOOKING_INSERT_JSP).forward(request, response);
+        	}
+
         }
     }
 }

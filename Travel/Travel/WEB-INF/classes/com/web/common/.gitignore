@@ -5,3 +5,6 @@
 /StringChecker.class
 /TextFileToPDF.class
 /AjaxProcess.class
+/CommonFactory.class
+/UploadServlet.class
+/UploadJava.class

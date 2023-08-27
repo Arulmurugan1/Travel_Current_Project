@@ -4,16 +4,15 @@ import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.hibernate.Criteria;
 
 import com.web.Factory.HibernateHelper;
+import com.web.common.CommonFactory;
 import com.web.common.Constant;
 import com.web.common.LoggerFactory;
-import com.web.common.StringChecker;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
 
@@ -40,15 +39,17 @@ public class RouteNewServlet extends CustomServlet {
             
             super.service(request,this, response);
 
+            dao.setHttpServlets(request, response);
+            
             if( mode !=null && !mode.equals(""))	    
             {
                 logContent("Inside if mode",LoggerFactory.DEBUG , null);
 
-                start = StringChecker.isNull(request.getParameter("start"));
-                end   = StringChecker.isNull(request.getParameter("end"));
-                no = StringChecker.isNull(request.getParameter("vehicle_no"));
+                start = CommonFactory.isNull(request.getParameter("start"));
+                end   = CommonFactory.isNull(request.getParameter("end"));
+                no = CommonFactory.isNull(request.getParameter("vehicle_no"));
 
-                if ( StringChecker.isNull(request.getParameter("fare")) !="")
+                if ( CommonFactory.isNull(request.getParameter("fare")) !="")
                     fare = Double.parseDouble( request.getParameter("fare").trim() );
                 
                 r = new Route(no, start, end,fare);

@@ -1,6 +1,5 @@
 package com.web.common;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -23,30 +22,31 @@ public class LoggerFactory extends org.apache.log4j.Level
      * @param exception
      * @param d 
      * @param d
+     * @param session 
      * @param logInfo
      * @param request 
      */
-    public static void displayDiffLogLevels(String whattoprint,Level logLevel, Throwable exception, Object d) 
+    public static void displayDiffLogLevels(String whattoprint,Level logLevel, Throwable exception, Object d, HttpSession session) 
     {
         try {
 
             StringBuffer sb = new StringBuffer();
 
-            String user = Dbmanager.getKeyProperties("log_user");
+            String user = CommonFactory.isNull(session.getAttribute("user_id"));
             
             String className = d.getClass().getSimpleName();
             
-            boolean isLoggable = StringChecker.isNull(Dbmanager.getKeyProperties("isLoggable")).trim().equalsIgnoreCase("Y");
+            boolean isLoggable = CommonFactory.isNull(Dbmanager.getKeyProperties("isLoggable")).trim().equalsIgnoreCase("Y");
 
             if( exception != null)
             {
             	Throwable t = exception ;
             	
-                sb.append(String.format("[%-15s] [%-10s] "+whattoprint+"  ** Error in *** %-20s => %-20s ", className,user,t.getClass().getName(),t.getMessage() )).append("\r\n");
+                sb.append(String.format("[%-15s] ["+user+"] "+whattoprint+"  ** Error in *** %-20s => %-20s ", className,t.getClass().getName(),t.getMessage() )).append("\r\n");
             }
             else
             {
-                sb.append(String.format("[%-20s] [%-20s] "+whattoprint, className,user ));
+                sb.append(String.format("[%-20s] ["+user+"] "+whattoprint, className ));
             }
 
             if ( !isLoggable )
@@ -62,7 +62,7 @@ public class LoggerFactory extends org.apache.log4j.Level
         }
         catch(Exception e)
         {
-            e.printStackTrace();
+        	Logger.getRootLogger().error(" ", exception);
         }
 
     }    

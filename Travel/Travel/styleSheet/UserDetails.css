@@ -1,90 +1,89 @@
-@import 'https://fonts.googleapis.com/css?family=Do+Hyeon';
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- .img-responsive {
-  max-width: 100%;
-  height: auto;
-} 
-.card__collection {
-  position: relative;
-  display: block;
-  background: rgba(10, 10, 10, 0.5);
-  padding: 10px;
-  font-family: 'Do Hyeon', sans-serif;
-  overflow: hidden;
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom,#491de8,#cb8631);
 }
-.card__collection .cards {
-  width: 300px;
-  height: 400px;
-  display: block;
-  background-size: cover;
-  float: left;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-  background-position: center;
-  margin: 10px;
+.profile__cards{
+	min-height: 80vh;
+	width     : 95vw;
+	display   :flex;
+	margin 	  : auto;
+	overflow   : auto ;
+}
+.profile__card{
+    width: 380px;
+    height: 380px;
+    perspective: 900px;
+    margin : 30px;
 }
 
-
-
-.card__collection .cards--two {
-  position: relative;
-  backface-visibility: hidden;
-}
-.card__collection .cards--two p {
-  position: absolute;
-  top: 59%;
-  left: -140%;
-  color: #fff;
-  font-size: 18px;
-  z-index: 8;
-  transition: all 0.3s ease;
-}
-.card__collection .cards--two:hover p {
-  left: 8%;
-}
-.card__collection .cards--two:hover img {
-  transform: translateY(-15px);
-}
-.card__collection .cards--two:hover .cards--two__rect {
-  top: 50%;
-}
-.card__collection .cards--two:hover .cards--two__rect:before {
-  transform: translateY(15px);
-}
-.card__collection .cards--two:hover li {
-  transform: translateY(0);
-}
-.card__collection .cards--two img {
-  transition: all 0.2s ease;
+.profile__card__inner{
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+    transform-style: preserve-3d;
 }
 
-.card__collection .cards--two__rect {
-  width: 750px;
-  height: 300px;
-  background: #fff;
-  display: block;
-  position: absolute;
-  top: 175%;
-  left: -50%;
-  transform: rotate(30deg);
-  z-index: 5;
-  opacity: 0.9;
-  transition: all 0.2s ease-in-out;
+.profile__card:hover .profile__card__inner{
+    transform: rotateY(180deg);
 }
-.card__collection .cards--two__rect:before {
-  content: '';
-  display: block;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  background: #d26b11;
-  transform: translateY(200px);
-  z-index: 2;
-  transition: all 0.2s ease-in-out;
-  transition-delay: 0.2s;
+
+.profile__card__front,.profile__card__back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.profile__card__front{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    cursor: pointer;
+}
+.profile__card__front .title{
+    position: absolute;
+    bottom:0 ;
+    right: 0;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px;
+}
+.profile__card__back{
+    background: #ffff;
+    color: #000;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile__card__back img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 10px;
+}
+
+.profile__card__back span{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.profile__card__back div.profile__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }

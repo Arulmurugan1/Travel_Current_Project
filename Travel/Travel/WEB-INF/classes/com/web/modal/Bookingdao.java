@@ -266,4 +266,5 @@ public class Bookingdao extends Generic{
         else
             return new Bookingdao();
     }
+    
 }

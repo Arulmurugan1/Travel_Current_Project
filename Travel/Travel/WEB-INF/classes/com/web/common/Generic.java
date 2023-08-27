@@ -1,11 +1,10 @@
 package com.web.common;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.net.URL;
-import java.net.URLDecoder;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,6 +13,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Appender;
@@ -25,15 +25,20 @@ import org.apache.log4j.PatternLayout;
 import com.web.objects.AccessLog;
 import com.web.util.Dbmanager;
 
-public class Generic extends StringChecker
+public class Generic extends CommonFactory
 {
 
 	public static Connection con = Dbmanager.getConnection();
 	public static PreparedStatement ps = null ;
 	public static ResultSet rs = null ;
 	public static Generic generic = new Generic();
-	HttpSession session = null ;
-	HttpServletRequest request = null  ;
+	public static HttpSession session = null ;
+	public static HttpServletRequest request = null  ;
+	public static HttpServletResponse response = null ;
+	
+	private String LogUrl = null ;
+
+    PrintWriter out = null ;
 	boolean ret = false ;
 
 	private static PrintStream printStream = null;
@@ -43,19 +48,24 @@ public class Generic extends StringChecker
 		setConnection();
 	}
 
-	public Generic(HttpServletRequest request) throws Exception 
+	public Generic(HttpServletRequest req) throws Exception 
 	{
-		this.session = request.getSession();
-		this.request = request ;
+		setRequest(req,req.getSession());
+	}
+	
+	public static void setRequest(HttpServletRequest req,HttpSession ses) throws Exception 
+	{
+		session = ses;
+		request = req ;
 	}
 
 	public boolean setLogConsoleProperties() throws Exception 
 	{
 		ret = false ;
-		System.out.println("Inside Log Path from " +this.getClass().getSimpleName());
 		
-		if( setProperties("log_user",session.getAttribute("user_id").toString()))
-			ret = setProperties();
+		System.out.println("Inside Log Path from " +this.getClass().getSimpleName() +LOG_USER +"["+isNull(session.getAttribute("user_id"))+"]");
+		
+		ret = setProperties();
 		
 		ret = ret && setSystemOutLogs();
 		
@@ -63,6 +73,11 @@ public class Generic extends StringChecker
 	}
 
 	public void closeAll() throws Exception
+	{
+		Dbmanager.closeAll(con, ps, rs);
+	}
+	
+	public static void closeOpenConnections() throws Exception
 	{
 		Dbmanager.closeAll(con, ps, rs);
 	}
@@ -91,21 +106,43 @@ public class Generic extends StringChecker
 		al.setPlatform(req.getHeader("sec-ch-ua-platform")+"");
 		al.setAccept_language(req.getHeader("accept-language")+"");
 
-		ps =con.prepareStatement(Dbmanager.buildQuery(al, INSERT));
+		ps =con.prepareStatement(Dbmanager.buildQuery(al, INSERT, null));
 
 		logContent("Access Log Entered "+( ps.executeUpdate() > 0 ) ,LoggerFactory.DEBUG , null );
 
 	} 
 
-	public static void logContent(Object message, Level logLevel, Throwable e, Object object) 
+	/**
+	 * @param message
+	 * @param logLevel
+	 * @param e
+	 * @param className
+	 */
+	public static void logContent(Object message, Level logLevel, Throwable e, Object className) 
 	{
-		LoggerFactory.displayDiffLogLevels(message != null ? message.toString() : "", logLevel, e,object);
+		LoggerFactory.displayDiffLogLevels(message != null ? message.toString() : "", logLevel, e,className,session);
 	}
+	/**
+	 * @param message
+	 * @param logLevel
+	 * @param e
+	 */
 	public static void logContent(Object message, Level logLevel, Throwable e) 
 	{
-		LoggerFactory.displayDiffLogLevels(message != null ? message.toString() : "", logLevel, e,generic);
+		LoggerFactory.displayDiffLogLevels(message != null ? message.toString() : "", logLevel, e,generic,session);
 	}
-
+	
+	/**
+	 * @param message
+	 * @param logLevel
+	 * @param e
+	 * @param className
+	 * @param session
+	 */
+	public static void logContent(String message, Level logLevel, Throwable e, Object className,HttpSession session) 
+	{
+		LoggerFactory.displayDiffLogLevels(message != null ? message.toString() : "", logLevel, e,className,session);
+	}
 	public static void setConnection()
 	{
 		try {
@@ -115,7 +152,7 @@ public class Generic extends StringChecker
 			}
 		} catch (SQLException e) {
 
-			e.printStackTrace();
+			logContent("setConnection Exception =>"+e.getLocalizedMessage(), LoggerFactory.DEBUG, e);
 		}
 	}
 
@@ -176,31 +213,36 @@ public class Generic extends StringChecker
 		
 		if(url.trim().equals(""))
 		{
-			URL fileURL = currentThread().getContextClassLoader().getResource(LOG_PROPERTIES) ;
-
-			url = URLDecoder.decode(isNull(fileURL), "UTF-8") ;
-
-			if( !url.isEmpty())
-			{
-				int endString = url.lastIndexOf("Travel") ;
-				url = url.substring(url.lastIndexOf(":")+1, endString != -1 ? endString : url.length() ) +folder;
-			}
+			
+			throw new FileNotFoundException("Log Path Not found in PROPERTIES_PATH table");
+			/*
+			 * URL fileURL =
+			 * currentThread().getContextClassLoader().getResource(LOG_PROPERTIES) ;
+			 * 
+			 * url = URLDecoder.decode(isNull(fileURL), "UTF-8") ;
+			 * 
+			 * if( !url.isEmpty()) { int endString = url.lastIndexOf("Travel") ; url =
+			 * url.substring(url.lastIndexOf(":")+1, endString != -1 ? endString :
+			 * url.length() ) +folder; }
+			 */
 		}
 		else
 		{
 			url += folder;
 		}
-
+		
+		LogUrl = url ;
+		
 		System.out.println("Log will be redirected to "+url);
 
-		if( setProperties("log",url)  )
-			ret = setConsoleFilePath();
+		if( setProperties(LOG_USER,isNull(session.getAttribute("user_id"))) && setProperties("log",url)  )
+			ret = setConsoleFilePath(url);
 
 		return ret ;
 
 	}
 
-	private boolean setConsoleFilePath() throws Exception
+	private boolean setConsoleFilePath(String url) throws Exception
 	{
 		ret = false ;
 
@@ -208,30 +250,65 @@ public class Generic extends StringChecker
 		
 		if ( session.getAttribute("consoleFilePath") == null )
 		{	
-			String logPath = Dbmanager.getKeyProperties("log");
+			String logPath = url;
 
 			String consoleFileName =  System.currentTimeMillis() + CONSOLE_FILENAME;
 
-			String loggerFilePath = logPath + LOG_FOLDERNAME    ;
-
-			logContent("Log File Path =>"+loggerFilePath,LoggerFactory.DEBUG,null);
+			String loggerFilePath = logPath + LOG_FOLDERNAME + seperator   ;
 			
-			File f = new File(loggerFilePath);
-			
-			if(!f.exists())
-				f.mkdirs();
+			String consoleFilePath = logPath + CONSOLE_FOLDERNAME + seperator   ;
 
+			ret = createFolders(loggerFilePath) && createFiles(loggerFilePath+LOG_FILENAME) && createFolders(consoleFilePath);
+			
 			session.setAttribute("consoleFileName", consoleFileName);
 			session.setAttribute("loggerFilePath", loggerFilePath);
+			session.setAttribute("consoleFilePath", consoleFilePath);
 			
 			logContent(" File Path Added to session ",LoggerFactory.DEBUG,null);
-			
-			ret = true ;
 		}
 		
 		return ret ;
 	}
 
+	public static  boolean createFolders(String url)
+	{
+		boolean ret = false ;
+		
+		if(url !=null && !url.trim().equals(""))
+		{
+			File f = new File(url);
+			
+			ret = f.exists() || f.mkdirs();
+			
+			System.out.println("FilePath ["+f.getAbsolutePath()+"] available ["+ret+"]");
+			
+		}
+		else
+			System.out.println("FilePath ["+url+"] is null or empty");
+		
+		return ret ;
+		
+	}
+	
+	public static  boolean createFiles(String url) throws Exception
+	{
+		boolean ret = false ;
+		
+		if(url !=null && !url.trim().equals(""))
+		{
+			File f = new File(url);
+			
+			ret = f.exists() || f.createNewFile();
+			
+			System.out.println("File ["+f.getAbsoluteFile()+"] available ["+ret+"]");
+			
+		}
+		else
+			System.out.println("FilePath  ["+url+"] is null or empty");
+		
+		return ret ;
+		
+	}
 	
 	public boolean setSystemOutLogs() throws Exception
 	{
@@ -243,38 +320,20 @@ public class Generic extends StringChecker
 		
 		if(isLog)
 		{
-			if (session.getAttribute("ConsoleLog") == null )
+			if (session.getAttribute("ConsoleLog") == null || printStream == null )
 			{
 				try 
 				{
-					String filePath = Dbmanager.getKeyProperties("log").concat(CONSOLE_FOLDERNAME) + seperator
+					String filePath = LogUrl != null && !LogUrl.trim().equals("") ? LogUrl : Dbmanager.getKeyProperties("log")  
 							, fileName = session.getAttribute("consoleFileName").toString();
 
+					filePath += CONSOLE_FOLDERNAME +seperator ;
+					
 					logContent("Inside setSystemOutLogs filePath["+filePath+"] fileName ["+fileName+"]",LoggerFactory.DEBUG,null);
 					
-					File f = new File(filePath.concat(fileName));
+					ret = createFolders(filePath) && createFiles( filePath + fileName);
 					
-					if ( f.exists() ) 
-					{   
-						logContent("File exists " + f.exists() + " File Name :" + f.getName(),LoggerFactory.DEBUG,null);
-					} 
-					else 
-					{
-						if ( !f.getParentFile().exists() )
-						{
-							f.getParentFile().mkdirs();
-						}
-
-						if ( f.createNewFile() && f.exists() ) 
-						{
-							logContent("File created " + f.exists() + " File Name :" + f.getName(),LoggerFactory.DEBUG,null);
-						} 
-						else 
-						{
-							new Throwable("File Creation Issue");
-						}
-					}
-					session.setAttribute( "ConsoleLog", new PrintStream( f.getAbsolutePath() ) );
+					session.setAttribute( "ConsoleLog", new PrintStream(filePath+fileName) );
 				} 
 				catch (Exception e) 
 				{
@@ -284,24 +343,29 @@ public class Generic extends StringChecker
 			}
 			
 			printStream =  (PrintStream) session.getAttribute("ConsoleLog");
-
-			if ( printStream != null )
-			{
-				System.setOut(printStream);
-			}
+			
+			System.setOut(printStream);
+			
 			logContent("Get PrintStream [" + printStream +"]",LoggerFactory.DEBUG,null );
 
-			ret = session.getAttribute("ConsoleLog") != null ;
+			ret = printStream != null ;
 
 			}
 		
 		return ret ;
 	}
 	
-	
-	private boolean setProperties(String key, String value) throws Exception 
+	private synchronized boolean setProperties(String key, String value) throws Exception 
 	{
 		return Dbmanager.setProperties(key, value);
+	}
+	
+	public static Generic getInstance()
+	{
+		if(generic !=null)
+			return generic;
+		else
+			return new Generic();
 	}
 	
 	public static StringWriter getRootCauseException(Throwable e)
@@ -316,4 +380,11 @@ public class Generic extends StringChecker
     	return sw ;
 	}
 
+	public void setHttpServlets(HttpServletRequest req, HttpServletResponse res)
+    {
+    	session = req.getSession() ;
+    	request = req ;
+    	response = res ;
+    }
+	
 }

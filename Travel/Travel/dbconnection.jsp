@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*,com.web.common.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
@@ -17,7 +16,7 @@
 <link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/Pagination.css" type="text/css">
 <link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/searchBox.css" type="text/css">
 <link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/header.css" type="text/css">
-
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/ajax-loader.css" type="text/css">
 
 <link rel="icon" type="image/x-icon" href="<%=request.getContextPath() %>/Images/favIcon/fav.png">
 
@@ -27,13 +26,14 @@
 <script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
 <script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="<%=request.getContextPath() %>/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js" type="text/javascript"></script>
-<script src="<%=request.getContextPath() %>/scripts/ajax/libs/jquery/3.5.0/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/ajax-loader.css" type="text/css">
 
 
 
 <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+
 	
 <script src="<%=request.getContextPath() %>/scripts/Validator.js"></script>
 <script src="<%=request.getContextPath() %>/scripts/ajaxCall.js"></script>
@@ -41,7 +41,7 @@
 
 
 <%
-	boolean adminUser = StringChecker.isNull(session.getAttribute("role")).equals("Admin") ;
+boolean adminUser = CommonFactory.isNull(session.getAttribute("role")).equals("Admin") ;
 %>
 
 <script>
@@ -52,9 +52,12 @@
 <body>
 
 	<input type=hidden name=msg id=msg value='${msg}'>
+	<input type=hidden name=function id=function value='${action}'>
 	<input type=hidden name=adminUser id=adminUser value= <%= adminUser %> >
 
 	<%@ include file="loader/loader.jsp" %>
+	
+	<div class="loader-ajax" style="display: none"></div>
 
 	<sql:setDataSource var="db" driver="com.mysql.cj.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/taxi?autoReconnect=true&useSSL=false"

@@ -33,8 +33,9 @@ public class LoginServlet extends CustomServlet {
         super.service(request,this, response);
 
         dao= new Logindao();
-
         u = new Login_Info();
+        
+        dao.setHttpServlets(request, response);
 
         boolean success = false ;
 
@@ -132,8 +133,8 @@ public class LoginServlet extends CustomServlet {
             if ( mode.equals("L"))
             {
                 request.setAttribute("mode",mode);
-                session.invalidate();
                 logContent("Session On Logout "+session, LoggerFactory.DEBUG, null);
+                session.invalidate();
             }
         }
         catch(Exception e) 

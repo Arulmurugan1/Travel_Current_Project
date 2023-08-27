@@ -1,0 +1,516 @@
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Generic             ] [Arulmurugan]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [AuthFilter          ] [Arulmurugan] Inside do fIletr 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  mode                      =>  login  
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  txtUser                   =>  arul  
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  txtPassword               =>  arul  
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  username                  =>    
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  pass1                     =>    
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  pass2                     =>    
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  user_id                   =>    
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Logindao            ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  Last Login 2023-08-21T21:37:53 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Logindao            ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Generic             ] [Arulmurugan] Access Log Entered true 
+[21-08-2023 10:34:07:007 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:34:24:024 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>    
+[21-08-2023 10:34:24:024 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:34:24:024 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:34:24:024 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:34:24:024 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:36:00:000 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>  dummy  
+[21-08-2023 10:36:00:000 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:36:00:000 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:36:00:000 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:36:00:000 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>  dummy  
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  pickup_from               =>  Chennai  
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  drop_at                   =>    
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  customer_name             =>    
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  age                       =>    
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  gender                    =>    
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  email                     =>    
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  phone                     =>    
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:36:03:003 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:36:03:003 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:36:03:003 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>  dummy  
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  pickup_from               =>  Chennai  
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  drop_at                   =>  Madurai  
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  customer_name             =>    
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  age                       =>    
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  gender                    =>    
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  email                     =>    
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  phone                     =>    
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:36:05:005 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:36:05:005 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:36:05:005 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>  I  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  pickup_from               =>  Chennai  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  drop_at                   =>  Madurai  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  vehicle_no                =>  5361  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  driver_id                 =>  11  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  customer_name             =>  Arulmurugan C  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  age                       =>  23  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  gender                    =>  Male  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  email                     =>  arulmurugansk7@gmail.com  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  phone                     =>  8939523379  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  fare                      =>  1200.0  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [Customerdao         ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO CUSTOMER VALUES(null,'Arulmurugan C','Chennai','Madurai','23','M','arulmurugansk7@gmail.com','8939523379') 
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [Customerdao         ] [Arulmurugan] Generated Customer ::302 
+[21-08-2023 10:36:17:017 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Customer Added  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO BOOKING VALUES(null,'Chennai','Madurai',302,'5361','11',1200.0,'Arulmurugan','WIP',sysdate()) 
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] Booking No ::278 
+[21-08-2023 10:36:17:017 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Booking Added for No[278] custId [302] fare[1200.0] 
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:36:17:017 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] com.web.objects.Booking  
+[21-08-2023 10:36:17:017 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] com.web.objects.Customer  
+[21-08-2023 10:36:17:017 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [Arulmurugan]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [AuthFilter          ] [Arulmurugan] Inside do fIletr 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  mode                      =>  login  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  txtUser                   =>  arul  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  txtPassword               =>  arul  
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  username                  =>    
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  pass1                     =>    
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  pass2                     =>    
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  user_id                   =>    
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Logindao            ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  Last Login 2023-08-21T22:34:07 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Logindao            ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [Arulmurugan] Access Log Entered true 
+[21-08-2023 10:38:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:39:06:006 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>    
+[21-08-2023 10:39:06:006 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:39:06:006 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:39:06:006 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:39:06:006 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  mode                      =>  D  
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  booking_no                =>  203  
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Arulmurugan]  customer_id               =>  227  
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [Customerdao         ] [Arulmurugan] delete from CUSTOMER where CUSTOMER_ID = ?; 
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] delete from booking where booking_no = ?; 
+[21-08-2023 10:39:25:025 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Booking deleted  
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Arulmurugan] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:39:25:025 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:39:25:025 pm IST] INFO  [Line:59] - [BookingServlet      ] [Arulmurugan] Class is null 
+[21-08-2023 10:39:25:025 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:40:28:028 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Arulmurugan]  Connection Closed [true]  
+[21-08-2023 10:40:28:028 pm IST] DEBUG [Line:59] - [Generic             ] [Arulmurugan]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 10:40:28:028 pm IST] DEBUG [Line:59] - [AuthFilter          ] [Arulmurugan] Inside do fIletr 
+[21-08-2023 10:40:29:029 pm IST] DEBUG [Line:59] - [LoginServlet        ] [Arulmurugan]  mode                      =>  L  
+[21-08-2023 10:40:29:029 pm IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@492b8375 
+[21-08-2023 10:40:29:029 pm IST] ERROR [Line:65] -   
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [null] 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Generic             ] []  File Path Added to session  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [null] isLog [true]  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Generic             ] [] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692637832156_console.log] 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Generic             ] [] Get PrintStream [java.io.PrintStream@4a6e6eaa] 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  login  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  txtUser                   =>  jiyara  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  txtPassword               =>  jiyara  
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  username                  =>    
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  pass1                     =>    
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  pass2                     =>    
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  user_id                   =>    
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Logindao            ] [] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  Last Login 2023-08-16T19:19:27 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [LoginServlet        ] [] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Logindao            ] [Jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Generic             ] [Jiyara] Access Log Entered true 
+[21-08-2023 10:40:32:032 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Jiyara]  Connection Closed [true]  
+[21-08-2023 10:40:34:034 pm IST] DEBUG [Line:59] - [BookingServlet      ] [Jiyara]  mode                      =>    
+[21-08-2023 10:40:34:034 pm IST] DEBUG [Line:59] - [Bookingdao          ] [Jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:40:34:034 pm IST] INFO  [Line:59] - [BookingServlet      ] [Jiyara] Class is null 
+[21-08-2023 10:40:34:034 pm IST] INFO  [Line:59] - [BookingServlet      ] [Jiyara] Class is null 
+[21-08-2023 10:40:34:034 pm IST] DEBUG [Line:59] - [Dbmanager           ] [Jiyara]  Connection Closed [true]  
+[21-08-2023 10:48:36:036 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 10:48:36:036 pm IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 10:48:36:036 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 10:48:36:036 pm IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[21-08-2023 10:48:36:036 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  L  
+[21-08-2023 10:48:36:036 pm IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@7be5f1d4 
+[21-08-2023 10:48:36:036 pm IST] ERROR [Line:65] -   
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692638320149_console.log] 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@5abfcb38] 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T22:38:52 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 10:48:40:040 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 10:48:43:043 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 10:48:43:043 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 10:51:13:013 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 10:51:13:013 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 10:51:26:026 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 10:51:26:026 pm IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 10:51:26:026 pm IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[21-08-2023 10:51:26:026 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  L  
+[21-08-2023 10:51:26:026 pm IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@4742a381 
+[21-08-2023 10:51:26:026 pm IST] ERROR [Line:65] -   
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Generic             ] [ramya]  Console File Path [null] 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Generic             ] [ramya]  File Path Added to session  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Generic             ] [ramya]  Console File Path [null] isLog [true]  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Generic             ] [ramya] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692638490107_console.log] 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Generic             ] [ramya] Get PrintStream [java.io.PrintStream@2ead8911] 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [AuthFilter          ] [ramya] Inside do fIletr 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  mode                      =>  login  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  txtUser                   =>  ramya  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  txtPassword               =>  ramya  
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  username                  =>    
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  pass1                     =>    
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  pass2                     =>    
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  user_id                   =>    
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  Last Login 2023-08-15T23:55:17 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Generic             ] [ramya] Access Log Entered true 
+[21-08-2023 10:51:30:030 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:51:35:035 pm IST] DEBUG [Line:59] - [BookingServlet      ] [ramya]  mode                      =>    
+[21-08-2023 10:51:35:035 pm IST] DEBUG [Line:59] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:51:35:035 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:53:12:012 pm IST] DEBUG [Line:59] - [BookingServlet      ] [ramya]  mode                      =>    
+[21-08-2023 10:53:12:012 pm IST] DEBUG [Line:59] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[21-08-2023 10:53:12:012 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:53:17:017 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 10:53:17:017 pm IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 10:53:17:017 pm IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[21-08-2023 10:53:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  L  
+[21-08-2023 10:53:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@2ed2e260 
+[21-08-2023 10:53:17:017 pm IST] ERROR [Line:65] -   
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Generic             ] [ramya]  Console File Path [null] 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Generic             ] [ramya]  File Path Added to session  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Generic             ] [ramya]  Console File Path [null] isLog [true]  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Generic             ] [ramya] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692638598914_console.log] 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Generic             ] [ramya] Get PrintStream [java.io.PrintStream@5f9dadec] 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [AuthFilter          ] [ramya] Inside do fIletr 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  mode                      =>  login  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  txtUser                   =>  ramya  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  txtPassword               =>  ramya  
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  username                  =>    
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  pass1                     =>    
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  pass2                     =>    
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  user_id                   =>    
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya]  Last Login 2023-08-21T22:51:30 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Generic             ] [ramya] Access Log Entered true 
+[21-08-2023 10:53:18:018 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:53:22:022 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [ramya]  mode                      =>    
+[21-08-2023 10:53:22:022 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 10:55:04:004 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [ramya]  mode                      =>    
+[21-08-2023 10:55:04:004 pm IST] DEBUG [Line:59] - [Dbmanager           ] [ramya]  Connection Closed [true]  
+[21-08-2023 11:24:19:019 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 11:24:19:019 pm IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[21-08-2023 11:24:19:019 pm IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  
+[21-08-2023 11:24:19:019 pm IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[21-08-2023 11:24:19:019 pm IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  L  
+[21-08-2023 11:24:19:019 pm IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@3b08ef20 
+[21-08-2023 11:24:19:019 pm IST] ERROR [Line:65] -   
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692640584809_console.log] 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@205461ea] 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T22:48:40 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 11:26:24:024 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:26:29:029 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:26:29:029 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:27:47:047 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:27:47:047 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:28:43:043 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:28:43:043 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:34:39:039 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:34:39:039 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:34:45:045 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Session Created 706E74CF5C25EB416DAA765A38FA15CF 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692641088884_console.log] 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@69210bd8] 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T23:26:24 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 11:34:48:048 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:34:52:052 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:34:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:36:29:029 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:36:29:029 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:37:24:024 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Session Created 9865925ECA01F0664766402D033FFF6F 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692641247026_console.log] 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@62ba17f7] 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T23:34:48 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 11:37:27:027 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:37:30:030 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:37:30:030 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:38:31:031 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Session Created F0B848AFB72AC25784FC42A517D8DFFE 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692641315165_console.log] 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@f705635] 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T23:37:27 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 11:38:35:035 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:38:39:039 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:38:39:039 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:42:14:014 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Session Created D3F5DFDDE19575B78A670CF9C2B7FFC3 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692641537852_console.log] 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@3bb3af2d] 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T23:38:35 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 11:42:17:017 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:42:21:021 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:42:21:021 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:42:37:037 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:42:37:037 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:42:37:037 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  File Path Added to session  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [null] isLog [true]  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] fileName [1692641655317_console.log] 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Get PrintStream [java.io.PrintStream@38d4b291] 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T23:42:17 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[21-08-2023 11:44:15:015 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:44:16:016 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:44:16:016 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:44:29:029 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:44:29:029 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:44:29:029 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:44:41:041 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:44:41:041 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:44:41:041 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:45:10:010 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:45:10:010 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:45:16:016 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:45:16:016 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:45:16:016 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:45:56:056 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:45:56:056 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:45:58:058 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:45:58:058 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  ramya  
+[21-08-2023 11:45:58:058 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[21-08-2023 11:45:58:058 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:45:58:058 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax [21-08-2023 11:49:00:000 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:49:00:000 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:49:19:019 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:49:19:019 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:49:24:024 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:49:24:024 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  ramya  
+[21-08-2023 11:49:24:024 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[21-08-2023 11:49:24:024 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:49:24:024 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:49:24:024 pm IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[21-08-2023 11:49:24:024 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:50:14:014 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:50:14:014 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  jiyara  
+[21-08-2023 11:50:14:014 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[21-08-2023 11:50:14:014 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:50:14:014 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:50:14:014 pm IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[21-08-2023 11:50:14:014 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:52:09:009 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:52:09:009 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:52:11:011 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:52:11:011 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  ramya  
+[21-08-2023 11:52:11:011 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[21-08-2023 11:52:11:011 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:52:11:011 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:52:11:011 pm IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [ramya] access [] 
+[21-08-2023 11:52:11:011 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:52:50:050 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:52:50:050 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:52:52:052 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:52:52:052 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  ramya  
+[21-08-2023 11:52:52:052 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[21-08-2023 11:52:52:052 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:52:52:052 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:52:52:052 pm IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [ramya] access [Y] 
+[21-08-2023 11:52:52:052 pm IST] DEBUG [Line:59] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'N' , role = 'Guest' where user_id ='ramya' 
+[21-08-2023 11:52:52:052 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  
+[21-08-2023 11:58:02:002 pm IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[21-08-2023 11:58:03:003 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  jiyara  
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[21-08-2023 11:58:09:009 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[21-08-2023 11:58:09:009 pm IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [jiyara] access [Y] 
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'N' , role = 'Guest' where user_id ='jiyara' 
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] updatedtrue 
+[21-08-2023 11:58:09:009 pm IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  
+[22-08-2023 12:00:49:049 am IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[22-08-2023 12:00:49:049 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[22-08-2023 12:00:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[22-08-2023 12:00:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  arul  
+[22-08-2023 12:00:54:054 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>    
+[22-08-2023 12:00:54:054 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[22-08-2023 12:00:54:054 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[22-08-2023 12:00:54:054 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [arul] access [] 
+[22-08-2023 12:00:54:054 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  jiyara  
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  N  
+[22-08-2023 12:00:59:059 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[22-08-2023 12:00:59:059 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [jiyara] access [N] 
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'Y' , role = 'Admin' where user_id ='jiyara' 
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] updatedtrue 
+[22-08-2023 12:00:59:059 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  ramya  
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  N  
+[22-08-2023 12:01:02:002 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[22-08-2023 12:01:02:002 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [ramya] access [N] 
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'Y' , role = 'Admin' where user_id ='ramya' 
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] updatedtrue 
+[22-08-2023 12:01:02:002 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Generic             ] [arul]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Travel/Logs/2023/08/21/Console/] 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [AuthFilter          ] [arul] Inside do fIletr 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  mode                      =>  login  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  username                  =>    
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass1                     =>    
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  pass2                     =>    
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  user_id                   =>    
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul]  Last Login 2023-08-21T23:44:15 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Generic             ] [arul] Access Log Entered true 
+[22-08-2023 12:02:53:053 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[22-08-2023 12:02:54:054 am IST] DEBUG [Line:59] - [LoginInfoServlet    ] [arul]  mode                      =>    
+[22-08-2023 12:02:54:054 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess  
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  user                      =>  ramya  
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [AjaxServlet         ] [arul]  id                        =>  Y  
+[22-08-2023 12:03:00:000 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[22-08-2023 12:03:00:000 am IST] INFO  [Line:59] - [AjaxServlet         ] [arul] Inside ajax 
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] user [ramya] access [Y] 
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'N' , role = 'Guest' where user_id ='ramya' 
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [AjaxProcess         ] [arul] updatedtrue 
+[22-08-2023 12:03:00:000 am IST] DEBUG [Line:59] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  

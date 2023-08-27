@@ -35,6 +35,26 @@ function callAlert()
 		{
 			if (  $.trim(  $('#msg').val()   ) !='')
 				alert($('#msg').val());
+			if (  $.trim(  $('#function').val()   ) =='editProfile')
+				editProfile();	
 		}
 	},200);
+}
+
+
+function getFormData(frm)
+{
+	let formElements = frm && frm.elements;
+	
+	let arr =new FormData();
+	
+	for(const data of formElements)
+	{
+		if(data.type =="file")
+			arr += "&"+$(data)[0].files[0]+"="+$(data)[0].value ;
+		else
+			arr += "&"+$(data)[0].name+"="+$(data)[0].value ; 
+	}
+	
+	return arr ;
 }

@@ -35,6 +35,8 @@ public class VehicleServlet extends CustomServlet {
         
         super.service(request,this, response);
         
+        dao.setHttpServlets(request, response);
+        
 		try
 		{
 

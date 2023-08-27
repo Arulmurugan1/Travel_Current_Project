@@ -11,10 +11,12 @@ public class Constant extends Thread
 	public static final String DRIVER_JSP = "driver/driver.jsp";
 	public static final String DRIVER_INSERT_JSP = "driver/driverform.jsp";
 	public static final String ROUTE_JSP = "route/route.jsp";
+	public static final String USER_DETAIL_JSP = "User/UserDetails.jsp";
 	
 	public static final String ROUTE_SERVLET = "Route";
 
 	public static final String IS_SYSOUT_LOGGABLE ="isLoggable";
+	public static final String LOG_USER 						="user";
 	public static final String LOG_FILENAME = "log4j.log";
 	public static final String LOG_FOLDERNAME = "log4j";
 	public static final String CONSOLE_FILENAME = "_console.log";
@@ -32,12 +34,13 @@ public class Constant extends Thread
 	public static final String DELETE   = "DELETE";
 	public static final String LOG_PATH = "LOG_PATH";
 
-	public static final String ASSIGN_OPERATOR = "=";
+	public static final String ASSIGN_OPERATOR = "  =  ";
+	public static final String IMAGE_PATH = "Images/";
 
 
 	public static final String CONNECTION_PROPERTIES = "ConnectionFile.properties";
 	public static final String LOG_PROPERTIES = "log4j.properties";
-
+	public static final String IMG_PATH       		= "IMAGE_PATH";
 
 	public static final String USER       			= "db.user";
 	public static final String PASSWORD   	= "db.password";

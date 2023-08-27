@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.log4j.Level;
 
 import com.web.common.Constant;
+import com.web.common.Generic;
 import com.web.common.LoggerFactory;
 import com.web.util.Dbmanager;
 
@@ -96,7 +97,7 @@ public class CustomServlet extends HttpServlet {
      */
     public void logContent(String message, Level logLevel, Throwable e)
     {
-        LoggerFactory.displayDiffLogLevels(message, logLevel, e, this);
+        Generic.logContent(message, logLevel, e, this,req.getSession());
     }
 
 }

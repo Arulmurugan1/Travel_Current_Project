@@ -29,7 +29,9 @@ public class CustomerServlet extends CustomServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
-        Customerdao customerdao = new Customerdao();
+        Customerdao customerdao = Customerdao.getInstance();
+        
+        customerdao.setHttpServlets(request, response);
         List<Customer> listUser = new ArrayList<>();
         try {
 

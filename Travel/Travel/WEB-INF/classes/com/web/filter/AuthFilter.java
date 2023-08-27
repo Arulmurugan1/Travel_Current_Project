@@ -12,9 +12,11 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import com.web.common.CommonFactory;
 import com.web.common.Constant;
 import com.web.common.Generic;
 import com.web.common.LoggerFactory;
+import com.web.util.Dbmanager;
 
 @WebFilter(urlPatterns ={"/*"})
 public final class AuthFilter implements Filter{
@@ -26,8 +28,15 @@ public final class AuthFilter implements Filter{
 
 		HttpSession session = req.getSession() ;
 		
+		if(Generic.session == null)
+		{
+			Generic.setRequest(req, session);
+		}
+		
 		if ( req.getServletPath().equals("/Login"))
 		{
+			System.out.println(" User Id : from auth filter "+req.getParameter("txtUser"));
+			
 			if(req.getParameter("txtUser") != null);
 			{
 				session.setAttribute("user_id", req.getParameter("txtUser"));
@@ -35,7 +44,9 @@ public final class AuthFilter implements Filter{
 			
 			System.out.println( "propertiesSet "+session.getAttribute("propertiesSet") );
 			
-			if( session.getAttribute("propertiesSet") ==null || !(Boolean)session.getAttribute("propertiesSet") )
+			String propUser = CommonFactory.isNull(req.getParameter("txtUser"));
+			
+			if( !propUser.equals(session.getAttribute("user_id"))  ||  session.getAttribute("propertiesSet") == null || !(Boolean)session.getAttribute("propertiesSet")  )
 			{
 				System.out.println("Inside Log Path from " +this.getClass().getSimpleName());
 				Generic prop = new Generic(req);
@@ -79,7 +90,9 @@ public final class AuthFilter implements Filter{
 			}	
 		}
 	    }catch(Exception e) {
+	    	request.setAttribute("msg", e.getMessage());
 	    	Generic.logContent("Auth Filter Exception "+e.getStackTrace()[0],LoggerFactory.DEBUG , null, this);
+	    	request.getRequestDispatcher(Constant.INDEX_JSP).forward(request, response);
 	    }
 	}
 
