@@ -1,0 +1,470 @@
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva]  Console File Path [null] 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva]  File Path Added to session  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva]  Console File Path [null] isLoggable [true]  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/29//] fileName [Console.log] 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva] printStream [java.io.PrintStream@4263d776] 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva] Get PrintStream [java.io.PrintStream@4263d776] 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [AuthFilter          ] [siva] Inside do fIletr 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  mode                      =>  login  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  encodePassword            =>  155866f25b71487aa592e6a2d0264523f988663af402370701d621e33aa1ad6d  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  txtUser                   =>  siva  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  txtPassword               =>  siva  
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  username                  =>    
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  pass1                     =>    
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  pass2                     =>    
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  user_id                   =>    
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='siva' 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  Last Login 2023-08-29T00:12:16 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva] DB UserId : siva Username : SivaSankar Password : siva 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='siva' 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Generic             ] [siva] Access Log Entered true 
+[29-08-2023 12:14:06:006 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva]  Console File Path [null] 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva]  File Path Added to session  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva]  Console File Path [null] isLoggable [true]  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/29/] fileName [Console.log] 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva] printStream [java.io.PrintStream@4263d776] 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva] Get PrintStream [java.io.PrintStream@4263d776] 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [AuthFilter          ] [siva] Inside do fIletr 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  mode                      =>  login  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  encodePassword            =>  155866f25b71487aa592e6a2d0264523f988663af402370701d621e33aa1ad6d  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  txtUser                   =>  siva  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  txtPassword               =>  siva  
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  username                  =>    
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  pass1                     =>    
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  pass2                     =>    
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  user_id                   =>    
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='siva' 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  Last Login 2023-08-29T00:14:06 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva] DB UserId : siva Username : SivaSankar Password : siva 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='siva' 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Generic             ] [siva] Access Log Entered true 
+[29-08-2023 12:16:09:009 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:24:024 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  mode                      =>    
+[29-08-2023 12:16:31:031 am IST] DEBUG [Line:59] - [AjaxServlet         ] [siva]  vehicle_no                =>  7111  
+[29-08-2023 12:16:31:031 am IST] INFO  [Line:59] - [AjaxServlet         ] [siva] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[29-08-2023 12:16:31:031 am IST] INFO  [Line:59] - [AjaxServlet         ] [siva] Inside ajax 
+[29-08-2023 12:16:31:031 am IST] DEBUG [Line:59] - [AjaxServlet         ] [siva] VehicleNo [7111] Vehicle Model [null] 
+[29-08-2023 12:16:31:031 am IST] DEBUG [Line:59] - [AjaxProcess         ] [siva] Inside getInfo for Vehicle No call from ajax 
+[29-08-2023 12:16:31:031 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:31:031 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:36:036 am IST] DEBUG [Line:59] - [AjaxServlet         ] [siva]  vehicle_model             =>  Ford  
+[29-08-2023 12:16:36:036 am IST] DEBUG [Line:59] - [AjaxServlet         ] [siva]  dummyData                 =>  whatever  
+[29-08-2023 12:16:36:036 am IST] INFO  [Line:59] - [AjaxServlet         ] [siva] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[29-08-2023 12:16:36:036 am IST] INFO  [Line:59] - [AjaxServlet         ] [siva] Inside ajax 
+[29-08-2023 12:16:36:036 am IST] DEBUG [Line:59] - [AjaxServlet         ] [siva] VehicleNo [null] Vehicle Model [Ford] 
+[29-08-2023 12:16:36:036 am IST] DEBUG [Line:59] - [AjaxProcess         ] [siva] Inside VehicleType for Vehicle Model call from ajax 
+[29-08-2023 12:16:36:036 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:36:036 am IST] INFO  [Line:59] - [AjaxServlet         ] [siva] data found.. 
+[29-08-2023 12:16:36:036 am IST] INFO  [Line:59] - [AjaxServlet         ] [siva] ["Aspire","Classic","EcoSport","Endeavour","Escort","Fiesta","Fiesta Classic","Figo","Freestyle","Fusion","Ikon","Mondeo","Mustang"] 
+[29-08-2023 12:16:36:036 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:16:48:048 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  mode                      =>  I  
+[29-08-2023 12:16:48:048 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_no                =>  7111  
+[29-08-2023 12:16:48:048 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_model             =>  Ford  
+[29-08-2023 12:16:48:048 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_type              =>  Escort  
+[29-08-2023 12:16:48:048 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_color             =>  Violet Red  
+[29-08-2023 12:18:42:042 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  mode                      =>  I  
+[29-08-2023 12:18:42:042 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_no                =>  7111  
+[29-08-2023 12:18:42:042 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_model             =>  Ford  
+[29-08-2023 12:18:42:042 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_type              =>  Escort  
+[29-08-2023 12:18:42:042 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  vehicle_color             =>  Violet Red  
+[29-08-2023 12:18:42:042 am IST] DEBUG [Line:59] - [Vehicledao          ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO vehicle VALUES('7111','Ford','Escort','Violet Red'); 
+[29-08-2023 12:20:33:033 am IST] DEBUG [Line:59] - [LoginInfoServlet    ] [siva]  mode                      =>    
+[29-08-2023 12:20:33:033 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:20:38:038 am IST] DEBUG [Line:59] - [VehicleServlet      ] [siva]  mode                      =>    
+[29-08-2023 12:20:47:047 am IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:20:47:047 am IST] DEBUG [Line:59] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/29/] 
+[29-08-2023 12:20:47:047 am IST] DEBUG [Line:59] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:20:47:047 am IST] DEBUG [Line:59] - [AuthFilter          ] [] Inside do fIletr 
+[29-08-2023 12:20:47:047 am IST] DEBUG [Line:59] - [LoginServlet        ] []  mode                      =>  L  
+[29-08-2023 12:20:47:047 am IST] DEBUG [Line:59] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@7e6aca40 
+[29-08-2023 12:20:47:047 am IST] ERROR [Line:65] -   
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva]  Console File Path [null] 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva]  File Path Added to session  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva]  Console File Path [null] isLoggable [true]  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/08/29/] fileName [Console.log] 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva] printStream [java.io.PrintStream@2b7aac18] 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva] Get PrintStream [java.io.PrintStream@2b7aac18] 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [AuthFilter          ] [siva] Inside do fIletr 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  mode                      =>  login  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  encodePassword            =>  155866f25b71487aa592e6a2d0264523f988663af402370701d621e33aa1ad6d  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  txtUser                   =>  siva  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  txtPassword               =>  siva  
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  username                  =>    
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  pass1                     =>    
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  pass2                     =>    
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  user_id                   =>    
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='siva' 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva]  Last Login 2023-08-29T00:16:09 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [LoginServlet        ] [siva] DB UserId : siva Username : SivaSankar Password : siva 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='siva' 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Generic             ] [siva] Access Log Entered true 
+[29-08-2023 12:20:49:049 am IST] DEBUG [Line:59] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 09:53:21:021 pm IST] ERROR [Line:63] - [LoginServlet   ] [arul] Exception in Login Servlet  ** Error in *** java.lang.NullPointerException => Cannot invoke "String.trim()" because "this.mode" is null 
+ 
+java.lang.NullPointerException: Cannot invoke "String.trim()" because "this.mode" is null
+	at com.web.controller.LoginServlet.service(LoginServlet.java:46)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 09:53:21:021 pm IST] ERROR [Line:63] - [AuthFilter     ] [arul] Auth Filter Exception :  ** Error in *** java.lang.IllegalStateException => Cannot forward after response has been committed 
+ 
+java.lang.IllegalStateException: Cannot forward after response has been committed
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:326)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at com.web.controller.LoginServlet.service(LoginServlet.java:174)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 09:54:31:031 pm IST] ERROR [Line:63] - [AuthFilter     ] [arul] Auth Filter Exception :  ** Error in *** java.lang.IllegalStateException => Cannot forward after response has been committed 
+ 
+java.lang.IllegalStateException: Cannot forward after response has been committed
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:326)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at com.web.controller.LoginServlet.service(LoginServlet.java:174)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 09:56:20:020 pm IST] ERROR [Line:63] - [AuthFilter     ] [arul] Auth Filter Exception :  ** Error in *** java.lang.IllegalStateException => Cannot forward after response has been committed 
+ 
+java.lang.IllegalStateException: Cannot forward after response has been committed
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:326)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at com.web.controller.LoginServlet.service(LoginServlet.java:174)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:91)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 09:59:45:045 pm IST] ERROR [Line:63] - [AuthFilter     ] [arul] Auth Filter Exception :  ** Error in *** java.lang.IllegalStateException => Cannot forward after response has been committed 
+ 
+java.lang.IllegalStateException: Cannot forward after response has been committed
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:326)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at com.web.controller.LoginServlet.service(LoginServlet.java:174)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:94)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 10:04:44:044 pm IST] ERROR [Line:63] - [AuthFilter     ] [arul] Auth Filter Exception :  ** Error in *** java.lang.IllegalStateException => Cannot forward after response has been committed 
+ 
+java.lang.IllegalStateException: Cannot forward after response has been committed
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:326)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+	at com.web.controller.LoginServlet.service(LoginServlet.java:174)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:94)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  mode                      =>  login  
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  encodePassword            =>  155866f25b71487aa592e6a2d0264523f988663af402370701d621e33aa1ad6d  
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  txtUser                   =>  siva  
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  txtPassword               =>  siva  
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  username                  =>    
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  pass1                     =>    
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  pass2                     =>    
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  user_id                   =>    
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='siva' 
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  Last Login 2023-08-29T00:20:49 
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva] DB UserId : siva Username : SivaSankar Password : siva 
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='siva' 
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [Generic             ] [siva] Access Log Entered true 
+[21-10-2023 10:05:41:041 pm IST] DEBUG [Line:61] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  =>    
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-08-28T23:46:03 
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[21-10-2023 10:05:54:054 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [null] isLoggable [true]  
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Generic             ] [] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/] fileName [Console.log] 
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Generic             ] []  PrintStream [false] 
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session  
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/] 
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [LoginServlet        ] []  mode                      =>  L  
+[21-10-2023 10:05:58:058 pm IST] DEBUG [Line:61] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@3cec7a57 
+[21-10-2023 10:05:58:058 pm IST] ERROR [Line:67] -   
+[21-10-2023 10:05:58:058 pm IST] ERROR [Line:67] -   
+java.lang.IllegalStateException: isNew: Session already invalidated
+	at org.apache.catalina.session.StandardSession.isNew(StandardSession.java:1255)
+	at org.apache.catalina.session.StandardSessionFacade.isNew(StandardSessionFacade.java:176)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  mode                      =>  login  
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650  
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  txtUser                   =>  jiyara  
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  txtPassword               =>  jiyara  
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  username                  =>    
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  pass1                     =>    
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  pass2                     =>    
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  user_id                   =>    
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara]  Last Login 2023-08-27T11:27:29 
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [Generic             ] [jiyara] Access Log Entered true 
+[21-10-2023 10:06:00:000 pm IST] DEBUG [Line:61] - [Dbmanager           ] [jiyara]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [null] isLoggable [true]  
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Generic             ] [] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/] fileName [Console.log] 
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Generic             ] []  PrintStream [false] 
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session  
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/] 
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [LoginServlet        ] []  mode                      =>  L  
+[21-10-2023 10:06:03:003 pm IST] DEBUG [Line:61] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@acf0ccd 
+[21-10-2023 10:06:03:003 pm IST] ERROR [Line:67] -   
+[21-10-2023 10:06:03:003 pm IST] ERROR [Line:67] -   
+java.lang.IllegalStateException: isNew: Session already invalidated
+	at org.apache.catalina.session.StandardSession.isNew(StandardSession.java:1255)
+	at org.apache.catalina.session.StandardSessionFacade.isNew(StandardSessionFacade.java:176)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  mode                      =>  login  
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  encodePassword            =>  155866f25b71487aa592e6a2d0264523f988663af402370701d621e33aa1ad6d  
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  txtUser                   =>  siva  
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  txtPassword               =>  siva  
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  username                  =>    
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  pass1                     =>    
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  pass2                     =>    
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  user_id                   =>    
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='siva' 
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  Last Login 2023-10-21T22:05:41 
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva] DB UserId : siva Username : SivaSankar Password : siva 
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='siva' 
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [Generic             ] [siva] Access Log Entered true 
+[21-10-2023 10:06:05:005 pm IST] DEBUG [Line:61] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [null] isLoggable [true]  
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Generic             ] [] Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/] fileName [Console.log] 
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Generic             ] []  PrintStream [false] 
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session  
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/] 
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [LoginServlet        ] []  mode                      =>  L  
+[21-10-2023 10:06:10:010 pm IST] DEBUG [Line:61] - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@605a279c 
+[21-10-2023 10:06:10:010 pm IST] ERROR [Line:67] -   
+[21-10-2023 10:06:11:011 pm IST] ERROR [Line:67] -   
+java.lang.IllegalStateException: isNew: Session already invalidated
+	at org.apache.catalina.session.StandardSession.isNew(StandardSession.java:1255)
+	at org.apache.catalina.session.StandardSessionFacade.isNew(StandardSessionFacade.java:176)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:196)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:366)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:639)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:847)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1680)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login  
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67  
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul  
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul  
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  =>    
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     =>    
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     =>    
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   =>    
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-10-21T22:05:54 
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[21-10-2023 10:06:13:013 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]  

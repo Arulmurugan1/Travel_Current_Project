@@ -1,0 +1,21 @@
+ul{
+	list-style:none ;
+	width :100%;
+	position:absolute;
+	margin-top : 7px;
+	z-index : 4;
+	background : #ffff;
+	border-radius : 0 0 10px 10px ;
+	padding : 2px;
+	max-height : 39vh;
+	overflow:auto;
+}
+
+li{
+	padding : 4px;	
+}
+
+li:hover {
+	cursor:pointer;
+	background : lightgrey;
+}
