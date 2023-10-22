@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>    
 
-
+<%@ include file="../commonFiles.jsp"%>
 <%@ include file="../dbconnection.jsp" %>
 
 
@@ -87,14 +87,14 @@
 									size=38 required>
 							</fieldset>
 						</div>
-						<div class='col-sm-6 px-lg-3'>
+						<div class='col-sm-3'>
 							<fieldset class="form-group">
 								<label>Age</label> <input type="number" class=" form-control"
 									id="age" name="age" min="4" max="60" step="1" required>
 							</fieldset>
 						</div>
 
-						<div class='col-sm-6 px-lg-3'>
+						<div class='col-sm-3'>
 							<fieldset class="form-group">
 								<label>Gender</label> <select class="form-select form-control"
 									name="gender" id="gender" required>

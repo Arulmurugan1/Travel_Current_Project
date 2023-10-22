@@ -1,18 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ include file="../commonFiles.jsp"%>
 <%@ include file="../dbconnection.jsp" %>
 <jsp:useBean id="list" scope="request" class="java.util.Vector" ></jsp:useBean> 
 <!DOCTYPE html >
+
 <html>
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styleSheet/UserDetails.css<%= CACHE_VERSION %>" type="text/css">
-<script
-      src="https://kit.fontawesome.com/a33530bb41.js"
-      crossorigin="anonymous"
-    ></script>
+
+<link rel="stylesheet" href="<%=request.getContextPath() %>/styleSheet/UserDetails.css<%= CACHE_VERSION %>" type="text/css">
+<script src="https://kit.fontawesome.com/a33530bb41.js" crossorigin="anonymous" ></script>
+
 </head>
 <body>
 
@@ -50,7 +51,7 @@
             	>
                 <div class="title">
                     <h2><%=Name %></h2>
-                    <p id="accessStatus"><%=Status %></p>
+                    <p id="accessStatus_<%=id%>"><%=Status %></p>
                 </div>
             </div>
             <div class="profile__card__back">
@@ -69,7 +70,10 @@
 	            <span> 
 	            	<%= Last_Login%>         
 	            </span>
-	            
+	            <%
+	            	if(session.getAttribute("user_id") != null && !session.getAttribute("user_id").equals(id))
+	            	{
+	            %>
 	            <div class="profile__btn">
 	                <input 
 	                	type="button" 
@@ -80,6 +84,9 @@
 	      				onclick ="callAjaxUserAccess('<%= id %>','<%=access%>')" 
 	      			/>
 	            </div>
+	            <%
+	            	}
+	            %>
 	             </div>
         </div>
     </div>

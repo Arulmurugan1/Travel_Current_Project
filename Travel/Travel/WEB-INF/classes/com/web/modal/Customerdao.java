@@ -12,7 +12,8 @@ import com.web.objects.Customer;
 
 public class Customerdao extends Generic{
 
-    private static final String INSERT_CUSTOMER 		= "INSERT INTO CUSTOMER VALUES(null,?,?,?,?,?,?,?)" ;
+    private static final String INSERT_CUSTOMER 		= "INSERT INTO CUSTOMER(customer_id, customer_name, start, end, age, gender, email, phone)"
+    		+ " VALUES(null,?,?,?,?,?,?,?)" ;
     private static final String SELECT_CUSTOMER_BY_ID 	= "select * from CUSTOMER where CUSTOMER_ID =?";
     private static final String SELECT_ALL_CUSTOMERS	= "select * from CUSTOMER";
     private static final String DELETE_CUSTOMER 		= "delete from CUSTOMER where CUSTOMER_ID = ?;";

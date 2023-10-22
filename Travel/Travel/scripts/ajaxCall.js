@@ -82,7 +82,7 @@ function callAjaxUserAccess (userId,Access)
 							$('#'+userId).addClass('btn '+ css);
 							$('#'+userId).val(data.status);
 							$('#'+userId).attr('onclick',"callAjaxUserAccess('"+userId+"','"+approval+"')");
-							$('#accessStatus').val(data.status);
+							$('#accessStatus_'+userId).text(data.status);
 						}
 						},2000);
 				}

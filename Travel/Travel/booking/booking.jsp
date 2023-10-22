@@ -1,3 +1,4 @@
+<%@ include file="../commonFiles.jsp"%>
 <%@ include file="../dbconnection.jsp"%>
 <jsp:include page="../header.jsp" />
 
@@ -30,7 +31,9 @@
 			</div>
 		</div>
 	</c:if>
+	
 	<jsp:include page="../tableComponents.jsp"></jsp:include>
+	
 	<div class="info mt-2">
 		<div class="table-responsive mt-1">
 			<table

@@ -8,7 +8,7 @@ public class UserImageDao extends Generic
 {
 	boolean rowsAffected =false ;
 	
-	private static final String INSERT_USER ="INSERT INTO USER_IMAGE VALUES(?,?,?,sysdate(),?)" ;
+	private static final String INSERT_USER ="INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by) VALUES(?,?,?,sysdate(),?)" ;
 	
 	public boolean insertUser(UserImage d)throws Exception
     {

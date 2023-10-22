@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+
+<%@ include file="../commonFiles.jsp"%>
 <%@ include file="../dbconnection.jsp" %>
 <jsp:useBean id="list" scope="request" class="java.util.Vector" ></jsp:useBean> 
 <!DOCTYPE html >

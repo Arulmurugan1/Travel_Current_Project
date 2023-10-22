@@ -19,7 +19,7 @@
 				<div class='col py-1 text-center'>
 				  <c:if test="<%= adminUser %>">
 					<a
-						onclick="javascript:window.open('Booking?mode=dummy','_blank','top=80,left=340,toolbar=no,status=no,width=800,height=600');"
+						onclick="javascript:window.open('Booking?mode=dummy','_blank','top=80,left=340,toolbar=no,status=no,width=650,height=480');"
 						class='btn btn-success button-length' style='width: 170px;'>
 						<i class="fa fa-plus mr-2"></i>Add New Booking
 					</a>
@@ -43,5 +43,6 @@
 	</div>
 	<div class="pagination my-auto">
 		<ul id='ul-page'></ul>
+		<input class="form-control" style="width:4vw;text-align:center" name="jump_paging" id="jump_paging">
 	</div>
 </div>

@@ -13,7 +13,7 @@ import com.web.util.Dbmanager;
 public class Vehicledao extends Generic{
 
 
-    private static final String INSERT_VEHICLE ="INSERT INTO vehicle VALUES(?,?,?,?);" ;
+    private static final String INSERT_VEHICLE ="INSERT INTO vehicle(vehicle_no, brand, model, color) VALUES(?,?,?,?);" ;
     private static final String SELECT_BY_NO = "select * from vehicle where vehicle_no =?";
     private static final String SELECT_ALL_VEHICLE = "select * from vehicle";
     private static final String DELETE_VEHICLE = "delete from vehicle where vehicle_no = ?;";

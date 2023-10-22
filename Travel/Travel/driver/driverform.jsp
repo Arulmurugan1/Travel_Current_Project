@@ -2,18 +2,15 @@
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@ include file="../commonFiles.jsp"%>
 <%@ include file="../dbconnection.jsp" %>  
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500"
-      rel="stylesheet"
-    />
-    <link href="styleSheet/driver.css<%= CACHE_VERSION %>" rel="stylesheet" >
-<!--       <script src="scripts/api/places.js"></script>  -->
+
+	<link href="styleSheet/driver.css<%= CACHE_VERSION %>" rel="stylesheet" >
 
 </head>
 <body>
@@ -97,6 +94,6 @@
                        </form></div>
                    </div>
                </div>
-      
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
       <script src="scripts/driver.js<%= CACHE_VERSION %>" type="text/javascript"></script>   
 </body>

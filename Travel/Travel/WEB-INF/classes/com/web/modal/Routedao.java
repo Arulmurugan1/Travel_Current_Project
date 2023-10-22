@@ -15,7 +15,7 @@ public class Routedao extends Generic
 
 
 
-	private static final String INSERT ="INSERT INTO ROUTE VALUES(?,?,?,?)" ;
+	private static final String INSERT ="INSERT INTO ROUTE(vehicle_no, start, end, fare) VALUES(?,?,?,?)" ;
 	private static final String SELECTBYNO = "select * from ROUTE where VEHICLE_NO =?";
 	private static final String SELECTALL = "select * from ROUTE ORDER BY START";
 	private static final String DELETE = "delete from ROUTE where VEHICLE_NO = ?;";

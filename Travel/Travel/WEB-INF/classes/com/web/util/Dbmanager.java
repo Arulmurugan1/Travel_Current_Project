@@ -391,7 +391,9 @@ public class Dbmanager extends CommonFactory {
             		}
             	}
 
-            	columns = columns.substring(0,columns.length()-1);
+            	if(columns.trim().endsWith(","))
+            			columns = columns.substring(0,columns.length()-1);
+            	if(values.trim().endsWith(","))
             	values = values.substring(0,values.length()-1);
 
             	finalQuery = " INSERT INTO "+obj.getSimpleName()+" \n( "+columns+" )\n VALUES \n ( "+values+" )\n ";
@@ -412,8 +414,8 @@ public class Dbmanager extends CommonFactory {
                         values    +="'"+s.get(d)+"',";
                     }   
                 }
-
-                values = values.substring(0,values.length()-1);
+                if(values.trim().endsWith(","))
+                	values = values.substring(0,values.length()-1);
                 
                 finalQuery = " update "+obj.getSimpleName()+" set "+values+" where " + values.replaceAll(",", " and ");
                 break;
@@ -430,8 +432,8 @@ public class Dbmanager extends CommonFactory {
                         values    +="'"+s.get(d)+"',\n";
                     
                 }
-
-                values = values.substring(0,values.length()-1);
+                if(values.trim().endsWith(","))
+                	values = values.substring(0,values.length()-1);
                 
                 finalQuery = " delete from  "+obj.getSimpleName()+" where " + values.replaceAll(",", " and ");
                 break;
@@ -440,8 +442,9 @@ public class Dbmanager extends CommonFactory {
             {
                 for( Field s : fields)
                     columns += "\n"+s.getName()+",";
-                    
-                columns = columns.substring(0,columns.length()-1);
+                
+                if(columns.trim().endsWith(",")) 
+                	columns = columns.substring(0,columns.length()-1);
                 
                 finalQuery = " select "+columns+  " from "+obj.getSimpleName() ;
                 break;

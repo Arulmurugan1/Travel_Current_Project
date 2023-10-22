@@ -202,12 +202,14 @@ public class Generic extends CommonFactory
 		
 		LocalDate dateInstance = LocalDate.now();
 		
-		int month = dateInstance.getMonthValue() ;
-		int day = dateInstance.getDayOfMonth() ;
-		String monthDesc = dateInstance.getMonth().name();
-		int year = dateInstance.getYear();
+		int month 			= dateInstance.getMonthValue() ;
+		int day 				= dateInstance.getDayOfMonth() ;
+		int year 				= dateInstance.getYear();
 		
-		String path = year +seperator+ month +"-"+CommonFactory.StringInit(monthDesc).trim()  +seperator+ day + seperator ;
+		String monthDesc 	= CommonFactory.StringInit(dateInstance.getMonth().name());
+		String dayDesc 		= CommonFactory.StringInit(dateInstance.getDayOfWeek().name());
+		
+		String path = year +seperator+ month +"-"+monthDesc  +seperator+ day +"-"+dayDesc + seperator ;
 		
 		System.out.println("Inside setProperties() Log Path ["+ url +"] folder ["+path+"]");
 

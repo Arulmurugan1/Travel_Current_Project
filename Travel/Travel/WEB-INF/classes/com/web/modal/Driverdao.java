@@ -13,7 +13,7 @@ public class Driverdao extends Generic{
 
     boolean rowsAffected =false ;
 
-    private static final String INSERT_DRIVER ="INSERT INTO DRIVER VALUES(null,?,?,?,?,?,?)" ;
+    private static final String INSERT_DRIVER ="INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,?,?,?,?,?,?)" ;
     private static final String SELECT_BY_ID = "select * from DRIVER where driver_id =?";
     private static final String SELECT_ALL_DRIVER = "select * from DRIVER";
     private static final String DELETE_DRIVER = "delete from DRIVER where vehicle_no = ?;";
