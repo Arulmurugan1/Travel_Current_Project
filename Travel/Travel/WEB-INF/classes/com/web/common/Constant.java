@@ -16,6 +16,7 @@ public class Constant extends Thread
 	
 	public static final String ROUTE_SERVLET = "Route";
 
+	public static final String LOG_PROP_PATH ="log";
 	public static final String IS_SYSOUT_LOGGABLE ="isLoggable";
 	public static final String LOG_USER 						="user";
 	public static final String LOG_FILENAME = "log4j.log";

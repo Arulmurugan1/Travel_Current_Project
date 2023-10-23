@@ -96,10 +96,10 @@ public final class AuthFilter implements Filter{
 
 			}
 			
-			if(session.getAttribute("consoleFilePath") == null || session.getAttribute("loggerFilePath") == null)
+			if( ! (Generic.LOG_PATH_TODAY.equals(Dbmanager.getKeyProperties(Constant.LOG_PROP_PATH)) ))
 				new Generic().setLogConsoleProperties();
 			
-			if(session.getAttribute("printStream") == null)
+			if( session.getAttribute("printStream") == null)
 			{
 				new Generic().setSystemOutLogs();
 			}

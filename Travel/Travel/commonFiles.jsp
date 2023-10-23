@@ -8,7 +8,7 @@
 <title>SK Travels</title>
 
 <%
-	final String CACHE_VERSION = "?version=15" ; 
+	final String CACHE_VERSION = "?version=18" ; 
 	session.setAttribute("CACHE_VERSION", CACHE_VERSION);
 %>
 <link rel="icon" type="image/x-icon" href="<%=request.getContextPath() %>/Images/favIcon/fav.png">

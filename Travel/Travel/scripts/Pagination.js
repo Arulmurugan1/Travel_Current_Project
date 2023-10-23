@@ -82,19 +82,19 @@ $(document).ready(function()
 	$('#maxRows').change(function(){
 
 		$(ul).empty();
-		let maxRows = parseInt($(this).val()) , trnum = 0 ;
+		let maxRows = parseInt($(this).val()) ;
 
 		let totalRows = $('table tbody tr').length;
+		
+		$('table tr:gt(0) ').show();
 
 		if ( maxRows > 0 )
 		{
-
 			$('table tr:gt(0):not( tr:lt('+maxRows+') ) ').hide();
 			$(pagination).show();
 		}
 		else
 		{
-			$('table tr:gt(0) ').show();
 			$(pagination).hide();
 			return;
 		}
@@ -135,15 +135,7 @@ function pagingCall(e,iconSelect)
 {
 	let maxRows = parseInt($('#maxRows').val()) ,totalRows = Math.ceil($('table tbody tr').length/maxRows) ,rowNumber,dir;
 
-	if ( isNaN(iconSelect) && !iconSelect )
-	{
-		rowNumber  = parseInt( e.target.lastChild.textContent.trim() ) ;
-	}
-	else if ( !isNaN(iconSelect) )
-	{
-		rowNumber = parseInt( iconSelect ) ;
-	}
-	else
+	if ( (typeof iconSelect) === 'boolean' )
 	{
 		if( e.target.className.includes('prev') )
 			dir = -1 ;
@@ -151,6 +143,10 @@ function pagingCall(e,iconSelect)
 			dir = 1;
 		
 		rowNumber = parseInt( $('.pagination ul li.active').text().trim() ) + dir  ;
+	}
+	else if((typeof parseInt(iconSelect) ) === 'number')
+	{
+			rowNumber = parseInt( iconSelect ) ;
 	}
 	
 	if ( rowNumber > 0 && totalRows >= rowNumber)
@@ -167,7 +163,7 @@ $(document).click( (e)=>{
 		if ( $(e.target).hasClass('prev') || $(e.target).hasClass('next') )
 			pagingCall(e,true);
 		else if ( $(e.target).parent()[0].id === 'ul-page' )
-			pagingCall(e);
+			pagingCall(e,$(e.target).text());
 			
 	}
 });

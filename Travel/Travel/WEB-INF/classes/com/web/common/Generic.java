@@ -32,6 +32,8 @@ public class Generic extends CommonFactory
 	public static HttpSession session 					= null ;
 	public static HttpServletRequest request 		= null  ;
 	public static HttpServletResponse response = null ;
+	
+	public static String LOG_PATH_TODAY 		= "" ;
 
     PrintWriter out 	= null ;
 	boolean ret 		= false ;
@@ -58,7 +60,7 @@ public class Generic extends CommonFactory
 	public boolean setLogConsoleProperties() throws Exception 
 	{
 		System.out.println("Inside Log Path from " +this.getClass().getSimpleName() +LOG_USER +"["+isNull(session.getAttribute("user_id"))+"]");
-		return setProperties() && setSystemOutLogs();
+		return setProperties() && setConsoleFilePath();
 	}
 
 	public void closeAll() throws Exception
@@ -200,6 +202,27 @@ public class Generic extends CommonFactory
 			throw new FileNotFoundException(LOG_PATH_NOT_FOUND);
 		}
 		
+		LOG_PATH_TODAY = getLogPathForToday() ;
+		
+		System.out.println("Inside setProperties() Log Path ["+ url +"] folder ["+LOG_PATH_TODAY+"]");
+
+		if( !url.endsWith(seperator) )
+			LOG_PATH_TODAY = url+seperator + LOG_PATH_TODAY;
+		else
+			LOG_PATH_TODAY = url+ LOG_PATH_TODAY;
+		
+		ret = setProperties("log",LOG_PATH_TODAY) ;
+		
+		logContent(" File Path Added to session ",LoggerFactory.DEBUG,null);
+		logContent(" Console File Path ["+session.getAttribute("consoleFilePath")+"]",LoggerFactory.DEBUG,null);
+		System.out.println("Log will be redirected to "+url);
+
+		return ret ;
+
+	}
+	
+	public static String getLogPathForToday()
+	{
 		LocalDate dateInstance = LocalDate.now();
 		
 		int month 			= dateInstance.getMonthValue() ;
@@ -211,24 +234,10 @@ public class Generic extends CommonFactory
 		
 		String path = year +seperator+ month +"-"+monthDesc  +seperator+ day +"-"+dayDesc + seperator ;
 		
-		System.out.println("Inside setProperties() Log Path ["+ url +"] folder ["+path+"]");
-
-		if( !url.endsWith(seperator) )
-			url += seperator + path;
-		else
-			url += path;
-		
-		ret = setProperties("log",url) &&  setConsoleFilePath(url);
-		
-		logContent(" File Path Added to session ",LoggerFactory.DEBUG,null);
-		logContent(" Console File Path ["+session.getAttribute("consoleFilePath")+"]",LoggerFactory.DEBUG,null);
-		System.out.println("Log will be redirected to "+url);
-
-		return ret ;
-
+		return path ;
 	}
 
-	private boolean setConsoleFilePath(String url) throws Exception
+	private boolean setConsoleFilePath() throws Exception
 	{
 		ret = false ;
 		
@@ -236,8 +245,8 @@ public class Generic extends CommonFactory
 
 		if ( session.getAttribute("consoleFilePath") == null )
 		{	
-			String loggerFilePath 	= url    ;
-			String consoleFilePath = url    ;
+			String loggerFilePath 	= LOG_PATH_TODAY    ;
+			String consoleFilePath = LOG_PATH_TODAY    ;
 
 			ret = createFolders(loggerFilePath) 
 						&& createFiles(loggerFilePath+LOG_FILENAME);
