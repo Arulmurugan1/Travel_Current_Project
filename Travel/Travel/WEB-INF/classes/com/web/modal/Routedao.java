@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.objects.Route;
 
 public class Routedao extends Generic
@@ -30,7 +30,7 @@ public class Routedao extends Generic
 		ps.setString(++cntl,r.getStart() );
 		ps.setString(++cntl,r.getEnd() );
 		ps.setDouble(++cntl, r.getFare());
-		logContent(ps,LoggerFactory.DEBUG , null, this);
+		logContent(ps,DEBUG , null, this);
 		rowsAffected = ps.executeUpdate() > 0;
 		return rowsAffected;
 	}
@@ -42,14 +42,14 @@ public class Routedao extends Generic
 		ps.setString(++cntl,r.getStart() );
 		ps.setString(++cntl,r.getEnd() );
 
-		logContent(ps,LoggerFactory.DEBUG , null, this);
+		logContent(ps,DEBUG , null, this);
 
 		rs = ps.executeQuery();
 
 		if (rs.next())
 		{
 			str = rs.getString(1);
-			logContent("Route for vehicle"+rs.getString(1),LoggerFactory.DEBUG , null, this);
+			logContent("Route for vehicle"+rs.getString(1),DEBUG , null, this);
 		}
 		return str;
 	}
@@ -59,7 +59,7 @@ public class Routedao extends Generic
 		ps = con.prepareStatement(SELECTBYNO);
 		int cntl = 0;
 		ps.setString(++cntl,s);
-		logContent(ps,LoggerFactory.DEBUG , null, this);
+		logContent(ps,DEBUG , null, this);
 		rs = ps.executeQuery();			
 		while (rs.next()) {
 			int c =1;
@@ -71,7 +71,7 @@ public class Routedao extends Generic
 	public List < Route > getAllRoutes() throws SQLException {
 		List < Route > users = new ArrayList < Route > ();
 		ps = con.prepareStatement(SELECTALL);
-		logContent(ps,LoggerFactory.DEBUG , null, this);
+		logContent(ps,DEBUG , null, this);
 
 		// Step 3: Execute the query or update query
 		rs = ps.executeQuery();
@@ -89,9 +89,9 @@ public class Routedao extends Generic
 		ps = con.prepareStatement(DELETE);
 		int cntl = 0;
 		ps.setString(++cntl,s);
-		logContent(ps,LoggerFactory.DEBUG , null, this);
+		logContent(ps,DEBUG , null, this);
 		rowsAffected = ps.executeUpdate() > 0;
-		logContent("Route deleted "+rowsAffected,LoggerFactory.DEBUG , null, this);
+		logContent("Route deleted "+rowsAffected,DEBUG , null, this);
 		return rowsAffected;
 	}
 

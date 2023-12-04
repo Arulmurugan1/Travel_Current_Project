@@ -8,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.common.CommonFactory;
 import com.web.objects.Login_Info;
 import com.web.util.Dbmanager;
@@ -37,7 +37,7 @@ public class Logindao extends Generic
         boolean rowsaffected = false;
         ps =con.prepareStatement(UPDATE_USERS_TSTAMP) ;
         ps.setString(1 , user.getUser_id()) ;
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
         rowsaffected = ps.executeUpdate() > 0 ;
 
         return rowsaffected;
@@ -50,7 +50,7 @@ public class Logindao extends Generic
         ps.setString(3 , user.getAltered_user()) ;
         ps.setString(4 , user.getUser_id()) ;
         
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
 
         return ps.executeUpdate() > 0 ;
     }
@@ -60,7 +60,7 @@ public class Logindao extends Generic
         boolean rowsaffected = false;
         ps =con.prepareStatement(DELETE_USERS) ;
         ps.setString(1,id);
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
         rowsaffected=ps.executeUpdate()>0;
         return rowsaffected;
     }
@@ -71,7 +71,7 @@ public class Logindao extends Generic
         Login_Info u =new Login_Info();
         ps =con.prepareStatement(CHECK_USER);
         ps.setString(1,id);
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
         rs =ps.executeQuery();
 
         while(rs.next()) {

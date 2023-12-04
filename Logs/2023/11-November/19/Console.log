@@ -1,0 +1,172 @@
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /styleSheet/index.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /styleSheet/ajax-loader.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/searchBox.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/Pagination.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /styleSheet/header.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/loader/loader.css
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /scripts/ajax/libs/jquery/3.5.1/jquery.min.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jquery/3.6.0/jquery.min.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/Validator.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jquery/1.9.1/jquery.min.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajaxCall.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/loader/loader.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/index.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /scripts/common.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/favIcon/fav.png
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Login
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ User Id : from auth filter arul
+ User Id : from Session filter null
+Inside Log Path from Genericuser[arul]
+printStream java.io.PrintStream@5d5a0fb4
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/19/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/19/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/19/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/19/
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [Yes]
+ Request Path : /Images/profileImages/arul/arul.jpg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/flight.jpg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/1.jpg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/4.jpg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/2.webp
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/3.jpg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /scripts/header.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/home.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/6.jpeg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/5.jpg
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Booking
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/booking.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/Pagination.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+ Request Path : /scripts/search.js
+ PrintStream [java.io.PrintStream@5d5a0fb4]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Login
+ PrintStream [java.io.PrintStream@6fff2f99]
+ User Id : from auth filter arul
+ User Id : from Session filter null
+Inside Log Path from Genericuser[arul]
+printStream java.io.PrintStream@6fff2f99
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/19/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/19/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/19/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/19/
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [Yes]
+ Request Path : /Booking
+ PrintStream [java.io.PrintStream@6fff2f99]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [No]

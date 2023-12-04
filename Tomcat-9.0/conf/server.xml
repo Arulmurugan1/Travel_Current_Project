@@ -149,7 +149,7 @@
                resourceName="UserDatabase"/>
       </Realm>
 
-      <Host name="localhost"  appBase="/Git/My Repository/Completed/Travel_Current_Project/Travel"
+      <Host name="localhost"  appBase="M:/Git/My Repository/Completed/Travel_Current_Project/Travel_backup"
             unpackWARs="true" autoDeploy="true">
 
         <!-- SingleSignOn valve, share authentication between web applications

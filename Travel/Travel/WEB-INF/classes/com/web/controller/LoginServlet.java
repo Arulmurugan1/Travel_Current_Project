@@ -2,7 +2,9 @@ package com.web.controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
 import javax.servlet.ServletException;
@@ -11,8 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.web.common.CommonFactory;
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.common.Generic;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Logindao;
 import com.web.objects.Login_Info;
 
@@ -20,9 +24,7 @@ import com.web.objects.Login_Info;
 @WebServlet("/Login")
 public class LoginServlet extends CustomServlet {
     private static final long serialVersionUID = 1L;
-    public Logindao dao = null;
-    public Login_Info u =null;
-
+    
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         System.out.println("Inside Login sERVLET");
@@ -31,20 +33,20 @@ public class LoginServlet extends CustomServlet {
         if ( request.getParameter("txtUser") != null)
             session.setAttribute("user_id", request.getParameter("txtUser").trim() ); // Set UserName before checking 
 
-        super.service(request,this, response);
-
-        dao= new Logindao();
-        u = new Login_Info();
+        super.service(request,response);
         
-        dao.setHttpServlets(request, response);
+         Logindao dao = null;
+         Login_Info u =null;
 
         boolean success = false ;
 
         try {
 
-
             if ( mode.trim().equals("login"))
             { 
+            	dao= new Logindao();
+                u = new Login_Info();
+                
                 String user =request.getParameter("txtUser").trim();
                 String password =request.getParameter("txtPassword").trim();
 
@@ -67,7 +69,13 @@ public class LoginServlet extends CustomServlet {
                         session.setAttribute("gender", u.getGender().trim());
                         session.setAttribute("dob", u.getDob());
                         session.setAttribute("ImagePath", u.getImage_path());
-                        session.setAttribute("status", u.getStatus() == null ? " " : u.getStatus().trim().equals("Y") ? "Approved" : "Pending" );
+                        
+                        if( !CommonFactory.isBlankCheck(u.getDob()))
+                        {
+                        	session.setAttribute("age", Period.between(LocalDate.parse(u.getDob()), LocalDate.now()).getYears() );
+                        }
+                        
+                        session.setAttribute("status", u.getStatus() == null ? " " : u.getStatus().trim().equals("Y") ? "Approved" : "Pending Approval" );
                         session.setAttribute("timeStamp", u.getLast_login().format(DateTimeFormatter.ofPattern("E, MMM dd yyyy hh:mm:ss a")) );
 
                         session.setAttribute("userInfo", u);
@@ -90,6 +98,10 @@ public class LoginServlet extends CustomServlet {
 
             if ( mode.trim().equals("register"))
             {
+            	
+            	dao= new Logindao();
+                u = new Login_Info();
+                
                 String name 	=request.getParameter("username").trim();
                 String pass1	=request.getParameter("pass1").trim();
                 String pass2 	=request.getParameter("pass2").trim();
@@ -159,10 +171,8 @@ public class LoginServlet extends CustomServlet {
             }
 
             try {
-                dao.closeAll();
-
-
-            } catch (Exception e) {
+                Generic.closeOpenConnections();
+            } catch (SQLException e) {
                 e.printStackTrace();            }
 
             if( success )

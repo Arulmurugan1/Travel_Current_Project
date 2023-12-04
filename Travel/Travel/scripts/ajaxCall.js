@@ -82,7 +82,7 @@ function callAjaxUserAccess (userId,Access)
 							$('#'+userId).addClass('btn '+ css);
 							$('#'+userId).val(data.status);
 							$('#'+userId).attr('onclick',"callAjaxUserAccess('"+userId+"','"+approval+"')");
-							$('#accessStatus_'+userId).text(data.status);
+							$('#accessStatus').val(data.status);
 						}
 						},2000);
 				}
@@ -193,91 +193,7 @@ function callAjax(status,booking_no)
 		alert("Unable to connect to server");
 	}
 }
-//To update User Details 
-function callAjaxUpdate(frm)
-{
-	frm.action = "Ajax?mode=userProfileSubmit"
-	frm.submit();
-	
-	/*$('.loader-ajax').show();
-	
-	let formData = getFormData(frm);
-	
-	try{
-		
-		/*frm.action = "Ajax?mode=userProfileSubmit";
-		frm.method = "POST";
-		frm.submit();*/
-		
-		/*$.ajax({
-				type: "POST",
-				url: "Ajax",
-				data: formData,
-				dataType: "json",
-				success: function( data, textStatus, jqXHR)
-				{
-					setTimeout( ()=>{
-							$('.loader-ajax').hide();
-							alert(data);
-						}, 3000);
-				},
-				error: function(jqXHR, textStatus, errorThrown)
-				{
-					alert("Something happened " + textStatus);
-					console.log(errorThrown);
-				},
 
-
-				beforeSend:function(jqXHR, settings)
-				{
-					settings.data += "&mode=userProfileSubmit";
-				},
-				complete:function(jqXHR, textStatus)
-				{
-					$('.loader-ajax').hide();
-				},
-				processData : false,
-			});
-		
-	}
-	catch(e)
-	{
-		alert(e);
-	}*/
-}
-
-function dialog(request)
-{
-	$('#editProfileDialog').dialog('close');
-	$('#editProfileAfterDialog').empty();
-
-	let response = JSON.parse( request.responseText ) ; 
-
-	if ( response && response.status === "Success" )
-	{
-		$('#hdob').val(  response.dob );
-		$('#hGender').val( response.gender );
-	}
-
-	$('#editProfileAfterDialog').text(response.status);
-	$('#editProfileAfterDialog').dialog({
-		autoOpen : false ,
-		buttons : {
-			OK : ()=>{
-				$('#editProfileAfterDialog').dialog('close');
-			}
-		},
-		position :{
-			my : "center",
-			at : "center"
-		},
-		closeonescape : true ,
-		draggable : false ,
-		modal : true ,
-	});
-	
-	$('#editProfileAfterDialog').dialog('open');
-}
 
 function getLocationInfo(event)
 {
@@ -319,4 +235,84 @@ function createRequest()
 }
 
 
-//Ajax Ends 
+
+//To update User Details 
+function callAjaxUpdate(frm)
+{
+	$('.loader-ajax').show();
+	
+	let formData = new FormData(frm);
+	
+	try{	
+		$.ajax({
+				type: "POST",
+				url: "upload.jsp",
+				data: formData,
+				processData : false,
+				contentType : false,
+				success: function(data)
+				{
+					setTimeout( ()=>{
+						if(data.trim() == "success")
+						{
+							updateUserInfo(frm) ;
+						}
+					},4000);
+				},
+				error: function(jqXHR, textStatus, errorThrown)
+				{
+					alert("Something happened >> " + textStatus);
+					console.log(errorThrown);
+				},
+				
+				
+			});
+		
+	}
+	catch(e)
+	{
+		alert(e);
+	}
+	finally
+	{
+		$('.loader-ajax').hide();
+	}
+}
+
+function updateUserInfo(frm)
+{
+
+	let formData = getFormData(frm);
+	
+	try{
+			
+		$.ajax({
+				type: "POST",
+				url: "Ajax?mode=userProfileSubmit"+formData,
+				processData : false,
+				contentType : false,
+				success: function(data)
+				{
+					alert(data);
+				},
+				error: function(jqXHR, textStatus, errorThrown)
+				{
+					alert("Something happened >> " + textStatus);
+					console.log(errorThrown);
+				},
+				
+			});
+		
+	}
+	catch(e)
+	{
+		alert(e);
+		
+	}
+	finally
+	{
+		$('.loader-ajax').hide();
+	}
+	
+}
+ 

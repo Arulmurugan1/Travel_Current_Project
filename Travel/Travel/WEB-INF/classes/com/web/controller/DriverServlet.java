@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Driverdao;
 import com.web.objects.Driver;
 
@@ -26,13 +26,12 @@ public class DriverServlet extends CustomServlet {
             throws ServletException, IOException {
         Driver v = new Driver();
         Driverdao dao = new Driverdao();
-        dao.setHttpServlets(request, response);
         List<Driver> l = null;
         String message = "";
 
         try {
             
-            super.service(request,this, response);
+            super.service(request,response);
 
             if (mode != null && !mode.trim().equals("N") && !mode.trim().equals(""))
             {

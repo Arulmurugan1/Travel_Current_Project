@@ -1,0 +1,17 @@
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [Dbmanager           ] [arul] Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [Dbmanager           ] [arul] Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [Dbmanager           ] [arul] Connection Closed [true] 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] mode                      =>  login 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] username                  => 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] pass1                     => 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] pass2                     => 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] user_id                   => 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] Last Login 2023-12-01T23:56:59 
+[02-12-2023 12:05:11:011 am IST] DEBUG [Line:50] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[02-12-2023 12:05:12:012 am IST] DEBUG [Line:50] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[02-12-2023 12:05:12:012 am IST] DEBUG [Line:50] - [Generic             ] [arul] Access Log Entered true 
+[02-12-2023 12:05:12:012 am IST] DEBUG [Line:50] - [Dbmanager           ] [arul] Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 

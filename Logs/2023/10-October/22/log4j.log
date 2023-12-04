@@ -1,0 +1,309 @@
+[05-11-2023 05:40:56:056 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:40:56:056 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:40:56:056 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:47:047 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:52:052 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:52:052 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:52:052 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:41:52:052 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:41:52:052 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:41:52:052 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:03:003 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:42:03:003 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:03:003 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.setProperties(Generic.java:200)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:19:019 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [AuthFilter          ] [] Something went Wrong in LogProperties Set : 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-11-05T17:37 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 05:42:21:021 PM IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  File Path Added to session 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  File Path Added to session 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  File Path Added to session 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  File Path Added to session 
+[05-11-2023 05:42:22:022 PM IST] DEBUG [Line:61] - [Generic             ] [arul]  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] 
+[05-11-2023 05:42:35:035 PM IST] DEBUG [Line:61] - [LoginInfoServlet    ] [arul]  mode                      => 
+[05-11-2023 05:42:35:035 PM IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 

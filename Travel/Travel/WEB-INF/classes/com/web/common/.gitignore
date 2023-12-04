@@ -8,3 +8,6 @@
 /CommonFactory.class
 /UploadServlet.class
 /UploadJava.class
+/LogContent.class
+/Logger.class
+/LogProcessor.class

@@ -7,7 +7,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.objects.Route;
 
 public class HibernateHelper extends Generic
@@ -26,12 +26,12 @@ public class HibernateHelper extends Generic
     {
         try
         {
-            logContent("Crud =>"+crud, LoggerFactory.INFO, null, HibernateHelper.class);
+            logContent("Crud =>"+crud, INFO, null, HibernateHelper.class);
             session = getSession();
             t = session.beginTransaction();
             if ( crud.equalsIgnoreCase("I") || crud.equalsIgnoreCase("U") )
             {
-                logContent("Inside Ins_Upd",LoggerFactory.INFO , null, HibernateHelper.class);
+                logContent("Inside Ins_Upd",INFO , null, HibernateHelper.class);
                 session.saveOrUpdate(d);
                 result = true ;
             }
@@ -41,7 +41,7 @@ public class HibernateHelper extends Generic
                result = true;
             }
             t.commit();
-            logContent("Transaction commited ",LoggerFactory.INFO , null, HibernateHelper.class);
+            logContent("Transaction commited ",INFO , null, HibernateHelper.class);
         }
         catch(Exception e)
         {
@@ -49,7 +49,7 @@ public class HibernateHelper extends Generic
             if ( t != null)
             {
                 t.rollback();
-                logContent("Transaction rollbacked",LoggerFactory.DEBUG , null, HibernateHelper.class);
+                logContent("Transaction rollbacked",DEBUG , null, HibernateHelper.class);
             }
             result= false;
         }
@@ -62,7 +62,7 @@ public class HibernateHelper extends Generic
                 session.close();
             }
         }
-        logContent("Object saved ..",LoggerFactory.DEBUG , null, HibernateHelper.class);
+        logContent("Object saved ..",DEBUG , null, HibernateHelper.class);
         return result;
     }
     
@@ -70,7 +70,7 @@ public class HibernateHelper extends Generic
     {
         try
         {   
-            logContent(d.toString(),LoggerFactory.DEBUG , null, HibernateHelper.class);   
+            logContent(d.toString(),DEBUG , null, HibernateHelper.class);   
             Query query=session.createQuery("delete from route where vehicle_no=:no");  
             query.setParameter("no",d.getVehicle_no());  
             int status= query.executeUpdate();
@@ -84,8 +84,8 @@ public class HibernateHelper extends Generic
                 result = false;
             }
             t.commit();
-            logContent("Transaction commited ",LoggerFactory.DEBUG , null, HibernateHelper.class);
-            logContent("Object deleted ..",LoggerFactory.DEBUG , null, HibernateHelper.class);
+            logContent("Transaction commited ",DEBUG , null, HibernateHelper.class);
+            logContent("Object deleted ..",DEBUG , null, HibernateHelper.class);
         }
         catch(Exception e)
         {
@@ -93,7 +93,7 @@ public class HibernateHelper extends Generic
             if ( t != null )
             {
                 t.rollback();
-                logContent("Transaction rollbacked",LoggerFactory.DEBUG , null, HibernateHelper.class);
+                logContent("Transaction rollbacked",DEBUG , null, HibernateHelper.class);
             }
             result = false;
         }

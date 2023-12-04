@@ -1,6 +1,4 @@
-var ul = document.querySelector('.pagination ul') 
-, pagination = document.querySelector('.pagination')
-, jumpPage = document.querySelector('#jump_paging');
+var ul = document.querySelector('.pagination ul') , pagination = document.querySelector('.pagination');
 
 function element(totalPage, selectedPage)
 {
@@ -10,8 +8,6 @@ function element(totalPage, selectedPage)
 
 		li += `<li class="page-icon prev"><i class="fa fa-angle-left prev" aria-hidden="true"></i></li>`;    
 
-		ul.innerHTML = li;
-		
 		if (selectedPage > 2)
 		{
 			li += `<li class="num">1</li>`;
@@ -22,8 +18,6 @@ function element(totalPage, selectedPage)
 			}
 
 		}
-		
-		ul.innerHTML = li;
 		
 		if (totalPage === selectedPage)
 		{
@@ -52,8 +46,6 @@ function element(totalPage, selectedPage)
 				li_active = "";
 			}
 			li += `<li class="num ${li_active}">${pageLength}</li>`
-			
-			ul.innerHTML = li;
 		}
 		
 		if (selectedPage < totalPage-1)
@@ -64,12 +56,9 @@ function element(totalPage, selectedPage)
 			}
 
 			li += `<li class="num">${totalPage}</li>`;   
-			
-			ul.innerHTML = li;
 		}
 
 		li += `<li class="page-icon next li-page"><i class="fa fa-angle-right next" aria-hidden="true"></i></li>`;
-		jumpPage.value = (selectedPage) ;
 		ul.innerHTML = li;
 
 	}
@@ -82,19 +71,19 @@ $(document).ready(function()
 	$('#maxRows').change(function(){
 
 		$(ul).empty();
-		let maxRows = parseInt($(this).val()) ;
+		let maxRows = parseInt($(this).val()) , trnum = 0 ;
 
 		let totalRows = $('table tbody tr').length;
-		
-		$('table tr:gt(0) ').show();
 
 		if ( maxRows > 0 )
 		{
+
 			$('table tr:gt(0):not( tr:lt('+maxRows+') ) ').hide();
 			$(pagination).show();
 		}
 		else
 		{
+			$('table tr:gt(0) ').show();
 			$(pagination).hide();
 			return;
 		}
@@ -135,24 +124,30 @@ function pagingCall(e,iconSelect)
 {
 	let maxRows = parseInt($('#maxRows').val()) ,totalRows = Math.ceil($('table tbody tr').length/maxRows) ,rowNumber,dir;
 
-	if ( (typeof iconSelect) === 'boolean' )
+	if ( !iconSelect )
 	{
+		rowNumber  = parseInt( e.target.lastChild.textContent.trim() ) ;
+		
+		element( totalRows , rowNumber );
+		dataCall( maxRows , rowNumber );
+	}
+	else
+	{
+	
 		if( e.target.className.includes('prev') )
 			dir = -1 ;
 		else if ( e.target.className.includes('next') )
 			dir = 1;
 		
 		rowNumber = parseInt( $('.pagination ul li.active').text().trim() ) + dir  ;
-	}
-	else if((typeof parseInt(iconSelect) ) === 'number')
-	{
-			rowNumber = parseInt( iconSelect ) ;
-	}
-	
-	if ( rowNumber > 0 && totalRows >= rowNumber)
-	{
+		
+		if ( rowNumber > 0 && totalRows >= rowNumber)
+		{
 			element( totalRows , rowNumber );
 			dataCall( maxRows , rowNumber );
+		}
+		
+		
 	}
 }
 
@@ -163,14 +158,6 @@ $(document).click( (e)=>{
 		if ( $(e.target).hasClass('prev') || $(e.target).hasClass('next') )
 			pagingCall(e,true);
 		else if ( $(e.target).parent()[0].id === 'ul-page' )
-			pagingCall(e,$(e.target).text());
-			
+			pagingCall(e);
 	}
 });
-
-if( jumpPage )
-{
-		jumpPage.addEventListener('input',function(e){
-			pagingCall(e,this.value) ;
-		});
-}

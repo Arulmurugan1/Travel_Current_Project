@@ -1,0 +1,1047 @@
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.css
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /styleSheet/index.css
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /styleSheet/Pagination.css
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /styleSheet/header.css
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/searchBox.css
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /styleSheet/ajax-loader.css
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jquery/3.5.1/jquery.min.js
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /scripts/ajax/libs/jquery/3.6.0/jquery.min.js
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jquery/1.9.1/jquery.min.js
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/Validator.js
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /styleSheet/loader/loader.css
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /scripts/ajaxCall.js
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/loader/loader.js
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/common.js
+ PrintStream [java.io.PrintStream@725b950a]
+ Request Path : /scripts/index.js
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /index.jsp
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@725b950a]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /index.jsp
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/index.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /styleSheet/bootstrap.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+ Request Path : /styleSheet/Pagination.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] false value [null]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+java.lang.NullPointerException
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:508)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:879)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:473)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+ Request Path : /styleSheet/header.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /styleSheet/searchBox.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Response Commited [false] Redirect to Login Page [Yes]
+ Request Path : /styleSheet/loader/loader.css
+ PrintStream [null]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+ Request Path : /styleSheet/ajax-loader.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Log Properties Updated for Key [log] false value [null]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Response Commited [true] Redirect to Login Page [No]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+ Request Path : /scripts/ajax/libs/jquery/3.5.1/jquery.min.js
+ PrintStream [null]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Response Commited [true] Redirect to Login Page [No]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Log Properties Updated for Key [log] false value [null]
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [false] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [No]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajax/libs/jquery/3.6.0/jquery.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /scripts/loader/loader.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /scripts/Validator.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+java.lang.NullPointerException
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:508)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:879)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:475)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ Request Path : /scripts/ajaxCall.js
+Properties key[isLoggable] value[true]
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+ Request Path : /scripts/ajax/libs/jquery/1.9.1/jquery.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Log Properties Updated for Key [log] false value [null]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Properties key[isLoggable] value[true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Response Commited [false] Redirect to Login Page [Yes]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[]
+Properties key[isLoggable] value[true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [false] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [No]
+java.sql.SQLException: Not a navigable ResultSet.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.next(ResultSetImpl.java:1804)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:471)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+ Request Path : /scripts/common.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Response Commited [false] Redirect to Login Page [Yes]
+Response Commited [false] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/index.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/Pagination.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /index.jsp
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/Validator.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /scripts/ajax/libs/jquery/3.6.0/jquery.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkClosed(ResultSetImpl.java:485)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkRowPos(ResultSetImpl.java:529)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:878)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:475)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+java.lang.NullPointerException
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:508)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:879)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:475)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [Yes]
+Response Commited [false] Redirect to Login Page [Yes]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /index.jsp
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /styleSheet/index.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /styleSheet/bootstrap.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] false value [null]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+java.lang.NullPointerException
+ Redirect from Connection is null :)
+Response Commited [false] Redirect to Login Page [Yes]
+ Request Path : /styleSheet/Pagination.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /styleSheet/header.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+java.lang.NullPointerException
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:883)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:473)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Properties key[isLoggable] value[]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [false] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [No]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Log Properties Updated for Key [log] false value [null]
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [Yes]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/ajax-loader.css
+ PrintStream [null]
+ Request Path : /scripts/ajax/libs/jquery/3.5.1/jquery.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+ Request Path : /styleSheet/loader/loader.css
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+ Request Path : /scripts/ajax/libs/jquery/3.6.0/jquery.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Response Commited [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Properties key[isLoggable] value[true]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Properties key[isLoggable] value[true]
+ Request Path : /scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Log Properties Updated for Key [log] true value [null]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Response Commited [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+ Request Path : /scripts/Validator.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+ Request Path : /scripts/ajax/libs/jquery/1.9.1/jquery.min.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+ Request Path : /scripts/ajaxCall.js
+ PrintStream [null]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/loader/loader.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+ Request Path : /scripts/common.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+java.lang.NullPointerException
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:508)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:879)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:473)
+	at com.web.common.Generic.setProperties(Generic.java:196)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [Yes]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+ Request Path : /scripts/index.js
+ PrintStream [null]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Response Commited [true] Redirect to Login Page [No]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /Login
+ PrintStream [null]
+ User Id : from auth filter arul
+ User Id : from Session filter null
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [java.io.PrintStream@725b950a] isLoggable [true] 
+printStream java.io.PrintStream@725b950a
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [Yes]
+ Request Path : /styleSheet/Pagination.css
+ PrintStream [null]
+ Request Path : /scripts/common.js
+ PrintStream [null]
+Inside Log Path from Genericuser[arul]
+printStream java.io.PrintStream@725b950a
+ Request Path : /styleSheet/searchBox.css
+ PrintStream [null]
+Inside Log Path from Genericuser[arul]
+printStream java.io.PrintStream@725b950a
+Inside Log Path from Genericuser[arul]
+printStream java.io.PrintStream@725b950a
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+ Request Path : /Images/profileImages/arul/arul.jpg
+ PrintStream [null]
+Inside Log Path from Genericuser[arul]
+printStream java.io.PrintStream@725b950a
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [null]
+FilePath [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\11-November\5] available [true]
+File [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\11-November\5\log4j.log] available [true]
+Log File Path available [true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Properties key[isLoggable] value[true]
+ Console Log [null] isLoggable [true] 
+ Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+ Console File Name [Console.log]
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/] fileName [Console.log]
+FilePath [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\11-November\5] available [true]
+File [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\11-November\5\Console.log] available [true]
+printStream java.io.PrintStream@6d807733
+ Errors exists in PrintStream [false]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/flight.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Response Commited [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Properties key[isLoggable] value[true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Response Commited [true] Redirect to Login Page [No]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5/]
+Response Commited [true] Redirect to Login Page [No]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5/
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/1.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/2.webp
+ PrintStream [java.io.PrintStream@6d807733]
+ Request Path : /Images/Carousel/3.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/4.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+ Request Path : /Images/Carousel/5.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+ Request Path : /scripts/home.js
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/header.js
+ PrintStream [java.io.PrintStream@6d807733]
+ Request Path : /Images/Carousel/6.jpeg
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /LoginInfo
+ PrintStream [java.io.PrintStream@6d807733]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/UserDetails.css
+ PrintStream [java.io.PrintStream@6d807733]
+ Request Path : /Images/user/male.png
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/user/female.png
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /Images/user/spider-man.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/user/wanda.jpg
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /home.jsp
+ PrintStream [java.io.PrintStream@6d807733]
+Response Commited [false] Redirect to Login Page [No]

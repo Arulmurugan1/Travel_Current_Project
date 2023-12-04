@@ -10,10 +10,12 @@ import com.web.util.Dbmanager;
 
 public class CarInsertionCode extends Object
 {
-	static Connection con = Dbmanager.getConnection();
+	 static Connection con = null;
 
 	static void insert() throws Exception
 	{
+		
+		con = Dbmanager.getConnection() ;
 		String cars = "";
 		FileReader fr = new FileReader("M:\\Car_list.txt") ;
 		int i;    

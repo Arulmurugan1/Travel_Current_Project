@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.objects.Booking;
 import com.web.objects.Customer;
 
@@ -18,8 +18,6 @@ public class Bookingdao extends Generic{
     private static final String SELECT_ALL_USERS = "SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID";
     private static final String DELETE_USERS_SQL = "delete from booking where booking_no = ?;";
 
-    private static Bookingdao bookingdao = new Bookingdao();
-    
     Booking u = null ;
 
     public int insertBooking(Booking user) 
@@ -34,14 +32,14 @@ public class Bookingdao extends Generic{
             ps.setString(5,user.getDriver_id() );
             ps.setDouble(6,user.getFare() );	
             ps.setString(7, user.getBooked_by());
-            logContent(ps,LoggerFactory.DEBUG , null, this);
+            logContent(ps,DEBUG , null, this);
             ps.executeUpdate();
             rs = ps.getGeneratedKeys();
 
             while ( rs.next())
             {
                 result = rs.getInt(1);
-                logContent("Booking No ::"+result,LoggerFactory.DEBUG , null, this);
+                logContent("Booking No ::"+result,DEBUG , null, this);
             }
 
         } catch (Exception e) {
@@ -51,12 +49,12 @@ public class Bookingdao extends Generic{
     }
 
     public Booking selectBooking(int id) {
-        logContent(SELECT_USER_BY_ID,LoggerFactory.DEBUG , null, this);	
+        logContent(SELECT_USER_BY_ID,DEBUG , null, this);	
 
         try {			
             ps = con.prepareStatement(SELECT_USER_BY_ID);
             ps.setInt(1, id);
-            logContent(ps,LoggerFactory.DEBUG , null, this);
+            logContent(ps,DEBUG , null, this);
             ResultSet rs = ps.executeQuery();
 
 
@@ -82,7 +80,7 @@ public class Bookingdao extends Generic{
         List<Booking> ls = new ArrayList<>();
         try {
             ps = con.prepareStatement(SELECT_ALL_USERS);
-            logContent(ps,LoggerFactory.DEBUG , null, this);
+            logContent(ps,DEBUG , null, this);
             rs = ps.executeQuery();
             while (rs.next()) {
                 u = new Booking();
@@ -112,7 +110,7 @@ public class Bookingdao extends Generic{
     public boolean deleteBooking(int id) 
     {
         boolean rowsAffected = false;
-        logContent(DELETE_USERS_SQL,LoggerFactory.DEBUG , null, this);
+        logContent(DELETE_USERS_SQL,DEBUG , null, this);
         try {
 
             ps = con.prepareStatement(DELETE_USERS_SQL);
@@ -168,7 +166,7 @@ public class Bookingdao extends Generic{
                 ps.setString(c++,user.getStatus());
             ps.setInt(c++,user.getBooking_no());	
 
-            logContent(ps,LoggerFactory.DEBUG , null, this);
+            logContent(ps,DEBUG , null, this);
 
             result = ps.executeUpdate() > 0;
         } catch (Exception e) {
@@ -187,7 +185,7 @@ public class Bookingdao extends Generic{
 
             ps = con.prepareStatement(CheckQuery(user, c));
 
-            logContent(CheckQuery(user, c),LoggerFactory.DEBUG , null, this);
+            logContent(CheckQuery(user, c),DEBUG , null, this);
 
             if (user.getPickup_from().length() > 0)
                 ps.setString(cntl++, user.getPickup_from());
@@ -213,7 +211,7 @@ public class Bookingdao extends Generic{
             if (user.getCustomer_id() > 0)
                 ps.setInt(cntl++, user.getCustomer_id());
 
-            logContent(ps,LoggerFactory.DEBUG , null, this);
+            logContent(ps,DEBUG , null, this);
 
             ResultSet rs = ps.executeQuery();
 
@@ -257,14 +255,4 @@ public class Bookingdao extends Generic{
         return sql;
 
     }
-
-    public static Bookingdao getInstance()
-    {
-        setConnection();
-        if ( bookingdao != null)
-            return bookingdao;
-        else
-            return new Bookingdao();
-    }
-    
 }

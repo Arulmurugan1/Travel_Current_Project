@@ -753,3 +753,7 @@ Properties key[isLoggable] value[true]
 Properties key[isLoggable] value[true]
 Properties key[isLoggable] value[true]
 Response Commited [true] Redirect to Login Page [No]
+ Request Path : /home.jsp
+ PrintStream [java.io.PrintStream@eea03b5]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/23-Monday/]
+Response Commited [false] Redirect to Login Page [No]

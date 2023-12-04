@@ -1,7 +1,6 @@
 package com.web.controller;
 
 import java.io.IOException;
-import java.sql.Connection;
 import java.util.Enumeration;
 import java.util.Locale;
 
@@ -13,10 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Level;
 
-import com.web.common.Constant;
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
-import com.web.util.Dbmanager;
+import com.web.log4j.LoggerFactory;
 
 @WebServlet("/CustomServlet")
 public class CustomServlet extends HttpServlet {
@@ -28,14 +25,16 @@ public class CustomServlet extends HttpServlet {
         super();
     }
 
-    protected void service(HttpServletRequest request, Object d, HttpServletResponse res) throws ServletException, IOException 
+    protected void service(HttpServletRequest request, HttpServletResponse res) throws ServletException, IOException 
     {
 
     	req = request;
+    	
+    	Generic.setHttpServlets(res,request);
 
-    	mode = req.getParameter("mode") == null ? "" : req.getParameter("mode");
+    	mode = req.getParameter("mode") == null ? "" : req.getParameter("mode").trim();
 
-    	PrintDetails(d);
+    	PrintDetails();
     }
     
     /**
@@ -57,15 +56,16 @@ public class CustomServlet extends HttpServlet {
     /**
      * @param d
      */
-    private void PrintDetails(Object d) {
+    private void PrintDetails() 
+    {
         Enumeration<String> e = req.getParameterNames();
 
-        while (e.hasMoreElements()) {
+        while (e.hasMoreElements()) 
+        {
             String s = e.nextElement();
             String value = req.getParameter(s);
 
-            logContent(String.format(Locale.getDefault(),
-                    " %-25s =>  %s " , s , value) , LoggerFactory.DEBUG, null);
+            logContent(String.format(Locale.getDefault()," %-25s =>  %s " , s , value) , LoggerFactory.DEBUG);
         }
     }
     
@@ -74,9 +74,19 @@ public class CustomServlet extends HttpServlet {
      * @param logLevel
      * @param e
      */
+    public void logContent(String message, Level logLevel)
+    {
+        Generic.logContent(message, logLevel, null, this);
+    }
+    
+    /**
+     * @param message
+     * @param logLevel
+     * @param e
+     */
     public void logContent(String message, Level logLevel, Throwable e)
     {
-        Generic.logContent(message, logLevel, e, this,req.getSession());
+        Generic.logContent(message, logLevel, e, this);
     }
 
 }

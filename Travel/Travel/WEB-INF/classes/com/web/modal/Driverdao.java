@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.objects.Driver;
 
 public class Driverdao extends Generic{
@@ -23,7 +23,7 @@ public class Driverdao extends Generic{
 
     public boolean insertDriver(Driver d)throws SQLException
     {
-        logContent(INSERT_DRIVER,LoggerFactory.DEBUG , null, this);
+        logContent(INSERT_DRIVER,DEBUG , null, this);
 
         ps = con.prepareStatement(INSERT_DRIVER);
         int cntl = 0;
@@ -34,7 +34,7 @@ public class Driverdao extends Generic{
         ps.setString(++cntl,d.getPhone() );
         ps.setString(++cntl,d.getNo() );
 
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
 
         rowsAffected = ps.executeUpdate() > 0;
 
@@ -43,12 +43,12 @@ public class Driverdao extends Generic{
 
     public Driver selectDriver(int id)  throws SQLException
     {
-        logContent(SELECT_BY_ID,LoggerFactory.DEBUG , null, this);
+        logContent(SELECT_BY_ID,DEBUG , null, this);
 
         ps = con.prepareStatement(SELECT_BY_ID);
         int cntl = 0;
         ps.setInt(++cntl, id);
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
         ResultSet rs = ps.executeQuery();
 
         while (rs.next()) {
@@ -67,7 +67,7 @@ public class Driverdao extends Generic{
         List < Driver > users = new ArrayList < Driver > ();
 
         ps = con.prepareStatement(SELECT_ALL_DRIVER);
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
 
 
         rs = ps.executeQuery();
@@ -93,9 +93,9 @@ public class Driverdao extends Generic{
         ps = con.prepareStatement(DELETE_DRIVER);
         int cntl = 0;
         ps.setString(++cntl, id);
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
         rowsAffected = ps.executeUpdate() > 0;
-        logContent("Deleted driver"+rowsAffected,LoggerFactory.DEBUG , null, this);
+        logContent("Deleted driver"+rowsAffected,DEBUG , null, this);
         return rowsAffected;
     }
 

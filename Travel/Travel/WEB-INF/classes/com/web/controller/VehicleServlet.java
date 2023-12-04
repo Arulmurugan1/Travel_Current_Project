@@ -7,7 +7,7 @@ import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.*;
 import com.web.objects.*;
 
@@ -20,28 +20,23 @@ public class VehicleServlet extends CustomServlet {
 		super();
 	}
 
-
-
-
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-	    String no   = null ;
-        String model = null;
-        String type  = null;
-        String color = null;
+	    String no   		= null ;
+        String model 	= null;
+        String type  		= null;
+        String color 		= null;
         
-        Vehicle v = null; 
-    	Vehicledao dao = new Vehicledao();
-    	List<Vehicle> l = new ArrayList<>();
+        Vehicle vehicleObject 				= null; 
+    	Vehicledao dao 	= new Vehicledao();
+    	List<Vehicle> l 	= new ArrayList<>();
         
-        super.service(request,this, response);
-        
-        dao.setHttpServlets(request, response);
+        super.service(request,response);
         
 		try
 		{
 
-			if( mode!=null && mode.equals("I"))	    
+			if(  mode.equals("I"))	    
 			{
 
 				no 	= request.getParameter("vehicle_no").trim();
@@ -49,9 +44,9 @@ public class VehicleServlet extends CustomServlet {
 				type = request.getParameter("vehicle_type").trim();
 				color = request.getParameter("vehicle_color").trim();
 
-				v = new Vehicle(no, model, type, color);
+				vehicleObject = new Vehicle(no, model, type, color);
 
-				if( dao.insertVehicle(v) )
+				if( dao.insertVehicle(vehicleObject) )
 				{
 					request.setAttribute( "msg", "Vehicle Added for "+no );
 				}
@@ -59,7 +54,7 @@ public class VehicleServlet extends CustomServlet {
 
 			}	    
 
-			if( mode!=null && mode.equals("U"))	    
+			if(  mode.equals("U"))	    
 			{
 
 				no = request.getParameter("vehicle_no").trim();
@@ -67,9 +62,9 @@ public class VehicleServlet extends CustomServlet {
 				type = request.getParameter("vehicle_type").trim();
 				color = request.getParameter("vehicle_color").trim();
 
-				v = new Vehicle(no, model, type, color); 
+				vehicleObject = new Vehicle(no, model, type, color); 
 
-				if( dao.updateVehicle(v) ) 
+				if( dao.updateVehicle(vehicleObject) ) 
 				{
 					request.setAttribute( "msg", "Updated successfully for "+no );
 				}
@@ -109,7 +104,7 @@ public class VehicleServlet extends CustomServlet {
 		finally
 		{
 			
-		    if ( mode.trim().equals("dummy") ) 
+		    if ( mode.equals("dummy") ) 
 		    {
 		        request.getRequestDispatcher(Constant.VEHICLE_INSERT_JSP).forward(request, response);
 		    }

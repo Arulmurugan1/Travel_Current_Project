@@ -1,0 +1,261 @@
+ Errors exists in PrintStream [false]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/loader/loader.js
+ PrintStream [java.io.PrintStream@164061ef]
+ Request Path : /scripts/common.js
+ PrintStream [java.io.PrintStream@164061ef]
+ Request Path : /scripts/ajaxCall.js
+ PrintStream [java.io.PrintStream@164061ef]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/23-Monday/]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@164061ef
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+java.sql.SQLException: Before start of result set
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkRowPos(ResultSetImpl.java:532)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:878)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:478)
+	at com.web.common.Generic.getLogPathForToday(Generic.java:212)
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:129)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+java.sql.SQLException: Operation not allowed after ResultSet closed
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkClosed(ResultSetImpl.java:485)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.checkRowPos(ResultSetImpl.java:529)
+	at com.mysql.cj.jdbc.result.ResultSetImpl.getString(ResultSetImpl.java:878)
+	at com.web.util.Dbmanager.getPropertiesPath(Dbmanager.java:478)
+	at com.web.common.Generic.getLogPathForToday(Generic.java:212)
+	at com.web.common.Generic.setProperties(Generic.java:197)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:63)
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:131)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/23-Monday/]
+Inside Log Path from Genericuser[]
+printStream java.io.PrintStream@164061ef
+Properties key[isLoggable] value[true]
+[Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [Yes]
+Response Commited [false] Redirect to Login Page [Yes]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Log Properties Updated for Key [log] true value [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Log will be redirected to /Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/
+consoleFilePath [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [false] Redirect to Login Page [Yes]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@164061ef]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /index.jsp
+ PrintStream [java.io.PrintStream@164061ef]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/ajaxCall.js
+ PrintStream [java.io.PrintStream@164061ef]
+ Request Path : /scripts/loader/loader.js
+ PrintStream [java.io.PrintStream@164061ef]
+ Request Path : /scripts/common.js
+ PrintStream [java.io.PrintStream@164061ef]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+Response Commited [true] Redirect to Login Page [No]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@164061ef]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@164061ef]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /scripts/header.js
+ PrintStream [null]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Login
+ PrintStream [null]
+ User Id : from auth filter null
+ User Id : from Session filter null
+ Redirect from propUser in Empty :)
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [Yes]
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /Images/profileImages/arul/arul.jpgUrlhttp://localhost:1000/Travel/Images/profileImages/arul/arul.jpg
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/flight.jpgUrlhttp://localhost:1000/Travel/Images/Carousel/flight.jpg
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/1.jpgUrlhttp://localhost:1000/Travel/Images/Carousel/1.jpg
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/2.webpUrlhttp://localhost:1000/Travel/Images/Carousel/2.webp
+ PrintStream [java.io.PrintStream@3493ddb]
+ Request Path : /Images/Carousel/3.jpgUrlhttp://localhost:1000/Travel/Images/Carousel/3.jpg
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [false] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+ Request Path : /scripts/home.jsUrlhttp://localhost:1000/Travel/scripts/home.js
+ PrintStream [java.io.PrintStream@3493ddb]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/4.jpgUrlhttp://localhost:1000/Travel/Images/Carousel/4.jpg
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [false] Redirect to Login Page [No]
+ Request Path : /scripts/header.jsUrlhttp://localhost:1000/Travel/scripts/header.js
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /Images/Carousel/6.jpegUrlhttp://localhost:1000/Travel/Images/Carousel/6.jpeg
+ PrintStream [java.io.PrintStream@3493ddb]
+ Request Path : /Images/Carousel/6.jpegUrlhttp://localhost:1000/Travel/Images/Carousel/6.jpeg
+ PrintStream [java.io.PrintStream@3493ddb]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/10-October/28-Saturday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/]
+Response Commited [true] Redirect to Login Page [No]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /styleSheet/bootstrap.min.css.mapUrlhttp://localhost:1000/Travel/styleSheet/bootstrap.min.css.map
+ PrintStream [java.io.PrintStream@3493ddb]
+Response Commited [true] Redirect to Login Page [No]
+ Request Path : /LoginUrlhttp://localhost:1000/Travel/Login
+ PrintStream [java.io.PrintStream@3493ddb]
+ User Id : from auth filter null
+ User Id : from Session filter null
+ Redirect from propUser in Empty :)
+Properties key[isLoggable] value[true]
+Response Commited [false] Redirect to Login Page [Yes]

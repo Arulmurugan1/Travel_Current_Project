@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.common.CommonFactory;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
@@ -29,12 +29,10 @@ public class RouteServlet extends CustomServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 	{
-	    super.service(request,this, response);
+	    super.service(request,response);
 	    
 	    Route r = null ;
 	    Routedao dao  = new Routedao();
-	    
-	    dao.setHttpServlets(request, response);
 	    
 		try
 		{

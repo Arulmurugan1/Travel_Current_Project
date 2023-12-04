@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.objects.Vehicle;
 import com.web.util.Dbmanager;
 
@@ -33,7 +33,7 @@ public class Vehicledao extends Generic{
             ps.setString(2,v.getModel() );
             ps.setString(3,v.getType() );
             ps.setString(4,v.getColor() );
-            logContent(ps,LoggerFactory.DEBUG , null, this);
+            logContent(ps,DEBUG , null, this);
             v1 = ps.executeUpdate()>0;
         } catch(Exception e) {
             e.printStackTrace();
@@ -43,13 +43,13 @@ public class Vehicledao extends Generic{
 
     public Vehicle selectVehicle(String no) throws SQLException
     {
-        logContent(SELECT_BY_NO,LoggerFactory.DEBUG , null, this);
+        logContent(SELECT_BY_NO,DEBUG , null, this);
 
 
         ps = con.prepareStatement(SELECT_BY_NO);
 
         ps.setString(1, no);
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
 
 
         rs = ps.executeQuery();
@@ -68,7 +68,7 @@ public class Vehicledao extends Generic{
     public List < Vehicle > getAllVehicle() throws SQLException
     {
         List<Vehicle> ls = new ArrayList < > ();
-        ps = Dbmanager.getConnection().prepareStatement(SELECT_ALL_VEHICLE);
+        ps = con.prepareStatement(SELECT_ALL_VEHICLE);
         rs = ps.executeQuery();
         while (rs.next()) 
         {
@@ -80,14 +80,14 @@ public class Vehicledao extends Generic{
     public boolean deleteVehicle(String no) throws SQLException
     {
         boolean rowDeleted=false;
-        logContent(DELETE_VEHICLE,LoggerFactory.DEBUG , null, this);
+        logContent(DELETE_VEHICLE,DEBUG , null, this);
         ps = con.prepareStatement(DELETE_VEHICLE);
 
         ps.setString(1, no);
 
         rowDeleted = ps.executeUpdate() > 0;
 
-        logContent("Deleted Vehicle "+rowDeleted,LoggerFactory.DEBUG , null, this);
+        logContent("Deleted Vehicle "+rowDeleted,DEBUG , null, this);
         return rowDeleted;
     }
 
@@ -103,7 +103,7 @@ public class Vehicledao extends Generic{
 
         rowUpdated = ps.executeUpdate() > 0;
 
-        logContent(ps,LoggerFactory.DEBUG , null, this);
+        logContent(ps,DEBUG , null, this);
         return rowUpdated;
     }
 }

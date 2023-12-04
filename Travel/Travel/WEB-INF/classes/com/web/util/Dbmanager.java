@@ -2,6 +2,7 @@ package com.web.util;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.net.URL;
@@ -15,7 +16,6 @@ import java.util.Vector;
 
 import com.web.common.CommonFactory;
 import com.web.common.Generic;
-import com.web.common.LoggerFactory;
 
 public class Dbmanager extends CommonFactory {
 	
@@ -29,7 +29,7 @@ public class Dbmanager extends CommonFactory {
     private static Properties prop = null ;
 
 	
-	public static Connection getConnection() 
+	public static Connection getConnection() throws Exception 
 	{
 	    try 
 	    {
@@ -58,29 +58,46 @@ public class Dbmanager extends CommonFactory {
 	    catch (Exception e1) 
 	    {
 	        error = e1.getMessage();
-	        System.out.println(e1);
-	        return null;
+	        System.out.println(error);
+	        throw e1;
 	    }
 	    return con;
 	}
 
-    public static Properties getProperties(String name) throws Exception
+    public static Properties getProperties(String name)
 	{   
 	    try
 	    {
 	        prop = new Properties();
+	        
+	        URL link = currentThread().getContextClassLoader().getResource(name) ;
 	    	
-	        in = currentThread().getContextClassLoader().getResource(name).openStream();
+	        if ( link != null)
+	        {
+	        	in = link.openStream();
+	        	prop.load(in);
+	        }
 	        
-	        prop.load(in);
-	        
-	        return prop;
+	    }
+	    catch(IOException ex)
+	    {
+	    	System.out.println(" Looks Like ..  " +name +" file is missing ." + ex.getLocalizedMessage());
 	    }
 	    finally
 	    {
-	        if( in != null)
-	            in.close();
+	    	try
+	    	{
+	    		if( in != null)
+	    			in.close();
+	    	}
+	    	catch(IOException ex)
+		    {
+		    	System.out.println(" Closing Properties is giving some issue ...");
+		    	ex.printStackTrace();
+		    }
 	    }
+	    
+	    return prop;
 	    
 	}
     
@@ -92,7 +109,7 @@ public class Dbmanager extends CommonFactory {
     	URL fileURL = currentThread().getContextClassLoader().getResource(LOG_PROPERTIES) ;
 
     	if(prop == null )
-    		throw new Exception(LOG_PATH_NOT_FOUND);
+    		throw new Exception(LOG_PROPERTIES_FAILED);
 
     	if(prop.containsKey(key))
     		prop.remove(key);
@@ -107,7 +124,7 @@ public class Dbmanager extends CommonFactory {
 
     }
      
-    public static String getKeyProperties(String key) throws Exception
+    public static String getLogProperties(String key) throws Exception
     {
         prop = getProperties(LOG_PROPERTIES);
         
@@ -124,7 +141,7 @@ public class Dbmanager extends CommonFactory {
         
     }
 
-    public static boolean insertObjects(String Query,Vector values) 
+    public static boolean insertObjects(String Query,Vector values) throws Exception 
 	{
 		boolean result = false ;
 		Connection con = null;
@@ -203,7 +220,7 @@ public class Dbmanager extends CommonFactory {
 		return result ;
 	}
 	
-	public static boolean updateObjects(String Query,Vector values)
+	public static boolean updateObjects(String Query,Vector values) throws Exception
 	{
 		boolean result = false ;
 
@@ -280,7 +297,7 @@ public class Dbmanager extends CommonFactory {
 		
 		return result ;
 	}
-	public static boolean deleteObjects(String Query,Vector values)
+	public static boolean deleteObjects(String Query,Vector values) throws Exception
 	{
 		boolean result = false ;
 	
@@ -386,7 +403,7 @@ public class Dbmanager extends CommonFactory {
             		}
             		catch(Exception e)
             		{	
-            			Generic.logContent(e.toString(), LoggerFactory.ERROR, e, new Dbmanager());
+            			Generic.logContent(e.toString(), ERROR, e, new Dbmanager());
             			continue;
             		}
             	}
@@ -458,14 +475,14 @@ public class Dbmanager extends CommonFactory {
         
     }
 	
-	public static String getPropertiesPath(String key) throws Exception
+	public static String getDBPropertiesPath(String key) throws Exception
 	{
 		String value = "" ;
 	    try {
 
 	        con = getConnection();
 
-	        ps = con.prepareStatement(" select prop_value from properties_path where prop_key ='"+isNull(key)+"'");
+	        ps = con.prepareStatement(" select prop_value from properties where prop_key ='"+isNull(key)+"'");
 	        
 	        System.out.println(ps);
 
@@ -479,10 +496,6 @@ public class Dbmanager extends CommonFactory {
 	        }
 
 	    }
-	    catch(Exception e) 
-	    {
-	        e.printStackTrace();
-	    }
 	    finally 
 	    {
 	    	closeAll();	
@@ -491,15 +504,17 @@ public class Dbmanager extends CommonFactory {
 	    return value; 
 	}
 	
-	private static void closeAll() throws Exception 
+	private static void closeAll() throws SQLException
 	{
-		closeAll(con, ps, rs);
+		closeAll(con, ps, rs,"Dbmanager CloseAll");
 	}
 
-	public static void closeAll(Connection con , PreparedStatement ps, ResultSet rs) throws Exception
+	public static void closeAll(Connection con , PreparedStatement ps, ResultSet rs, String caller) throws SQLException
 	{
 
 	    StringBuilder sb = new StringBuilder();
+	    
+	    sb.append("Closing Operation call from "+ caller + ".... ") ;
 
 	    if ( con !=null ) 
 	    {
@@ -520,7 +535,7 @@ public class Dbmanager extends CommonFactory {
 	    }
 	         
 	    if(sb.length() != 0)
-	    	Generic.logContent(sb.toString() ,LoggerFactory.DEBUG , null, new Dbmanager());
+	    	System.out.println(sb);
 	}
 	
 }

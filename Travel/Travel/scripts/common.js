@@ -44,14 +44,26 @@ function getFormData(frm)
 {
 	let formElements = frm && frm.elements;
 	
-	let arr =new FormData();
+	let arr = "";
 	
 	for(const data of formElements)
 	{
-		if(data.type =="file")
-			arr += "&"+$(data)[0].files[0]+"="+$(data)[0].value ;
-		else
-			arr += "&"+$(data)[0].name+"="+$(data)[0].value ; 
+		if(data.name != '')
+		{
+			if(data.type =="file")
+			{
+				const dat = data.files[0] ; 
+			
+				if(dat)
+				{
+					arr +="&" + "fileName" +"="+ dat.name ;
+					arr +="&" +"fileSize" +"="+ dat.size ;
+					arr +="&" +"fileType" +"="+ dat.type ;
+				}
+			}
+			else
+				arr += "&" + data.name +"="+ data.value ;
+		}	
 	}
 	
 	return arr ;

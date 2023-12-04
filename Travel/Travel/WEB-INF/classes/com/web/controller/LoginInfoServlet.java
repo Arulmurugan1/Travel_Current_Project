@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Logindao;
 
 @WebServlet("/LoginInfo")
@@ -19,7 +19,7 @@ public class LoginInfoServlet extends CustomServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
         
-        super.service(request,this, response);
+        super.service(request,response);
         
         Logindao data = null;
         
@@ -29,8 +29,6 @@ public class LoginInfoServlet extends CustomServlet {
         {
             
             data = new Logindao();
-            
-            data.setHttpServlets(request, response);
 
             switch(mode) {
                 case "I":
@@ -49,7 +47,6 @@ public class LoginInfoServlet extends CustomServlet {
                 {}
                 default :
                 {
-                    
                     request.setAttribute("list", data.getAllUsers() );
                 }
             }

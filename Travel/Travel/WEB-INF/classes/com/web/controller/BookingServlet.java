@@ -7,8 +7,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.web.common.CommonFactory;
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.common.Generic;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Bookingdao;
 import com.web.modal.Customerdao;
 import com.web.objects.Booking;
@@ -26,18 +28,15 @@ public class BookingServlet extends CustomServlet{
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
 
-        super.service(request,this, response);
+        super.service(request, response);
 
         Booking b = null ;
         Customer c = null ;
         
-        Bookingdao bookingDao = Bookingdao.getInstance() ;
-        Customerdao customerDao = Customerdao.getInstance() ;
-        
-        bookingDao.setHttpServlets(request, response);
-        customerDao.setHttpServlets(request, response);
+        Bookingdao bookingDao = new Bookingdao() ;
+        Customerdao customerDao = new Customerdao() ;
        
-        String user = request.getSession().getAttribute("user").toString();
+        String user = CommonFactory.isNull( request.getSession().getAttribute("user") )  ;
 
         try
         {
@@ -196,8 +195,7 @@ public class BookingServlet extends CustomServlet{
 
         	try 
         	{
-        		bookingDao.closeAll();
-        		customerDao.closeAll();
+        		Generic.closeOpenConnections();
         	}
         	catch(Exception e ) {
         		logContent(e.getMessage(), LoggerFactory.ERROR, e);

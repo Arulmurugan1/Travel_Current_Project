@@ -1,0 +1,381 @@
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-11-05T17:25:02 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 05:25:50:050 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:28:26:026 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:28:26:026 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      => 
+[05-11-2023 05:28:26:026 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:28:26:026 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:28:35:035 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:28:35:035 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      => 
+[05-11-2023 05:28:35:035 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:28:35:035 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-11-05T17:25:50 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 05:30:15:015 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:29:029 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:29:029 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      => 
+[05-11-2023 05:30:29:029 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:30:29:029 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:41:041 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:41:041 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  dummy 
+[05-11-2023 05:30:41:041 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:30:41:041 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  dummy 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  pickup_from               =>  Chennai 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  drop_at                   => 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  customer_name             => 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  age                       => 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  gender                    => 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  email                     => 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  phone                     => 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:30:43:043 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  dummy 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  pickup_from               =>  Chennai 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  drop_at                   =>  Coimbatore 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  customer_name             => 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  age                       => 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  gender                    => 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  email                     => 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  phone                     => 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:30:44:044 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  I 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  pickup_from               =>  Chennai 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  drop_at                   =>  Coimbatore 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  vehicle_no                =>  2345 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  driver_id                 =>  2 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  customer_name             =>  Arulmurugan C 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  age                       =>  23 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  gender                    =>  Male 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  email                     =>  arulmurugansk7@gmail.com 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  phone                     =>  8939523379 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  fare                      =>  2000.0 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Customerdao         ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO CUSTOMER(customer_id, customer_name, start, end, age, gender, email, phone) VALUES(null,'Arulmurugan C','Chennai','Coimbatore','23','M','arulmurugansk7@gmail.com','8939523379') 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Customerdao         ] [arul] Generated Customer ::310 
+[05-11-2023 05:30:48:048 pm IST] INFO  [Line:61] - [BookingServlet      ] [arul] Customer Added 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO BOOKING(booking_no, pickup_from, drop_at, customer_id, vehicle_no, driver_id, fare, booked_by, status, booking_time) VALUES(null,'Chennai','Coimbatore',310,'2345','2',2000.0,'Arulmurugan','WIP',sysdate()) 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] Booking No ::286 
+[05-11-2023 05:30:48:048 pm IST] INFO  [Line:61] - [BookingServlet      ] [arul] Booking Added for No[286] custId [310] fare[2000.0] 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:30:48:048 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:31:21:021 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:31:21:021 pm IST] DEBUG [Line:61] - [VehicleServlet      ] [arul]  mode                      => 
+[05-11-2023 05:31:21:021 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:31:22:022 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:31:22:022 pm IST] DEBUG [Line:61] - [VehicleServlet      ] [arul]  mode                      => 
+[05-11-2023 05:31:22:022 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:31:56:056 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:31:56:056 pm IST] DEBUG [Line:61] - [LoginInfoServlet    ] [arul]  mode                      => 
+[05-11-2023 05:31:56:056 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  user                      =>  siva 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  id                        =>  N 
+[05-11-2023 05:32:22:022 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Inside ajax 
+[05-11-2023 05:32:22:022 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] user [siva] access [false] 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'Y' , role = 'Admin' where user_id ='siva' 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] updated true 
+[05-11-2023 05:32:22:022 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:30:030 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:30:030 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  L 
+[05-11-2023 05:32:30:030 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@42dcb771 
+[05-11-2023 05:32:30:030 pm IST] ERROR [Line:67] -   
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  mode                      =>  login 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  encodePassword            =>  155866f25b71487aa592e6a2d0264523f988663af402370701d621e33aa1ad6d 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  txtUser                   =>  siva 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  txtPassword               =>  siva 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  username                  => 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  pass1                     => 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  pass2                     => 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  user_id                   => 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='siva' 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  Last Login 2023-10-21T23:05:59 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva] DB UserId : siva Username : SivaSankar Password : siva 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [Logindao            ] [siva] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='siva' 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [Generic             ] [siva] Access Log Entered true 
+[05-11-2023 05:32:33:033 pm IST] DEBUG [Line:61] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:36:036 pm IST] DEBUG [Line:61] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:36:036 pm IST] DEBUG [Line:61] - [LoginInfoServlet    ] [siva]  mode                      => 
+[05-11-2023 05:32:36:036 pm IST] DEBUG [Line:61] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:59:059 pm IST] DEBUG [Line:61] - [Dbmanager           ] [siva]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:32:59:059 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva]  mode                      =>  L 
+[05-11-2023 05:32:59:059 pm IST] DEBUG [Line:61] - [LoginServlet        ] [siva] Session On Logout org.apache.catalina.session.StandardSessionFacade@29a7ff9 
+[05-11-2023 05:32:59:059 pm IST] ERROR [Line:67] -   
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-11-05T17:30:15 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 05:33:02:002 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:04:004 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:04:004 pm IST] DEBUG [Line:61] - [LoginInfoServlet    ] [arul]  mode                      => 
+[05-11-2023 05:33:04:004 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:11:011 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:11:011 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  L 
+[05-11-2023 05:33:11:011 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@401a1849 
+[05-11-2023 05:33:11:011 pm IST] ERROR [Line:67] -   
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  mode                      =>  login 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  txtUser                   =>  ramya 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  txtPassword               =>  ramya 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  username                  => 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  pass1                     => 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  pass2                     => 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  user_id                   => 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  Last Login 2023-08-27T11:32:30 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [Generic             ] [ramya] Access Log Entered true 
+[05-11-2023 05:33:14:014 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:17:017 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      => 
+[05-11-2023 05:33:17:017 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:33:17:017 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:20:020 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:20:020 pm IST] DEBUG [Line:61] - [CustomerServlet     ] [ramya]  mode                      => 
+[05-11-2023 05:33:20:020 pm IST] DEBUG [Line:61] - [Customerdao         ] [ramya] select * from CUSTOMER 
+[05-11-2023 05:33:20:020 pm IST] DEBUG [Line:61] - [Customerdao         ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[05-11-2023 05:33:20:020 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:24:024 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:24:024 pm IST] DEBUG [Line:61] - [VehicleServlet      ] [ramya]  mode                      => 
+[05-11-2023 05:33:24:024 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:27:027 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:27:027 pm IST] DEBUG [Line:61] - [DriverServlet       ] [ramya]  mode                      => 
+[05-11-2023 05:33:27:027 pm IST] DEBUG [Line:61] - [Driverdao           ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[05-11-2023 05:33:27:027 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:29:029 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:29:029 pm IST] DEBUG [Line:61] - [RouteServlet        ] [ramya]  mode                      => 
+[05-11-2023 05:33:29:029 pm IST] DEBUG [Line:61] - [Routedao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[05-11-2023 05:33:29:029 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:31:031 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:31:031 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  mode                      =>  L 
+[05-11-2023 05:33:31:031 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@2f2bf9c9 
+[05-11-2023 05:33:31:031 pm IST] ERROR [Line:67] -   
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-11-05T17:33:02 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 05:33:34:034 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:36:036 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:36:036 pm IST] DEBUG [Line:61] - [LoginInfoServlet    ] [arul]  mode                      => 
+[05-11-2023 05:33:36:036 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  user                      =>  ramya 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  id                        =>  N 
+[05-11-2023 05:33:42:042 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Inside ajax 
+[05-11-2023 05:33:42:042 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] user [ramya] access [false] 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'Y' , role = 'Admin' where user_id ='ramya' 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] updated true 
+[05-11-2023 05:33:42:042 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:47:047 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:47:047 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  L 
+[05-11-2023 05:33:47:047 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@71be313e 
+[05-11-2023 05:33:47:047 pm IST] ERROR [Line:67] -   
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  mode                      =>  login 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  txtUser                   =>  ramya 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  txtPassword               =>  ramya 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  username                  => 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  pass1                     => 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  pass2                     => 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  user_id                   => 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  Last Login 2023-11-05T17:33:14 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [Generic             ] [ramya] Access Log Entered true 
+[05-11-2023 05:33:51:051 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:54:054 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:33:54:054 pm IST] DEBUG [Line:61] - [LoginInfoServlet    ] [ramya]  mode                      => 
+[05-11-2023 05:33:54:054 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:06:006 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:06:006 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      => 
+[05-11-2023 05:34:06:006 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:34:06:006 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:08:008 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      =>  dummy 
+[05-11-2023 05:34:08:008 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:34:08:008 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      =>  dummy 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  pickup_from               =>  Coimbatore 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  drop_at                   => 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  customer_name             => 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  age                       => 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  gender                    => 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  email                     => 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  phone                     => 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:34:09:009 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      =>  dummy 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  pickup_from               =>  Coimbatore 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  drop_at                   =>  Dindugal 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  customer_name             => 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  age                       => 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  gender                    => 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  email                     => 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  phone                     => 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:34:10:010 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      =>  I 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  pickup_from               =>  Coimbatore 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  drop_at                   =>  Dindugal 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  vehicle_no                =>  2315 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  driver_id                 =>  9 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  customer_name             =>  Arulmurugan C 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  age                       =>  42 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  gender                    =>  Male 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  email                     =>  arulmurugansk7@gmail.com 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  phone                     =>  8939523379 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  fare                      =>  1600.0 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Customerdao         ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO CUSTOMER(customer_id, customer_name, start, end, age, gender, email, phone) VALUES(null,'Arulmurugan C','Coimbatore','Dindugal','42','M','arulmurugansk7@gmail.com','8939523379') 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Customerdao         ] [ramya] Generated Customer ::311 
+[05-11-2023 05:34:17:017 pm IST] INFO  [Line:61] - [BookingServlet      ] [ramya] Customer Added 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO BOOKING(booking_no, pickup_from, drop_at, customer_id, vehicle_no, driver_id, fare, booked_by, status, booking_time) VALUES(null,'Coimbatore','Dindugal',311,'2315','9',1600.0,'Ramya SivaSankar','WIP',sysdate()) 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] Booking No ::287 
+[05-11-2023 05:34:17:017 pm IST] INFO  [Line:61] - [BookingServlet      ] [ramya] Booking Added for No[287] custId [311] fare[1600.0] 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:34:17:017 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:35:36:036 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:35:36:036 pm IST] DEBUG [Line:61] - [BookingServlet      ] [ramya]  mode                      => 
+[05-11-2023 05:35:36:036 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 05:35:37:037 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:35:50:050 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:35:50:050 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [ramya]  status                    =>  Confirmed 
+[05-11-2023 05:35:50:050 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [ramya]  booking_no                =>  287 
+[05-11-2023 05:35:50:050 pm IST] INFO  [Line:61] - [AjaxServlet         ] [ramya] Inside ajax 
+[05-11-2023 05:35:50:050 pm IST] INFO  [Line:61] - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[05-11-2023 05:35:50:050 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [ramya] VehicleNo [null] Vehicle Model [null] 
+[05-11-2023 05:35:50:050 pm IST] DEBUG [Line:61] - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 287 
+[05-11-2023 05:35:50:050 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:35:53:053 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:35:53:053 pm IST] DEBUG [Line:61] - [CustomerServlet     ] [ramya]  mode                      => 
+[05-11-2023 05:35:53:053 pm IST] DEBUG [Line:61] - [Customerdao         ] [ramya] select * from CUSTOMER 
+[05-11-2023 05:35:53:053 pm IST] DEBUG [Line:61] - [Customerdao         ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[05-11-2023 05:35:53:053 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:36:57:057 pm IST] DEBUG [Line:61] - [Dbmanager           ] [ramya]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:36:57:057 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya]  mode                      =>  L 
+[05-11-2023 05:36:57:057 pm IST] DEBUG [Line:61] - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@4881df84 
+[05-11-2023 05:36:57:057 pm IST] ERROR [Line:67] -   
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-11-05T17:33:34 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 05:37:00:000 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:02:002 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:02:002 pm IST] DEBUG [Line:61] - [LoginInfoServlet    ] [arul]  mode                      => 
+[05-11-2023 05:37:02:002 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  user                      =>  chandran 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  id                        =>  Y 
+[05-11-2023 05:37:06:006 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Inside ajax 
+[05-11-2023 05:37:06:006 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] user [chandran] access [true] 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'N' , role = 'Guest' where user_id ='chandran' 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] updated true 
+[05-11-2023 05:37:06:006 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  user                      =>  siva 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  id                        =>  Y 
+[05-11-2023 05:37:07:007 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Inside ajax 
+[05-11-2023 05:37:07:007 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] user [siva] access [true] 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'N' , role = 'Guest' where user_id ='siva' 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] updated true 
+[05-11-2023 05:37:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  mode                      =>  updateUserAccess 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  user                      =>  ramya 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [AjaxServlet         ] [arul]  id                        =>  Y 
+[05-11-2023 05:37:09:009 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Inside ajax 
+[05-11-2023 05:37:09:009 pm IST] INFO  [Line:61] - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] user [ramya] access [true] 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [Generic             ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: update login_info set status = 'N' , role = 'Guest' where user_id ='ramya' 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [AjaxProcess         ] [arul] updated true 
+[05-11-2023 05:37:09:009 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Dbmanager           ] [] Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Dbmanager           ] [] Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Dbmanager           ] [] Connection Closed [true] 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] mode                      =>  login 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] username                  => 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] pass1                     => 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] pass2                     => 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] user_id                   => 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] Last Login 2023-11-19T13:44:25 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Generic             ] [arul] Access Log Entered true 
+[01-12-2023 11:56:59:059 pm IST] DEBUG [Line:50] - [Dbmanager           ] [arul] Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 

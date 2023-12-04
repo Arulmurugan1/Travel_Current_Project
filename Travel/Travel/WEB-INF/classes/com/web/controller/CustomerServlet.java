@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Customerdao;
 import com.web.objects.Customer;
 
@@ -29,13 +29,12 @@ public class CustomerServlet extends CustomServlet {
 
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
     {
-        Customerdao customerdao = Customerdao.getInstance();
+        Customerdao customerdao = new Customerdao();
         
-        customerdao.setHttpServlets(request, response);
         List<Customer> listUser = new ArrayList<>();
         try {
 
-            super.service(request,this, response);
+            super.service(request,response);
 
             if( mode !=null && mode.equals("QE"))
             {

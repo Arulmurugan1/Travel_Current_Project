@@ -1,5 +1,7 @@
 package com.web.common;
 
+import org.apache.log4j.Level;
+
 public class Constant extends Thread
 {
 	
@@ -19,9 +21,9 @@ public class Constant extends Thread
 	public static final String LOG_PROP_PATH ="log";
 	public static final String IS_SYSOUT_LOGGABLE ="isLoggable";
 	public static final String LOG_USER 						="user";
-	public static final String LOG_FILENAME = "log4j.log";
+	public static final String LOG_FILENAME = "log4j";
 	public static final String LOG_FOLDERNAME = "log4j";
-	public static final String CONSOLE_FILENAME = "Console.log";
+	public static final String CONSOLE_FILENAME = "Console";
 	public static final String CONSOLE_FOLDERNAME = "Console";
 	public static final String seperator ="/";
 	
@@ -48,6 +50,16 @@ public class Constant extends Thread
 	public static final String PASSWORD   	= "db.password";
 	public static final String DRIVER     		= "db.driver";
 	public static final String URL        			= "db.url";
+	
+	public static final Level INFO				= Level.INFO ;
+	public static final Level DEBUG				= Level.DEBUG ;
+	public static final Level ERROR				= Level.ERROR ;
+	
+	public static final String SIMPLE_LAYOUT				= "SIMPLE_LAYOUT" ;
+	public static final String HTML_LAYOUT				    =  "HTML_LAYOUT"  ;
+	public static final String PATTERN_LAYOUT			=  "PATTERN_LAYOUT";
+	
 
 	public static final String LOG_PATH_NOT_FOUND        			= "Log Path Not found in PROPERTIES_PATH table . Ask Your admin ";
+	public static final String LOG_PROPERTIES_FAILED        			= "Unable to Load the Log Proprties . Please check :) ";
 }

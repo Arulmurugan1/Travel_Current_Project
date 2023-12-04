@@ -1,0 +1,1538 @@
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Vehicle [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/] checkStatus :true
+ session checkStatus :true
+Response Commited for > /Travel/ [false] Redirect to Login Page [Yes]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [false] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js] checkStatus :false
+ Url [/Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js] checkStatus :false
+ Url [/Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js] checkStatus :false
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [false] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/Validator.js [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [false] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/index.js] checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+ Url [/Travel/Login] checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+ File Creation for Logger Starts ......
+FilePath available [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\12-December\2-Saturday]
+ Log Path  Creation Failed  for [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/] 
+File available [M:\eclipse\Console2023_12_December_2_Saturday_.log]
+ Console Path  Creation Failed  For [Console2023_12_December_2_Saturday_.log] 
+ Generated Log File Name [log4j2023_12_December_2_Saturday_.log]
+ Generated Console File Name [Console2023_12_December_2_Saturday_.log]
+ Generated Log File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/]
+ File Creation for Logger Ends ......
+Time taken to Complete .... 0 milli seconds  
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/] fileName [Console2023_12_December_2_Saturday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+ Url [/Travel/scripts/home.js] checkStatus :false
+ Url [/Travel/scripts/header.js] checkStatus :false
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Vehicle [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Vehicle [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/] checkStatus :true
+ session checkStatus :true
+Response Commited for > /Travel/ [false] Redirect to Login Page [Yes]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js] checkStatus :false
+ Url [/Travel/scripts/index.js] checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/index.js [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/Login] checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+ File Creation for Logger Starts ......
+FilePath available [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\12-December\2-Saturday]
+ Log Path  Creation Failed  for [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/] 
+File available [M:\eclipse\Console2023_12_December_2_Saturday_.log]
+ Generated Log File Name [log4j2023_12_December_2_Saturday_.log]
+ Generated Console File Name [Console2023_12_December_2_Saturday_.log]
+ Generated Log File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/]
+ File Creation for Logger Ends ......
+Time taken to Complete .... 0 milli seconds  
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/] fileName [Console2023_12_December_2_Saturday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/1.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/header.js] checkStatus :false
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Vehicle [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :true
+Response Commited for > /Travel/Vehicle [false] Redirect to Login Page [Yes]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+ Url [/Travel/scripts/common.js] checkStatus :false
+ Url [/Travel/scripts/index.js] checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :true
+Response Commited for > /Travel/Vehicle [false] Redirect to Login Page [Yes]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/index.js] checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :true
+Response Commited for > /Travel/Vehicle [false] Redirect to Login Page [Yes]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+ Url [/Travel/scripts/index.js] checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/Login] checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+ File Creation for Logger Starts ......
+FilePath available [M:\Git\My Repository\Completed\Travel_Current_Project\Logs\2023\12-December\2-Saturday]
+ Log Path  Creation Failed  for [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/] 
+File available [M:\eclipse\Console2023_12_December_2_Saturday_.log]
+ Generated Log File Name [log4j2023_12_December_2_Saturday_.log]
+ Generated Console File Name [Console2023_12_December_2_Saturday_.log]
+ Generated Log File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/]
+ File Creation for Logger Ends ......
+Time taken to Complete .... 0 milli seconds  
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/2-Saturday/] fileName [Console2023_12_December_2_Saturday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/header.js] checkStatus :false
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Login] checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/flight.jpg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/1.jpg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/1.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+ Url [/Travel/scripts/header.js] checkStatus :false
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/header.js [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Login] checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/index.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/header.js] checkStatus :false
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Vehicle [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Vehicle] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Vehicle [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/common.js [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/1.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/3.jpg [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/header.js] checkStatus :false
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/] checkStatus :true
+ session checkStatus :false
+Response Commited for > /Travel/ [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/index.js] checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Login] checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/search.js] checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+Response Commited for > /Travel/scripts/Validator.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+Response Commited for > null [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/header.js] checkStatus :false
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/search.js] checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > null [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+ Url [/Travel/scripts/header.js] checkStatus :false
+Response Commited for > /Travel/scripts/header.js [false] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/search.js] checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/ajax-loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js] checkStatus :false
+ Url [/Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+ Url [/Travel/scripts/ajaxCall.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/search.js] checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js] checkStatus :false
+ Url [/Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Route] checkStatus :true
+ session checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-02
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/2-Saturday/]
+ LoggerFactory .... isLog4jInitiated [true]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/index.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/searchBox.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/searchBox.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/Pagination.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/ajax-loader.css] checkStatus :false
+ Url [/Travel/styleSheet/header.css] checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/loader/loader.css] checkStatus :false
+ Url [/Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js] checkStatus :false
+ Url [/Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js] checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+ Url [/Travel/scripts/Validator.js] checkStatus :false
+ Url [/Travel/scripts/loader/loader.js] checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/common.js] checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/scripts/header.js] checkStatus :false
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/3.jpg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/3.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/scripts/search.js] checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/4.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/Images/favIcon/fav.png] checkStatus :false
+Response Commited for > /Travel/Images/favIcon/fav.png [true] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/flight.jpg] checkStatus :false
+ Url [/Travel/Images/profileImages/arul/arul.jpg] checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/1.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/2.webp] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+ Url [/Travel/Images/Carousel/3.jpg] checkStatus :false
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/scripts/home.js [false] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/5.jpg] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+ Url [/Travel/Images/Carousel/6.jpeg] checkStatus :false
+ Url [/Travel/scripts/home.js] checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ Url [/Travel/styleSheet/bootstrap.min.css.map] checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]

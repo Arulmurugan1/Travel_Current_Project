@@ -12,7 +12,7 @@ import org.hibernate.Criteria;
 import com.web.Factory.HibernateHelper;
 import com.web.common.CommonFactory;
 import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Routedao;
 import com.web.objects.Route;
 
@@ -37,9 +37,7 @@ public class RouteNewServlet extends CustomServlet {
             String no ="";
             double fare = 0;
             
-            super.service(request,this, response);
-
-            dao.setHttpServlets(request, response);
+            super.service(request,response);
             
             if( mode !=null && !mode.equals(""))	    
             {

@@ -1,0 +1,321 @@
+[28-10-2023 03:27:24:024 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:27:24:024 pm IST] DEBUG [Line:61] - [Generic             ] []  File Path Added to session 
+[28-10-2023 03:27:24:024 pm IST] DEBUG [Line:61] - [Generic             ] []  Console File Path [/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/10-October/28-Saturday/] 
+[28-10-2023 03:27:24:024 pm IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.lang.Exception  =>  Something went Wrong in LogProperties Set 
+java.lang.Exception:  Something went Wrong in LogProperties Set 
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:129)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:74)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [Dbmanager           ] []  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-10-23T12:28:37 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[28-10-2023 03:27:52:052 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:27:57:057 pm IST] ERROR [Line:63] - [AuthFilter          ] [arul] Auth Filter Exception :  ** Error in *** java.lang.Exception  =>  User details is Empty . Please Re-login :) 
+java.lang.Exception:  User details is Empty . Please Re-login :) 
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:114)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:74)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[28-10-2023 03:30:32:032 pm IST] ERROR [Line:63] - [AuthFilter          ] [arul] Auth Filter Exception :  ** Error in *** java.lang.Exception  =>  User details is Empty . Please Re-login :) 
+java.lang.Exception:  User details is Empty . Please Re-login :) 
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:114)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:74)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Generic             ] [arul]  File Path Added to session 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Generic             ] [arul]  Console File Path [null] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-10-28T15:27:52 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:32:07:007 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[28-10-2023 03:32:16:016 pm IST] ERROR [Line:63] - [AuthFilter          ] [arul] Auth Filter Exception :  ** Error in *** java.lang.Exception  =>  User details is Empty . Please Re-login :) 
+java.lang.Exception:  User details is Empty . Please Re-login :) 
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:114)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:74)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[05-11-2023 02:29:31:031 pm IST] ERROR [Line:63] - [AuthFilter          ] [] Auth Filter Exception :  ** Error in *** java.lang.Exception  =>  User details is Empty . Please Re-login :) 
+java.lang.Exception:  User details is Empty . Please Re-login :) 
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:102)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[05-11-2023 02:47:54:054 pm IST] ERROR [Line:63] - [AuthFilter          ] [arul] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.getLogPathForToday(Generic.java:196)
+	at com.web.common.Generic.setProperties(Generic.java:165)
+	at com.web.common.Generic.setLogConsoleProperties(Generic.java:61)
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:109)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[05-11-2023 02:58:53:053 pm IST] ERROR [Line:63] - [AuthFilter          ] [arul] Auth Filter Exception :  ** Error in *** java.io.FileNotFoundException => Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+java.io.FileNotFoundException: Log Path Not found in PROPERTIES_PATH table . Ask Your admin 
+	at com.web.common.Generic.getLogPathForToday(Generic.java:197)
+	at com.web.filter.AuthFilter.doCheckLog4jLogs(AuthFilter.java:120)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:58)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Generic             ] [arul]  File Path Added to session 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Generic             ] [arul]  Console File Path [null] 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true] 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  mode                      =>  login 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtUser                   =>  arul 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  txtPassword               =>  arul 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  username                  => 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass1                     => 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  pass2                     => 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  user_id                   => 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul]  Last Login 2023-10-28T15:32:07 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Generic             ] [arul] Access Log Entered true 
+[05-11-2023 03:11:12:012 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:03:003 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:03:003 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      => 
+[05-11-2023 03:13:03:003 pm IST] DEBUG [Line:61] - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[05-11-2023 03:13:03:003 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:03:003 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:57:057 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:57:057 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  dummy 
+[05-11-2023 03:13:57:057 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:57:057 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  dummy 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  pickup_from               =>  Chennai 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  drop_at                   => 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  customer_name             => 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  age                       => 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  gender                    => 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  email                     => 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  phone                     => 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:13:59:059 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  dummy 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  pickup_from               =>  Chennai 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  drop_at                   =>  Coimbatore 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  customer_name             => 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  age                       => 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  gender                    => 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  email                     => 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  phone                     => 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:14:00:000 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  mode                      =>  I 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  pickup_from               =>  Chennai 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  drop_at                   =>  Coimbatore 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  vehicle_no                =>  2345 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  driver_id                 =>  2 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  customer_name             =>  Arulmurugan C 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  age                       =>  32 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  gender                    =>  Male 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  email                     =>  arulmurugansk7@gmail.com 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  phone                     =>  8939523379 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [BookingServlet      ] [arul]  fare                      =>  2000.0 
+[05-11-2023 03:14:08:008 pm IST] ERROR [Line:63] - [BookingServlet      ] [arul] No operations allowed after connection closed.  ** Error in *** java.sql.SQLNonTransientConnectionException => No operations allowed after connection closed. 
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1647)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1563)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1568)
+	at com.web.modal.Customerdao.insertCustomer(Customerdao.java:27)
+	at com.web.controller.BookingServlet.service(BookingServlet.java:78)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:69)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:761)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:568)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1578)
+	... 30 more
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+[05-11-2023 03:14:08:008 pm IST] DEBUG [Line:61] - [Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 

@@ -1,0 +1,471 @@
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/styleSheet/bootstrap.css
+ checkStatus :false
+Response Commited for > /Travel/styleSheet/bootstrap.css [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/styleSheet/index.css
+ checkStatus :false
+Response Commited for > /Travel/styleSheet/index.css [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/styleSheet/Pagination.css
+ checkStatus :false
+Response Commited for > /Travel/styleSheet/Pagination.css [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/styleSheet/searchBox.css
+ checkStatus :false
+ Url :/Travel/styleSheet/header.css
+ checkStatus :false
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/header.css [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[]
+[Dbmanager           ] [arul]  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true]
+Properties key[isLoggable] value[true]
+ Url :/Travel/styleSheet/ajax-loader.css
+ checkStatus :false
+ Url :/Travel/styleSheet/loader/loader.css
+ checkStatus :false
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/styleSheet/loader/loader.css [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/ajax/libs/jquery/3.5.1/jquery.min.js
+ checkStatus :false
+ Url :/Travel/scripts/ajax/libs/jquery/3.6.0/jquery.min.js
+ checkStatus :false
+ Url :/Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/scripts/ajax/libs/jquery/1.9.1/jquery.min.js [false] Redirect to Login Page [No]
+ Url :/Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js
+ checkStatus :false
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/scripts/ajax/libs/jqueryUi/1.10.2/jquery-ui.min.js [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/Validator.js
+ checkStatus :false
+ Url :/Travel/scripts/ajaxCall.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/ajaxCall.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/loader/loader.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/loader/loader.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/common.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/common.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > null [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/profileImages/arul/arul.jpg
+ checkStatus :false
+Response Commited for > /Travel/Images/profileImages/arul/arul.jpg [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/flight.jpg
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/1.jpg
+ checkStatus :false
+ Url :/Travel/Images/Carousel/2.webp
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/3.jpg
+ checkStatus :false
+ Url :/Travel/scripts/header.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/header.js [false] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/home.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/4.jpg
+ checkStatus :false
+ Url :/Travel/Images/Carousel/5.jpg
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/6.jpeg
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/booking.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/booking.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/Pagination.js
+ checkStatus :false
+ Url :/Travel/scripts/search.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/home.jsp
+ checkStatus :false
+Response Commited for > /Travel/home.jsp [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Route
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Route
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Route [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Login
+ checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url :/Travel/scripts/index.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/index.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/profileImages/arul/arul.jpg
+ checkStatus :false
+ Url :/Travel/Images/Carousel/flight.jpg
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/Carousel/flight.jpg [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/1.jpg
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/1.jpg [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/2.webp
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/2.webp [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/3.jpg
+ checkStatus :false
+ Url :/Travel/scripts/header.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/header.js [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/scripts/header.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/scripts/home.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/home.js [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Url :/Travel/Images/Carousel/4.jpg
+ Url :/Travel/Images/Carousel/5.jpg
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+ Url :/Travel/Images/Carousel/6.jpeg
+ checkStatus :false
+Properties key[isLoggable] value[true]
+ checkStatus :false
+Response Commited for > /Travel/Images/Carousel/6.jpeg [false] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+Properties key[isLoggable] value[true]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+ Url :/Travel/Booking
+ checkStatus :true
+ 2nd checkStatus :false
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+ Url :/Travel/scripts/booking.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/booking.js [true] Redirect to Login Page [No]
+ Url :/Travel/scripts/Pagination.js
+ checkStatus :false
+ Url :/Travel/scripts/search.js
+ checkStatus :false
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/search.js [true] Redirect to Login Page [No]
+ Url :/Travel/
+ checkStatus :true
+ 2nd checkStatus :false
+Response Commited for > /Travel/ [false] Redirect to Login Page [No]
+ Url :/Travel/Login
+ checkStatus :false
+ User Id : for authentication ::: arul
+ User Id : from Session ::: arul
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties_path where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Properties key[isLoggable] value[true]
+Inside setProperties() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/11-November/5-Sunday/]
+Properties key[log] value[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/11-November/5-Sunday/]
+Properties key[isLoggable] value[true]
+Inside Login sERVLET
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Properties key[isLoggable] value[true]
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]

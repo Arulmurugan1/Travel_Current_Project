@@ -2,9 +2,9 @@ package com.web.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,14 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.JSONArray;
 
 import com.web.common.AjaxProcess;
-import com.web.common.Constant;
-import com.web.common.LoggerFactory;
+import com.web.log4j.LoggerFactory;
 import com.web.modal.Bookingdao;
 import com.web.objects.Booking;
 
 
-@WebServlet("/Ajax")
-@MultipartConfig 
+@WebServlet("/Ajax") 
 public class AjaxServlet extends CustomServlet 
 {
 	private static final long serialVersionUID = 1L;
@@ -30,7 +28,6 @@ public class AjaxServlet extends CustomServlet
 	{ 
 
 		AjaxProcess ret = AjaxProcess.getInstance();
-		ret.setHttpServlets(request,response);
 		
 		try
 		{
@@ -45,26 +42,29 @@ public class AjaxServlet extends CustomServlet
 			
 			response.setContentType("text/html;charset=UTF-8");  
 
-			super.service(request,this, response);
+			super.service(request, response);
+			
+			logContent("Inside ajax" , LoggerFactory.INFO);
 
 			out = response.getWriter();
 			
-			logContent("Context Real Path  : "+getServletContext().getRealPath("/Images") , LoggerFactory.INFO, null);
+			logContent("Context Real Path  : "+getServletContext().getRealPath("/Images") , LoggerFactory.INFO);
 
 			if( mode.equals("userProfileSubmit") )
 			{
-				logContent("Inside ajax" , LoggerFactory.INFO, null);
-
-				request.setAttribute("msg", ret.getUploadResponse() ? "success" : "failed");
-				request.setAttribute("action", "editProfile");
 				
-				request.getRequestDispatcher(Constant.HOME_JSP).forward(request, response);
+				out.print(ret.updateUserImage(null) );
+				
+				
+				/* request.setAttribute("action", "editProfile"); */
+				
+				/*
+				 * request.getRequestDispatcher(Constant.HOME_JSP).forward(request, response);
+				 */
 				
 			}
 			else
 			{
-				logContent("Inside ajax" , LoggerFactory.INFO, null);
-				
 				if(mode.trim().equals("updateUserAccess"))
 				{
 					out.println( ret.setUserAcess());
@@ -75,7 +75,7 @@ public class AjaxServlet extends CustomServlet
 					String vehicleModel = request.getParameter("vehicle_model");
 					String status = request.getParameter("status");
 					String booking_no = request.getParameter("booking_no");
-					logContent("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]" , LoggerFactory.DEBUG, null);;
+					logContent("VehicleNo ["+vehicleNo+"] Vehicle Model ["+vehicleModel+"]" , LoggerFactory.DEBUG);
 
 					if ( vehicleNo!=null && vehicleNo.trim().length() > 0)
 					{
@@ -91,13 +91,13 @@ public class AjaxServlet extends CustomServlet
 						data = ret.getVehicleType(vehicleModel);
 						if( data !=null &&  !data.toString().equals(""))
 						{
-							logContent("data found.." , LoggerFactory.INFO, null);
+							logContent("data found.." , LoggerFactory.INFO);
 						}
 						else 
 						{
-							logContent("No data found.." , LoggerFactory.INFO, null);
+							logContent("No data found.." , LoggerFactory.INFO);
 						}
-						logContent(data.toString() , LoggerFactory.INFO, null);
+						logContent(data.toString() ,LoggerFactory.INFO);
 
 						out.println(data.toString());
 					}
@@ -107,7 +107,7 @@ public class AjaxServlet extends CustomServlet
 						b.setStatus(status);
 						b.setBooking_no(Integer.parseInt(booking_no));
 
-						boolean result = Bookingdao.getInstance().updateBooking(b);
+						boolean result = new Bookingdao().updateBooking(b);
 
 						if ( result )
 						{
@@ -120,6 +120,18 @@ public class AjaxServlet extends CustomServlet
 					}
 				}
 			}
+		}
+		catch(SQLException s) {
+			logContent("Exception in Ajax Servlet", LoggerFactory.ERROR, s);
+			out.print("Exception in Ajax Servlet  "+s.getMessage());
+		}
+		catch(IOException s) {
+			logContent("Exception in Ajax Servlet", LoggerFactory.ERROR, s);
+			out.print("Exception in Ajax Servlet  "+s.getMessage());
+		}
+		catch(ServletException s) {
+			logContent("Exception in Ajax Servlet", LoggerFactory.ERROR, s);
+			out.print("Exception in Ajax Servlet  "+s.getMessage());
 		}
 		catch(Exception s) {
 			logContent("Exception in Ajax Servlet", LoggerFactory.ERROR, s);

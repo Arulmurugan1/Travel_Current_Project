@@ -39,7 +39,12 @@ public class CommonFactory extends Constant
     }
     public static String isNull(Object string)
     {
-        return  string == null || string.toString().trim().length() == 0  ? "" : string.toString().trim();
+        return  string == null ? "" : string.toString().trim() ;
+    }
+    
+    public static boolean isBlankCheck(Object string)
+    {
+        return  string == null || isNull(string).isBlank();
     }
     
     public static String printClassVariables(Object classes) throws Exception
