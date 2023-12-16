@@ -1,0 +1,2406 @@
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/profile/editProfile.js [false] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/profile/editProfile.js [false] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/profile/editProfile.js [false] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Login [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/Profile/editProfile.css [false] Redirect to Login Page [No]
+Response Commited for > /Travel/Images/profileImages/arul/IMG_20230403_091844.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Booking [true] Redirect to Login Page [No]
+Response Commited for > /Travel/styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/booking.js [true] Redirect to Login Page [No]
+Response Commited for > /Travel/scripts/Pagination.js [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Travel/Ajax [true] Redirect to Login Page [No]
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/arul/IMG_20230403_091844.jpg [false] Redirect to Login Page [No]
+Response Commited for > /scripts/profile/editProfile.js [true] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/1.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/2.webp [true] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/2.webp [false] Redirect to Login Page [No]
+Response Commited for > /scripts/header.js [true] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/4.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/5.jpg [false] Redirect to Login Page [No]
+Response Commited for > /scripts/home.js [true] Redirect to Login Page [No]
+Response Commited for > /Images/Carousel/6.jpeg [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Booking [true] Redirect to Login Page [No]
+Response Commited for > /scripts/booking.js [true] Redirect to Login Page [No]
+Response Commited for > /scripts/Pagination.js [true] Redirect to Login Page [No]
+Response Commited for > /scripts/search.js [true] Redirect to Login Page [No]
+Response Commited for > /home.jsp [false] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /LoginInfo [true] Redirect to Login Page [No]
+Response Commited for > /Images/user/female.png [false] Redirect to Login Page [No]
+Response Commited for > /Images/user/female.png [false] Redirect to Login Page [No]
+Response Commited for > null [true] Redirect to Login Page [No]
+Response Commited for > /Images/user/spider-man.jpg [false] Redirect to Login Page [No]
+Response Commited for > /Images/user/spider-man.jpg [false] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /LoginInfo [true] Redirect to Login Page [No]
+Response Commited for > /home.jsp [false] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/arul/IMG_20230403_091844.jpg [false] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Booking [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Booking [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Booking [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+Response Commited for > /home.jsp [false] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Vehicle [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/10-Sunday/] fileName [Console2023_12_December_10_Sunday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/user/noUser.png [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='PROFILE_IMAGE_PATH'
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='PROFILE_IMAGE_PATH'
+KEY => [PROFILE_IMAGE_PATH => /Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/profileImages/]
+KEY => [isLoggable => /Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/profileImages/]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Ajax [false] Redirect to Login Page [No]
+[UserImageDao        ] [jiyara] records affected true
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Ajax [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/10-Sunday/] fileName [Console2023_12_December_10_Sunday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/jiyara/IMG_20210203_080746_optimized.jpg [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/jiyara/IMG_20210203_080746_optimized.jpg [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Ajax [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='PROFILE_IMAGE_PATH'
+KEY => [PROFILE_IMAGE_PATH => /Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/profileImages/]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+FilePath Created [M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images\profileImages\jiyara]
+Auth Filter Exception : org.apache.jasper.JasperException: java.lang.IllegalStateException: Exception occurred when flushing data
+org.apache.jasper.JasperException: java.lang.IllegalStateException: Exception occurred when flushing data
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:623)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:489)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Exception occurred when flushing data
+	at org.apache.jasper.runtime.PageContextImpl.release(PageContextImpl.java:169)
+	at org.apache.jasper.runtime.JspFactoryImpl.internalReleasePageContext(JspFactoryImpl.java:120)
+	at org.apache.jasper.runtime.JspFactoryImpl.releasePageContext(JspFactoryImpl.java:75)
+	at org.apache.jsp.upload_jsp._jspService(upload_jsp.java:279)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	... 28 more
+Caused by: java.io.IOException: Stream closed
+	at org.apache.jasper.runtime.JspWriterImpl.ensureOpen(JspWriterImpl.java:195)
+	at org.apache.jasper.runtime.JspWriterImpl.flushBuffer(JspWriterImpl.java:107)
+	at org.apache.jasper.runtime.PageContextImpl.release(PageContextImpl.java:167)
+	... 34 more
+Response Commited for > null [true] Redirect to Login Page [Yes]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/jiyara/IMG_20210203_080746_optimized.jpg [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/10-Sunday/] fileName [Console2023_12_December_10_Sunday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/jiyara/IMG_20210203_080746_optimized.jpg [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Ajax [true] Redirect to Login Page [No]
+Auth Filter Exception : org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+35: 		byte dataBytes[]   = new byte[formDataLength] ;
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+
+
+An error occurred at line: [39] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+42: 		{
+
+
+An error occurred at line: [51] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+48: 			totalBytesRead += byteRead ;	
+49: 		}
+50: 		
+51:  		LoggerFactory.displayDiffLogLevels("byteRead > "+byteRead , LoggerFactory.DEBUG, null, Generic.generic);
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+
+
+An error occurred at line: [55] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [58] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [61] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [64] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+
+
+An error occurred at line: [68] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+68:  		LoggerFactory.displayDiffLogLevels("boundary > "+boundary, LoggerFactory.DEBUG, null, Generic.generic);
+69: 		
+70: 		pos = file.indexOf("filename=\"") ;
+71: 		pos = file.indexOf("\n",pos) + 1 ;
+
+
+An error occurred at line: [75] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+72: 		pos = file.indexOf("\n",pos) + 1 ;
+73: 		pos = file.indexOf("\n",pos) + 1 ;
+74: 		
+75:  		LoggerFactory.displayDiffLogLevels("Position of String >"+pos, LoggerFactory.DEBUG, null, Generic.generic);
+76: 		
+77: 		int boundaryLocation = file.indexOf(boundary,pos) - 4 ;
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+
+
+An error occurred at line: [81] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+79: 		int endPos 		=   ( file.substring(0, boundaryLocation)).getBytes().length ;
+80: 		
+81:  		LoggerFactory.displayDiffLogLevels(" endPos ["+endPos+"] startPos["+startPos+"] boundaryLocation["+boundaryLocation+"]", LoggerFactory.DEBUG, null, Generic.generic);
+82: 		
+83: 		if( Generic.createFolders(uploadPath) )
+84: 		{
+
+
+An error occurred at line: [87] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+84: 		{
+85: 			File f = new File( uploadPath + saveFile );
+86: 			
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [90] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+91: 			
+92: 			fout.write(dataBytes, startPos, endPos - startPos );
+93: 			
+
+
+Stacktrace:
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+35: 		byte dataBytes[]   = new byte[formDataLength] ;
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+
+
+An error occurred at line: [39] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+42: 		{
+
+
+An error occurred at line: [51] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+48: 			totalBytesRead += byteRead ;	
+49: 		}
+50: 		
+51:  		LoggerFactory.displayDiffLogLevels("byteRead > "+byteRead , LoggerFactory.DEBUG, null, Generic.generic);
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+
+
+An error occurred at line: [55] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [58] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [61] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [64] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+
+
+An error occurred at line: [68] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+68:  		LoggerFactory.displayDiffLogLevels("boundary > "+boundary, LoggerFactory.DEBUG, null, Generic.generic);
+69: 		
+70: 		pos = file.indexOf("filename=\"") ;
+71: 		pos = file.indexOf("\n",pos) + 1 ;
+
+
+An error occurred at line: [75] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+72: 		pos = file.indexOf("\n",pos) + 1 ;
+73: 		pos = file.indexOf("\n",pos) + 1 ;
+74: 		
+75:  		LoggerFactory.displayDiffLogLevels("Position of String >"+pos, LoggerFactory.DEBUG, null, Generic.generic);
+76: 		
+77: 		int boundaryLocation = file.indexOf(boundary,pos) - 4 ;
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+
+
+An error occurred at line: [81] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+79: 		int endPos 		=   ( file.substring(0, boundaryLocation)).getBytes().length ;
+80: 		
+81:  		LoggerFactory.displayDiffLogLevels(" endPos ["+endPos+"] startPos["+startPos+"] boundaryLocation["+boundaryLocation+"]", LoggerFactory.DEBUG, null, Generic.generic);
+82: 		
+83: 		if( Generic.createFolders(uploadPath) )
+84: 		{
+
+
+An error occurred at line: [87] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+84: 		{
+85: 			File f = new File( uploadPath + saveFile );
+86: 			
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [90] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+91: 			
+92: 			fout.write(dataBytes, startPos, endPos - startPos );
+93: 			
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:487)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Response Commited for > null [false] Redirect to Login Page [Yes]
+ Errors exists in PrintStream [false]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+ Inside setConsoleLog .. Console log Process starts .... 
+Inside setSystemOutLogs filePath[/Git/My Repository/Completed/Travel_Current_Project/Logs/2023/12-December/10-Sunday/] fileName [Console2023_12_December_10_Sunday_.log]
+ Inside setSystemOutLogs .. Console log Process starts .... 
+Properties key[isLoggable] value[]
+ Console Log [null] isLoggable [] 
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/jiyara/IMG_20210203_080746_optimized.jpg [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Auth Filter Exception : org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+35: 		byte dataBytes[]   = new byte[formDataLength] ;
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+
+
+An error occurred at line: [39] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+42: 		{
+
+
+An error occurred at line: [51] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+48: 			totalBytesRead += byteRead ;	
+49: 		}
+50: 		
+51:  		LoggerFactory.displayDiffLogLevels("byteRead > "+byteRead , LoggerFactory.DEBUG, null, Generic.generic);
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+
+
+An error occurred at line: [55] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [58] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [61] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [64] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+
+
+An error occurred at line: [68] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+68:  		LoggerFactory.displayDiffLogLevels("boundary > "+boundary, LoggerFactory.DEBUG, null, Generic.generic);
+69: 		
+70: 		pos = file.indexOf("filename=\"") ;
+71: 		pos = file.indexOf("\n",pos) + 1 ;
+
+
+An error occurred at line: [75] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+72: 		pos = file.indexOf("\n",pos) + 1 ;
+73: 		pos = file.indexOf("\n",pos) + 1 ;
+74: 		
+75:  		LoggerFactory.displayDiffLogLevels("Position of String >"+pos, LoggerFactory.DEBUG, null, Generic.generic);
+76: 		
+77: 		int boundaryLocation = file.indexOf(boundary,pos) - 4 ;
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+
+
+An error occurred at line: [81] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+79: 		int endPos 		=   ( file.substring(0, boundaryLocation)).getBytes().length ;
+80: 		
+81:  		LoggerFactory.displayDiffLogLevels(" endPos ["+endPos+"] startPos["+startPos+"] boundaryLocation["+boundaryLocation+"]", LoggerFactory.DEBUG, null, Generic.generic);
+82: 		
+83: 		if( Generic.createFolders(uploadPath) )
+84: 		{
+
+
+An error occurred at line: [87] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+84: 		{
+85: 			File f = new File( uploadPath + saveFile );
+86: 			
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [90] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+91: 			
+92: 			fout.write(dataBytes, startPos, endPos - startPos );
+93: 			
+
+
+Stacktrace:
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [38] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+35: 		byte dataBytes[]   = new byte[formDataLength] ;
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+
+
+An error occurred at line: [39] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+36: 		int byteRead = 0 , totalBytesRead = 0 , lastIndex = contentType.lastIndexOf("=") ,pos;
+37: 		
+38:  		LoggerFactory.displayDiffLogLevels("DataInputStream > "+in.toString(), LoggerFactory.DEBUG, null, Generic.generic);
+39:  		LoggerFactory.displayDiffLogLevels("uploadPath "+ uploadPath, LoggerFactory.DEBUG, null, Generic.generic);
+40: 
+41: 		while( totalBytesRead < formDataLength )
+42: 		{
+
+
+An error occurred at line: [51] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+48: 			totalBytesRead += byteRead ;	
+49: 		}
+50: 		
+51:  		LoggerFactory.displayDiffLogLevels("byteRead > "+byteRead , LoggerFactory.DEBUG, null, Generic.generic);
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+
+
+An error occurred at line: [55] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+52: 		
+53: 		
+54: 		String file = new String(dataBytes);
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [58] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+55:  		LoggerFactory.displayDiffLogLevels("file > "+file , LoggerFactory.DEBUG, null, Generic.generic);
+56: 		
+57: 		saveFile	= file.substring(file.indexOf("filename=\"") + 10 );
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [61] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+58:  		LoggerFactory.displayDiffLogLevels("saveFile1 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+59: 		
+60: 		saveFile	= saveFile.substring(0 , saveFile.indexOf("\n") );
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [64] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+61:  		LoggerFactory.displayDiffLogLevels("saveFile2 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+62: 		
+63: 		saveFile	= saveFile.substring( saveFile.indexOf("\\") + 1 , saveFile.indexOf("\"") );
+64:  		LoggerFactory.displayDiffLogLevels("saveFile3 > "+saveFile , LoggerFactory.DEBUG, null, Generic.generic);
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+
+
+An error occurred at line: [68] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+65: 		
+66: 		String boundary = contentType.substring(lastIndex + 1 , contentType.length()) ;
+67: 		
+68:  		LoggerFactory.displayDiffLogLevels("boundary > "+boundary, LoggerFactory.DEBUG, null, Generic.generic);
+69: 		
+70: 		pos = file.indexOf("filename=\"") ;
+71: 		pos = file.indexOf("\n",pos) + 1 ;
+
+
+An error occurred at line: [75] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+72: 		pos = file.indexOf("\n",pos) + 1 ;
+73: 		pos = file.indexOf("\n",pos) + 1 ;
+74: 		
+75:  		LoggerFactory.displayDiffLogLevels("Position of String >"+pos, LoggerFactory.DEBUG, null, Generic.generic);
+76: 		
+77: 		int boundaryLocation = file.indexOf(boundary,pos) - 4 ;
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+
+
+An error occurred at line: [81] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+78: 		int startPos 	=   ( file.substring(0, pos)).getBytes().length ; 
+79: 		int endPos 		=   ( file.substring(0, boundaryLocation)).getBytes().length ;
+80: 		
+81:  		LoggerFactory.displayDiffLogLevels(" endPos ["+endPos+"] startPos["+startPos+"] boundaryLocation["+boundaryLocation+"]", LoggerFactory.DEBUG, null, Generic.generic);
+82: 		
+83: 		if( Generic.createFolders(uploadPath) )
+84: 		{
+
+
+An error occurred at line: [87] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+84: 		{
+85: 			File f = new File( uploadPath + saveFile );
+86: 			
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+
+
+An error occurred at line: [90] in the jsp file: [/upload.jsp]
+generic cannot be resolved or is not a field
+87:  			LoggerFactory.displayDiffLogLevels("File > "+f, LoggerFactory.DEBUG, null, Generic.generic);
+88: 			
+89: 			fout = new FileOutputStream(f);
+90:  			LoggerFactory.displayDiffLogLevels("FileOutputStream > "+fout, LoggerFactory.DEBUG, null, Generic.generic);
+91: 			
+92: 			fout.write(dataBytes, startPos, endPos - startPos );
+93: 			
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:487)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:397)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:367)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:351)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:605)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Response Commited for > /Ajax [false] Redirect to Login Page [Yes]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Ajax [true] Redirect to Login Page [Yes]
+ Errors exists in PrintStream [false]
+Inside Login sERVLET
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from closeOpenConnections....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Login [true] Redirect to Login Page [No]
+Response Commited for > /Images/profileImages/jiyara/IMG_20210203_080746_optimized.jpg [true] Redirect to Login Page [No]
+Response Commited for > /styleSheet/bootstrap.min.css.map [true] Redirect to Login Page [No]
+ LoggerFactory .... isLog4jInitiated [true]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='LOG_PATH'
+KEY => [LOG_PATH => /Git/My Repository/Completed/Travel_Current_Project/Logs]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+ Today Log Date 2023-12-10
+Inside getLogPathForToday() Log Path [/Git/My Repository/Completed/Travel_Current_Project/Logs] folder [2023/12-December/10-Sunday/]
+ LoggerFactory .... isConsoleLogInitiated [true]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Closing Operation call from Generic closeAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > /Ajax [true] Redirect to Login Page [No]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='PROFILE_IMAGE_PATH'
+KEY => [PROFILE_IMAGE_PATH => /Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/profileImages/]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+FilePath available [M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images\profileImages\jiyara]
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Properties key[isLoggable] value[]
+com.mysql.cj.jdbc.ClientPreparedStatement:  select prop_value from properties where prop_key ='isLoggable'
+KEY => [isLoggable => true]
+KEY => [isLoggable => true]
+Closing Operation call from Dbmanager CloseAll....  Connection Closed [true]  Statement Closed [true]  ResultSet Closed [true] 
+Response Commited for > null [false] Redirect to Login Page [No]

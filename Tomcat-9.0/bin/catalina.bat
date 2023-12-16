@@ -269,6 +269,9 @@ echo Using JAVA_HOME:       "%JAVA_HOME%"
 :java_dir_displayed
 echo Using CLASSPATH:       "%CLASSPATH%"
 echo Using CATALINA_OPTS:   "%CATALINA_OPTS%"
+echo Using _EXECJAVA:   "%_RUNJAVA%"
+
+echo Using JDK_JAVA_OPTIONS: "%JDK_JAVA_OPTIONS%"
 
 set _EXECJAVA=%_RUNJAVA%
 set MAINCLASS=org.apache.catalina.startup.Bootstrap

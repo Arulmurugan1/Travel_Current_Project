@@ -107,3 +107,760 @@
 [04-12-2023 10:02:18:018 am IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
 [04-12-2023 10:03:35:035 am IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  L 
 [04-12-2023 10:03:35:035 am IST] DEBUG  - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@6a5d89ce 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T10:02:18 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 09:42:25:025 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T21:42:25 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 09:54:19:019 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T21:54:19 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 09:57:20:020 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T21:57:20 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:01:23:023 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:01:23 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:02:30:030 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:02:30 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:02:35:035 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileName                  =>  DSC_0027.JPG 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileSize                  =>  13704260 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileType                  =>  image/jpeg 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  F 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 10:05:10:010 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 10:05:10:010 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 10:05:10:010 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG'  image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:05:10:010 pm IST] ERROR  - [AjaxServlet         ] [ramya] Exception in Ajax Servlet  ** Error in *** java.sql.SQLSyntaxErrorException => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 1370' at line 1 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 1370' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.web.modal.UserImageDao.isImageExists(UserImageDao.java:51)
+	at com.web.common.AjaxProcess.updateUserImage(AjaxProcess.java:224)
+	at com.web.controller.AjaxServlet.service(AjaxServlet.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:02:35 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:08:16:016 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileName                  =>  DSC_0027.JPG 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileSize                  =>  13704260 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileType                  =>  image/jpeg 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  F 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 10:08:29:029 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 10:08:29:029 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 10:08:29:029 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG'  image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:08:29:029 pm IST] ERROR  - [AjaxServlet         ] [ramya] Exception in Ajax Servlet  ** Error in *** java.sql.SQLSyntaxErrorException => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 1370' at line 1 
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 1370' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.web.modal.UserImageDao.isImageExists(UserImageDao.java:51)
+	at com.web.common.AjaxProcess.updateUserImage(AjaxProcess.java:224)
+	at com.web.controller.AjaxServlet.service(AjaxServlet.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:08:16 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:09:47:047 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileName                  =>  DSC_0027.JPG 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileSize                  =>  13704260 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileType                  =>  image/jpeg 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  F 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 10:13:41:041 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 10:13:41:041 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:13:41:041 pm IST] INFO   - [Generic             ] [ramya] Image With Name DSC_0027.JPG already Exists 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size) VALUES('ramya','DSC_0027.JPG','Images/profileImages/ramya',sysdate(),'ramya','image/jpeg',13704260) 
+[04-12-2023 10:13:41:041 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:13:41:041 pm IST] INFO   - [Generic             ] [ramya] Image With Name DSC_0027.JPG already Exists 
+[04-12-2023 10:13:42:042 pm IST] ERROR  - [AjaxServlet         ] [ramya] Exception in Ajax Servlet  ** Error in *** java.sql.SQLException => Can not issue executeUpdate() or executeLargeUpdate() with statements that produce result sets 
+java.sql.SQLException: Can not issue executeUpdate() or executeLargeUpdate() with statements that produce result sets
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1038)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.web.modal.UserImageDao.insertUser(UserImageDao.java:30)
+	at com.web.common.AjaxProcess.updateUserImage(AjaxProcess.java:226)
+	at com.web.controller.AjaxServlet.service(AjaxServlet.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:09:47 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:17:24:024 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileName                  =>  DSC_0027.JPG 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileSize                  =>  13704260 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileType                  =>  image/jpeg 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  F 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 10:17:38:038 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 10:17:38:038 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size) VALUES('ramya','DSC_0027.JPG','Images/profileImages/ramya',sysdate(),'ramya','image/jpeg',13704260) 
+[04-12-2023 10:17:38:038 pm IST] DEBUG  - [UserImageDao        ] [ramya] records affected true 
+[04-12-2023 10:19:04:004 pm IST] DEBUG  - [BookingServlet      ] [ramya] mode                      => 
+[04-12-2023 10:19:04:004 pm IST] DEBUG  - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[04-12-2023 10:38:17:017 pm IST] DEBUG  - [BookingServlet      ] [ramya] mode                      => 
+[04-12-2023 10:38:17:017 pm IST] DEBUG  - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[04-12-2023 10:38:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  L 
+[04-12-2023 10:38:24:024 pm IST] DEBUG  - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@564e859c 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:17:24 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:38:26:026 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:38:26 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:53:06:006 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:53:06 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:54:59:059 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileName                  =>  DSC_0027.JPG 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileSize                  =>  13704260 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileType                  =>  image/jpeg 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  F 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [AjaxServlet         ] [ramya] objectUrl                 =>  blob:http://localhost:1000/37c121c8-de3d-46ce-97d9-c3007465045d 
+[04-12-2023 10:55:24:024 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 10:55:24:024 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:55:24:024 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size,object_url) VALUES('ramya','DSC_0027.JPG','Images/profileImages/ramya',sysdate(),'ramya','image/jpeg','blob:http://localhost:1000/37c121c8-de3d-46ce-97d9-c3007465045d',13704260) 
+[04-12-2023 10:55:24:024 pm IST] ERROR  - [AjaxServlet         ] [ramya] Exception in Ajax Servlet  ** Error in *** java.sql.SQLException => Incorrect decimal value: 'blob:http://localhost:1000/37c121c8-de3d-46ce-97d9-c3007465045d' for column 'size' at row 1 
+java.sql.SQLException: Incorrect decimal value: 'blob:http://localhost:1000/37c121c8-de3d-46ce-97d9-c3007465045d' for column 'size' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.web.modal.UserImageDao.insertUser(UserImageDao.java:31)
+	at com.web.common.AjaxProcess.updateUserImage(AjaxProcess.java:227)
+	at com.web.controller.AjaxServlet.service(AjaxServlet.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:54:59 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 10:56:59:059 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileName                  =>  DSC_0027.JPG 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileSize                  =>  13704260 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] fileType                  =>  image/jpeg 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  F 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [AjaxServlet         ] [ramya] objectUrl                 =>  blob:http://localhost:1000/60d9fbd3-7c4a-487a-8b28-ec24ab5af1bd 
+[04-12-2023 10:57:17:017 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 10:57:17:017 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'ramya' and image_name ='DSC_0027.JPG' and image_path = 'Images/profileImages/ramya' and type ='image/jpeg' and size = 13704260 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [UserImageDao        ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size,object_url) VALUES('ramya','DSC_0027.JPG','Images/profileImages/ramya',sysdate(),'ramya','image/jpeg',13704260,'blob:http://localhost:1000/60d9fbd3-7c4a-487a-8b28-ec24ab5af1bd') 
+[04-12-2023 10:57:17:017 pm IST] DEBUG  - [UserImageDao        ] [ramya] records affected true 
+[04-12-2023 10:57:53:053 pm IST] DEBUG  - [BookingServlet      ] [ramya] mode                      => 
+[04-12-2023 10:57:53:053 pm IST] DEBUG  - [Bookingdao          ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[04-12-2023 11:07:02:002 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:07:10:010 pm IST] DEBUG  - [DriverServlet       ] [ramya] mode                      => 
+[04-12-2023 11:07:10:010 pm IST] DEBUG  - [Driverdao           ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[04-12-2023 11:07:13:013 pm IST] DEBUG  - [RouteServlet        ] [ramya] mode                      => 
+[04-12-2023 11:07:13:013 pm IST] DEBUG  - [Routedao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[04-12-2023 11:07:16:016 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:08:52:052 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:09:07:007 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:09:08:008 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:09:34:034 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  L 
+[04-12-2023 11:09:34:034 pm IST] DEBUG  - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@2d64e1f 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T22:56:59 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:09:35:035 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:09:43:043 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:11:14:014 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:13:29:029 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:13:37:037 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  L 
+[04-12-2023 11:13:37:037 pm IST] DEBUG  - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@7a2fc5e8 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:13:38:038 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:09:35 
+[04-12-2023 11:13:39:039 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:13:39:039 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:13:39:039 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:13:39 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:14:04:004 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:14:11:011 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:16:40:040 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  L 
+[04-12-2023 11:16:40:040 pm IST] DEBUG  - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@46a54024 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:14:04 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:16:43:043 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:16:45:045 pm IST] DEBUG  - [RouteServlet        ] [ramya] mode                      => 
+[04-12-2023 11:16:45:045 pm IST] DEBUG  - [Routedao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[04-12-2023 11:16:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  L 
+[04-12-2023 11:16:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] Session On Logout org.apache.catalina.session.StandardSessionFacade@7c0af142 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:16:43 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:16:53:053 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:16:53 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:17:41:041 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:17:41 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:17:56:056 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:17:56 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:18:17:017 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:19:08:008 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:19:08:008 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:18:17 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:19:09:009 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:19:09 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:19:44:044 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:19:44 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:20:52:052 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:20:52 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:21:42:042 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:22:10:010 pm IST] DEBUG  - [VehicleServlet      ] [ramya] mode                      => 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:21:42 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:24:35:035 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:24:35 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:25:10:010 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:25:10 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:25:31:031 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:25:31 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:25:51:051 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:25:51 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:26:44:044 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:26:44 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:27:57:057 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:27:57 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:29:15:015 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:29:15 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:32:18:018 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] mode                      =>  login 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] encodePassword            =>  3792f70c40c28b14377ede14884df8dcfb88db0be5ffe86246a72934ea5b8ba8 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtUser                   =>  ramya 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] txtPassword               =>  ramya 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] username                  => 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass1                     => 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] pass2                     => 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] user_id                   => 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='ramya' 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] Last Login 2023-12-04T23:32:18 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [LoginServlet        ] [ramya] DB UserId : ramya Username : Ramya SivaSankar Password : ramya 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [Logindao            ] [ramya] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='ramya' 
+[04-12-2023 11:32:32:032 pm IST] DEBUG  - [Generic             ] [ramya] Access Log Entered true 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] mode                      =>  userProfileSubmit 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hGender                   =>  F 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] hdob                      =>  1997-07-31 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] imageFile                 => 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] gender                    =>  T 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] dob                       =>  1997-07-31 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] status                    =>  Pending Approval 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [AjaxServlet         ] [ramya] objectUrl                 =>  http://localhost:1000/Travel/Images/profileImages/ramya/DSC_0027.JPG 
+[04-12-2023 11:33:45:045 pm IST] INFO   - [AjaxServlet         ] [ramya] Inside ajax 
+[04-12-2023 11:33:45:045 pm IST] INFO   - [AjaxServlet         ] [ramya] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[04-12-2023 11:33:45:045 pm IST] DEBUG  - [Generic             ] [ramya] ImagePath Of User ramya 
+[04-12-2023 11:33:45:045 pm IST] ERROR  - [AjaxServlet         ] [ramya] Exception in Ajax Servlet  ** Error in *** java.lang.NumberFormatException => For input string: "" 
+java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:678)
+	at java.base/java.lang.Integer.parseInt(Integer.java:786)
+	at com.web.common.AjaxProcess.updateUserImage(AjaxProcess.java:219)
+	at com.web.controller.AjaxServlet.service(AjaxServlet.java:56)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.web.filter.AuthFilter.doFilter(AuthFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)

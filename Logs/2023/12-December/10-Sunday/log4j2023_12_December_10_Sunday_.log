@@ -1,0 +1,288 @@
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:23:01 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[10-12-2023 12:12:45:045 PM IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [AuthFilter          ] [] Session Created C5E903D828BEEEA1A390D10BC7E48013 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-10T12:12:45 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[10-12-2023 01:39:09:009 PM IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[10-12-2023 01:39:50:050 PM IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[10-12-2023 01:39:50:050 PM IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[10-12-2023 01:40:06:006 PM IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Confirmed 
+[10-12-2023 01:40:06:006 PM IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  165 
+[10-12-2023 01:40:06:006 PM IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[10-12-2023 01:40:06:006 PM IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[10-12-2023 01:40:06:006 PM IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[10-12-2023 01:40:06:006 PM IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 165 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-10T13:39:09 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[10-12-2023 01:47:14:014 PM IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[10-12-2023 01:47:30:030 PM IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[10-12-2023 01:47:30:030 PM IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[10-12-2023 01:47:35:035 PM IST] DEBUG  - [LoginInfoServlet    ] [arul] mode                      => 
+[10-12-2023 01:49:23:023 PM IST] DEBUG  - [LoginInfoServlet    ] [arul] mode                      => 
+[10-12-2023 01:52:03:003 PM IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[10-12-2023 01:52:03:003 PM IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[10-12-2023 01:52:10:010 PM IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[10-12-2023 01:52:10:010 PM IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[10-12-2023 01:52:13:013 PM IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[10-12-2023 01:52:13:013 PM IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[10-12-2023 01:52:19:019 PM IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[10-12-2023 01:52:40:040 PM IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[10-12-2023 01:52:40:040 PM IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@3b6e2e33 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-03T16:40:17 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 01:52:43:043 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] mode                      =>  userProfileSubmit 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged             =>  true 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hGender                   =>  F 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hdob                      =>  2020-03-19 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileName                  =>  IMG_20210203_080746_optimized.jpg 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileSize                  =>  458842 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileType                  =>  image/jpeg 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] gender                    =>  F 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] dob                       =>  2020-03-19 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] status                    =>  Pending Approval 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] objectUrl                 =>  blob:http://localhost:1000/95f6ce27-7b14-4827-ab8f-163a73c14710 
+[10-12-2023 01:53:02:002 PM IST] INFO   - [AjaxServlet         ] [jiyara] Inside ajax 
+[10-12-2023 01:53:02:002 PM IST] INFO   - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\ROOT\Images 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged >true 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] ImagePath Of User jiyara 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] UserImage [user_id=jiyara, image_name=IMG_20210203_080746_optimized.jpg, image_path=Images/profileImages/jiyara, uploaded_by=jiyara, type=image/jpeg, objectUrl=blob:http://localhost:1000/95f6ce27-7b14-4827-ab8f-163a73c14710, size=458842, uploaded_time=null] 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'jiyara' and image_name ='IMG_20210203_080746_optimized.jpg' and image_path = 'Images/profileImages/jiyara' and type ='image/jpeg' and size = 458842 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'jiyara' and image_name ='IMG_20210203_080746_optimized.jpg' and image_path = 'Images/profileImages/jiyara' and type ='image/jpeg' and size = 458842 
+[10-12-2023 01:53:02:002 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size,object_url) VALUES('jiyara','IMG_20210203_080746_optimized.jpg','Images/profileImages/jiyara',sysdate(),'jiyara','image/jpeg',458842,'blob:http://localhost:1000/95f6ce27-7b14-4827-ab8f-163a73c14710') 
+[10-12-2023 01:53:03:003 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation Success 
+[10-12-2023 01:53:03:003 PM IST] INFO   - [UserImageDao        ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[10-12-2023 01:53:03:003 PM IST] ERROR  -   
+[10-12-2023 01:53:03:003 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation Success
+ Info Updation  Sucess .. 
+[10-12-2023 01:53:12:012 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  L 
+[10-12-2023 01:53:12:012 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Session On Logout org.apache.catalina.session.StandardSessionFacade@547f4dd4 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-10T13:52:43 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 01:53:14:014 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-10T13:53:14 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 01:58:46:046 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] mode                      =>  userProfileSubmit 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged             =>  true 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hGender                   =>  F 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hdob                      =>  2020-03-19 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileName                  =>  IMG_20210203_080746_optimized.jpg 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileSize                  =>  458842 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileType                  =>  image/jpeg 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] gender                    =>  F 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] dob                       =>  2020-03-19 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] status                    =>  Pending Approval 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] objectUrl                 =>  blob:http://localhost:1000/d4a09e22-d20b-450d-bae8-8f0e148d5c12 
+[10-12-2023 01:59:05:005 PM IST] INFO   - [AjaxServlet         ] [jiyara] Inside ajax 
+[10-12-2023 01:59:05:005 PM IST] INFO   - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\ROOT\Images 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged >true 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [Logindao            ] [jiyara] ImagePath Of User jiyara 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [Logindao            ] [jiyara] UserImage [user_id=jiyara, image_name=IMG_20210203_080746_optimized.jpg, image_path=Images/profileImages/jiyara, uploaded_by=jiyara, type=image/jpeg, objectUrl=blob:http://localhost:1000/d4a09e22-d20b-450d-bae8-8f0e148d5c12, size=458842, uploaded_time=null] 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'jiyara' and image_name ='IMG_20210203_080746_optimized.jpg' and image_path = 'Images/profileImages/jiyara' and type ='image/jpeg' and size = 458842 
+[10-12-2023 01:59:05:005 PM IST] INFO   - [UserImageDao        ] [jiyara] Image With Name IMG_20210203_080746_optimized.jpg already Exists 
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+[10-12-2023 01:59:05:005 PM IST] INFO   - [UserImageDao        ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[10-12-2023 01:59:05:005 PM IST] ERROR  -   
+[10-12-2023 01:59:05:005 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+ Info Updation  Sucess .. 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [AuthFilter          ] [] Session Created 608024E90157E5F4B2D9CA1154DB3DA0 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-10T13:58:46 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 02:38:40:040 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 02:38:51:051 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  L 
+[10-12-2023 02:38:51:051 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Session On Logout org.apache.catalina.session.StandardSessionFacade@3cfc8fb 
+[10-12-2023 02:38:52:052 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 02:38:52:052 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 02:38:52:052 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 02:38:52:052 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-10T14:38:40 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 02:38:53:053 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 02:39:15:015 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] mode                      =>  userProfileSubmit 
+[10-12-2023 02:39:15:015 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged             =>  true 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hGender                   =>  F 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hdob                      =>  2020-03-19 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileName                  =>  IMG_20210203_080746_optimized.jpg 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileSize                  =>  458842 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileType                  =>  image/jpeg 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] gender                    =>  F 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] dob                       =>  2020-03-19 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] status                    =>  Pending Approval 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] objectUrl                 =>  blob:http://localhost:1000/9814df1a-8662-42e2-8f01-a97ef53ece41 
+[10-12-2023 02:39:16:016 PM IST] INFO   - [AjaxServlet         ] [jiyara] Inside ajax 
+[10-12-2023 02:39:16:016 PM IST] INFO   - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\ROOT\Images 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged >true 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] ImagePath Of User jiyara 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] UserImage [user_id=jiyara, image_name=IMG_20210203_080746_optimized.jpg, image_path=Images/profileImages/jiyara, uploaded_by=jiyara, type=image/jpeg, objectUrl=blob:http://localhost:1000/9814df1a-8662-42e2-8f01-a97ef53ece41, size=458842, uploaded_time=null] 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'jiyara' and image_name ='IMG_20210203_080746_optimized.jpg' and image_path = 'Images/profileImages/jiyara' and type ='image/jpeg' and size = 458842 
+[10-12-2023 02:39:16:016 PM IST] INFO   - [UserImageDao        ] [jiyara] Image With Name IMG_20210203_080746_optimized.jpg already Exists 
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+[10-12-2023 02:39:16:016 PM IST] INFO   - [UserImageDao        ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[10-12-2023 02:39:16:016 PM IST] ERROR  -   
+[10-12-2023 02:39:16:016 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+ Info Updation  Sucess .. 
+[10-12-2023 02:41:21:021 PM IST] DEBUG  - [AuthFilter          ] [] Session Created B0B1776C90C66E9C094C46A6C5F6EE10 
+[10-12-2023 02:41:21:021 PM IST] DEBUG  - [LoginServlet        ] [] mode                      =>  L 
+[10-12-2023 02:41:21:021 PM IST] DEBUG  - [LoginServlet        ] [] Session On Logout org.apache.catalina.session.StandardSessionFacade@70e2650a 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-10T14:38:53 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 02:41:24:024 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] mode                      =>  userProfileSubmit 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged             =>  true 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hGender                   =>  F 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hdob                      =>  2020-03-19 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileName                  =>  IMG_20210203_080746_optimized.jpg 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileSize                  =>  458842 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileType                  =>  image/jpeg 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] gender                    =>  F 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] dob                       =>  2020-03-19 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] status                    =>  Pending Approval 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] objectUrl                 =>  blob:http://localhost:1000/e7f44dd8-6dbd-4999-a370-6f1e21abdec6 
+[10-12-2023 02:41:34:034 PM IST] INFO   - [AjaxServlet         ] [jiyara] Inside ajax 
+[10-12-2023 02:41:34:034 PM IST] INFO   - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\ROOT\Images 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged >true 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] ImagePath Of User jiyara 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] UserImage [user_id=jiyara, image_name=IMG_20210203_080746_optimized.jpg, image_path=Images/profileImages/jiyara, uploaded_by=jiyara, type=image/jpeg, objectUrl=blob:http://localhost:1000/e7f44dd8-6dbd-4999-a370-6f1e21abdec6, size=458842, uploaded_time=null] 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'jiyara' and image_name ='IMG_20210203_080746_optimized.jpg' and image_path = 'Images/profileImages/jiyara' and type ='image/jpeg' and size = 458842 
+[10-12-2023 02:41:34:034 PM IST] INFO   - [UserImageDao        ] [jiyara] Image With Name IMG_20210203_080746_optimized.jpg already Exists 
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+[10-12-2023 02:41:34:034 PM IST] INFO   - [UserImageDao        ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[10-12-2023 02:41:34:034 PM IST] ERROR  -   
+[10-12-2023 02:41:34:034 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+ Info Updation  Sucess .. 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] mode                      =>  login 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] encodePassword            =>  ea6d7a3524c9ff6ca21e22b7be354f54f5297a7b948ccb75ee45a465b897b650 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtUser                   =>  jiyara 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] txtPassword               =>  jiyara 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] username                  => 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass1                     => 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] pass2                     => 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] user_id                   => 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='jiyara' 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] Last Login 2023-12-10T14:41:24 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [LoginServlet        ] [jiyara] DB UserId : jiyara Username : Jiyara Password : jiyara 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [Logindao            ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='jiyara' 
+[10-12-2023 02:46:30:030 PM IST] DEBUG  - [Logindao            ] [jiyara] Access Log Entered true 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] mode                      =>  userProfileSubmit 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged             =>  true 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hGender                   =>  F 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] hdob                      =>  2020-03-19 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileName                  =>  IMG_20210203_080746_optimized.jpg 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileSize                  =>  458842 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] fileType                  =>  image/jpeg 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] gender                    =>  F 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] dob                       =>  2020-03-19 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] status                    =>  Pending Approval 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] objectUrl                 =>  blob:http://localhost:1000/2dbba040-47d5-45ca-b782-60d82dc1741a 
+[10-12-2023 02:46:37:037 PM IST] INFO   - [AjaxServlet         ] [jiyara] Inside ajax 
+[10-12-2023 02:46:37:037 PM IST] INFO   - [AjaxServlet         ] [jiyara] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\ROOT\Images 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] isFileChanged >true 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] ImagePath Of User jiyara 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxProcess         ] [jiyara] UserImage [user_id=jiyara, image_name=IMG_20210203_080746_optimized.jpg, image_path=Images/profileImages/jiyara, uploaded_by=jiyara, type=image/jpeg, objectUrl=blob:http://localhost:1000/2dbba040-47d5-45ca-b782-60d82dc1741a, size=458842, uploaded_time=null] 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [UserImageDao        ] [jiyara] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'jiyara' and image_name ='IMG_20210203_080746_optimized.jpg' and image_path = 'Images/profileImages/jiyara' and type ='image/jpeg' and size = 458842 
+[10-12-2023 02:46:37:037 PM IST] INFO   - [UserImageDao        ] [jiyara] Image With Name IMG_20210203_080746_optimized.jpg already Exists 
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+[10-12-2023 02:46:37:037 PM IST] INFO   - [UserImageDao        ] [jiyara] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=jiyara, altered_user=Jiyara, last_login=null, dob=2020-03-19, gender=F, status=null] 
+[10-12-2023 02:46:37:037 PM IST] ERROR  -   
+[10-12-2023 02:46:37:037 PM IST] DEBUG  - [AjaxServlet         ] [jiyara] Image Updation  Image with name IMG_20210203_080746_optimized.jpg already exists 
+ Info Updation  Sucess .. 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] DataInputStream > java.io.DataInputStream@64e11504 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] uploadPath /Git/My Repository/Completed/Travel_Current_Project/Travel/Travel/Images/profileImages/jiyara/ 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] byteRead > 1575 
+[10-12-2023 02:46:38:038 PM IST] ERROR  -   
+[10-12-2023 02:46:38:038 PM IST] ERROR  -   
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] saveFile2 > IMG_20210203_080746_optimized.jpg" 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] saveFile3 > IMG_20210203_080746_optimized.jpg 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] boundary > ----WebKitFormBoundaryqj0SDCBf7ycRAqgf 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] Position of String >362 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara]  endPos [459204] startPos[362] boundaryLocation[459204] 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] File > \Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images\profileImages\jiyara\IMG_20210203_080746_optimized.jpg 
+[10-12-2023 02:46:38:038 PM IST] DEBUG  - [Logindao            ] [jiyara] FileOutputStream > java.io.FileOutputStream@4ac2235a 

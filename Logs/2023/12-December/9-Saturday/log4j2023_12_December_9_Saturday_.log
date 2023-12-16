@@ -1,0 +1,708 @@
+][09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:06:02 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 09:12:05:005 pm IST] DEBUG  - [Generic             ] [arul] Access Log Entered true 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  true 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  M 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileName                  =>  IMG_20221223_205740.jpg 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileSize                  =>  3838816 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileType                  =>  image/jpeg 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  M 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  blob:http://localhost:1000/096a8ed0-d379-4ff5-9d99-b72dac812372 
+[09-12-2023 09:14:30:030 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 09:14:30:030 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 09:14:30:030 pm IST] INFO   - [Generic             ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=M, status=null] 
+[09-12-2023 09:14:30:030 pm IST] ERROR  -   
+[09-12-2023 09:14:30:030 pm IST] DEBUG  - [AjaxServlet         ] [arul] Info Updation true 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:12:05 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 09:26:42:042 pm IST] DEBUG  - [Generic             ] [arul] Access Log Entered true 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:26:42 
+[09-12-2023 09:32:29:029 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 09:32:30:030 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 09:32:30:030 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  false 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  M 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] imageFile                 => 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  F 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  http://localhost:1000/Travel/Images/user/noUser.png 
+[09-12-2023 09:32:46:046 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 09:32:46:046 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 09:32:46:046 pm IST] INFO   - [Class               ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=F, status=null] 
+[09-12-2023 09:32:46:046 pm IST] ERROR  -   
+[09-12-2023 09:32:46:046 pm IST] DEBUG  - [AjaxServlet         ] [arul] Info Updation true 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:32:30 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 09:39:48:048 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  true 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  F 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileName                  =>  IMG_20221223_205740.jpg 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileSize                  =>  3838816 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileType                  =>  image/jpeg 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  F 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  blob:http://localhost:1000/766d86e3-181b-4926-9c76-3d2634215eda 
+[09-12-2023 09:40:22:022 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 09:40:22:022 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged >false 
+[09-12-2023 09:40:22:022 pm IST] INFO   - [AjaxProcess         ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=F, status=null] 
+[09-12-2023 09:40:22:022 pm IST] ERROR  -   
+[09-12-2023 09:40:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] Info Updation true 
+[09-12-2023 09:42:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 09:42:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@78e2c96 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:39:48 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 09:42:41:041 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:42:41 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 09:44:01:001 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T21:44:01 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:03:05:005 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:03:05 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:05:23:023 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:05:23 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:07:19:019 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  true 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  F 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileName                  =>  IMG_20221223_205740.jpg 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileSize                  =>  3838816 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileType                  =>  image/jpeg 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  F 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  blob:http://localhost:1000/e031f573-25e9-49e9-971c-56c44e220624 
+[09-12-2023 10:07:29:029 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:07:29:029 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged >true 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxProcess         ] [arul] ImagePath Of User arul 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxProcess         ] [arul] UserImage [user_id=arul, image_name=IMG_20221223_205740.jpg, image_path=Images/profileImages/arul, uploaded_by=arul, type=image/jpeg, objectUrl=blob:http://localhost:1000/e031f573-25e9-49e9-971c-56c44e220624, size=3838816, uploaded_time=null] 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'arul' and image_name ='IMG_20221223_205740.jpg' and image_path = 'Images/profileImages/arul' and type ='image/jpeg' and size = 3838816 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'arul' and image_name ='IMG_20221223_205740.jpg' and image_path = 'Images/profileImages/arul' and type ='image/jpeg' and size = 3838816 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size,object_url) VALUES('arul','IMG_20221223_205740.jpg','Images/profileImages/arul',sysdate(),'arul','image/jpeg',3838816,'blob:http://localhost:1000/e031f573-25e9-49e9-971c-56c44e220624') 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [UserImageDao        ] [arul] records affected true 
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] Image Updation Success 
+[09-12-2023 10:07:29:029 pm IST] INFO   - [UserImageDao        ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=F, status=null] 
+[09-12-2023 10:07:29:029 pm IST] ERROR  -   
+[09-12-2023 10:07:29:029 pm IST] DEBUG  - [AjaxServlet         ] [arul] Image Updation Success
+ Info Updation true 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  true 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  F 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileName                  =>  IMG_20221223_205740.jpg 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileSize                  =>  3838816 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileType                  =>  image/jpeg 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  M 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  blob:http://localhost:1000/e031f573-25e9-49e9-971c-56c44e220624 
+[09-12-2023 10:08:28:028 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:08:28:028 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged >true 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [Logindao            ] [arul] ImagePath Of User arul 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [Logindao            ] [arul] UserImage [user_id=arul, image_name=IMG_20221223_205740.jpg, image_path=Images/profileImages/arul, uploaded_by=arul, type=image/jpeg, objectUrl=blob:http://localhost:1000/e031f573-25e9-49e9-971c-56c44e220624, size=3838816, uploaded_time=null] 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'arul' and image_name ='IMG_20221223_205740.jpg' and image_path = 'Images/profileImages/arul' and type ='image/jpeg' and size = 3838816 
+[09-12-2023 10:08:28:028 pm IST] INFO   - [UserImageDao        ] [arul] Image With Name IMG_20221223_205740.jpg already Exists 
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] Image Updation  Image with name IMG_20221223_205740.jpg already exists 
+[09-12-2023 10:08:28:028 pm IST] INFO   - [UserImageDao        ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=M, status=null] 
+[09-12-2023 10:08:28:028 pm IST] ERROR  -   
+[09-12-2023 10:08:28:028 pm IST] DEBUG  - [AjaxServlet         ] [arul] Image Updation  Image with name IMG_20221223_205740.jpg already exists 
+ Info Updation true 
+[09-12-2023 10:09:52:052 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 10:09:52:052 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@62e494d2 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:07:19 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:09:54:054 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:09:54 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:11:39:039 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:11:39 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:12:05:005 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:12:05 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:12:34:034 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  false 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  M 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] imageFile                 => 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  M 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2023-12-09 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  http://localhost:1000/Travel/Images/profileImages/arul/IMG_20221223_205740.jpg 
+[09-12-2023 10:15:32:032 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:15:32:032 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged >false 
+[09-12-2023 10:15:32:032 pm IST] INFO   - [AjaxProcess         ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2023-12-09, gender=M, status=null] 
+[09-12-2023 10:15:32:032 pm IST] ERROR  -   
+[09-12-2023 10:15:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] Info Updation  Sucess .. 
+[09-12-2023 10:16:52:052 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 10:16:52:052 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@4cb602fb 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:12:34 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:16:53:053 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  false 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  M 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2023-12-09 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] imageFile                 => 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  M 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  http://localhost:1000/Travel/Images/profileImages/arul/IMG_20221223_205740.jpg 
+[09-12-2023 10:17:12:012 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:17:12:012 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged >false 
+[09-12-2023 10:17:12:012 pm IST] INFO   - [Logindao            ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=M, status=null] 
+[09-12-2023 10:17:12:012 pm IST] ERROR  -   
+[09-12-2023 10:17:12:012 pm IST] DEBUG  - [AjaxServlet         ] [arul] Info Updation  Sucess .. 
+[09-12-2023 10:17:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 10:17:19:019 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@3290def7 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:16:53 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:17:20:020 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:17:22:022 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 10:17:22:022 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@7ac8dffb 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:17:20 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:17:24:024 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  userProfileSubmit 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged             =>  true 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] hGender                   =>  M 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] hdob                      =>  2000-12-01 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileName                  =>  IMG_20230403_091844.jpg 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileSize                  =>  6221731 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] fileType                  =>  image/jpeg 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] gender                    =>  M 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] dob                       =>  2000-12-01 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Approved 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] objectUrl                 =>  blob:http://localhost:1000/749d2d9b-39f5-4856-bc36-53662597fef4 
+[09-12-2023 10:17:54:054 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:17:54:054 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] isFileChanged >true 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [Logindao            ] [arul] ImagePath Of User arul 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [Logindao            ] [arul] UserImage [user_id=arul, image_name=IMG_20230403_091844.jpg, image_path=Images/profileImages/arul, uploaded_by=arul, type=image/jpeg, objectUrl=blob:http://localhost:1000/749d2d9b-39f5-4856-bc36-53662597fef4, size=6221731, uploaded_time=null] 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'arul' and image_name ='IMG_20230403_091844.jpg' and image_path = 'Images/profileImages/arul' and type ='image/jpeg' and size = 6221731 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:  select 'x' from USER_IMAGE where user_id = 'arul' and image_name ='IMG_20230403_091844.jpg' and image_path = 'Images/profileImages/arul' and type ='image/jpeg' and size = 6221731 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [UserImageDao        ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO USER_IMAGE(user_id, image_name, image_path, uploaded_time, uploaded_by,type,size,object_url) VALUES('arul','IMG_20230403_091844.jpg','Images/profileImages/arul',sysdate(),'arul','image/jpeg',6221731,'blob:http://localhost:1000/749d2d9b-39f5-4856-bc36-53662597fef4') 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [UserImageDao        ] [arul] records affected true 
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] Image Updation Success 
+[09-12-2023 10:17:54:054 pm IST] INFO   - [UserImageDao        ] [arul] Login_Info [username=null, password1=null, password2=null, role=null, create_time=null, user_id=arul, altered_user=Arulmurugan, last_login=null, dob=2000-12-01, gender=M, status=null] 
+[09-12-2023 10:17:54:054 pm IST] ERROR  -   
+[09-12-2023 10:17:54:054 pm IST] DEBUG  - [AjaxServlet         ] [arul] Image Updation Success
+ Info Updation  Sucess .. 
+[09-12-2023 10:18:03:003 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[09-12-2023 10:18:03:003 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:18:14:014 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Confirmed 
+[09-12-2023 10:18:14:014 pm IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  290 
+[09-12-2023 10:18:14:014 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:18:14:014 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:18:14:014 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[09-12-2023 10:18:14:014 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 290 
+[09-12-2023 10:18:16:016 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Confirmed 
+[09-12-2023 10:18:16:016 pm IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  286 
+[09-12-2023 10:18:16:016 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:18:16:016 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:18:16:016 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[09-12-2023 10:18:16:016 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 286 
+[09-12-2023 10:18:52:052 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  RAC 
+[09-12-2023 10:18:52:052 pm IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  251 
+[09-12-2023 10:18:52:052 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:18:52:052 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:18:52:052 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[09-12-2023 10:18:52:052 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'RAC'  where booking_no = 251 
+[09-12-2023 10:18:57:057 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Confirmed 
+[09-12-2023 10:18:57:057 pm IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  251 
+[09-12-2023 10:18:57:057 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:18:57:057 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:18:57:057 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[09-12-2023 10:18:57:057 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 251 
+[09-12-2023 10:19:01:001 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:19:01:001 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   => 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             => 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       => 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    => 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     => 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     => 
+[09-12-2023 10:19:05:005 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   =>  Chennai 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             => 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       => 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    => 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     => 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     => 
+[09-12-2023 10:19:07:007 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:19:24:024 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:19:24:024 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   => 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             => 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       => 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    => 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     => 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     => 
+[09-12-2023 10:19:26:026 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   =>  Chennai 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             => 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       => 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    => 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     => 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     => 
+[09-12-2023 10:19:27:027 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:19:37:037 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      => 
+[09-12-2023 10:19:37:037 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:19:38:038 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  N 
+[09-12-2023 10:19:38:038 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:20:02:002 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      => 
+[09-12-2023 10:20:02:002 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:20:03:003 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  N 
+[09-12-2023 10:20:03:003 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  I 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] driver_name               =>  Kumar 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] age                       =>  32 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] gender                    =>  Male 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] phone                     =>  8754191725 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] city                      =>  Madurai 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [DriverServlet       ] [arul] vehicle_no                =>  3212 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [Driverdao           ] [arul] INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,?,?,?,?,?,?) 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,'Kumar',32,'Male','Madurai','8754191725','3212') 
+[09-12-2023 10:20:18:018 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:20:20:020 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  N 
+[09-12-2023 10:20:20:020 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  I 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] driver_name               =>  Gnanam 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] age                       =>  23 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] gender                    =>  Male 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] phone                     =>  6381566763 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] city                      =>  Maduranthakam 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [DriverServlet       ] [arul] vehicle_no                =>  5367 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [Driverdao           ] [arul] INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,?,?,?,?,?,?) 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,'Gnanam',23,'Male','Maduranthakam','6381566763','5367') 
+[09-12-2023 10:20:40:040 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:20:44:044 pm IST] DEBUG  - [RouteServlet        ] [arul] mode                      => 
+[09-12-2023 10:20:44:044 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[09-12-2023 10:20:55:055 pm IST] DEBUG  - [CustomerServlet     ] [arul] mode                      => 
+[09-12-2023 10:20:55:055 pm IST] DEBUG  - [Customerdao         ] [arul] select * from CUSTOMER 
+[09-12-2023 10:20:55:055 pm IST] DEBUG  - [Customerdao         ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[09-12-2023 10:20:57:057 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 10:20:57:057 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@196ef6e0 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:17:24 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:20:59:059 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:21:01:001 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[09-12-2023 10:21:01:001 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:21:03:003 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:21:03:003 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   => 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             => 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       => 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    => 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     => 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     => 
+[09-12-2023 10:21:04:004 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  dummy 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   =>  Chennai 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             => 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       => 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    => 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     => 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     => 
+[09-12-2023 10:21:05:005 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      =>  I 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] pickup_from               =>  Coimbatore 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] drop_at                   =>  Chennai 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] vehicle_no                =>  3212 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] driver_id                 =>  19 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] customer_name             =>  Arulmurugan C 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] age                       =>  23 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] gender                    =>  Male 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] email                     =>  arulmurugansk7@gmail.com 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] phone                     =>  8939523379 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [BookingServlet      ] [arul] fare                      =>  2000.0 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [Customerdao         ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO CUSTOMER(customer_id, customer_name, start, end, age, gender, email, phone) VALUES(null,'Arulmurugan C','Coimbatore','Chennai','23','M','arulmurugansk7@gmail.com','8939523379') 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [Customerdao         ] [arul] Generated Customer ::315 
+[09-12-2023 10:21:18:018 pm IST] INFO   - [BookingServlet      ] [arul] Customer Added 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO BOOKING(booking_no, pickup_from, drop_at, customer_id, vehicle_no, driver_id, fare, booked_by, status, booking_time) VALUES(null,'Coimbatore','Chennai',315,'3212','19',2000.0,'Arulmurugan','WIP',sysdate()) 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [Bookingdao          ] [arul] Booking No ::291 
+[09-12-2023 10:21:18:018 pm IST] INFO   - [BookingServlet      ] [arul] Booking Added for No[291] custId [315] fare[2000.0] 
+[09-12-2023 10:21:18:018 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:21:28:028 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[09-12-2023 10:21:28:028 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:21:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Confirmed 
+[09-12-2023 10:21:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  291 
+[09-12-2023 10:21:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:21:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:21:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[09-12-2023 10:21:38:038 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 291 
+[09-12-2023 10:21:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      => 
+[09-12-2023 10:21:46:046 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:21:50:050 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:21:52:052 pm IST] DEBUG  - [BookingServlet      ] [arul] mode                      => 
+[09-12-2023 10:21:52:052 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT A.*,B.* FROM BOOKING A,CUSTOMER B WHERE A.CUSTOMER_ID=B.CUSTOMER_ID 
+[09-12-2023 10:22:50:050 pm IST] DEBUG  - [AjaxServlet         ] [arul] status                    =>  Confirmed 
+[09-12-2023 10:22:50:050 pm IST] DEBUG  - [AjaxServlet         ] [arul] booking_no                =>  96 
+[09-12-2023 10:22:50:050 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:22:50:050 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:22:50:050 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [null] 
+[09-12-2023 10:22:50:050 pm IST] DEBUG  - [Bookingdao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement:   update booking set status = 'Confirmed'  where booking_no = 96 
+[09-12-2023 10:23:00:000 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  L 
+[09-12-2023 10:23:00:000 pm IST] DEBUG  - [LoginServlet        ] [arul] Session On Logout org.apache.catalina.session.StandardSessionFacade@61bc3cc4 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] mode                      =>  login 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] encodePassword            =>  2703d74ffd1f0f06a2a58e614f0baeb81681eb0af21fd416dca47a68427c0b67 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] txtUser                   =>  arul 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] txtPassword               =>  arul 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] username                  => 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] pass1                     => 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] pass2                     => 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] user_id                   => 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT li.*,concat(ui.image_path,'/',ui.image_name) image_path FROM login_info li LEFT OUTER JOIN user_image ui ON li.user_id = ui.user_id WHERE li.USER_ID='arul' 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] Last Login 2023-12-09T22:20:59 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [LoginServlet        ] [arul] DB UserId : arul Username : Arulmurugan Password : arul 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [Logindao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: UPDATE login_info SET LAST_LOGIN=sysdate() WHERE USER_ID='arul' 
+[09-12-2023 10:23:01:001 pm IST] DEBUG  - [Logindao            ] [arul] Access Log Entered true 
+[09-12-2023 10:23:04:004 pm IST] DEBUG  - [RouteServlet        ] [arul] mode                      => 
+[09-12-2023 10:23:04:004 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[09-12-2023 10:23:10:010 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:26:03:003 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:27:23:023 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:27:54:054 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:29:14:014 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:29:27:027 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:29:46:046 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:30:35:035 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:31:21:021 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:31:33:033 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  3241 
+[09-12-2023 10:31:33:033 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:31:33:033 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:31:33:033 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [3241] Vehicle Model [null] 
+[09-12-2023 10:31:33:033 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:36:12:012 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:36:17:017 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2341 
+[09-12-2023 10:36:17:017 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:36:17:017 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:36:17:017 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2341] Vehicle Model [null] 
+[09-12-2023 10:36:19:019 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2344 
+[09-12-2023 10:36:19:019 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:36:19:019 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:36:19:019 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2344] Vehicle Model [null] 
+[09-12-2023 10:37:09:009 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:37:13:013 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicleStatus 
+[09-12-2023 10:37:13:013 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2314 
+[09-12-2023 10:37:13:013 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:37:13:013 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:37:13:013 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2314] Vehicle Model [null] 
+[09-12-2023 10:37:13:013 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:37:13:013 pm IST] DEBUG  - [Vehicledao          ] [arul] vehicle_no => 2314 
+[09-12-2023 10:37:15:015 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicleStatus 
+[09-12-2023 10:37:15:015 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2315 
+[09-12-2023 10:37:15:015 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:37:15:015 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:37:15:015 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2315] Vehicle Model [null] 
+[09-12-2023 10:37:15:015 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:37:15:015 pm IST] DEBUG  - [Vehicledao          ] [arul] vehicle_no => 2315 
+[09-12-2023 10:37:17:017 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicleStatus 
+[09-12-2023 10:37:17:017 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:37:17:017 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:37:17:017 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:37:17:017 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2311] Vehicle Model [null] 
+[09-12-2023 10:37:17:017 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:42:03:003 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:42:26:026 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicleStatus 
+[09-12-2023 10:42:26:026 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:42:26:026 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:42:26:026 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:42:26:026 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2311] Vehicle Model [null] 
+[09-12-2023 10:42:26:026 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:50:21:021 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:50:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicleStatus 
+[09-12-2023 10:50:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2342 
+[09-12-2023 10:50:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:50:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:50:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2342] Vehicle Model [null] 
+[09-12-2023 10:50:38:038 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:52:58:058 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      => 
+[09-12-2023 10:53:06:006 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicleStatus 
+[09-12-2023 10:53:06:006 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:53:06:006 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:53:06:006 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:53:06:006 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [2311] Vehicle Model [null] 
+[09-12-2023 10:53:06:006 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside getInfo for Vehicle No call from ajax 
+[09-12-2023 10:53:10:010 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_model             =>  BMW 
+[09-12-2023 10:53:10:010 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicles 
+[09-12-2023 10:53:10:010 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:53:10:010 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:53:10:010 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [BMW] 
+[09-12-2023 10:53:10:010 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[09-12-2023 10:53:10:010 pm IST] INFO   - [AjaxServlet         ] [arul] data found.. 
+[09-12-2023 10:53:10:010 pm IST] INFO   - [AjaxServlet         ] [arul] ["1 Series","3 Series","3 Series GT","5 Series","5 Series GT","6 Series","6 Series Gran Coupe","6 Series GT","7 Series","i8","M2","M3","M4","M5","M6","X1","X3","X4","X5","X6","X7","Z4"] 
+[09-12-2023 10:54:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_model             =>  Bugatti 
+[09-12-2023 10:54:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicles 
+[09-12-2023 10:54:22:022 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:54:22:022 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:54:22:022 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [Bugatti] 
+[09-12-2023 10:54:22:022 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[09-12-2023 10:54:22:022 pm IST] INFO   - [AjaxServlet         ] [arul] data found.. 
+[09-12-2023 10:54:22:022 pm IST] INFO   - [AjaxServlet         ] [arul] ["Veyron"] 
+[09-12-2023 10:54:27:027 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_model             =>  Eicher Polaris 
+[09-12-2023 10:54:27:027 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicles 
+[09-12-2023 10:54:27:027 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:54:27:027 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:54:27:027 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [Eicher Polaris] 
+[09-12-2023 10:54:27:027 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[09-12-2023 10:54:27:027 pm IST] INFO   - [AjaxServlet         ] [arul] data found.. 
+[09-12-2023 10:54:27:027 pm IST] INFO   - [AjaxServlet         ] [arul] ["Multix"] 
+[09-12-2023 10:54:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_model             =>  Premier 
+[09-12-2023 10:54:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicles 
+[09-12-2023 10:54:32:032 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:54:32:032 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:54:32:032 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [Premier] 
+[09-12-2023 10:54:32:032 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[09-12-2023 10:54:32:032 pm IST] INFO   - [AjaxServlet         ] [arul] data found.. 
+[09-12-2023 10:54:32:032 pm IST] INFO   - [AjaxServlet         ] [arul] ["Padmini","Rio"] 
+[09-12-2023 10:54:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] vehicle_model             =>  Renault 
+[09-12-2023 10:54:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] mode                      =>  getVehicles 
+[09-12-2023 10:54:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] Inside ajax 
+[09-12-2023 10:54:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] Context Real Path  : M:\Git\My Repository\Completed\Travel_Current_Project\Travel\Travel\Images 
+[09-12-2023 10:54:38:038 pm IST] DEBUG  - [AjaxServlet         ] [arul] VehicleNo [null] Vehicle Model [Renault] 
+[09-12-2023 10:54:38:038 pm IST] DEBUG  - [Vehicledao          ] [arul] Inside VehicleType for Vehicle Model call from ajax 
+[09-12-2023 10:54:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] data found.. 
+[09-12-2023 10:54:38:038 pm IST] INFO   - [AjaxServlet         ] [arul] ["Captur","Duster","Fluence","Koleos","Kwid","Lodgy","Pulse","Scala","Triber"] 
+[09-12-2023 10:54:46:046 pm IST] DEBUG  - [VehicleServlet      ] [arul] mode                      =>  I 
+[09-12-2023 10:54:46:046 pm IST] DEBUG  - [VehicleServlet      ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:54:46:046 pm IST] DEBUG  - [VehicleServlet      ] [arul] vehicle_model             =>  Renault 
+[09-12-2023 10:54:46:046 pm IST] DEBUG  - [VehicleServlet      ] [arul] vehicle_type              =>  Kwid 
+[09-12-2023 10:54:46:046 pm IST] DEBUG  - [VehicleServlet      ] [arul] vehicle_color             =>  Red Violet 
+[09-12-2023 10:54:46:046 pm IST] DEBUG  - [Vehicledao          ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO vehicle(vehicle_no, brand, model, color) VALUES('2311','Renault','Kwid','Red Violet'); 
+[09-12-2023 10:54:52:052 pm IST] DEBUG  - [CustomerServlet     ] [arul] mode                      => 
+[09-12-2023 10:54:52:052 pm IST] DEBUG  - [Customerdao         ] [arul] select * from CUSTOMER 
+[09-12-2023 10:54:52:052 pm IST] DEBUG  - [Customerdao         ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from CUSTOMER 
+[09-12-2023 10:54:57:057 pm IST] DEBUG  - [RouteServlet        ] [arul] mode                      => 
+[09-12-2023 10:54:57:057 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [RouteServlet        ] [arul] mode                      =>  I 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [RouteServlet        ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [RouteServlet        ] [arul] start                     =>  Coimbatore 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [RouteServlet        ] [arul] end                       =>  Chennai 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [RouteServlet        ] [arul] fare                      =>  900 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Coimbatore' AND END ='Chennai'; 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [Routedao            ] [arul] Route for vehicle3212 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Coimbatore' AND END ='Chennai'; 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [Routedao            ] [arul] Route for vehicle3212 
+[09-12-2023 10:55:12:012 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [RouteServlet        ] [arul] mode                      =>  I 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [RouteServlet        ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [RouteServlet        ] [arul] start                     =>  Erode 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [RouteServlet        ] [arul] end                       =>  Madurai 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [RouteServlet        ] [arul] fare                      =>  1200 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: SELECT vehicle_no FROM ROUTE WHERE START = 'Erode' AND END ='Madurai'; 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO ROUTE(vehicle_no, start, end, fare) VALUES('2311','Erode','Madurai',1200.0) 
+[09-12-2023 10:55:30:030 pm IST] DEBUG  - [Routedao            ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from ROUTE ORDER BY START 
+[09-12-2023 10:55:33:033 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      => 
+[09-12-2023 10:55:33:033 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:55:34:034 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  N 
+[09-12-2023 10:55:34:034 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] mode                      =>  I 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] driver_name               =>  Murugesan 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] age                       =>  43 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] gender                    =>  Male 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] phone                     =>  3423452345 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] city                      =>  Chengalpattu 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [DriverServlet       ] [arul] vehicle_no                =>  2311 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [Driverdao           ] [arul] INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,?,?,?,?,?,?) 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO DRIVER(driver_id, driver_name, age, gender, city, phone, vehicle_no) VALUES(null,'Murugesan',43,'Male','Chengalpattu','3423452345','2311') 
+[09-12-2023 10:55:46:046 pm IST] DEBUG  - [Driverdao           ] [arul] com.mysql.cj.jdbc.ClientPreparedStatement: select * from DRIVER 
